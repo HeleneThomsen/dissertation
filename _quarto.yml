@@ -71,32 +71,32 @@ format:
      \refoot*{\vspace{20mm} \\ \pagemark}
      
      \chead{\headmark}
-      #  \addtokomafont{pagehead}{\bfseries\upshape\color{white}}
-      #  \addtokomafont{pagenumber}{\bfseries\color{blue!40!black}}
-      #  % shift the predefined head layers
-      #  \ForEachLayerOfPageStyle*{scrheadings}{%
-      #  \ifstrstart{#1}{scrheadings.head.}
-      #  {\ModifyLayer[addvoffset=-.5in-.5\voffset-.5\topmargin]{#1}}
-      #  {}%
-      #  }
-      #  \ForEachLayerOfPageStyle*{plain.scrheadings}{%
-      #  \ifstrstart{#1}{plain.scrheadings.head.}
-      #  {\ModifyLayer[addvoffset=-.5in-.5\voffset-.5\topmargin]{#1}}
-      #  {}%
-      #  }
-      #  % Defining the Layer
-      #  \DeclareLayer[
-      #  background,
-      #  topmargin,
-      #  addheight=\headheight,
-      #  contents={%
-      #     \color{blue!40!black}%
-      #     \rule{\layerwidth}{\layerheight}%
-      #  }%
-      #  ]{my.head.background}
-      #  %Adding the Layer to the pagestyles
-      #  \AddLayersAtBeginOfPageStyle{scrheadings}{my.head.background}
-      #  \AddLayersAtBeginOfPageStyle{plain.scrheadings}{my.head.background}
+     \addtokomafont{pagehead}{\bfseries\upshape\color{white}}
+     \addtokomafont{pagenumber}{\bfseries\color{blue!40!black}}
+     % shift the predefined head layers
+     \ForEachLayerOfPageStyle*{scrheadings}{%
+     \ifstrstart{#1}{scrheadings.head.}
+     {\ModifyLayer[addvoffset=-.5in-.5\voffset-.5\topmargin]{#1}}
+     {}%
+     }
+     \ForEachLayerOfPageStyle*{plain.scrheadings}{%
+     \ifstrstart{#1}{plain.scrheadings.head.}
+     {\ModifyLayer[addvoffset=-.5in-.5\voffset-.5\topmargin]{#1}}
+     {}%
+     }
+     % Defining the Layer
+     \DeclareLayer[
+     background,
+     topmargin,
+     addheight=\headheight,
+     contents={%
+        \color{blue!40!black}%
+        \rule{\layerwidth}{\layerheight}%
+     }%
+     ]{my.head.background}
+     %Adding the Layer to the pagestyles
+     \AddLayersAtBeginOfPageStyle{scrheadings}{my.head.background}
+     \AddLayersAtBeginOfPageStyle{plain.scrheadings}{my.head.background}
 
     
 
