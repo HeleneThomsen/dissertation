@@ -8,5 +8,4 @@ nul
 *.html
 /.quarto/
 make_thesis*
-/docs/
 **/*.quarto_ipynb
