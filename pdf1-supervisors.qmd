@@ -2,29 +2,35 @@
 
 #### PhD student:
 
-**Anders Aasted Isaksen, MD**\
+**Helene Bei Thomsen**\
 Department of Public Health, Aarhus University, Denmark
 
 #### Supervisors:
 
-**Professor Annelli Sandbæk, PhD (main supervisor)**\
+**Associate Professor Adam Hulman, PhD (main supervisor)**\
 Department of Public Health, Aarhus University, Denmark\
 Steno Diabetes Center Aarhus, Denmark
 
-**Associate Professor Mette Vinther Skriver, PhD**\
-Department of Public Health, Aarhus University, Denmark
-
-**Lasse Bjerg, PhD**\
-Department of Public Health, Aarhus University, Denmark\
+**Anders Aasted Isaksen, MD, PhD**\
 Steno Diabetes Center Aarhus, Denmark
+
+**Guy Fagherazzi, PhD**\
+Director of the Department of Precision Health\
+Head of the Deep Digital Phenotyping Research Unit\
+Luxembourg Institute of Health, Luxembourg
+
+**Signe Toft Andersen, MD, PhD**\
+Steno Diabetes Center Aarhus, Denmark\
+Gødstrup Hospital, Denmark
 
 #### Assessment committee:
-
-**Professor Reimar Wernich Thomsen, PhD (chairman)**\
-Department of Clinical Epidemiology, Department of Clinical Medicine, Aarhus University Hospital, Denmark
-
-**Professor Per Wändell, PhD**\
-Division of Family Medicine and Primary Care, Department of Neurobiology, Care Sciences and Society, Karolinska Institutet
-
-**Senior researcher Nana Folmann Hempler, PhD**\
-Diabetes Management Research, Steno Diabetes Center Copenhagen, Denmark
+**Associate Professor Simon Tilma Vistisen (chairman)**\
+Department of Clinical Medicine, Aarhus University, Denmark
+<!-- Email: vistisen@clin.au.dk -->
+**Professor Cristina Soguero-Ruíz**\
+Department of Signal Theory and Communications, King Juan Carlos University, Spain\
+<!-- Email: cristina.soguero@urjc.es -->
+**Associate Professor Simon Lebech Cichosz**\
+Department of Health Science and Technology, The Faculty of Medicine, Medical\
+Informatics and Image Analysis, Aalborg University, Denmark\
+<!-- Email: simcich@hst.aau.dk -->

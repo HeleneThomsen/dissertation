@@ -12,7 +12,7 @@ This PhD project was supported by a research training supplement grant from **Aa
 #| layout-ncol: 3
 
 knitr::include_graphics("figures/au_health_cropped.png")
-knitr::include_graphics("figures/fim.png")
+# knitr::include_graphics("figures/fim.png")
 knitr::include_graphics("figures/sdca.png")
 ```
 

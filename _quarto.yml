@@ -1,11 +1,12 @@
 project:
   type: book
   output-dir: docs
-  
+
+# quarto render --to pdf
 book:
-  title: "Type 2 diabetes in migrants: a register-based analysis"
-  author: "Anders Aasted Isaksen"
-  date: 2023 04 25
+  title: "Machine learning methods for continuous glucose monitoring data and their potential in cardiovascular risk assessment"
+  author: "Helene Bei Thomsen"
+  date: 2026 07 31
   date-format: "YYYY"
   chapters:
     - index.qmd
@@ -17,8 +18,7 @@ book:
     - 2-aims.qmd
     - 3-methods.qmd
     - 4-results.qmd
-    - 5-discussion-methods.qmd
-    - 6-discussion-results.qmd
+    - 5-discussion.qmd
     - 7-conclusions.qmd
     - 8-perspectives.qmd
     - references.qmd
@@ -27,11 +27,11 @@ book:
   appendices:
     - app1-supplementary.qmd
     - app2-addendum.qmd
-  cookie-consent:
-    type: express
-    palette: light
-  google-analytics:
-    tracking-id: "G-98HE1VGDR4"
+  # cookie-consent:
+  #   type: express
+  #   palette: light
+  # google-analytics:
+  #   tracking-id: "G-98HE1VGDR4"
 
 bibliography: references.bib
 csl: citestyle.csl
@@ -71,33 +71,50 @@ format:
      \refoot*{\vspace{20mm} \\ \pagemark}
      
      \chead{\headmark}
-     \addtokomafont{pagehead}{\bfseries\upshape\color{white}}
-     \addtokomafont{pagenumber}{\bfseries\color{blue!40!black}}
-     % shift the predefined head layers
-     \ForEachLayerOfPageStyle*{scrheadings}{%
-     \ifstrstart{#1}{scrheadings.head.}
-     {\ModifyLayer[addvoffset=-.5in-.5\voffset-.5\topmargin]{#1}}
-     {}%
-     }
-     \ForEachLayerOfPageStyle*{plain.scrheadings}{%
-     \ifstrstart{#1}{plain.scrheadings.head.}
-     {\ModifyLayer[addvoffset=-.5in-.5\voffset-.5\topmargin]{#1}}
-     {}%
-     }
-     % Defining the Layer
-     \DeclareLayer[
-     background,
-     topmargin,
-     addheight=\headheight,
-     contents={%
-        \color{blue!40!black}%
-        \rule{\layerwidth}{\layerheight}%
-     }%
-     ]{my.head.background}
-     %Adding the Layer to the pagestyles
-     \AddLayersAtBeginOfPageStyle{scrheadings}{my.head.background}
-     \AddLayersAtBeginOfPageStyle{plain.scrheadings}{my.head.background}
-      
+      #  \addtokomafont{pagehead}{\bfseries\upshape\color{white}}
+      #  \addtokomafont{pagenumber}{\bfseries\color{blue!40!black}}
+      #  % shift the predefined head layers
+      #  \ForEachLayerOfPageStyle*{scrheadings}{%
+      #  \ifstrstart{#1}{scrheadings.head.}
+      #  {\ModifyLayer[addvoffset=-.5in-.5\voffset-.5\topmargin]{#1}}
+      #  {}%
+      #  }
+      #  \ForEachLayerOfPageStyle*{plain.scrheadings}{%
+      #  \ifstrstart{#1}{plain.scrheadings.head.}
+      #  {\ModifyLayer[addvoffset=-.5in-.5\voffset-.5\topmargin]{#1}}
+      #  {}%
+      #  }
+      #  % Defining the Layer
+      #  \DeclareLayer[
+      #  background,
+      #  topmargin,
+      #  addheight=\headheight,
+      #  contents={%
+      #     \color{blue!40!black}%
+      #     \rule{\layerwidth}{\layerheight}%
+      #  }%
+      #  ]{my.head.background}
+      #  %Adding the Layer to the pagestyles
+      #  \AddLayersAtBeginOfPageStyle{scrheadings}{my.head.background}
+      #  \AddLayersAtBeginOfPageStyle{plain.scrheadings}{my.head.background}
+
+    
+
+      \usepackage{xcolor}
+      \usepackage{float}
+      \floatplacement{figure}{H}
+      \raggedbottom
+      \usepackage[automark]{scrlayer-scrpage}
+      \clearpairofpagestyles
+
+      \lofoot*{\vspace{20mm} \\ \pagemark}
+      \refoot*{\vspace{20mm} \\ \pagemark}
+
+      \chead{\headmark}
+      \addtokomafont{pagehead}{\bfseries\upshape\color{black}}
+      \addtokomafont{pagenumber}{\bfseries\color{black}}
+
+
       \usepackage{tocbibind}
       \usepackage{titling}
       \setlength{\droptitle}{-2cm}

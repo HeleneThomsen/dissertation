@@ -9,3 +9,4 @@ nul
 /.quarto/
 make_thesis*
 /docs/
+**/*.quarto_ipynb

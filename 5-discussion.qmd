@@ -1,0 +1,28 @@
+# Discussion
+
+# Main findings
+*  Scoping review highlighted a chaotic landscape of wildly different study designs in the literature
+*  Mention other reviews, Yapanis + the other one that I forgot
+*  Representation learning of CGM data can capture complex patterns in glucose dynamics that are not captured by traditional CGM metrics
+*  Machine learning models can predict NT-proBNP levels using CGM data, however the performance of these models is modest and there is still room for improvement
+*  Bias is a concern in machine learning models, and fine-tuning on a subset of the data can help mitigate bias as measured by fairness metrics
+*  Grouped fairness is easier to evaluate and mitigate than individual fairness, but it is still an important step in ensuring that machine learning models are equitable and do not perpetuate existing biases in healthcare.
+
+# Machine learning vs traditional statistical methods
+
+# something about data and cross-sectional vs longitudinal data and how this affects the choice of methods
+* Mention the collins protocol that creates a study focused on answer this question
+* Mention the CANCAN dataset and the weird trend with people being better of the more comobiditie
+
+
+# Clinical implications
+
+# Strengths and limitations
+
+
+
+# Conclusions and future perspectives
+
+<!-- Summary requirements
+an independent scientific document of approximately 30-50 pages followed by a number of original papers. The text of the summary must be your own original work and should be weighted towards a reasoned discussion of applied methods and a demonstration of your ability to place your own research in the context of the most important research in the field.
+ -->
