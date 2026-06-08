@@ -1,0 +1,366 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Machine learning methods for continuous glucose monitoring data and their potential in cardiovascular risk assessment",
+    "section": "",
+    "text": "Cover Page\n\n\n\n\n\n\n\n\n\n\n\nPhD Dissertation\nDepartment of Public Health\nFaculty of Health\nAarhus University",
+    "crumbs": [
+      "Cover Page"
+    ]
+  },
+  {
+    "objectID": "0-disclosure.html",
+    "href": "0-disclosure.html",
+    "title": "Notes and disclosures",
+    "section": "",
+    "text": "Financial disclosures\nThis PhD project was supported by a research training supplement grant from Aarhus University, and grants from the Public Health in Central Denmark Region foundation (Danish: Folkesundhed i Midten) and Steno Diabetes Center Aarhus, which is partially funded by an unrestricted donation from the Novo Nordisk Foundation.",
+    "crumbs": [
+      "Notes and disclosures"
+    ]
+  },
+  {
+    "objectID": "0-disclosure.html#notes-on-website-version-1",
+    "href": "0-disclosure.html#notes-on-website-version-1",
+    "title": "Notes and disclosures",
+    "section": "Notes on website version",
+    "text": "Notes on website version\nThis website contains my PhD dissertation in online format. In terms of core content, it is identical to the pdf-file submitted to the graduate school, although the individual articles have been omitted from the website, as they are all open-access publications. Links to the papers are provided here as soon as they are published.\nDue to the graduate school only accepting dissertation submissions in pdf-format, the supplementary appendix of the submitted dissertation is relatively limited and sparsely referenced throughout this website. In contrast, the electronic supplementary material attached to each publication utilises html to present risk coefficients from main and supplementary analyses in a structured and accessible format.\nBoth the submitted dissertation and this website were made with Quarto®, an open-source scientific and technical publishing system, with inspiration from the quartothesis skeleton by professor Richard Telford of the Department of Biological Sciences, University of Bergen.\nThe rendered pdf-file can be found here.",
+    "crumbs": [
+      "Notes and disclosures"
+    ]
+  },
+  {
+    "objectID": "0-disclosure.html#supervisors-and-assessment-committee",
+    "href": "0-disclosure.html#supervisors-and-assessment-committee",
+    "title": "Notes and disclosures",
+    "section": "Supervisors and assessment committee",
+    "text": "Supervisors and assessment committee\n\nPhD student:\nAnders Aasted Isaksen, MD\nDepartment of Public Health, Aarhus University, Denmark\n\n\nSupervisors:\nProfessor Annelli Sandbæk, PhD (main supervisor)\nDepartment of Public Health, Aarhus University, Denmark\nSteno Diabetes Center Aarhus, Denmark\nAssociate Professor Mette Vinther Skriver, PhD\nDepartment of Public Health, Aarhus University, Denmark\nLasse Bjerg, PhD\nDepartment of Public Health, Aarhus University, Denmark\nSteno Diabetes Center Aarhus, Denmark\n\n\nAssessment committee:\nProfessor Reimar Wernich Thomsen, PhD (chairman)\nDepartment of Clinical Epidemiology, Department of Clinical Medicine, Aarhus University Hospital, Denmark\nProfessor Per Wändell, PhD\nDivision of Family Medicine and Primary Care, Department of Neurobiology, Care Sciences and Society, Karolinska Institutet\nSenior researcher Nana Folmann Hempler, PhD\nDiabetes Management Research, Steno Diabetes Center Copenhagen, Denmark",
+    "crumbs": [
+      "Notes and disclosures"
+    ]
+  },
+  {
+    "objectID": "0-preface.html",
+    "href": "0-preface.html",
+    "title": "Preface",
+    "section": "",
+    "text": "Motivation\nDuring my work as a junior doctor in a general practice in Gellerup, a deprived suburb of Aarhus with a large migrant population, I was immediately struck by the high frequency of type 2 diabetes (T2D) and other chronic diseases among day-to-day consultations. I would soon learn that T2D held more surprises for me than just a high prevalence. After a few weeks, it seemed that much of what I had learned about the disease in medical school and studied in clinical guidelines did not apply in my new setting. Diabetes was not only more prevalent; the patients were also much younger, and their haemoglobin-A1c levels rarely came close to guideline targets despite our best efforts to intensify treatment. Sadly, these experiences would repeat themselves in my subsequent work with migrants as a general practitioner (GP) in health clinics of the Danish Red Cross at asylum residence centres and pre-removal detention centres.\nAs I reviewed the literature, I understood why medical school and guidelines had failed to prepare me for the challenges I faced as a clinician with T2D in migrants; the existing literature was inadequate. While increased prevalence of T2D appeared well-established, and migrants with T2D were also ascribed a higher mortality than their native counterparts, this provided little guidance for my day-to-day work. Contrarily, there was hardly any evidence on disparities in the time between diagnosis and death - the time when care from the GP is needed the most. So I was left to wonder what might cause this discordance between what I knew about T2D from books and guidelines, and what I encountered in migrants in the clinic.\nAre migrants with T2D more prone to under-treatment, and in which areas of care?\nAre some migrant groups more prone to under-treatment than others?\nKnowledge on these clinical questions could enable GPs and healthcare planners to address disparities and improve care in migrants by prioritising and focussing care accordingly. While migrants are currently a younger demographic group than the rest of the population, it is likely that migrants will constitute an increasing proportion of the T2D population in the coming years as the group ages. Therefore, I was excited to explore these clinical questions as a researcher, hoping I could provide answers to myself and fellow GPs that could lead to better care - and, ultimately, better health - in a vulnerable and challenging group of patients.\nDuring my time as a PhD student, I quickly encountered the first of many challenges on the way to studying migrants with T2D in the Danish registers: there was no validated definition of T2D, nor a common consensus among researchers. This led to an expansion of the scope of the PhD project to develop and validate a tool to define T2D in the Danish registers, which allowed me to answer my research questions based on robust findings. This PhD project benefited greatly from open-source tools. In the spirit of open-source, the source code of the validated diabetes classifier was made available to other researchers in the osdc package for the R statistical programming language. As a final commitment to openness and accessibility, this dissertation was made available to a global public audience in website format.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "0-preface.html#outline-of-the-dissertation",
+    "href": "0-preface.html#outline-of-the-dissertation",
+    "title": "Preface",
+    "section": "Outline of the dissertation",
+    "text": "Outline of the dissertation\n1  Introduction describes type 2 diabetes (T2D) and how migrants are at particular risk. It then outlines the context of migration and health care in Denmark and clinical guideline recommendations for T2D. Finally, it introduces the reader to identification of diabetes patients in Danish healthcare registers.\n2  Aims states the overall aims of this PhD project and each individual study.\n?sec-methods describes the setting, data sources, methods and study designs used in the studies of this PhD project.\n?sec-results presents the main results of the studies.\n?sec-discussion-methods contains a discussion of the methods used and their potential impact on results.\n?sec-discussion-results discusses the main findings of each study and compares them to existing literature. Finally, the clinical implications of the results are discussed.\n?sec-conclusion presents the main conclusions.\n?sec-perspectives addresses the future perspectives raised by the dissertation and discusses the opportunities for research in the evolving research field.\nThe rest of the dissertation includes a list of references, English and Danish summaries, a supplementary validation analysis, and the three papers of the dissertation and their supplementary materials.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "0-papers.html",
+    "href": "0-papers.html",
+    "title": "Papers in the dissertation",
+    "section": "",
+    "text": "Study I\nIsaksen AA, Sandbæk A, Bjerg L. Validation of Register-Based Diabetes Classifiers in Danish Data. Clinical Epidemiology. 2023;15:569-581. https://doi.org/10.2147/CLEP.S407019",
+    "crumbs": [
+      "Papers in the dissertation"
+    ]
+  },
+  {
+    "objectID": "0-papers.html#study-ii",
+    "href": "0-papers.html#study-ii",
+    "title": "Papers in the dissertation",
+    "section": "Study II",
+    "text": "Study II\nIsaksen AA, Sandbæk A, Skriver MV, Andersen GS, Bjerg L (2023) Guideline-level monitoring, biomarker levels and pharmacological treatment in migrants and native Danes with type 2 diabetes: Population-wide analyses. PLOS Global Public Health 3(10): e0001277 https://doi.org/10.1371/journal.pgph.0001277",
+    "crumbs": [
+      "Papers in the dissertation"
+    ]
+  },
+  {
+    "objectID": "0-papers.html#study-iii",
+    "href": "0-papers.html#study-iii",
+    "title": "Papers in the dissertation",
+    "section": "Study III",
+    "text": "Study III\nIsaksen, AA, Sandbæk, A, Skriver, MV, Bjerg, L. Glucose-lowering drug use in migrants and native Danes with type 2 diabetes: Disparities in combination therapy and drug types. Diabetes Obesity and Metabolism. 2023; 1-10. https://doi.org/10.1111/dom.15230",
+    "crumbs": [
+      "Papers in the dissertation"
+    ]
+  },
+  {
+    "objectID": "0-abbreviations.html",
+    "href": "0-abbreviations.html",
+    "title": "Abbreviations",
+    "section": "",
+    "text": "ACEI: Angiotensin-converting enzyme-inhibitors\nAPT: Antiplatelet therapy\nARB: Angiotensin receptor blockers\nATC: Anatomical Therapeutic Chemical (classification)\nCI: Confidence interval\nCVD: Cardiovascular disease\nDKD: Diabetic kidney disease\nDPP4i: Dipeptidyl peptidase-4 inhibitors\nGP: General practitioner\nGDM: Gestational diabetes mellitus\nGLD: Glucose-lowering drugs\nGLP1RA: Glucagon-like peptide-1 receptor agonists\nHbA1c: Haemoglobin-A1c\nLDL-C: Low-density lipoprotein cholesterol\nLLD: Lipid-lowering drugs\nNPV: Negative predictive value\nOR: Odds ratio\nOSDC: Open-Source Diabetes Classifier\nPCOS: Polycystic ovary syndrome\nPPV: Positive predictive value\nRR: Relative risk\nRSCD: Register of Selected Chronic Diseases\nSGLT2i:: Sodium glucose co-transporter type 2 inhibitors\nT1D: Type 1 diabetes mellitus\nT2D: Type 2 diabetes mellitus\nUACR: Urine albumin-to-creatinine ratio",
+    "crumbs": [
+      "Abbreviations"
+    ]
+  },
+  {
+    "objectID": "1-introduction.html",
+    "href": "1-introduction.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "1.1 Diabetes and cardiovascular disease",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "1-introduction.html#diabetes-and-cardiovascular-disease",
+    "href": "1-introduction.html#diabetes-and-cardiovascular-disease",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "Burden of diabetes\n\nType 1 diabetes\nType 2 diabetes\n\nCardiovascular complications\nHeart failure in diabetes\nNT-proBNP as a biomarker",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "1-introduction.html#glycemic-markers-and-glucose-monitoring",
+    "href": "1-introduction.html#glycemic-markers-and-glucose-monitoring",
+    "title": "1  Introduction",
+    "section": "1.2 Glycemic markers and glucose monitoring",
+    "text": "1.2 Glycemic markers and glucose monitoring\n\nHbA1c and its limitations\nContinuous glucose monitoring (CGM)\nGlycemic variability\n\nMetrics of glycemic variability\nClinical challenges of glycemic variability (Think HbA1c and MBG and variability study)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "1-introduction.html#cardiovascular-risk-prediction-in-diabetes",
+    "href": "1-introduction.html#cardiovascular-risk-prediction-in-diabetes",
+    "title": "1  Introduction",
+    "section": "1.3 Cardiovascular risk prediction in diabetes",
+    "text": "1.3 Cardiovascular risk prediction in diabetes\n\nTraditional risk models\n\nSCORE2-Diabetes risk score\n\nLimitations of conventional predictors",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "1-introduction.html#machine-learning",
+    "href": "1-introduction.html#machine-learning",
+    "title": "1  Introduction",
+    "section": "1.4 Machine learning",
+    "text": "1.4 Machine learning\n\nData-driven vs hypothesis-drivenly(knowledge-based) paradigms\nWhy machine learning in diabetes and cardiovascular risk prediction?\nWhy are ML fantatic for CGM data?\nTypes of machine learnin g methods\n\nLogistic regression\nLSTM and CNNs\nFoundation models\n\nChallenges and pitfalls of machine learning in healthcare\n\nOverfitting and generalizability\nInterpretability and explainability",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "1-introduction.html#fairness-and-bias-in-machine-learning",
+    "href": "1-introduction.html#fairness-and-bias-in-machine-learning",
+    "title": "1  Introduction",
+    "section": "1.5 Fairness and bias in machine learning",
+    "text": "1.5 Fairness and bias in machine learning\n\nDefine race and ethnicity\nAlgorithmic bias and group fairness\nFairness metrics and mitigation strategies\nChallenges in healthcare applications when using ML",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "2-aims.html",
+    "href": "2-aims.html",
+    "title": "2  Aims",
+    "section": "",
+    "text": "2.1 Overall aims\nThe overall aim of this PhD dissertation is to provide robust knowledge on specific areas of T2D care where disparities between migrant groups and native Danes may be present.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Aims</span>"
+    ]
+  },
+  {
+    "objectID": "2-aims.html#specific-aims",
+    "href": "2-aims.html#specific-aims",
+    "title": "2  Aims",
+    "section": "2.2 Specific aims",
+    "text": "2.2 Specific aims\n\nTo develop a register-based classification of type 1 and type 2 diabetes that incorporates previous recommendations on data sources, and to make it available to other researchers.\nTo validate register-based diabetes classifiers available to researchers in Denmark.\nTo assess the prevalence of T2D in migrant minorities of Denmark, and to explore care disparities between migrant groups and native Danes in terms of monitoring, biomarker control and pharmacological treatment as recommended in the guidelines.\nTo evaluate disparities in the quality of glucose-lowering pharmacological treatment between migrants and native Danes in terms of combination therapy and drug types.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Aims</span>"
+    ]
+  },
+  {
+    "objectID": "2-aims.html#outputs",
+    "href": "2-aims.html#outputs",
+    "title": "2  Aims",
+    "section": "2.3 Outputs",
+    "text": "2.3 Outputs\nAim I was pursued in the creation of the Open-Source Diabetes Classifier (OSDC), made available in the open-source R package osdc.1 Aims II, III, and IV were pursued in the respective papers I, II, and III of this dissertation.\n\n\n\n\n1. Anders Aasted Isaksen. The Open-Source Diabetes Classifier [Internet]. {last accessed 7 Feb 2023};Available from: https://github.com/Aastedet/osdc",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Aims</span>"
+    ]
+  },
+  {
+    "objectID": "3-methods.html",
+    "href": "3-methods.html",
+    "title": "3  Methods and Materials",
+    "section": "",
+    "text": "3.1 Study Design Overview\nIn this chapter the three studies included in this PhD will be presented. The data will be described together with the chosen methods of the three studies and the different clinical variables, CGM-derived metrics and relevant cardiovascular outcomes will be explained.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods and Materials</span>"
+    ]
+  },
+  {
+    "objectID": "3-methods.html#study-design-overview",
+    "href": "3-methods.html#study-design-overview",
+    "title": "3  Methods and Materials",
+    "section": "",
+    "text": "Ad table\n\nTitle\nDesign\nStudy population (Sample size, disease, cohort (CANCAN or T1DX)) ## Study Populations Two datasets were used in this PhD (Study II and study III) which are presented below ### CANCAN The CANCAN data was collected in an observational case-control study from three hospital outpatient clinics in Denmark, Jutland. The aim of the CANCAN Study was to investigate if cardiac autonomic neuropathy (CAN) assessments, CGM and heart failure indicators could be used in risk stratification in people with T2D. Participants were included if they were adults (&lt; 18 years old) and had T2D for at least a year. Exclusion criteria were atrial fibrillation or laser-treated eye disease within the past three months, were pregnant or lactating, had a life-threatening disease (expected survival &lt; 1 year), or had cognitive disabilities rendering them unable to understand and give consent. Data were collected during a clinical examination, during which blood and urine samples were obtained, and a blinded CGM sensor was inserted. Blood samples to obtain NT-proBNP values were collected when the CGM sensors were returned, after the 2-week CGM data collection period had ended (Figure 3.1).\n\n\n\n\n\n\n\n\nData collection timeline for the CANCAN Study\n\n\n\n\nFigure 3.1\n\n\n\n\n3.1.1 T1DX\nThe T1DX racial differences dataset was collected by the T1D Exchange, a nonprofit organization, from diabetes centers in the United States (JAEB). The study focused on determining whether a racial difference exists in mean blood glucose and HbA1c levels between non-Hispanic Black and non-Hispanic White people with T1D. The study defined race and ethnicity through self-identified and self-reported ethnicity/race verification forms (Bergenstahl 2017). Further information on the definition of Hispanic, non-Hispanic, Black and White can be found in Bergenstahl et al.(Bergenstahl 2017). We, the authors, acknowledge that race and ethnicity are complex and not easily defined constructs, however we will use the word race moving forward since it aligns with the protocol and studies on the collection and analysis of the T1DX dataset (Kaneshiro2011, JAEB, Bergenstahl et al., 2017). Participants were grouped by age within each race. Between 8 and 17 years old and from 18 years and older. A blinded modified investigational version of Abbott Laboratories Diabetes Care’s Flash Glucose Monitoring System (CGM) was used for 12 weeks. The study was conducted in accordance with the principles of the Declaration of Helsinki and approved by the relevant institutional review boards. All participants provided written informed consent, with assent obtained where applicable (Bergenstahl 2017).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods and Materials</span>"
+    ]
+  },
+  {
+    "objectID": "3-methods.html#definition-of-predictors-and-outcomes-study-i",
+    "href": "3-methods.html#definition-of-predictors-and-outcomes-study-i",
+    "title": "3  Methods and Materials",
+    "section": "3.2 Definition of Predictors and Outcomes (Study I)",
+    "text": "3.2 Definition of Predictors and Outcomes (Study I)\n\nFocus on the methods from the literature review (inclusion and exclusion criteria)\nDefinition of cardiovascular risk (e.g., composite outcome, specific events)\nDefinition of predictors &lt;- What is CGM? MAGE from CGM or 7-point fingerpricks\nPresent CGM-derived metrics\n\nCGM preprocessing\n\nNT-proBNP as a biomarker of cardiovascular risk",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods and Materials</span>"
+    ]
+  },
+  {
+    "objectID": "3-methods.html#predictive-modeling-and-machine-learning-framework",
+    "href": "3-methods.html#predictive-modeling-and-machine-learning-framework",
+    "title": "3  Methods and Materials",
+    "section": "3.3 Predictive Modeling and Machine Learning Framework",
+    "text": "3.3 Predictive Modeling and Machine Learning Framework\n\n3.3.1 Learned representations of CGM data (Study II)\n\nCGM as a predictor of cardiovascular risk\nFoundation models\nLogistic regression\nRidge regression",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods and Materials</span>"
+    ]
+  },
+  {
+    "objectID": "3-methods.html#bias-in-machine-learning-models-study-iii",
+    "href": "3-methods.html#bias-in-machine-learning-models-study-iii",
+    "title": "3  Methods and Materials",
+    "section": "3.4 Bias in machine learning models (Study III)",
+    "text": "3.4 Bias in machine learning models (Study III)\n\nFairness metrics\nMitigation strategies -&gt; Fine-tuning LSTM\nEvaluate bias when output is not binary (e.g., LMEM models)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods and Materials</span>"
+    ]
+  },
+  {
+    "objectID": "4-results.html",
+    "href": "4-results.html",
+    "title": "4  Results",
+    "section": "",
+    "text": "4.1 metrics used in the papers - Study 1 - Scoping review",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "4-results.html#metrics-used-in-the-papers---study-1---scoping-review",
+    "href": "4-results.html#metrics-used-in-the-papers---study-1---scoping-review",
+    "title": "4  Results",
+    "section": "",
+    "text": "CGM metrics and CVD definitions\nDemographics\nStudy designs / cohorts\nDiabetes types\nCGM metrics\nCVD risk factors\nStatistical methods used",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "4-results.html#baseline-characteristics-table-of-cancan-and-t1dx-cohorts-study-2-and-study-3",
+    "href": "4-results.html#baseline-characteristics-table-of-cancan-and-t1dx-cohorts-study-2-and-study-3",
+    "title": "4  Results",
+    "section": "4.2 Baseline characteristics table of CANCAN and T1DX cohorts (Study 2 and Study 3)",
+    "text": "4.2 Baseline characteristics table of CANCAN and T1DX cohorts (Study 2 and Study 3)\n\n\n\n4.2.1 Representation learning of CGM data (Study 2)\n\n\n4.2.2 Prediction of NT-proBNP (Study 2)\n\nPrediction NT-proBNP with different baseline models\nPredicting NT-proBNP using only age\nPRedicting NT-proBNP using only CGM metrics\nPredicting NT-proBNP using SCORE2-Diabetes inputs and score together with other CGM data -&gt; Supplementary material of paper 2\n\nCopilot transition to next section:  ### Bias in Machine Learning models (Study 3) * Baseline characteristics of the T1DX cohort stratified by race status * Fairness metrics of the LMEM model before and after fine-tuning",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "5-discussion.html",
+    "href": "5-discussion.html",
+    "title": "5  Discussion",
+    "section": "",
+    "text": "6 Main findings\n\nScoping review highlighted a chaotic landscape of wildly different study designs in the literature\nMention other reviews, Yapanis + the other one that I forgot\nRepresentation learning of CGM data can capture complex patterns in glucose dynamics that are not captured by traditional CGM metrics\nMachine learning models can predict NT-proBNP levels using CGM data, however the performance of these models is modest and there is still room for improvement\nBias is a concern in machine learning models, and fine-tuning on a subset of the data can help mitigate bias as measured by fairness metrics\nGrouped fairness is easier to evaluate and mitigate than individual fairness, but it is still an important step in ensuring that machine learning models are equitable and do not perpetuate existing biases in healthcare.\n\n\n\n7 Machine learning vs traditional statistical methods\n\n\n8 something about data and cross-sectional vs longitudinal data and how this affects the choice of methods\n\nMention the collins protocol that creates a study focused on answer this question\nMention the CANCAN dataset and the weird trend with people being better of the more comobiditie\n\n\n\n9 Clinical implications\n\n\n10 Strengths and limitations\n\n\n11 Conclusions and future perspectives",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Discussion</span>"
+    ]
+  },
+  {
+    "objectID": "7-conclusions.html",
+    "href": "7-conclusions.html",
+    "title": "6  Conclusion",
+    "section": "",
+    "text": "CGM data has the potential to provide valuable insights into cardiovascular risk in diabetes, but there are still many challenges to overcome in terms of study design, data quality, and machine learning methods.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "1. Anders Aasted Isaksen. The Open-Source\nDiabetes Classifier [Internet]. {last accessed 7 Feb\n2023};Available from: https://github.com/Aastedet/osdc",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "summary-english.html",
+    "href": "summary-english.html",
+    "title": "English summary",
+    "section": "",
+    "text": "Background: Type 2 diabetes (T2D) is an increasing burden on healthcare services due to changes in demography and lifestyle. Migrants are particularly vulnerable to T2D, having a higher prevalence of the disease compared to native populations in western Europe, with some evidence suggesting a higher risk of complications and mortality. Evidence on disparities in care that may contribute to this excess risk in migrants is sparse, but register-based studies are well-suited to explore this in a Danish context. However, these studies are vulnerable to biases due to the lack of a validated method to identify T2D cases in the general population.\nAims: This dissertation aimed to develop and validate a register-based classification of type 1 diabetes (T1D) and T2D, and utilise it to explore specific areas of monitoring, biomarker levels, and pharmacological treatment, where disparities in T2D care between migrant groups and native Danes may contribute to excess complication risk in migrants.\nMethods: Three cross-sectional register-based studies were performed. Study I validated two register-based classifications of diabetes - the Open-Source Diabetes Classifier (OSDC), and the Register of Selected Chronic Diseases (RSCD) - in a population of survey respondents from Central Denmark Region (Health In Central Denmark), while the two subsequent studies examined T2D prevalence and care in nationwide populations, using native Danes as the reference group. Study II computed relative risk (RR) of prevalent T2D and non-fulfilment of eleven indicators corresponding to guideline-recommendations. Study III computed RR of using glucose-lowering drug (GLD) combination therapy, and RR of using each type of GLD.\nResults: In study I, both register-based diabetes classifiers identified valid populations of T1D and T2D in a general population (positive predictive values from 87.5% to 94.4%, negative predictive values above 98.9%), although sensitivity in the OSDC was substantially higher compared to the RSCD in both T1D (77.3% vs. 70.0%) and in T2D (94.4% vs. 90.5%). Neither algorithm was able to accurately classify diabetes type in individuals with T1D onset after age 40, nor T2D onset before age 40. In study II, prevalence of T2D was higher in all migrants excluding the Europe-group (fully-adjusted RR from 0.96 [95% confidence interval: 0.94-0.99] (Europe group) to 4.04 [3.89-4.20] (Sri Lanka group)). Non-fulfilment of recommendations for care was common regardless of origin: in eight of the eleven indicators of care studied &gt;25% of native Danes did not meet guideline-recommendations. Apart from monitoring in the Sri Lanka group, migrants were at similar or higher risk of non-fulfilment than native Danes across all indicators of monitoring (crude RR from 0.64 [0.51-0.80] (hemoglobin-A1c (HbA1c) monitoring, Sri Lanka group) to 1.62 [1.36-1.95] (HbA1c monitoring, Somalia group)), HbA1c control (crude RR from 1.27 [1.24-1.30] (Middle East group) to 1.46 [1.41-1.52] (Pakistan group)), and low-density lipoprotein cholesterol (LDL-C) control (crude RR from 1.08 [1.03-1.14] (Former Yugoslavia group) to 1.78 [1.67-1.90] (Somalia group)), while no overall disparities were observed for the presence of pharmacological treatment (crude RR from 0.61 [0.46-0.80] (GLD, Sri Lanka group) to 1.67 [1.34-2.09] (GLD, Somalia group)). In study III, migrants were less likely to use GLD combination therapy than native Danes (fully adjusted RR from 0.77 [0.71-0.85] (Somalia group) to 1.00 [0.97-1.04] (Former Yugoslavia group)). Migrants were more likely to use oral GLD types (fully adjusted RR (use of any oral GLD) from 0.99 [0.97-1.01] (Europe group) to 1.09 [1.06-1.11] (Sri Lanka group)), but less likely to use injection-based GLD types such as insulins (fully adjusted RR from 0.66 [0.62-0.71] (Sri Lanka group) to 0.94 [0.89-0.99] (Europe group)) and, especially, glucagon-like peptide-1 receptor agonists (GLP1RA) (fully adjusted RR from 0.29 [0.22-0.39] (Somalia group) to 0.95 [0.89-1.01] (Europe group)).\nConclusion and perspectives This dissertation was able to accurately identify populations of T1D and T2D in register data from the general Danish population. Diabetes epidemiologists can rely on the OSDC and the RSCD to provide valid study populations for Danish register-based research, but researchers should be aware of limitations in cases with atypical age at onset and potential challenges due to evolving GLD indications in the future. This dissertation found room for improvement in T2D care in Denmark, and presented several disparities in T2D care between migrants and native Danes. These may contribute excess risk of complication and mortality in migrants, especially among migrants from Somalia, who received the poorest care of all groups overall. Overall, the large disparity in use of GLP1RA between migrants and native Danes may provide a target for future interventions to improve care and reduce complication risk among migrants with T2D.",
+    "crumbs": [
+      "English summary"
+    ]
+  },
+  {
+    "objectID": "summary-danish.html",
+    "href": "summary-danish.html",
+    "title": "Dansk resumé",
+    "section": "",
+    "text": "Baggrund: Type 2 diabetes (T2D) er en stigende belastning på sundhedsvæsenet på grund af ændringer i demografi og livsstil. Indvandrere er særligt sårbare overfor T2D, idet de har en højere forekomst af sygdommen i forhold til indfødte befolkninger i Vesteuropa, ligesom nogle undersøgelser peger på en højere risiko for diabetiske komplikationer og død. Potentielle uligheder i behandlingen, der kan bidrage til den øgede risiko hos indvandrere med T2D, er dårligt belyst, men registerbaserede studier er velegnede til at undersøge dette i en dansk sammenhæng. Disse undersøgelser er imidlertid sårbare, idet der ikke foreligger nogen validerede metoder til at identificere T2D-tilfælde i den generelle danske befolkning.\nFormål: Denne afhandling havde til formål at udvikle og validere en registerbaseret klassifikation af type 1 diabetes (T1D) og T2D, og anvende den til at undersøge specifikke områder i behandlingen af T2D - kontroller, biomarkør-niveauer og medicinsk behandling - hvor uligheder mellem indvandrergrupper og indfødte danskere kan bidrage til øget risiko for komplikationer hos indvandrere.\nMetoder: Som led i afhandlingen blev tre tværsnitsstudier baseret på register-data gennemført. Studie I validerede to registerbaserede klassifikationer af diabetes - Open-Source Diabetes Classifier (OSDC) og Register for Udvalgte Kroniske Sygdomme (RUKS) - blandt spørgeskema-besvarelser fra personer i Region Midtjylland (Helbred i Midt), mens de to efterfølgende studier undersøgte forekomst og behandling af T2D i hele landet og sammenlignede indvandrergrupper med indfødte danskere. Studie II beregnede relativ risiko (RR) for forekomst af T2D og for manglende opfyldelse af elleve indikatorer for behandlingskvalitet svarende til anbefalinger i gældende kliniske retningslinjer. Studie III beregnede RR for brug af kombinationsbehandling med blodsukker-nedsættende lægemidler (GLD) og RR for brug af hver type GLD.\nResultater: I studie I identificerede begge registerbaserede diabetesklassifikationer gyldige populationer af T1D og T2D i en bred befolkning (positive prædiktive værdier fra 87,5% til 94,4%, negative prædiktive værdier over 98,9%), dog med en væsentlig højere sensitivitet i OSDC sammenlignet med RUKS både i T1D (77,3% vs. 70,0%) og i T2D (94,4% vs. 90,5%). Ingen af algoritmerne var i stand til nøjagtigt at klassificere diabetestype hos personer med T1D debut efter 40-årsalderen eller T2D debut før 40-årsalderen. I studie II var forekomsten af T2D højere i alle indvandrergrupper undtagen Europa-gruppen (fuldt justeret RR fra 0,96 [95% konfidensinterval: 0,94-0,99] (Europa-gruppen) til 4,04 [3,89-4,20] (Sri Lanka-gruppen)). Manglende opfyldelse af de vejledende behandlingsanbefalinger var hyppig - uanset oprindelse: i otte ud af elleve indikatorer opfyldte &gt;25% af indfødte danskere ikke anbefalingerne. Fraset rutinemæssig kontrolundersøgelser i Sri Lanka-gruppen, havde indvandrergrupperne tilsvarende eller højere risiko end indfødte danskere for ikke at opfylde behandlingsanbefalinger på tværs af alle indikatorer for rutinemæssig kontrolundersøgelser (rå RR fra 0,64 [0,51-0,80] (hæmoglobin-A1c (HbA1c-undersøgelse, Sri Lanka-gruppen) til 1,62 [1,36-1,95] (HbA1c-undersøgelse, Somalia-gruppen)), blodsukkerniveau (rå RR fra 1,27 [1,24-1,30] (Mellemøsten-gruppen) til 1,46 [1,41-1,52] (Pakistan-gruppen)) og kolesterolniveau (rå RR fra 1,08 [1,03-1,14] (Eksjugoslavien-gruppen) til 1,78 [1,67-1,90] (Somalia-gruppen)), mens der ikke sås nogen gennemgående forskelle for tilstedeværelse af medicinsk behandling (rå RR fra 0,61 [0,46-0,80] (GLD, Sri Lanka-gruppen) til 1,67 [1,34-2,09] (GLD, Somalia-gruppen)). I studie III var indvandrere mindre tilbøjelige til at få GLD kombinationsbehandling end indfødte danskere (fuldt justeret RR fra 0,77 [0,71-0,85] (Somalia-gruppen) til 1,00 [0,97-1,04] (Eksjugoslavien-gruppen)). Indvandrere var mere tilbøjelige til at benytte orale GLD typer (fuldt justeret RR (brug af ethvert oralt GLD) fra 0,99 [0,97-1,01] (Europa-gruppen) til 1,09 [1,06-1,11] (Sri Lanka-gruppen)), men mindre tilbøjelige til at benytte injektionsbaserede GLD typer så som insuliner (fuldt justeret RR fra 0,66 [0,62-0,71] (Sri Lanka-gruppen) til 0,94 [0,89-0,99] (Europa-gruppen)) og især glucagon-like peptide-1 receptor agonister (GLP1RA) (fuldt justeret RR fra 0,29 [0,22-0,39] (Somalia-gruppen) til 0,95 [0,89-1,01] (Europa-gruppen)).\nKonklusion og perspektiver: Denne ph.d.-afhandling kunne præcist identificere befolkninger med T1D og T2D i den brede danske befolkning ud fra registerdata. Diabetesforskere kan anvende OSDC og RUKS til at danne gyldige studiepopulationer ud fra de danske registre, men bør være opmærksomme på deres begrænsninger, herunder blandt patienter med atypisk alder for sygdomsdebut samt potentielle udfordringer som følge af udviklingen i brugen af GLD i fremtiden. Afhandlingen fandt plads til forbedringer i behandlingen af T2D i Danmark, og viste flere uligheder mellem indvandrere og indfødte danskere i behandlingen af T2D, som kan medføre øget risiko for komplikationer og død blandt indvandrere - særligt blandt indvandrere fra Somalia, som havde den laveste behandlingskvalitet af alle grupper. Den store forskel i brugen af GLP1RA mellem indvandrere og indfødte danskere kan muligvis være et mål for fremtidige interventioner til at øge behandlingskvaliteten og mindske komplikationsrisikoen blandt indvandrere med T2D.",
+    "crumbs": [
+      "Dansk resumé"
+    ]
+  },
+  {
+    "objectID": "app1-supplementary.html",
+    "href": "app1-supplementary.html",
+    "title": "Appendix A — Supplementary validation analyses",
+    "section": "",
+    "text": "A.0.1 Validation of unspecified diabetes in the Health In Central Denmark survey and in the National Health Survey.\nValidation analyses performed in the HICD study population from study I:\n\n\n\nTable A.1: Supplementary: Validation of uspecified diabetes in the HICD study population\n\n\n\n\n\nThe Open-Source Diabetes Classifier (OSDC)\n\n\n\n\n\n\n\n\nOSDC\nSurvey: +DM\nSurvey: -DM\nTotal N\n\n\n\n\nOSDC: +DM\n2,512\n221\n2,733\n\n\nOSDC: -DM\n121\n26,537\n26,658\n\n\nTotal N\n2,633\n26,758\n29,391\n\n\nSensitivity\n0.954 (0.945, 0.962)\n\n\n\n\nSpecificity\n0.992 (0.991, 0.993)\n\n\n\n\nPPV\n0.919 (0.908, 0.929)\n\n\n\n\nNPV\n0.995 (0.995, 0.996)\n\n\n\n\n\n\n\n\n\n\nThe Register for Selected Chronic Diseases (RSCD)\n\n\n\n\n\n\n\n\nRSCD\nSurvey: +DM\nSurvey: -DM\nTotal N\n\n\n\n\nRSCD: +DM\n2,422\n122\n2,544\n\n\nRSCD: -DM\n211\n26,636\n26,847\n\n\nTotal N\n2,633\n26,758\n29,391\n\n\nSensitivity\n0.920 (0.909, 0.930)\n\n\n\n\nSpecificity\n0.995 (0.995, 0.996)\n\n\n\n\nPPV\n0.952 (0.943, 0.960)\n\n\n\n\nNPV\n0.992 (0.991, 0.993)\n\n\n\n\n\n\n\n\n\n\nValidation analyses performed among respondents in the National Health Survey 2017 (individuals reporting diabetes as a current disease were considered diabetes cases).\n\n\n\nTable A.2: Supplementary: Validation of uspecified diabetes in the National Health Survey\n\n\n\n\n\nThe Open-Source Diabetes Classifier (OSDC)\n\n\nOSDC\nSurvey: +DM\nSurvey: -DM\nTotal N\n\n\n\n\nOSDC: +DM\n1,630\n258\n1,888\n\n\nOSDC: -DM\n87\n26,460\n26,547\n\n\nTotal N\n1,717\n26,718\n28,435\n\n\nSensitivity\n0.95 (0.94, 0.96)\n\n\n\n\nSpecificity\n0.99 (0.99, 0.99)\n\n\n\n\nPPV\n0.86 (0.85, 0.88)\n\n\n\n\nNPV\n1.00 (1.00, 1.00)\n\n\n\n\n\n\n\n\n\n\nThe Register for Selected Chronic Diseases (RSCD)\n\n\nRSCD\nSurvey: +DM\nSurvey: -DM\nTotal N\n\n\n\n\nRSCD: +DM\n1,546\n184\n1,730\n\n\nRSCD: -DM\n171\n26,534\n26,705\n\n\nTotal N\n1,717\n26,718\n28,435\n\n\nSensitivity\n0.90 (0.89, 0.91)\n\n\n\n\nSpecificity\n0.99 (0.99, 0.99)\n\n\n\n\nPPV\n0.89 (0.88, 0.91)\n\n\n\n\nNPV\n0.99 (0.99, 0.99)",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Supplementary validation analyses</span>"
+    ]
+  },
+  {
+    "objectID": "app2-addendum.html",
+    "href": "app2-addendum.html",
+    "title": "Appendix B — Addenda and errata",
+    "section": "",
+    "text": "B.1 Addenda\nThis chapter contains an overview of:",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Addenda and errata</span>"
+    ]
+  },
+  {
+    "objectID": "app2-addendum.html#addenda",
+    "href": "app2-addendum.html#addenda",
+    "title": "Appendix B — Addenda and errata",
+    "section": "",
+    "text": "5 May 2023:\n\nStudy I paper published. List of studies updated with citation and link to doi.\n\n8 August 2023:\n\nStudy III paper published. List of studies updated with citation and link to doi.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Addenda and errata</span>"
+    ]
+  },
+  {
+    "objectID": "app2-addendum.html#errata",
+    "href": "app2-addendum.html#errata",
+    "title": "Appendix B — Addenda and errata",
+    "section": "B.2 Errata",
+    "text": "B.2 Errata\n\n2 May 2023:\n\nOn lines 5-10, page 81, section 5.1.5., the following excerpt on the interpretation of ?fig-age-inclusion-by-year states:\n“Before 2016, when HbA1c data was not available from all regions of Denmark, a spike of inclusions is seen for women with T2D included at age 40 years. This spike is absent in the subsequent years, but the distribution is slightly skewed with a plateau in the age range 40-45 years. This is likely a residual effect of women in this age range having been prematurely included in the preceding years.”\n\nThis statement misinterprets some elements of the figure, which are addressed below:\nThe density plots are smoothed, and spikes in single years are less visible compared to a histogram of observed counts (due to statistical disclosure requirements, this data could not be visualised using histograms). While the spike in included OSDC T2D-cases among women age 40 is indeed much lower in the years 2016-2018 than in the previous years, it is still present.\nMost likely, the spike is caused by women with onset of T2D before the age of 40 years during a period of time without HbA1c data. These women may have initiated metformin treatment before HbA1c data became available, and if they achieved stable euglycaemia using only metformin, they would not be be captured by the HbA1c inclusion criterion after the HbA1c data became available. Thus, their inclusion into the cohort would be delayed until the censoring of metformin purchases ceases at age 40 years, causing a spike at this age of inclusion. In the post-2016 data, women living in the Southern Denmark Region (which did not supply HbA1c data prior to 2015, compared to the other regions, which supplied data from 2011 onwards) are likely the major source of this spike.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Addenda and errata</span>"
+    ]
+  }
+]
