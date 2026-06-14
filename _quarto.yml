@@ -44,6 +44,13 @@ format:
   html:
     theme: cosmo
     default-image-extension: svg
+    include-in-header:
+      text: |
+        <style>
+        main.content {
+          text-align: justify;
+        }
+        </style>
   docx: 
     toc: true
     number-sections: true
@@ -139,7 +146,7 @@ format:
         \resizebox{.9\textwidth}{!}{%
         \includegraphics[width=7in]{figures/au_health.png}%
         \quad
-        \includegraphics[width=1in]{figures/static_qr.png}%
+        \includegraphics[width=1in]{figures/qr_code.png}%
         }
         \end{center}
         

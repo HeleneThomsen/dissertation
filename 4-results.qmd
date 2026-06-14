@@ -1,19 +1,316 @@
 # Results
 
 ## metrics used in the papers - Study 1 - Scoping review
-* CGM metrics and CVD definitions
-* Demographics
-* Study designs / cohorts
-* Diabetes types
-* CGM metrics
-* CVD risk factors
-* Statistical methods used
+- [] CGM metrics and CVD definitions'
+- [] Demographics
+- [] Study designs / cohorts
+- [] Diabetes types
+- [] CGM metrics
+- [] CVD risk factors
+- [] Statistical methods used
+- [] Check big and small letters in headers (uppercase/lowercase beginnings)
 
-## Baseline characteristics table of CANCAN and T1DX cohorts (Study 2 and Study 3)
+## Study I: Results from a Scoping Review
 
-<!-- PLACE A TABLE HERE -->
-<!-- PLACE A TABLE HERE -->
+### Study Selection
+::: {#fig-prisma}
+[![](figures/4_results_fig/study_1_prisma.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_1_prisma.svg)
 
+Flow diagram of study selection
+:::
+
+### Study Populations
+- [] Add mapchart.net to the refernecelist and cite it in this figure text
+- [] If timer permits it then change colorscale to viridis or AU blue
+::: {#fig-prisma}
+[![](figures/4_results_fig/study_1_world_map.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_1_world_map.png)
+
+[Geographical location of the studies (colored in red) were found based on the hospitals and centers where data was collected or by the first author's affiliation when the other option was not available. Illustration was created with mapchart.net]{style="font-size: 85%; opacity: 0.85;"}
+
+Geographic distribution of the studies
+:::
+
+### Study Designs and Demographics
+- [] Check table is correct with the published article
+- [] Add a raised letter to each abbreviation and include it in the table when relevant
+- [] Add references to all citations
+
+::: {.landscape}
+::: {.small}
+
+::: {#tbl-study1-overview}
+
+| Author, year | Study Design | Population | Size | Age (Years) | Diabetes duration (Years) | HbA1c, mmol/mol (%) | CGM duration |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| Chen, 2020$^\dagger$ | Longitudinal (prospective) and cross-sectional (retrospective)<br>FU: in-hospital or within 3 months after discharge from hospital | T2D with CAD (Only male)<br>BG control, n = 90<br>BG fluctuation, n = 120 | 210 | BG controls: 55.53 $\pm$ 7.30<br>BG fluctuation: 56.41 $\pm$ 7.67 | BG controls: 6.59 $\pm$ 2.30<br>BG fluctuation group: 6.92 $\pm$ 2.25 | nr | 2 days |
+| He, 2023 | Longitudinal (prospective)<br>FU: 1 year | T2D with kidney disease on hemodialysis<br>High TIR, n = 12<br>Low TIR, n = 15 | 27 | High TIR: 66 [63, 73]<br>Low TIR: 70 [64, 75] | High TIR: 2 [1.7, 10]<br>Low TIR: 5 [0.75, 20] | High TIR: 43 [37, 51] mmol/mol (6.1 [5.5, 6.8]%)<br>Low TIR: 66 [46, 70] mmol/mol (8.2 [6.4, 8.6]%) | 14 days |
+| Lu, 2021 | Longitudinal (prospective)<br>FU: until death occurred or 3–13 years<br>Median: 6.9 years | T2D, hospitalized | 6225 | mean age = 61.7 years | mean: 9.7 years | 74.0 $\pm$ 24.0 mmol/mol (8.9 $\pm$ 2.2%) | 72 hours |
+| Wei, 2019 | Longitudinal (prospective)<br>Median FU [IQR]: 31 months (22, 56) | T2D Divided into three groups:<br>1) No hypo, n = 1173<br>2) Mild hypo (lvl1), n = 323<br>3) Severe hypo (lvl3), n = 24 | 1520 | No hypoglycemia: 58.59 $\pm$ 11.26<br>Hypoglycemia: 62.27 $\pm$ 11.58 | No hypoglycemia: 6.46 $\pm$ 6.00<br>Hypoglycemia: 7.78 $\pm$ 7.37 | No hypoglycemia: (8.19 $\pm$ 2.10%)<br>Hypoglycemia: (7.73 $\pm$ 1.96%) | 3 days |
+| Bezerra, 2023 | Cross-sectional | T1D | 161 | 37.4 $\pm$ 13.4 | 17.7 $\pm$ 10.6 | (7.5 $\pm$ 1.1%) | 14 days |
+| De Meulemeester, 2024$^\dagger$ | Cross-sectional | T1D | 808 | 44.8 $\pm$ 15.2 | 23.1 $\pm$ 13.6 | 63 $\pm$ 13 mmol/mol (7.9 $\pm$ 1.2%) | 2 weeks |
+| Deng, 2023 | Cross-sectional | T2D | 860 | HP 1 carriers: 53.5 $\pm$ 13.3<br>HP 2-2: 51.7 $\pm$ 14.6 | HP 1 carriers: 8.6 $\pm$ 6.4<br>HP 2-2: 8.6 $\pm$ 6.7 | HP1 carriers: 73.0 $\pm$ 24.0 mmol/mol (8.8 $\pm$ 2.2%)<br>Hp2-2: 72.0 $\pm$ 23.0 mmol/mol (8.7 $\pm$ 2.1) | 3 days |
+| El Malahi, 2022 | Cross-sectional | T1D starting on sensor-augmented pump therapy | 515 | Mean $\pm$ SD [years]:<br>42.2 $\pm$ 12.5 | 22.3 $\pm$ 11.6 | 60 $\pm$ 9.8 mmol/mol (7.6 $\pm$ 0.9 %) | 2 weeks |
+| Guo, 2021 | Cross-sectional | T1D or T2D with atrial fibrillation<br>With Stroke, n = 48<br>Without Stroke, n = 462 | 510 | Stroke: 70.3 $\pm$ 12.1<br>No stroke: 68.1 $\pm$ 9.4 | nr | No Stroke: 7.4 $\pm$ 2.1<br>Stroke: 8.2 $\pm$ 1.7 | 72 hour |
+| Li, 2020 | Cross-sectional | T2D with LEAD, n = 179<br>T2D without LEAD, n = 157 | 336 | Without LEAD: 55.94 $\pm$ 12.45<br>With LEAD: 65.56 $\pm$ 11.99 | Without LEAD: 6.92 $\pm$ 3.54<br>With LEAD: 10.32 $\pm$ 4.14 | Without LEAD: 7.85 $\pm$ 1.41%<br>With LEAD: 8.97 $\pm$ 1.63% | 72 hours |
+| Magri, 2018$^\dagger$ | Cross-sectional | T2D | 121 | 64 [57, 68] | 3 [2, 5] | median: 45 mmol/mol (6.8%) | 72 hours |
+| Mi, 2012 | Cross-sectional | T2D with chest pain<br>Without CAD, n = 202<br>With CAD, n = 84 | 286 | Without CAD: 62.8 $\pm$ 8.7<br>With CAD: 66.6 $\pm$ 9.2 | nr | Non-CAD: 7.51 $\pm$ 0.80%<br>CAD: 7.75 $\pm$ 0.92% | 72 hours (Only intermediate 48 hours were used) |
+| Sheng, 2023 | Cross-sectional | T2D, hospitalized | 545 | mean age of (61.22 $\pm$ 11.21) years | nr | 8.51 $\pm$ 1.85% | 7-14 days |
+| Su, 2011 | Cross-sectional | T2D with chest pain<br>Without CAD, n = 92<br>With CAD, n = 252 | 344 | Without CAD: 61 $\pm$ 9<br>With CAD: 65 $\pm$ 9 | Without CAD: 4.8 $\pm$ 5.7<br>With CAD: 6.5 $\pm$ 6.4 | non-CAD: 7.5 $\pm$ 1.4%<br>CAD: 7.6 $\pm$ 1.5% | 72 hours (only 48 hours used) |
+| Watanabe, 2017 | Cross-sectional | Prediabetes, hospitalized | 28 | 64.3 $\pm$ 12.8 | nr | 5.41 $\pm$ 0.35% | 72 hours (Only used the middle 48 hours) |
+| Zhang, 2013 | Cross-sectional | T2D with cardiovascular complications<br>Group A: healthy individuals<br>Group B: T2D without cardiovascular complications<br>Group C: T2D with cardiovascular complications | 92 | Group A: 56.3 $\pm$ 6.1<br>Group B: 56.1 $\pm$ 6.6<br>Group C: 61.7 $\pm$ 7.2 | nr | Group A: 5.3 $\pm$ 0.3%<br>Group B: 6.6 $\pm$ 1.2%<br>Group C: 7.5 $\pm$ 1.4% | 72 hours |
+
+---
+
+<p style="font-size: 85%; margin-top: 10px;">
+$^\dagger$ This study appears both in the clinical and subclinical disease outcome tables due to investigating multiple CVD outcomes.
+</p>
+*Note:* Age is reported in years either as an interval, mean $\pm$ SD, or median (IQR). Diabetes duration values originally reported in months were converted to years for consistency (months $\div$ 12). <br>
+*Abbreviations:* CGM, continuous glucose monitoring; FU, follow-up; T1D, type 1 diabetes; T2D, type 2 diabetes; CAD, coronary artery disease; hypo, hypoglycemia; LEAD, lower extremity arterial disease; IQR, interquartile range; nr, not reported.
+
+Study design and demographics of the included clinical cardiovascular outcome studies
+:::
+:::
+
+
+### Outcomes from the Studies in the Scoping Review
+- [] Check table is correct
+- [] Add references to all citations
+- [] Correct the raised letters/dagger is the same between the two tables
+- [] Delete the multimedia part in the footnote of the table
+
+::: {.landscape}
+::: {.small}
+
+::: {#tbl-main-clinical-findings}
+
+| Outcome, reference, and continuous glucose monitoring metrics | Unadjusted or least adjusted findings | $P$ value for the least adjusted findings | Most adjusted findings | $P$ value for the most adjusted findings |
+|:---|:---|:---|:---|:---|
+| **Cardiovascular mortality** | | | | |
+| Lu et al [21], 2021 | | | | |
+| &nbsp;&nbsp;&nbsp; TIR $^c$ $>85\%$ | HR 1.00 | $<.001$ (trend) | HR 1.00 | $.02$ (trend) |
+| &nbsp;&nbsp;&nbsp; TIR $71\%-85\%$ | HR 1.43 (0.95–2.14) | $<.001$ (trend) | HR 1.35 (0.90–2.04) | $.02$ (trend) |
+| &nbsp;&nbsp;&nbsp; TIR $51\%-70\%$ | HR 1.66 (1.12–2.45) | $<.001$ (trend) | HR 1.47 (0.99–2.19) | $.02$ (trend) |
+| &nbsp;&nbsp;&nbsp; TIR $\ge 50\%$ | HR 2.15 (1.47–3.13) | $<.001$ (trend) | HR 1.85 (1.25–2.72) | $.02$ (trend) |
+| &nbsp;&nbsp;&nbsp; TIR as a continuous variable (each $10\%$ decrease) | HR 1.08 (1.03–1.13) | — $^d$ | HR 1.05 (1.00–1.11) | — |
+| Wei et al [46]$^e$, 2019 | | | | |
+| &nbsp;&nbsp;&nbsp; Hypoglycemic events | HR 2.033 (1.211–3.413) | — | HR 2.642 (1.398–4.994) | — |
+| **Major adverse cardiovascular events** | | | | |
+| He et al [45], 2023 | | | | |
+| &nbsp;&nbsp;&nbsp; Blood glucose risk index | HR 0.97 (0.85–1.10) | $.61$ | HR 0.98 (0.85–1.13) | $.75$ |
+| &nbsp;&nbsp;&nbsp; Low blood glucose index | HR 2.37 (1.16–4.83) | $.02$ | HR 2.73 (1.21–6.16) | $.02$ |
+| &nbsp;&nbsp;&nbsp; High blood glucose index | HR 0.94 (0.81–1.08) | $.38$ | HR 0.94 (0.81–1.09) | $.44$ |
+| &nbsp;&nbsp;&nbsp; Average of daily risk range | HR 1.00 (0.93–1.07) | $>.99$ | HR 1.01 (0.93–1.09) | $.80$ |
+| &nbsp;&nbsp;&nbsp; GMI $^f$ | HR 0.98 (0.91–1.06) | $.65$ | HR 0.99 (0.91–1.07) | $.78$ |
+| &nbsp;&nbsp;&nbsp; M-value | HR 0.98 (0.91–1.05) | $.54$ | HR 0.98 (0.91–1.06) | $.64$ |
+| Wei et al [46]$^e$, 2019 | | | | |
+| &nbsp;&nbsp;&nbsp; Hypoglycemic events | HR 1.501 (1.207–1.866) | — | HR 1.615 (1.239–2.106) | $<.001$ |
+| **Macrovascular complications** | | | | |
+| De Meulemeester et al [48]$^{e,g}$, 2024 | | | | |
+| &nbsp;&nbsp;&nbsp; TIR | OR 0.939 (0.829–1.063) | $>.05$ | OR 0.896 (0.738–1.087) | $>.05$ |
+| &nbsp;&nbsp;&nbsp; TITR $^h$ | OR 0.901 (0.775–1.047) | $>.05$ | OR 0.933 (0.745–1.169) | $>.05$ |
+| Bezerra et al [47], 2023 | | | | |
+| &nbsp;&nbsp;&nbsp; TIR | OR 0.66 (0.46–0.93) | $.02$ | OR 0.68 (0.39–1.16) | $.15$ |
+| &nbsp;&nbsp;&nbsp; Time below 54 mg/dL | OR 1.10 (0.88–1.38) | $.39$ | OR 0.92 (0.62–1.34) | $.65$ |
+| &nbsp;&nbsp;&nbsp; TBR $^i$ | OR 0.93 (0.80–1.09) | $.39$ | OR 0.77 (0.54–1.11) | $.17$ |
+| &nbsp;&nbsp;&nbsp; TAR $^j$ | OR 1.04 (1.01–1.08) | $.01$ | OR 1.04 (0.99–1.10) | $.08$ |
+| &nbsp;&nbsp;&nbsp; Time above 250 mg/dL | OR 1.04 (1.00–1.08) | $.03$ | OR 1.03 (0.97–1.09) | $.29$ |
+| &nbsp;&nbsp;&nbsp; CV $^k$ | OR 1.03 (0.95–1.11) | $.52$ | OR 0.92 (0.81–1.06) | $.25$ |
+| &nbsp;&nbsp;&nbsp; GMI | OR 2.17 (1.14–4.11) | $.02$ | OR 2.03 (0.77–5.37) | $.15$ |
+| Deng et al [49], 2023 | | | | |
+| &nbsp;&nbsp;&nbsp; $\%CV$ tertile 1 (Hp1; reference) | OR 1.000 | $.07$ (interaction) | OR 1.000 | $.008$ (interaction) |
+| &nbsp;&nbsp;&nbsp; $\%CV$ tertile 1 (Hp2-2; reference) | OR 1.000 | $.07$ (interaction) | OR 1.000 | $.008$ (interaction) |
+| &nbsp;&nbsp;&nbsp; $\%CV$ tertile 2 (Hp1) | OR 1.483 (0.907–2.423) | $.12$ | OR 1.048 (0.528–2.078) | $.89$ |
+| &nbsp;&nbsp;&nbsp; $\%CV$ tertile 2 (Hp2-2) | OR 1.399 (0.829–2.358) | $.21$ | OR 0.659 (0.296–1.466) | $.31$ |
+| &nbsp;&nbsp;&nbsp; $\%CV$ tertile 3 (Hp1) | OR 2.347 (1.393–3.957) | $.001$ | OR 2.461 (1.183–5.121) | $.02$ |
+| &nbsp;&nbsp;&nbsp; $\%CV$ tertile 3 (Hp2-2) | OR 1.217 (0.731–2.027) | $.45$ | OR 0.540 (0.245–1.191) | $.13$ |
+| El Malahi et al [50], 2022 | | | | |
+| &nbsp;&nbsp;&nbsp; TIR | — | — | — | $>.05$ |
+| &nbsp;&nbsp;&nbsp; SD | — | — | — | $>.05$ |
+| &nbsp;&nbsp;&nbsp; CV | — | — | — | $>.05$ |
+| Magri et al [27]$^g$, 2018 | | | | |
+| &nbsp;&nbsp;&nbsp; TBR | — | — | OR 1.12 (1.014–1.228) | $.02$ |
+| &nbsp;&nbsp;&nbsp; Lowest BG $^l$ value | — | — | — | — |
+| &nbsp;&nbsp;&nbsp; Area under the TBR curve | — | — | — | — |
+| **Coronary artery disease** | | | | |
+| De Meulemeester et al [48]$^{e,g}$, 2024 | | | | |
+| &nbsp;&nbsp;&nbsp; TITR | OR 1.039 (0.812–1.330) | $>.05$ | OR 1.255 (0.874–1.803) | $>.05$ |
+| &nbsp;&nbsp;&nbsp; TIR | OR 1.072 (0.866–1.328) | $>.05$ | OR 1.164 (0.844–1.607) | $>.05$ |
+| Sheng et al [53], 2023 | | | | |
+| &nbsp;&nbsp;&nbsp; TIR $<20\%$ | — | — | OR 2.143 (1.554–3.287) | — |
+| &nbsp;&nbsp;&nbsp; TIR $20\%-40\%$ | — | — | OR 1.049 (0.945–2.022) | — |
+| &nbsp;&nbsp;&nbsp; TIR $40\%-60\%$ | — | — | OR 0.854 (0.495–1.473) | — |
+| &nbsp;&nbsp;&nbsp; TIR $60\%-80\%$ | — | — | OR 0.617 (0.423–1.312) | — |
+| &nbsp;&nbsp;&nbsp; TIR $>80\%$ | — | — | OR 0.470 (0.143–1.545) | — |
+| Chen et al [40]$^{e,g}$, 2020 | | | | |
+| &nbsp;&nbsp;&nbsp; Controls with SD $<1.40$ mmol/L, MAGE $^m$ $<3.90$ mmol/L, LAGE $^n$ $<4.40$ mmol/L, MODD $^o$ $<0.83$ mmol/L versus high BG fluctuations (myocardial Infarction) | — | — | $\chi^2 = 5.797$ | $.02$ |
+| &nbsp;&nbsp;&nbsp; Controls with SD $<1.40$ mmol/L, MAGE $<3.90$ mmol/L, LAGE $<4.40$ mmol/L, MODD $<0.83$ mmol/L versus high BG fluctuations (angina pectoris) | — | — | $\chi^2 = 7.490$ | $.006$ |
+| Wei et al [46]$^e$, 2019 | | | | |
+| &nbsp;&nbsp;&nbsp; Hypoglycemic events (myocardial Infarction) | HR 1.901 (1.067–3.389) | — | HR 1.549 (0.768–3.124) | $.03$ |
+| &nbsp;&nbsp;&nbsp; Hypoglycemic events (unstable angina pectoris) | HR 1.226 (0.857–1.753) | — | HR 1.218 (0.794–1.869) | $.30$ |
+| Shu-Hua et al [43]$^e$, 2012 | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE level ($\ge 3.4$ mmol/L) | — | — | OR 2.286 (1.176–4.446) | $.02$ |
+| Su et al [28]$^e$, 2011 | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE $\ge 3.4$ mmol/L | — | — | OR 2.612 (1.423–4.831) | $.002$ |
+| &nbsp;&nbsp;&nbsp; MAGE | — | — | AUC 0.618 (0.555–0.680) | $.001$ |
+| **Gensini score** | | | | |
+| Chen et al [40]$^{e,g}$, 2020 | | | | |
+| &nbsp;&nbsp;&nbsp; Controls with SD $<1.40$ mmol/L, MAGE $<3.90$ mmol/L, LAGE $<4.40$ mmol/L, MODD $<0.83$ mmol/L versus high BG fluctuations | — | — | $t = 6.210$ | $<.001$ |
+| Watanabe et al [54]$^e$, 2017 | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE | — | — | $r = 0.742$ | $<.001$ |
+| Shu-Hua et al [43]$^e$, 2012 | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE | — | — | Unstandardized coefficient $\beta = 4.817$; SE = 1.164; standardized coefficient $\beta = 0.170$; $t = 2.984$ | $.003$ |
+| Su et al [28]$^e$, 2011 | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE | — | — | Unstandardized $\beta = 7.010$; SE = 1.466; standardized $\beta = 0.237$; $t = 4.783$ | $<.001$ |
+| **Syntax score** | | | | |
+| Watanabe et al [54]$^e$, 2017 | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE | — | — | $r = 0.776$ | $<.001$ |
+| Zhang et al [30]$^e$, 2013 | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE | — | — | $r = 0.518$ | $.01$ |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 00:00 to 03:00 | — | — | $r = -0.442$ | $.04$ |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 03:00 to 06:00 | — | — | $r = -0.208$ | $.34$ |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 06:00 to 08:00 | — | — | $r = 0.678$ | $<.001$ |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 08:00 to 11:00 | — | — | $r = 0.115$ | $.60$ |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 11:00 to 13:00 | — | — | $r = 0.523$ | $.01$ |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 13:00 to 17:00 | — | — | $r = 0.257$ | $.24$ |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 17:00 to 19:00 | — | — | $r = 0.358$ | $.09$ |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 19:00 to 24:00 | — | — | $r = -0.018$ | $.93$ |
+| **Stroke** | | | | |
+| De Meulemeester et al [48]$^{e,g}$, 2024 | | | | |
+| &nbsp;&nbsp;&nbsp; TITR | OR 0.651 (0.470–0.902) | $<.05$ | OR 0.546 (0.347–0.858) | $<.01$ |
+| &nbsp;&nbsp;&nbsp; TIR | OR 0.749 (0.588–0.955) | $<.05$ | OR 0.617 (0.440–0.866) | $<.01$ |
+| Guo et al [51], 2021 | | | | |
+| &nbsp;&nbsp;&nbsp; TIR: Q1 ($\le 46\%$; reference) | OR 1.00 | $<.001$ | OR 1.00 | $<.001$ |
+| &nbsp;&nbsp;&nbsp; TIR: Q2 ($46\%-65\%$) | OR 0.86 (0.72–0.95) | $<.001$ | OR 0.80 (0.68–0.92) | $<.001$ |
+| &nbsp;&nbsp;&nbsp; TIR: Q3 ($65\%-81\%$) | OR 0.71 (0.61–0.81) | $<.001$ | OR 0.64 (0.53–0.79) | $<.001$ |
+| &nbsp;&nbsp;&nbsp; TIR: Q4 ($>81\%$) | OR 0.66 (0.58–0.80) | $<.001$ | OR 0.59 (0.50–0.74) | $<.001$ |
+| &nbsp;&nbsp;&nbsp; TIR (per $10\%$ increase) | OR 0.93 (0.85–0.98) | $.008$ | OR 0.89 (0.82–0.95) | $.001$ |
+| Wei et al [46]$^e$, 2019 | | | | |
+| &nbsp;&nbsp;&nbsp; Hypoglycemic events | HR 1.691 (1.144–2.499) | — | HR 1.813 (1.110–2.960) | $.06$ |
+| **Peripheral artery disease** | | | | |
+| De Meulemeester et al [48]$^{e,g}$, 2024 | | | | |
+| &nbsp;&nbsp;&nbsp; TITR | OR 0.680 (0.426–1.085) | $>.05$ | OR 0.807 (0.382–1.703) | $>.05$ |
+| &nbsp;&nbsp;&nbsp; TIR | OR 0.736 (0.520–1.042) | $>.05$ | OR 0.811 (0.470–1.398) | $>.05$ |
+| **Lower extremity arterial disease** | | | | |
+| Li et al [52], 2020 | | | | |
+| &nbsp;&nbsp;&nbsp; TIR | OR 0.979 (0.968–0.991) | $<.001$ | OR 0.979 (0.965–0.992) | $.002$ |
+| &nbsp;&nbsp;&nbsp; CV | OR 1.040 (1.003–1.078) | $.04$ | OR 1.038 (0.996–1.081) | $.08$ |
+| &nbsp;&nbsp;&nbsp; SD | OR 1.325 (1.038–1.691) | $.02$ | OR 1.158 (0.824–1.627) | $.40$ |
+| &nbsp;&nbsp;&nbsp; TIR-without LEAD $^p$ (1) | OR 1.00 | — | OR 1.00 | — |
+| &nbsp;&nbsp;&nbsp; TIR-mild LEAD (1) | OR 0.98 (0.97–1.00) | $.14$ | OR 0.99 (0.97–1.01) | $.25$ |
+| &nbsp;&nbsp;&nbsp; TIR-moderate LEAD (1) | OR 0.97 (0.95–0.99) | $.007$ | OR 0.97 (0.95–0.99) | $.01$ |
+| &nbsp;&nbsp;&nbsp; TIR-without severe LEAD (1) | OR 0.96 (0.94–0.98) | $.002$ | OR 0.96 (0.94–0.98) | $.003$ |
+| &nbsp;&nbsp;&nbsp; CV-without LEAD | — | — | OR 1.00 | — |
+| &nbsp;&nbsp;&nbsp; CV-mild LEAD | — | — | OR 1.03 (0.98–1.07) | $.28$ |
+| &nbsp;&nbsp;&nbsp; CV-moderate LEAD | — | — | OR 1.02 (0.96–1.09) | $.48$ |
+| &nbsp;&nbsp;&nbsp; CV-without severe LEAD | — | — | OR 1.02 (0.95–1.09) | $.60$ |
+| &nbsp;&nbsp;&nbsp; TIR-without LEAD (2) | — | — | OR 1.00 | — |
+| &nbsp;&nbsp;&nbsp; TIR-mild LEAD (2) | — | — | OR 0.97 (0.96–1.08) | $.06$ |
+| &nbsp;&nbsp;&nbsp; TIR-moderate LEAD (2) | — | — | OR 0.98 (0.95–0.99) | $.01$ |
+| &nbsp;&nbsp;&nbsp; TIR-without severe LEAD (2) | — | — | OR 0.97 (0.95–0.99) | $.02$ |
+| &nbsp;&nbsp;&nbsp; SD-without LEAD | — | — | OR 1.00 | — |
+| &nbsp;&nbsp;&nbsp; SD-mild LEAD | — | — | OR 0.88 (0.47–1.64) | $.69$ |
+| &nbsp;&nbsp;&nbsp; SD-moderate LEAD | — | — | OR 1.28 (0.58–3.07) | $.58$ |
+| &nbsp;&nbsp;&nbsp; SD-without severe LEAD | — | — | OR 1.52 (0.92–2.41) | $.10$ |
+
+: Main findings of the included studies on clinical cardiovascular outcomes. {tbl-colwidths="\[40, 15, 15, 15, 15\]"}
+:::
+
+<div style="font-size: 82%; line-height: 1.4; margin-top: 15px;">
+
+$^a$ The full table with adjustments is provided in **Multimedia Appendix 10**. Further elaboration on the adjusted variables can be found in **Multimedia Appendices 7 and 8**.  
+$^b$ All hazard ratios (HRs), odds ratios (ORs), and areas under the curve (AUCs) are reported as follows: point estimate ($95\%$ CI).  
+$^c$ TIR: time in range.  
+$^d$ Not applicable or not available/not reported.  
+$^e$ This study appears multiple times as it investigated multiple cardiovascular disease outcomes.  
+$^f$ GMI: glucose management indicator.  
+$^g$ This study appears in both the clinical and subclinical disease outcome tables owing to the investigation of multiple cardiovascular disease outcomes.  
+$^h$ TITR: time in tight range.  
+$^i$ TBR: time below range.  
+$^j$ TAR: time above range.  
+$^k$ CV: coefficient of variation.  
+$^l$ BG: blood glucose.  
+$^m$ MAGE: mean amplitude of glycemic excursions.  
+$^n$ LAGE: largest amplitude of glycemic excursions.  
+$^o$ MODD: mean of daily differences.  
+$^p$ LEAD: lower extremity arterial disease.
+
+</div>
+
+:::
+:::
+
+
+
+:::{#tbl-study3-clin-subclin-cvd}
+| Clinical | Subclinical |
+|:---|:---|
+|• CVD = Cardiovascular disease <br>&nbsp;&nbsp; - Macrovascular complications <br>&nbsp;&nbsp; - Diabetic macroangiopathy <br>• CAD = Coronary artery disease <br> &nbsp;&nbsp; - CHD = Coronary heart disease <br>&nbsp;&nbsp; - MI = Myocardial infarction <br>&nbsp;&nbsp; - Heart attack <br>&nbsp;&nbsp; - Heart failure <br>&nbsp;&nbsp; - (Unstable) angina pectoris <br>• Cardiovascular events <br>&nbsp;&nbsp; - Ishemic heart disease (IHD) <br>• LEAD = Lower extremity artery disease <br>• MACE = Major adverse cardiovascular events <br>• PAD = Peripheral artery disease <br>• Stroke = Stroke, Cerebrovascular disease, or Cerebrovascular accident |• ABI = Ankle–brachial index<br>• BP = Blood pressure<br>• Carotid artery distensibility = Carotid artery distensibility or carotid distensibility coefficient<br>• CCA = Common carotid artery<br>• CIMT = Carotid artery intima-media thickness<br>• DBP = Diastolic blood pressure<br>• FMD = Flow-mediated dilation of the brachial artery<br>• GSM = Gray-scale median of the carotid arteries<br>• HRV = Heart rate variability<br>• IMT = Intima-media thickness<br>• PWV = Pulse wave velocity<br>&nbsp;&nbsp; - ba-PWV = Brachial-ankle pulse wave velocity<br>&nbsp;&nbsp; - cr-PWV = Carotid-radial pulse wave velocity<br>&nbsp;&nbsp; - cf-PWV = Carotid-femoral pulse wave velocity<br>&nbsp;&nbsp; - Aortic PWV = Aortic pulse wave velocity<br>• SBP = Systolic blood pressure |
+
+: Summary of established clinical and subclinical outcomes and corresponding abbreviations identified in the literature.
+:::
+
+###
+
+## Baseline characteristics table of the datasets
+
+| Variable | CANCAN, total | NT-proBNP ≤ 125 pg/mL | NT-proBNP > 125 pg/mL |
+|:---| ---:| ---:| ---:|
+| N | 159 | 92 | 67 |
+| Age (years) | 65 [56, 71] | 60 [53, 68] | 68 [64, 76] |
+| Sex | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Male | 99 (62%) | 55 (60%) | 44 (66%) |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Female | 60 (38%) | 37 (40%) | 23 (34%) |
+| Smoking status | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Never or former | 135 (85%) | 77 (84%) | 58 (87%) |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Current | 24 (15%) | 15 (16%) | 9 (13%) |
+| Diabetes duration (years) | 16 [11, 24] | 14 [9, 22] | 19 [14, 25] |
+| SCORE2-Diabetes (%) | 14.8 [9.1, 20.9] | 11.9 [7.8, 17.2] | 19.0 [13.4, 25.4] |
+| HbA1c (mmol/mol) | 64 [55, 80] | 66 [56, 86] | 60 [54, 72] |
+| Systolic blood pressure (mmHg) | 132 [123, 143] | 132 [123, 143] | 131 [122, 142] |
+| HDL (mmol/L) | 1.0 [0.9, 1.2] | 1.0 [0.9, 1.2] | 1.0 [0.9, 1.3] |
+| Total cholesterol (mmol/L) | 3.9 [3.2, 4.8] | 4.1 [3.5, 4.9] | 3.6 [3.0, 4.2] |
+| eGFR (mL/min/1.73 m²) | 57 [39, 74] | 68 [52, 82] | 48 [27, 63] |
+| CGM-derived metrics | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;– CGM days (n/participant) | 13 [10, 13] | 13 [9, 13] | 13 [10, 13] |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Glucose management indicator (%) | 7.3 [6.8, 8.4] | 7.5 [6.8, 8.6] | 7.2 [6.7, 8.0] |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Time in range (%) | 59.6 [31.9, 78.9] | 58.2 [20.2, 78.6] | 62.1 [40.8, 81.0] |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Time below range (%) | 0.0 [0.0, 1.5] | 0.0 [0.0, 0.8] | 0.2 [0.0, 2.0] |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Time above range (%) | 36.6 [17.6, 68.1] | 41.8 [19.8, 79.5] | 33.1 [14.1, 58.2] |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Coefficient of variation (%) | 27.3 [22.5, 31.9] | 25.3 [21.2, 30.3] | 28.3[24.8, 34.2] |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Mean amplitude of glycemic excursions (mmol/L) | 6.3 [5.0, 7.9] | 6.0 [4.9, 7.7] | 6.7 [5.1, 8.5] |
+
+: Baseline table for CANCAN data and NT-proBNP groups. {#tbl-baseline-cancan tbl-colwidths="[29,17,17,17]"}
+
+Categorical values are given by number (percentage), and numerical values are given by median [interquartile range].
+
+
+
+| Characteristics | Total | White Cohort | Black Cohort |
+|:---|---:|---:|---:|
+| N | 205 | 101 | 104 |
+| Race (White) | 101 (49%) | 101 (100%) | 0 (0%) |
+| Sex (male) | 88 (43%) | 46 (46%) | 42 (40%) |
+| Age group (child, < 18 yrs) | 82 (40%) | 49 (49%) | 33 (32%) |
+| Age (years) | 28 [15, 47] | 22 [13, 46] | 32 [16, 47] |
+| BMI ($\text{kg/m}^2$) | 25.1 [21.7, 29.2] | 24.0 [20.7, 28.6] | 26.7 [22.3, 30.0] |
+| Age at T1D diagnosis | 11 [7, 22] | 9 [6, 16] | 14 [8, 25] |
+| HbA1c (mmol/mol) | 67 [57, 78] | 63 [55, 73] | 72.0 [60, 85] |
+| CGM duration w/o missing data (weeks/participant) | 9.1 [7.2, 10.3] | 9.5 [7.7, 10.7] | 8.6 [6.9, 9.9] |
+| Missing CGM values (weeks/per participant) | 3.3 [1.6, 5.1] | 2.6 [1.3, 4.5] | 4.1 [1.8, 5.6] |
+| CGM-derived metrics | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;– CGM days (n/participant) | 58 [46, 69] | 63 [47, 71] | 56 [45, 66] |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Glucose management indicator (%) | 7.5 [7.0, 8.2] | 7.4 [6.9, 7.9] | 7.7 [7.0, 8.5] |
+| &nbsp;&nbsp;&nbsp;&nbsp;–  Time in range (%/per participant) | 47 [35, 57] | 49 [39, 60] | 42 [31, 54] |
+| &nbsp;&nbsp;&nbsp;&nbsp;–  Time above range (%/per participant) | 45 [30, 56] | 42 [28, 53] | 48 [32, 60] |
+| &nbsp;&nbsp;&nbsp;&nbsp;–  Time below range (%/per participant) | 8 [4, 14] | 6 [4, 10] | 11 [5, 15] |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Coefficient of variation (%) | 43.3 [39.6, 48.6] | 42.2 [38.6, 46.5] | 46.7 [40.4, 51.9] |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Mean amplitude of glycemic excursions (mmol/L) | 9.9 [8.2, 12.1] | 9.6 [8.1, 11.2] | 10.6 [8.5, 13.0] |
+
+: Baseline table for T1DX data and racial groups. {#tbl-baseline-t1dx tbl-colwidths="[29,17,17,17]"}
+
+Categorical values are given by number (percentage), and numerical values are given by median [interquartile range].
+
+## Study II: Results from a Foundation Model Embedding Analysis
 ### Representation learning of CGM data (Study 2)
 
 ### Prediction of NT-proBNP (Study 2)
@@ -22,8 +319,109 @@
 * PRedicting NT-proBNP using only CGM metrics
 * Predicting NT-proBNP using SCORE2-Diabetes inputs and score together with other CGM data -> Supplementary material of paper 2
 
-Copilot transition to next section:
+<!-- Copilot transition to next section: -->
 <!-- * When working datadrively, we can expect to see bias and so this should be evaluated and mitigated if possible. In paper 3, we evaluate bias in a machine learning model for predicting NT-proBNP in the T1DX cohort, and we attempt to mitigate bias by fine-tuning the model on a subset of the data. The results of this analysis are presented in the paper, and we find that fine-tuning the model can reduce bias as measured by fairness metrics. However, it is important to note that bias mitigation is an ongoing process, and further research is needed to develop more effective strategies for addressing bias in machine learning models in healthcare. -->
+
+## Study III: Results from an Algorithmic Fairness Study
 ### Bias in Machine Learning models (Study 3)
 * Baseline characteristics of the T1DX cohort stratified by race status
 * Fairness metrics of the LMEM model before and after fine-tuning
+
+
+
+::: {#fig-prisma}
+[![](figures/4_results_fig/study_3_Fig2.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_3_Fig2.png)
+
+[*Note:* The y-axis starts at 1.9 mmol/L and not 0]{style="font-size: 85%; opacity: 0.85;"}
+
+Estimated root mean squared errors (RMSE) across 11 different proportions of White and Black participants in the dataset.
+:::
+
+
+
+::: {tbl-study3-main-results}
+| Ratio | LOCF | Base-Individual | Base-Generalized | Transfer Learned |
+|:---|:---|:---|:---|:---|
+| **Model performance (RMSE) for White participants** | | | | |
+| 0 | | | 2.04 [1.95, 2.13] | 2.02 [1.94, 2.11] |
+| 10 | | | 2.04 [1.95, 2.13] | 2.02 [1.94, 2.11] |
+| 20 | | | 2.04 [1.95, 2.12] | 2.02 [1.94, 2.10] |
+| 30 | | | 2.03 [1.94, 2.12] | 2.02 [1.94, 2.10] |
+| 40 | 2.45 [2.32, 2.57] | 2.54 [2.38, 2.70] | 2.03 [1.94, 2.12] | 2.02 [1.94, 2.10] |
+| 50 | (independent <br> of ratio) | (independent <br> of ratio) | 2.03 [1.94, 2.11] | 2.02 [1.93, 2.10] |
+| 60 | | | 2.02 [1.94, 2.11] | 2.02 [1.93, 2.10] |
+| 70 | | | 2.02 [1.93, 2.11] | 2.01 [1.93, 2.10] |
+| 80 | | | 2.02 [1.93, 2.11] | 2.01 [1.93, 2.10] |
+| 90 | | | 2.01 [1.92, 2.10] | 2.01 [1.93, 2.10] |
+| 100 | | | 2.01 [1.92, 2.10] | 2.01 [1.92, 2.10] |
+| **Model performance (RMSE) for Black participants** | | | | |
+| 0 | | | 2.05 [1.96, 2.14] | 2.00 [1.91, 2.08] |
+| 10 | | | 2.05 [1.96, 2.14] | 2.00 [1.91, 2.08] |
+| 20 | | | 2.05 [1.96, 2.14] | 2.00 [1.92, 2.08] |
+| 30 | | | 2.05 [1.97, 2.14] | 2.00 [1.92, 2.08] |
+| 40 | 2.41 [2.28, 2.53] | 2.63 [2.47, 2.79] | 2.05 [1.97, 2.14] | 2.00 [1.92, 2.08] |
+| 50 | (independent <br> of ratio) | (independent <br> of ratio) | 2.05 [1.97, 2.14] | 2.00 [1.92, 2.08] |
+| 60 | | | 2.06 [1.97, 2.14] | 2.00 [1.92, 2.08] |
+| 70 | | | 2.06 [1.97, 2.14] | 2.00 [1.92, 2.08] |
+| 80 | | | 2.06 [1.97, 2.14] | 2.00 [1.92, 2.09] |
+| 90 | | | 2.06 [1.97, 2.15] | 2.00 [1.92, 2.09] |
+| 100 | | | 2.06 [1.97, 2.15] | 2.00 [1.92, 2.09] |
+
+Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population's age (40% children) and sex (57% women) distribution. Abbreviations: LOCF = last observation carried forward.
+
+Root mean squared errors with 95% CIs for the different models.
+
+:::
+
+::: {tbl-general-model-coefficients}
+| Predictor | Coefficient | 95% CI | P-value |
+|:---|:---|:---|:---|
+| Intercept | 1.893 | [1.762, 2.024] | <0.001 |
+| **Race** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; White | Reference | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Black | 0.007 | [-0.118, 0.132] | 0.91 |
+| **Age** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Adult | Reference | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Child | 0.482 | [0.355, 0.610] | <0.001 |
+| **Sex** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Male | Reference | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Female | -0.076 | [-0.201, 0.048] | 0.23 |
+| Training size Base-Generalized (per 100,000 samples)* | 0.019 | [-0.055, 0.093] | 0.62 |
+| Ratio (per 10%) | -0.003 | [-0.007, 0.001] | 0.12 |
+| Ratio · Race | 0.004 | [0.001, 0.008] | 0.02 |
+
+\*Training size was centered at 510,000 as the training data had a mean of 514,293 samples.
+
+Model coefficients from linear mixed effects models for root mean squared errors of the Base-Generalized models.
+:::
+
+::: {tbl-transferlearned-coefficients}
+
+| Predictor | Coefficient | 95% CI | P-value |
+|:---|:---|:---|:---|
+| Intercept | 1.890 | [1.768, 2.015] | <0.001 |
+| **Race** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; White | Reference | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Black | -0.028 | [-0.147, 0.092] | 0.65 |
+| **Age** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Adult | Reference | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Child | 0.411 | [0.290, 0.533] | <0.001 |
+| **Sex** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Male | Reference | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Female | -0.057 | [-0.173, 0.060] | 0.34 |
+| Training size Base-Generalized (per 100,000 samples)* | 0.011 | [-0.060, 0.081] | 0.77 |
+| Training size tl (per 1,000 samples)** | -0.111 | [-0.161, -0.061] | <0.001 |
+| Ratio (per 10 units) | -0.001 | [-0.003, 0.001] | 0.46 |
+| Ratio · Race | 0.002 | [-0.001, 0.005] | 0.20 |
+
+---
+
+\*Training size was centered at 510,000 as the training data had a mean of 514,293 samples.  
+\*\*Training size for the transfer learned approach was centered at 4,400 as the training data for fine-tuning had a mean of 4,371 samples.
+
+Model coefficients from linear mixed effects models for root mean squared errors of the Transfer Learned models.
+
+:::
+
+
+
