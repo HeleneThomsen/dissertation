@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Methods and Materials – Machine learning methods for continuous glucose monitoring data and their potential in cardiovascular risk assessment</title>
+<title>3&nbsp; Methods – Machine learning methods for continuous glucose monitoring data and their potential in cardiovascular risk assessment</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -44,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-48abc47ddc2cbc14860ddec9e9fdb395.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3f70bac5631458d474a321d4182f9338.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -72,6 +91,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>
+main.content {
+  text-align: justify;
+}
+</style>
 
 
 </head>
@@ -85,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3-methods.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Methods and Materials</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3-methods.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Methods</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -155,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./3-methods.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Methods and Materials</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Methods</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -233,16 +257,32 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#study-design-overview" id="toc-study-design-overview" class="nav-link active" data-scroll-target="#study-design-overview"><span class="header-section-number">3.1</span> Study Design Overview</a>
+  <li><a href="#overview-of-the-studies" id="toc-overview-of-the-studies" class="nav-link active" data-scroll-target="#overview-of-the-studies"><span class="header-section-number">3.1</span> Overview of the studies</a></li>
+  <li><a href="#study-i-a-scoping-review" id="toc-study-i-a-scoping-review" class="nav-link" data-scroll-target="#study-i-a-scoping-review"><span class="header-section-number">3.2</span> Study I: A scoping review</a>
   <ul class="collapse">
-  <li><a href="#t1dx" id="toc-t1dx" class="nav-link" data-scroll-target="#t1dx"><span class="header-section-number">3.1.1</span> T1DX</a></li>
+  <li><a href="#concepts-and-definitions" id="toc-concepts-and-definitions" class="nav-link" data-scroll-target="#concepts-and-definitions"><span class="header-section-number">3.2.1</span> Concepts and Definitions</a></li>
+  <li><a href="#search-and-selection-of-sources" id="toc-search-and-selection-of-sources" class="nav-link" data-scroll-target="#search-and-selection-of-sources"><span class="header-section-number">3.2.2</span> Search and selection of sources</a></li>
+  <li><a href="#data-charting-process-and-data-items" id="toc-data-charting-process-and-data-items" class="nav-link" data-scroll-target="#data-charting-process-and-data-items"><span class="header-section-number">3.2.3</span> Data Charting Process and Data Items</a></li>
+  <li><a href="#synthesis-of-results" id="toc-synthesis-of-results" class="nav-link" data-scroll-target="#synthesis-of-results"><span class="header-section-number">3.2.4</span> Synthesis of results</a></li>
   </ul></li>
-  <li><a href="#definition-of-predictors-and-outcomes-study-i" id="toc-definition-of-predictors-and-outcomes-study-i" class="nav-link" data-scroll-target="#definition-of-predictors-and-outcomes-study-i"><span class="header-section-number">3.2</span> Definition of Predictors and Outcomes (Study I)<!-- Scoping review --></a></li>
-  <li><a href="#predictive-modeling-and-machine-learning-framework" id="toc-predictive-modeling-and-machine-learning-framework" class="nav-link" data-scroll-target="#predictive-modeling-and-machine-learning-framework"><span class="header-section-number">3.3</span> Predictive Modeling and Machine Learning Framework</a>
+  <li><a href="#study-populations" id="toc-study-populations" class="nav-link" data-scroll-target="#study-populations"><span class="header-section-number">3.3</span> Study Populations</a>
   <ul class="collapse">
-  <li><a href="#learned-representations-of-cgm-data-study-ii" id="toc-learned-representations-of-cgm-data-study-ii" class="nav-link" data-scroll-target="#learned-representations-of-cgm-data-study-ii"><span class="header-section-number">3.3.1</span> Learned representations of CGM data (Study II)</a></li>
+  <li><a href="#cancan" id="toc-cancan" class="nav-link" data-scroll-target="#cancan"><span class="header-section-number">3.3.1</span> CANCAN</a></li>
+  <li><a href="#t1dx" id="toc-t1dx" class="nav-link" data-scroll-target="#t1dx"><span class="header-section-number">3.3.2</span> T1DX</a></li>
   </ul></li>
-  <li><a href="#bias-in-machine-learning-models-study-iii" id="toc-bias-in-machine-learning-models-study-iii" class="nav-link" data-scroll-target="#bias-in-machine-learning-models-study-iii"><span class="header-section-number">3.4</span> Bias in machine learning models (Study III)</a></li>
+  <li><a href="#study-ii-foundation-models-and-predictive-utility-of-cgm-data" id="toc-study-ii-foundation-models-and-predictive-utility-of-cgm-data" class="nav-link" data-scroll-target="#study-ii-foundation-models-and-predictive-utility-of-cgm-data"><span class="header-section-number">3.4</span> Study II: Foundation models and predictive utility of CGM data</a>
+  <ul class="collapse">
+  <li><a href="#preprocessing-of-cgm-data-and-cgm-derived-metrics" id="toc-preprocessing-of-cgm-data-and-cgm-derived-metrics" class="nav-link" data-scroll-target="#preprocessing-of-cgm-data-and-cgm-derived-metrics"><span class="header-section-number">3.4.1</span> Preprocessing of CGM data and CGM-derived metrics</a></li>
+  <li><a href="#foundation-models-and-embeddings" id="toc-foundation-models-and-embeddings" class="nav-link" data-scroll-target="#foundation-models-and-embeddings"><span class="header-section-number">3.4.2</span> Foundation Models and Embeddings</a></li>
+  <li><a href="#predictive-modelling" id="toc-predictive-modelling" class="nav-link" data-scroll-target="#predictive-modelling"><span class="header-section-number">3.4.3</span> Predictive modelling</a></li>
+  </ul></li>
+  <li><a href="#study-iii-algorithmic-fairness-in-blood-glucose-forecasting" id="toc-study-iii-algorithmic-fairness-in-blood-glucose-forecasting" class="nav-link" data-scroll-target="#study-iii-algorithmic-fairness-in-blood-glucose-forecasting"><span class="header-section-number">3.5</span> Study III: Algorithmic Fairness in Blood Glucose Forecasting</a>
+  <ul class="collapse">
+  <li><a href="#preprocessing-of-cgm-data-for-forecasting" id="toc-preprocessing-of-cgm-data-for-forecasting" class="nav-link" data-scroll-target="#preprocessing-of-cgm-data-for-forecasting"><span class="header-section-number">3.5.1</span> Preprocessing of CGM data for forecasting</a></li>
+  <li><a href="#partitioning-of-the-dataset" id="toc-partitioning-of-the-dataset" class="nav-link" data-scroll-target="#partitioning-of-the-dataset"><span class="header-section-number">3.5.2</span> Partitioning of the dataset</a></li>
+  </ul></li>
+  <li><a href="#bias-in-machine-learning-models-study-iii" id="toc-bias-in-machine-learning-models-study-iii" class="nav-link" data-scroll-target="#bias-in-machine-learning-models-study-iii"><span class="header-section-number">3.6</span> Bias in machine learning models (Study III)</a></li>
+  <li><a href="#helenes-notes" id="toc-helenes-notes" class="nav-link" data-scroll-target="#helenes-notes"><span class="header-section-number">4</span> Helenes Notes**</a></li>
   </ul>
 </nav>
     </div>
@@ -251,7 +291,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Methods and Materials</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Methods</span></h1>
 </div>
 
 
@@ -269,71 +309,343 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>In this chapter the three studies included in this PhD will be presented. The data will be described together with the chosen methods of the three studies and the different clinical variables, CGM-derived metrics and relevant cardiovascular outcomes will be explained.</p>
-<section id="study-design-overview" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="study-design-overview"><span class="header-section-number">3.1</span> Study Design Overview</h2>
-<ul>
-<li>Ad table
-<ul>
-<li>Title</li>
-<li>Design</li>
-<li>Study population (Sample size, disease, cohort (CANCAN or T1DX)) ## Study Populations Two datasets were used in this PhD (Study II and study III) which are presented below ### CANCAN The CANCAN data was collected in an observational case-control study from three hospital outpatient clinics in Denmark, Jutland. The aim of the CANCAN Study was to investigate if cardiac autonomic neuropathy (CAN) assessments, CGM and heart failure indicators could be used in risk stratification in people with T2D. Participants were included if they were adults (&lt; 18 years old) and had T2D for at least a year. Exclusion criteria were atrial fibrillation or laser-treated eye disease within the past three months, were pregnant or lactating, had a life-threatening disease (expected survival &lt; 1 year), or had cognitive disabilities rendering them unable to understand and give consent. Data were collected during a clinical examination, during which blood and urine samples were obtained, and a blinded CGM sensor was inserted. Blood samples to obtain NT-proBNP values were collected when the CGM sensors were returned, after the 2-week CGM data collection period had ended (<a href="#fig-cancan-timeline" class="quarto-xref">Figure&nbsp;<span>3.1</span></a>).</li>
-</ul></li>
+<ul class="task-list">
+<li><label><input type="checkbox">What was done (Description)</label></li>
+<li><label><input type="checkbox">Why it was done (Justification)</label></li>
 </ul>
+<section id="overview-of-the-studies" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="overview-of-the-studies"><span class="header-section-number">3.1</span> Overview of the studies</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 29%">
+<col style="width: 33%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Study I</th>
+<th>Study II</th>
+<th>Study III</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Title</td>
+<td>Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People With Diabetes: Systematic Scoping Review</td>
+<td>External evaluation of a foundation model for continuous glucose monitoring data and cardiovascular risk assessment in people with diabetes</td>
+<td>Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes</td>
+</tr>
+<tr class="even">
+<td>Study Type</td>
+<td>Review</td>
+<td>CGM foundation model evaluation study</td>
+<td>Algorithmic fairness study</td>
+</tr>
+<tr class="odd">
+<td>Data Sources</td>
+<td>Literature on Embase and MEDLINE</td>
+<td>The CANCAN study and the T1D Exchange (T1DX) dataset</td>
+<td>T1D Exchange (T1DX) dataset</td>
+</tr>
+<tr class="even">
+<td>Population</td>
+<td>Studies including people with type 1 diabetes, type 2 diabetes and/or prediabetes</td>
+<td>159 people with type 2 diabetes<br>
+205 people with type 1 Diabetes</td>
+<td>205 people with type 1 Diabetes</td>
+</tr>
+<tr class="odd">
+<td>Input, predictors and exposures</td>
+<td>Search strategy and eligibility criteria</td>
+<td>Clinical variables, CGM-derived metrics and continuous CGM data</td>
+<td>Continuous CGM data</td>
+</tr>
+<tr class="even">
+<td>Outcome, target</td>
+<td>All studies that uses CGM data to say something about cardiovascular disease risk and outcomes</td>
+<td>Visualisation of foundation model embeddings and elevated NT-proBNP prediction</td>
+<td>Next blood glucose value</td>
+</tr>
+<tr class="odd">
+<td>Analysis</td>
+<td>Systematic scoping review, study characterization, and narrative synthesis</td>
+<td>Foundation models and logistic regression models</td>
+<td>Long short term memory models (LSTM) and Linear mixed effect models (LMEM)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="study-i-a-scoping-review" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="study-i-a-scoping-review"><span class="header-section-number">3.2</span> Study I: A scoping review</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">Explain why scoping review and not a systematic review</label></li>
+</ul>
+<p>A scoping review was conducted to investigate current knowledge of CGM-data and its possible connection and predictive power to clinical and subclinical cardiovascular outcomes. The scoping review followed the Manual for Evidence Synthesis (Chapter 10 - Scoping reviews) from the Joanna Briggs Institute and reported according to the Preferred Reporting Items for Systematic Reviews and Meta-analyses extension for scoping review (PRISMA-ScR) guidelines.<span class="citation" data-cites="Tricco2018 Peters2024"><sup><a href="references.html#ref-Tricco2018" role="doc-biblioref">1</a>,<a href="references.html#ref-Peters2024" role="doc-biblioref">2</a></sup></span></p>
+<section id="concepts-and-definitions" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="concepts-and-definitions"><span class="header-section-number">3.2.1</span> Concepts and Definitions</h3>
+<p>The review focused solely on CGM-data for the input to any association or prediction models in the literature. This meant that studies only investigating self-monitored blood glucose with finger-prick measurements or blood sample measurements such as HbA1c were not considered in this review. CVD outcomes were divided into subclinical or clinical For the clinical CVD, the following outcomes were considered: cardiovascular mortality, major adverse cardiovascular events, coronary artery disease, heart failure, stroke, and peripheral artery disease with synonymous terms included (e.g., ischemic heart diseases) and also clinical events (e.g., undergoing coronary artery bypass surgery). Subclinical CVD was grouped into six subcategories: arterial stiffness, flow resistance, arterial wall thickness, arterial wall composition, cardiac and pulse-related measures, and arterial lumen. CVD outcomes did not include broader risk factors nonspecific to cardiovascular risk (e.g., age or sex). Eligibility criterias for the scoping review<span class="citation" data-cites="Thomsen2026"><sup><a href="references.html#ref-Thomsen2026" role="doc-biblioref">3</a></sup></span> (Study I) can be found in <a href="#tbl-study1-eligibility-criteria" class="quarto-xref">Table&nbsp;<span>3.1</span></a>.</p>
+<div id="tbl-study1-eligibility-criteria" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-study1-eligibility-criteria-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.1: Eligibility criteria for the scoping review (Study I)
+</figcaption>
+<div aria-describedby="tbl-study1-eligibility-criteria-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Inclusion Criteria</th>
+<th style="text-align: left;">Exclusion Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><p>Human clinical studies including participants with prediabetes or any type of diabetes except for gestational diabetes, regardless of definitions</p>
+<p>Peer-reviewed published original articles (including brief reports).</p>
+<p>Studies investigating either:<br>
+&nbsp;&nbsp;a) The association between CGM-derived metrics of glycemic control and cardiovascular risk markers or cardiovascular diseases (prevalent or incident).<br>
+&nbsp;&nbsp;b) CGM-derived metrics of glycemic control as predictors of cardiovascular risk markers or cardiovascular diseases (prevalent or incident).</p></td>
+<td style="text-align: left;"><p>Review articles, editorials, case reports, protocols, conference abstracts, and preprints.</p>
+<p>Animal studies not including any human participants.</p>
+<p>Studies not including metrics derived from continuous glucose monitoring device data.</p>
+<p>Studies including CGM-derived metrics as outcomes.</p>
+<p>Studies not focusing on CVD outcomes according to our definition, as outlined in the “Concepts and Definitions” section.</p>
+<p>Studies focusing on pregnant women with any form of diabetes including gestational diabetes.</p>
+<p>Studies where participants were monitored post-surgery or during hospitalization (e.g.&nbsp;Intensive care unit).</p>
+<p>Language not understood by authors</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="search-and-selection-of-sources" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="search-and-selection-of-sources"><span class="header-section-number">3.2.2</span> Search and selection of sources</h3>
+<p>The databases Embase and Medline were searched from inception to March 11, 2025. The seach strategy was tested against 13 articles in the field, found through an initial exploratory search.<span class="citation" data-cites="Foreman2021 Yapanis2022 Helleputte2022 Lu2021 Martinez2021 Mita2023 Lu2020 Mo2013 Wakasugi2021 Magri2018 Su2011 Tang2016 Zhang2013"><sup><a href="references.html#ref-Foreman2021" role="doc-biblioref">4</a>–<a href="references.html#ref-Zhang2013" role="doc-biblioref">16</a></sup></span></p>
+<p>All identified records were uploaded into EPPI reviewer 6<span class="citation" data-cites="Thomas2023"><sup><a href="references.html#ref-Thomas2023" role="doc-biblioref">17</a></sup></span> and duplicates were removed. Titles and abstracts were screened by at least two independent reviewers and a meeting was held after ~5% of the titles and abstracts had been screened, to resolve disagreements and ensure consistency between reviewers. Afterwards full-text screening was performed by two independent reviewers and held up against eligibility criteria. Disagreements were resolved through discussion at physical meetings between reviewers.</p>
+<p>Backward and forward citation searching was performed on all the included studies after the screening process using citationchaser<span class="citation" data-cites="Haddaway2022"><sup><a href="references.html#ref-Haddaway2022" role="doc-biblioref">18</a></sup></span> and the screen process was repeated until no further new studies were identified through the citationchaser.</p>
+</section>
+<section id="data-charting-process-and-data-items" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="data-charting-process-and-data-items"><span class="header-section-number">3.2.3</span> Data Charting Process and Data Items</h3>
+<p>Research questions were defined before the screening process and data was extracted based on these research questions (<a href="#nte-study1-research-q" class="quarto-xref">Note&nbsp;<span>3.1</span></a> ) and following the requirements from the PRISMA-ScR checklist.<span class="citation" data-cites="Tricco2018"><sup><a href="references.html#ref-Tricco2018" role="doc-biblioref">1</a></sup></span></p>
+<div id="nte-study1-research-q" class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note&nbsp;3.1: Research Questions (Study 1)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Is there an association between glycemic control and CVD risk?</li>
+<li>Can CGM-derived metrics predict CVD risk?</li>
+<li>What CGM-derived metrics are used in the literature?</li>
+<li>Which cardiovascular markers and diseases are included as outcomes in the studies?</li>
+<li>What characterizes study populations (age, sex, ethnicity, geographic location)?</li>
+<li>What study designs are used (e.g., longitudinal cohort studies, randomized controlled trials, cross-sectional studies)?</li>
+<li>How was data collected (e.g., clinical trial, epidemiological study, routinely collected data)?</li>
+<li>What CGM devices were used?</li>
+<li>What statistical models were used in the studies?</li>
+<li>Is the data openly available?</li>
+<li>Is the code openly available?</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="synthesis-of-results" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="synthesis-of-results"><span class="header-section-number">3.2.4</span> Synthesis of results</h3>
+<p>Study characteristics were synthesized using descriptive statistics and supplemented by a narrative summary. Only the most adjusted models in the main population for each study was considered in this review. This approach was necessary as several studies reported numerous estimates across varying adjustments, different combinations of CGM-derived metrics and CVD outcomes, and/or distinct subgroup stratifications. Given the large volume of literature, studies investigating clinical cardiovascular outcomes were prioritized in the main synthesis. While subclinical markers offer valuable insight into early vascular changes and disease progression, clinical outcomes are more directly relevant to cardiovascular risk prediction and clinical decision-making. The main synthesis of clinical outcomes included both effect estimates and measures of statistical significance whereas the supplementary synthesis on subclinical CVD focused primarily on creating an overview of the chosen CGM-derived metrics and the statistical significance of reported associations. All evaluation metrics mentioned in the studies doing prediction analyses were reported based on what the studies reported.</p>
+</section>
+</section>
+<section id="study-populations" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="study-populations"><span class="header-section-number">3.3</span> Study Populations</h2>
+<p>Two datasets were used in this PhD (Study II and study III) which are presented in the following sections</p>
+<section id="cancan" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="cancan"><span class="header-section-number">3.3.1</span> CANCAN</h3>
+<p>The CANCAN dataset was collected in an observational case-control study from three hospital outpatient clinics (Denmark). The aim of the CANCAN Study was to investigate if cardiac autonomic neuropathy (CAN) assessments, CGM and heart failure indicators could be used in risk stratification in people with T2D. Participants were included if they were adults (&lt; 18 years old) and had T2D for at least a year. Exclusion criteria were atrial fibrillation or laser-treated eye disease within the past three months, were pregnant or lactating, had a life-threatening disease (expected survival &lt; 1 year), or had cognitive disabilities rendering them unable to understand and give consent. Data were collected during a clinical examination, during which blood and urine samples were obtained, and a blinded CGM sensor was inserted. Blood samples to obtain NT-proBNP values were collected when the CGM sensors were returned, after the 2-week CGM data collection period had ended (<a href="#fig-cancan-timeline" class="quarto-xref">Figure&nbsp;<span>3.1</span></a>). In total, 159 participants were incluceded since the rest were missing age, sex, HbA1c, BMI, NT-proBNP, HDL, total cholesterol, or eGFR and these values were needed for the analyses in Study II.</p>
 <div id="fig-cancan-timeline" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-cancan-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://HeleneThomsen.github.io/dissertation/figures/3_methods_fig/cancan_timeline.png"><img src="figures/3_methods_fig/cancan_timeline.png" class="img-fluid figure-img"></a></p>
-<figcaption>Data collection timeline for the CANCAN Study</figcaption>
-</figure>
+<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/figures/3_methods_fig/cancan_timeline.png"><img src="figures/3_methods_fig/cancan_timeline.png" class="img-fluid figure-img"></a></p>
 </div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-cancan-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.1
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cancan-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Data collection timeline for the CANCAN Study
 </figcaption>
 </figure>
 </div>
-<section id="t1dx" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="t1dx"><span class="header-section-number">3.1.1</span> T1DX</h3>
-<p>The T1DX racial differences dataset was collected by the T1D Exchange, a nonprofit organization, from diabetes centers in the United States (JAEB). The study focused on determining whether a racial difference exists in mean blood glucose and HbA1c levels between non-Hispanic Black and non-Hispanic White people with T1D. The study defined race and ethnicity through self-identified and self-reported ethnicity/race verification forms (Bergenstahl 2017). Further information on the definition of Hispanic, non-Hispanic, Black and White can be found in Bergenstahl et al.(Bergenstahl 2017). We, the authors, acknowledge that race and ethnicity are complex and not easily defined constructs, however we will use the word race moving forward since it aligns with the protocol and studies on the collection and analysis of the T1DX dataset (Kaneshiro2011, JAEB, Bergenstahl et al., 2017). Participants were grouped by age within each race. Between 8 and 17 years old and from 18 years and older. A blinded modified investigational version of Abbott Laboratories Diabetes Care’s Flash Glucose Monitoring System (CGM) was used for 12 weeks. The study was conducted in accordance with the principles of the Declaration of Helsinki and approved by the relevant institutional review boards. All participants provided written informed consent, with assent obtained where applicable (Bergenstahl 2017).</p>
-<!-- Ethical Approval and Informed Consent. -->
+</section>
+<section id="t1dx" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="t1dx"><span class="header-section-number">3.3.2</span> T1DX</h3>
+<p>The publicly available T1D Exchange (T1DX) dataset, distributed by the JAEB Center for Health Research under the protocol “Racial Differences in Mean CGM Glucose in Relation to HbA1c, was collected in 10 diabetes centers (US).<span class="citation" data-cites="JAEB_2016"><sup><a href="references.html#ref-JAEB_2016" role="doc-biblioref">19</a></sup></span> The data was collected to determine if there is a racial difference in the association between mean glucose and glycated hemoglobin (HbA1c) between non-Hispanic African Americans or black (Black) and non-Hispanic white (White) people with T1D. In the T1DX study ethnicity and race was defined through self-identified and self-reported ethnicity/race verification forms where ethnicity was defined as Hispanic or Latino as: <em>“a person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. The term “Spanish origin” could be used in addition to “Hispanic” or “Latino”“</em>.<span class="citation" data-cites="Bergenstal2017"><sup><a href="references.html#ref-Bergenstal2017" role="doc-biblioref">20</a></sup></span> For race a participant defined as White was <em>“a person having origins in any of the original peoples of Europe, the Middle East or North Africa.” and Black or African American as “a person having origins in any of the Black racial groups of Africa. Terms such as “Haitian” or “Negro” can be used in addition to “Black” or “African American””</em>.<span class="citation" data-cites="Bergenstal2017"><sup><a href="references.html#ref-Bergenstal2017" role="doc-biblioref">20</a></sup></span> In this thesis, the term race will be used moving forward, as it aligns with the terminology used by Bergenstal et al.<span class="citation" data-cites="Bergenstal2017"><sup><a href="references.html#ref-Bergenstal2017" role="doc-biblioref">20</a></sup></span>, it is, however, acknowledge that it is inherently difficult to define race.<span class="citation" data-cites="Kaneshiro2011"><sup><a href="references.html#ref-Kaneshiro2011" role="doc-biblioref">21</a></sup></span> The T1DX study adhered to the tenets of the Declaration of Helsinki and was approved by the local institutional review boards and 205 people completed the study by providing written informed consent and assent when applicable.<span class="citation" data-cites="Bergenstal2017"><sup><a href="references.html#ref-Bergenstal2017" role="doc-biblioref">20</a></sup></span> All 205 participants were included in further analyses. Of the 205 participants, 101 were White and 104 were Black. For each race, two age groups were sampled 8 to &lt;18 years old and &gt;18. Each participant wore a blinded modified investigational version of Abbott Diabetes Care’s Flash Glucose Monitoring System (CGM) as continuously as possible for 12 weeks. CGM data was sampled every 15 minutes in a range between 2.21 - 27.65 mmol/L (40 and 498 mg/dL). Blood samples were taken for measurement at enrollment, at some of the follow-up visits, and at the end of enrollment. <!-- Furthermore, a log was kept for 7 days recording mealtimes, insulin dosing, and exercise. Some participants were asked to wear an accelerometer during the 7-day log time. --></p>
+<!-- ****************************************************************************************** -->
 </section>
 </section>
-<section id="definition-of-predictors-and-outcomes-study-i" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="definition-of-predictors-and-outcomes-study-i"><span class="header-section-number">3.2</span> Definition of Predictors and Outcomes (Study I)<!-- Scoping review --></h2>
-<ul>
-<li>Focus on the methods from the literature review (inclusion and exclusion criteria)</li>
-<li>Definition of cardiovascular risk (e.g., composite outcome, specific events)</li>
-<li>Definition of predictors &lt;- What is CGM? MAGE from CGM or 7-point fingerpricks</li>
-<li>Present CGM-derived metrics
-<ul>
-<li>CGM preprocessing</li>
-</ul></li>
-<li>NT-proBNP as a biomarker of cardiovascular risk</li>
+<section id="study-ii-foundation-models-and-predictive-utility-of-cgm-data" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="study-ii-foundation-models-and-predictive-utility-of-cgm-data"><span class="header-section-number">3.4</span> Study II: Foundation models and predictive utility of CGM data</h2>
+<p>The second study was focused on investigating the knowledge and predictive utility of CGM data, both extracting a novel CGM-derived metric and the classical known ones found in study I.<span class="citation" data-cites="Thomsen2026"><sup><a href="references.html#ref-Thomsen2026" role="doc-biblioref">3</a></sup></span></p>
+<section id="preprocessing-of-cgm-data-and-cgm-derived-metrics" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="preprocessing-of-cgm-data-and-cgm-derived-metrics"><span class="header-section-number">3.4.1</span> Preprocessing of CGM data and CGM-derived metrics</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">days with less then 70 % of data were removed</label></li>
+<li><label><input type="checkbox">Add table with CGM derived metrics</label></li>
+<li><label><input type="checkbox">Add CGMformer input information</label></li>
 </ul>
 </section>
-<section id="predictive-modeling-and-machine-learning-framework" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="predictive-modeling-and-machine-learning-framework"><span class="header-section-number">3.3</span> Predictive Modeling and Machine Learning Framework</h2>
-<section id="learned-representations-of-cgm-data-study-ii" class="level3" data-number="3.3.1">
-<h3 data-number="3.3.1" class="anchored" data-anchor-id="learned-representations-of-cgm-data-study-ii"><span class="header-section-number">3.3.1</span> Learned representations of CGM data (Study II)</h3>
-<ul>
-<li>CGM as a predictor of cardiovascular risk</li>
-<li>Foundation models</li>
-<li>Logistic regression</li>
-<li>Ridge regression</li>
+<section id="foundation-models-and-embeddings" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="foundation-models-and-embeddings"><span class="header-section-number">3.4.2</span> Foundation Models and Embeddings</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">What is a foundation model</label></li>
+<li><label><input type="checkbox">What is an embedding</label></li>
+<li><label><input type="checkbox">What is cosine similarity and what is cosine distances</label></li>
+<li><label><input type="checkbox">How are the cosine distances used?</label></li>
 </ul>
 </section>
+<section id="predictive-modelling" class="level3" data-number="3.4.3">
+<h3 data-number="3.4.3" class="anchored" data-anchor-id="predictive-modelling"><span class="header-section-number">3.4.3</span> Predictive modelling</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">What is NT-proBNP (scale, unit and connection with heart failure)</label></li>
+<li><label><input type="checkbox">What is logistic regression and what is regularization techniques and why are they used? (Ridge regression)</label></li>
+</ul>
+<div id="fig-study2_resample_theory" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-study2_resample_theory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/figures/3_methods_fig/study2_3_resampling.png"><img src="figures/3_methods_fig/study2_3_resampling.png" class="img-fluid figure-img"></a></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-study2_resample_theory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: Resampling with and without replacement
+</figcaption>
+</figure>
+</div>
+<!-- ****************************************************************************************** -->
 </section>
-<section id="bias-in-machine-learning-models-study-iii" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="bias-in-machine-learning-models-study-iii"><span class="header-section-number">3.4</span> Bias in machine learning models (Study III)</h2>
-<ul>
-<li>Fairness metrics</li>
-<li>Mitigation strategies -&gt; Fine-tuning LSTM</li>
-<li>Evaluate bias when output is not binary (e.g., LMEM models)</li>
+</section>
+<section id="study-iii-algorithmic-fairness-in-blood-glucose-forecasting" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="study-iii-algorithmic-fairness-in-blood-glucose-forecasting"><span class="header-section-number">3.5</span> Study III: Algorithmic Fairness in Blood Glucose Forecasting</h2>
+<p>The third study was investigating racial bias in a data driven machine learning model only based on blood glucose measurements from a CGM-sensor as this is an important consideration in the path to get ML models into use</p>
+<section id="preprocessing-of-cgm-data-for-forecasting" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="preprocessing-of-cgm-data-for-forecasting"><span class="header-section-number">3.5.1</span> Preprocessing of CGM data for forecasting</h3>
+<p>All data was sorted into 60 minutes windows with 4 values to predict 60-minutes into the future as visualized in <a href="#fig-study3_pred_horizon" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>. There are no clear answers in the literature about which prediction horizon is the best to choose, however CGM devices measure in the interstitial fluid and there is a physiological delay between the measured blood glucose and the interstitial glucose levels.<span class="citation" data-cites="source"><sup><a href="references.html#ref-source" role="doc-biblioref"><strong>source?</strong></a></sup></span> Of the European approved CGM devices it is only the Dexcom that shows trends to the users and since CGM devices mainly focuses on monitoring, the forecasting question is only really interesting when administering insulin in order to catch hypo- and hyperglycemic events ahead of time.<span class="citation" data-cites="source"><sup><a href="references.html#ref-source" role="doc-biblioref"><strong>source?</strong></a></sup></span> It is very difficult to figure out how the prediction algorithms in insulin pumps are made and so far I have had very little luck in figuring it out. It is assumed that the companies use linear regression and the last 20 minutes of data to predict the next values which is usually the last four samples since the resolution of the used CGM devices usually are between 1 to 5 minutes.<span class="citation" data-cites="source"><sup><a href="references.html#ref-source" role="doc-biblioref"><strong>source?</strong></a></sup></span> With a CGM measurement every 15 minutes and the physiological delay in mind, the 60 minutes were decided to be a good prediction horizon. All samples with missing values were removed.</p>
+<div id="fig-study3_pred_horizon" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-study3_pred_horizon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/figures/3_methods_fig/study3_pred_horizon.png"><img src="figures/3_methods_fig/study3_pred_horizon.png" class="img-fluid figure-img"></a></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-study3_pred_horizon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: The prediction horizon and overview of the creation of samples (predictors and targets).
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="partitioning-of-the-dataset" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="partitioning-of-the-dataset"><span class="header-section-number">3.5.2</span> Partitioning of the dataset</h3>
+<p>The T1DX dataset was resampled without replacement on the participant level to avoid data leakage and to be able to test performance on an individual level. The resamplling without replacement is the other method mentioned above in <a href="#fig-study2_resample_theory" class="quarto-xref">Figure&nbsp;<span>3.2</span></a>. It is a form of bootstrapping where a new dataset (subset) is created based on the original dataset by randomly picking samples from the original dataset to create a new subset. Data from each participant was tested on different subsets of data containing varies ratios of Black and White proportions as illustrated in <a href="#fig-study3_partitioning" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>. By creating 11 different variations (0–100%, 10–90%,…, 100-0%), it meant that 11 subsets were created for each of the participants in the original T1DX dataset. Since some subsets where created with only one race present, it meant that all the subset could only be about half the size of the original T1DX dataset when it came to number of participants. This resulted in 2,255 training datasets (205 individuals times 11 training sets with varying proportions of race) and 205 independent test sets. The subsets were used to train ML models and data leakage was avoided by keeping the train-test-splits at the participant level. The last week’s worht of CGM data was used for testing which allowed the rest of the data to be used for finetuning. Finetuning is when an already trained ML model is further trained on more data to a more specific goal. Here the goal is to personalize glucose predictions.</p>
+<div id="fig-study3_partitioning" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-study3_partitioning-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/figures/3_methods_fig/study3_partitioning.png"><img src="figures/3_methods_fig/study3_partitioning.png" class="img-fluid figure-img"></a></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-study3_partitioning-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: The prediction horizon and overview of the creation of samples (predictors and targets).
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="bias-in-machine-learning-models-study-iii" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="bias-in-machine-learning-models-study-iii"><span class="header-section-number">3.6</span> Bias in machine learning models (Study III)</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">Fairness metrics</label></li>
+<li><label><input type="checkbox">Mitigation strategies -&gt; Fine-tuning LSTM</label></li>
+<li><label><input type="checkbox">Regression analysis and coefficients?</label></li>
+<li><label><input type="checkbox">Evaluate bias when output is not binary (e.g., LMEM models)</label></li>
+<li><label><input type="checkbox">CGM specific error grids</label></li>
+<li><label><input type="checkbox">In the discussion I could mention LSTM vs CNN vs MLP and talk about the difference in model doesn’t make that big of a difference.</label></li>
+</ul>
+</section>
+<section id="helenes-notes" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Helenes Notes**</h1>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">Study I</label></li>
+<li><label><input type="checkbox">Study II</label></li>
+<li><label><input type="checkbox">Study II</label></li>
+<li><label><input type="checkbox">Present CGM-derived metrics</label></li>
+<li><label><input type="checkbox">NT-proBNP as a biomarker of cardiovascular risk</label></li>
 </ul>
 
 
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-Tricco2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Tricco AC, Lillie E, Zarin W, et al. PRISMA extension for scoping reviews (PRISMA-ScR): Checklist and explanation. Annals of internal medicine 2018;169(7):467–7. </div>
+</div>
+<div id="ref-Peters2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Peters MDJ, Godfrey C, McInerney P, Munn Z, Tricco AC, Khalil H. Chapter 10: Scoping reviews [Internet]. In: Aromataris E, Lockwood C, Porritt K, Pilla B, Jordan Z, editors. JBI manual for evidence synthesis. JBI; 2024. Available from: <a href="https://jbi-global-wiki.refined.site/space/MANUAL/355862497/10.+Scoping+reviews">https://jbi-global-wiki.refined.site/space/MANUAL/355862497/10.+Scoping+reviews</a></div>
+</div>
+<div id="ref-Thomsen2026" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Thomsen HB, Lebiecka-Johansen B, Nørgaard O, et al. Continuous glucose monitoring–derived metrics and cardiovascular risk among people with diabetes: Systematic scoping review. JMIR Diabetes [Internet] 2026;11:e89374. Available from: <a href="https://doi.org/10.2196/89374">https://doi.org/10.2196/89374</a></div>
+</div>
+<div id="ref-Foreman2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Foreman YD, Doorn WPTM van, Schaper NC, et al. Greater daily glucose variability and lower time in range assessed with continuous glucose monitoring are associated with greater aortic stiffness: The maastricht study. Diabetologia 2021;64(8):1880–92. </div>
+</div>
+<div id="ref-Yapanis2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Yapanis M, James S, Craig ME, O’Neal D, Ekinci EI. Complications of diabetes and metrics of glycemic management derived from continuous glucose monitoring. The journal of clinical endocrinology and metabolism 2022;107(6):e2221–36. </div>
+</div>
+<div id="ref-Helleputte2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Helleputte S, Calders P, Rodenbach A, et al. Time-varying parameters of glycemic control and glycation in relation to arterial stiffness in patients with type 1 diabetes. Cardiovascular diabetology 2022;21(1):277–10. </div>
+</div>
+<div id="ref-Lu2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Lu J, Wang C, Shen Y, et al. Time in range in relation to all-cause and cardiovascular mortality in patients with type 2 diabetes: A prospective cohort study. Diabetes care 2021;44(2):549–55. </div>
+</div>
+<div id="ref-Martinez2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Martinez M, Santamarina J, Pavesi A, Musso C, Umpierrez GE. Glycemic variability and cardiovascular disease in patients with type 2 diabetes. BMJ open diabetes research &amp; care 2021;9(1):e002032–. </div>
+</div>
+<div id="ref-Mita2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Mita T, Katakami N, Okada Y, et al. Continuous glucose monitoring-derived time in range and CV are associated with altered tissue characteristics of the carotid artery wall in people with type 2 diabetes. Diabetologia 2023;66(12):2356–67. </div>
+</div>
+<div id="ref-Lu2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Lu J, Ma X, Shen Y, et al. Time in range is associated with carotid intima-media thickness in type 2 diabetes. Diabetes technology &amp; therapeutics 2020;22(2):72–8. </div>
+</div>
+<div id="ref-Mo2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Mo Y, Zhou J, Li M, et al. Glycemic variability is associated with subclinical atherosclerosis in chinese type 2 diabetic patients. Cardiovascular diabetology 2013;12(1):15–5. </div>
+</div>
+<div id="ref-Wakasugi2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Wakasugi S, Mita T, Katakami N, et al. Associations between continuous glucose monitoring-derived metrics and arterial stiffness in japanese patients with type 2 diabetes. Cardiovascular diabetology 2021;20(1):15–2. </div>
+</div>
+<div id="ref-Magri2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Magri CJ, Mintoff D, Camilleri L, Xuereb RG, Galea J, Fava S. Relationship of hyperglycaemia, hypoglycaemia, and glucose variability to atherosclerotic disease in type 2 diabetes. Journal of Diabetes Research [Internet] 2018;2018(1):7464320. Available from: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1155/2018/7464320">https://onlinelibrary.wiley.com/doi/abs/10.1155/2018/7464320</a></div>
+</div>
+<div id="ref-Su2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">Su G, Mi S, Tao H, et al. Association of glycemic variability and the presence and severity of coronary artery disease in patients with type 2 diabetes. Cardiovascular diabetology 2011;10(1):19–9. </div>
+</div>
+<div id="ref-Tang2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">Tang X, Li S, Wang Y, et al. Glycemic variability evaluated by continuous glucose monitoring system is associated with the 10-y cardiovascular risk of diabetic patients with well-controlled HbA1c. Clinica chimica acta 2016;461:146–50. </div>
+</div>
+<div id="ref-Zhang2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">Zhang X, Xu X, Jiao X, et al. The effects of glucose fluctuation on the severity of coronary artery disease in type 2 diabetes mellitus. Journal of diabetes research 2013;2013(2013):1–6. </div>
+</div>
+<div id="ref-Thomas2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline">Thomas J, Graziosi S, Brunton J, et al. <span>EPPI-Reviewer</span>: Advanced software for systematic reviews, maps and evidence synthesis [Internet]. University College London; EPPI Centre, UCL Social Research Institute; 2023. Available from: <a href="https://eppi.ioe.ac.uk/cms/er4/">https://eppi.ioe.ac.uk/cms/er4/</a></div>
+</div>
+<div id="ref-Haddaway2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline">Haddaway NR, Grainger M, Gray CT. Citationchaser: A tool for transparent and efficient forward and backward citation chasing in systematic searching. Research synthesis methods 2022;13(4):533–45. </div>
+</div>
+<div id="ref-JAEB_2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline">Jaeb Center for Health Research. Jaeb center for health research: Datasets &amp; documents [Internet]. 2016 [cited 2024 Feb 20];Available from: <a href="https://public.jaeb.org/datasets/diabetes">https://public.jaeb.org/datasets/diabetes</a></div>
+</div>
+<div id="ref-Bergenstal2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline">Bergenstal RM, Gal RL, Connor CG, et al. Racial differences in the relationship of glucose concentrations and hemoglobin A1c levels. Annals of Internal Medicine 2017;167(2):95–102. </div>
+</div>
+<div id="ref-Kaneshiro2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline">Kaneshiro B, Geling O, Gellert K, Millar L. The challenges of collecting data on race and ethnicity in a diverse, multiethnic state. Hawaii medical journal (1962) 2011;70(8):168–71. </div>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
