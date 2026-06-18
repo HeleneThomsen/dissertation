@@ -61,97 +61,162 @@ format:
     default-image-extension: png
     classoption:
      - headsepline=true
+     - footsepline=true
      - open=any
+    #  - chapterprefix=true
     keep-tex: true
     toc-depth: 2
     toc: false
     papersize: a4
+    geometry:
+      - top=20mm         # Margins from top edge of paper to the main text body
+      - bottom=20mm      # Margins from bottom edge of paper to the main text body
+      - inner=30mm
+      - outer=20mm
+      - headheight=15pt  # Fixes LaTeX warnings about header size allocation
+      - headsep=7mm      # The gap between your running header line and your text
+      - footskip=10mm    # The gap between your main text and your page numbers
     header-includes: |
-     \usepackage{xcolor}
-     \usepackage{float}
-     \floatplacement{figure}{H}
-     \raggedbottom
-     \usepackage[automark]{scrlayer-scrpage}
-     \clearpairofpagestyles
-     
-     \lofoot*{\vspace{20mm} \\ \pagemark}
-     \refoot*{\vspace{20mm} \\ \pagemark}
-     
-     \chead{\headmark}
-     \addtokomafont{pagehead}{\bfseries\upshape\color{white}}
-     \addtokomafont{pagenumber}{\bfseries\color{blue!40!black}}
-     % shift the predefined head layers
-     \ForEachLayerOfPageStyle*{scrheadings}{%
-     \ifstrstart{#1}{scrheadings.head.}
-     {\ModifyLayer[addvoffset=-.5in-.5\voffset-.5\topmargin]{#1}}
-     {}%
-     }
-     \ForEachLayerOfPageStyle*{plain.scrheadings}{%
-     \ifstrstart{#1}{plain.scrheadings.head.}
-     {\ModifyLayer[addvoffset=-.5in-.5\voffset-.5\topmargin]{#1}}
-     {}%
-     }
-     % Defining the Layer
-     \DeclareLayer[
-     background,
-     topmargin,
-     addheight=\headheight,
-     contents={%
-        \color{blue!40!black}%
-        \rule{\layerwidth}{\layerheight}%
-     }%
-     ]{my.head.background}
-     %Adding the Layer to the pagestyles
-     \AddLayersAtBeginOfPageStyle{scrheadings}{my.head.background}
-     \AddLayersAtBeginOfPageStyle{plain.scrheadings}{my.head.background}
-
-    
-
       \usepackage{xcolor}
       \usepackage{float}
       \floatplacement{figure}{H}
       \raggedbottom
-      \usepackage[automark]{scrlayer-scrpage}
-      \clearpairofpagestyles
 
-      \lofoot*{\vspace{20mm} \\ \pagemark}
-      \refoot*{\vspace{20mm} \\ \pagemark}
+      \usepackage{graphicx}     % Required for resizing/scaling the number
 
-      \chead{\headmark}
-      \addtokomafont{pagehead}{\bfseries\upshape\color{black}}
-      \addtokomafont{pagenumber}{\bfseries\color{black}}
-
-
+      % Define the grey color for the big number to match "numbercolor" from Overleaf
+      \definecolor{numbercolor}{gray}{0.7} 
+      
+      % --- TRANSLATED "JENOR" CHAPTER STYLE FOR KOMA-SCRIPT ---
+      % Right-align everything by default
+      \let\raggedchapter\raggedleft
+      
+      % Simplify the number output down to just the raw digits
+      \renewcommand*{\chapterformat}{\thechapter}
+      
+      % Re-engineer the format: Dynamically flip layout with consistent bold weights
+      \renewcommand*{\chapterlinesformat}[3]{%
+        \ifstr{#1}{chapter}{%
+          \normalfont\sffamily\color{black}%
+          % If there is no number (like Preface/References), print title right/left aligned
+          \ifstr{#2}{}{%
+            \ifthispageodd{%
+              \noindent\makebox[\linewidth][r]{\fontsize{25}{35}\selectfont\bfseries #3}%
+            }{%
+              \noindent\makebox[\linewidth][l]{\fontsize{25}{35}\selectfont\bfseries #3}%
+            }%
+          }{%
+            % Check if page is Odd or Even
+            \ifthispageodd{%
+              % ODD PAGE (Right side): Bold title text, Bold giant number
+              \noindent\makebox[\linewidth][r]{%
+                \fontsize{25}{35}\selectfont\bfseries #3%
+                \hspace{0.5em}%
+                \raisebox{-6pt}{\fontsize{60}{0}\selectfont\bfseries\color{black!30} #2}% <- Enforced Bold
+              }%
+            }{%
+              % EVEN PAGE (Left side): Bold giant number, Bold title text
+              \noindent\makebox[\linewidth][l]{%
+                \raisebox{-6pt}{\fontsize{60}{0}\selectfont\bfseries\color{black!30} #2}% <- Enforced Bold
+                \hspace{0.5em}%
+                \fontsize{25}{35}\selectfont\bfseries #3%
+              }%
+            }%
+          }%
+        }{%
+          % Leave normal sections (2.1, 2.2) alone
+          #2#3%
+        }%
+      }
+        
+      % Draw the elegant line cleanly beneath the layout grid
+      \renewcommand*{\chapterheadendvskip}{%
+        \vspace{1.5ex}%
+        \noindent\color{black}\rule{\linewidth}{0.6pt}\par
+        \vspace{4ex}%
+        \noindent\ignorespaces
+      }
+      % -------------------------------------------------------------------------
+      
+      
+      
       \usepackage{tocbibind}
       \usepackage{titling}
       \setlength{\droptitle}{-2cm}
       \preauthor{
-        \begin{center}
-        \large
-        \lineskip 0.5em%
-        PhD dissertation\\
-        \vspace{25mm}
+          \begin{center}
+          \large
+          \lineskip 0.5em%
+          PhD dissertation\\
+          \vspace{25mm}
       }
       \postauthor{
-        \end{center}
+          \end{center}
       }
       \predate{
-        \begin{center}
-        \vspace*{\fill}
-        Health\\        % Degree stream
-        Aarhus University\\                       % University
+          \begin{center}
+          \vspace*{\fill}
+          Health\\
+          Aarhus University\\
       }
       \postdate{
-        \\
-        \resizebox{.9\textwidth}{!}{%
-        \includegraphics[width=7in]{figures/au_health.png}%
-        \quad
-        \includegraphics[width=1in]{figures/qr_code.png}%
-        }
-        \end{center}
-        
-        
-       }
+          \\
+          \resizebox{.9\textwidth}{!}{%
+          \includegraphics[width=7in]{figures/au_health.png}%
+          \quad
+          \includegraphics[width=1in]{figures/qr_code.png}%
+          }
+          \end{center}
+      }
+      % --- FIX RUNNING HEADERS FROM CURSIVE TO NORMAL ---
+      \setkomafont{pagehead}{\normalfont\sffamily}
+      \setkomafont{pagenumber}{\normalfont\sffamily}
+
+    # \usepackage{xcolor}
+    # \usepackage{float}
+    # \floatplacement{figure}{H}
+    # \raggedbottom
+    # \usepackage[automark]{scrlayer-scrpage}
+    # \clearpairofpagestyles
+
+    # \lofoot*{\vspace{20mm} \\ \pagemark}
+    # \refoot*{\vspace{20mm} \\ \pagemark}
+
+    # \chead{\headmark}
+    # \addtokomafont{pagehead}{\bfseries\upshape\color{black}}
+    # \addtokomafont{pagenumber}{\bfseries\color{black}}
+
+
+    # \usepackage{tocbibind}
+    # \usepackage{titling}
+    # \setlength{\droptitle}{-2cm}
+    # \preauthor{
+    #   \begin{center}
+    #   \large
+    #   \lineskip 0.5em%
+    #   PhD dissertation\\
+    #   \vspace{25mm}
+    # }
+    # \postauthor{
+    #   \end{center}
+    # }
+    # \predate{
+    #   \begin{center}
+    #   \vspace*{\fill}
+    #   Health\\        % Degree stream
+    #   Aarhus University\\                       % University
+    # }
+    # \postdate{
+    #   \\
+    #   \resizebox{.9\textwidth}{!}{%
+    #   \includegraphics[width=7in]{figures/au_health.png}%
+    #   \quad
+    #   \includegraphics[width=1in]{figures/qr_code.png}%
+    #   }
+    #   \end{center}
+      
+      
+    # }
 
 
 

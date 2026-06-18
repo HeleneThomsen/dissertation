@@ -1,14 +1,14 @@
 # Results
 
 ## metrics used in the papers - Study 1 - Scoping review
-- [] CGM metrics and CVD definitions'
-- [] Demographics
-- [] Study designs / cohorts
-- [] Diabetes types
-- [] CGM metrics
-- [] CVD risk factors
-- [] Statistical methods used
-- [] Check big and small letters in headers (uppercase/lowercase beginnings)
+- [ ] CGM metrics and CVD definitions'
+- [ ] Demographics
+- [ ] Study designs / cohorts
+- [ ] Diabetes types
+- [ ] CGM metrics
+- [ ] CVD risk factors
+- [ ] Statistical methods used
+- [ ] Check big and small letters in headers (uppercase/lowercase beginnings)
 
 ## Study I: Results from a Scoping Review
 
@@ -31,9 +31,9 @@ Geographic distribution of the studies
 :::
 
 ### Study Designs and Demographics
-- [] Check table is correct with the published article
-- [] Add a raised letter to each abbreviation and include it in the table when relevant
-- [] Add references to all citations
+- [ ] Check table is correct with the published article
+- [ ] Add a raised letter to each abbreviation and include it in the table when relevant
+- [ ] Add references to all citations
 
 ::: {.landscape}
 ::: {.small}
@@ -70,13 +70,13 @@ $^\dagger$ This study appears both in the clinical and subclinical disease outco
 Study design and demographics of the included clinical cardiovascular outcome studies
 :::
 :::
-
+:::
 
 ### Outcomes from the Studies in the Scoping Review
-- [] Check table is correct
-- [] Add references to all citations
-- [] Correct the raised letters/dagger is the same between the two tables
-- [] Delete the multimedia part in the footnote of the table
+- [ ] Check table is correct
+- [ ] Add references to all citations
+- [ ] Correct the raised letters/dagger is the same between the two tables
+- [ ] Delete the multimedia part in the footnote of the table
 
 ::: {.landscape}
 ::: {.small}
@@ -393,7 +393,11 @@ Root mean squared errors with 95% CIs for the different models.
 \*Training size was centered at 510,000 as the training data had a mean of 514,293 samples.
 
 Model coefficients from linear mixed effects models for root mean squared errors of the Base-Generalized models.
+
 :::
+
+Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum
+
 
 ::: {tbl-transferlearned-coefficients}
 
@@ -413,8 +417,6 @@ Model coefficients from linear mixed effects models for root mean squared errors
 | Training size tl (per 1,000 samples)** | -0.111 | [-0.161, -0.061] | <0.001 |
 | Ratio (per 10 units) | -0.001 | [-0.003, 0.001] | 0.46 |
 | Ratio · Race | 0.002 | [-0.001, 0.005] | 0.20 |
-
----
 
 \*Training size was centered at 510,000 as the training data had a mean of 514,293 samples.  
 \*\*Training size for the transfer learned approach was centered at 4,400 as the training data for fine-tuning had a mean of 4,371 samples.
