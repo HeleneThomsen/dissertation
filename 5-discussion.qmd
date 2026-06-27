@@ -12,13 +12,14 @@
 
 # something about data and cross-sectional vs longitudinal data and how this affects the choice of methods
 * Mention the collins protocol that creates a study focused on answer this question
-* Mention the CANCAN dataset and the weird trend with people being better of the more comobiditie
+* Mention the CANCAN dataset and the weird trend with people being better of the more comobidities
 
 
 ## Study 3 Method choices
 **PREDICTION HORIZON**
 Many studies in the literature tests a variety of different prediction horizons but it seems to always predict best, the shorter the prediction horizon is. Most often sensors do also have a higher resolution then 15 minuts (3-5 minutes resolution)
 
+- [ ] In the discussion I could mention LSTM vs CNN vs MLP and talk about the difference in model doesn't make that big of a difference.
 
 
 # Clinical implications

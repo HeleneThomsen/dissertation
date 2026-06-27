@@ -26,7 +26,7 @@ In this chapter the three studies included in this PhD will be presented. The da
 | Analysis                        | Systematic scoping review, study characterization, and narrative synthesis                                                  | Foundation models and logistic regression models                                                                                            | Long short term memory models (LSTM) and Linear mixed effect models (LMEM)                                             |
 +---------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
 
-## Study I: A scoping review
+## Study I: A scoping Review
 
 - [ ] Explain why scoping review and not a systematic review
 
@@ -60,7 +60,7 @@ The review focused solely on CGM-data for the input to any association or predic
 : Eligibility criteria for the scoping review (Study I)
 :::
 
-### Search and selection of sources
+### Search and Selection of Sources
 
 The databases Embase and Medline were searched from inception to March 11, 2025. The seach strategy was tested against 13 articles in the field, found through an initial exploratory search.[@Foreman2021; @Yapanis2022; @Helleputte2022; @Lu2021; @Martinez2021; @Mita2023; @Lu2020; @Mo2013; @Wakasugi2021; @Magri2018; @Su2011; @Tang2016; @Zhang2013]
 
@@ -88,7 +88,7 @@ Research questions were defined before the screening process and data was extrac
 11. Is the code openly available?
 :::
 
-### Synthesis of results
+### Synthesis of Results
 
 Study characteristics were synthesized using descriptive statistics and supplemented by a narrative summary. Only the most adjusted models in the main population for each study was considered in this review. This approach was necessary as several studies reported numerous estimates across varying adjustments, different combinations of CGM-derived metrics and CVD outcomes, and/or distinct subgroup stratifications. Given the large volume of literature, studies investigating clinical cardiovascular outcomes were prioritized in the main synthesis. While subclinical markers offer valuable insight into early vascular changes and disease progression, clinical outcomes are more directly relevant to cardiovascular risk prediction and clinical decision-making. The main synthesis of clinical outcomes included both effect estimates and measures of statistical significance whereas the supplementary synthesis on subclinical CVD focused primarily on creating an overview of the chosen CGM-derived metrics and the statistical significance of reported associations. All evaluation metrics mentioned in the studies doing prediction analyses were reported based on what the studies reported.
 
@@ -101,7 +101,7 @@ Two datasets were used in this PhD (Study II and study III) which are presented 
 The CANCAN dataset was collected in an observational case-control study from three hospital outpatient clinics (Denmark). The aim of the CANCAN Study was to investigate if cardiac autonomic neuropathy (CAN) assessments, CGM and heart failure indicators could be used in risk stratification in people with T2D. Participants were included if they were adults (\< 18 years old) and had T2D for at least a year. Exclusion criteria were atrial fibrillation or laser-treated eye disease within the past three months, were pregnant or lactating, had a life-threatening disease (expected survival \< 1 year), or had cognitive disabilities rendering them unable to understand and give consent. Data were collected during a clinical examination, during which blood and urine samples were obtained, and a blinded CGM sensor was inserted. Blood samples to obtain NT-proBNP values were collected when the CGM sensors were returned, after the 2-week CGM data collection period had ended (@fig-cancan-timeline). In total, 159 participants were incluceded since the rest were missing age, sex, HbA1c, BMI, NT-proBNP, HDL, total cholesterol, or eGFR and these values were needed for the analyses in Study II.
 
 ::: {#fig-cancan-timeline}
-[![](figures/3_methods_fig/cancan_timeline.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/figures/3_methods_fig/cancan_timeline.png)
+[![](figures/3_methods_fig/cancan_timeline.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/cancan_timeline.png)
 
 Data collection timeline for the CANCAN Study
 :::
@@ -116,9 +116,11 @@ The second study was focused on investigating the knowledge and predictive utili
 
 ### Preprocessing of CGM data and CGM-derived metrics
 
+
 - [ ] days with less then 70 % of data were removed
 - [ ] Add table with CGM derived metrics
 - [ ] Add CGMformer input information
+- [ ] What is SCORE2-Diabetes 10 year CVD risk score?
 
 ### Foundation Models and Embeddings
 
@@ -127,14 +129,14 @@ The second study was focused on investigating the knowledge and predictive utili
 - [ ] What is cosine similarity and what is cosine distances
 - [ ] How are the cosine distances used?
 
-### Predictive modelling
+### Predictive Modelling
 
 - [ ] What is NT-proBNP (scale, unit and connection with heart failure)
 - [ ] What is logistic regression and what is regularization techniques and why are they used? (Ridge regression)
 
 
 ::: {#fig-study2_resample_theory}
-[![](figures/3_methods_fig/study2_3_resampling.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/figures/3_methods_fig/study2_3_resampling.png)
+[![](figures/3_methods_fig/study2_3_resampling.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_3_resampling.png)
 
 Resampling with and without replacement
 :::
@@ -146,7 +148,7 @@ Resampling with and without replacement
 
 The third study was investigating racial bias in a data driven machine learning model only based on blood glucose measurements from a CGM-sensor as this is an important consideration in the path to get ML models into use
 
-### Preprocessing of CGM data for forecasting
+### Preprocessing of CGM data for Forecasting
 All data was sorted into 60 minutes windows with 4 values to predict 60-minutes into the future as visualized in @fig-study3_pred_horizon.
 There are no clear answers in the literature about which prediction horizon is the best to choose, however CGM devices measure in the interstitial fluid and there is a physiological delay between the measured blood glucose and the interstitial glucose levels.[@source]
 Of the European approved CGM devices it is only the Dexcom that shows trends to the users and since CGM devices mainly focuses on monitoring, the forecasting question is only really interesting when administering insulin in order to catch hypo- and hyperglycemic events ahead of time.[@source] It is very difficult to figure out how the prediction algorithms in insulin pumps are made and so far I have had very little luck in figuring it out. It is assumed that the companies use linear regression and the last 20 minutes of data to predict the next values which is usually the last four samples since the resolution of the used CGM devices usually are between 1 to 5 minutes.[@source]
@@ -154,27 +156,89 @@ With a CGM measurement every 15 minutes and the physiological delay in mind, the
 All samples with missing values were removed.
 
 ::: {#fig-study3_pred_horizon}
-[![](figures/3_methods_fig/study3_pred_horizon.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/figures/3_methods_fig/study3_pred_horizon.png)
+[![](figures/3_methods_fig/study3_pred_horizon.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_pred_horizon.png)
 
 The prediction horizon and overview of the creation of samples (predictors and targets).
 :::
 
-### Partitioning of the dataset
-The T1DX dataset was resampled without replacement on the participant level to avoid data leakage and to be able to test performance on an individual level. The resamplling without replacement is the other method mentioned above in @fig-study2_resample_theory. It is a form of bootstrapping where a new dataset (subset) is created based on the original dataset by randomly picking samples from the original dataset to create a new subset.
+### Partitioning of the Dataset
+The T1DX dataset was resampled without replacement on the participant level to avoid data leakage and to be able to test performance on an individual level. The resampling without replacement is the other method mentioned above in @fig-study2_resample_theory. It is a form of bootstrapping where a new dataset (subset) is created based on the original dataset by randomly picking samples from the original dataset to create a new subset.
 Data from each participant was tested on different subsets of data containing varies ratios of Black and White proportions as illustrated in @fig-study3_partitioning.
 By creating 11 different variations (0–100%, 10–90%,..., 100-0%), it meant that 11 subsets were created for each of the participants in the original T1DX dataset.
 Since some subsets where created with only one race present, it meant that all the subset could only be about half the size of the original T1DX dataset when it came to number of participants.
 This resulted in 2,255 training datasets (205 individuals times 11 training sets with varying proportions of race) and 205 independent test sets.
-The subsets were used to train ML models and data leakage was avoided by keeping the train-test-splits at the participant level.
-The last week's worht of CGM data was used for testing which allowed the rest of the data to be used for finetuning.
-Finetuning is when an already trained ML model is further trained on more data to a more specific goal. Here the goal is to personalize glucose predictions.
-
+The subsets were used to train ML models and data leakage was avoided by keeping the train-test-splits at the participant level, meaning that all samples belonging to the same participant were kept together throughout all splits.
 
 ::: {#fig-study3_partitioning}
-[![](figures/3_methods_fig/study3_partitioning.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/figures/3_methods_fig/study3_partitioning.png)
+[![](figures/3_methods_fig/study3_partitioning.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_partitioning.png)
 
-The prediction horizon and overview of the creation of samples (predictors and targets).
+The prediction horizon and overview of the creation of subsets for training.
 :::
+
+Eleven subsets were created for each of the participants and the last weeks worth of data was chosen to test on as illustrated in @fig-study3_train_finetune_test_split
+The one week was chosen because participants had varying amount of CGM data and the participant with the least amount of data had ~ 2 weeks, and all participants were wished to be kept due to the small number of participants in the T1DX dataset.
+The remaining data were used for training the models.
+
+::: {#fig-study3_train_finetune_test_split}
+[![](figures/3_methods_fig/study3_train_finetune_test_split.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_train_finetune_test_split.png)
+
+The splitting of a participants data to create training, fine-tuning and test sets
+
+:::
+### Training Approaches and Model Selection
+Four training approaches were developed as illustrated in @fig-study3_training_approaches. The training approaches included a naive baseline and three different machine learning models as described in @tbl-study3_training_approaches.
+
+A long short-term memory model (LSTM) and overall architecture was chosen for the machine learning model, based on a previously described LSTM in van Doorn et al.@vanDoorn2021 (two LSTM layers followed by a dense layer) since there were good performance with this model.
+All the training data were scaled to be within the range of zero to one.
+Hyperparameters included the number of neurons in LSTM layers, activation functions, dropout rate, batch size, learning rate, decay rate, and early stopping. These hyperparameters were tuned using a grid search, heatmaps, and manual tuning. Further information is given in in Thomsen et al.[@Thomsen2025] and the code repository[@Thomsen_github_1].
+
+::: {#fig-study3_training_approaches}
+[![](figures/3_methods_fig/study3_training_approaches.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_training_approaches.png)
+
+The four training approaches. The Base-Individual, Base-Generalized, and Transfer Learned models were based on an LSTM architecture. The base layer (green) consisted of two LSTM layers, while the task-specific layer (blue) consisted of a single dense layer. 
+
+:::
+
+
+<!--
+To address the problem of small dataset, transfer learning33–36 can be employed, which stores knowledge gained while solving one problem (i.e.,
+population data) and then applying it to a different but related
+problem (i.e., patient-specific data). Deng2021-->
+
+One of the machine learning models were developed using transfer learning. It is a machine learning technique in which knowledge learned from one  domain is transferred to another related domain. One common transfer learning approach is fine-tuning, where a pretrained model is further trained using new data.[@Deng2021] In this analysis, generalized glucose prediction models were first trained using data from multiple participants (Base-Generalized model) and subsequently fine-tuned using participant-specific data to personalize glucose predictions (Transfer Learned model).
+
+
+| Model names | Description | Training data |
+|:-------------|:-------------|:---------------|
+| Last observation carried forward (LOCF) | naive baseline: In the LOCF model, a given CGM measurement (x4) was used to predict blood glucose values 60 minutes in advance (x8) in the test set by assuming no change in the last 60 minutes. | No training data required |
+| Base-Individual | In the Base-Individual model, each participant’s complete CGM data (except for the last week, which was used for the testing data) was used for training. | Only data from 1 participant @fig-study3_train_finetune_test_split |
+| Base-Generalized | Here, for each participant, the 11 training corresponding datasets described above were used to generate 11 separate models, which were all subsequently tested on the given participant’s last week of CGM data. | All the different subsets of data @fig-study3_partitioning |
+| Transfer Learned | This model mirrored the Base-Generalized Model’s setup. However, the 11 trained models for each participant were subsequently tailored, i.e., fine-tuned with transfer learning to the given participant’s complete CGM data (except for the last week, which was used for the testing data) | Only data from 1 participant @fig-study3_train_finetune_test_split |
+
+: The four training approaches used to develop glucose prediction models for each participant in the T1DX dataset. {#tbl-study3_training_approaches tbl-colwidths="[20,60,20]"}
+
+### Model Evaluation
+To evaluate model performance, each participant's last weeks worth of data (672 measurements) was reserved for internal testing (@fig-study3_train_finetune_test_split).
+Model accuracy was assessed by calculating the root mean squared error (RMSE) for each participant across all four modeling approaches. For the LOCF and Base-Individual models, this yielded one RMSE value for each of the 101 White participants and 104 Black participants.
+For the Base-Generalized and Transfer Learned models, RMSEs were calculated for each participant across 11 data subsets, each representing a unique proportion of White and Black participants.
+Performance was summarized as the mean RMSE with corresponding 95% confidence intervals (CIs) for each racial group.
+
+To evaluate the predictive performance across different ratios for the Base-Generalized and Transfer Learned models a linear mixed effect model (LMEM) was used since data was dependent due to participants having an RMSE value for each subset with varying proportions of White and Black participants.
+It was assumed that RMSE values would vary between individuals and therefore a random intercept was included and the following covariates were included: ratio (proportion of White and Black), race, age, sex, and training data sample size. (Categorical: Race, age, and sex; continuous: RMSE, ratio, and sample size)
+It was further assumed that the varying proportions of Black and White participants in the training data subsets would affect the performance and an interaction term was therefore added. The interaction term allowed for different slopes in the LMEM which allowed us to test the hypothesis
+
+Surveillance error grids (SEG) were used to get a general idea of the  clinical risk of the prediction models.[@Tian2024] The error grids are originally developed for the regulatory bodies to asses clinical accuracy of blood glucose monitoring in post-surveillance before the wide spread use of CGM devices. [@Tian2024, @Klonoff2014] and the results should therefore be interpreted with caution when using CGM data. The SEG is a 600x600 grid assigned an individual risk score to each datapoint with 15 colored zones, each indicating severity of a monitoring error that is acted upon in regards to risk of hypoglycemia or hyperglycemia (@fig-study3_SEG). [@Klonoff2014]
+We decided to focus on the five colored zones regardless of the risk being hypo- or hypoglycemic, since one of the critiques of the SEG is that it is hard to interpret with all the zones and that the preferred number of zones are five and it is possible to only asses the output in five zones.[@Tian2024] 
+The five zones were “No”, “Slight”, “Moderate”, “High”, and “Extreme” errors according to the absolute error between the predicted and the actual value and the risk zone the error occurred in.
+Predictions outside of 0–33 mmol/L were changed to 0 or 33 mmol/L to keep within the upper and lower bounds of the surveillance error grid.
+
+::: {#fig-study3_SEG}
+[![](figures/3_methods_fig/study3_SEG_empty.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_SEG_empty.png)
+
+An empty surveillance error grid
+
+:::
+
 
 ## Bias in machine learning models (Study III)
 
@@ -183,12 +247,13 @@ The prediction horizon and overview of the creation of samples (predictors and t
 - [ ] Regression analysis and coefficients?
 - [ ] Evaluate bias when output is not binary (e.g., LMEM models)
 - [ ] CGM specific error grids
-- [ ] In the discussion I could mention LSTM vs CNN vs MLP and talk about the difference in model doesn't make that big of a difference.
+
 
 # Helenes Notes\*\*
 
 - [x] Study I
 - [ ] Study II
-- [ ] Study II
-- [ ] Present CGM-derived metrics
 - [ ] NT-proBNP as a biomarker of cardiovascular risk
+- [ ] Present CGM-derived metrics
+- [x] Study II
+

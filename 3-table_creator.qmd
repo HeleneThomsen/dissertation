@@ -1,0 +1,8 @@
+| Model names | Description | Training data |
+|----|----|----|
+| Last observation carried forward (LOCF) | naive baseline: In the LOCF model, a given CGM measurement (x4) was used to predict blood glucose values 60 minutes in advance (x8) in the test set by assuming no change in the last 60 minutes. | No training data required |
+| Base-Individual | In the Base-Individual model, each participant’s complete CGM data (except for the last week, which was used for the testing data) was used for training. | Only data from 1 participant @fig-study3_train_finetune_test_split |
+| Base-Generalized | Here, for each participant, the 11 training corresponding datasets described above were used to generate 11 separate models, which were all subsequently tested on the given participant’s last week of CGM data. | All the different subsets of data @fig-study3_partitioning |
+| Transfer Learned | This model mirrored the Base-Generalized Model’s setup. However, the 11 trained models for each participant were subsequently tailored, i.e., fine-tuned with transfer learning to the given participant’s complete CGM data (except for the last week, which was used for the testing data) | Only data from 1 participant @fig-study3_train_finetune_test_split |
+
+: The four training approaches used to develop prediction models for each participant in the T1DX dataset

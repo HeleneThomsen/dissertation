@@ -425,5 +425,5 @@ Model coefficients from linear mixed effects models for root mean squared errors
 
 :::
 
-
+<!-- The random intercept variation describes the between-person variability. -->
 
