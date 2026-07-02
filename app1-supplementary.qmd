@@ -1,66 +1,56 @@
-# Supplementary validation analyses {#sec-nhs-validation}
+# Search strings (Study I) {#sec-suppl-search-strings}
 
-### Validation of unspecified diabetes in the Health In Central Denmark survey and in the National Health Survey.
 
-Validation analyses performed in the HICD study population from study I:
+|     #    |     Searches    |     Results    |
+|:---|:---|---:|
+|     1    |     Blood Glucose   Self-Monitoring/    |     10241    |
+|     2    |     Continuous Glucose   Monitoring/    |     34    |
+|     3    |     (((blood-glucose or   bloodglucose or glucose) adj2 (monitor$ or selfmonitor$)) or cgm or bgm or   iscgm or rtcgm or (time adj3 range)).ti,ab,kf,kw.    |     28749    |
+|     4    |     (Blood Glucose/ or   Glycemic Control/ or (bloodglucose$ or bloodsugar$ or glucose$ or glyc?emic$   or sugar$).ti,ab,kf,kw.) adj5 (flash or fluctuat$ or intermittent$ or scan$   or variabilit$).ti,ab,kf,kw.    |     8669    |
+|     5    |     or/1-4    |     38366    |
+|     6    |     exp Cardiovascular   Diseases/    |     2760764    |
+|     7    |     (cardiovasc$ or cvd or   cardiometabol$ or cardio-metabol$ or heart$ or macrovasc$ or   vasc$).ti,ab,kw,kf.    |     2182473    |
+|     8    |     or/6-7    |     3971342    |
+|     9    |     exp Diabetes Mellitus/    |     518864    |
+|     10    |     (diabet$ or dm1 or dm2 or   dmi or dmii or iddm or niddm or t1d or t2d).ti,ab,kw,kf.    |     815092    |
+|     11    |     or/9-10    |     875527    |
+|     12    |     and/5,8,11    |     2416    |
+|     13    |     exp Animals/ not Humans/    |     5189493    |
+|     14    |     12 not 13    |     2300    |
+|           |   Updated search: 11 March   2025 |  |
+|     15    |     limit 14 to   (da="20231201-20261231" or dt="20231201-20261231" or   ez="20231201-20261231" or ed="20231201-20261231")    |     310    |
+|     16    |     or/14-15    |     2610    |
 
-::: {#tbl-sup-dm-hicd layout-ncol="1"}
-| **OSDC**        | **Survey: +DM**      | **Survey: -DM** | **Total N** |
-|-----------------|----------------------|-----------------|-------------|
-| **OSDC: +DM**   | 2,512                | 221             | 2,733       |
-| **OSDC: -DM**   | 121                  | 26,537          | 26,658      |
-| **Total N**     | 2,633                | 26,758          | 29,391      |
-| **Sensitivity** | 0.954 (0.945, 0.962) |                 |             |
-| **Specificity** | 0.992 (0.991, 0.993) |                 |             |
-| **PPV**         | 0.919 (0.908, 0.929) |                 |             |
-| **NPV**         | 0.995 (0.995, 0.996) |                 |             |
+: Search in Ovid MEDLINE (Search date: 22 January 2024) {#tbl-suppl-search-strings-medline}
 
-: The Open-Source Diabetes Classifier (OSDC)
+<!-- ************************************************* -->
 
-| **RSCD**        | **Survey: +DM**      | **Survey: -DM** | **Total N** |
-|-----------------|----------------------|-----------------|-------------|
-| **RSCD: +DM**   | 2,422                | 122             | 2,544       |
-| **RSCD: -DM**   | 211                  | 26,636          | 26,847      |
-| **Total N**     | 2,633                | 26,758          | 29,391      |
-| **Sensitivity** | 0.920 (0.909, 0.930) |                 |             |
-| **Specificity** | 0.995 (0.995, 0.996) |                 |             |
-| **PPV**         | 0.952 (0.943, 0.960) |                 |             |
-| **NPV**         | 0.992 (0.991, 0.993) |                 |             |
 
-: The Register for Selected Chronic Diseases (RSCD)
+|     #    |     Searches    |     Results    |
+|:---|:---|---:|
+|     1    |     blood glucose monitoring/    |     37574    |
+|     2    |     exp continuous glucose   monitoring system/    |     5648    |
+|     3    |     (((blood-glucose or   bloodglucose or glucose) adj2 (monitor$ or selfmonitor$)) or cgm or bgm or   iscgm or rtcgm or (time adj3 range)).ti,ab,kf,kw.    |     48502    |
+|     4    |     (exp glucose blood level/   or glycemic control/ or (bloodglucose$ or bloodsugar$ or glucose$ or   glyc?emic$ or sugar$).ti,ab,kf,kw.) adj5 (flash or fluctuat$ or intermittent$   or scan$ or variabilit$).ti,ab,kf,kw.    |     16430    |
+|     5    |     or/1-4    |     81510    |
+|     6    |     exp cardiovascular   disease/    |     5122163    |
+|     7    |     (cardiovasc$ or cvd or   cardiometabol$ or cardio-metabol$ or heart$ or macrovasc$ or   vasc$).ti,ab,kw,kf.    |     3044925    |
+|     8    |     or/6-7    |     6303633    |
+|     9    |     exp diabetes mellitus/    |     1239184    |
+|     10    |     (diabet$ or dm1 or dm2 or   dmi or dmii or iddm or niddm or t1d or t2d).ti,ab,kw,kf.    |     1237019    |
+|     11    |     or/9-10    |     1501812    |
+|     12    |     and/5,8,11    |     11217    |
+|     13    |     (rat or rats or mouse or   mice or swine or porcine or murine or sheep or lambs or pigs or piglets or   rabbit or rabbits or cat or cats or dog or dogs or cattle or bovine or monkey   or monkeys or trout or marmoset$1).ti. and animal experiment/    |     1237966    |
+|     14    |     animal experiment/ not   (human experiment/ or human/)    |     2601109    |
+|     15    |     or/13-14    |     2672240    |
+|     16    |     12 not 15    |     10861    |
+|     17    |     limit 16 to exclude   medline journals    |     2176    |
+|           | Updated search: 11 March   2025 |  |
+|     18    |     limit 17 to   (dc="20231201-20261231" or dd="20231201-20261231" or   rd="20231201-20261231")     |     467    |
+|     19    |     or/17-18    |     2643    |
 
-**Supplementary: Validation of uspecified diabetes in the HICD study population**
-:::
+: Search in Embase (Ovid) (Search date: 22 January 2024) {#tbl-suppl-search-strings-embase}
 
-Validation analyses performed among respondents in the National Health Survey 2017 (individuals reporting diabetes as a current disease were considered diabetes cases).
-
-::: {#tbl-sup-dm-nhs layout-ncol="1"}
-| **OSDC**        | **Survey: +DM**   | **Survey: -DM** | **Total N** |
-|-----------------|-------------------|-----------------|-------------|
-| **OSDC: +DM**   | 1,630             | 258             | 1,888       |
-| **OSDC: -DM**   | 87                | 26,460          | 26,547      |
-| **Total N**     | 1,717             | 26,718          | 28,435      |
-| **Sensitivity** | 0.95 (0.94, 0.96) |                 |             |
-| **Specificity** | 0.99 (0.99, 0.99) |                 |             |
-| **PPV**         | 0.86 (0.85, 0.88) |                 |             |
-| **NPV**         | 1.00 (1.00, 1.00) |                 |             |
-
-: The Open-Source Diabetes Classifier (OSDC)
-
-| **RSCD**        | **Survey: +DM**   | **Survey: -DM** | **Total N** |
-|-----------------|-------------------|-----------------|-------------|
-| **RSCD: +DM**   | 1,546             | 184             | 1,730       |
-| **RSCD: -DM**   | 171               | 26,534          | 26,705      |
-| **Total N**     | 1,717             | 26,718          | 28,435      |
-| **Sensitivity** | 0.90 (0.89, 0.91) |                 |             |
-| **Specificity** | 0.99 (0.99, 0.99) |                 |             |
-| **PPV**         | 0.89 (0.88, 0.91) |                 |             |
-| **NPV**         | 0.99 (0.99, 0.99) |                 |             |
-
-: The Register for Selected Chronic Diseases (RSCD)
-
-**Supplementary: Validation of uspecified diabetes in the National Health Survey**
-:::
 
 ::: {.content-visible when-format="pdf"}
 # Full papers {#sec-papers}

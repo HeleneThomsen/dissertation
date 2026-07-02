@@ -10,10 +10,10 @@ book:
   date-format: "YYYY"
   chapters:
     - index.qmd
-    - 0-disclosure.qmd
-    - 0-preface.qmd
-    - 0-papers.qmd
-    - 0-abbreviations.qmd
+    # - 0-disclosure.qmd
+    # - 0-preface.qmd
+    # - 0-papers.qmd
+    # - 0-abbreviations.qmd
     - 1-introduction.qmd
     - 2-aims.qmd
     - 3-methods.qmd
@@ -77,6 +77,7 @@ format:
       - headsep=7mm      # The gap between your running header line and your text
       - footskip=10mm    # The gap between your main text and your page numbers
     header-includes: |
+      \usepackage{multirow}
       \usepackage{xcolor}
       \usepackage{float}
       \floatplacement{figure}{H}
@@ -173,7 +174,7 @@ format:
       \setkomafont{pagenumber}{\normalfont\sffamily}
 
     # \usepackage{xcolor}
-    # \usepackage{float}
+    #\usepackage{float}
     # \floatplacement{figure}{H}
     # \raggedbottom
     # \usepackage[automark]{scrlayer-scrpage}

@@ -21,3 +21,11 @@ Isaksen, AA, Sandbæk, A, Skriver, MV, Bjerg, L. Glucose-lowering drug use in mi
 
 \listoftables
 ```
+
+
+1 Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People with Diabetes: A Systematic Scoping Review (accepted, JMIR Diabetes)
+PubMed and Embase were searched for studies examining associations between CGM data and clinical or subclinical CVD, and for studies assessing the predictive value of CGM data for CVD outcomes. Study selection and data extraction were performed according to predefined criteria following the PRISMA-Sc-r checklist, and findings were summarized descriptively.
+2 Racial Disparities in Continuous Glucose Monitoring-Based 60-min Glucose Predictions Among People with Type 1 Diabetes (published, PLOS Digital Health)
+Investigating racial group-fairness in blood glucose forecasting using machine learning models ina US dataset containing 205 participants with self identified (non-Hispanic White or non-Hispanic Black) ethnicity and race. Model performance and fairness was compared across groups using linear mixed effect models and root mean squarred errors.
+3 Evaluation of a CGM Foundation Model for NT-proBNP Prediction and Embedding Space Analysis (work in progress)
+This study evaluates representations from the CGMformer in populations with type 1 and type 2 diabetes. Embedding space structure was explored using UMAPs and cosine similarity distances, and the predictive value of CGM data for binary NT-proBNP status was assessed using logistic regression models.

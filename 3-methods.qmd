@@ -4,13 +4,15 @@ In this chapter the three studies included in this PhD will be presented. The da
 
 - [ ] What was done (Description)
 - [ ] Why it was done (Justification)
+- [ ] Add search string?
+- [ ] tell about the 7-point fingerprick?
 
 ## Overview of the studies
 
 +---------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
 |                                 | Study I                                                                                                                     | Study II                                                                                                                                    | Study III                                                                                                              |
 +=================================+=============================================================================================================================+=============================================================================================================================================+========================================================================================================================+
-| Title                           | Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People With Diabetes: Systematic Scoping Review | External evaluation of a foundation model for continuous glucose monitoring data and cardiovascular risk assessment in people with diabetes | Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes |
+| Title                           | Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People With Diabetes: Systematic Scoping Review | Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk | Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes |
 +---------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
 | Study Type                      | Review                                                                                                                      | CGM foundation model evaluation study                                                                                                       | Algorithmic fairness study                                                                                             |
 +---------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
@@ -30,7 +32,9 @@ In this chapter the three studies included in this PhD will be presented. The da
 
 - [ ] Explain why scoping review and not a systematic review
 
-A scoping review was conducted to investigate current knowledge of CGM-data and its possible connection and predictive power to clinical and subclinical cardiovascular outcomes. The scoping review followed the Manual for Evidence Synthesis (Chapter 10 - Scoping reviews) from the Joanna Briggs Institute and reported according to the Preferred Reporting Items for Systematic Reviews and Meta-analyses extension for scoping review (PRISMA-ScR) guidelines.[@Tricco2018; @Peters2024]
+A scoping review was conducted to investigate current knowledge of CGM-data and its possible connection and predictive power to clinical and subclinical cardiovascular outcomes.
+Given the expected heterogeneity between studies, a scoping review was considered the most appropriate methodology.
+The scoping review followed the Manual for Evidence Synthesis (Chapter 10 - Scoping reviews) from the Joanna Briggs Institute and reported according to the Preferred Reporting Items for Systematic Reviews and Meta-analyses extension for scoping review (PRISMA-ScR) guidelines.[@Tricco2018; @Peters2024]
 
 ### Concepts and Definitions
 
@@ -62,7 +66,8 @@ The review focused solely on CGM-data for the input to any association or predic
 
 ### Search and Selection of Sources
 
-The databases Embase and Medline were searched from inception to March 11, 2025. The seach strategy was tested against 13 articles in the field, found through an initial exploratory search.[@Foreman2021; @Yapanis2022; @Helleputte2022; @Lu2021; @Martinez2021; @Mita2023; @Lu2020; @Mo2013; @Wakasugi2021; @Magri2018; @Su2011; @Tang2016; @Zhang2013]
+The databases Embase and Medline were searched from inception to March 11, 2025. The seach strategy was tested against 13 articles in the field, found through an initial exploratory search.[@Foreman2021; @Yapanis2022; @Helleputte2022; @Lu2021; @Martinez2021; @Mita2023; @Lu2020; @Mo2013; @Wakasugi2021; @Magri2018; @Su2011; @Tang2016; @Zhang2013].
+The full search strategy can be found in @sec-suppl-search-strings.
 
 All identified records were uploaded into EPPI reviewer 6[@Thomas2023] and duplicates were removed. Titles and abstracts were screened by at least two independent reviewers and a meeting was held after \~5% of the titles and abstracts had been screened, to resolve disagreements and ensure consistency between reviewers. Afterwards full-text screening was performed by two independent reviewers and held up against eligibility criteria. Disagreements were resolved through discussion at physical meetings between reviewers.
 
@@ -114,33 +119,101 @@ The publicly available T1D Exchange (T1DX) dataset, distributed by the JAEB Cent
 
 The second study was focused on investigating the knowledge and predictive utility of CGM data, both extracting a novel CGM-derived metric and the classical known ones found in study I.[@Thomsen2026]
 
-### Preprocessing of CGM data and CGM-derived metrics
+### Data and Participant Selection
+Both the CANCAN and the T1DX dataset was used for Study II.
+Participants with missing age, sex, HbA1c or BMI were removed for both cohorts and additional CANCAN participants with missing NT-proBNP, HDL, total cholesterol, and eGFR were also removed, since it was wished to calculate the SCORE2-Diabetes risk score.
+T1DX participants with missing race data were also removed.
+Days with less than 70% of CGM data were removed as well as participants with less than one day of data from both datasets to ensure sufficient data for the analyses.
+The final number of participants included in Study II was 159 from the CANCAN dataset and 205 from the T1DX dataset.
 
 
-- [ ] days with less then 70 % of data were removed
-- [ ] Add table with CGM derived metrics
-- [ ] Add CGMformer input information
-- [ ] What is SCORE2-Diabetes 10 year CVD risk score?
+### Embeddings
+Two promising CGM specific foundation models exist, both published within the last year.[@YurunLu2025, @Lutsker2026] Of the two foundation models, only one model is fully open access, the CGMformer.[@YurunLu2025]
+The CGMformer was therefore chosen and the data was organized in 24-hour long-format input to match the input requirements of the CGMformer.
+The output of the foundation model is an embedding, which is a numerical vector that summarizes the characteristics of the input glucose profile.
+A simple vector can be drawn as an arrow in a 2-dimensional space as shown in @fig-cancan-embedding, however the CGMformer gives a 128-dimensional embedding vector for each 24-hour CGM data input which is not possible to visualize.
+Uniform Manifold Approximation and Projection (UMAP) algorithm was used to reduce the dimensionality of the embeddings to two dimensions for visualization purposes and to compare with current literature.[@McInnes2018_umap; @YurunLu2025; @Lutsker2026]. The UMAPs were colored by TIR, and MAGE to investigate if the embeddings were able to capture relevant information about glycemic patterns. History of CVD and elevated NT-proBNPfor the CANCAN embeddings were also used to color the UMAPs to investigate if the embeddings were able to capture relevant information about cardiovascular risk and race was used to color the T1DX embeddings to investigate if the embeddings were able to capture relevant information about racial differences in glycemic patterns.
 
-### Foundation Models and Embeddings
+::: {#fig-cancan-embedding}
+[![](figures/3_methods_fig/study2_embedding.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_embedding.png)
 
-- [ ] What is a foundation model
-- [ ] What is an embedding
-- [ ] What is cosine similarity and what is cosine distances
-- [ ] How are the cosine distances used?
-
-### Predictive Modelling
-
-- [ ] What is NT-proBNP (scale, unit and connection with heart failure)
-- [ ] What is logistic regression and what is regularization techniques and why are they used? (Ridge regression)
-
-
-::: {#fig-study2_resample_theory}
-[![](figures/3_methods_fig/study2_3_resampling.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_3_resampling.png)
-
-Resampling with and without replacement
+Embeddings shown as 2-dimensional vectors with the angle $\theta$ between the two embeddings.
 :::
 
+Because embeddings are numerical vectors, they can be compared to quantify the similarity between glucose profiles. Cosine similarity was used because it measures the angle between two embedding vectors independent of their magnitude (the length of the vectors).
+The cosine similarity is calculated by measuring the cosine angle between two vectors as shown by $\theta$ in @fig-cancan-embedding. The cosine similarity is a number between -1 and 1, where 1 means the two vectors are identical, 0 means they are unrelated, and -1 means that they are pointing in opposite directions(@fig-cancan-co_sim_emb). For the analyses in this study, cosine distance (1 − cosine similarity) was used because it expresses similarity as a distance measure, allowing embeddings with similar orientations to have small distances and facilitating downstream analyses and visualizations. The cosine distances range from 0 to 2 where 0 means the two vectors are identical, 1 means they are unrelated, and 2 means that they are pointing in opposite directions.
+
+::: {#fig-cancan-co_sim_emb}
+[![](figures/3_methods_fig/study2_co_sim_emb.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_co_sim_emb.png)
+
+Embeddings shown with different cosine similarities. The cosine similarity is calculated as the cosine of the angle ($\theta$) between two embeddings.
+:::
+
+Kernel density plots were used to visualize the distribution of cosine distances within specific clinical strata and across differing participants (@fig-cancan-clin_strata).
+Groupings were made based on days from the same participant, days from different participants with the same clinical strata, and days from different participants with different clinical strata. The main focus was on TIR and HbA1c were the thresholds were as followed: TIR ≥ 70% (70–180 mg/dL, 3.9–10.0 mmol/L) and HbA1c <7.0 % (< 53 mmol/mol).
+Other UMAPS coloring and groupings were also explored including race, MAGE, previous history of CVD, NT-proBNP, and SCORE2-Diabetes scores.
+
+::: {#fig-cancan-clin_strata}
+[![](figures/3_methods_fig/study2_clin_strata.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_clin_strata.png)
+
+The sex strata is used as an example to illustrate  the cosine distance analysis of the within and between cosine distance pairs
+
+:::
+
+## Cardiovascular risk assessment
+The following section is about cardiovascular risk assessment evaluated predicting NT-proBNP as a binary outcome using a >125 pg/mL threshold.[@source]
+The CANCAN dataset was the only dataset used for this CVD risk assessment.
+The focus was to test the predictive power of CGM data both as represented as embeddings and as well-established CGM-derived metrics. Some models also included clinical predictors to compare up against baseline models.[@Danne2017 ,@source_kovatchev?orAnotherSourceOnMAGE]
+Prediction models integrated clinical, standard CGM-derived, and learned representations.
+
+### NT-proBNP - The target
+- [ ] What is NT-proBNP (scale, unit and connection with heart failure)
+
+### Predictors
+- [ ] Add table with CGM derived metrics?
+
+Inspiration was drawn from the SCORE2-Diabetes risk score, which is a 10-year CVD risk score for european people with diabetes. It was decided to use the input predictors of the SCORE2-Diabetes risk score as the clinical set of predictors used in this study.[@source] This resulted in set of clinical predictors including age, sex, smoking status, systolic blood pressure, total cholesterol, and HbA1c.[@source]
+Initial testing quickly showed that the numbers of predictors had to be limited and the SCORE2-Diabetes risk score was chosen as another way to represent the clinical predictor set while keeping the number of predictors down.
+Additionally age was tested as a predictor on its own to see if it was a strong predictor of elevated NT-proBNP, since NT-proBNP is known to increase with age.[@NICE_2028_guidelines]
+Time in range (TIR) and mean amplitude of glycemic excursions (MAGE) were chosen as they were the CGM-derived metrics most commonly used in the literature based on the findings from Study I.[@Thomsen2026]
+All CGM-derived metrics in this thesis were calculated using the IGLU package[@source] in R with default settings. TIR was calculated as the percentage of time spent in the range of 3.9–10.0 mmol/L (70–180 mg/dL). [@Danne2017] 
+MAGE was calculated as the mean amplitude of glucose excursions, where the included excursions were consecutive peak-to-nadir (or nadir-to-peak) glucose differences exceeding one standard deviation of the individual's glucose measurementsDoes . The iglu implementation computationally reproduces the original manual procedure proposed by Service et al.[@Service1970]
+To aggregate multiple days into a single observation per participant, daily CGMformer representations were minimum-, maximum-, and mean-pooled, and reduced to two dimensions via UMAP. Maximum pooling was considered the default based on previous work.[@Lutsker2026]
+The CGMformer generated one 128-dimensional embedding for each 24-hour CGM recording. Because NT-proBNP was measured at the participant level, a single embedding was required for each participant. Therefore, embeddings from multiple recording days were aggregated using pooling to obtain one participant-level embedding. Both minimum, maximum, and mean pooling were explored to determine the most effective aggregation method.
+The resulting 128-dimensional embeddings were subsequently reduced to two dimensions using UMAP, thereby enabling their use in the prediction models while keeping the number of predictors down to a minimum.
+
+### Model development and evaluation
+- [ ] Check if any of the models pulled from supplementary uses ridge anf if yes, then include it here as well and explain why ridge is used
+
+Prediction models were developed using logistic regression to predict elevated NT-proBNP (>125 pg/mL) as a binary outcome. The models were evaluated using the area under the receiver operating characteristic curve (AUROC) as the primary metric.
+Bootstrap with optimism correction was employed for internal validation because of the limited sample size and the absence of an external validation cohort. The method repeatedly sampled bootstrap samples by sampling with replacement from the original dataset. For each bootstrap sample, the prediction model is fitted and its performance is evaluated both in the bootstrap sample (apparent performance) and in the original dataset (test performance). The difference between these two performance estimates represents the optimism due to overfitting. Averaging the optimism across all bootstrap samples and subtracting it from the apparent performance of the model fitted to the full dataset yields an optimism-corrected estimate of model performance. Internal validation was performed using 500 bootstrap resamples.[@Collins2024; @Riley2023]
+Risk distribution plots were reported for each model across all bootstrap samples.[@VanCalster2025; @Riley2023]
+
+### Prediction scheme overview
+The prediction models were structured hierarchically based on clinical variables (Model A) and the calculated SCORE2-Diabetes score (Model B) in the configurations shown in @tbl-models
+
+::: {#tbl-prediction_models}
+
+| Model family | Model | Baseline predictors | Additional predictors |
+|:--------------|:-----:|:--------------------|:----------------------|
+| Clinical | **A0** | Age | – |
+| Clinical | **A1** | Clinical variables* | – |
+| Clinical | **A2** | Clinical variables* | TIR + MAGE |
+| Clinical | **A3** | Clinical variables* | UMAP dimensions|
+| SCORE2-Diabetes | **B1** | SCORE2-Diabetes score | – |
+| SCORE2-Diabetes | **B2** | SCORE2-Diabetes score | TIR + MAGE |
+| SCORE2-Diabetes | **B3** | SCORE2-Diabetes score | UMAP dimensions |
+| CGM only | **C1** | TIR + MAGE | – |
+| Embeddings only | **D1** | UMAP dimensions|
+
+: Overview of models and predictors {#tbl-models}Grr
+
+<div style="font-size: 0.85em; margin-top: -10px;">
+^*^*Clinical variables are the same as those included in the SCORE2-Diabetes risk model: Age, sex, smoking status, systolic blood pressure, HDL cholesterol, total cholesterol, diabetes duration, HbA1c, and eGFR.[@Pennells2023_score2dm]*  
+*TIR = Time in Range; MAGE = Mean Amplitude of Glycemic Excursions.*
+</div>
+
+:::
 
 
 <!-- ****************************************************************************************** -->
@@ -162,12 +235,9 @@ The prediction horizon and overview of the creation of samples (predictors and t
 :::
 
 ### Partitioning of the Dataset
-The T1DX dataset was resampled without replacement on the participant level to avoid data leakage and to be able to test performance on an individual level. The resampling without replacement is the other method mentioned above in @fig-study2_resample_theory. It is a form of bootstrapping where a new dataset (subset) is created based on the original dataset by randomly picking samples from the original dataset to create a new subset.
-Data from each participant was tested on different subsets of data containing varies ratios of Black and White proportions as illustrated in @fig-study3_partitioning.
-By creating 11 different variations (0–100%, 10–90%,..., 100-0%), it meant that 11 subsets were created for each of the participants in the original T1DX dataset.
-Since some subsets where created with only one race present, it meant that all the subset could only be about half the size of the original T1DX dataset when it came to number of participants.
-This resulted in 2,255 training datasets (205 individuals times 11 training sets with varying proportions of race) and 205 independent test sets.
-The subsets were used to train ML models and data leakage was avoided by keeping the train-test-splits at the participant level, meaning that all samples belonging to the same participant were kept together throughout all splits.
+The T1DX dataset was randomly resampled without replacement at the participant level to avoid data leakage and to evaluate model performance on independent participants. As illustrated in @fig-study3_partitioning, training subsets with varying proportions of Black and White participants were generated by randomly selecting participants from the original dataset while keeping the train-test split at the participant level. Eleven training set compositions were created, ranging from 100% White/0% Black to 0% White/100% Black in 10% increments.
+
+Because some training subsets consisted entirely of participants from a single racial group, the maximum training set size was constrained by the size of the smaller racial group minus the participant kept for testing. Consequently, each training subset contained approximately half the number of participants in the original T1DX dataset. Repeating this procedure for each participant resulted in 2,255 training datasets (205 participants × 11 training set compositions) and 205 independent test sets. Throughout all resampling procedures, all CGM recordings from a participant were kept together to prevent data leakage between the training and test sets.
 
 ::: {#fig-study3_partitioning}
 [![](figures/3_methods_fig/study3_partitioning.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_partitioning.png)
@@ -228,8 +298,7 @@ It was assumed that RMSE values would vary between individuals and therefore a r
 It was further assumed that the varying proportions of Black and White participants in the training data subsets would affect the performance and an interaction term was therefore added. The interaction term allowed for different slopes in the LMEM which allowed us to test the hypothesis
 
 Surveillance error grids (SEG) were used to get a general idea of the  clinical risk of the prediction models.[@Tian2024] The error grids are originally developed for the regulatory bodies to asses clinical accuracy of blood glucose monitoring in post-surveillance before the wide spread use of CGM devices. [@Tian2024, @Klonoff2014] and the results should therefore be interpreted with caution when using CGM data. The SEG is a 600x600 grid assigned an individual risk score to each datapoint with 15 colored zones, each indicating severity of a monitoring error that is acted upon in regards to risk of hypoglycemia or hyperglycemia (@fig-study3_SEG). [@Klonoff2014]
-We decided to focus on the five colored zones regardless of the risk being hypo- or hypoglycemic, since one of the critiques of the SEG is that it is hard to interpret with all the zones and that the preferred number of zones are five and it is possible to only asses the output in five zones.[@Tian2024] 
-The five zones were “No”, “Slight”, “Moderate”, “High”, and “Extreme” errors according to the absolute error between the predicted and the actual value and the risk zone the error occurred in.
+To facilitate interpretation, the 15 surveillance error grid zones were collapsed into the five broader risk zones ("No", "Slight", "Moderate", "High", and "Extreme"), as previously suggested in the literature.[@Tian2024]
 Predictions outside of 0–33 mmol/L were changed to 0 or 33 mmol/L to keep within the upper and lower bounds of the surveillance error grid.
 
 ::: {#fig-study3_SEG}

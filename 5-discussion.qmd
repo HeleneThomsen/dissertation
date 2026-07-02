@@ -13,6 +13,7 @@
 # something about data and cross-sectional vs longitudinal data and how this affects the choice of methods
 * Mention the collins protocol that creates a study focused on answer this question
 * Mention the CANCAN dataset and the weird trend with people being better of the more comobidities
+* Why not use CONGA; AI: In participants with insufficient valid CGM observations, CONGA could not be calculated reliably using the available implementation
 
 
 ## Study 3 Method choices
