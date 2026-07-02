@@ -97,6 +97,35 @@ main.content {
 }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -138,30 +167,6 @@ main.content {
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Cover Page</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./0-disclosure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and disclosures</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./0-preface.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./0-papers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Papers in the dissertation</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./0-abbreviations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Abbreviations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -236,7 +241,7 @@ main.content {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./app1-supplementary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Supplementary validation analyses</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Search strings (Study I)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -272,18 +277,24 @@ main.content {
   </ul></li>
   <li><a href="#study-ii-foundation-models-and-predictive-utility-of-cgm-data" id="toc-study-ii-foundation-models-and-predictive-utility-of-cgm-data" class="nav-link" data-scroll-target="#study-ii-foundation-models-and-predictive-utility-of-cgm-data"><span class="header-section-number">3.4</span> Study II: Foundation models and predictive utility of CGM data</a>
   <ul class="collapse">
-  <li><a href="#preprocessing-of-cgm-data-and-cgm-derived-metrics" id="toc-preprocessing-of-cgm-data-and-cgm-derived-metrics" class="nav-link" data-scroll-target="#preprocessing-of-cgm-data-and-cgm-derived-metrics"><span class="header-section-number">3.4.1</span> Preprocessing of CGM data and CGM-derived metrics</a></li>
-  <li><a href="#foundation-models-and-embeddings" id="toc-foundation-models-and-embeddings" class="nav-link" data-scroll-target="#foundation-models-and-embeddings"><span class="header-section-number">3.4.2</span> Foundation Models and Embeddings</a></li>
-  <li><a href="#predictive-modelling" id="toc-predictive-modelling" class="nav-link" data-scroll-target="#predictive-modelling"><span class="header-section-number">3.4.3</span> Predictive Modelling</a></li>
+  <li><a href="#data-and-participant-selection" id="toc-data-and-participant-selection" class="nav-link" data-scroll-target="#data-and-participant-selection"><span class="header-section-number">3.4.1</span> Data and Participant Selection</a></li>
+  <li><a href="#embeddings" id="toc-embeddings" class="nav-link" data-scroll-target="#embeddings"><span class="header-section-number">3.4.2</span> Embeddings</a></li>
   </ul></li>
-  <li><a href="#study-iii-algorithmic-fairness-in-blood-glucose-forecasting" id="toc-study-iii-algorithmic-fairness-in-blood-glucose-forecasting" class="nav-link" data-scroll-target="#study-iii-algorithmic-fairness-in-blood-glucose-forecasting"><span class="header-section-number">3.5</span> Study III: Algorithmic Fairness in Blood Glucose Forecasting</a>
+  <li><a href="#cardiovascular-risk-assessment" id="toc-cardiovascular-risk-assessment" class="nav-link" data-scroll-target="#cardiovascular-risk-assessment"><span class="header-section-number">3.5</span> Cardiovascular risk assessment</a>
   <ul class="collapse">
-  <li><a href="#preprocessing-of-cgm-data-for-forecasting" id="toc-preprocessing-of-cgm-data-for-forecasting" class="nav-link" data-scroll-target="#preprocessing-of-cgm-data-for-forecasting"><span class="header-section-number">3.5.1</span> Preprocessing of CGM data for Forecasting</a></li>
-  <li><a href="#partitioning-of-the-dataset" id="toc-partitioning-of-the-dataset" class="nav-link" data-scroll-target="#partitioning-of-the-dataset"><span class="header-section-number">3.5.2</span> Partitioning of the Dataset</a></li>
-  <li><a href="#training-approaches-and-model-selection" id="toc-training-approaches-and-model-selection" class="nav-link" data-scroll-target="#training-approaches-and-model-selection"><span class="header-section-number">3.5.3</span> Training Approaches and Model Selection</a></li>
-  <li><a href="#model-evaluation" id="toc-model-evaluation" class="nav-link" data-scroll-target="#model-evaluation"><span class="header-section-number">3.5.4</span> Model Evaluation</a></li>
+  <li><a href="#nt-probnp---the-target" id="toc-nt-probnp---the-target" class="nav-link" data-scroll-target="#nt-probnp---the-target"><span class="header-section-number">3.5.1</span> NT-proBNP - The target</a></li>
+  <li><a href="#predictors" id="toc-predictors" class="nav-link" data-scroll-target="#predictors"><span class="header-section-number">3.5.2</span> Predictors</a></li>
+  <li><a href="#model-development-and-evaluation" id="toc-model-development-and-evaluation" class="nav-link" data-scroll-target="#model-development-and-evaluation"><span class="header-section-number">3.5.3</span> Model development and evaluation</a></li>
+  <li><a href="#prediction-scheme-overview" id="toc-prediction-scheme-overview" class="nav-link" data-scroll-target="#prediction-scheme-overview"><span class="header-section-number">3.5.4</span> Prediction scheme overview</a></li>
   </ul></li>
-  <li><a href="#bias-in-machine-learning-models-study-iii" id="toc-bias-in-machine-learning-models-study-iii" class="nav-link" data-scroll-target="#bias-in-machine-learning-models-study-iii"><span class="header-section-number">3.6</span> Bias in machine learning models (Study III)</a></li>
+  <li><a href="#study-iii-algorithmic-fairness-in-blood-glucose-forecasting" id="toc-study-iii-algorithmic-fairness-in-blood-glucose-forecasting" class="nav-link" data-scroll-target="#study-iii-algorithmic-fairness-in-blood-glucose-forecasting"><span class="header-section-number">3.6</span> Study III: Algorithmic Fairness in Blood Glucose Forecasting</a>
+  <ul class="collapse">
+  <li><a href="#preprocessing-of-cgm-data-for-forecasting" id="toc-preprocessing-of-cgm-data-for-forecasting" class="nav-link" data-scroll-target="#preprocessing-of-cgm-data-for-forecasting"><span class="header-section-number">3.6.1</span> Preprocessing of CGM data for Forecasting</a></li>
+  <li><a href="#partitioning-of-the-dataset" id="toc-partitioning-of-the-dataset" class="nav-link" data-scroll-target="#partitioning-of-the-dataset"><span class="header-section-number">3.6.2</span> Partitioning of the Dataset</a></li>
+  <li><a href="#training-approaches-and-model-selection" id="toc-training-approaches-and-model-selection" class="nav-link" data-scroll-target="#training-approaches-and-model-selection"><span class="header-section-number">3.6.3</span> Training Approaches and Model Selection</a></li>
+  <li><a href="#model-evaluation" id="toc-model-evaluation" class="nav-link" data-scroll-target="#model-evaluation"><span class="header-section-number">3.6.4</span> Model Evaluation</a></li>
+  </ul></li>
+  <li><a href="#bias-in-machine-learning-models-study-iii" id="toc-bias-in-machine-learning-models-study-iii" class="nav-link" data-scroll-target="#bias-in-machine-learning-models-study-iii"><span class="header-section-number">3.7</span> Bias in machine learning models (Study III)</a></li>
   <li><a href="#helenes-notes" id="toc-helenes-notes" class="nav-link" data-scroll-target="#helenes-notes"><span class="header-section-number">4</span> Helenes Notes**</a></li>
   </ul>
 </nav>
@@ -314,6 +325,8 @@ main.content {
 <ul class="task-list">
 <li><label><input type="checkbox">What was done (Description)</label></li>
 <li><label><input type="checkbox">Why it was done (Justification)</label></li>
+<li><label><input type="checkbox">Add search string?</label></li>
+<li><label><input type="checkbox">tell about the 7-point fingerprick?</label></li>
 </ul>
 <section id="overview-of-the-studies" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="overview-of-the-studies"><span class="header-section-number">3.1</span> Overview of the studies</h2>
@@ -336,8 +349,7 @@ main.content {
 <tr class="odd">
 <td>Title</td>
 <td>Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People With Diabetes: Systematic Scoping Review</td>
-<td>External evaluation of a foundation model for continuous glucose monitoring data and cardiovascular risk assessment in people with diabetes</td>
-<td>Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes</td>
+<td colspan="2">Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk | Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes |</td>
 </tr>
 <tr class="even">
 <td>Study Type</td>
@@ -384,7 +396,7 @@ main.content {
 <ul class="task-list">
 <li><label><input type="checkbox">Explain why scoping review and not a systematic review</label></li>
 </ul>
-<p>A scoping review was conducted to investigate current knowledge of CGM-data and its possible connection and predictive power to clinical and subclinical cardiovascular outcomes. The scoping review followed the Manual for Evidence Synthesis (Chapter 10 - Scoping reviews) from the Joanna Briggs Institute and reported according to the Preferred Reporting Items for Systematic Reviews and Meta-analyses extension for scoping review (PRISMA-ScR) guidelines.<span class="citation" data-cites="Tricco2018 Peters2024"><sup><a href="references.html#ref-Tricco2018" role="doc-biblioref">1</a>,<a href="references.html#ref-Peters2024" role="doc-biblioref">2</a></sup></span></p>
+<p>A scoping review was conducted to investigate current knowledge of CGM-data and its possible connection and predictive power to clinical and subclinical cardiovascular outcomes. Given the expected heterogeneity between studies, a scoping review was considered the most appropriate methodology. The scoping review followed the Manual for Evidence Synthesis (Chapter 10 - Scoping reviews) from the Joanna Briggs Institute and reported according to the Preferred Reporting Items for Systematic Reviews and Meta-analyses extension for scoping review (PRISMA-ScR) guidelines.<span class="citation" data-cites="Tricco2018 Peters2024"><sup><a href="references.html#ref-Tricco2018" role="doc-biblioref">1</a>,<a href="references.html#ref-Peters2024" role="doc-biblioref">2</a></sup></span></p>
 <section id="concepts-and-definitions" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="concepts-and-definitions"><span class="header-section-number">3.2.1</span> Concepts and Definitions</h3>
 <p>The review focused solely on CGM-data for the input to any association or prediction models in the literature. This meant that studies only investigating self-monitored blood glucose with finger-prick measurements or blood sample measurements such as HbA1c were not considered in this review. CVD outcomes were divided into subclinical or clinical For the clinical CVD, the following outcomes were considered: cardiovascular mortality, major adverse cardiovascular events, coronary artery disease, heart failure, stroke, and peripheral artery disease with synonymous terms included (e.g., ischemic heart diseases) and also clinical events (e.g., undergoing coronary artery bypass surgery). Subclinical CVD was grouped into six subcategories: arterial stiffness, flow resistance, arterial wall thickness, arterial wall composition, cardiac and pulse-related measures, and arterial lumen. CVD outcomes did not include broader risk factors nonspecific to cardiovascular risk (e.g., age or sex). Eligibility criterias for the scoping review<span class="citation" data-cites="Thomsen2026"><sup><a href="references.html#ref-Thomsen2026" role="doc-biblioref">3</a></sup></span> (Study I) can be found in <a href="#tbl-study1-eligibility-criteria" class="quarto-xref">Table&nbsp;<span>3.1</span></a>.</p>
@@ -429,7 +441,7 @@ Table&nbsp;3.1: Eligibility criteria for the scoping review (Study I)
 </section>
 <section id="search-and-selection-of-sources" class="level3" data-number="3.2.2">
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="search-and-selection-of-sources"><span class="header-section-number">3.2.2</span> Search and Selection of Sources</h3>
-<p>The databases Embase and Medline were searched from inception to March 11, 2025. The seach strategy was tested against 13 articles in the field, found through an initial exploratory search.<span class="citation" data-cites="Foreman2021 Yapanis2022 Helleputte2022 Lu2021 Martinez2021 Mita2023 Lu2020 Mo2013 Wakasugi2021 Magri2018 Su2011 Tang2016 Zhang2013"><sup><a href="references.html#ref-Foreman2021" role="doc-biblioref">4</a>–<a href="references.html#ref-Zhang2013" role="doc-biblioref">16</a></sup></span></p>
+<p>The databases Embase and Medline were searched from inception to March 11, 2025. The seach strategy was tested against 13 articles in the field, found through an initial exploratory search.<span class="citation" data-cites="Foreman2021 Yapanis2022 Helleputte2022 Lu2021 Martinez2021 Mita2023 Lu2020 Mo2013 Wakasugi2021 Magri2018 Su2011 Tang2016 Zhang2013"><sup><a href="references.html#ref-Foreman2021" role="doc-biblioref">4</a>–<a href="references.html#ref-Zhang2013" role="doc-biblioref">16</a></sup></span>. The full search strategy can be found in <a href="app1-supplementary.html" class="quarto-xref"><span>Appendix A</span></a>.</p>
 <p>All identified records were uploaded into EPPI reviewer 6<span class="citation" data-cites="Thomas2023"><sup><a href="references.html#ref-Thomas2023" role="doc-biblioref">17</a></sup></span> and duplicates were removed. Titles and abstracts were screened by at least two independent reviewers and a meeting was held after ~5% of the titles and abstracts had been screened, to resolve disagreements and ensure consistency between reviewers. Afterwards full-text screening was performed by two independent reviewers and held up against eligibility criteria. Disagreements were resolved through discussion at physical meetings between reviewers.</p>
 <p>Backward and forward citation searching was performed on all the included studies after the screening process using citationchaser<span class="citation" data-cites="Haddaway2022"><sup><a href="references.html#ref-Haddaway2022" role="doc-biblioref">18</a></sup></span> and the screen process was repeated until no further new studies were identified through the citationchaser.</p>
 </section>
@@ -493,96 +505,209 @@ Figure&nbsp;3.1: Data collection timeline for the CANCAN Study
 <section id="study-ii-foundation-models-and-predictive-utility-of-cgm-data" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="study-ii-foundation-models-and-predictive-utility-of-cgm-data"><span class="header-section-number">3.4</span> Study II: Foundation models and predictive utility of CGM data</h2>
 <p>The second study was focused on investigating the knowledge and predictive utility of CGM data, both extracting a novel CGM-derived metric and the classical known ones found in study I.<span class="citation" data-cites="Thomsen2026"><sup><a href="references.html#ref-Thomsen2026" role="doc-biblioref">3</a></sup></span></p>
-<section id="preprocessing-of-cgm-data-and-cgm-derived-metrics" class="level3" data-number="3.4.1">
-<h3 data-number="3.4.1" class="anchored" data-anchor-id="preprocessing-of-cgm-data-and-cgm-derived-metrics"><span class="header-section-number">3.4.1</span> Preprocessing of CGM data and CGM-derived metrics</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">days with less then 70 % of data were removed</label></li>
-<li><label><input type="checkbox">Add table with CGM derived metrics</label></li>
-<li><label><input type="checkbox">Add CGMformer input information</label></li>
-<li><label><input type="checkbox">What is SCORE2-Diabetes 10 year CVD risk score?</label></li>
-</ul>
+<section id="data-and-participant-selection" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="data-and-participant-selection"><span class="header-section-number">3.4.1</span> Data and Participant Selection</h3>
+<p>Both the CANCAN and the T1DX dataset was used for Study II. Participants with missing age, sex, HbA1c or BMI were removed for both cohorts and additional CANCAN participants with missing NT-proBNP, HDL, total cholesterol, and eGFR were also removed, since it was wished to calculate the SCORE2-Diabetes risk score. T1DX participants with missing race data were also removed. Days with less than 70% of CGM data were removed as well as participants with less than one day of data from both datasets to ensure sufficient data for the analyses. The final number of participants included in Study II was 159 from the CANCAN dataset and 205 from the T1DX dataset.</p>
 </section>
-<section id="foundation-models-and-embeddings" class="level3" data-number="3.4.2">
-<h3 data-number="3.4.2" class="anchored" data-anchor-id="foundation-models-and-embeddings"><span class="header-section-number">3.4.2</span> Foundation Models and Embeddings</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">What is a foundation model</label></li>
-<li><label><input type="checkbox">What is an embedding</label></li>
-<li><label><input type="checkbox">What is cosine similarity and what is cosine distances</label></li>
-<li><label><input type="checkbox">How are the cosine distances used?</label></li>
-</ul>
+<section id="embeddings" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="embeddings"><span class="header-section-number">3.4.2</span> Embeddings</h3>
+<p>Two promising CGM specific foundation models exist, both published within the last year.<span class="citation" data-cites="YurunLu2025"><sup><a href="references.html#ref-Lutsker2026" role="doc-biblioref">23</a></sup></span> Of the two foundation models, only one model is fully open access, the CGMformer.<span class="citation" data-cites="YurunLu2025"><sup><a href="references.html#ref-YurunLu2025" role="doc-biblioref">22</a></sup></span> The CGMformer was therefore chosen and the data was organized in 24-hour long-format input to match the input requirements of the CGMformer. The output of the foundation model is an embedding, which is a numerical vector that summarizes the characteristics of the input glucose profile. A simple vector can be drawn as an arrow in a 2-dimensional space as shown in <a href="#fig-cancan-embedding" class="quarto-xref">Figure&nbsp;<span>3.2</span></a>, however the CGMformer gives a 128-dimensional embedding vector for each 24-hour CGM data input which is not possible to visualize. Uniform Manifold Approximation and Projection (UMAP) algorithm was used to reduce the dimensionality of the embeddings to two dimensions for visualization purposes and to compare with current literature.<span class="citation" data-cites="McInnes2018_umap YurunLu2025 Lutsker2026"><sup><a href="references.html#ref-YurunLu2025" role="doc-biblioref">22</a>–<a href="references.html#ref-McInnes2018_umap" role="doc-biblioref">24</a></sup></span>. The UMAPs were colored by TIR, and MAGE to investigate if the embeddings were able to capture relevant information about glycemic patterns. History of CVD and elevated NT-proBNPfor the CANCAN embeddings were also used to color the UMAPs to investigate if the embeddings were able to capture relevant information about cardiovascular risk and race was used to color the T1DX embeddings to investigate if the embeddings were able to capture relevant information about racial differences in glycemic patterns.</p>
+<div id="fig-cancan-embedding" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cancan-embedding-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_embedding.png"><img src="figures/3_methods_fig/study2_embedding.png" class="img-fluid figure-img"></a></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cancan-embedding-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: Embeddings shown as 2-dimensional vectors with the angle <span class="math inline">\(\theta\)</span> between the two embeddings.
+</figcaption>
+</figure>
+</div>
+<p>Because embeddings are numerical vectors, they can be compared to quantify the similarity between glucose profiles. Cosine similarity was used because it measures the angle between two embedding vectors independent of their magnitude (the length of the vectors). The cosine similarity is calculated by measuring the cosine angle between two vectors as shown by <span class="math inline">\(\theta\)</span> in <a href="#fig-cancan-embedding" class="quarto-xref">Figure&nbsp;<span>3.2</span></a>. The cosine similarity is a number between -1 and 1, where 1 means the two vectors are identical, 0 means they are unrelated, and -1 means that they are pointing in opposite directions(<a href="#fig-cancan-co_sim_emb" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>). For the analyses in this study, cosine distance (1 − cosine similarity) was used because it expresses similarity as a distance measure, allowing embeddings with similar orientations to have small distances and facilitating downstream analyses and visualizations. The cosine distances range from 0 to 2 where 0 means the two vectors are identical, 1 means they are unrelated, and 2 means that they are pointing in opposite directions.</p>
+<div id="fig-cancan-co_sim_emb" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cancan-co_sim_emb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_co_sim_emb.png"><img src="figures/3_methods_fig/study2_co_sim_emb.png" class="img-fluid figure-img"></a></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cancan-co_sim_emb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: Embeddings shown with different cosine similarities. The cosine similarity is calculated as the cosine of the angle (<span class="math inline">\(\theta\)</span>) between two embeddings.
+</figcaption>
+</figure>
+</div>
+<p>Kernel density plots were used to visualize the distribution of cosine distances within specific clinical strata and across differing participants (<a href="#fig-cancan-clin_strata" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>). Groupings were made based on days from the same participant, days from different participants with the same clinical strata, and days from different participants with different clinical strata. The main focus was on TIR and HbA1c were the thresholds were as followed: TIR ≥ 70% (70–180 mg/dL, 3.9–10.0 mmol/L) and HbA1c &lt;7.0 % (&lt; 53 mmol/mol). Other UMAPS coloring and groupings were also explored including race, MAGE, previous history of CVD, NT-proBNP, and SCORE2-Diabetes scores.</p>
+<div id="fig-cancan-clin_strata" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cancan-clin_strata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_clin_strata.png"><img src="figures/3_methods_fig/study2_clin_strata.png" class="img-fluid figure-img"></a></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cancan-clin_strata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: The sex strata is used as an example to illustrate the cosine distance analysis of the within and between cosine distance pairs
+</figcaption>
+</figure>
+</div>
 </section>
-<section id="predictive-modelling" class="level3" data-number="3.4.3">
-<h3 data-number="3.4.3" class="anchored" data-anchor-id="predictive-modelling"><span class="header-section-number">3.4.3</span> Predictive Modelling</h3>
+</section>
+<section id="cardiovascular-risk-assessment" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="cardiovascular-risk-assessment"><span class="header-section-number">3.5</span> Cardiovascular risk assessment</h2>
+<p>The following section is about cardiovascular risk assessment evaluated predicting NT-proBNP as a binary outcome using a &gt;125 pg/mL threshold.<span class="citation" data-cites="source"><sup><a href="references.html#ref-source" role="doc-biblioref"><strong>source?</strong></a></sup></span> The CANCAN dataset was the only dataset used for this CVD risk assessment. The focus was to test the predictive power of CGM data both as represented as embeddings and as well-established CGM-derived metrics. Some models also included clinical predictors to compare up against baseline models.<span class="citation" data-cites="Danne2017"><sup><a href="references.html#ref-source_kovatchev?orAnotherSourceOnMAGE" role="doc-biblioref"><strong>source_kovatchev?orAnotherSourceOnMAGE?</strong></a></sup></span> Prediction models integrated clinical, standard CGM-derived, and learned representations.</p>
+<section id="nt-probnp---the-target" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="nt-probnp---the-target"><span class="header-section-number">3.5.1</span> NT-proBNP - The target</h3>
 <ul class="task-list">
 <li><label><input type="checkbox">What is NT-proBNP (scale, unit and connection with heart failure)</label></li>
-<li><label><input type="checkbox">What is logistic regression and what is regularization techniques and why are they used? (Ridge regression)</label></li>
 </ul>
-<div id="fig-study2_resample_theory" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-study2_resample_theory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_3_resampling.png"><img src="figures/3_methods_fig/study2_3_resampling.png" class="img-fluid figure-img"></a></p>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-study2_resample_theory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.2: Resampling with and without replacement
+</section>
+<section id="predictors" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="predictors"><span class="header-section-number">3.5.2</span> Predictors</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Add table with CGM derived metrics?</label></li>
+</ul>
+<p>Inspiration was drawn from the SCORE2-Diabetes risk score, which is a 10-year CVD risk score for european people with diabetes. It was decided to use the input predictors of the SCORE2-Diabetes risk score as the clinical set of predictors used in this study.<span class="citation" data-cites="source"><sup><a href="references.html#ref-source" role="doc-biblioref"><strong>source?</strong></a></sup></span> This resulted in set of clinical predictors including age, sex, smoking status, systolic blood pressure, total cholesterol, and HbA1c.<span class="citation" data-cites="source"><sup><a href="references.html#ref-source" role="doc-biblioref"><strong>source?</strong></a></sup></span> Initial testing quickly showed that the numbers of predictors had to be limited and the SCORE2-Diabetes risk score was chosen as another way to represent the clinical predictor set while keeping the number of predictors down. Additionally age was tested as a predictor on its own to see if it was a strong predictor of elevated NT-proBNP, since NT-proBNP is known to increase with age.<span class="citation" data-cites="NICE_2028_guidelines"><sup><a href="references.html#ref-NICE_2028_guidelines" role="doc-biblioref">26</a></sup></span> Time in range (TIR) and mean amplitude of glycemic excursions (MAGE) were chosen as they were the CGM-derived metrics most commonly used in the literature based on the findings from Study I.<span class="citation" data-cites="Thomsen2026"><sup><a href="references.html#ref-Thomsen2026" role="doc-biblioref">3</a></sup></span> All CGM-derived metrics in this thesis were calculated using the IGLU package<span class="citation" data-cites="source"><sup><a href="references.html#ref-source" role="doc-biblioref"><strong>source?</strong></a></sup></span> in R with default settings. TIR was calculated as the percentage of time spent in the range of 3.9–10.0 mmol/L (70–180 mg/dL).<span class="citation" data-cites="Danne2017"><sup><a href="references.html#ref-Danne2017" role="doc-biblioref">25</a></sup></span> MAGE was calculated as the mean amplitude of glucose excursions, where the included excursions were consecutive peak-to-nadir (or nadir-to-peak) glucose differences exceeding one standard deviation of the individual’s glucose measurementsDoes . The iglu implementation computationally reproduces the original manual procedure proposed by Service et al.<span class="citation" data-cites="Service1970"><sup><a href="references.html#ref-Service1970" role="doc-biblioref">27</a></sup></span> To aggregate multiple days into a single observation per participant, daily CGMformer representations were minimum-, maximum-, and mean-pooled, and reduced to two dimensions via UMAP. Maximum pooling was considered the default based on previous work.<span class="citation" data-cites="Lutsker2026"><sup><a href="references.html#ref-Lutsker2026" role="doc-biblioref">23</a></sup></span> The CGMformer generated one 128-dimensional embedding for each 24-hour CGM recording. Because NT-proBNP was measured at the participant level, a single embedding was required for each participant. Therefore, embeddings from multiple recording days were aggregated using pooling to obtain one participant-level embedding. Both minimum, maximum, and mean pooling were explored to determine the most effective aggregation method. The resulting 128-dimensional embeddings were subsequently reduced to two dimensions using UMAP, thereby enabling their use in the prediction models while keeping the number of predictors down to a minimum.</p>
+</section>
+<section id="model-development-and-evaluation" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="model-development-and-evaluation"><span class="header-section-number">3.5.3</span> Model development and evaluation</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Check if any of the models pulled from supplementary uses ridge anf if yes, then include it here as well and explain why ridge is used</label></li>
+</ul>
+<p>Prediction models were developed using logistic regression to predict elevated NT-proBNP (&gt;125 pg/mL) as a binary outcome. The models were evaluated using the area under the receiver operating characteristic curve (AUROC) as the primary metric. Bootstrap with optimism correction was employed for internal validation because of the limited sample size and the absence of an external validation cohort. The method repeatedly sampled bootstrap samples by sampling with replacement from the original dataset. For each bootstrap sample, the prediction model is fitted and its performance is evaluated both in the bootstrap sample (apparent performance) and in the original dataset (test performance). The difference between these two performance estimates represents the optimism due to overfitting. Averaging the optimism across all bootstrap samples and subtracting it from the apparent performance of the model fitted to the full dataset yields an optimism-corrected estimate of model performance. Internal validation was performed using 500 bootstrap resamples.<span class="citation" data-cites="Collins2024 Riley2023"><sup><a href="references.html#ref-Collins2024" role="doc-biblioref">28</a>,<a href="references.html#ref-Riley2023" role="doc-biblioref">29</a></sup></span> Risk distribution plots were reported for each model across all bootstrap samples.<span class="citation" data-cites="VanCalster2025 Riley2023"><sup><a href="references.html#ref-Riley2023" role="doc-biblioref">29</a>,<a href="references.html#ref-VanCalster2025" role="doc-biblioref">30</a></sup></span></p>
+</section>
+<section id="prediction-scheme-overview" class="level3" data-number="3.5.4">
+<h3 data-number="3.5.4" class="anchored" data-anchor-id="prediction-scheme-overview"><span class="header-section-number">3.5.4</span> Prediction scheme overview</h3>
+<p>The prediction models were structured hierarchically based on clinical variables (Model A) and the calculated SCORE2-Diabetes score (Model B) in the configurations shown in <span class="quarto-unresolved-ref">?tbl-models</span></p>
+<div id="tbl-prediction_models" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-prediction_models-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.2: Overview of models and predictors {#tbl-models}Grr
 </figcaption>
+<div aria-describedby="tbl-prediction_models-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Model family</th>
+<th style="text-align: center;">Model</th>
+<th style="text-align: left;">Baseline predictors</th>
+<th style="text-align: left;">Additional predictors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Clinical</td>
+<td style="text-align: center;"><strong>A0</strong></td>
+<td style="text-align: left;">Age</td>
+<td style="text-align: left;">–</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Clinical</td>
+<td style="text-align: center;"><strong>A1</strong></td>
+<td style="text-align: left;">Clinical variables*</td>
+<td style="text-align: left;">–</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Clinical</td>
+<td style="text-align: center;"><strong>A2</strong></td>
+<td style="text-align: left;">Clinical variables*</td>
+<td style="text-align: left;">TIR + MAGE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Clinical</td>
+<td style="text-align: center;"><strong>A3</strong></td>
+<td style="text-align: left;">Clinical variables*</td>
+<td style="text-align: left;">UMAP dimensions</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SCORE2-Diabetes</td>
+<td style="text-align: center;"><strong>B1</strong></td>
+<td style="text-align: left;">SCORE2-Diabetes score</td>
+<td style="text-align: left;">–</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SCORE2-Diabetes</td>
+<td style="text-align: center;"><strong>B2</strong></td>
+<td style="text-align: left;">SCORE2-Diabetes score</td>
+<td style="text-align: left;">TIR + MAGE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SCORE2-Diabetes</td>
+<td style="text-align: center;"><strong>B3</strong></td>
+<td style="text-align: left;">SCORE2-Diabetes score</td>
+<td style="text-align: left;">UMAP dimensions</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CGM only</td>
+<td style="text-align: center;"><strong>C1</strong></td>
+<td style="text-align: left;">TIR + MAGE</td>
+<td style="text-align: left;">–</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Embeddings only</td>
+<td style="text-align: center;"><strong>D1</strong></td>
+<td style="text-align: left;">UMAP dimensions</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<div style="font-size: 0.85em; margin-top: -10px;">
+<p><sup>*</sup><em>Clinical variables are the same as those included in the SCORE2-Diabetes risk model: Age, sex, smoking status, systolic blood pressure, HDL cholesterol, total cholesterol, diabetes duration, HbA1c, and eGFR.<span class="citation" data-cites="Pennells2023_score2dm"><sup><a href="references.html#ref-Pennells2023_score2dm" role="doc-biblioref">31</a></sup></span></em><br>
+<em>TIR = Time in Range; MAGE = Mean Amplitude of Glycemic Excursions.</em></p>
+</div>
+</div>
 </figure>
 </div>
 <!-- ****************************************************************************************** -->
 </section>
 </section>
-<section id="study-iii-algorithmic-fairness-in-blood-glucose-forecasting" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="study-iii-algorithmic-fairness-in-blood-glucose-forecasting"><span class="header-section-number">3.5</span> Study III: Algorithmic Fairness in Blood Glucose Forecasting</h2>
+<section id="study-iii-algorithmic-fairness-in-blood-glucose-forecasting" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="study-iii-algorithmic-fairness-in-blood-glucose-forecasting"><span class="header-section-number">3.6</span> Study III: Algorithmic Fairness in Blood Glucose Forecasting</h2>
 <p>The third study was investigating racial bias in a data driven machine learning model only based on blood glucose measurements from a CGM-sensor as this is an important consideration in the path to get ML models into use</p>
-<section id="preprocessing-of-cgm-data-for-forecasting" class="level3" data-number="3.5.1">
-<h3 data-number="3.5.1" class="anchored" data-anchor-id="preprocessing-of-cgm-data-for-forecasting"><span class="header-section-number">3.5.1</span> Preprocessing of CGM data for Forecasting</h3>
-<p>All data was sorted into 60 minutes windows with 4 values to predict 60-minutes into the future as visualized in <a href="#fig-study3_pred_horizon" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>. There are no clear answers in the literature about which prediction horizon is the best to choose, however CGM devices measure in the interstitial fluid and there is a physiological delay between the measured blood glucose and the interstitial glucose levels.<span class="citation" data-cites="source"><sup><a href="references.html#ref-source" role="doc-biblioref"><strong>source?</strong></a></sup></span> Of the European approved CGM devices it is only the Dexcom that shows trends to the users and since CGM devices mainly focuses on monitoring, the forecasting question is only really interesting when administering insulin in order to catch hypo- and hyperglycemic events ahead of time.<span class="citation" data-cites="source"><sup><a href="references.html#ref-source" role="doc-biblioref"><strong>source?</strong></a></sup></span> It is very difficult to figure out how the prediction algorithms in insulin pumps are made and so far I have had very little luck in figuring it out. It is assumed that the companies use linear regression and the last 20 minutes of data to predict the next values which is usually the last four samples since the resolution of the used CGM devices usually are between 1 to 5 minutes.<span class="citation" data-cites="source"><sup><a href="references.html#ref-source" role="doc-biblioref"><strong>source?</strong></a></sup></span> With a CGM measurement every 15 minutes and the physiological delay in mind, the 60 minutes were decided to be a good prediction horizon. All samples with missing values were removed.</p>
+<section id="preprocessing-of-cgm-data-for-forecasting" class="level3" data-number="3.6.1">
+<h3 data-number="3.6.1" class="anchored" data-anchor-id="preprocessing-of-cgm-data-for-forecasting"><span class="header-section-number">3.6.1</span> Preprocessing of CGM data for Forecasting</h3>
+<p>All data was sorted into 60 minutes windows with 4 values to predict 60-minutes into the future as visualized in <a href="#fig-study3_pred_horizon" class="quarto-xref">Figure&nbsp;<span>3.5</span></a>. There are no clear answers in the literature about which prediction horizon is the best to choose, however CGM devices measure in the interstitial fluid and there is a physiological delay between the measured blood glucose and the interstitial glucose levels.<span class="citation" data-cites="source"><sup><a href="references.html#ref-source" role="doc-biblioref"><strong>source?</strong></a></sup></span> Of the European approved CGM devices it is only the Dexcom that shows trends to the users and since CGM devices mainly focuses on monitoring, the forecasting question is only really interesting when administering insulin in order to catch hypo- and hyperglycemic events ahead of time.<span class="citation" data-cites="source"><sup><a href="references.html#ref-source" role="doc-biblioref"><strong>source?</strong></a></sup></span> It is very difficult to figure out how the prediction algorithms in insulin pumps are made and so far I have had very little luck in figuring it out. It is assumed that the companies use linear regression and the last 20 minutes of data to predict the next values which is usually the last four samples since the resolution of the used CGM devices usually are between 1 to 5 minutes.<span class="citation" data-cites="source"><sup><a href="references.html#ref-source" role="doc-biblioref"><strong>source?</strong></a></sup></span> With a CGM measurement every 15 minutes and the physiological delay in mind, the 60 minutes were decided to be a good prediction horizon. All samples with missing values were removed.</p>
 <div id="fig-study3_pred_horizon" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-study3_pred_horizon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_pred_horizon.png"><img src="figures/3_methods_fig/study3_pred_horizon.png" class="img-fluid figure-img"></a></p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-study3_pred_horizon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.3: The prediction horizon and overview of the creation of samples (predictors and targets).
+Figure&nbsp;3.5: The prediction horizon and overview of the creation of samples (predictors and targets).
 </figcaption>
 </figure>
 </div>
 </section>
-<section id="partitioning-of-the-dataset" class="level3" data-number="3.5.2">
-<h3 data-number="3.5.2" class="anchored" data-anchor-id="partitioning-of-the-dataset"><span class="header-section-number">3.5.2</span> Partitioning of the Dataset</h3>
-<p>The T1DX dataset was resampled without replacement on the participant level to avoid data leakage and to be able to test performance on an individual level. The resampling without replacement is the other method mentioned above in <a href="#fig-study2_resample_theory" class="quarto-xref">Figure&nbsp;<span>3.2</span></a>. It is a form of bootstrapping where a new dataset (subset) is created based on the original dataset by randomly picking samples from the original dataset to create a new subset. Data from each participant was tested on different subsets of data containing varies ratios of Black and White proportions as illustrated in <a href="#fig-study3_partitioning" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>. By creating 11 different variations (0–100%, 10–90%,…, 100-0%), it meant that 11 subsets were created for each of the participants in the original T1DX dataset. Since some subsets where created with only one race present, it meant that all the subset could only be about half the size of the original T1DX dataset when it came to number of participants. This resulted in 2,255 training datasets (205 individuals times 11 training sets with varying proportions of race) and 205 independent test sets. The subsets were used to train ML models and data leakage was avoided by keeping the train-test-splits at the participant level, meaning that all samples belonging to the same participant were kept together throughout all splits.</p>
+<section id="partitioning-of-the-dataset" class="level3" data-number="3.6.2">
+<h3 data-number="3.6.2" class="anchored" data-anchor-id="partitioning-of-the-dataset"><span class="header-section-number">3.6.2</span> Partitioning of the Dataset</h3>
+<p>The T1DX dataset was randomly resampled without replacement at the participant level to avoid data leakage and to evaluate model performance on independent participants. As illustrated in <a href="#fig-study3_partitioning" class="quarto-xref">Figure&nbsp;<span>3.6</span></a>, training subsets with varying proportions of Black and White participants were generated by randomly selecting participants from the original dataset while keeping the train-test split at the participant level. Eleven training set compositions were created, ranging from 100% White/0% Black to 0% White/100% Black in 10% increments.</p>
+<p>Because some training subsets consisted entirely of participants from a single racial group, the maximum training set size was constrained by the size of the smaller racial group minus the participant kept for testing. Consequently, each training subset contained approximately half the number of participants in the original T1DX dataset. Repeating this procedure for each participant resulted in 2,255 training datasets (205 participants × 11 training set compositions) and 205 independent test sets. Throughout all resampling procedures, all CGM recordings from a participant were kept together to prevent data leakage between the training and test sets.</p>
 <div id="fig-study3_partitioning" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-study3_partitioning-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_partitioning.png"><img src="figures/3_methods_fig/study3_partitioning.png" class="img-fluid figure-img"></a></p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-study3_partitioning-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.4: The prediction horizon and overview of the creation of subsets for training.
+Figure&nbsp;3.6: The prediction horizon and overview of the creation of subsets for training.
 </figcaption>
 </figure>
 </div>
-<p>Eleven subsets were created for each of the participants and the last weeks worth of data was chosen to test on as illustrated in <a href="#fig-study3_train_finetune_test_split" class="quarto-xref">Figure&nbsp;<span>3.5</span></a> The one week was chosen because participants had varying amount of CGM data and the participant with the least amount of data had ~ 2 weeks, and all participants were wished to be kept due to the small number of participants in the T1DX dataset. The remaining data were used for training the models.</p>
+<p>Eleven subsets were created for each of the participants and the last weeks worth of data was chosen to test on as illustrated in <a href="#fig-study3_train_finetune_test_split" class="quarto-xref">Figure&nbsp;<span>3.7</span></a> The one week was chosen because participants had varying amount of CGM data and the participant with the least amount of data had ~ 2 weeks, and all participants were wished to be kept due to the small number of participants in the T1DX dataset. The remaining data were used for training the models.</p>
 <div id="fig-study3_train_finetune_test_split" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-study3_train_finetune_test_split-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_train_finetune_test_split.png"><img src="figures/3_methods_fig/study3_train_finetune_test_split.png" class="img-fluid figure-img"></a></p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-study3_train_finetune_test_split-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.5: The splitting of a participants data to create training, fine-tuning and test sets
+Figure&nbsp;3.7: The splitting of a participants data to create training, fine-tuning and test sets
 </figcaption>
 </figure>
 </div>
 </section>
-<section id="training-approaches-and-model-selection" class="level3" data-number="3.5.3">
-<h3 data-number="3.5.3" class="anchored" data-anchor-id="training-approaches-and-model-selection"><span class="header-section-number">3.5.3</span> Training Approaches and Model Selection</h3>
-<p>Four training approaches were developed as illustrated in <a href="#fig-study3_training_approaches" class="quarto-xref">Figure&nbsp;<span>3.6</span></a>. The training approaches included a naive baseline and three different machine learning models as described in <a href="#tbl-study3_training_approaches" class="quarto-xref">Table&nbsp;<span>3.2</span></a>.</p>
-<p>A long short-term memory model (LSTM) and overall architecture was chosen for the machine learning model, based on a previously described LSTM in van Doorn et al.@vanDoorn2021 (two LSTM layers followed by a dense layer) since there were good performance with this model. All the training data were scaled to be within the range of zero to one. Hyperparameters included the number of neurons in LSTM layers, activation functions, dropout rate, batch size, learning rate, decay rate, and early stopping. These hyperparameters were tuned using a grid search, heatmaps, and manual tuning. Further information is given in in Thomsen et al.<span class="citation" data-cites="Thomsen2025"><sup><a href="references.html#ref-Thomsen2025" role="doc-biblioref">22</a></sup></span> and the code repository<span class="citation" data-cites="Thomsen_github_1"><sup><a href="references.html#ref-Thomsen_github_1" role="doc-biblioref">23</a></sup></span>.</p>
+<section id="training-approaches-and-model-selection" class="level3" data-number="3.6.3">
+<h3 data-number="3.6.3" class="anchored" data-anchor-id="training-approaches-and-model-selection"><span class="header-section-number">3.6.3</span> Training Approaches and Model Selection</h3>
+<p>Four training approaches were developed as illustrated in <a href="#fig-study3_training_approaches" class="quarto-xref">Figure&nbsp;<span>3.8</span></a>. The training approaches included a naive baseline and three different machine learning models as described in <a href="#tbl-study3_training_approaches" class="quarto-xref">Table&nbsp;<span>3.3</span></a>.</p>
+<p>A long short-term memory model (LSTM) and overall architecture was chosen for the machine learning model, based on a previously described LSTM in van Doorn et al.@vanDoorn2021 (two LSTM layers followed by a dense layer) since there were good performance with this model. All the training data were scaled to be within the range of zero to one. Hyperparameters included the number of neurons in LSTM layers, activation functions, dropout rate, batch size, learning rate, decay rate, and early stopping. These hyperparameters were tuned using a grid search, heatmaps, and manual tuning. Further information is given in in Thomsen et al.<span class="citation" data-cites="Thomsen2025"><sup><a href="references.html#ref-Thomsen2025" role="doc-biblioref">32</a></sup></span> and the code repository<span class="citation" data-cites="Thomsen_github_1"><sup><a href="references.html#ref-Thomsen_github_1" role="doc-biblioref">33</a></sup></span>.</p>
 <div id="fig-study3_training_approaches" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-study3_training_approaches-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_training_approaches.png"><img src="figures/3_methods_fig/study3_training_approaches.png" class="img-fluid figure-img"></a></p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-study3_training_approaches-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.6: The four training approaches. The Base-Individual, Base-Generalized, and Transfer Learned models were based on an LSTM architecture. The base layer (green) consisted of two LSTM layers, while the task-specific layer (blue) consisted of a single dense layer.
+Figure&nbsp;3.8: The four training approaches. The Base-Individual, Base-Generalized, and Transfer Learned models were based on an LSTM architecture. The base layer (green) consisted of two LSTM layers, while the task-specific layer (blue) consisted of a single dense layer.
 </figcaption>
 </figure>
 </div>
@@ -590,11 +715,11 @@ Figure&nbsp;3.6: The four training approaches. The Base-Individual, Base-General
 To address the problem of small dataset, transfer learning33–36 can be employed, which stores knowledge gained while solving one problem (i.e.,
 population data) and then applying it to a different but related
 problem (i.e., patient-specific data). Deng2021-->
-<p>One of the machine learning models were developed using transfer learning. It is a machine learning technique in which knowledge learned from one domain is transferred to another related domain. One common transfer learning approach is fine-tuning, where a pretrained model is further trained using new data.<span class="citation" data-cites="Deng2021"><sup><a href="references.html#ref-Deng2021" role="doc-biblioref">24</a></sup></span> In this analysis, generalized glucose prediction models were first trained using data from multiple participants (Base-Generalized model) and subsequently fine-tuned using participant-specific data to personalize glucose predictions (Transfer Learned model).</p>
+<p>One of the machine learning models were developed using transfer learning. It is a machine learning technique in which knowledge learned from one domain is transferred to another related domain. One common transfer learning approach is fine-tuning, where a pretrained model is further trained using new data.<span class="citation" data-cites="Deng2021"><sup><a href="references.html#ref-Deng2021" role="doc-biblioref">34</a></sup></span> In this analysis, generalized glucose prediction models were first trained using data from multiple participants (Base-Generalized model) and subsequently fine-tuned using participant-specific data to personalize glucose predictions (Transfer Learned model).</p>
 <div id="tbl-study3_training_approaches" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[20,60,20]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-study3_training_approaches-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3.2: The four training approaches used to develop glucose prediction models for each participant in the T1DX dataset.
+Table&nbsp;3.3: The four training approaches used to develop glucose prediction models for each participant in the T1DX dataset.
 </figcaption>
 <div aria-describedby="tbl-study3_training_approaches-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -619,17 +744,17 @@ Table&nbsp;3.2: The four training approaches used to develop glucose prediction 
 <tr class="even">
 <td style="text-align: left;">Base-Individual</td>
 <td style="text-align: left;">In the Base-Individual model, each participant’s complete CGM data (except for the last week, which was used for the testing data) was used for training.</td>
-<td style="text-align: left;">Only data from 1 participant <a href="#fig-study3_train_finetune_test_split" class="quarto-xref">Figure&nbsp;<span>3.5</span></a></td>
+<td style="text-align: left;">Only data from 1 participant <a href="#fig-study3_train_finetune_test_split" class="quarto-xref">Figure&nbsp;<span>3.7</span></a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Base-Generalized</td>
 <td style="text-align: left;">Here, for each participant, the 11 training corresponding datasets described above were used to generate 11 separate models, which were all subsequently tested on the given participant’s last week of CGM data.</td>
-<td style="text-align: left;">All the different subsets of data <a href="#fig-study3_partitioning" class="quarto-xref">Figure&nbsp;<span>3.4</span></a></td>
+<td style="text-align: left;">All the different subsets of data <a href="#fig-study3_partitioning" class="quarto-xref">Figure&nbsp;<span>3.6</span></a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Transfer Learned</td>
 <td style="text-align: left;">This model mirrored the Base-Generalized Model’s setup. However, the 11 trained models for each participant were subsequently tailored, i.e., fine-tuned with transfer learning to the given participant’s complete CGM data (except for the last week, which was used for the testing data)</td>
-<td style="text-align: left;">Only data from 1 participant <a href="#fig-study3_train_finetune_test_split" class="quarto-xref">Figure&nbsp;<span>3.5</span></a></td>
+<td style="text-align: left;">Only data from 1 participant <a href="#fig-study3_train_finetune_test_split" class="quarto-xref">Figure&nbsp;<span>3.7</span></a></td>
 </tr>
 </tbody>
 </table>
@@ -637,25 +762,25 @@ Table&nbsp;3.2: The four training approaches used to develop glucose prediction 
 </figure>
 </div>
 </section>
-<section id="model-evaluation" class="level3" data-number="3.5.4">
-<h3 data-number="3.5.4" class="anchored" data-anchor-id="model-evaluation"><span class="header-section-number">3.5.4</span> Model Evaluation</h3>
-<p>To evaluate model performance, each participant’s last weeks worth of data (672 measurements) was reserved for internal testing (<a href="#fig-study3_train_finetune_test_split" class="quarto-xref">Figure&nbsp;<span>3.5</span></a>). Model accuracy was assessed by calculating the root mean squared error (RMSE) for each participant across all four modeling approaches. For the LOCF and Base-Individual models, this yielded one RMSE value for each of the 101 White participants and 104 Black participants. For the Base-Generalized and Transfer Learned models, RMSEs were calculated for each participant across 11 data subsets, each representing a unique proportion of White and Black participants. Performance was summarized as the mean RMSE with corresponding 95% confidence intervals (CIs) for each racial group.</p>
+<section id="model-evaluation" class="level3" data-number="3.6.4">
+<h3 data-number="3.6.4" class="anchored" data-anchor-id="model-evaluation"><span class="header-section-number">3.6.4</span> Model Evaluation</h3>
+<p>To evaluate model performance, each participant’s last weeks worth of data (672 measurements) was reserved for internal testing (<a href="#fig-study3_train_finetune_test_split" class="quarto-xref">Figure&nbsp;<span>3.7</span></a>). Model accuracy was assessed by calculating the root mean squared error (RMSE) for each participant across all four modeling approaches. For the LOCF and Base-Individual models, this yielded one RMSE value for each of the 101 White participants and 104 Black participants. For the Base-Generalized and Transfer Learned models, RMSEs were calculated for each participant across 11 data subsets, each representing a unique proportion of White and Black participants. Performance was summarized as the mean RMSE with corresponding 95% confidence intervals (CIs) for each racial group.</p>
 <p>To evaluate the predictive performance across different ratios for the Base-Generalized and Transfer Learned models a linear mixed effect model (LMEM) was used since data was dependent due to participants having an RMSE value for each subset with varying proportions of White and Black participants. It was assumed that RMSE values would vary between individuals and therefore a random intercept was included and the following covariates were included: ratio (proportion of White and Black), race, age, sex, and training data sample size. (Categorical: Race, age, and sex; continuous: RMSE, ratio, and sample size) It was further assumed that the varying proportions of Black and White participants in the training data subsets would affect the performance and an interaction term was therefore added. The interaction term allowed for different slopes in the LMEM which allowed us to test the hypothesis</p>
-<p>Surveillance error grids (SEG) were used to get a general idea of the clinical risk of the prediction models.<span class="citation" data-cites="Tian2024"><sup><a href="references.html#ref-Tian2024" role="doc-biblioref">25</a></sup></span> The error grids are originally developed for the regulatory bodies to asses clinical accuracy of blood glucose monitoring in post-surveillance before the wide spread use of CGM devices.<span class="citation" data-cites="Tian2024"><sup><a href="references.html#ref-Klonoff2014" role="doc-biblioref">26</a></sup></span> and the results should therefore be interpreted with caution when using CGM data. The SEG is a 600x600 grid assigned an individual risk score to each datapoint with 15 colored zones, each indicating severity of a monitoring error that is acted upon in regards to risk of hypoglycemia or hyperglycemia (<a href="#fig-study3_SEG" class="quarto-xref">Figure&nbsp;<span>3.7</span></a>).<span class="citation" data-cites="Klonoff2014"><sup><a href="references.html#ref-Klonoff2014" role="doc-biblioref">26</a></sup></span> We decided to focus on the five colored zones regardless of the risk being hypo- or hypoglycemic, since one of the critiques of the SEG is that it is hard to interpret with all the zones and that the preferred number of zones are five and it is possible to only asses the output in five zones.<span class="citation" data-cites="Tian2024"><sup><a href="references.html#ref-Tian2024" role="doc-biblioref">25</a></sup></span> The five zones were “No”, “Slight”, “Moderate”, “High”, and “Extreme” errors according to the absolute error between the predicted and the actual value and the risk zone the error occurred in. Predictions outside of 0–33 mmol/L were changed to 0 or 33 mmol/L to keep within the upper and lower bounds of the surveillance error grid.</p>
+<p>Surveillance error grids (SEG) were used to get a general idea of the clinical risk of the prediction models.<span class="citation" data-cites="Tian2024"><sup><a href="references.html#ref-Tian2024" role="doc-biblioref">35</a></sup></span> The error grids are originally developed for the regulatory bodies to asses clinical accuracy of blood glucose monitoring in post-surveillance before the wide spread use of CGM devices.<span class="citation" data-cites="Tian2024"><sup><a href="references.html#ref-Klonoff2014" role="doc-biblioref">36</a></sup></span> and the results should therefore be interpreted with caution when using CGM data. The SEG is a 600x600 grid assigned an individual risk score to each datapoint with 15 colored zones, each indicating severity of a monitoring error that is acted upon in regards to risk of hypoglycemia or hyperglycemia (<a href="#fig-study3_SEG" class="quarto-xref">Figure&nbsp;<span>3.9</span></a>).<span class="citation" data-cites="Klonoff2014"><sup><a href="references.html#ref-Klonoff2014" role="doc-biblioref">36</a></sup></span> To facilitate interpretation, the 15 surveillance error grid zones were collapsed into the five broader risk zones (“No”, “Slight”, “Moderate”, “High”, and “Extreme”), as previously suggested in the literature.<span class="citation" data-cites="Tian2024"><sup><a href="references.html#ref-Tian2024" role="doc-biblioref">35</a></sup></span> Predictions outside of 0–33 mmol/L were changed to 0 or 33 mmol/L to keep within the upper and lower bounds of the surveillance error grid.</p>
 <div id="fig-study3_SEG" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-study3_SEG-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_SEG_empty.png"><img src="figures/3_methods_fig/study3_SEG_empty.png" class="img-fluid figure-img"></a></p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-study3_SEG-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.7: An empty surveillance error grid
+Figure&nbsp;3.9: An empty surveillance error grid
 </figcaption>
 </figure>
 </div>
 </section>
 </section>
-<section id="bias-in-machine-learning-models-study-iii" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="bias-in-machine-learning-models-study-iii"><span class="header-section-number">3.6</span> Bias in machine learning models (Study III)</h2>
+<section id="bias-in-machine-learning-models-study-iii" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="bias-in-machine-learning-models-study-iii"><span class="header-section-number">3.7</span> Bias in machine learning models (Study III)</h2>
 <ul class="task-list">
 <li><label><input type="checkbox">Fairness metrics</label></li>
 <li><label><input type="checkbox">Mitigation strategies -&gt; Fine-tuning LSTM</label></li>
@@ -739,20 +864,50 @@ Figure&nbsp;3.7: An empty surveillance error grid
 <div id="ref-Kaneshiro2011" class="csl-entry" role="listitem">
 <div class="csl-left-margin">21. </div><div class="csl-right-inline">Kaneshiro B, Geling O, Gellert K, Millar L. The challenges of collecting data on race and ethnicity in a diverse, multiethnic state. Hawaii medical journal (1962) 2011;70(8):168–71. </div>
 </div>
+<div id="ref-YurunLu2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline">Lu Y, Liu D, Liang Z, et al. A pretrained transformer model for decoding individual glucose dynamics from continuous glucose monitoring data. National science review 2025;12(5):nwaf039–. </div>
+</div>
+<div id="ref-Lutsker2026" class="csl-entry" role="listitem">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline">Lutsker G, Sapir G, Shilo S, et al. A foundation model for continuous glucose monitoring data. Nature (London) 2026;650(8103):978–86. </div>
+</div>
+<div id="ref-McInnes2018_umap" class="csl-entry" role="listitem">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline">McInnes L, Healy J, Melville J. UMAP: Uniform manifold approximation and projection for dimension reduction. arXiv preprint arXiv:180203426 [Internet] 2018;Available from: <a href="https://arxiv.org/abs/1802.03426">https://arxiv.org/abs/1802.03426</a></div>
+</div>
+<div id="ref-Danne2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline">Danne T, Nimri R, Battelino T, et al. International consensus on use of continuous glucose monitoring. Diabetes care 2017;40(12):1631–40. </div>
+</div>
+<div id="ref-NICE_2028_guidelines" class="csl-entry" role="listitem">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline">National Guideline Centre (UK). Chronic heart failure in adults: Diagnosis and management [Internet]. London, UK: National Institute for Health; Care Excellence (NICE); 2018. Available from: <a href="https://www.ncbi.nlm.nih.gov/books/NBK536098/">https://www.ncbi.nlm.nih.gov/books/NBK536098/</a></div>
+</div>
+<div id="ref-Service1970" class="csl-entry" role="listitem">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline">Service FJ, Molnar GD, Rosevear JW, Ackerman E, Gatewood LC, Taylor WF. Mean amplitude of glycemic excursions, a measure of diabetic instability. Diabetes (New York, NY) 1970;19(9):644–55. </div>
+</div>
+<div id="ref-Collins2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline">Collins GS, Moons KGM, Dhiman P, et al. TRIPOD+AI statement: Updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ [Internet] 2024;385. Available from: <a href="https://www.bmj.com/content/385/bmj-2023-078378">https://www.bmj.com/content/385/bmj-2023-078378</a></div>
+</div>
+<div id="ref-Riley2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline">Riley RD, Collins GS. Stability of clinical prediction models developed using statistical or machine learning methods. Biometrical Journal [Internet] 2023;65(8):2200302. Available from: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/bimj.202200302">https://onlinelibrary.wiley.com/doi/abs/10.1002/bimj.202200302</a></div>
+</div>
+<div id="ref-VanCalster2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><span class="nocase">Van Calster B, Collins GS, Vickers AJ, et al.</span> Evaluation of performance measures in predictive artificial intelligence models to support medical decisions: Overview and guidance. The Lancet Digital Health [Internet] 2025;7(12):100916. Available from: <a href="https://www.sciencedirect.com/science/article/pii/S2589750025000986">https://www.sciencedirect.com/science/article/pii/S2589750025000986</a></div>
+</div>
+<div id="ref-Pennells2023_score2dm" class="csl-entry" role="listitem">
+<div class="csl-left-margin">31. </div><div class="csl-right-inline">Pennells L, Kaptoge S, Østergaard HB, et al. SCORE2-diabetes: 10-year cardiovascular risk estimation in type 2 diabetes in europe. European heart journal 2023;44(28):2544–56. </div>
+</div>
 <div id="ref-Thomsen2025" class="csl-entry" role="listitem">
-<div class="csl-left-margin">22. </div><div class="csl-right-inline">Thomsen HB, Li LY, Isaksen AA, et al. <a href="https://doi.org/10.1371/journal.pdig.0000918">Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes</a>. PLOS Digital Health 2025;4(6):e0000918. </div>
+<div class="csl-left-margin">32. </div><div class="csl-right-inline">Thomsen HB, Li LY, Isaksen AA, et al. <a href="https://doi.org/10.1371/journal.pdig.0000918">Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes</a>. PLOS Digital Health 2025;4(6):e0000918. </div>
 </div>
 <div id="ref-Thomsen_github_1" class="csl-entry" role="listitem">
-<div class="csl-left-margin">23. </div><div class="csl-right-inline">Thomsen HB. Jchr_racial_diff: Code and data repository. GitHub repository. 2023;</div>
+<div class="csl-left-margin">33. </div><div class="csl-right-inline">Thomsen HB. Jchr_racial_diff: Code and data repository. GitHub repository. 2023;</div>
 </div>
 <div id="ref-Deng2021" class="csl-entry" role="listitem">
-<div class="csl-left-margin">24. </div><div class="csl-right-inline">Deng Y, Lu L, Aponte L, et al. Deep transfer learning and data augmentation improve glucose levels prediction in type 2 diabetes patients. NPJ digital medicine 2021;4(1):109–13. </div>
+<div class="csl-left-margin">34. </div><div class="csl-right-inline">Deng Y, Lu L, Aponte L, et al. Deep transfer learning and data augmentation improve glucose levels prediction in type 2 diabetes patients. NPJ digital medicine 2021;4(1):109–13. </div>
 </div>
 <div id="ref-Tian2024" class="csl-entry" role="listitem">
-<div class="csl-left-margin">25. </div><div class="csl-right-inline">Tian T, Aaron RE, Kohn MA, Klonoff DC. The need for a modern error grid for clinical accuracy of blood glucose monitors and continuous glucose monitors. Journal of diabetes science and technology 2024;18(1):3–9. </div>
+<div class="csl-left-margin">35. </div><div class="csl-right-inline">Tian T, Aaron RE, Kohn MA, Klonoff DC. The need for a modern error grid for clinical accuracy of blood glucose monitors and continuous glucose monitors. Journal of diabetes science and technology 2024;18(1):3–9. </div>
 </div>
 <div id="ref-Klonoff2014" class="csl-entry" role="listitem">
-<div class="csl-left-margin">26. </div><div class="csl-right-inline">Klonoff DC, Lias C, Vigersky R, et al. The surveillance error grid. Journal of diabetes science and technology 2014;8(4):658–72. </div>
+<div class="csl-left-margin">36. </div><div class="csl-right-inline">Klonoff DC, Lias C, Vigersky R, et al. The surveillance error grid. Journal of diabetes science and technology 2014;8(4):658–72. </div>
 </div>
 </div>
 </section>

@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -34,7 +53,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./2-aims.html" rel="next">
-<link href="./0-abbreviations.html" rel="prev">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -123,30 +142,6 @@ main.content {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./0-disclosure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and disclosures</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./0-preface.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./0-papers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Papers in the dissertation</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./0-abbreviations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Abbreviations</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./1-introduction.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
@@ -217,7 +212,7 @@ main.content {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./app1-supplementary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Supplementary validation analyses</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Search strings (Study I)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -299,6 +294,8 @@ main.content {
 <li>Traditional risk models
 <ul>
 <li>SCORE2-Diabetes risk score</li>
+<li>What is SCORE2-Diabetes 10 year CVD risk score?</li>
+<li><label><input type="checkbox">What is the SCORE2-diabetes and why was it chosen?</label></li>
 </ul></li>
 <li>Limitations of conventional predictors</li>
 </ul>
@@ -313,14 +310,15 @@ main.content {
 <ul>
 <li>Logistic regression</li>
 <li>LSTM and CNNs</li>
-<li>Foundation models</li>
-</ul></li>
-<li>Challenges and pitfalls of machine learning in healthcare
+<li>Foundation models
 <ul>
-<li>Overfitting and generalizability</li>
-<li>Interpretability and explainability</li>
+<li>CGM data has been processed and interpreted based on plotting the data and extracting CGM-derived metrics from time series signal sampled every 3-15 minutes. However new techniques within the machine learning field has allowed us to process the whole time series signals like CGM data, which can retain more information from the original CGM data then the derived metrics can. Foundation models are machine learning models that are trained on huge amount of data and thereafter can be retrained to be specialized into a specific task. This is one solution to the limitation of small datasets that are not sufficient enough for the data hungry machine learning models.</li>
+<li>The CGMformer is a transformer-based model that was trained on a large dataset of CGM data and is designed to learn representations of glucose dynamics. The model takes in sequences of CGM measurements and outputs embeddings that capture the underlying patterns in the glucose data. These embeddings can then be used for downstream tasks such as predicting cardiovascular risk or other health outcomes.</li>
+<li>The embeddings are learned representations that capture the underlying patterns and relationships in the input data, allowing for more efficient and effective downstream tasks such as classification, regression, or clustering.</li>
+</ul></li>
 </ul></li>
 </ul>
+<p>The CGMformer is bla bla bla<span class="citation" data-cites="YurunLu2025"><sup><a href="references.html#ref-YurunLu2025" role="doc-biblioref">1</a></sup></span> * Challenges and pitfalls of machine learning in healthcare * Overfitting and generalizability * Interpretability and explainability</p>
 </section>
 <section id="fairness-and-bias-in-machine-learning" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="fairness-and-bias-in-machine-learning"><span class="header-section-number">1.5</span> Fairness and bias in machine learning</h2>
@@ -336,6 +334,11 @@ main.content {
 [![](figures/classifierdiffs)](https://aastedet.github.io/dissertation/figures/classifierdiffs.svg):::  This is anders example with figures, calling an URL link inside the figure code to make the figure clickable like a button which will take you to the origin of the image. (not necesary for this project but maybe in the future for thesis writing)-->
 
 
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-YurunLu2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Lu Y, Liu D, Liang Z, et al. A pretrained transformer model for decoding individual glucose dynamics from continuous glucose monitoring data. National science review 2025;12(5):nwaf039–. </div>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -741,8 +744,8 @@ main.content {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./0-abbreviations.html" class="pagination-link" aria-label="Abbreviations">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Abbreviations</span>
+      <a href="./index.html" class="pagination-link" aria-label="Cover Page">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Cover Page</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
