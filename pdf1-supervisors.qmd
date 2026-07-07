@@ -27,9 +27,11 @@ Gødstrup Hospital, Denmark
 **Associate Professor Simon Tilma Vistisen (chairman)**\
 Department of Clinical Medicine, Aarhus University, Denmark
 <!-- Email: vistisen@clin.au.dk -->
+
 **Professor Cristina Soguero-Ruíz**\
 Department of Signal Theory and Communications, King Juan Carlos University, Spain\
 <!-- Email: cristina.soguero@urjc.es -->
+
 **Associate Professor Simon Lebech Cichosz**\
 Department of Health Science and Technology, The Faculty of Medicine, Medical\
 Informatics and Image Analysis, Aalborg University, Denmark\

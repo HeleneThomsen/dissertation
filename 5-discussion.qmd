@@ -1,36 +1,92 @@
 # Discussion
-
 # Main findings
 *  Scoping review highlighted a chaotic landscape of wildly different study designs in the literature
-*  Mention other reviews, Yapanis + the other one that I forgot
+*  Mention other reviews, Yapanis + the other one that I forgot the name of
 *  Representation learning of CGM data can capture complex patterns in glucose dynamics that are not captured by traditional CGM metrics
 *  Machine learning models can predict NT-proBNP levels using CGM data, however the performance of these models is modest and there is still room for improvement
 *  Bias is a concern in machine learning models, and fine-tuning on a subset of the data can help mitigate bias as measured by fairness metrics
 *  Grouped fairness is easier to evaluate and mitigate than individual fairness, but it is still an important step in ensuring that machine learning models are equitable and do not perpetuate existing biases in healthcare.
-
-# Machine learning vs traditional statistical methods
-
-# something about data and cross-sectional vs longitudinal data and how this affects the choice of methods
-* Mention the collins protocol that creates a study focused on answer this question
-* Mention the CANCAN dataset and the weird trend with people being better of the more comobidities
-* Why not use CONGA; AI: In participants with insufficient valid CGM observations, CONGA could not be calculated reliably using the available implementation
-
-
-## Study 3 Method choices
-**PREDICTION HORIZON**
-Many studies in the literature tests a variety of different prediction horizons but it seems to always predict best, the shorter the prediction horizon is. Most often sensors do also have a higher resolution then 15 minuts (3-5 minutes resolution)
-
-- [ ] In the discussion I could mention LSTM vs CNN vs MLP and talk about the difference in model doesn't make that big of a difference.
+<!-- 1. Main findings of the dissertation (1–2 pages) -->
+* CGM contains clinically relevant information beyond glucose monitoring.
+* Conventional CGM-derived metrics have been extensively investigated but evidence remains heterogeneous.
+* Foundation models capture meaningful glycemic structure across individuals.
+* Embeddings did not improve cardiovascular prediction in the available dataset.
+* Fair machine learning requires attention to data composition, but transfer learning can mitigate disparities.
 
 
-# Clinical implications
+<!-- This section should answer your overall aim. -->
 
-# Strengths and limitations
+* Does CGM contain clinically relevant cardiovascular information?
+* Study 1
+    * Heterogeneous literature, mostly association studies and almost no prediction studies.
+    * TIR and MAGE dominate the literature (Hopefully here add that many different outcomes for each CGM-derived metric) 
+* Study 2
+    * TIR and MAGE predicted NT-proBNP
+    * Why not use CONGA; AI: In participants with insufficient valid CGM observations, CONGA could not be calculated reliably using the available implementation
+    * Embeddings captured glycemic control but no obvious cardiovascular structure
+    <!-- Why might cardiovascular information be difficult to detect? -->
+    * CVD is multifactorial and CGM captures only one component
+    * cross-sectional data <!-- and distal outcome -->
 
 
+* What can foundation models contribute with beyond conventional CGM metrics?
 
-# Conclusions and future perspectives
+    * Capture more details patterns?
+    * external generalizability to known publicly available model
+    * reusable glucose representations and open access in the future
+    * meaningful representations ≠ better prediction
 
-<!-- Summary requirements
-an independent scientific document of approximately 30-50 pages followed by a number of original papers. The text of the summary must be your own original work and should be weighted towards a reasoned discussion of applied methods and a demonstration of your ability to place your own research in the context of the most important research in the field.
- -->
+
+* Machine learning in clinical prediction: complexity versus utility
+
+    * Traditional metrics remain competitive.
+    * Simpler models often performed as well.
+    * Foundation models UMAPs might not be the best solution -> enough data to train a head?.
+    * Robust validation is essential.
+    * Optimism correction.
+    * Small datasets.
+    <!-- * Clinical usefulness versus statistical performance. -->
+
+<!-- This section synthesizes several ideas from Study II. -->
+
+* Fairness and generalizability of CGM-based machine learning
+
+    * Study III belongs.
+    * Why fairness matters
+    * Small differences solved with TL
+    * Survaillance error grid and clinical significance or lack thereof when focused in this model
+    * Data diversity
+    * Generalizability
+    * Beyond race (age, sex, ethnicity, healthcare systems)
+    * Many studies in the literature tests a variety of different prediction horizons but it seems to always predict best, the shorter the prediction horizon is. Most often sensors do also have a higher resolution then 15 minuts (3-5 minutes resolution) (I have no idea where to place this bit so placed with study 3 for now)
+    * we attempt to mitigate bias by fine-tuning the model on a subset of the data. The results of this analysis are presented in the paper, and we find that fine-tuning the model can reduce bias as measured by fairness metrics. However, it is important to note that bias mitigation is an ongoing process, and further research is needed to develop more effective strategies for addressing bias in machine learning models in healthcare
+
+
+* Data driven prediction models are only as useful as the populations on which they are developed and evaluated. (Methodological considerations)
+
+    * Cross-sectional versus longitudinal studies
+    * Something about data and cross-sectional vs longitudinal data and how this affects the choice of methods
+    * Sample size
+    * External validation
+    * Choice of cardiovascular outcome
+    * Heterogeneity
+    * Open science
+    * T1DX dataset (half kids, half adults have stronger signal because kids have poor glycemic control) and
+    * CANCAN dataset (very specific T2D population)
+    * Mention the CANCAN dataset and the weird trend with people being better of the more comobidities
+    * Foundation model availability
+<!-- These ideas occur throughout both Study I and II. -->
+
+* # Clinical implications and Future perspectives
+
+    * Current clinical utility of CGM-derived metrics
+    * Where foundation models may become useful (Fine-tuning foundation models, Multi-modal foundation models, Raw CGM instead of summary metrics)
+    * Importance of interpretable predictors
+    * Implications for cardiovascular risk assessment
+    * Personalized diabetes care
+    * Fair AI and External validation -> Open foundation models
+    * Larger prospective cohorts
+    * mention protocol cited at the end of scoping review discussion
+
+
+# Conclusions

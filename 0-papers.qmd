@@ -2,15 +2,17 @@
 
 ## Study I
 
-Isaksen AA, Sandbæk A, Bjerg L. Validation of Register-Based Diabetes Classifiers in Danish Data. *Clinical Epidemiology*. 2023;15:569-581. <https://doi.org/10.2147/CLEP.S407019>
+Thomsen, H. B., Lebiecka-Johansen, B., Nørgaard, O., Andersen, T. H., Andersen, S. T., Fagherazzi, G., Hulman, A., & Isaksen, A. A. (2026). Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People With Diabetes: Systematic Scoping Review. JMIR Diabetes, 11(1), e89374. https://doi.org/10.2196/89374
+
 
 ## Study II
 
-Isaksen AA, Sandbæk A, Skriver MV, Andersen GS, Bjerg L (2023) Guideline-level monitoring, biomarker levels and pharmacological treatment in migrants and native Danes with type 2 diabetes: Population-wide analyses. PLOS Global Public Health 3(10): e0001277 <https://doi.org/10.1371/journal.pgph.0001277>
+Thomsen, H. B., Andersen, S. T., Fagherazzi, G., Isaksen, A. A. & Hulman, A. (2026). Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk. (Under review at JMIR AI and pending for preprint at JMIR preprints)
 
 ## Study III
 
-Isaksen, AA, Sandbæk, A, Skriver, MV, Bjerg, L. Glucose-lowering drug use in migrants and native Danes with type 2 diabetes: Disparities in combination therapy and drug types. *Diabetes Obesity and Metabolism*. 2023; 1-10. <https://doi.org/10.1111/dom.15230>
+Thomsen, H. B., Li, L. Y., Isaksen, A. A., Lebiecka-Johansen, B., Bour, C., Fagherazzi, G., Doorn, W. P. T. M. van, Varga, T. V., & Hulman, A. (2024). Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes (p. 2024.12.19.24319325). medRxiv. https://doi.org/10.1101/2024.12.19.24319325
+
 
 ```{=tex}
 \newpage
@@ -21,11 +23,3 @@ Isaksen, AA, Sandbæk, A, Skriver, MV, Bjerg, L. Glucose-lowering drug use in mi
 
 \listoftables
 ```
-
-
-1 Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People with Diabetes: A Systematic Scoping Review (accepted, JMIR Diabetes)
-PubMed and Embase were searched for studies examining associations between CGM data and clinical or subclinical CVD, and for studies assessing the predictive value of CGM data for CVD outcomes. Study selection and data extraction were performed according to predefined criteria following the PRISMA-Sc-r checklist, and findings were summarized descriptively.
-2 Racial Disparities in Continuous Glucose Monitoring-Based 60-min Glucose Predictions Among People with Type 1 Diabetes (published, PLOS Digital Health)
-Investigating racial group-fairness in blood glucose forecasting using machine learning models ina US dataset containing 205 participants with self identified (non-Hispanic White or non-Hispanic Black) ethnicity and race. Model performance and fairness was compared across groups using linear mixed effect models and root mean squarred errors.
-3 Evaluation of a CGM Foundation Model for NT-proBNP Prediction and Embedding Space Analysis (work in progress)
-This study evaluates representations from the CGMformer in populations with type 1 and type 2 diabetes. Embedding space structure was explored using UMAPs and cosine similarity distances, and the predictive value of CGM data for binary NT-proBNP status was assessed using logistic regression models.

@@ -6,7 +6,6 @@
     * Type 2 diabetes
 * Cardiovascular complications
 * Heart failure in diabetes
-* NT-proBNP as a biomarker
 
 ## Glycemic markers and glucose monitoring
 * HbA1c and its limitations
@@ -19,33 +18,30 @@
 * Traditional risk models
     * SCORE2-Diabetes risk score
     * What is SCORE2-Diabetes 10 year CVD risk score?
-    - [ ] What is the SCORE2-diabetes and why was it chosen?
 * Limitations of conventional predictors
 
 ## Machine learning
 * Data-driven vs hypothesis-drivenly(knowledge-based) paradigms
 * Why machine learning in diabetes and cardiovascular risk prediction?
-* Why are ML fantatic for CGM data?
-* Types of machine learnin g methods
+* Why are ML fantastic for CGM data?
+* Types of machine learning methods
     * Logistic regression
     * LSTM and CNNs
-    * Foundation models
-        * CGM data has been processed and interpreted based on plotting the data and extracting CGM-derived metrics from time series signal sampled every 3-15 minutes. However new techniques within the machine learning field has allowed us to process the whole time series signals like CGM data, which can retain more information from the original CGM data then the derived metrics can. Foundation models are machine learning models that are trained on huge amount of data and thereafter can be retrained to be specialized into a specific task. This is one solution to the limitation of small datasets that are not sufficient enough for the data hungry machine learning models.
-        * The CGMformer is a transformer-based model that was trained on a large dataset of CGM data and is designed to learn representations of glucose dynamics. The model takes in sequences of CGM measurements and outputs embeddings that capture the underlying patterns in the glucose data. These embeddings can then be used for downstream tasks such as predicting cardiovascular risk or other health outcomes.
-        * The embeddings are learned representations that capture the underlying patterns and relationships in the input data, allowing for more efficient and effective downstream tasks such as classification, regression, or clustering.
+    * Foundation models and their advantage
+        <!-- * CGM data has been processed and interpreted based on plotting the data and extracting CGM-derived metrics from time series signal sampled every 3-15 minutes. However new techniques within the machine learning field has allowed us to process the whole time series signals like CGM data, which can retain more information from the original CGM data then the derived metrics can. Foundation models are machine learning models that are trained on huge amount of data and thereafter can be retrained to be specialized into a specific task. This is one solution to the limitation of small datasets that are not sufficient enough for the data hungry machine learning models. -->
+        <!-- * The CGMformer is a transformer-based model that was trained on a large dataset of CGM data and is designed to learn representations of glucose dynamics. The model takes in sequences of CGM measurements and outputs embeddings that capture the underlying patterns in the glucose data. These embeddings can then be used for downstream tasks such as predicting cardiovascular risk or other health outcomes. -->
+        <!-- * The embeddings are learned representations that capture the underlying patterns and relationships in the input data, allowing for more efficient and effective downstream tasks such as classification, regression, or clustering. -->
 
-The CGMformer is bla bla bla [@YurunLu2025]
+    * The CGMformer is bla bla bla [@YurunLu2025]
+
 * Challenges and pitfalls of machine learning in healthcare
     * Overfitting and generalizability
     * Interpretability and explainability
-
-
 
 ## Fairness and bias in machine learning
 * Define race and ethnicity
 * Algorithmic bias and group fairness
 * Fairness metrics and mitigation strategies
-* Challenges in healthcare applications when using ML
 
 <!-- https://github.com/Aastedet/dissertation -->
 <!-- https://superfrey.github.io/PhD_dissertation/1-introduction.html -->

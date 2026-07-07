@@ -1,8 +1,7 @@
 # Notes and disclosures {.unnumbered}
 
 ## Financial disclosures
-
-This PhD project was supported by a research training supplement grant from **Aarhus University**, and grants from the **Public Health in Central Denmark Region** foundation (Danish: *Folkesundhed i Midten*) and **Steno Diabetes Center Aarhus**, which is partially funded by an unrestricted donation from the *Novo Nordisk Foundation*.
+This PhD project was supported by a research grant from the **Danish Diabetes and Endocrine Academy** (NNF22SA0079901) and the **Danish Cardiovascular Academy** (NNF20SA0067242), which are funded by the **Novo Nordisk Foundation**. Furthermore, the project was supported by a research grant from the **Novo Nordisk Foundation** (NNF22OC0076725),
 
 ```{r}
 #| label: financial-disclosures
@@ -19,7 +18,7 @@ knitr::include_graphics("figures/sdca.png")
 ::: {.content-visible when-format="pdf"}
 
 ## Notes on website version {.unnumbered .unlisted}
-This dissertation is available for viewing online at [aastedet.github.io/dissertation/](https://aastedet.github.io/dissertation/) (or by scanning the QR code in the lower right-hand corner of the title page). While the core contents are identical, the website may offer a more comfortable reading experience compared to the physical booklet for some readers. In particular, the website is recommended for readers with impaired vision and others who may be uncomfortable reading the small physical book.
+This dissertation is available for viewing online at [HeleneThomsen.github.io/dissertation/](https://HeleneThomsen.github.io/dissertation/) or by scanning the QR code in the lower right-hand corner of the title page.
 
 {{< include pdf2-acknowledgements.qmd >}} 
 
@@ -28,44 +27,52 @@ This dissertation is available for viewing online at [aastedet.github.io/dissert
 ::: {.content-hidden unless-format="html"}
 ## Notes on website version {.unnumbered .unlisted}
 
-This website contains my PhD dissertation in online format. In terms of core content, it is identical to the pdf-file submitted to the graduate school, although the individual articles have been omitted from the website, as they are all open-access publications. Links to the papers are provided [here](https://aastedet.github.io/dissertation/0-papers.html) as soon as they are published.
+This website contains my PhD dissertation in online format. In terms of core content, it is identical to the pdf-file submitted to the graduate school, although the individual articles have been omitted from the website. Links to the papers are provided here [Link](https://HeleneThomsen.github.io/dissertation/0-papers.html) as soon as they are published.
 
-Due to the graduate school only accepting dissertation submissions in pdf-format, the supplementary appendix of the submitted dissertation is relatively limited and sparsely referenced throughout this website. In contrast, the electronic supplementary material attached to each publication utilises html to present risk coefficients from main and supplementary analyses in a structured and accessible format.
 
-Both the submitted dissertation and this website were made with [Quarto®](https://quarto.org/), an open-source scientific and technical publishing system, with inspiration from the [quartothesis skeleton](https://github.com/biostats-r/quartothesis) by professor Richard Telford of the Department of Biological Sciences, University of Bergen.
+Both the submitted dissertation and this website were made with [Quarto®](https://quarto.org/) Template was taken from Anders Aasted Isaksens GitHub repository [Link](https://aastedet.github.io/dissertation/)
+Quarto is an open-source scientific and technical publishing system, with inspiration from the [quartothesis skeleton](https://github.com/biostats-r/quartothesis) by professor Richard Telford of the Department of Biological Sciences, University of Bergen.
 
-The rendered pdf-file can be found [here](https://aastedet.github.io/dissertation/Type-2-diabetes-in-migrants--a-register-based-analysis.pdf).
+The rendered pdf-file can be found here [Link](https://HeleneThomsen.github.io/dissertation/Machine-learning-methods-for-continuous-glucose-monitoring-data-and-their-potential-in-cardiovascular-risk-assessment.pdf).
 
 ## Supervisors and assessment committee {.unnumbered .unlisted}
 
 #### PhD student:
 
-**Anders Aasted Isaksen, MD**\
+**Helene Bei Thomsen**\
 Department of Public Health, Aarhus University, Denmark
 
 #### Supervisors:
 
-**Professor Annelli Sandbæk, PhD (main supervisor)**\
+**Associate Professor Adam Hulman, PhD (main supervisor)**\
 Department of Public Health, Aarhus University, Denmark\
 Steno Diabetes Center Aarhus, Denmark
 
-**Associate Professor Mette Vinther Skriver, PhD**\
-Department of Public Health, Aarhus University, Denmark
-
-**Lasse Bjerg, PhD**\
-Department of Public Health, Aarhus University, Denmark\
+**Anders Aasted Isaksen, MD, PhD**\
 Steno Diabetes Center Aarhus, Denmark
+
+**Guy Fagherazzi, PhD**\
+Director of the Department of Precision Health\
+Head of the Deep Digital Phenotyping Research Unit\
+Luxembourg Institute of Health, Luxembourg
+
+**Signe Toft Andersen, MD, PhD**\
+Steno Diabetes Center Aarhus, Denmark\
+Gødstrup Hospital, Denmark
 
 #### Assessment committee:
+**Associate Professor Simon Tilma Vistisen (chairman)**\
+Department of Clinical Medicine, Aarhus University, Denmark
+<!-- Email: vistisen@clin.au.dk -->
 
-**Professor Reimar Wernich Thomsen, PhD (chairman)**\
-Department of Clinical Epidemiology, Department of Clinical Medicine, Aarhus University Hospital, Denmark
+**Professor Cristina Soguero-Ruíz**\
+Department of Signal Theory and Communications, King Juan Carlos University, Spain\
+<!-- Email: cristina.soguero@urjc.es -->
 
-**Professor Per Wändell, PhD**\
-Division of Family Medicine and Primary Care, Department of Neurobiology, Care Sciences and Society, Karolinska Institutet
-
-**Senior researcher Nana Folmann Hempler, PhD**\
-Diabetes Management Research, Steno Diabetes Center Copenhagen, Denmark
+**Associate Professor Simon Lebech Cichosz**\
+Department of Health Science and Technology, The Faculty of Medicine, Medical\
+Informatics and Image Analysis, Aalborg University, Denmark\
+<!-- Email: simcich@hst.aau.dk -->
 
 :::
 

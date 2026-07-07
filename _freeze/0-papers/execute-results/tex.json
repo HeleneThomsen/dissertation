@@ -1,0 +1,11 @@
+{
+  "hash": "e9a24980ce0fe7165a59acc54df23290",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "# Papers in the dissertation {#sec-linked-papers .unnumbered}\n\n## Study I\n\nThomsen, H. B., Lebiecka-Johansen, B., Nørgaard, O., Andersen, T. H., Andersen, S. T., Fagherazzi, G., Hulman, A., & Isaksen, A. A. (2026). Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People With Diabetes: Systematic Scoping Review. JMIR Diabetes, 11(1), e89374. https://doi.org/10.2196/89374\n\n\n## Study II\n\nThomsen, H. B., Andersen, S. T., Fagherazzi, G., Isaksen, A. A. & Hulman, A. (2026). Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk. (Under review at JMIR AI and pending for preprint at JMIR preprints)\n\n## Study III\n\nThomsen, H. B., Li, L. Y., Isaksen, A. A., Lebiecka-Johansen, B., Bour, C., Fagherazzi, G., Doorn, W. P. T. M. van, Varga, T. V., & Hulman, A. (2024). Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes (p. 2024.12.19.24319325). medRxiv. https://doi.org/10.1101/2024.12.19.24319325\n\n\n```{tex}\n\\newpage\n\n{\\let\\clearpage\\relax \\tableofcontents} \n\n\\listoffigures\n\n\\listoftables\n```\n\n",
+    "supporting": [
+      "0-papers_files"
+    ],
+    "filters": []
+  }
+}

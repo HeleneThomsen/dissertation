@@ -4,34 +4,52 @@ In this chapter the three studies included in this PhD will be presented. The da
 
 - [ ] What was done (Description)
 - [ ] Why it was done (Justification)
-- [ ] Add search string?
 - [ ] tell about the 7-point fingerprick?
 
-## Overview of the studies
+## Overview of the Studies
 
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
-|                                 | Study I                                                                                                                     | Study II                                                                                                                                    | Study III                                                                                                              |
-+=================================+=============================================================================================================================+=============================================================================================================================================+========================================================================================================================+
-| Title                           | Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People With Diabetes: Systematic Scoping Review | Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk | Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
-| Study Type                      | Review                                                                                                                      | CGM foundation model evaluation study                                                                                                       | Algorithmic fairness study                                                                                             |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
-| Data Sources                    | Literature on Embase and MEDLINE                                                                                            | The CANCAN study and the T1D Exchange (T1DX) dataset                                                                                        | T1D Exchange (T1DX) dataset                                                                                            |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
-| Population                      | Studies including people with type 1 diabetes, type 2 diabetes and/or prediabetes                                           | 159 people with type 2 diabetes\                                                                                                            | 205 people with type 1 Diabetes                                                                                        |
-|                                 |                                                                                                                             | 205 people with type 1 Diabetes                                                                                                             |                                                                                                                        |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
-| Input, predictors and exposures | Search strategy and eligibility criteria                                                                                    | Clinical variables, CGM-derived metrics and continuous CGM data                                                                             | Continuous CGM data                                                                                                    |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
-| Outcome, target                 | All studies that uses CGM data to say something about cardiovascular disease risk and outcomes                              | Visualisation of foundation model embeddings and elevated NT-proBNP prediction                                                              | Next blood glucose value                                                                                               |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
-| Analysis                        | Systematic scoping review, study characterization, and narrative synthesis                                                  | Foundation models and logistic regression models                                                                                            | Long short term memory models (LSTM) and Linear mixed effect models (LMEM)                                             |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
++-----------------+-------+------------------------+-----------------------+
+| Model family    | Model | Baseline predictors    | Additional predictors |
++=================+=======+========================+=======================+
+| Clinical        | **A0**| Age                    | –                     |
++-----------------+-------+------------------------+-----------------------+
+| Clinical        | **A1**| Clinical variables^*^  | –                     |
++-----------------+-------+------------------------+-----------------------+
+| Clinical        | **A2**| Clinical variables^*^  | TIR + MAGE            |
++-----------------+-------+------------------------+-----------------------+
+| Clinical        | **A3**| Clinical variables^*^  | UMAP dimensions       |
++-----------------+-------+------------------------+-----------------------+
+| SCORE2-Diabetes | **B1**| SCORE2-Diabetes score  | –                     |
++-----------------+-------+------------------------+-----------------------+
+| SCORE2-Diabetes | **B2**| SCORE2-Diabetes score  | TIR + MAGE            |
++-----------------+-------+------------------------+-----------------------+
+| SCORE2-Diabetes | **B3**| SCORE2-Diabetes score  | UMAP dimensions       |
++-----------------+-------+------------------------+-----------------------+
+| CGM only        | **C1**| TIR + MAGE             | –                     |
++-----------------+-------+------------------------+-----------------------+
+| Embeddings only | **D1**| UMAP dimensions        | –                     |
++-----------------+-------+------------------------+-----------------------+
 
-## Study I: A scoping Review
+: Overview of models and predictors {#tbl-prediction-models}
 
-- [ ] Explain why scoping review and not a systematic review
+^*^ Clinical variables are the same as those included in the SCORE2-Diabetes risk model: age, sex, smoking status, systolic blood pressure, HDL cholesterol, total cholesterol, diabetes duration, HbA1c, and eGFR [@Pennells2023_score2dm].  
+*TIR = time in range; MAGE = mean amplitude of glycemic excursions.*
 
+
+|  | Study I | Study II | Study III |
+|:-|:----|:----|:----|
+| Title | Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People With Diabetes: Systematic Scoping Review | Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk | Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes |
+| Study Type | Review | CGM foundation model evaluation study | Algorithmic fairness study |
+| Data Sources | Literature on Embase and MEDLINE | The CANCAN study and the T1D Exchange (T1DX) dataset | T1D Exchange (T1DX) dataset |
+| Population | Studies including people with type 1 diabetes, type 2 diabetes and/or prediabetes | 159 people with type 2 diabetes 205 people with type 1 Diabetes | 205 people with type 1 Diabetes |
+| Input, predictors and exposures | Search strategy and eligibility criteria | Clinical variables, CGM-derived metrics and continuous CGM data | Continuous CGM data |
+| Outcome, target | All studies that uses CGM data to say something about cardiovascular disease risk and outcomes | Visualisation of foundation model embeddings and elevated NT-proBNP prediction | Next blood glucose value |
+| Analysis | Systematic scoping review, study characterization, and narrative synthesis | Foundation models and logistic regression models | Long short term memory models (LSTM) and Linear mixed effect models (LMEM) |
+
+: Overview of the three studies included in this PhD {#tbl-overview-studies bl-lines="rows"} 
+
+
+## Study I: A Scoping Review
 A scoping review was conducted to investigate current knowledge of CGM-data and its possible connection and predictive power to clinical and subclinical cardiovascular outcomes.
 Given the expected heterogeneity between studies, a scoping review was considered the most appropriate methodology.
 The scoping review followed the Manual for Evidence Synthesis (Chapter 10 - Scoping reviews) from the Joanna Briggs Institute and reported according to the Preferred Reporting Items for Systematic Reviews and Meta-analyses extension for scoping review (PRISMA-ScR) guidelines.[@Tricco2018; @Peters2024]
@@ -61,7 +79,7 @@ The review focused solely on CGM-data for the input to any association or predic
 |                                                                                                                                                           | Language not understood by authors                                                                                       |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
 
-: Eligibility criteria for the scoping review (Study I)
+Eligibility criteria for the scoping review (Study I)
 :::
 
 ### Search and Selection of Sources
@@ -115,11 +133,11 @@ Data collection timeline for the CANCAN Study
 The publicly available T1D Exchange (T1DX) dataset, distributed by the JAEB Center for Health Research under the protocol "Racial Differences in Mean CGM Glucose in Relation to HbA1c, was collected in 10 diabetes centers (US).[@JAEB_2016] The data was collected to determine if there is a racial difference in the association between mean glucose and glycated hemoglobin (HbA1c) between non-Hispanic African Americans or black (Black) and non-Hispanic white (White) people with T1D. In the T1DX study ethnicity and race was defined through self-identified and self-reported ethnicity/race verification forms where ethnicity was defined as Hispanic or Latino as: *“a person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. The term “Spanish origin” could be used in addition to “Hispanic” or “Latino”"*.[@Bergenstal2017] For race a participant defined as White was *“a person having origins in any of the original peoples of Europe, the Middle East or North Africa.” and Black or African American as “a person having origins in any of the Black racial groups of Africa. Terms such as “Haitian” or “Negro” can be used in addition to “Black” or “African American””*.[@Bergenstal2017] In this thesis, the term race will be used moving forward, as it aligns with the terminology used by Bergenstal et al.[@Bergenstal2017], it is, however, acknowledge that it is inherently difficult to define race.[@Kaneshiro2011] The T1DX study adhered to the tenets of the Declaration of Helsinki and was approved by the local institutional review boards and 205 people completed the study by providing written informed consent and assent when applicable.[@Bergenstal2017] All 205 participants were included in further analyses. Of the 205 participants, 101 were White and 104 were Black. For each race, two age groups were sampled 8 to \<18 years old and \>18. Each participant wore a blinded modified investigational version of Abbott Diabetes Care’s Flash Glucose Monitoring System (CGM) as continuously as possible for 12 weeks. CGM data was sampled every 15 minutes in a range between 2.21 - 27.65 mmol/L (40 and 498 mg/dL). Blood samples were taken for measurement at enrollment, at some of the follow-up visits, and at the end of enrollment. <!-- Furthermore, a log was kept for 7 days recording mealtimes, insulin dosing, and exercise. Some participants were asked to wear an accelerometer during the 7-day log time. -->
 
 <!-- ****************************************************************************************** -->
-## Study II: Foundation models and predictive utility of CGM data
+## Study II: Foundation Models and Predictive Utility of CGM data
 
 The second study was focused on investigating the knowledge and predictive utility of CGM data, both extracting a novel CGM-derived metric and the classical known ones found in study I.[@Thomsen2026]
 
-### Data and Participant Selection
+### Study II: Data and Participant Selection
 Both the CANCAN and the T1DX dataset was used for Study II.
 Participants with missing age, sex, HbA1c or BMI were removed for both cohorts and additional CANCAN participants with missing NT-proBNP, HDL, total cholesterol, and eGFR were also removed, since it was wished to calculate the SCORE2-Diabetes risk score.
 T1DX participants with missing race data were also removed.
@@ -160,7 +178,7 @@ The sex strata is used as an example to illustrate  the cosine distance analysis
 
 :::
 
-## Cardiovascular risk assessment
+## Study II: Cardiovascular Risk Assessment
 The following section is about cardiovascular risk assessment evaluated predicting NT-proBNP as a binary outcome using a >125 pg/mL threshold.[@source]
 The CANCAN dataset was the only dataset used for this CVD risk assessment.
 The focus was to test the predictive power of CGM data both as represented as embeddings and as well-established CGM-derived metrics. Some models also included clinical predictors to compare up against baseline models.[@Danne2017 ,@source_kovatchev?orAnotherSourceOnMAGE]
@@ -170,8 +188,8 @@ Prediction models integrated clinical, standard CGM-derived, and learned represe
 - [ ] What is NT-proBNP (scale, unit and connection with heart failure)
 
 ### Predictors
-- [ ] Add table with CGM derived metrics?
-
+- [ ] What is the SCORE2-diabetes and why was it chosen? (The Outcome + european dataset
+)
 Inspiration was drawn from the SCORE2-Diabetes risk score, which is a 10-year CVD risk score for european people with diabetes. It was decided to use the input predictors of the SCORE2-Diabetes risk score as the clinical set of predictors used in this study.[@source] This resulted in set of clinical predictors including age, sex, smoking status, systolic blood pressure, total cholesterol, and HbA1c.[@source]
 Initial testing quickly showed that the numbers of predictors had to be limited and the SCORE2-Diabetes risk score was chosen as another way to represent the clinical predictor set while keeping the number of predictors down.
 Additionally age was tested as a predictor on its own to see if it was a strong predictor of elevated NT-proBNP, since NT-proBNP is known to increase with age.[@NICE_2028_guidelines]
@@ -183,8 +201,6 @@ The CGMformer generated one 128-dimensional embedding for each 24-hour CGM recor
 The resulting 128-dimensional embeddings were subsequently reduced to two dimensions using UMAP, thereby enabling their use in the prediction models while keeping the number of predictors down to a minimum.
 
 ### Model development and evaluation
-- [ ] Check if any of the models pulled from supplementary uses ridge anf if yes, then include it here as well and explain why ridge is used
-
 Prediction models were developed using logistic regression to predict elevated NT-proBNP (>125 pg/mL) as a binary outcome. The models were evaluated using the area under the receiver operating characteristic curve (AUROC) as the primary metric.
 Bootstrap with optimism correction was employed for internal validation because of the limited sample size and the absence of an external validation cohort. The method repeatedly sampled bootstrap samples by sampling with replacement from the original dataset. For each bootstrap sample, the prediction model is fitted and its performance is evaluated both in the bootstrap sample (apparent performance) and in the original dataset (test performance). The difference between these two performance estimates represents the optimism due to overfitting. Averaging the optimism across all bootstrap samples and subtracting it from the apparent performance of the model fitted to the full dataset yields an optimism-corrected estimate of model performance. Internal validation was performed using 500 bootstrap resamples.[@Collins2024; @Riley2023]
 Risk distribution plots were reported for each model across all bootstrap samples.[@VanCalster2025; @Riley2023]
@@ -206,7 +222,7 @@ The prediction models were structured hierarchically based on clinical variables
 | CGM only | **C1** | TIR + MAGE | – |
 | Embeddings only | **D1** | UMAP dimensions|
 
-: Overview of models and predictors {#tbl-models}Grr
+Overview of models and predictors {#tbl-models}
 
 <div style="font-size: 0.85em; margin-top: -10px;">
 ^*^*Clinical variables are the same as those included in the SCORE2-Diabetes risk model: Age, sex, smoking status, systolic blood pressure, HDL cholesterol, total cholesterol, diabetes duration, HbA1c, and eGFR.[@Pennells2023_score2dm]*  
@@ -214,7 +230,6 @@ The prediction models were structured hierarchically based on clinical variables
 </div>
 
 :::
-
 
 <!-- ****************************************************************************************** -->
 ## Study III: Algorithmic Fairness in Blood Glucose Forecasting
@@ -285,7 +300,7 @@ One of the machine learning models were developed using transfer learning. It is
 | Base-Generalized | Here, for each participant, the 11 training corresponding datasets described above were used to generate 11 separate models, which were all subsequently tested on the given participant’s last week of CGM data. | All the different subsets of data @fig-study3_partitioning |
 | Transfer Learned | This model mirrored the Base-Generalized Model’s setup. However, the 11 trained models for each participant were subsequently tailored, i.e., fine-tuned with transfer learning to the given participant’s complete CGM data (except for the last week, which was used for the testing data) | Only data from 1 participant @fig-study3_train_finetune_test_split |
 
-: The four training approaches used to develop glucose prediction models for each participant in the T1DX dataset. {#tbl-study3_training_approaches tbl-colwidths="[20,60,20]"}
+The four training approaches used to develop glucose prediction models for each participant in the T1DX dataset. {#tbl-study3_training_approaches tbl-colwidths="[20,60,20]"}
 
 ### Model Evaluation
 To evaluate model performance, each participant's last weeks worth of data (672 measurements) was reserved for internal testing (@fig-study3_train_finetune_test_split).
@@ -295,7 +310,14 @@ Performance was summarized as the mean RMSE with corresponding 95% confidence in
 
 To evaluate the predictive performance across different ratios for the Base-Generalized and Transfer Learned models a linear mixed effect model (LMEM) was used since data was dependent due to participants having an RMSE value for each subset with varying proportions of White and Black participants.
 It was assumed that RMSE values would vary between individuals and therefore a random intercept was included and the following covariates were included: ratio (proportion of White and Black), race, age, sex, and training data sample size. (Categorical: Race, age, and sex; continuous: RMSE, ratio, and sample size)
-It was further assumed that the varying proportions of Black and White participants in the training data subsets would affect the performance and an interaction term was therefore added. The interaction term allowed for different slopes in the LMEM which allowed us to test the hypothesis
+It was further assumed that the varying proportions of Black and White participants in the training data subsets would affect the performance and an interaction term was therefore added. The interaction term allowed for different slopes in the LMEM which allowed us to test the hypothesis. It was expected that when plotting the proportion of White participants in the training data against the RMSE, the slope would be negative for White participants and positive for Black participants (@fig-study3_rmse). This would indicate that as the proportion of White participants in the training data increased, the RMSE decreased for White participants and increased for Black participants, indicating racial bias in the model. The Base-Individual model would perform the worst since it was trained on the least amount of data and the Transfer Learned model would remove the slopes that were expected to be seen in the Base-Generalized models.
+
+::: {#fig-study3_rmse}
+[![](figures/3_methods_fig/study3_rmse.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_rmse.png)
+
+The hypothesis for the results of the linear mixed effect models. 
+
+:::
 
 Surveillance error grids (SEG) were used to get a general idea of the  clinical risk of the prediction models.[@Tian2024] The error grids are originally developed for the regulatory bodies to asses clinical accuracy of blood glucose monitoring in post-surveillance before the wide spread use of CGM devices. [@Tian2024, @Klonoff2014] and the results should therefore be interpreted with caution when using CGM data. The SEG is a 600x600 grid assigned an individual risk score to each datapoint with 15 colored zones, each indicating severity of a monitoring error that is acted upon in regards to risk of hypoglycemia or hyperglycemia (@fig-study3_SEG). [@Klonoff2014]
 To facilitate interpretation, the 15 surveillance error grid zones were collapsed into the five broader risk zones ("No", "Slight", "Moderate", "High", and "Extreme"), as previously suggested in the literature.[@Tian2024]
@@ -307,22 +329,3 @@ Predictions outside of 0–33 mmol/L were changed to 0 or 33 mmol/L to keep with
 An empty surveillance error grid
 
 :::
-
-
-## Bias in machine learning models (Study III)
-
-- [ ] Fairness metrics
-- [ ] Mitigation strategies -\> Fine-tuning LSTM
-- [ ] Regression analysis and coefficients?
-- [ ] Evaluate bias when output is not binary (e.g., LMEM models)
-- [ ] CGM specific error grids
-
-
-# Helenes Notes\*\*
-
-- [x] Study I
-- [ ] Study II
-- [ ] NT-proBNP as a biomarker of cardiovascular risk
-- [ ] Present CGM-derived metrics
-- [x] Study II
-

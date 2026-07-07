@@ -1,0 +1,28 @@
+# Abbreviations {.unnumbered}
+
+**ACEI:** Angiotensin-converting enzyme-inhibitors\
+**APT:** Antiplatelet therapy\
+**ARB:** Angiotensin receptor blockers\
+**ATC:** Anatomical Therapeutic Chemical (classification)\
+**CI:** Confidence interval\
+**CVD:** Cardiovascular disease\
+**DKD:** Diabetic kidney disease\
+**DPP4i:** Dipeptidyl peptidase-4 inhibitors\
+**GP:** General practitioner\
+**GDM:** Gestational diabetes mellitus\
+**GLD:** Glucose-lowering drugs\
+**GLP1RA:** Glucagon-like peptide-1 receptor agonists\
+**HbA1c:** Haemoglobin-A1c\
+**LDL-C:** Low-density lipoprotein cholesterol\
+**LLD:** Lipid-lowering drugs\
+**NPV:** Negative predictive value\
+**OR:** Odds ratio\
+**OSDC:** Open-Source Diabetes Classifier\
+**PCOS:** Polycystic ovary syndrome\
+**PPV:** Positive predictive value\
+**RR:** Relative risk\
+**RSCD:** Register of Selected Chronic Diseases\
+**SGLT2i:**: Sodium glucose co-transporter type 2 inhibitors\
+**T1D:** Type 1 diabetes mellitus\
+**T2D:** Type 2 diabetes mellitus\
+**UACR:** Urine albumin-to-creatinine ratio\

@@ -1,0 +1,24 @@
+# Acknowledgements {.unnumbered}
+
+Looking back on the last three years against a backdrop of pandemics and full-scale invasions, my time as a PhD student appears minuscule and seems to have gone by in an instant. As it draws to an end, I feel truly grateful for the opportunity to engage in a research topic that was close to me, and for the creative freedom to pursue it in a way that was interesting to me as a researcher and person. This was in large part due to the great people around me during this time, who I owe my thanks.
+
+First of all, I would like to thank my supervisor group. I could not have asked for a more insightful and supportive group of researchers to guide me along. Especially to Annelli, your sound advice, positive spirit and confidence in me has been vital throughout the project. To Lasse, for always looking out for me and patiently guiding me to make sense. To Mette, for guidance, particularly in the early days of data exploration (and often with one of my children in attendance at meetings). 
+To Gregers, for bearing with me in the initial stages until my project found its footing, and for excellent advice and interesting discussions later.
+
+I have also benefited greatly from the support and company provided by colleagues at the Department of Public Health and the Research Unit for General Practice - particularly my former and fellow PhD students, junior researchers and office mates. Thank you all for the coffee breaks, the discussions, the advice given, and all the laughs shared across the years. Too many to mention, I'm grateful to you all!
+
+I would like to thank Marianne Pedersen of the Department of Public Health for assistance navigating through the dark jungle that is applying for data to Statistics Denmark. Thanks also to Else-Marie Dalsgaard, Kasper Norman and Eva Therkildsen for assistance in all things practical and impractical along the way, and to Lone Niedziella for assistance on linguistic issues.
+
+A special thanks to the Clinical Epidemiology Research Group of Steno Diabetes Center Copenhagen for being great hosts and for the many interesting and fruitful discussions during my visit there.
+I'm also grateful to members of the Epidemiology and Cross-sectoral research groups at Steno Diabetes Center Aarhus for inviting me to be a part of their communities.
+In particular, I owe a great deal of thanks to Luke Johnston for inspiring me to strive for openness and better programming practices, and for having a lot of fun while learning immensely along the way. Thank you to fellow teachers and contributors to the *R for Reproducible Research* courses. I hope my work reflects the principles and spirit of open science we strive for.
+
+This dissertation was built with free, open-source tools, and I would like to extend my gratitude to the many unsung heroes of open-source software development. In particular, to the *R Core Team* for the *R* scripting language and to *Posit* for the *RStudio IDE* and *Quarto* tools.
+
+I'm grateful to the participants in the *Health in Central Denmark* survey, without whom this project would not be what it is today, and to the funding sources for believing in me and my project - and providing the means to realize it.
+
+Finally, I owe a debt of gratitude to my family.
+To my wife, Thea, for everything you are. To Svend, Frode, Ejnar and Aase for filling my life with wonder and laughter (and mess and noise).\
+To my mother for always supporting and inspiring me, to my father, who I would have loved to share this journey with, and to my sister, my life's first supervisor.
+
+Thank you.

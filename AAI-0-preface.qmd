@@ -1,0 +1,36 @@
+# Preface {#sec-preface .unnumbered}
+
+## Motivation
+
+During my work as a junior doctor in a general practice in Gellerup, a deprived suburb of Aarhus with a large migrant population, I was immediately struck by the high frequency of type 2 diabetes (T2D) and other chronic diseases among day-to-day consultations. I would soon learn that T2D held more surprises for me than just a high prevalence. After a few weeks, it seemed that much of what I had learned about the disease in medical school and studied in clinical guidelines did not apply in my new setting. Diabetes was not only more prevalent; the patients were also much younger, and their haemoglobin-A1c levels rarely came close to guideline targets despite our best efforts to intensify treatment. Sadly, these experiences would repeat themselves in my subsequent work with migrants as a general practitioner (GP) in health clinics of the Danish Red Cross at asylum residence centres and pre-removal detention centres.
+
+As I reviewed the literature, I understood why medical school and guidelines had failed to prepare me for the challenges I faced as a clinician with T2D in migrants; the existing literature was inadequate. While increased prevalence of T2D appeared well-established, and migrants with T2D were also ascribed a higher mortality than their native counterparts, this provided little guidance for my day-to-day work. Contrarily, there was hardly any evidence on disparities in the time between diagnosis and death - the time when care from the GP is needed the most. So I was left to wonder what might cause this discordance between what I knew about T2D from books and guidelines, and what I encountered in migrants in the clinic.
+
+*Are migrants with T2D more prone to under-treatment, and in which areas of care?\
+Are some migrant groups more prone to under-treatment than others?*\
+
+Knowledge on these clinical questions could enable GPs and healthcare planners to address disparities and improve care in migrants by prioritising and focussing care accordingly. While migrants are currently a younger demographic group than the rest of the population, it is likely that migrants will constitute an increasing proportion of the T2D population in the coming years as the group ages. Therefore, I was excited to explore these clinical questions as a researcher, hoping I could provide answers to myself and fellow GPs that could lead to better care - and, ultimately, better health - in a vulnerable and challenging group of patients.
+
+During my time as a PhD student, I quickly encountered the first of many challenges on the way to studying migrants with T2D in the Danish registers: there was no validated definition of T2D, nor a common consensus among researchers. This led to an expansion of the scope of the PhD project to develop and validate a tool to define T2D in the Danish registers, which allowed me to answer my research questions based on robust findings. This PhD project benefited greatly from open-source tools. In the spirit of open-source, the source code of the validated diabetes classifier was made available to other researchers in the *osdc* package for the *R* statistical programming language. As a final commitment to openness and accessibility, this dissertation was made available to a global public audience in website format.
+
+## Outline of the dissertation
+
+**@sec-introduction** describes type 2 diabetes (T2D) and how migrants are at particular risk. It then outlines the context of migration and health care in Denmark and clinical guideline recommendations for T2D. Finally, it introduces the reader to identification of diabetes patients in Danish healthcare registers.
+
+**@sec-aims** states the overall aims of this PhD project and each individual study.
+
+**@sec-methods** describes the setting, data sources, methods and study designs used in the studies of this PhD project.
+
+**@sec-results** presents the main results of the studies.
+
+**@sec-discussion-methods** contains a discussion of the methods used and their potential impact on results.
+
+**@sec-discussion-results** discusses the main findings of each study and compares them to existing literature. Finally, the clinical implications of the results are discussed.
+
+**@sec-conclusion** presents the main conclusions.
+
+**@sec-perspectives** addresses the future perspectives raised by the dissertation and discusses the opportunities for research in the evolving research field.
+
+The rest of the dissertation includes a list of **references**, English and Danish **summaries**, a **supplementary** validation analysis, and the three **papers** of the dissertation and their supplementary materials.
+
+
