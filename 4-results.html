@@ -222,14 +222,13 @@ window.Quarto = {
   <li><a href="#study-ii-results-from-a-foundation-model-embedding-analysis" id="toc-study-ii-results-from-a-foundation-model-embedding-analysis" class="nav-link" data-scroll-target="#study-ii-results-from-a-foundation-model-embedding-analysis"><span class="header-section-number">1.3</span> Study II: Results from a Foundation Model Embedding Analysis</a>
   <ul class="collapse">
   <li><a href="#cosine-distances" id="toc-cosine-distances" class="nav-link" data-scroll-target="#cosine-distances"><span class="header-section-number">1.3.1</span> Cosine Distances</a></li>
-  <li><a href="#embeddings-and-glycemic-control" id="toc-embeddings-and-glycemic-control" class="nav-link" data-scroll-target="#embeddings-and-glycemic-control"><span class="header-section-number">1.3.2</span> Embeddings and Glycemic Control</a></li>
-  <li><a href="#embeddings-and-nt-probnp" id="toc-embeddings-and-nt-probnp" class="nav-link" data-scroll-target="#embeddings-and-nt-probnp"><span class="header-section-number">1.3.3</span> Embeddings and NT-proBNP</a></li>
-  <li><a href="#embeddings-and-race" id="toc-embeddings-and-race" class="nav-link" data-scroll-target="#embeddings-and-race"><span class="header-section-number">1.3.4</span> Embeddings and race</a></li>
+  <li><a href="#embeddings-and-race" id="toc-embeddings-and-race" class="nav-link" data-scroll-target="#embeddings-and-race"><span class="header-section-number">1.3.2</span> Embeddings and race</a></li>
   </ul></li>
   <li><a href="#study-ii-prediction-of-nt-probnp" id="toc-study-ii-prediction-of-nt-probnp" class="nav-link" data-scroll-target="#study-ii-prediction-of-nt-probnp"><span class="header-section-number">1.4</span> Study II: Prediction of NT-proBNP</a></li>
   <li><a href="#study-iii-results-from-an-algorithmic-fairness-study" id="toc-study-iii-results-from-an-algorithmic-fairness-study" class="nav-link" data-scroll-target="#study-iii-results-from-an-algorithmic-fairness-study"><span class="header-section-number">1.5</span> Study III: Results from an Algorithmic Fairness Study</a>
   <ul class="collapse">
-  <li><a href="#bias-in-machine-learning-models-study-3" id="toc-bias-in-machine-learning-models-study-3" class="nav-link" data-scroll-target="#bias-in-machine-learning-models-study-3"><span class="header-section-number">1.5.1</span> Bias in Machine Learning Models (Study 3)</a></li>
+  <li><a href="#bias-in-machine-learning-models" id="toc-bias-in-machine-learning-models" class="nav-link" data-scroll-target="#bias-in-machine-learning-models"><span class="header-section-number">1.5.1</span> Bias in Machine Learning Models</a></li>
+  <li><a href="#the-surveillance-error-grid" id="toc-the-surveillance-error-grid" class="nav-link" data-scroll-target="#the-surveillance-error-grid"><span class="header-section-number">1.5.2</span> The Surveillance Error Grid</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -413,7 +412,9 @@ Table&nbsp;1.1: Summary of the popularity of the seven most used CGM-derived met
 </tr>
 </tbody>
 </table>
-<p><em>Abbreviations:</em> MAGE: mean amplitude of glycemic excursions, TIR: time in range, MBG: mean blood glucose, SD: standard deviation, CV: coefficient of variation, TBR: time below range, TAR: time above range.</p>
+<p style="font-size:75%">
+´ <em>Abbreviations:</em> MAGE: mean amplitude of glycemic excursions, TIR: time in range, MBG: mean blood glucose, SD: standard deviation, CV: coefficient of variation, TBR: time below range, TAR: time above range.
+</p>
 </div>
 </figure>
 </div>
@@ -653,10 +654,11 @@ Table&nbsp;1.3: Study design and demographics of the included clinical cardiovas
 </tr>
 </tbody>
 </table>
-<p style="font-size: 85%; margin-top: 10px;">
+<p style="font-size:75%">
 <span class="math inline">\(^\dagger\)</span> This study appears both in the clinical and subclinical disease outcome tables due to investigating multiple CVD outcomes.
 </p>
 <p><em>Note:</em> Age is reported in years either as an interval, mean <span class="math inline">\(\pm\)</span> SD, or median (IQR). Diabetes duration values originally reported in months were converted to years for consistency (months <span class="math inline">\(\div\)</span> 12). <br> <em>Abbreviations:</em> CGM, continuous glucose monitoring; FU, follow-up; T1D, type 1 diabetes; T2D, type 2 diabetes; CAD, coronary artery disease; hypo, hypoglycemia; LEAD, lower extremity arterial disease; IQR, interquartile range; nr, not reported.</p>
+<p></p>
 </div>
 </figure>
 </div>
@@ -677,7 +679,7 @@ Table&nbsp;1.3: Study design and demographics of the included clinical cardiovas
 <div id="tbl-main-clinical-findings" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[40, 15, 15, 15, 15]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-main-clinical-findings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1.4: Main findings of the included studies on clinical cardiovascular outcomes. WIP: Still need to add suppl. files, and adjustment column
+Table&nbsp;1.4: : Main findings of the included studies on clinical cardiovascular outcomes. WIP: Still need to add suppl. files, and adjustment column
 </figcaption>
 <div aria-describedby="tbl-main-clinical-findings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1799,12 +1801,15 @@ Table&nbsp;1.4: Main findings of the included studies on clinical cardiovascular
 </tr>
 </tbody>
 </table>
+<p style="font-size:75%">
+All hazard ratios (HRs), odds ratios (ORs), and areas under the curve (AUCs) are reported as follows: point estimate (<span class="math inline">\(95\%\)</span> CI).&nbsp; <span class="math inline">\(^*\)</span> This study appears multiple times as it investigated multiple cardiovascular disease outcomes.<br>
+<span class="math inline">\(^\dagger\)</span> This study appears in both the clinical and subclinical disease outcome tables owing to the investigation of multiple cardiovascular disease outcomes.<br>
+The full table with adjustments is provided in <strong>Multimedia Appendix 10</strong>. Further elaboration on the adjusted variables can be found in <strong>Multimedia Appendices 7 and 8</strong>.<br>
+<em>Abbreviations:</em> nr: Not applicable or not available/not reported, TIR: time in range, GMI: glucose management indicator, TITR: time in tight range, TBR: time below range, TAR: time above range, CV: coefficient of variation, BG: blood glucose, MAGE: mean amplitude of glycemic excursions, LAGE: largest amplitude of glycemic excursions, MODD: mean of daily differences, LEAD: lower extremity arterial disease.<br>
+
+</p>
 </div>
 </figure>
-</div>
-<div style="font-size: 82%; line-height: 1.4;">
-<p><!-- margin-top: 15px;" --> All hazard ratios (HRs), odds ratios (ORs), and areas under the curve (AUCs) are reported as follows: point estimate (<span class="math inline">\(95\%\)</span> CI).<br>
-<span class="math inline">\(^*\)</span> This study appears multiple times as it investigated multiple cardiovascular disease outcomes. <span class="math inline">\(^\dagger\)</span> This study appears in both the clinical and subclinical disease outcome tables owing to the investigation of multiple cardiovascular disease outcomes. The full table with adjustments is provided in <strong>Multimedia Appendix 10</strong>. Further elaboration on the adjusted variables can be found in <strong>Multimedia Appendices 7 and 8</strong>. <em>Abbreviations:</em> nr: Not applicable or not available/not reported, TIR: time in range, GMI: glucose management indicator, TITR: time in tight range, TBR: time below range, TAR: time above range, CV: coefficient of variation, BG: blood glucose, MAGE: mean amplitude of glycemic excursions, LAGE: largest amplitude of glycemic excursions, MODD: mean of daily differences, LEAD: lower extremity arterial disease.</p>
 </div>
 </div>
 </div>
@@ -1813,20 +1818,18 @@ Table&nbsp;1.4: Main findings of the included studies on clinical cardiovascular
 <section id="baseline-characteristics-table-of-the-datasets" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="baseline-characteristics-table-of-the-datasets"><span class="header-section-number">1.2</span> Baseline characteristics table of the datasets</h2>
 <ul class="task-list">
-<li><label><input type="checkbox">I still need to write some text here</label></li>
 <li><label><input type="checkbox">Adjust tables to look nicer</label></li>
 </ul>
-<!-- From study 2: A prediction analysis on CANCAN was performed based on 159 participants, with 67 (42%) participants having elevated NT-proBNP values (Table 2). Participants with elevated NT-proBNP were generally older, had longer diabetes duration, and more frequently had cardiovascular disease and cardiac autonomic neuropathy, while also showing lower BMI, lower LDL and total cholesterol, modestly better overall glycaemic control, but slightly higher glycaemic variability compared with participants with lower NT-proBNP levels. -->
-<p>Datasets used in this dissertation is presented below.</p>
-<div id="tbl-baseline-cancan" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[35,20,20,20]">
+<p>The CANCAN dataset presented below was used in Study II (<a href="#tbl-baseline-cancan" class="quarto-xref">Table&nbsp;<span>1.5</span></a>). The total number of included participants were 159 and 67B (42%) had elevated NT-proBNP values. Participants with elevated NT-proBNP tended to be older, have a longer duration of diabetes, and more frequently have cardiovascular disease. They also tended to have lower BMI and lower LDL and total cholesterol concentrations, while exhibiting modestly better overall glycaemic control but slightly higher glycaemic variability.</p>
+<div id="tbl-baseline-cancan" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[40,20,20,20]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-baseline-cancan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1.5: Baseline table for CANCAN data and NT-proBNP groups.
+Table&nbsp;1.5: Baseline table for CANCAN data.
 </figcaption>
 <div aria-describedby="tbl-baseline-cancan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 35%">
+<col style="width: 40%">
 <col style="width: 20%">
 <col style="width: 20%">
 <col style="width: 20%">
@@ -1834,9 +1837,9 @@ Table&nbsp;1.5: Baseline table for CANCAN data and NT-proBNP groups.
 <thead>
 <tr class="header">
 <th style="text-align: left;">Variable</th>
-<th style="text-align: right;">CANCAN, total</th>
-<th style="text-align: right;">NT-proBNP ≤ 125 pg/mL</th>
-<th style="text-align: right;">NT-proBNP &gt; 125 pg/mL</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">NT-proBNP $≤$125 pg/mL</th>
+<th style="text-align: right;">NT-proBNP &gt;125 pg/mL</th>
 </tr>
 </thead>
 <tbody>
@@ -1853,7 +1856,7 @@ Table&nbsp;1.5: Baseline table for CANCAN data and NT-proBNP groups.
 <td style="text-align: right;">68 [64, 76]</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Sex</td>
+<td style="text-align: left;"><strong>Sex</strong></td>
 <td style="text-align: right;"></td>
 <td style="text-align: right;"></td>
 <td style="text-align: right;"></td>
@@ -1871,7 +1874,7 @@ Table&nbsp;1.5: Baseline table for CANCAN data and NT-proBNP groups.
 <td style="text-align: right;">23 (34%)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Smoking status</td>
+<td style="text-align: left;"><strong>Smoking status</strong></td>
 <td style="text-align: right;"></td>
 <td style="text-align: right;"></td>
 <td style="text-align: right;"></td>
@@ -1931,7 +1934,7 @@ Table&nbsp;1.5: Baseline table for CANCAN data and NT-proBNP groups.
 <td style="text-align: right;">48 [27, 63]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">CGM-derived metrics</td>
+<td style="text-align: left;"><strong>CGM-derived metrics</strong></td>
 <td style="text-align: right;"></td>
 <td style="text-align: right;"></td>
 <td style="text-align: right;"></td>
@@ -1943,56 +1946,70 @@ Table&nbsp;1.5: Baseline table for CANCAN data and NT-proBNP groups.
 <td style="text-align: right;">13 [10, 13]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Glucose management indicator (%)</td>
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Glucose management</td>
 <td style="text-align: right;">7.3 [6.8, 8.4]</td>
 <td style="text-align: right;">7.5 [6.8, 8.6]</td>
 <td style="text-align: right;">7.2 [6.7, 8.0]</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; indicator (%)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Time in range (%)</td>
 <td style="text-align: right;">59.6 [31.9, 78.9]</td>
 <td style="text-align: right;">58.2 [20.2, 78.6]</td>
 <td style="text-align: right;">62.1 [40.8, 81.0]</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Time below range (%)</td>
 <td style="text-align: right;">0.0 [0.0, 1.5]</td>
 <td style="text-align: right;">0.0 [0.0, 0.8]</td>
 <td style="text-align: right;">0.2 [0.0, 2.0]</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Time above range (%)</td>
 <td style="text-align: right;">36.6 [17.6, 68.1]</td>
 <td style="text-align: right;">41.8 [19.8, 79.5]</td>
 <td style="text-align: right;">33.1 [14.1, 58.2]</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Coefficient of variation (%)</td>
 <td style="text-align: right;">27.3 [22.5, 31.9]</td>
 <td style="text-align: right;">25.3 [21.2, 30.3]</td>
 <td style="text-align: right;">28.3[24.8, 34.2]</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Mean amplitude of glycemic excursions (mmol/L)</td>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Mean amplitude of</td>
 <td style="text-align: right;">6.3 [5.0, 7.9]</td>
 <td style="text-align: right;">6.0 [4.9, 7.7]</td>
 <td style="text-align: right;">6.7 [5.1, 8.5]</td>
 </tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; glycemic excursions (mmol/L)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
 </tbody>
 </table>
-<p>Categorical values are given by number (percentage), and numerical values are given by median [interquartile range].</p>
+<p style="font-size:75%">
+Categorical values are given by number (percentage), and numerical values are given by median [interquartile range].
+</p>
 </div>
 </figure>
 </div>
-<div id="tbl-baseline-t1dx" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[35,20,20,20]">
+<div id="tbl-baseline-t1dx" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[40,20,20,20]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-baseline-t1dx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1.6: Baseline table for T1DX data and racial groups.
+Table&nbsp;1.6: Baseline table for T1DX data.
 </figcaption>
 <div aria-describedby="tbl-baseline-t1dx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 35%">
+<col style="width: 40%">
 <col style="width: 20%">
 <col style="width: 20%">
 <col style="width: 20%">
@@ -2001,8 +2018,8 @@ Table&nbsp;1.6: Baseline table for T1DX data and racial groups.
 <tr class="header">
 <th style="text-align: left;">Characteristics</th>
 <th style="text-align: right;">Total</th>
-<th style="text-align: right;">White Cohort</th>
-<th style="text-align: right;">Black Cohort</th>
+<th style="text-align: right;">Race: White</th>
+<th style="text-align: right;">Race: Black</th>
 </tr>
 </thead>
 <tbody>
@@ -2061,7 +2078,7 @@ Table&nbsp;1.6: Baseline table for T1DX data and racial groups.
 <td style="text-align: right;">8.6 [6.9, 9.9]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Missing CGM values (weeks/per participant)</td>
+<td style="text-align: left;">Missing CGM values (weeks/participant)</td>
 <td style="text-align: right;">3.3 [1.6, 5.1]</td>
 <td style="text-align: right;">2.6 [1.3, 4.5]</td>
 <td style="text-align: right;">4.1 [1.8, 5.6]</td>
@@ -2079,44 +2096,58 @@ Table&nbsp;1.6: Baseline table for T1DX data and racial groups.
 <td style="text-align: right;">56 [45, 66]</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Glucose management indicator (%)</td>
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Glucose management</td>
 <td style="text-align: right;">7.5 [7.0, 8.2]</td>
 <td style="text-align: right;">7.4 [6.9, 7.9]</td>
 <td style="text-align: right;">7.7 [7.0, 8.5]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Time in range (%/per participant)</td>
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; indicator (%)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Time in range (%)</td>
 <td style="text-align: right;">47 [35, 57]</td>
 <td style="text-align: right;">49 [39, 60]</td>
 <td style="text-align: right;">42 [31, 54]</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Time above range (%/per participant)</td>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Time above range (%)</td>
 <td style="text-align: right;">45 [30, 56]</td>
 <td style="text-align: right;">42 [28, 53]</td>
 <td style="text-align: right;">48 [32, 60]</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Time below range (%/per participant)</td>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Time below range (%)</td>
 <td style="text-align: right;">8 [4, 14]</td>
 <td style="text-align: right;">6 [4, 10]</td>
 <td style="text-align: right;">11 [5, 15]</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Coefficient of variation (%)</td>
 <td style="text-align: right;">43.3 [39.6, 48.6]</td>
 <td style="text-align: right;">42.2 [38.6, 46.5]</td>
 <td style="text-align: right;">46.7 [40.4, 51.9]</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;– Mean amplitude of glycemic excursions (mmol/L)</td>
 <td style="text-align: right;">9.9 [8.2, 12.1]</td>
 <td style="text-align: right;">9.6 [8.1, 11.2]</td>
 <td style="text-align: right;">10.6 [8.5, 13.0]</td>
 </tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; glycemic excursions (mmol/L)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
 </tbody>
 </table>
-<p>Categorical values are given by number (percentage), and numerical values are given by median [interquartile range].</p>
+<p style="font-size:75%">
+Categorical values are given by number (percentage), and numerical values are given by median [interquartile range].
+</p>
 </div>
 </figure>
 </div>
@@ -2139,71 +2170,8 @@ Figure&nbsp;1.3: Kernel density plots of cosine distances for within- and betwee
 </figure>
 </div>
 </section>
-<section id="embeddings-and-glycemic-control" class="level3" data-number="1.3.2">
-<h3 data-number="1.3.2" class="anchored" data-anchor-id="embeddings-and-glycemic-control"><span class="header-section-number">1.3.2</span> Embeddings and Glycemic Control</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Figures needs to be split up based on glycemic control metric, with CANCAN dataset in one column and T1DX dataset in the other column. First figure will be HbA1c, followed by TIR and MAGE. (CV, and GMI will not be presented)</label></li>
-</ul>
-<div id="fig-cosim2" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-cosim2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim2.png"><img src="figures/4_results_fig/study_2_co_sim2.png" class="img-fluid figure-img"></a></p>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.4: UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on glycemic control metrics for the CANCAN dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
-</figcaption>
-</figure>
-</div>
-<div id="fig-cosim3" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-cosim3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim3.png"><img src="figures/4_results_fig/study_2_co_sim1.png" class="img-fluid figure-img"></a></p>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.5: UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on glycemic control metrics for the T1DX dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
-</figcaption>
-</figure>
-</div>
-<div id="fig-cosim3" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-cosim3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim3.png"><img src="figures/4_results_fig/study_2_co_sim1.png" class="img-fluid figure-img"></a></p>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.6: UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on glycemic control metrics for the T1DX dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
-</figcaption>
-</figure>
-</div>
-<div id="fig-cosim4_mage" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-cosim4_mage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_cgm_var.png"><img src="figures/4_results_fig/study_2_co_sim_cgm_var.png" class="img-fluid figure-img"></a></p>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim4_mage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.7: UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on MAGE for the two datasets. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
-</figcaption>
-</figure>
-</div>
-</section>
-<section id="embeddings-and-nt-probnp" class="level3" data-number="1.3.3">
-<h3 data-number="1.3.3" class="anchored" data-anchor-id="embeddings-and-nt-probnp"><span class="header-section-number">1.3.3</span> Embeddings and NT-proBNP</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Figure needs to be turned and CVD removed</label></li>
-<li><label><input type="checkbox">Add a very brief text to the figure</label></li>
-</ul>
-<div id="fig-cosim-ntprobnp" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-cosim-ntprobnp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_cvd_ntprobnp.png"><img src="figures/4_results_fig/study_2_co_sim_cvd_ntprobnp.png" class="img-fluid figure-img"></a></p>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim-ntprobnp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.8: UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on CVD and NT-proBNP for the CANCAN dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
-</figcaption>
-</figure>
-</div>
-</section>
-<section id="embeddings-and-race" class="level3" data-number="1.3.4">
-<h3 data-number="1.3.4" class="anchored" data-anchor-id="embeddings-and-race"><span class="header-section-number">1.3.4</span> Embeddings and race</h3>
+<section id="embeddings-and-race" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="embeddings-and-race"><span class="header-section-number">1.3.2</span> Embeddings and race</h3>
 <ul class="task-list">
 <li><label><input type="checkbox">Figure needs to be turned</label></li>
 <li><label><input type="checkbox">Add a very brief text to the figure</label></li>
@@ -2214,7 +2182,7 @@ Figure&nbsp;1.8: UMAPs and kernel density plots over cosine distance pairs for w
 <p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_race.png"><img src="figures/4_results_fig/study_2_co_sim_race.png" class="img-fluid figure-img"></a></p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim4_mage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.9: UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on race for the T1DX datasets. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
+Figure&nbsp;1.4: UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on race for the T1DX datasets. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
 </figcaption>
 </figure>
 </div>
@@ -2223,7 +2191,7 @@ Figure&nbsp;1.9: UMAPs and kernel density plots over cosine distance pairs for w
 <section id="study-ii-prediction-of-nt-probnp" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="study-ii-prediction-of-nt-probnp"><span class="header-section-number">1.4</span> Study II: Prediction of NT-proBNP</h2>
 <p>Results from the prediction analysis are shown in <a href="#tbl-model-performance_main" class="quarto-xref">Table&nbsp;<span>1.7</span></a>. The highest optimism-corrected AUROC was achieved by Model A2 which included both all nine clinical variables from the SCORE2-Diabetes input and the CGM-derived metrics TIR and MAGE (AUROC: 0.81 [0.77–0.88]). Optimism-corrected AUROCs for the models with fewer predictors had modest performance (AUROC: 0.72 to 77 ), however the optimism-correction was smaller and the prediction stability was more stable the fewer predictors were included in the models (Models: B1, B2, and B3) (@#sec-suppl-pred-stability). The models including only CGM-data either as derived metrics (Model C1) or as UMAP dimensions (Model D1a, D1b, D1c) performed the worst (AUROC: 0.53 to 0.69). Age seemed a better predictor for elevated NT-proBNP (AUROC: 0.73 [0.65 - 0.80])</p>
-<div id="tbl-model-performance_main" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[30,25,15,15,15]">
+<div id="tbl-model-performance_main" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[36,24,11,12,15]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-model-performance_main-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;1.7: Area under the receiver operating characteristic curve for the included models.
@@ -2231,10 +2199,10 @@ Table&nbsp;1.7: Area under the receiver operating characteristic curve for the i
 <div aria-describedby="tbl-model-performance_main-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 30%">
-<col style="width: 25%">
-<col style="width: 15%">
-<col style="width: 15%">
+<col style="width: 36%">
+<col style="width: 24%">
+<col style="width: 11%">
+<col style="width: 12%">
 <col style="width: 15%">
 </colgroup>
 <thead>
@@ -2445,7 +2413,10 @@ Table&nbsp;1.7: Area under the receiver operating characteristic curve for the i
 </tr>
 </tbody>
 </table>
-<p><em>Note: CI = Confidence Interval; CGM = Continuous Glucose Monitoring; UMAP = Uniform Manifold Approximation and Projection.</em> * Indicates the pooling technique for the embeddings.</p>
+<p style="font-size:75%">
+* Indicates the pooling technique for the embeddings.<br>
+* Abbreviations:* CI: Confidence Interval, CGM: Continuous Glucose Monitoring, UMAP: Uniform Manifold Approximation and Projection.
+</p>
 </div>
 </figure>
 </div>
@@ -2453,220 +2424,245 @@ Table&nbsp;1.7: Area under the receiver operating characteristic curve for the i
 <section id="study-iii-results-from-an-algorithmic-fairness-study" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="study-iii-results-from-an-algorithmic-fairness-study"><span class="header-section-number">1.5</span> Study III: Results from an Algorithmic Fairness Study</h2>
 <p>Bias is an important spect to consider when working data drivenly. In study III, we therefore evaluates bias in CGM trained machine learning models for forecasting in the T1DX cohort</p>
-<section id="bias-in-machine-learning-models-study-3" class="level3" data-number="1.5.1">
-<h3 data-number="1.5.1" class="anchored" data-anchor-id="bias-in-machine-learning-models-study-3"><span class="header-section-number">1.5.1</span> Bias in Machine Learning Models (Study 3)</h3>
-<div id="fig-lmem-results" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-lmem-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_3_Fig2.png" width="100%"><img src="figures/4_results_fig/study_3_Fig2.png" class="img-fluid figure-img"></a></p>
-<!-- [*Note:* The y-axis starts at 1.9 mmol/L and not 0]{style="font-size: 85%; opacity: 0.85;"} -->
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lmem-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.10: Estimated root mean squared errors (RMSE) across 11 different proportions of White and Black participants in the dataset.
+<section id="bias-in-machine-learning-models" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="bias-in-machine-learning-models"><span class="header-section-number">1.5.1</span> Bias in Machine Learning Models</h3>
+<p>The RMSE of the models are shown in <a href="#tbl-study3-main-results1" class="quarto-xref">Table&nbsp;<span>1.8</span></a> and <a href="#tbl-study3-main-results2" class="quarto-xref">Table&nbsp;<span>1.9</span></a>. Base-Generalized and Transfer Learned models achieved models achieved lower prediction errors (RMSE: 2.00 to 2.06 mmol/L) than the naive last observation carried forward (LOCF)(RMSE: 2.41 and 2.45 mmol/L) and Base-Individual models (RMSE: 2.54 to 2.63 mmol/L) for both White and Black participants (<a href="#tbl-study3-main-results1" class="quarto-xref">Table&nbsp;<span>1.8</span></a> and <a href="#tbl-study3-main-results2" class="quarto-xref">Table&nbsp;<span>1.9</span></a>).</p>
+<div id="tbl-study3-main-results1" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[12,22,22,22,22]">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-study3-main-results1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1.8: Root mean squared errors with 95% CIs for the different models evaluated on White participants.
 </figcaption>
-</figure>
-</div>
-<p>The RMSE of the models are shown in <span class="quarto-unresolved-ref">?tbl-study3-main-results</span> and <a href="#fig-lmem-results" class="quarto-xref">Figure&nbsp;<span>1.10</span></a>. Naive (LOCF) and Base-Individual models performed the worst. Errors were about 0.5 mmol/L lower for the Base-Generalized and Transfer Learned models. For white participants, the Base-Generalized model trained on a dataset including exclusively Black participants had an RMSE of 2.04 [1.95, 2.13], while its performance was 2.01 [1.92, 2.10] when trained exclusively on White participants (difference: -0.003 [-0.007, 0.001], p = 0.12, <span class="quarto-unresolved-ref">?tbl-general-model-coefficients</span>). For the same two proportions, the Transfer Learned models showed RMSEs of 2.02 [1.94, 2.11] and 2.01 [1.93, 2.10] mmol/L, respectively (difference: -0.001 [-0.003, 0.001], p = 0.46, <span class="quarto-unresolved-ref">?tbl-transferlearned-coefficients</span>). For the Base-Generalized models, there was a statistically significant interaction between the effect of race and ratio as the RMSE increased 0.04 [0.01, 0.08] mmol/L more for Black participants compared to White participants when the proportion of White participants increased from 0 to 100% in the training data (@<span class="quarto-unresolved-ref">?tbl-general-model-coefficients</span>). We did not find evidence for this divergence in performance in the Transfer Learned models (p = 0.20, Table 4). Furthermore, statistically significant differences were found between age groups in both the Base-Generalized (0.482 [0.355, 0.610], p &lt; 0.001, @<span class="quarto-unresolved-ref">?tbl-general-model-coefficients</span>) and the Transfer Learned models (0.411 [0.290, 0.533], p &lt; 0.001, @<span class="quarto-unresolved-ref">?tbl-transferlearned-coefficients</span>) showing higher error when predicting on children compared to adults. For every 1,000 increase in sample size for fine-tuning the Base-Generalized model to an individual (transfer learning), the RMSE decreases with -0.111 [-0.161, -0.061] mmol/L (p &lt; 0.001, @<span class="quarto-unresolved-ref">?tbl-transferlearned-coefficients</span>). At the same time, we did not find an association between the sample size used for training the Base-Generalized model and RMSE (p = 0.62). Between-person variance of RMSE was 0.198 for the Base-Generalized and 0.172 for the Transfer Learned model.</p>
-<div class="{tbl-study3-main-results}">
+<div aria-describedby="tbl-study3-main-results1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
+<col style="width: 12%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Ratio</th>
-<th style="text-align: left;">LOCF</th>
-<th style="text-align: left;">Base-Individual</th>
-<th style="text-align: left;">Base-Generalized</th>
-<th style="text-align: left;">Transfer Learned</th>
+<th style="text-align: center;">Ratio</th>
+<th style="text-align: center;">LOCF</th>
+<th style="text-align: center;">Base-Individual</th>
+<th style="text-align: center;">Base-Generalized</th>
+<th style="text-align: center;">Transfer Learned</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>Model performance (RMSE) for White participants</strong></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.04 [1.95, 2.13]</td>
+<td style="text-align: center;">2.02 [1.94, 2.11]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">0</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.04 [1.95, 2.13]</td>
-<td style="text-align: left;">2.02 [1.94, 2.11]</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.04 [1.95, 2.13]</td>
+<td style="text-align: center;">2.02 [1.94, 2.11]</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">10</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.04 [1.95, 2.13]</td>
-<td style="text-align: left;">2.02 [1.94, 2.11]</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.04 [1.95, 2.12]</td>
+<td style="text-align: center;">2.02 [1.94, 2.10]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">20</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.04 [1.95, 2.12]</td>
-<td style="text-align: left;">2.02 [1.94, 2.10]</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.03 [1.94, 2.12]</td>
+<td style="text-align: center;">2.02 [1.94, 2.10]</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">30</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.03 [1.94, 2.12]</td>
-<td style="text-align: left;">2.02 [1.94, 2.10]</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">2.45 [2.32, 2.57]</td>
+<td style="text-align: center;">2.54 [2.38, 2.70]</td>
+<td style="text-align: center;">2.03 [1.94, 2.12]</td>
+<td style="text-align: center;">2.02 [1.94, 2.10]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">40</td>
-<td style="text-align: left;">2.45 [2.32, 2.57]</td>
-<td style="text-align: left;">2.54 [2.38, 2.70]</td>
-<td style="text-align: left;">2.03 [1.94, 2.12]</td>
-<td style="text-align: left;">2.02 [1.94, 2.10]</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">(independent</td>
+<td style="text-align: center;">(independent</td>
+<td style="text-align: center;">2.03 [1.94, 2.11]</td>
+<td style="text-align: center;">2.02 [1.93, 2.10]</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">50</td>
-<td style="text-align: left;">(independent <br> of ratio)</td>
-<td style="text-align: left;">(independent <br> of ratio)</td>
-<td style="text-align: left;">2.03 [1.94, 2.11]</td>
-<td style="text-align: left;">2.02 [1.93, 2.10]</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">of ratio)</td>
+<td style="text-align: center;">of ratio)</td>
+<td style="text-align: center;">2.02 [1.94, 2.11]</td>
+<td style="text-align: center;">2.02 [1.93, 2.10]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">60</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.02 [1.94, 2.11]</td>
-<td style="text-align: left;">2.02 [1.93, 2.10]</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.02 [1.93, 2.11]</td>
+<td style="text-align: center;">2.01 [1.93, 2.10]</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">70</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.02 [1.93, 2.11]</td>
-<td style="text-align: left;">2.01 [1.93, 2.10]</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.02 [1.93, 2.11]</td>
+<td style="text-align: center;">2.01 [1.93, 2.10]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">80</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.02 [1.93, 2.11]</td>
-<td style="text-align: left;">2.01 [1.93, 2.10]</td>
+<td style="text-align: center;">90</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.01 [1.92, 2.10]</td>
+<td style="text-align: center;">2.01 [1.93, 2.10]</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">90</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.01 [1.92, 2.10]</td>
-<td style="text-align: left;">2.01 [1.93, 2.10]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">100</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.01 [1.92, 2.10]</td>
-<td style="text-align: left;">2.01 [1.92, 2.10]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Model performance (RMSE) for Black participants</strong></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">0</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.05 [1.96, 2.14]</td>
-<td style="text-align: left;">2.00 [1.91, 2.08]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">10</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.05 [1.96, 2.14]</td>
-<td style="text-align: left;">2.00 [1.91, 2.08]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">20</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.05 [1.96, 2.14]</td>
-<td style="text-align: left;">2.00 [1.92, 2.08]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">30</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.05 [1.97, 2.14]</td>
-<td style="text-align: left;">2.00 [1.92, 2.08]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">40</td>
-<td style="text-align: left;">2.41 [2.28, 2.53]</td>
-<td style="text-align: left;">2.63 [2.47, 2.79]</td>
-<td style="text-align: left;">2.05 [1.97, 2.14]</td>
-<td style="text-align: left;">2.00 [1.92, 2.08]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">50</td>
-<td style="text-align: left;">(independent <br> of ratio)</td>
-<td style="text-align: left;">(independent <br> of ratio)</td>
-<td style="text-align: left;">2.05 [1.97, 2.14]</td>
-<td style="text-align: left;">2.00 [1.92, 2.08]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">60</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.06 [1.97, 2.14]</td>
-<td style="text-align: left;">2.00 [1.92, 2.08]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">70</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.06 [1.97, 2.14]</td>
-<td style="text-align: left;">2.00 [1.92, 2.08]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">80</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.06 [1.97, 2.14]</td>
-<td style="text-align: left;">2.00 [1.92, 2.09]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">90</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.06 [1.97, 2.15]</td>
-<td style="text-align: left;">2.00 [1.92, 2.09]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">100</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2.06 [1.97, 2.15]</td>
-<td style="text-align: left;">2.00 [1.92, 2.09]</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.01 [1.92, 2.10]</td>
+<td style="text-align: center;">2.01 [1.92, 2.10]</td>
 </tr>
 </tbody>
 </table>
-<p>Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population’s age (40% children) and sex (57% women) distribution. Abbreviations: LOCF = last observation carried forward.</p>
-<p>Root mean squared errors with 95% CIs for the different models.</p>
+<p style="font-size:75%">
+Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population’s age (40% children) and sex (57% women) distribution. <em>Abbreviations:</em> LOCF: last observation carried forward.
+</p>
 </div>
-<div class="{tbl-general-model-coefficients}">
+</figure>
+</div>
+<div id="tbl-study3-main-results2" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[12,22,22,22,22]">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-study3-main-results2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1.9: Root mean squared errors with 95% CIs for the different models evaluated on Black participants.
+</figcaption>
+<div aria-describedby="tbl-study3-main-results2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
+<col style="width: 12%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
 </colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Ratio</th>
+<th style="text-align: center;">LOCF</th>
+<th style="text-align: center;">Base-Individual</th>
+<th style="text-align: center;">Base-Generalized</th>
+<th style="text-align: center;">Transfer Learned</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.05 [1.96, 2.14]</td>
+<td style="text-align: center;">2.00 [1.91, 2.08]</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.05 [1.96, 2.14]</td>
+<td style="text-align: center;">2.00 [1.91, 2.08]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.05 [1.96, 2.14]</td>
+<td style="text-align: center;">2.00 [1.92, 2.08]</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">30</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.05 [1.97, 2.14]</td>
+<td style="text-align: center;">2.00 [1.92, 2.08]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">2.41 [2.28, 2.53]</td>
+<td style="text-align: center;">2.63 [2.47, 2.79]</td>
+<td style="text-align: center;">2.05 [1.97, 2.14]</td>
+<td style="text-align: center;">2.00 [1.92, 2.08]</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">(independent</td>
+<td style="text-align: center;">(independent</td>
+<td style="text-align: center;">2.05 [1.97, 2.14]</td>
+<td style="text-align: center;">2.00 [1.92, 2.08]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">of ratio)</td>
+<td style="text-align: center;">of ratio)</td>
+<td style="text-align: center;">2.06 [1.97, 2.14]</td>
+<td style="text-align: center;">2.00 [1.92, 2.08]</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">70</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.06 [1.97, 2.14]</td>
+<td style="text-align: center;">2.00 [1.92, 2.08]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">80</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.06 [1.97, 2.14]</td>
+<td style="text-align: center;">2.00 [1.92, 2.09]</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">90</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.06 [1.97, 2.15]</td>
+<td style="text-align: center;">2.00 [1.92, 2.09]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">100</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.06 [1.97, 2.15]</td>
+<td style="text-align: center;">2.00 [1.92, 2.09]</td>
+</tr>
+</tbody>
+</table>
+<p style="font-size:75%">
+Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population’s age (40% children) and sex (57% women) distribution. <em>Abbreviations:</em> LOCF: last observation carried forward.
+</p>
+</div>
+</figure>
+</div>
+<p>For the Base-Generalized models, prediction performance gradually diverged between White and Black participants as the proportion of White participants in the training data increased (<a href="#fig-lmem-results" class="quarto-xref">Figure&nbsp;<span>1.5</span></a>). For example, when the training data changed from 0% to 100% White participants, the difference in RMSE between the racial groups increased by 0.04 mmol/L [95% CI: 0.001 to 0.008],<span class="math inline">\(p\)</span>=0.02, indicating that training data composition affected the two groups differently(<a href="#tbl-general-model-coefficients" class="quarto-xref">Table&nbsp;<span>1.10</span></a>). This divergence was not observed after transfer learning (0.002 mmol/L[95% CI: -0.001 to 0.005], <span class="math inline">\(p\)</span>=0.20) (<a href="#tbl-transferlearned-coefficients" class="quarto-xref">Table&nbsp;<span>1.11</span></a>). A statistically significant differences were however found in both the Base-Generalized and the Transfer Learned models for age groups (0.482 [0.355 to 0.610], p &lt; 0.001, <a href="#tbl-general-model-coefficients" class="quarto-xref">Table&nbsp;<span>1.10</span></a> and 0.411 [0.290 to 0.533], p &lt; 0.001, <a href="#tbl-transferlearned-coefficients" class="quarto-xref">Table&nbsp;<span>1.11</span></a> respectivly). The differences in age groups showed a lower error when forecasting blood glucose values for adults compared to children. Larger sample sizes available for transfer learning were associated with lower prediction error (<span class="math inline">\(β\)</span> = -0.111 mmol/L [-0.161 to -0.061] mmol/L, <span class="math inline">\(p\)</span> &lt; 0.001) for every additional 1,000 samples used for fine-tuning (<a href="#tbl-transferlearned-coefficients" class="quarto-xref">Table&nbsp;<span>1.11</span></a>). In contrast, the size of the dataset used to train the Base-Generalized model was not associated with prediction error.</p>
+<div id="fig-lmem-results" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lmem-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_3_Fig2.png" width="100%"><img src="figures/4_results_fig/study_3_Fig2.png" class="img-fluid figure-img"></a></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lmem-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.5: Estimated root mean squared errors (RMSE) across 11 different proportions of White and Black participants in the dataset.
+</figcaption>
+</figure>
+</div>
+<div id="tbl-general-model-coefficients" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-general-model-coefficients-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1.10: Model coefficients from linear mixed effects models for root mean squared errors of the Base-Generalized models.
+</figcaption>
+<div aria-describedby="tbl-general-model-coefficients-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Predictor</th>
@@ -2679,7 +2675,7 @@ Figure&nbsp;1.10: Estimated root mean squared errors (RMSE) across 11 different 
 <tr class="odd">
 <td style="text-align: left;">Intercept</td>
 <td style="text-align: left;">1.893</td>
-<td style="text-align: left;">[1.762, 2.024]</td>
+<td style="text-align: left;">[ 1.762, 2.024]</td>
 <td style="text-align: left;">&lt;0.001</td>
 </tr>
 <tr class="even">
@@ -2715,7 +2711,7 @@ Figure&nbsp;1.10: Estimated root mean squared errors (RMSE) across 11 different 
 <tr class="odd">
 <td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp; Child</td>
 <td style="text-align: left;">0.482</td>
-<td style="text-align: left;">[0.355, 0.610]</td>
+<td style="text-align: left;">[ 0.355, 0.610]</td>
 <td style="text-align: left;">&lt;0.001</td>
 </tr>
 <tr class="even">
@@ -2737,7 +2733,7 @@ Figure&nbsp;1.10: Estimated root mean squared errors (RMSE) across 11 different 
 <td style="text-align: left;">0.23</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Training size Base-Generalized (per 100,000 samples)*</td>
+<td style="text-align: left;">Training size Base-Generalized*</td>
 <td style="text-align: left;">0.019</td>
 <td style="text-align: left;">[-0.055, 0.093]</td>
 <td style="text-align: left;">0.62</td>
@@ -2756,18 +2752,19 @@ Figure&nbsp;1.10: Estimated root mean squared errors (RMSE) across 11 different 
 </tr>
 </tbody>
 </table>
-<p>*Training size was centered at 510,000 as the training data had a mean of 514,293 samples.</p>
-<p>Model coefficients from linear mixed effects models for root mean squared errors of the Base-Generalized models.</p>
+<p style="font-size:75%">
+* Per 100,000 samples. (Training size was centered at 510,000 as the training data had a mean of 514,293 samples)
+</p>
 </div>
-<p>Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum</p>
-<div class="{tbl-transferlearned-coefficients}">
+</figure>
+</div>
+<div id="tbl-transferlearned-coefficients" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-transferlearned-coefficients-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1.11: Model coefficients from linear mixed effects models for root mean squared errors of the Transfer Learned models.
+</figcaption>
+<div aria-describedby="tbl-transferlearned-coefficients-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Predictor</th>
@@ -2780,7 +2777,7 @@ Figure&nbsp;1.10: Estimated root mean squared errors (RMSE) across 11 different 
 <tr class="odd">
 <td style="text-align: left;">Intercept</td>
 <td style="text-align: left;">1.890</td>
-<td style="text-align: left;">[1.768, 2.015]</td>
+<td style="text-align: left;">[ 1.768, 2.015]</td>
 <td style="text-align: left;">&lt;0.001</td>
 </tr>
 <tr class="even">
@@ -2816,7 +2813,7 @@ Figure&nbsp;1.10: Estimated root mean squared errors (RMSE) across 11 different 
 <tr class="odd">
 <td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp; Child</td>
 <td style="text-align: left;">0.411</td>
-<td style="text-align: left;">[0.290, 0.533]</td>
+<td style="text-align: left;">[ 0.290, 0.533]</td>
 <td style="text-align: left;">&lt;0.001</td>
 </tr>
 <tr class="even">
@@ -2838,13 +2835,13 @@ Figure&nbsp;1.10: Estimated root mean squared errors (RMSE) across 11 different 
 <td style="text-align: left;">0.34</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Training size Base-Generalized (per 100,000 samples)*</td>
+<td style="text-align: left;">Training size Base-Generalized*</td>
 <td style="text-align: left;">0.011</td>
 <td style="text-align: left;">[-0.060, 0.081]</td>
 <td style="text-align: left;">0.77</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Training size tl (per 1,000 samples)**</td>
+<td style="text-align: left;">Training size tl**</td>
 <td style="text-align: left;">-0.111</td>
 <td style="text-align: left;">[-0.161, -0.061]</td>
 <td style="text-align: left;">&lt;0.001</td>
@@ -2863,15 +2860,22 @@ Figure&nbsp;1.10: Estimated root mean squared errors (RMSE) across 11 different 
 </tr>
 </tbody>
 </table>
-<p>*Training size was centered at 510,000 as the training data had a mean of 514,293 samples.<br>
-**Training size for the transfer learned approach was centered at 4,400 as the training data for fine-tuning had a mean of 4,371 samples.</p>
-<p>Model coefficients from linear mixed effects models for root mean squared errors of the Transfer Learned models.</p>
+<p style="font-size:75%">
+* Per 100,000 samples. (Training size was centered at 510,000 as the training data had a mean of 514,293 samples)<br>
+** Per 1,000 samples. (Training size for the transfer learned approach was centered at 4,400 as the training data for fine-tuning had a mean of 4,371 samples.)
+</p>
+</div>
+</figure>
 </div>
 <!-- The random intercept variation describes the between-person variability. -->
+</section>
+<section id="the-surveillance-error-grid" class="level3" data-number="1.5.2">
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="the-surveillance-error-grid"><span class="header-section-number">1.5.2</span> The Surveillance Error Grid</h3>
+<p>Surveillance Error Grid analysis showed minimal differences between models and training data compositions. Across all models, racial groups, and training data ratios, almost all predictions fell within the “None” or “Slight” risk zones, while approximately 3–6% were classified as “Moderate” risk and no predictions were classified as “High” or “Extreme” risk (<a href="#tbl-seg-white" class="quarto-xref">Table&nbsp;<span>1.12</span></a>; <a href="#tbl-seg-black" class="quarto-xref">Table&nbsp;<span>1.13</span></a>). These findings indicate that the small differences in RMSE observed between models were unlikely to be clinically meaningful.</p>
 <div id="tbl-seg-white" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[12,18,15,9,9,9,9,9,10]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-seg-white-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1.8: Results from the Surveillance Error Grid for White participants. Values are reported as percentages.
+Table&nbsp;1.12: Results from the Surveillance Error Grid for White participants. Values are reported as percentages.
 </figcaption>
 <div aria-describedby="tbl-seg-white-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -2957,7 +2961,7 @@ Table&nbsp;1.8: Results from the Surveillance Error Grid for White participants.
 </tr>
 <tr class="even">
 <td style="text-align: left;"></td>
-<td style="text-align: left;">Base-Individual</td>
+<td style="text-align: left;">Base-</td>
 <td style="text-align: left;">None</td>
 <td style="text-align: center;">66%</td>
 <td style="text-align: center;">66%</td>
@@ -2968,7 +2972,7 @@ Table&nbsp;1.8: Results from the Surveillance Error Grid for White participants.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Individual</td>
 <td style="text-align: left;">Slight</td>
 <td style="text-align: center;">28%</td>
 <td style="text-align: center;">28%</td>
@@ -3012,7 +3016,7 @@ Table&nbsp;1.8: Results from the Surveillance Error Grid for White participants.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"></td>
-<td style="text-align: left;">Base-Generalized</td>
+<td style="text-align: left;">Base-</td>
 <td style="text-align: left;">None</td>
 <td style="text-align: center;">72%</td>
 <td style="text-align: center;">73%</td>
@@ -3023,7 +3027,7 @@ Table&nbsp;1.8: Results from the Surveillance Error Grid for White participants.
 </tr>
 <tr class="even">
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Generalized</td>
 <td style="text-align: left;">Slight</td>
 <td style="text-align: center;">25%</td>
 <td style="text-align: center;">25%</td>
@@ -3067,7 +3071,7 @@ Table&nbsp;1.8: Results from the Surveillance Error Grid for White participants.
 </tr>
 <tr class="even">
 <td style="text-align: left;"></td>
-<td style="text-align: left;">Transfer Learned</td>
+<td style="text-align: left;">Transfer</td>
 <td style="text-align: left;">None</td>
 <td style="text-align: center;">72%</td>
 <td style="text-align: center;">72%</td>
@@ -3078,7 +3082,7 @@ Table&nbsp;1.8: Results from the Surveillance Error Grid for White participants.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Learned</td>
 <td style="text-align: left;">Slight</td>
 <td style="text-align: center;">25%</td>
 <td style="text-align: center;">24%</td>
@@ -3131,7 +3135,7 @@ Table&nbsp;1.8: Results from the Surveillance Error Grid for White participants.
 <div id="tbl-seg-black" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[12,18,15,9,9,9,9,9,10]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-seg-black-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1.9: Results from the Surveillance Error Grid for Black participants. Values are reported as percentages.
+Table&nbsp;1.13: Results from the Surveillance Error Grid for Black participants. Values are reported as percentages.
 </figcaption>
 <div aria-describedby="tbl-seg-black-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -3217,7 +3221,7 @@ Table&nbsp;1.9: Results from the Surveillance Error Grid for Black participants.
 </tr>
 <tr class="even">
 <td style="text-align: left;"></td>
-<td style="text-align: left;">Base-Individual</td>
+<td style="text-align: left;">Base-</td>
 <td style="text-align: left;">None</td>
 <td style="text-align: center;">66%</td>
 <td style="text-align: center;">66%</td>
@@ -3228,7 +3232,7 @@ Table&nbsp;1.9: Results from the Surveillance Error Grid for Black participants.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Individual</td>
 <td style="text-align: left;">Slight</td>
 <td style="text-align: center;">27%</td>
 <td style="text-align: center;">27%</td>
@@ -3272,7 +3276,7 @@ Table&nbsp;1.9: Results from the Surveillance Error Grid for Black participants.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"></td>
-<td style="text-align: left;">Base-Generalized</td>
+<td style="text-align: left;">Base</td>
 <td style="text-align: left;">None</td>
 <td style="text-align: center;">75%</td>
 <td style="text-align: center;">74%</td>
@@ -3283,7 +3287,7 @@ Table&nbsp;1.9: Results from the Surveillance Error Grid for Black participants.
 </tr>
 <tr class="even">
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">-Generalized</td>
 <td style="text-align: left;">Slight</td>
 <td style="text-align: center;">23%</td>
 <td style="text-align: center;">23%</td>
@@ -3327,7 +3331,7 @@ Table&nbsp;1.9: Results from the Surveillance Error Grid for Black participants.
 </tr>
 <tr class="even">
 <td style="text-align: left;"></td>
-<td style="text-align: left;">Transfer Learned</td>
+<td style="text-align: left;">Transfer</td>
 <td style="text-align: left;">None</td>
 <td style="text-align: center;">75%</td>
 <td style="text-align: center;">74%</td>
@@ -3338,7 +3342,7 @@ Table&nbsp;1.9: Results from the Surveillance Error Grid for Black participants.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Learned</td>
 <td style="text-align: left;">Slight</td>
 <td style="text-align: center;">22%</td>
 <td style="text-align: center;">23%</td>
