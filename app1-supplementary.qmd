@@ -97,6 +97,65 @@ Prediction stability plots show the predictions (estimated risk) for the full da
 
 :::
 
+# Study III: Surveillance Error Grid Results {#sec-suppl-seg-results}
+
+::: {#tbl-seg-white tbl-colwidths="[12,18,15,9,9,9,9,9,10]"}
+
+| Group | Model | Zone | 0 | 20 | 40 | 60 | 80 | 100 |
+|:------|:------|:-----|--:|--:|--:|--:|--:|--:|
+| White | LOCF | None | 69% | 69% | 69% | 69% | 69% | 69% |
+| | | Slight | 26% | 26% | 26% | 26% | 26% | 26% |
+| | | Moderate | 4% | 4% | 4% | 4% | 4% | 4% |
+| | | High | 0% | 0% | 0% | 0% | 0% | 0% |
+| | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
+| | Base- | None | 66% | 66% | 66% | 66% | 66% | 66% |
+| | Individual| Slight | 28% | 28% | 28% | 28% | 28% | 28% |
+| | | Moderate | 6% | 6% | 6% | 6% | 6% | 6% |
+| | | High | 0% | 0% | 0% | 0% | 0% | 0% |
+| | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
+| | Base- | None | 72% | 73% | 73% | 73% | 73% | 73% |
+| | Generalized| Slight | 25% | 25% | 25% | 24% | 24% | 24% |
+| | | Moderate | 3% | 3% | 3% | 3% | 3% | 3% |
+| | | High | 0% | 0% | 0% | 0% | 0% | 0% |
+| | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
+| | Transfer | None | 72% | 72% | 73% | 73% | 73% | 73% |
+| | Learned| Slight | 25% | 24% | 24% | 24% | 24% | 24% |
+| | | Moderate | 3% | 3% | 3% | 3% | 3% | 3% |
+| | | High | 0% | 0% | 0% | 0% | 0% | 0% |
+| | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
+
+Results from the Surveillance Error Grid for White participants. Values are reported as percentages.
+:::
+
+- [ ] maybe add this one to appendix, since I think they show the same things
+
+::: {#tbl-seg-black tbl-colwidths="[12,18,15,9,9,9,9,9,10]"}
+
+| Group | Model | Zone | 0 | 20 | 40 | 60 | 80 | 100 |
+|:------|:------|:-----|--:|--:|--:|--:|--:|--:|
+| Black | LOCF | None | 71% | 71% | 71% | 71% | 71% | 71% |
+| | | Slight | 24% | 24% | 24% | 24% | 24% | 24% |
+| | | Moderate | 4% | 4% | 4% | 4% | 4% | 4% |
+| | | High | 0% | 0% | 0% | 0% | 0% | 0% |
+| | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
+| | Base- | None | 66% | 66% | 66% | 66% | 66% | 66% |
+| | Individual| Slight | 27% | 27% | 27% | 27% | 27% | 27% |
+| | | Moderate | 6% | 6% | 6% | 6% | 6% | 6% |
+| | | High | 0% | 0% | 0% | 0% | 0% | 0% |
+| | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
+| | Base | None | 75% | 74% | 75% | 75% | 74% | 75% |
+| | -Generalized| Slight | 23% | 23% | 22% | 22% | 22% | 22% |
+| | | Moderate | 3% | 3% | 3% | 3% | 3% | 3% |
+| | | High | 0% | 0% | 0% | 0% | 0% | 0% |
+| | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
+| | Transfer | None | 75% | 74% | 75% | 75% | 74% | 75% |
+| | Learned| Slight | 22% | 23% | 22% | 22% | 22% | 22% |
+| | | Moderate | 3% | 3% | 3% | 3% | 3% | 3% |
+| | | High | 0% | 0% | 0% | 0% | 0% | 0% |
+| | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
+
+Results from the Surveillance Error Grid for Black participants. Values are reported as percentages.
+:::
 
 
 ::: {.content-visible when-format="pdf"}

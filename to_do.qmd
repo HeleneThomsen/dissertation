@@ -1,0 +1,50 @@
+# Overview {.unnumbered .unlisted}
+- [x] A cover
+- [x] TOC
+- [x] List of original papers
+- [ ] Introduction
+- [ ] Aims and Assumptions
+- [ ] Methods - Presentation
+- [ ] Methods - Critical evaluation
+- [ ] Results
+- [ ] Summary - Reflective - Impact (knowledge added)
+- [ ] Conclusion
+- [ ] Discussion of future aspects
+- [ ] References
+- [ ] Abstract
+    - [ ] Danish
+    - [ ] English
+- [ ] Papers
+- [ ] Co-authorship forms
+- [ ] Appendix
+
+<!-- ------------------------------------------- -->
+# Need to have {.unnumbered .unlisted}
+- [ ] Check big tables from Results (@tbl-study1-clinical-overview, @tbl-main-clinical-findings) is correct with the published article
+- [ ] Locate nr from previous tables and change "-" to "nr" in @tbl-main-clinical-findings to match table @tbl-study1-clinical-overview
+- [ ] Ensret OR i tabellerne (@tbl-main-clinical-findings)
+- [ ] Delete the multimedia part in the footnote of the table after checking what information they link back to and decide if this should be added to supplementary of the dissertation(@tbl-main-clinical-findings).
+- [ ] Add Adjustments to @tbl-main-clinical-findings or include in supplementary
+
+
+## Formatting {.unnumbered .unlisted}
+- [ ] Add references to all citations
+- [ ] Check big and small letters in headers (uppercase/lowercase beginnings)
+- [ ] Ensret if I write introducing text below each chapter or not
+
+
+
+
+<!-- ------------------------------------------- -->
+
+
+
+# Nice to have {.unnumbered .unlisted}
+
+#### Results section {.unnumbered .unlisted}
+- [ ] List of CGM derived metrics found in the scoping review
+- [ ] Add a row "Number of CVD outcomes"- only if time permits and add information to the text as well (@tbl-study1-cgm-count).
+- [ ] Format this table nicer (@tbl-study1-clinical-overview), especially the newline parts.
+
+
+

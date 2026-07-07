@@ -14,6 +14,7 @@ book:
     # - 0-preface.qmd
     # - 0-papers.qmd
     # - 0-abbreviations.qmd
+    - to_do.qmd
     # - 1-introduction.qmd
     # - 2-aims.qmd
     # - 3-methods.qmd
