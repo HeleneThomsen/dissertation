@@ -67,7 +67,21 @@ When stratified by T1D and T2D then TIR was the most frequently investigated met
 | &nbsp;&nbsp;&nbsp; T1D, median [IQR] | 214 [119-547] | 57 [30-215] | 105 [31-347] | 267 [54-515] | 152 [91-515] | 124 [102-161] | 138 [98-188] |
 | &nbsp;&nbsp;&nbsp; T2D, median [IQR] | 510 [405-600] | 251 [89-411] | 405 [77-499] | 371 [95-484] | 499 [358-632] | 121 [75-499] | 405 [75-499] |
 
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.80\linewidth]{
+\textit{Abbreviations:} MAGE: mean amplitude of glycemic excursions, TIR: time in range, MBG: mean blood glucose, SD: standard deviation, CV: coefficient of variation, TBR: time below range, TAR: time above range.
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">´
 *Abbreviations:* MAGE: mean amplitude of glycemic excursions, TIR: time in range, MBG: mean blood glucose, SD: standard deviation, CV: coefficient of variation, TBR: time below range, TAR: time above range.
+</p>
+:::
+
 
 
 Summary of the popularity of the seven most used CGM-derived metrics
@@ -120,11 +134,29 @@ Most studies focused exclusively on subclinical cardiovascular outcomes (37 of 5
 | Watanabe, 2017 | Cross-sectional | Prediabetes, hospitalized | 28 | 64.3 $\pm$ 12.8 | nr | 5.41 $\pm$ 0.35% | 72 hours (Only used the middle 48 hours) |
 | Zhang, 2013 | Cross-sectional | T2D with cardiovascular complications<br>Group A: healthy individuals<br>Group B: T2D without cardiovascular complications<br>Group C: T2D with cardiovascular complications | 92 | Group A: 56.3 $\pm$ 6.1<br>Group B: 56.1 $\pm$ 6.6<br>Group C: 61.7 $\pm$ 7.2 | nr | Group A: 5.3 $\pm$ 0.3%<br>Group B: 6.6 $\pm$ 1.2%<br>Group C: 7.5 $\pm$ 1.4% | 72 hours |
 
-<p style="font-size: 85%; margin-top: 10px;">
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.90\linewidth]{
+    \textsuperscript{$\dagger$}  This study appears both in the clinical and subclinical disease outcome tables due to investigating multiple CVD outcomes.\
+    Note: Age is reported in years either as an interval, mean $\pm$ SD, or median (IQR). Diabetes duration values originally reported in months were converted to years for consistency (months $\div$ 12). <br>
+    \textit{Abbreviations:} CGM: continuous glucose monitoring, FU: follow-up, T1D: type 1 diabetes, T2D: type 2 diabetes, CAD: coronary artery disease, hypo: hypoglycemia, LEAD: lower extremity arterial disease, IQR: interquartile range, nr: not reported.
+
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
 $^\dagger$ This study appears both in the clinical and subclinical disease outcome tables due to investigating multiple CVD outcomes.
 </p>
 *Note:* Age is reported in years either as an interval, mean $\pm$ SD, or median (IQR). Diabetes duration values originally reported in months were converted to years for consistency (months $\div$ 12). <br>
 *Abbreviations:* CGM, continuous glucose monitoring; FU, follow-up; T1D, type 1 diabetes; T2D, type 2 diabetes; CAD, coronary artery disease; hypo, hypoglycemia; LEAD, lower extremity arterial disease; IQR, interquartile range; nr, not reported.
+
+</p>
+:::
+
+
 
 Study design and demographics of the included clinical cardiovascular outcome studies
 :::
@@ -307,39 +339,51 @@ Clinical cardiovascular outcomes comprised cardiovascular mortality, major adver
 | &nbsp;&nbsp;&nbsp; SD-moderate LEAD | — | — | OR: 1.28<br> (0.58–3.07) | $0.58$ |
 | &nbsp;&nbsp;&nbsp; SD-without severe LEAD | — | — | OR: 1.52<br> (0.92–2.41) | $0.10$ |
 
-: Main findings of the included studies on clinical cardiovascular outcomes. WIP: Still need to add suppl. files, and adjustment column
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.90\linewidth]{
+All hazard ratios (HRs), odds ratios (ORs), and areas under the curve (AUCs) are reported as follows: point estimate ($95\%$ CI).\newline
+\textsuperscript{*} This study appears multiple times as it investigated multiple cardiovascular disease outcomes.\newline
+\textsuperscript{$\dagger$} This study appears in both the clinical and subclinical disease outcome tables owing to the investigation of multiple cardiovascular disease outcomes.\newline
+The full table with adjustments is provided in **Multimedia Appendix 10**. Further elaboration on the adjusted variables can be found in **Multimedia Appendices 7 and 8**.\newline
+*Abbreviations:* nr: Not applicable or not available/not reported, TIR: time in range, GMI: glucose management indicator, TITR: time in tight range, TBR: time below range, TAR: time above range, CV: coefficient of variation, BG: blood glucose, MAGE: mean amplitude of glycemic excursions, LAGE: largest amplitude of glycemic excursions, MODD: mean of daily differences, LEAD: lower extremity arterial disease.
+}
+```
 :::
 
-<div style="font-size: 82%; line-height: 1.4;"> <!-- margin-top: 15px;" -->
-All hazard ratios (HRs), odds ratios (ORs), and areas under the curve (AUCs) are reported as follows: point estimate ($95\%$ CI).  
-$^*$ This study appears multiple times as it investigated multiple cardiovascular disease outcomes. 
-$^\dagger$ This study appears in both the clinical and subclinical disease outcome tables owing to the investigation of multiple cardiovascular disease outcomes.
-The full table with adjustments is provided in **Multimedia Appendix 10**. Further elaboration on the adjusted variables can be found in **Multimedia Appendices 7 and 8**.
-*Abbreviations:* nr: Not applicable or not available/not reported, TIR: time in range, GMI: glucose management indicator, TITR: time in tight range, TBR: time below range, TAR: time above range, CV: coefficient of variation, BG: blood glucose, MAGE: mean amplitude of glycemic excursions, LAGE: largest amplitude of glycemic excursions, MODD: mean of daily differences, LEAD: lower extremity arterial disease.
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+All hazard ratios (HRs), odds ratios (ORs), and areas under the curve (AUCs) are reported as follows: point estimate ($95\%$ CI).\ 
+$^*$ This study appears multiple times as it investigated multiple cardiovascular disease outcomes.\
+$^\dagger$ This study appears in both the clinical and subclinical disease outcome tables owing to the investigation of multiple cardiovascular disease outcomes.\
+The full table with adjustments is provided in **Multimedia Appendix 10**. Further elaboration on the adjusted variables can be found in **Multimedia Appendices 7 and 8**.\
+*Abbreviations:* nr: Not applicable or not available/not reported, TIR: time in range, GMI: glucose management indicator, TITR: time in tight range, TBR: time below range, TAR: time above range, CV: coefficient of variation, BG: blood glucose, MAGE: mean amplitude of glycemic excursions, LAGE: largest amplitude of glycemic excursions, MODD: mean of daily differences, LEAD: lower extremity arterial disease.\
+</p>
+:::
 
-</div>
+: Main findings of the included studies on clinical cardiovascular outcomes. WIP: Still need to add suppl. files, and adjustment column
+:::
 
 :::
 :::
 
 ## Baseline characteristics table of the datasets
-- [ ] I still need to write some text here
 - [ ] Adjust tables to look nicer
 
-<!-- From study 2: A prediction analysis on CANCAN was performed based on 159 participants, with 67 (42%) participants having elevated NT-proBNP values (Table 2). Participants with elevated NT-proBNP were generally older, had longer diabetes duration, and more frequently had cardiovascular disease and cardiac autonomic neuropathy, while also showing lower BMI, lower LDL and total cholesterol, modestly better overall glycaemic control, but slightly higher glycaemic variability compared with participants with lower NT-proBNP levels. -->
+The CANCAN dataset presented below was used in Study II (@tbl-baseline-cancan).
+The total number of included participants were 159 and 67B (42%) had elevated NT-proBNP values.
+Participants with elevated NT-proBNP tended to be older, have a longer duration of diabetes, and more frequently have cardiovascular disease. They also tended to have lower BMI and lower LDL and total cholesterol concentrations, while exhibiting modestly better overall glycaemic control but slightly higher glycaemic variability.
 
-Datasets used in this dissertation is presented below.
+:::  {#tbl-baseline-cancan tbl-colwidths="[40,20,20,20]"}
 
-:::  {#tbl-baseline-cancan tbl-colwidths="[35,20,20,20]"}
-
-| Variable | CANCAN, total | NT-proBNP ≤ 125 pg/mL | NT-proBNP > 125 pg/mL |
+| Variable | Total | NT-proBNP $≤$125 pg/mL | NT-proBNP >125 pg/mL |
 |:---| ---:| ---:| ---:|
 | N | 159 | 92 | 67 |
 | Age (years) | 65 [56, 71] | 60 [53, 68] | 68 [64, 76] |
-| Sex | | | |
+| **Sex** | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;– Male | 99 (62%) | 55 (60%) | 44 (66%) |
 | &nbsp;&nbsp;&nbsp;&nbsp;– Female | 60 (38%) | 37 (40%) | 23 (34%) |
-| Smoking status | | | |
+| **Smoking status** | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;– Never or former | 135 (85%) | 77 (84%) | 58 (87%) |
 | &nbsp;&nbsp;&nbsp;&nbsp;– Current | 24 (15%) | 15 (16%) | 9 (13%) |
 | Diabetes duration (years) | 16 [11, 24] | 14 [9, 22] | 19 [14, 25] |
@@ -349,24 +393,38 @@ Datasets used in this dissertation is presented below.
 | HDL (mmol/L) | 1.0 [0.9, 1.2] | 1.0 [0.9, 1.2] | 1.0 [0.9, 1.3] |
 | Total cholesterol (mmol/L) | 3.9 [3.2, 4.8] | 4.1 [3.5, 4.9] | 3.6 [3.0, 4.2] |
 | eGFR (mL/min/1.73 m²) | 57 [39, 74] | 68 [52, 82] | 48 [27, 63] |
-| CGM-derived metrics | | | |
+| **CGM-derived metrics** | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;– CGM days (n/participant) | 13 [10, 13] | 13 [9, 13] | 13 [10, 13] |
-| &nbsp;&nbsp;&nbsp;&nbsp;– Glucose management indicator (%) | 7.3 [6.8, 8.4] | 7.5 [6.8, 8.6] | 7.2 [6.7, 8.0] |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Glucose management | 7.3 [6.8, 8.4] | 7.5 [6.8, 8.6] | 7.2 [6.7, 8.0] |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; indicator (%) | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;– Time in range (%) | 59.6 [31.9, 78.9] | 58.2 [20.2, 78.6] | 62.1 [40.8, 81.0] |
 | &nbsp;&nbsp;&nbsp;&nbsp;– Time below range (%) | 0.0 [0.0, 1.5] | 0.0 [0.0, 0.8] | 0.2 [0.0, 2.0] |
 | &nbsp;&nbsp;&nbsp;&nbsp;– Time above range (%) | 36.6 [17.6, 68.1] | 41.8 [19.8, 79.5] | 33.1 [14.1, 58.2] |
 | &nbsp;&nbsp;&nbsp;&nbsp;– Coefficient of variation (%) | 27.3 [22.5, 31.9] | 25.3 [21.2, 30.3] | 28.3[24.8, 34.2] |
-| &nbsp;&nbsp;&nbsp;&nbsp;– Mean amplitude of glycemic excursions (mmol/L) | 6.3 [5.0, 7.9] | 6.0 [4.9, 7.7] | 6.7 [5.1, 8.5] |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Mean amplitude of | 6.3 [5.0, 7.9] | 6.0 [4.9, 7.7] | 6.7 [5.1, 8.5] |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; glycemic excursions (mmol/L)  | | | |
 
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.80\linewidth]{
+    Categorical values are given by number (percentage), and numerical values are given by median [interquartile range].
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
 Categorical values are given by number (percentage), and numerical values are given by median [interquartile range].
+</p>
+:::
 
-Baseline table for CANCAN data and NT-proBNP groups.
+Baseline table for CANCAN data.
 
 :::
 
-::: {#tbl-baseline-t1dx tbl-colwidths="[35,20,20,20]"}
+::: {#tbl-baseline-t1dx tbl-colwidths="[40,20,20,20]"}
 
-| Characteristics | Total | White Cohort | Black Cohort |
+| Characteristics | Total | Race: White | Race: Black |
 |:---|---:|---:|---:|
 | N | 205 | 101 | 104 |
 | Race (White) | 101 (49%) | 101 (100%) | 0 (0%) |
@@ -377,19 +435,33 @@ Baseline table for CANCAN data and NT-proBNP groups.
 | Age at T1D diagnosis | 11 [7, 22] | 9 [6, 16] | 14 [8, 25] |
 | HbA1c (mmol/mol) | 67 [57, 78] | 63 [55, 73] | 72.0 [60, 85] |
 | CGM duration w/o missing data (weeks/participant) | 9.1 [7.2, 10.3] | 9.5 [7.7, 10.7] | 8.6 [6.9, 9.9] |
-| Missing CGM values (weeks/per participant) | 3.3 [1.6, 5.1] | 2.6 [1.3, 4.5] | 4.1 [1.8, 5.6] |
+| Missing CGM values (weeks/participant) | 3.3 [1.6, 5.1] | 2.6 [1.3, 4.5] | 4.1 [1.8, 5.6] |
 | CGM-derived metrics | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;– CGM days (n/participant) | 58 [46, 69] | 63 [47, 71] | 56 [45, 66] |
-| &nbsp;&nbsp;&nbsp;&nbsp;– Glucose management indicator (%) | 7.5 [7.0, 8.2] | 7.4 [6.9, 7.9] | 7.7 [7.0, 8.5] |
-| &nbsp;&nbsp;&nbsp;&nbsp;–  Time in range (%/per participant) | 47 [35, 57] | 49 [39, 60] | 42 [31, 54] |
-| &nbsp;&nbsp;&nbsp;&nbsp;–  Time above range (%/per participant) | 45 [30, 56] | 42 [28, 53] | 48 [32, 60] |
-| &nbsp;&nbsp;&nbsp;&nbsp;–  Time below range (%/per participant) | 8 [4, 14] | 6 [4, 10] | 11 [5, 15] |
+| &nbsp;&nbsp;&nbsp;&nbsp;– Glucose management| 7.5 [7.0, 8.2] | 7.4 [6.9, 7.9] | 7.7 [7.0, 8.5] |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; indicator (%) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;–  Time in range (%) | 47 [35, 57] | 49 [39, 60] | 42 [31, 54] |
+| &nbsp;&nbsp;&nbsp;&nbsp;–  Time above range (%) | 45 [30, 56] | 42 [28, 53] | 48 [32, 60] |
+| &nbsp;&nbsp;&nbsp;&nbsp;–  Time below range (%) | 8 [4, 14] | 6 [4, 10] | 11 [5, 15] |
 | &nbsp;&nbsp;&nbsp;&nbsp;– Coefficient of variation (%) | 43.3 [39.6, 48.6] | 42.2 [38.6, 46.5] | 46.7 [40.4, 51.9] |
 | &nbsp;&nbsp;&nbsp;&nbsp;– Mean amplitude of glycemic excursions (mmol/L) | 9.9 [8.2, 12.1] | 9.6 [8.1, 11.2] | 10.6 [8.5, 13.0] |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; glycemic excursions (mmol/L)  | | | |
 
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.80\linewidth]{
+    Categorical values are given by number (percentage), and numerical values are given by median [interquartile range].
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
 Categorical values are given by number (percentage), and numerical values are given by median [interquartile range].
+</p>
+:::
 
-Baseline table for T1DX data and racial groups.
+Baseline table for T1DX data.
 
 :::
 
@@ -405,47 +477,6 @@ Kernel density plots of cosine distances for within- and between-participants in
 
 :::
 
-### Embeddings and Glycemic Control
-- [ ] Figures needs to be split up based on glycemic control metric, with CANCAN dataset in one column and T1DX dataset in the other column. First figure will be HbA1c, followed by TIR and MAGE. (CV, and GMI will not be presented)
-
-::: {#fig-cosim2}
-[![](figures/4_results_fig/study_2_co_sim2.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim2.png)
-
-UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on glycemic control metrics for the CANCAN dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
-
-:::
-
-::: {#fig-cosim3}
-[![](figures/4_results_fig/study_2_co_sim1.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim3.png)
-
-UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on glycemic control metrics for the T1DX dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
-
-:::
-
-::: {#fig-cosim3}
-[![](figures/4_results_fig/study_2_co_sim1.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim3.png)
-
-UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on glycemic control metrics for the T1DX dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
-
-:::
-
-::: {#fig-cosim4_mage}
-[![](figures/4_results_fig/study_2_co_sim_cgm_var.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_cgm_var.png)
-
-UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on MAGE for the two datasets. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
-
-:::
-
-### Embeddings and NT-proBNP
-- [ ] Figure needs to be turned and CVD removed
-- [ ] Add a very brief text to the figure    
-
-::: {#fig-cosim-ntprobnp}
-[![](figures/4_results_fig/study_2_co_sim_cvd_ntprobnp.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_cvd_ntprobnp.png)
-
-UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on CVD and NT-proBNP for the CANCAN dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
-
-:::
 
 ### Embeddings and race
 - [ ] Figure needs to be turned
@@ -466,7 +497,7 @@ Optimism-corrected AUROCs for the models with fewer predictors had modest perfor
 The models including only CGM-data either as derived metrics (Model C1) or as UMAP dimensions (Model D1a, D1b, D1c) performed the worst (AUROC: 0.53 to 0.69). Age seemed a better predictor for elevated NT-proBNP (AUROC: 0.73 [0.65 - 0.80])
 
 
-::: {#tbl-model-performance_main tbl-colwidths="[30,25,15,15,15]"}
+::: {#tbl-model-performance_main tbl-colwidths="[36,24,11,12,15]"}
 
 | Models | Corrected [95% CI] | Apparent | Optimism | Number of predictors |
 |:---|:---:|:---:|:---:|:---:|
@@ -499,8 +530,22 @@ The models including only CGM-data either as derived metrics (Model C1) or as UM
 | **Model D1b:**<br> (UMAP, min\*) | 0.53 [0.43 - 0.63] | 0.57 | 0.04 | 2 |
 | **Model D1c:**<br> (UMAP, mean\*) | 0.53 [0.43 - 0.64] | 0.56 | 0.03 | 2 |
 
-*Note: CI = Confidence Interval; CGM = Continuous Glucose Monitoring; UMAP = Uniform Manifold Approximation and Projection.*
-\* Indicates the pooling technique for the embeddings.
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.90\linewidth]{
+    \textsuperscript{*} Indicates the pooling technique for the embeddings.\
+    \textsuperscript{*} Abbreviations:* CI: Confidence Interval, CGM: Continuous Glucose Monitoring, UMAP: Uniform Manifold Approximation and Projection.
+
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+\* Indicates the pooling technique for the embeddings.\
+\* Abbreviations:* CI: Confidence Interval, CGM: Continuous Glucose Monitoring, UMAP: Uniform Manifold Approximation and Projection.
+</p>
+:::
 
 Area under the receiver operating characteristic curve for the included models.
 
@@ -510,111 +555,179 @@ Area under the receiver operating characteristic curve for the included models.
 Bias is an important spect to consider when working data drivenly.
 In study III, we therefore evaluates bias in CGM trained machine learning models for forecasting in the T1DX cohort
 
-### Bias in Machine Learning Models (Study 3)
+### Bias in Machine Learning Models
+The RMSE of the models are shown in  @tbl-study3-main-results1 and @tbl-study3-main-results2.
+Base-Generalized and Transfer Learned models achieved models achieved lower prediction errors (RMSE: 2.00 to 2.06 mmol/L) than the naive last observation carried forward (LOCF)(RMSE: 2.41 and 2.45 mmol/L) and Base-Individual models (RMSE: 2.54 to 2.63 mmol/L) for both White and Black participants (@tbl-study3-main-results1 and @tbl-study3-main-results2).
 
 
-::: {#fig-lmem-results width=100%}
-[![](figures/4_results_fig/study_3_Fig2.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_3_Fig2.png){width=100%}
-
-<!-- [*Note:* The y-axis starts at 1.9 mmol/L and not 0]{style="font-size: 85%; opacity: 0.85;"} -->
-
-Estimated root mean squared errors (RMSE) across 11 different proportions of White and Black participants in the dataset.
-:::
-
-The RMSE of the models are shown in  @tbl-study3-main-results and @fig-lmem-results. Naive (LOCF) and Base-Individual models performed the worst.
-Errors were about 0.5 mmol/L lower for the Base-Generalized and Transfer Learned models.
-For white participants, the Base-Generalized model trained on a dataset including exclusively Black participants had an RMSE of 2.04 [1.95, 2.13], while its performance was 2.01 [1.92, 2.10] when trained exclusively on White participants (difference: -0.003 [-0.007, 0.001], p = 0.12, @tbl-general-model-coefficients). For the same two proportions, the Transfer Learned models showed RMSEs of 2.02 [1.94, 2.11] and 2.01 [1.93, 2.10] mmol/L, respectively (difference: -0.001 [-0.003, 0.001], p = 0.46, @tbl-transferlearned-coefficients). For the Base-Generalized models, there was a statistically significant interaction between the effect of race and ratio as the RMSE increased 0.04 [0.01, 0.08] mmol/L more for Black participants compared to White participants when the proportion of White participants increased from 0 to 100% in the training data (@@tbl-general-model-coefficients). We did not find evidence for this divergence in performance in the Transfer Learned models (p = 0.20, Table 4). Furthermore, statistically significant differences were found between age groups in both the Base-Generalized (0.482 [0.355, 0.610], p < 0.001, @@tbl-general-model-coefficients) and the Transfer Learned models (0.411 [0.290, 0.533], p < 0.001, @@tbl-transferlearned-coefficients) showing higher error when predicting on children compared to adults. For every 1,000 increase in sample size for fine-tuning the Base-Generalized model to an individual (transfer learning), the RMSE decreases with -0.111 [-0.161, -0.061] mmol/L (p < 0.001, @@tbl-transferlearned-coefficients). At the same time, we did not find an association between the sample size used for training the Base-Generalized model and RMSE (p = 0.62). Between-person variance of RMSE was 0.198 for the Base-Generalized and 0.172 for the Transfer Learned model.
-
-
-
-::: {tbl-study3-main-results}
+::: {#tbl-study3-main-results1 tbl-colwidths="[12,22,22,22,22]"}
 | Ratio | LOCF | Base-Individual | Base-Generalized | Transfer Learned |
-|:---|:---|:---|:---|:---|
-| **Model performance (RMSE) for White participants** | | | | |
+|:---:|:---:|:---:|:---:|:---:|
 | 0 | | | 2.04 [1.95, 2.13] | 2.02 [1.94, 2.11] |
 | 10 | | | 2.04 [1.95, 2.13] | 2.02 [1.94, 2.11] |
 | 20 | | | 2.04 [1.95, 2.12] | 2.02 [1.94, 2.10] |
 | 30 | | | 2.03 [1.94, 2.12] | 2.02 [1.94, 2.10] |
 | 40 | 2.45 [2.32, 2.57] | 2.54 [2.38, 2.70] | 2.03 [1.94, 2.12] | 2.02 [1.94, 2.10] |
-| 50 | (independent <br> of ratio) | (independent <br> of ratio) | 2.03 [1.94, 2.11] | 2.02 [1.93, 2.10] |
-| 60 | | | 2.02 [1.94, 2.11] | 2.02 [1.93, 2.10] |
+| 50 | (independent | (independent | 2.03 [1.94, 2.11] | 2.02 [1.93, 2.10] |
+| 60 | of ratio)| of ratio)| 2.02 [1.94, 2.11] | 2.02 [1.93, 2.10] |
 | 70 | | | 2.02 [1.93, 2.11] | 2.01 [1.93, 2.10] |
 | 80 | | | 2.02 [1.93, 2.11] | 2.01 [1.93, 2.10] |
 | 90 | | | 2.01 [1.92, 2.10] | 2.01 [1.93, 2.10] |
 | 100 | | | 2.01 [1.92, 2.10] | 2.01 [1.92, 2.10] |
-| **Model performance (RMSE) for Black participants** | | | | |
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.80\linewidth]{
+Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population's age (40% children) and sex (57% women) distribution. *Abbreviations:* LOCF: last observation carried forward.
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population's age (40% children) and sex (57% women) distribution. *Abbreviations:* LOCF: last observation carried forward.
+</p>
+:::
+
+Root mean squared errors with 95% CIs for the different models evaluated on White participants.
+:::
+
+::: {#tbl-study3-main-results2 tbl-colwidths="[12,22,22,22,22]"}
+| Ratio | LOCF | Base-Individual | Base-Generalized | Transfer Learned |
+|:---:|:---:|:---:|:---:|:---:|
 | 0 | | | 2.05 [1.96, 2.14] | 2.00 [1.91, 2.08] |
 | 10 | | | 2.05 [1.96, 2.14] | 2.00 [1.91, 2.08] |
 | 20 | | | 2.05 [1.96, 2.14] | 2.00 [1.92, 2.08] |
 | 30 | | | 2.05 [1.97, 2.14] | 2.00 [1.92, 2.08] |
 | 40 | 2.41 [2.28, 2.53] | 2.63 [2.47, 2.79] | 2.05 [1.97, 2.14] | 2.00 [1.92, 2.08] |
-| 50 | (independent <br> of ratio) | (independent <br> of ratio) | 2.05 [1.97, 2.14] | 2.00 [1.92, 2.08] |
-| 60 | | | 2.06 [1.97, 2.14] | 2.00 [1.92, 2.08] |
+| 50 | (independent | (independent | 2.05 [1.97, 2.14] | 2.00 [1.92, 2.08] |
+| 60 |  of ratio)|  of ratio)| 2.06 [1.97, 2.14] | 2.00 [1.92, 2.08] |
 | 70 | | | 2.06 [1.97, 2.14] | 2.00 [1.92, 2.08] |
 | 80 | | | 2.06 [1.97, 2.14] | 2.00 [1.92, 2.09] |
 | 90 | | | 2.06 [1.97, 2.15] | 2.00 [1.92, 2.09] |
 | 100 | | | 2.06 [1.97, 2.15] | 2.00 [1.92, 2.09] |
 
-Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population's age (40% children) and sex (57% women) distribution. Abbreviations: LOCF = last observation carried forward.
 
-Root mean squared errors with 95% CIs for the different models.
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.80\linewidth]{
+Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population's age (40% children) and sex (57% women) distribution. *Abbreviations:* LOCF: last observation carried forward.
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population's age (40% children) and sex (57% women) distribution. *Abbreviations:* LOCF: last observation carried forward.
+</p>
+:::
+
+
+
+Root mean squared errors with 95% CIs for the different models evaluated on Black participants.
 
 :::
 
-::: {tbl-general-model-coefficients}
+For the Base-Generalized models, prediction performance gradually diverged between White and Black participants as the proportion of White participants in the training data increased (@fig-lmem-results). For example, when the training data changed from 0% to 100% White participants, the difference in RMSE between the racial groups increased by 0.04 mmol/L [95% CI: 0.001 to 0.008],$p$=0.02, indicating that training data composition affected the two groups differently(@tbl-general-model-coefficients). This divergence was not observed after transfer learning (0.002 mmol/L[95% CI: -0.001 to 0.005], $p$=0.20) (@tbl-transferlearned-coefficients).
+A statistically significant differences were however found in both the Base-Generalized and the Transfer Learned models for age groups (0.482 [0.355 to 0.610], p < 0.001, @tbl-general-model-coefficients and 0.411 [0.290 to 0.533], p < 0.001, @tbl-transferlearned-coefficients respectivly). The differences in age groups showed a lower error when forecasting blood glucose values for adults compared to children.
+Larger sample sizes available for transfer learning were associated with lower prediction error ($β$ = -0.111 mmol/L [-0.161 to -0.061] mmol/L, $p$ < 0.001) for every additional 1,000 samples used for fine-tuning (@tbl-transferlearned-coefficients).
+In contrast, the size of the dataset used to train the Base-Generalized model was not associated with prediction error.
+
+::: {#fig-lmem-results width=100%}
+
+::: {.content-visible when-format="html"}
+
+[![](figures/4_results_fig/study_3_Fig2.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_3_Fig2.png){width=100%}
+
+:::
+
+::: {.content-visible when-format="pdf"}
+
+![](figures/4_results_fig/study_3_Fig2.png){width=100%}
+
+:::
+
+Estimated root mean squared errors (RMSE) across 11 different proportions of White and Black participants in the dataset.
+:::
+
+::: {#tbl-general-model-coefficients}
 | Predictor | Coefficient | 95% CI | P-value |
 |:---|:---|:---|:---|
-| Intercept | 1.893 | [1.762, 2.024] | <0.001 |
+| Intercept | 1.893 | [ 1.762, 2.024] | <0.001 |
 | **Race** | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp; White | Reference | | |
 | &nbsp;&nbsp;&nbsp;&nbsp; Black | 0.007 | [-0.118, 0.132] | 0.91 |
 | **Age** | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp; Adult | Reference | | |
-| &nbsp;&nbsp;&nbsp;&nbsp; Child | 0.482 | [0.355, 0.610] | <0.001 |
+| &nbsp;&nbsp;&nbsp;&nbsp; Child | 0.482 | [ 0.355, 0.610] | <0.001 |
 | **Sex** | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp; Male | Reference | | |
 | &nbsp;&nbsp;&nbsp;&nbsp; Female | -0.076 | [-0.201, 0.048] | 0.23 |
-| Training size Base-Generalized (per 100,000 samples)* | 0.019 | [-0.055, 0.093] | 0.62 |
+| Training size Base-Generalized* | 0.019 | [-0.055, 0.093] | 0.62 |
 | Ratio (per 10%) | -0.003 | [-0.007, 0.001] | 0.12 |
 | Ratio · Race | 0.004 | [0.001, 0.008] | 0.02 |
 
-\*Training size was centered at 510,000 as the training data had a mean of 514,293 samples.
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.72\linewidth]{
+    \textsuperscript{*} Per 100,000 samples. (Training size was centered at 510,000 as the training data had a mean of 514,293 samples)
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+\* Per 100,000 samples. (Training size was centered at 510,000 as the training data had a mean of 514,293 samples)
+</p>
+:::
 
 Model coefficients from linear mixed effects models for root mean squared errors of the Base-Generalized models.
 
 :::
 
-Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum
-
-
-::: {tbl-transferlearned-coefficients}
+::: {#tbl-transferlearned-coefficients}
 
 | Predictor | Coefficient | 95% CI | P-value |
 |:---|:---|:---|:---|
-| Intercept | 1.890 | [1.768, 2.015] | <0.001 |
+| Intercept | 1.890 | [ 1.768, 2.015] | <0.001 |
 | **Race** | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp; White | Reference | | |
 | &nbsp;&nbsp;&nbsp;&nbsp; Black | -0.028 | [-0.147, 0.092] | 0.65 |
 | **Age** | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp; Adult | Reference | | |
-| &nbsp;&nbsp;&nbsp;&nbsp; Child | 0.411 | [0.290, 0.533] | <0.001 |
+| &nbsp;&nbsp;&nbsp;&nbsp; Child | 0.411 | [ 0.290, 0.533] | <0.001 |
 | **Sex** | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp; Male | Reference | | |
 | &nbsp;&nbsp;&nbsp;&nbsp; Female | -0.057 | [-0.173, 0.060] | 0.34 |
-| Training size Base-Generalized (per 100,000 samples)* | 0.011 | [-0.060, 0.081] | 0.77 |
-| Training size tl (per 1,000 samples)** | -0.111 | [-0.161, -0.061] | <0.001 |
+| Training size Base-Generalized* | 0.011 | [-0.060, 0.081] | 0.77 |
+| Training size tl** | -0.111 | [-0.161, -0.061] | <0.001 |
 | Ratio (per 10 units) | -0.001 | [-0.003, 0.001] | 0.46 |
 | Ratio · Race | 0.002 | [-0.001, 0.005] | 0.20 |
 
-\*Training size was centered at 510,000 as the training data had a mean of 514,293 samples.  
-\*\*Training size for the transfer learned approach was centered at 4,400 as the training data for fine-tuning had a mean of 4,371 samples.
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.72\linewidth]{
+    \textsuperscript{*} Per 100,000 samples. (Training size was centered at 510,000 as the training data had a mean of 514,293 samples)\newline
+    \textsuperscript{**} Per 1,000 samples. (Training size for the transfer learned approach was centered at 4,400 as the training data for fine-tuning had a mean of 4,371 samples.)
+
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+\* Per 100,000 samples. (Training size was centered at 510,000 as the training data had a mean of 514,293 samples)\
+\*\* Per 1,000 samples. (Training size for the transfer learned approach was centered at 4,400 as the training data for fine-tuning had a mean of 4,371 samples.)
+</p>
+:::
 
 Model coefficients from linear mixed effects models for root mean squared errors of the Transfer Learned models.
 
 :::
 
-
 <!-- The random intercept variation describes the between-person variability. -->
+### The Surveillance Error Grid
+Surveillance Error Grid analysis showed minimal differences between models and training data compositions. Across all models, racial groups, and training data ratios, almost all predictions fell within the "None" or "Slight" risk zones, while approximately 3–6% were classified as "Moderate" risk and no predictions were classified as "High" or "Extreme" risk (@tbl-seg-white; @tbl-seg-black). These findings indicate that the small differences in RMSE observed between models were unlikely to be clinically meaningful.
 
 ::: {#tbl-seg-white tbl-colwidths="[12,18,15,9,9,9,9,9,10]"}
 
@@ -625,18 +738,18 @@ Model coefficients from linear mixed effects models for root mean squared errors
 | | | Moderate | 4% | 4% | 4% | 4% | 4% | 4% |
 | | | High | 0% | 0% | 0% | 0% | 0% | 0% |
 | | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
-| | Base-Individual | None | 66% | 66% | 66% | 66% | 66% | 66% |
-| | | Slight | 28% | 28% | 28% | 28% | 28% | 28% |
+| | Base- | None | 66% | 66% | 66% | 66% | 66% | 66% |
+| | Individual| Slight | 28% | 28% | 28% | 28% | 28% | 28% |
 | | | Moderate | 6% | 6% | 6% | 6% | 6% | 6% |
 | | | High | 0% | 0% | 0% | 0% | 0% | 0% |
 | | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
-| | Base-Generalized | None | 72% | 73% | 73% | 73% | 73% | 73% |
-| | | Slight | 25% | 25% | 25% | 24% | 24% | 24% |
+| | Base- | None | 72% | 73% | 73% | 73% | 73% | 73% |
+| | Generalized| Slight | 25% | 25% | 25% | 24% | 24% | 24% |
 | | | Moderate | 3% | 3% | 3% | 3% | 3% | 3% |
 | | | High | 0% | 0% | 0% | 0% | 0% | 0% |
 | | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
-| | Transfer Learned | None | 72% | 72% | 73% | 73% | 73% | 73% |
-| | | Slight | 25% | 24% | 24% | 24% | 24% | 24% |
+| | Transfer | None | 72% | 72% | 73% | 73% | 73% | 73% |
+| | Learned| Slight | 25% | 24% | 24% | 24% | 24% | 24% |
 | | | Moderate | 3% | 3% | 3% | 3% | 3% | 3% |
 | | | High | 0% | 0% | 0% | 0% | 0% | 0% |
 | | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
@@ -645,8 +758,6 @@ Results from the Surveillance Error Grid for White participants. Values are repo
 :::
 
 - [ ] maybe add this one to appendix, since I think they show the same things
-
-
 
 ::: {#tbl-seg-black tbl-colwidths="[12,18,15,9,9,9,9,9,10]"}
 
@@ -657,18 +768,18 @@ Results from the Surveillance Error Grid for White participants. Values are repo
 | | | Moderate | 4% | 4% | 4% | 4% | 4% | 4% |
 | | | High | 0% | 0% | 0% | 0% | 0% | 0% |
 | | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
-| | Base-Individual | None | 66% | 66% | 66% | 66% | 66% | 66% |
-| | | Slight | 27% | 27% | 27% | 27% | 27% | 27% |
+| | Base- | None | 66% | 66% | 66% | 66% | 66% | 66% |
+| | Individual| Slight | 27% | 27% | 27% | 27% | 27% | 27% |
 | | | Moderate | 6% | 6% | 6% | 6% | 6% | 6% |
 | | | High | 0% | 0% | 0% | 0% | 0% | 0% |
 | | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
-| | Base-Generalized | None | 75% | 74% | 75% | 75% | 74% | 75% |
-| | | Slight | 23% | 23% | 22% | 22% | 22% | 22% |
+| | Base | None | 75% | 74% | 75% | 75% | 74% | 75% |
+| | -Generalized| Slight | 23% | 23% | 22% | 22% | 22% | 22% |
 | | | Moderate | 3% | 3% | 3% | 3% | 3% | 3% |
 | | | High | 0% | 0% | 0% | 0% | 0% | 0% |
 | | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
-| | Transfer Learned | None | 75% | 74% | 75% | 75% | 74% | 75% |
-| | | Slight | 22% | 23% | 22% | 22% | 22% | 22% |
+| | Transfer | None | 75% | 74% | 75% | 75% | 74% | 75% |
+| | Learned| Slight | 22% | 23% | 22% | 22% | 22% | 22% |
 | | | Moderate | 3% | 3% | 3% | 3% | 3% | 3% |
 | | | High | 0% | 0% | 0% | 0% | 0% | 0% |
 | | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |

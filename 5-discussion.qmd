@@ -90,3 +90,62 @@
 
 
 # Conclusions
+
+<!-- 
+### Embeddings and Glycemic Control
+- [ ] Figures needs to be split up based on glycemic control metric, with CANCAN dataset in one column and T1DX dataset in the other column. First figure will be HbA1c, followed by TIR and MAGE. (CV, and GMI will not be presented)
+
+::: {#fig-cosim2}
+[![](figures/4_results_fig/study_2_co_sim2.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim2.png)
+
+UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on glycemic control metrics for the CANCAN dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
+
+:::
+
+::: {#fig-cosim3}
+[![](figures/4_results_fig/study_2_co_sim1.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim3.png)
+
+UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on glycemic control metrics for the T1DX dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
+
+:::
+
+::: {#fig-cosim3}
+[![](figures/4_results_fig/study_2_co_sim1.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim3.png)
+
+UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on glycemic control metrics for the T1DX dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
+
+:::
+
+::: {#fig-cosim4_mage}
+[![](figures/4_results_fig/study_2_co_sim_cgm_var.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_cgm_var.png)
+
+UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on MAGE for the two datasets. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
+
+:::
+
+### Embeddings and NT-proBNP
+- [ ] Figure needs to be turned and CVD removed
+- [ ] Add a very brief text to the figure    
+
+::: {#fig-cosim-ntprobnp}
+[![](figures/4_results_fig/study_2_co_sim_cvd_ntprobnp.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_cvd_ntprobnp.png)
+
+UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on CVD and NT-proBNP for the CANCAN dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
+
+::: -->
+
+
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.72\linewidth]{
+
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+
+</p>
+:::

@@ -63,6 +63,7 @@ format:
      - headsepline=true
      - footsepline=true
      - open=any
+     - numbers=noendperiod
     #  - chapterprefix=true
     keep-tex: true
     toc-depth: 2
@@ -80,6 +81,14 @@ format:
       \usepackage{multirow}
       \usepackage{xcolor}
       \usepackage[table]{xcolor}
+      \newcommand{\tablenote}[2][0.78\linewidth]{%
+        \begin{center}
+          \begin{minipage}{#1}
+            \footnotesize
+            #2
+          \end{minipage}
+        \end{center}
+      }
       % \rowcolors{4}{gray!10}{white}
       \usepackage{float}
       \floatplacement{figure}{H}
