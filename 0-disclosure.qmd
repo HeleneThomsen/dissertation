@@ -1,7 +1,7 @@
-# Notes and disclosures {.unnumbered}
+# Disclosures and Notes {.unnumbered}
 
-## Financial disclosures
-This PhD project was supported by a research grant from the **Danish Diabetes and Endocrine Academy** (NNF22SA0079901) and the **Danish Cardiovascular Academy** (NNF20SA0067242), which are funded by the **Novo Nordisk Foundation**. Furthermore, the project was supported by a research grant from the **Novo Nordisk Foundation** (NNF22OC0076725),
+## Financial Disclosures
+This PhD project was supported by a research grant from the **Danish Diabetes and Endocrine Academy** (NNF22SA0079901) and the **Danish Cardiovascular Academy** (NNF20SA0067242), which are funded by the **Novo Nordisk Foundation**. Furthermore, the project was supported by the main supervisor’s Data Science Emerging Investigator grant from the Novo Nordisk Foundation (NNF22OC0076725),
 
 ```{r}
 #| label: financial-disclosures
@@ -20,7 +20,7 @@ knitr::include_graphics("figures/sdca.png")
 ## Notes on website version {.unnumbered .unlisted}
 This dissertation is available for viewing online at [HeleneThomsen.github.io/dissertation/](https://HeleneThomsen.github.io/dissertation/) or by scanning the QR code in the lower right-hand corner of the title page.
 
-{{< include pdf2-acknowledgements.qmd >}} 
+{{< include 0-pdf2-acknowledgements.qmd >}} 
 
 :::
 
@@ -35,43 +35,43 @@ Quarto is an open-source scientific and technical publishing system, with inspir
 
 The rendered pdf-file can be found here [Link](https://HeleneThomsen.github.io/dissertation/Machine-learning-methods-for-continuous-glucose-monitoring-data-and-their-potential-in-cardiovascular-risk-assessment.pdf).
 
-## Supervisors and assessment committee {.unnumbered .unlisted}
+## Supervisors and Assessment Committee {.unnumbered .unlisted}
 
 #### PhD student:
 
-**Helene Bei Thomsen**\
+**Helene Bei Thomsen**<br>
 Department of Public Health, Aarhus University, Denmark
 
 #### Supervisors:
 
-**Associate Professor Adam Hulman, PhD (main supervisor)**\
-Department of Public Health, Aarhus University, Denmark\
-Steno Diabetes Center Aarhus, Denmark
+**Associate Professor Adam Hulman, PhD (main supervisor)** <br>
+Department of Public Health, Aarhus University, Denmark <br>
+Steno Diabetes Center Aarhus, Aarhus University Hospital, Denmark <br>
 
-**Anders Aasted Isaksen, MD, PhD**\
-Steno Diabetes Center Aarhus, Denmark
+**Anders Aasted Isaksen, MD, PhD** <br>
+Steno Diabetes Center Aarhus, Denmark <br>
 
-**Guy Fagherazzi, PhD**\
-Director of the Department of Precision Health\
-Head of the Deep Digital Phenotyping Research Unit\
-Luxembourg Institute of Health, Luxembourg
+**Guy Fagherazzi, PhD** <br>
+Director of the Department of Precision Health <br>
+Head of the Deep Digital Phenotyping Research Unit <br>
+Luxembourg Institute of Health, Luxembourg <br>
 
-**Signe Toft Andersen, MD, PhD**\
-Steno Diabetes Center Aarhus, Denmark\
-Gødstrup Hospital, Denmark
+**Signe Toft Andersen, MD, PhD** <br>
+Steno Diabetes Center Aarhus, Denmark <br>
+Gødstrup Hospital, Denmark <br>
 
 #### Assessment committee:
-**Associate Professor Simon Tilma Vistisen (chairman)**\
-Department of Clinical Medicine, Aarhus University, Denmark
+**Associate Professor Simon Tilma Vistisen (chairman)** <br>
+Department of Clinical Medicine, Aarhus University, Denmark <br>
 <!-- Email: vistisen@clin.au.dk -->
 
-**Professor Cristina Soguero-Ruíz**\
-Department of Signal Theory and Communications, King Juan Carlos University, Spain\
+**Professor Cristina Soguero-Ruíz**
+Department of Signal Theory and Communications, King Juan Carlos University, Spain <br>
 <!-- Email: cristina.soguero@urjc.es -->
 
-**Associate Professor Simon Lebech Cichosz**\
-Department of Health Science and Technology, The Faculty of Medicine, Medical\
-Informatics and Image Analysis, Aalborg University, Denmark\
+**Associate Professor Simon Lebech Cichosz** <br>
+Department of Health Science and Technology, The Faculty of Medicine, Medical <br>
+Informatics and Image Analysis, Aalborg University, Denmark <br>
 <!-- Email: simcich@hst.aau.dk -->
 
 :::

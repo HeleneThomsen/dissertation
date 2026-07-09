@@ -1,0 +1,206 @@
+Clinical cardiovascular outcomes comprised cardiovascular mortality, major adverse cardiovascular events, macrovascular complications, coronary artery disease, stroke, and peripheral artery disease. Most studies were observational and differed substantially in study populations, CGM-derived metrics, outcome definitions, and adjustment strategies. Consequently, direct comparison across studies was challenging. The reported effect estimates from the least and most adjusted analyses are summarized in @tbl-main-clinical-findings.
+
+::: {.landscape}
+::: {.small}
+
+::: {#tbl-main-clinical-findings tbl-colwidths="\[25, 15, 15 , 15, 15, 15\]"}
+
+| Outcome, reference, and continuous glucose monitoring metrics | Unadjusted or least adjusted findings | $P$ value for the least adjusted findings | Most adjusted findings | $P$ value for the most adjusted findings | Adjustments |
+|:---|:----|:--:|:----|:--:|:--|
+| **Cardiovascular Mortality**  | | | | |
+| | | | | | Model 1: |
+| | | | | | &nbsp;&nbsp; Demographic  |
+| Lu et al[@Lu2021], 2021 | | | | | Model 2: |
+| &nbsp;&nbsp;&nbsp; TIR $>85\%$ | HR 1.00 | $<0.001$ (trend) | HR 1.00 | $0.02$ (trend) | Demographic |
+| &nbsp;&nbsp;&nbsp; TIR $71\%-85\%$ | HR: 1.43<br> (0.95–2.14) | $<0.001$ (trend) | HR: 1.35<br> (0.90–2.04) | $0.02$ (trend) | &nbsp;&nbsp; Anthropometric |
+| &nbsp;&nbsp;&nbsp; TIR $51\%-70\%$ | HR: 1.66<br> (1.12–2.45) | $<0.001$ (trend) | HR: 1.47<br> (0.99–2.19) | $0.02$ (trend) | &nbsp;&nbsp; Lifestyle |
+| &nbsp;&nbsp;&nbsp; TIR $\ge 50\%$ | HR: 2.15<br> (1.47–3.13) | $<0.001$ (trend) | HR: 1.85<br> (1.25–2.72) | $0.02$ (trend) | &nbsp;&nbsp; Medical History |
+| &nbsp;&nbsp;&nbsp; TIR as a<br> continuous variable  | HR 1.08<br> (1.03–1.13) | — | HR 1.05<br> (1.00–1.11) | — | &nbsp;&nbsp; Physiological |
+| &nbsp;&nbsp;&nbsp; (each $10\%$ decrease)| | | | | &nbsp;&nbsp; Biochemical |
+| | | | | | &nbsp;&nbsp; Medication |
+| | | | | | |
+| | | | | | Least adjusted: |
+| | | | | | &nbsp;&nbsp; Unadjusted |
+| | | | | | Most adjusted: |
+| Wei et al[@Wei2019]$^*$, 2019 | | | | | &nbsp;&nbsp; Demographic |
+| &nbsp;&nbsp;&nbsp; Hypoglycemic events | HR: 2.03<br> (1.21–3.41) | — | HR: 2.64<br> (1.40–4.99) | — | &nbsp;&nbsp; Anthropometric |
+| | | | | | &nbsp;&nbsp; Lifestyle |
+| | | | | | &nbsp;&nbsp; Medical History |
+| | | | | | &nbsp;&nbsp; Biochemical |
+| | | | | | &nbsp;&nbsp; Medication |
+| | | | | | |
+| **Major Adverse Cardiovascular Events** | | | | | |
+| He et al[@He2023], 2023 | | | | | |
+| &nbsp;&nbsp;&nbsp; Blood glucose<br> risk index | HR: 0.97<br> (0.85–1.10) | $0.61$ | HR: 0.98<br> (0.85–1.13) | $0.75$ | |
+| &nbsp;&nbsp;&nbsp; Low blood glucose<br> index | HR: 2.37<br> (1.16–4.83) | $0.02$ | HR: 2.73<br>( 1.21–6.16) | $0.02$ | |
+| &nbsp;&nbsp;&nbsp; High blood glucose <br> index | HR: 0.94<br> (0.81–1.08) | $0.38$ | HR: 0.94<br> (0.81–1.09) | $0.44$ | |
+| &nbsp;&nbsp;&nbsp; Average of<br> daily risk range | HR: 1.00<br> (0.93–1.07) | $>0.99$ | HR: 1.01<br> (0.93–1.09) | $0.80$ | |
+| &nbsp;&nbsp;&nbsp; GMI | HR: 0.98<br> (0.91–1.06) | $0.65$ | HR: 0.99<br>(0.91–1.07) | $0.78$ | |
+| &nbsp;&nbsp;&nbsp; M-value | HR: 0.98<br> (0.91–1.05) | $0.54$ | HR: 0.98<br>(0.91–1.06) | $0.64$ | |
+| Wei et al[@Wei2019]$^*$, 2019 | | | | | |
+| &nbsp;&nbsp;&nbsp; Hypoglycemic events | HR: 1.501<br> (1.207–1.866) | — | HR: 1.615<br> (1.239–2.106) | $<0.001$ | |
+| | | | | | |
+| **Macrovascular Complications** | | | | | |
+| De Meulemeester et al[@Meulemeester2024]$^{\dagger,*}$, 2024 | | | | | |
+| &nbsp;&nbsp;&nbsp; TIR | OR: 0.939<br> (0.829–1.063) | $>0.05$ | OR: 0.896<br> (0.738–1.087) | $>0.05$ | |
+| &nbsp;&nbsp;&nbsp; TITR | OR: 0.901<br> (0.775–1.047) | $>0.05$ | OR: 0.933<br> (0.745–1.169) | $>0.05$ | |
+| Bezerra et al[@Bezerra2023], 2023 | | | | | |
+| &nbsp;&nbsp;&nbsp; TIR | OR: 0.66<br> (0.46–0.93) | $0.02$ | OR: 0.68<br> (0.39–1.16) | $0.15$ | |
+| &nbsp;&nbsp;&nbsp; Time below 54 mg/dL | OR: 1.10<br> (0.88–1.38) | $0.39$ | OR: 0.92<br> (0.62–1.34) | $0.65$ | |
+| &nbsp;&nbsp;&nbsp; TBR | OR: 0.93<br> (0.80–1.09) | $0.39$ | OR: 0.77<br> (0.54–1.11) | $0.17$ | |
+| &nbsp;&nbsp;&nbsp; TAR | OR: 1.04<br> (1.01–1.08) | $0.01$ | OR: 1.04<br> (0.99–1.10) | $0.08$ | |
+| &nbsp;&nbsp;&nbsp; Time above 250 mg/dL | OR: 1.04<br> (1.00–1.08) | $0.03$ | OR: 1.03<br> (0.97–1.09) | $0.29$ | |
+| &nbsp;&nbsp;&nbsp; CV | OR: 1.03<br> (0.95–1.11) | $0.52$ | OR: 0.92<br> (0.81–1.06) | $0.25$ | |
+| &nbsp;&nbsp;&nbsp; GMI | OR: 2.17<br> (1.14–4.11) | $0.02$ | OR: 2.03<br> (0.77–5.37) | $0.15$ | |
+| Deng et al[@Deng2023], 2023 | | | | | |
+| &nbsp;&nbsp;&nbsp; $\%$ CV tertile 1 (Hp1; reference) | OR: 1.000 | $0.07$ (interaction) | OR: 1.000 | $0.008$ (interaction) | |
+| &nbsp;&nbsp;&nbsp; $\%$ CV tertile 1 (Hp2-2; reference) | OR: 1.000 | $0.07$ (interaction) | OR: 1.000 | $0.008$ (interaction) | |
+| &nbsp;&nbsp;&nbsp; $\%$ CV tertile 2 (Hp1) | OR: 1.483<br> (0.907–2.423) | $0.12$ | OR: 1.048<br> (0.528–2.078) | $0.89$ | |
+| &nbsp;&nbsp;&nbsp; $\%$ CV tertile 2 (Hp2-2) | OR: 1.399<br> (0.829–2.358) | $0.21$ | OR: 0.659<br> (0.296–1.466) | $0.31$ | |
+| &nbsp;&nbsp;&nbsp; $\%$ CV tertile 3 (Hp1) | OR: 2.347<br> (1.393–3.957) | $0.001$ | OR: 2.461<br> (1.183–5.121) | $0.02$ | |
+| &nbsp;&nbsp;&nbsp; $\%$ CV tertile 3 (Hp2-2) | OR: 1.217<br> (0.731–2.027) | $0.45$ | OR: 0.540<br> (0.245–1.191) | $0.13$ | |
+| El Malahi et al[@Malahi2022], 2022 | | | | | |
+| &nbsp;&nbsp;&nbsp; TIR | — | — | — | $>0.05$ | |
+| &nbsp;&nbsp;&nbsp; SD | — | — | — | $>0.05$ | |
+| &nbsp;&nbsp;&nbsp; CV | — | — | — | $>0.05$ | |
+| Magri et al[@Magri2018]$^\dagger$, 2018 | | | | | |
+| &nbsp;&nbsp;&nbsp; TBR | — | — | OR: 1.12<br> (1.014–1.228) | $0.02$ | |
+| &nbsp;&nbsp;&nbsp; Lowest BG value | — | — | — | — | |
+| &nbsp;&nbsp;&nbsp; Area under the TBR curve | — | — | — | — | |
+| | | | | |
+| **Coronary Artery Disease** | | | | | |
+| De Meulemeester et al[@Meulemeester2024]$^{\dagger,*}$, 2024 | | | | | |
+| &nbsp;&nbsp;&nbsp; TITR | OR: 1.039<br> (0.812–1.330) | $>0.05$ | OR: 1.255<br> (0.874–1.803) | $>0.05$ | |
+| &nbsp;&nbsp;&nbsp; TIR | OR: 1.072<br> (0.866–1.328) | $>0.05$ | OR: 1.164<br> (0.844–1.607) | $>0.05$ | |
+| Sheng et al [@Sheng2023], 2023 | | | | | |
+| &nbsp;&nbsp;&nbsp; TIR $<20\%$ | — | — | OR: 2.143<br> (1.554–3.287) | — | |
+| &nbsp;&nbsp;&nbsp; TIR $20\%-40\%$ | — | — | OR: 1.049<br> (0.945–2.022) | — | |
+| &nbsp;&nbsp;&nbsp; TIR $40\%-60\%$ | — | — | OR 0.854 (0.495–1.473) | — | |
+| &nbsp;&nbsp;&nbsp; TIR $60\%-80\%$ | — | — | OR: 0.617<br> (0.423–1.312) | — | |
+| &nbsp;&nbsp;&nbsp; TIR $>80\%$ | — | — | OR: 0.470<br> (0.143–1.545) | — | |
+| Chen et al[@Chen2020]$^{\dagger,*}$, 2020 | | | | | |
+| &nbsp;&nbsp;&nbsp; Controls with | | | | | |
+| &nbsp;&nbsp;&nbsp; SD $<1.40$ mmol/L,| | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE $<3.90$ mmol/L,| — | — | $\chi^2 = 5.797$ | $0.02$ | |
+| &nbsp;&nbsp;&nbsp; LAGE $<4.40$ mmol/L, | | | | | |
+| &nbsp;&nbsp;&nbsp; MODD $<0.83$ mmol/L| | | | | |
+| &nbsp;&nbsp;&nbsp; versus high BG fluctuations (angina pectoris) | | | | | |
+| &nbsp;&nbsp;&nbsp; Controls with | | | | | |
+| &nbsp;&nbsp;&nbsp; SD $<1.40$ mmol/L,| | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE $<3.90$ mmol/L,| — | — | $\chi^2 = 7.490$ | $0.006$ | |
+| &nbsp;&nbsp;&nbsp; LAGE $<4.40$ mmol/L, | | | | | |
+| &nbsp;&nbsp;&nbsp; MODD $<0.83$ mmol/L| | | | | |
+| &nbsp;&nbsp;&nbsp; versus high BG fluctuations (angina pectoris) | | | | | |
+| Wei et al[@Wei2019]$^*$, 2019 | | | | | |
+| &nbsp;&nbsp;&nbsp; Hypoglycemic events<br> (myocardial Infarction) | HR: 1.901<br> (1.067–3.389) | — | HR: 1.549<br> (0.768–3.124) | $0.03$ | |
+| &nbsp;&nbsp;&nbsp; Hypoglycemic events<br> (unstable angina pectoris) | HR: 1.226<br> (0.857–1.753) | — | HR: 1.218<br> (0.794–1.869) | $0.30$ | |
+| Shu-Hua et al[@Hua]$^e$, 2012 | | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE level ($\ge 3.4$ mmol/L) | — | — | OR: 2.286<br> (1.176–4.446) | $0.02$ | |
+| Su et al [@Su2011]$^*$, 2011 | | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE $\ge 3.4$ mmol/L | — | — | OR: 2.612<br> (1.423–4.831) | $0.002$ | |
+| &nbsp;&nbsp;&nbsp; MAGE | — | — | AUC: 0.618<br> (0.555–0.680) | $0.001$ | |
+| | | | | | |
+| **Gensini Score** | | | | | |
+| Chen et al [@Chen2020]$^{\dagger,*}$, 2020 | | | | | |
+| &nbsp;&nbsp;&nbsp; Controls with | | | | | |
+| &nbsp;&nbsp;&nbsp; SD $<1.40$ mmol/L,| | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE $<3.90$ mmol/L,| — | — | $t = 6.210$ | $<0.001$ | |
+| &nbsp;&nbsp;&nbsp; LAGE $<4.40$ mmol/L, | | | | | |
+| &nbsp;&nbsp;&nbsp; MODD $<0.83$ mmol/L| | | | | |
+| Watanabe et al [@Watanabe2017]$^*$, 2017 | | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE | — | — | $r = 0.742$ | $<0.001$ | |
+| Shu-Hua et al [@Hua2012]$^*$, 2012 | | | | | |
+| | | | Unstandardized coefficient  | |
+| | | | $\beta = 4.817$; | | |
+| &nbsp;&nbsp;&nbsp; MAGE | — | — | SE = 1.164; | $0.003$ | |
+| | | | Standardized coefficient | | |
+| | | | $t = 2.984$ | | |
+| Su et al [@Su2011]$^*$, 2011 | | | | | |
+| | | | Unstandardized | | |
+| | | | $\beta = 7.010$; | | |
+| &nbsp;&nbsp;&nbsp; MAGE | — | — | SE = 1.466;  | $<0.001$ | |
+| | | | standardized | | |
+| | | | $\beta = 0.237$; | | |
+| | | | $t = 4.783$ | | |
+| | | | | | |
+| **Syntax Score** | | | | | |
+| Watanabe et al [@Watanabe2017]$^*$, 2017 | | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE | — | — | $r = 0.776$ | $<0.001$ | |
+| Zhang et al [@Zhang2013]$^*$, 2013 | | | | | |
+| &nbsp;&nbsp;&nbsp; MAGE | — | — | $r = 0.518$ | $0.01$ | |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 00:00 to 03:00 | — | — | $r = -0.442$ | $0.04$ | |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 03:00 to 06:00 | — | — | $r = -0.208$ | $0.34$ | |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 06:00 to 08:00 | — | — | $r = 0.678$ | $<0.001$ | |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 08:00 to 11:00 | — | — | $r = 0.115$ | $0.60$ | |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 11:00 to 13:00 | — | — | $r = 0.523$ | $0.01$ | |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 13:00 to 17:00 | — | — | $r = 0.257$ | $0.24$ | |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 17:00 to 19:00 | — | — | $r = 0.358$ | $0.09$ | |
+| &nbsp;&nbsp;&nbsp; BG fluctuations from 19:00 to 24:00 | — | — | $r = -0.018$ | $0.93$ | |
+| | | | | | |
+| **Stroke** | | | | | |
+| De Meulemeester et al [@Meulemeester2024]$^{\dagger,*}$, 2024 | | | | | |
+| &nbsp;&nbsp;&nbsp; TITR | OR 0.651 (0.470–0.902) | $<0.05$ | OR 0.546 (0.347–0.858) | $<0.01$ | |
+| &nbsp;&nbsp;&nbsp; TIR | OR 0.749 (0.588–0.955) | $<0.05$ | OR 0.617 (0.440–0.866) | $<0.01$ | |
+| Guo et al [@Guo2021]$^*$, 2021 | | | | | |
+| &nbsp;&nbsp;&nbsp; TIR: Q1 ($\le 46\%$; reference) | OR: 1.00 | $<0.001$ | OR: 1.00 <br>| $<0.001$ | |
+| &nbsp;&nbsp;&nbsp; TIR: Q2 ($46\%-65\%$) | OR: 0.86 <br>(0.72–0.95) | $<0.001$ | OR: 0.80 <br>(0.68–0.92) | $<0.001$ | |
+| &nbsp;&nbsp;&nbsp; TIR: Q3 ($65\%-81\%$) | OR: 0.71 <br>(0.61–0.81) | $<0.001$ | OR: 0.64 <br>(0.53–0.79) | $<0.001$ | |
+| &nbsp;&nbsp;&nbsp; TIR: Q4 ($>81\%$) | OR: 0.66 <br>(0.58–0.80) | $<0.001$ | OR: 0.59 <br>(0.50–0.74) | $<0.001$ | |
+| &nbsp;&nbsp;&nbsp; TIR (per $10\%$ increase) | OR: 0.93 <br>(0.85–0.98) | $0.008$ | OR: 0.89 <br>(0.82–0.95) | $<0.001$ | |
+| Wei et al [@Wei2019]$^*$, 2019 | | | | | |
+| &nbsp;&nbsp;&nbsp; Hypoglycemic events | HR: 1.691<br> (1.144–2.499) | — | HR: 1.813<br> (1.110–2.960) | $0.06$ | |
+| | | | | | |
+| **Peripheral artery disease** | | | | | |
+| De Meulemeester et al [@Meulemeester2024]$^{\dagger,*}$, 2024 | | | | | |
+| &nbsp;&nbsp;&nbsp; TITR | OR 0.680 (0.426–1.085) | $>0.05$ | OR 0.807 (0.382–1.703) | $>0.05$ | |
+| &nbsp;&nbsp;&nbsp; TIR | OR 0.736 (0.520–1.042) | $>0.05$ | OR 0.811 (0.470–1.398) | $>0.05$ | |
+| | | | | | |
+| **Lower Extremity Arterial Disease** | | | | | |
+| Li et al [@Li2020], 2020 | | | | | |
+| &nbsp;&nbsp;&nbsp; TIR | OR: 0.97<br>9 (0.968–0.991) | $<0.001$ | OR: 0.97<br>9 (0.965–0.992) | $0.002$ | |
+| &nbsp;&nbsp;&nbsp; CV | OR: 1.04<br>0 (1.003–1.078) | $0.04$ | OR: 1.03<br>8 (0.996–1.081) | $0.08$ | |
+| &nbsp;&nbsp;&nbsp; SD | OR: 1.32<br>5 (1.038–1.691) | $0.02$ | OR: 1.15<br>8 (0.824–1.627) | $0.40$ | |
+| &nbsp;&nbsp;&nbsp; TIR-without LEAD (1) | OR: 1.00 | — | OR: 1.00 | — | |
+| &nbsp;&nbsp;&nbsp; TIR-mild LEAD (1) | OR: 0.98<br> (0.97–1.00) | $0.14$ | OR: 0.99<br> (0.97–1.01) | $0.25$ | |
+| &nbsp;&nbsp;&nbsp; TIR-moderate LEAD (1) | OR: 0.97<br> (0.95–0.99) | $0.007$ | OR: 0.97<br> (0.95–0.99) | $0.01$ | |
+| &nbsp;&nbsp;&nbsp; TIR-without severe LEAD (1) | OR: 0.96<br> (0.94–0.98) | $0.002$ | OR: 0.96<br> (0.94–0.98) | $0.003$ | |
+| &nbsp;&nbsp;&nbsp; CV-without LEAD | — | — | OR: 1.00 | — | |
+| &nbsp;&nbsp;&nbsp; CV-mild LEAD | — | — | OR: 1.03<br> (0.98–1.07) | $0.28$ | |
+| &nbsp;&nbsp;&nbsp; CV-moderate LEAD | — | — | OR: 1.02<br> (0.96–1.09) | $0.48$ | |
+| &nbsp;&nbsp;&nbsp; CV-without severe LEAD | — | — | OR: 1.02<br> (0.95–1.09) | $0.60$ | |
+| &nbsp;&nbsp;&nbsp; TIR-without LEAD (2) | — | — | OR: 1.00 | — | |
+| &nbsp;&nbsp;&nbsp; TIR-mild LEAD (2) | — | — | OR: 0.97<br> (0.96–1.08) | $0.06$ | |
+| &nbsp;&nbsp;&nbsp; TIR-moderate LEAD (2) | — | — | OR: 0.98<br> (0.95–0.99) | $0.01$ | |
+| &nbsp;&nbsp;&nbsp; TIR-without severe LEAD (2) | — | — | OR: 0.97<br> (0.95–0.99) | $0.02$ | |
+| &nbsp;&nbsp;&nbsp; SD-without LEAD | — | — | OR: 1.00 | — | |
+| &nbsp;&nbsp;&nbsp; SD-mild LEAD | — | — | OR: 0.88<br> (0.47–1.64) | $0.69$ | |
+| &nbsp;&nbsp;&nbsp; SD-moderate LEAD | — | — | OR: 1.28<br> (0.58–3.07) | $0.58$ | |
+| &nbsp;&nbsp;&nbsp; SD-without severe LEAD | — | — | OR: 1.52<br> (0.92–2.41) | $0.10$ | |
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.90\linewidth]{
+    All hazard ratios (HRs), odds ratios (ORs), and areas under the curve (AUCs) are reported as follows: point estimate ($95\%$ CI).\newline
+    \textsuperscript{*} This study appears multiple times as it investigated multiple cardiovascular disease outcomes.\newline
+    \textsuperscript{$\dagger$} This study appears in both the clinical and subclinical disease outcome tables owing to the investigation of multiple cardiovascular disease outcomes.\newline
+    The full table with adjustments is provided in **Multimedia Appendix 10**. Further elaboration on the adjusted variables can be found in **Multimedia Appendices 7 and 8**.\newline
+    *Abbreviations:* nr: Not applicable or not available/not reported, TIR: time in range, GMI: glucose management indicator, TITR: time in tight range, TBR: time below range, TAR: time above range, CV: coefficient of variation, BG: blood glucose, MAGE: mean amplitude of glycemic excursions, LAGE: largest amplitude of glycemic excursions, MODD: mean of daily differences, LEAD: lower extremity arterial disease.
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+All hazard ratios (HRs), odds ratios (ORs), and areas under the curve (AUCs) are reported as follows: point estimate ($95\%$ CI).\ 
+$^*$ This study appears multiple times as it investigated multiple cardiovascular disease outcomes.\
+$^\dagger$ This study appears in both the clinical and subclinical disease outcome tables owing to the investigation of multiple cardiovascular disease outcomes.\
+The full table with adjustments is provided in **Multimedia Appendix 10**. Further elaboration on the adjusted variables can be found in **Multimedia Appendices 7 and 8**.\
+*Abbreviations:* nr: Not applicable or not available/not reported, TIR: time in range, GMI: glucose management indicator, TITR: time in tight range, TBR: time below range, TAR: time above range, CV: coefficient of variation, BG: blood glucose, MAGE: mean amplitude of glycemic excursions, LAGE: largest amplitude of glycemic excursions, MODD: mean of daily differences, LEAD: lower extremity arterial disease.\
+</p>
+:::
+
+Main findings of the included studies on clinical cardiovascular outcomes. WIP: Still need to add suppl. files, and adjustment column
+:::
+
+:::
+:::

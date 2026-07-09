@@ -7,11 +7,12 @@ Thomsen, H. B., Lebiecka-Johansen, B., Nørgaard, O., Andersen, T. H., Andersen,
 
 ## Study II
 
-Thomsen, H. B., Andersen, S. T., Fagherazzi, G., Isaksen, A. A. & Hulman, A. (2026). Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk. (Under review at JMIR AI and pending for preprint at JMIR preprints)
+Thomsen, H. B., Andersen, S. T., Fagherazzi, G., Isaksen, A. A. & Hulman, A. (2026). Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk. (Under review at JMIR AI, (7.30.2026), pending for preprint at JMIR preprints)
 
 ## Study III
 
-Thomsen, H. B., Li, L. Y., Isaksen, A. A., Lebiecka-Johansen, B., Bour, C., Fagherazzi, G., Doorn, W. P. T. M. van, Varga, T. V., & Hulman, A. (2024). Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes (p. 2024.12.19.24319325). medRxiv. https://doi.org/10.1101/2024.12.19.24319325
+Thomsen, H. B., Li, L. Y., Isaksen, A. A., Lebiecka-Johansen, B., Bour, C., Fagherazzi, G., Doorn, W. P. T. M. van, Varga, T. V., & Hulman, A. (2025). Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes. PLOS Digital Health, 4(6), e0000918. https://doi.org/10.1371/journal.pdig.0000918
+
 
 
 ```{=tex}

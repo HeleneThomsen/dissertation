@@ -1,19 +1,87 @@
 # Introduction {#sec-introduction}
 
-## Diabetes and cardiovascular disease
-* Burden of diabetes
-    * Type 1 diabetes
-    * Type 2 diabetes
+## Diabetes
+- [ ] Check the sources from ADA_2026_ch2 to see if you can elaborate on the race thing and cite the original articles and not the summary ADA gives
+
+Diabetes is a metabolic disease characterized by high blood glucose levels known as hyperglycemia.[@Sacks2023]
+The disease is one of the fastest growing global healths challenges.[@IDF_ed10_Magliano2021]
+In 2021 it was estimated that 537 million people lived with diabetes, and it is expected to reach 643 million by 2030.[@IDF_ed10_Magliano2021]
+The most common forms of chronic diabetes are type 1 diabetes (T1D) and type 2 diabetes (T2D).[@Sacks2023]
+T1D is an autoimmune disease characterized by the destruction of the pancreatic islet $\beta$-cells, leading to an absolute insulin deficiency.[@ADA2026_ch2]
+Approximately 85\%-95\% of all people with diabetes in developing countries have T2D.[@Sacks2023]
+It is the most common form of diabetes and in contrast to T1D it generally begins with insulin resistance in which the body's cells become less responsive to insulin.[@Sachs2023; @Hall2020]
+Initially, the pancreas compensates by increasing insulin secretion, but over time progressive $\beta$-cell dysfunction results in inadequate insulin production to meet the body's demands.[@Hall2020; @Sacks2023; @Deshpande2008]
+T2D is the most which is  is 
+Despite their distinct underlying pathophysiology, both T1D and T2D are characterized by chronic hyperglycemia.
+
+<!-- Diabetes is diagnosed  -->
+Diabetes can be diagnosed based on a bloodtest to check hemoglobin A1c (HbA1c) levels or through plasma glucose criteria (@tbl-diagnosis_criteria).[@ADA2026_ch2; @ADA2023_ch6]
+
+::: {#tbl-diagnosis_criteria}
+```{=latex}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{p{4cm} c p{7cm}} \toprule
+            \textbf{Test} & \textbf{Criteria} & \textbf{Description}\\ \midrule
+            Fasting plasma glucose & $\geq$7.0 [mmol/L] & Fasting is defined as no calorie intake for at least eight hours.\\\midrule
+            2-hour plasma glucose & $\geq$11.1 [mmol/L] & Glucose is measured 2 hours after oral ingestion of 75g glucose dissolved in water (OGTT)\\\midrule
+            Random plasma glucose & $\geq$11.1 [mmol/L ] & Individuals with classic symptoms of hyperglycemia  (e.g., dehydration and unintentional weight loss) or hyperglycemic crisis (e.g., diabetic ketoacidosis) together with a plasma test taken any time of day. \\\midrule
+            Glycated hemoglobin (HbA1c) & $\geq$48 [mmol/mol]& \\
+            \bottomrule
+        \end{tabular}
+        \label{tab:diagnosis}
+    \end{table}
+
+```
+
+Diagnostic tests for diabetes
+
+:::
+
+Although both plasma glucose tests and HbA1c tests are appropriate for diabetes screening, the HbA1c test has several advantages.[@ADA2026_ch2]
+Some of the benefits are that it requires no fasting and it is less sensitive to stress and changes in nutrition.[@ADA2026_ch2]
+HbA1c is an indirect measure of blood glucose levels because glucose binds hemoglobin over  $\sim$ 120 days lifespan of erythrocytes (red blood cells).[@ADA2026_ch2]
+However HbA1c testing is not always accessible, affordable or suitable (e.g., for people with anemia or under HIV-treatment).[@ADA2026_ch2]
+With the guidelines recommendation of using HbA1c, a debate has sparked on the controversy of using a set thresholds as it is well known that racial differences in HbA1c exists.[@Selvin2013]
+Black individuals have higher HbA1c levels than Hispanic and non-Hispanic White people with diabetes,[@kirk2006; @ADA2026_ch2] however studies show that the association between HbA1c and risk of complications appear to be similar between ethnic race groups.[@Selvin2013, @ADA2026_ch2]
+
+## Blood Glucose Monitoring
+HbA1c values are also a very important part of diabetes management. The treatment goal is for HbA1c to be below 53 mmol/mol for non-pregnant adults without any hyperglycemia or hypoglycemia (low blood glucose levels). However HbA1c goals should be individualized to fit each individuals specific situation HbA1c can vary from e.g., <48mmol/mol to none.[@ADA_2026_ch6; @IDF_2025_guidelines]
+There are two tools available for self-assessment of glycemia, the self-monitoring blood glucose (SMBG) device measuring capillary blood with finger-sticks, and the continuous glucose monitoring device (CGM) measuring interstitial fluid continuously.[@IDF_2025_guidelines; @Buscemi2010]
+Both monitoring devices have shown to improve glycemic control in people with diabetes, however the CGM is superior when it comes to immediate information and alerts on asymptomatic hypo- and hyperglycemic events and provide a comprehensive glucose profile including both pre- and postprandial blood glucose measurements.[@IDF_2025_guidelines; @Danne2017; @freckmann2024]
+
+
+
+## Continuous Glucose Monitoring Devices
+The CGM devices measures the glucose in the interstitial fluid, which is the fluid around and between cells. It corresponds with plasma glucose although a lag can appear when glucose levels rise or fall rapidly.[@ADA2026_ch7]
+
+
+
+## Management
+## Glycemic markers and glucose monitoring
+- [x] HbA1c and its limitations
+- [x] Continuous glucose monitoring (CGM)
+- [ ] AIDs use CGMs and algorithms to adjust insulin delivery. [@ADA2026_ch7]
+- [ ]Glycemic variability
+    - [ ] Metrics of glycemic variability
+    - [ ] Clinical challenges of glycemic variability (Think HbA1c and MBG and variability study)
+
+## Cardiovascular diseases and Diabetes
+
+<!-- @ADA2026_ch2
+
+Once hyperglycemia occurs, people with all forms
+of diabetes are at risk for developing the
+same chronic complications, although rates
+of progression may differ -->
+
+
+<!-- Keeping blood glucose levels within normal range is essential to avoid future diabetes-related complications, such as cardiovascular diseases, blindness, renal failure, and lower extremity amputations [race 2–5]. -->
+
 * Cardiovascular complications
 * Heart failure in diabetes
 
-## Glycemic markers and glucose monitoring
-* HbA1c and its limitations
-* Continuous glucose monitoring (CGM)
-* Glycemic variability
-    * Metrics of glycemic variability
-    * Clinical challenges of glycemic variability (Think HbA1c and MBG and variability study)
-
+Williams2020 expenditures and complications: https://www.sciencedirect.com/science/article/pii/S0168822720301388
 ## Cardiovascular risk prediction in diabetes
 * Traditional risk models
     * SCORE2-Diabetes risk score
@@ -21,6 +89,12 @@
 * Limitations of conventional predictors
 
 ## Machine learning
+
+
+**Relevant?**
+Artificial Intelligence: The Future for Diabetes Care: https://www.clinicalkey.com/#!/content/playContent/1-s2.0-S0002934320303399?returnurl=https:%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0002934320303399%3Fshowall%3Dtrue&referrer=
+
+
 * Data-driven vs hypothesis-drivenly(knowledge-based) paradigms
 * Why machine learning in diabetes and cardiovascular risk prediction?
 * Why are ML fantastic for CGM data?
@@ -42,6 +116,8 @@
 * Define race and ethnicity
 * Algorithmic bias and group fairness
 * Fairness metrics and mitigation strategies
+
+* Trends in the quality of care and racial disparities in Medicare managed care: https://pubmed.ncbi.nlm.nih.gov/16107622/
 
 <!-- https://github.com/Aastedet/dissertation -->
 <!-- https://superfrey.github.io/PhD_dissertation/1-introduction.html -->

@@ -1,13 +1,17 @@
 # Overview {.unnumbered .unlisted}
 - [x] A cover
+- [ ] Disclosure
+- [x] Supervisors and assessment committee
+- [ ] Acknowledgements
+- [x] [ ] Papers
 - [x] TOC
 - [x] List of original papers
 - [ ] Introduction
-- [ ] Aims and Assumptions
+- [x] AH[x] Aims and Assumptions
 - [ ] Methods - Presentation
-- [ ] Methods - Critical evaluation
 - [ ] Results
-- [ ] Summary - Reflective - Impact (knowledge added)
+    - [ ] Summary - Reflective - Impact (knowledge added)
+    - [ ] Methods - Critical evaluation
 - [ ] Conclusion
 - [ ] Discussion of future aspects
 - [ ] References
@@ -19,15 +23,27 @@
 - [ ] Appendix
 
 <!-- ------------------------------------------- -->
-# Need to have {.unnumbered .unlisted}
+# Formatting {.unnumbered .unlisted}
+### Need to have {.unnumbered .unlisted}
+- [ ] Add references to Introduction
+- [ ] Add references to Method
+- [ ] Add references to Results
+- [ ] Check the JMIR-AI paper and update the date in papers
+
+### Nice to have
+- [ ] Format cover page nicer
+- [ ] Make list of figures more readable: Add fig-cap to figures
+    ![Geographical location of the included studies. Countries colored in red indicate where the studies were conducted. The map was created using MapChart.](figures/map.png){#fig-study-map fig-scap="Geographical location of the included studies"}
+<!-- ------------------------------------------- -->
+# Results - Scoping Review Big tables {.unnumbered .unlisted}
+### Need to have {.unnumbered .unlisted}
 - [ ] Check big tables from Results (@tbl-study1-clinical-overview, @tbl-main-clinical-findings) is correct with the published article
 - [ ] Locate nr from previous tables and change "-" to "nr" in @tbl-main-clinical-findings to match table @tbl-study1-clinical-overview
 - [ ] Ensret OR i tabellerne (@tbl-main-clinical-findings)
 - [ ] Delete the multimedia part in the footnote of the table after checking what information they link back to and decide if this should be added to supplementary of the dissertation(@tbl-main-clinical-findings).
 - [ ] Add Adjustments to @tbl-main-clinical-findings or include in supplementary
 
-
-## Formatting {.unnumbered .unlisted}
+### Formatting {.unnumbered .unlisted}
 - [ ] Add references to all citations
 - [ ] Check big and small letters in headers (uppercase/lowercase beginnings)
 - [ ] Ensret if I write introducing text below each chapter or not

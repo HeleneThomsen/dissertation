@@ -1,4 +1,4 @@
-# Supervisors and assessment committee {.unnumbered}
+# Supervisors and Assessment Committee {.unnumbered}
 
 #### PhD student:
 
@@ -9,23 +9,24 @@ Department of Public Health, Aarhus University, Denmark
 
 **Associate Professor Adam Hulman, PhD (main supervisor)**\
 Department of Public Health, Aarhus University, Denmark\
-Steno Diabetes Center Aarhus, Denmark
+Steno Diabetes Center Aarhus, Aarhus university Hospital Denmark\
 
 **Anders Aasted Isaksen, MD, PhD**\
-Steno Diabetes Center Aarhus, Denmark
+Steno Diabetes Center Aarhus, Denmark\
 
 **Guy Fagherazzi, PhD**\
 Director of the Department of Precision Health\
 Head of the Deep Digital Phenotyping Research Unit\
-Luxembourg Institute of Health, Luxembourg
+Luxembourg Institute of Health, Luxembourg\
 
 **Signe Toft Andersen, MD, PhD**\
 Steno Diabetes Center Aarhus, Denmark\
 Gødstrup Hospital, Denmark
 
 #### Assessment committee:
+
 **Associate Professor Simon Tilma Vistisen (chairman)**\
-Department of Clinical Medicine, Aarhus University, Denmark
+Department of Clinical Medicine, Aarhus University, Denmark\
 <!-- Email: vistisen@clin.au.dk -->
 
 **Professor Cristina Soguero-Ruíz**\
