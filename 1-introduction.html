@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1&nbsp; Introduction – Machine learning methods for continuous glucose monitoring data and their potential in cardiovascular risk assessment</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./2-aims.html" rel="next">
+<link href="./0-abbreviations.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3f70bac5631458d474a321d4182f9338.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>
+main.content {
+  text-align: justify;
+}
+</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Machine learning methods for continuous glucose monitoring data and their potential in cardiovascular risk assessment</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cover Page</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0-disclosure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disclosures and Notes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0-preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Papers in the dissertation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0-abbreviations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abbreviations</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-introduction.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-aims.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Specific Aims</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#diabetes" id="toc-diabetes" class="nav-link active" data-scroll-target="#diabetes"><span class="header-section-number">1.1</span> Diabetes</a></li>
+  <li><a href="#blood-glucose-monitoring" id="toc-blood-glucose-monitoring" class="nav-link" data-scroll-target="#blood-glucose-monitoring"><span class="header-section-number">1.2</span> Blood Glucose Monitoring</a></li>
+  <li><a href="#continuous-glucose-monitoring-devices" id="toc-continuous-glucose-monitoring-devices" class="nav-link" data-scroll-target="#continuous-glucose-monitoring-devices"><span class="header-section-number">1.3</span> Continuous Glucose Monitoring Devices</a></li>
+  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"><span class="header-section-number">1.4</span> Management</a></li>
+  <li><a href="#glycemic-markers-and-glucose-monitoring" id="toc-glycemic-markers-and-glucose-monitoring" class="nav-link" data-scroll-target="#glycemic-markers-and-glucose-monitoring"><span class="header-section-number">1.5</span> Glycemic markers and glucose monitoring</a></li>
+  <li><a href="#cardiovascular-diseases-and-diabetes" id="toc-cardiovascular-diseases-and-diabetes" class="nav-link" data-scroll-target="#cardiovascular-diseases-and-diabetes"><span class="header-section-number">1.6</span> Cardiovascular diseases and Diabetes</a></li>
+  <li><a href="#machine-learning" id="toc-machine-learning" class="nav-link" data-scroll-target="#machine-learning"><span class="header-section-number">1.7</span> Machine learning</a></li>
+  <li><a href="#fairness-and-bias-in-machine-learning" id="toc-fairness-and-bias-in-machine-learning" class="nav-link" data-scroll-target="#fairness-and-bias-in-machine-learning"><span class="header-section-number">1.8</span> Fairness and bias in machine learning</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-introduction" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="diabetes" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="diabetes"><span class="header-section-number">1.1</span> Diabetes</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">Check the sources from ADA_2026_ch2 to see if you can elaborate on the race thing and cite the original articles and not the summary ADA gives</label></li>
+</ul>
+<p>Diabetes is a metabolic disease characterized by high blood glucose levels known as hyperglycemia.<span class="citation" data-cites="Sacks2023"><sup><a href="references.html#ref-Sacks2023" role="doc-biblioref">1</a></sup></span> The disease is one of the fastest growing global healths challenges.<span class="citation" data-cites="IDF_ed10_Magliano2021"><sup><a href="references.html#ref-IDF_ed10_Magliano2021" role="doc-biblioref">2</a></sup></span> In 2021 it was estimated that 537 million people lived with diabetes, and it is expected to reach 643 million by 2030.<span class="citation" data-cites="IDF_ed10_Magliano2021"><sup><a href="references.html#ref-IDF_ed10_Magliano2021" role="doc-biblioref">2</a></sup></span> The most common forms of chronic diabetes are type 1 diabetes (T1D) and type 2 diabetes (T2D).<span class="citation" data-cites="Sacks2023"><sup><a href="references.html#ref-Sacks2023" role="doc-biblioref">1</a></sup></span> T1D is an autoimmune disease characterized by the destruction of the pancreatic islet <span class="math inline">\(\beta\)</span>-cells, leading to an absolute insulin deficiency.<span class="citation" data-cites="ADA2026_ch2"><sup><a href="references.html#ref-ADA2026_ch2" role="doc-biblioref">3</a></sup></span> Approximately 85%-95% of all people with diabetes in developing countries have T2D.<span class="citation" data-cites="Sacks2023"><sup><a href="references.html#ref-Sacks2023" role="doc-biblioref">1</a></sup></span> It is the most common form of diabetes and in contrast to T1D it generally begins with insulin resistance in which the body’s cells become less responsive to insulin.<span class="citation" data-cites="Sachs2023 Hall2020"><sup><a href="references.html#ref-Hall2020" role="doc-biblioref">4</a>,<a href="references.html#ref-Sachs2023" role="doc-biblioref"><strong>Sachs2023?</strong></a></sup></span> Initially, the pancreas compensates by increasing insulin secretion, but over time progressive <span class="math inline">\(\beta\)</span>-cell dysfunction results in inadequate insulin production to meet the body’s demands.<span class="citation" data-cites="Hall2020 Sacks2023 Deshpande2008"><sup><a href="references.html#ref-Sacks2023" role="doc-biblioref">1</a>,<a href="references.html#ref-Hall2020" role="doc-biblioref">4</a>,<a href="references.html#ref-Deshpande2008" role="doc-biblioref">5</a></sup></span> T2D is the most which is is Despite their distinct underlying pathophysiology, both T1D and T2D are characterized by chronic hyperglycemia.</p>
+<!-- Diabetes is diagnosed  -->
+<p>Diabetes can be diagnosed based on a bloodtest to check hemoglobin A1c (HbA1c) levels or through plasma glucose criteria (<a href="#tbl-diagnosis_criteria" class="quarto-xref">Table&nbsp;<span>1.1</span></a>).<span class="citation" data-cites="ADA2026_ch2 ADA2023_ch6"><sup><a href="references.html#ref-ADA2026_ch2" role="doc-biblioref">3</a>,<a href="references.html#ref-ADA2023_ch6" role="doc-biblioref"><strong>ADA2023_ch6?</strong></a></sup></span></p>
+<div id="tbl-diagnosis_criteria" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-diagnosis_criteria-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1.1: Diagnostic tests for diabetes
+</figcaption>
+<div aria-describedby="tbl-diagnosis_criteria-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+
+</div>
+</figure>
+</div>
+<p>Although both plasma glucose tests and HbA1c tests are appropriate for diabetes screening, the HbA1c test has several advantages.<span class="citation" data-cites="ADA2026_ch2"><sup><a href="references.html#ref-ADA2026_ch2" role="doc-biblioref">3</a></sup></span> Some of the benefits are that it requires no fasting and it is less sensitive to stress and changes in nutrition.<span class="citation" data-cites="ADA2026_ch2"><sup><a href="references.html#ref-ADA2026_ch2" role="doc-biblioref">3</a></sup></span> HbA1c is an indirect measure of blood glucose levels because glucose binds hemoglobin over <span class="math inline">\(\sim\)</span> 120 days lifespan of erythrocytes (red blood cells).<span class="citation" data-cites="ADA2026_ch2"><sup><a href="references.html#ref-ADA2026_ch2" role="doc-biblioref">3</a></sup></span> However HbA1c testing is not always accessible, affordable or suitable (e.g., for people with anemia or under HIV-treatment).<span class="citation" data-cites="ADA2026_ch2"><sup><a href="references.html#ref-ADA2026_ch2" role="doc-biblioref">3</a></sup></span> With the guidelines recommendation of using HbA1c, a debate has sparked on the controversy of using a set thresholds as it is well known that racial differences in HbA1c exists.<span class="citation" data-cites="Selvin2013"><sup><a href="references.html#ref-Selvin2013" role="doc-biblioref">6</a></sup></span> Black individuals have higher HbA1c levels than Hispanic and non-Hispanic White people with diabetes,<span class="citation" data-cites="kirk2006 ADA2026_ch2"><sup><a href="references.html#ref-ADA2026_ch2" role="doc-biblioref">3</a>,<a href="references.html#ref-kirk2006" role="doc-biblioref">7</a></sup></span> however studies show that the association between HbA1c and risk of complications appear to be similar between ethnic race groups.<span class="citation" data-cites="Selvin2013"><sup><a href="references.html#ref-ADA2026_ch2" role="doc-biblioref">3</a></sup></span></p>
+</section>
+<section id="blood-glucose-monitoring" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="blood-glucose-monitoring"><span class="header-section-number">1.2</span> Blood Glucose Monitoring</h2>
+<p>HbA1c values are also a very important part of diabetes management. The treatment goal is for HbA1c to be below 53 mmol/mol for non-pregnant adults without any hyperglycemia or hypoglycemia (low blood glucose levels). However HbA1c goals should be individualized to fit each individuals specific situation HbA1c can vary from e.g., &lt;48mmol/mol to none.<span class="citation" data-cites="ADA_2026_ch6 IDF_2025_guidelines"><sup><a href="references.html#ref-ADA_2026_ch6" role="doc-biblioref">8</a>,<a href="references.html#ref-IDF_2025_guidelines" role="doc-biblioref">9</a></sup></span> There are two tools available for self-assessment of glycemia, the self-monitoring blood glucose (SMBG) device measuring capillary blood with finger-sticks, and the continuous glucose monitoring device (CGM) measuring interstitial fluid continuously.<span class="citation" data-cites="IDF_2025_guidelines Buscemi2010"><sup><a href="references.html#ref-IDF_2025_guidelines" role="doc-biblioref">9</a>,<a href="references.html#ref-Buscemi2010" role="doc-biblioref">10</a></sup></span> Both monitoring devices have shown to improve glycemic control in people with diabetes, however the CGM is superior when it comes to immediate information and alerts on asymptomatic hypo- and hyperglycemic events and provide a comprehensive glucose profile including both pre- and postprandial blood glucose measurements.<span class="citation" data-cites="IDF_2025_guidelines Danne2017 freckmann2024"><sup><a href="references.html#ref-IDF_2025_guidelines" role="doc-biblioref">9</a>,<a href="references.html#ref-Danne2017" role="doc-biblioref">11</a>,<a href="references.html#ref-freckmann2024" role="doc-biblioref">12</a></sup></span></p>
+</section>
+<section id="continuous-glucose-monitoring-devices" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="continuous-glucose-monitoring-devices"><span class="header-section-number">1.3</span> Continuous Glucose Monitoring Devices</h2>
+<p>The CGM devices measures the glucose in the interstitial fluid, which is the fluid around and between cells. It corresponds with plasma glucose although a lag can appear when glucose levels rise or fall rapidly.<span class="citation" data-cites="ADA2026_ch7"><sup><a href="references.html#ref-ADA2026_ch7" role="doc-biblioref"><strong>ADA2026_ch7?</strong></a></sup></span></p>
+</section>
+<section id="management" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="management"><span class="header-section-number">1.4</span> Management</h2>
+</section>
+<section id="glycemic-markers-and-glucose-monitoring" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="glycemic-markers-and-glucose-monitoring"><span class="header-section-number">1.5</span> Glycemic markers and glucose monitoring</h2>
+<ul>
+<li><label><input type="checkbox" checked="">HbA1c and its limitations</label></li>
+<li><label><input type="checkbox" checked="">Continuous glucose monitoring (CGM)</label></li>
+<li><label><input type="checkbox">AIDs use CGMs and algorithms to adjust insulin delivery.<span class="citation" data-cites="ADA2026_ch7"><sup><a href="references.html#ref-ADA2026_ch7" role="doc-biblioref"><strong>ADA2026_ch7?</strong></a></sup></span></label></li>
+<li>[ ]Glycemic variability
+<ul class="task-list">
+<li><label><input type="checkbox">Metrics of glycemic variability</label></li>
+<li><label><input type="checkbox">Clinical challenges of glycemic variability (Think HbA1c and MBG and variability study)</label></li>
+</ul></li>
+</ul>
+</section>
+<section id="cardiovascular-diseases-and-diabetes" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="cardiovascular-diseases-and-diabetes"><span class="header-section-number">1.6</span> Cardiovascular diseases and Diabetes</h2>
+<!-- @ADA2026_ch2
+
+Once hyperglycemia occurs, people with all forms
+of diabetes are at risk for developing the
+same chronic complications, although rates
+of progression may differ -->
+<!-- Keeping blood glucose levels within normal range is essential to avoid future diabetes-related complications, such as cardiovascular diseases, blindness, renal failure, and lower extremity amputations [race 2–5]. -->
+<ul>
+<li>Cardiovascular complications</li>
+<li>Heart failure in diabetes</li>
+</ul>
+<p>Williams2020 expenditures and complications: https://www.sciencedirect.com/science/article/pii/S0168822720301388 ## Cardiovascular risk prediction in diabetes * Traditional risk models * SCORE2-Diabetes risk score * What is SCORE2-Diabetes 10 year CVD risk score? * Limitations of conventional predictors</p>
+</section>
+<section id="machine-learning" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="machine-learning"><span class="header-section-number">1.7</span> Machine learning</h2>
+<p><strong>Relevant?</strong> Artificial Intelligence: The Future for Diabetes Care: https://www.clinicalkey.com/#!/content/playContent/1-s2.0-S0002934320303399?returnurl=https:%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0002934320303399%3Fshowall%3Dtrue&amp;referrer=</p>
+<ul>
+<li>Data-driven vs hypothesis-drivenly(knowledge-based) paradigms</li>
+<li>Why machine learning in diabetes and cardiovascular risk prediction?</li>
+<li>Why are ML fantastic for CGM data?</li>
+<li>Types of machine learning methods
+<ul>
+<li><p>Logistic regression</p></li>
+<li><p>LSTM and CNNs</p></li>
+<li><p>Foundation models and their advantage <!-- * CGM data has been processed and interpreted based on plotting the data and extracting CGM-derived metrics from time series signal sampled every 3-15 minutes. However new techniques within the machine learning field has allowed us to process the whole time series signals like CGM data, which can retain more information from the original CGM data then the derived metrics can. Foundation models are machine learning models that are trained on huge amount of data and thereafter can be retrained to be specialized into a specific task. This is one solution to the limitation of small datasets that are not sufficient enough for the data hungry machine learning models. --> <!-- * The CGMformer is a transformer-based model that was trained on a large dataset of CGM data and is designed to learn representations of glucose dynamics. The model takes in sequences of CGM measurements and outputs embeddings that capture the underlying patterns in the glucose data. These embeddings can then be used for downstream tasks such as predicting cardiovascular risk or other health outcomes. --> <!-- * The embeddings are learned representations that capture the underlying patterns and relationships in the input data, allowing for more efficient and effective downstream tasks such as classification, regression, or clustering. --></p></li>
+<li><p>The CGMformer is bla bla bla<span class="citation" data-cites="YurunLu2025"><sup><a href="references.html#ref-YurunLu2025" role="doc-biblioref">13</a></sup></span></p></li>
+</ul></li>
+<li>Challenges and pitfalls of machine learning in healthcare
+<ul>
+<li>Overfitting and generalizability</li>
+<li>Interpretability and explainability</li>
+</ul></li>
+</ul>
+</section>
+<section id="fairness-and-bias-in-machine-learning" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="fairness-and-bias-in-machine-learning"><span class="header-section-number">1.8</span> Fairness and bias in machine learning</h2>
+<ul>
+<li><p>Define race and ethnicity</p></li>
+<li><p>Algorithmic bias and group fairness</p></li>
+<li><p>Fairness metrics and mitigation strategies</p></li>
+<li><p>Trends in the quality of care and racial disparities in Medicare managed care: https://pubmed.ncbi.nlm.nih.gov/16107622/</p></li>
+</ul>
+<!-- https://github.com/Aastedet/dissertation -->
+<!-- https://superfrey.github.io/PhD_dissertation/1-introduction.html -->
+<!-- ::: {#fig-classifir-diffs}
+[![](figures/classifierdiffs)](https://aastedet.github.io/dissertation/figures/classifierdiffs.svg):::  This is anders example with figures, calling an URL link inside the figure code to make the figure clickable like a button which will take you to the origin of the image. (not necesary for this project but maybe in the future for thesis writing)-->
+
+
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-Sacks2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Sacks DB, Arnold M, Bakris GL, et al. Guidelines and recommendations for laboratory analysis in the diagnosis and management of diabetes mellitus. Diabetes care 2023;46(10):e151–99. </div>
+</div>
+<div id="ref-IDF_ed10_Magliano2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Magliano DJ, Boyko EJ. IDF diabetes atlas [Internet]. 10th ed. Brussels, Belgium: International Diabetes Federation; 2021. Available from: <a href="https://www.ncbi.nlm.nih.gov/books/NBK581930/">https://www.ncbi.nlm.nih.gov/books/NBK581930/</a></div>
+</div>
+<div id="ref-ADA2026_ch2" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">American Diabetes Association Professional Practice Committee for Diabetes*. 2. <span>Diagnosis</span> and <span>Classification</span> of <span>Diabetes</span>: <span>Standards</span> of <span>Care</span> in <span>Diabetes</span>—2026. Diabetes Care [Internet] 2025 [cited 2026 July 8];49(Supplement_1):S27–49. Available from: <a href="https://doi.org/10.2337/dc26-S002">https://doi.org/10.2337/dc26-S002</a></div>
+</div>
+<div id="ref-Hall2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Hall ME, Hall JE. Guyton and hall textbook of medical physiology. Elsevier; 2020. </div>
+</div>
+<div id="ref-Deshpande2008" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Deshpande AD, Harris-Hayes M, Schootman M. Epidemiology of diabetes and diabetes-related complications. Physical therapy 2008;88(11):1254–64. </div>
+</div>
+<div id="ref-Selvin2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Selvin E, Rawlings AM, Bergenstal RM, Coresh J, Brancati FL. No <span>Racial</span> <span>Differences</span> in the <span>Association</span> of <span>Glycated</span> <span>Hemoglobin</span> <span>With</span> <span>Kidney</span> <span>Disease</span> and <span>Cardiovascular</span> <span>Outcomes</span>. Diabetes Care [Internet] 2013 [cited 2026 July 9];36(10):2995–3001. Available from: <a href="https://doi.org/10.2337/dc12-2715">https://doi.org/10.2337/dc12-2715</a></div>
+</div>
+<div id="ref-kirk2006" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Kirk JK, D’Agostino RB, Bell RA, et al. Disparities in <span>HbA1c</span> <span>Levels</span> <span>Between</span> <span>African</span>-<span>American</span> and <span>Non</span>-<span>Hispanic</span> <span>White</span> <span>Adults</span> <span>With</span> <span>Diabetes</span>. Diabetes care [Internet] 2006 [cited 2026 July 9];29(9):2130–6. Available from: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3557948/">https://pmc.ncbi.nlm.nih.gov/articles/PMC3557948/</a></div>
+</div>
+<div id="ref-ADA_2026_ch6" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">American Diabetes Association Professional Practice Committee for Diabetes*. 6. <span>Glycemic</span> <span>Goals</span>, <span>Hypoglycemia</span>, and <span>Hyperglycemic</span> <span>Crises</span>: <span>Standards</span> of <span>Care</span> in <span>Diabetes</span>—2026. Diabetes Care [Internet] 2025 [cited 2026 July 9];49(Supplement_1):S132–49. Available from: <a href="https://doi.org/10.2337/dc26-S006">https://doi.org/10.2337/dc26-S006</a></div>
+</div>
+<div id="ref-IDF_2025_guidelines" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">International Diabetes Federation. IDF global clinical practice recommendations for managing type 2 diabetes [Internet]. Brussels, Belgium: International Diabetes Federation; 2025. Available from: <a href="https://idf.org/download-global-clinical-practice-recommendations/">https://idf.org/download-global-clinical-practice-recommendations/</a></div>
+</div>
+<div id="ref-Buscemi2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Buscemi S, Re A, Batsis J A, et al. Glycaemic variability using continuous glucose monitoring and endothelial function in the metabolic syndrome and in <span>Type</span> 2 diabetes. Comment in: Diabet Med 2011 Jan;28(1):125-6; author reply 127-8 PMID: 21166857 [https://wwwncbinlmnihgov/pubmed/21166857] Comment in: Diabet Med 2011 Jan;28(1):126; author reply 127-8 PMID: 21166858 [https://wwwncbinlmnihgov/pubmed/21166858] [Internet] 2010;27(8):872–8. Available from: <a href="http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;PAGE=reference&amp;D=med8&amp;NEWS=N&amp;AN=20653743">http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;PAGE=reference&amp;D=med8&amp;NEWS=N&amp;AN=20653743</a></div>
+</div>
+<div id="ref-Danne2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Danne T, Nimri R, Battelino T, et al. International consensus on use of continuous glucose monitoring. Diabetes care 2017;40(12):1631–40. </div>
+</div>
+<div id="ref-freckmann2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Freckmann G, Schauer S, Beltzer A, et al. <a href="https://doi.org/10.1177/19322968221113341">Continuous <span>Glucose</span> <span>Profiles</span> in <span>Healthy</span> <span>People</span> <span>With</span> <span>Fixed</span> <span>Meal</span> <span>Times</span> and <span>Under</span> <span>Everyday</span> <span>Life</span> <span>Conditions</span></a>. Journal of Diabetes Science and Technology 2024;18(2):407–13. </div>
+</div>
+<div id="ref-YurunLu2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Lu Y, Liu D, Liang Z, et al. A pretrained transformer model for decoding individual glucose dynamics from continuous glucose monitoring data. National science review 2025;12(5):nwaf039–. </div>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./0-abbreviations.html" class="pagination-link" aria-label="Abbreviations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Abbreviations</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./2-aims.html" class="pagination-link" aria-label="Specific Aims">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Specific Aims</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
