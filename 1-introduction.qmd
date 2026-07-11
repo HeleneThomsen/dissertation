@@ -54,7 +54,57 @@ Both monitoring devices have shown to improve glycemic control in people with di
 
 ## Continuous Glucose Monitoring Devices
 The CGM devices measures the glucose in the interstitial fluid, which is the fluid around and between cells. It corresponds with plasma glucose although a lag can appear when glucose levels rise or fall rapidly.[@ADA2026_ch7]
+Use of CGM devices has shown to improve glycemic control in both T1D and T2D with improvements in HbA1c levels and more time spent in target range (3.9-10 mmol/L) regardless of age, sex, eduction and income.[@ADA2026_ch6; @ADA2026_ch7]
+CGM devices focuses on monitoring and it is possible to get an ambulatory glucose profile (AGP) report from you device (@fig-agp). The AGP report shows summary statistics over all your data (usually a two weeks period). Some of the most important management measures from the CGM is time in range (TIR), and it is the time spent within normal range in percentage over a given time (often two weeks). Other CGM-derived metrics are time above range (TAR), time below range (TBR), glucose management indicator (GMI), coefficient of variation (CV) and the mean glucose (MBG), number of days CGM was worn and the percentage of time the CGM was active (@tbl-agp).[@Danne2017] 
 
+::: {#fig-agp fig-scap='Ambulatory glucose profile report.'}
+
+[![](figures/1_intro_fig/agp.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/1_intro_fig/agp.png)
+
+Ambulatory glucose profile report from female without diabetes. Data points are from the author herself using an expired intermittently-scanned FreeStyle LibreLink sensor (Manuel data upload).
+:::
+
+
+<!-- ::: {#tbl-agp tbl-cap-short="Standardized AGP metrics"}
+| Abbreviation | CGM-derived metric | Recommended target value* |
+|:------------|:-------------------|:--------------------------|
+| TIR | Time in Range (3.9–10.0 mmol/L; 70–180 mg/dL) | >70% |
+| TBR | Time Below Range (<3.9 mmol/L; <70 mg/dL) | <4% |
+| TBR<sub>54</sub> | Time Below Range (<3.0 mmol/L; <54 mg/dL) | <1% |
+| TAR | Time Above Range (>10.0 mmol/L; >180 mg/dL) | <25% |
+| TAR<sub>250</sub> | Time Above Range (>13.9 mmol/L; >250 mg/dL) | <5% |
+| GMI | Glucose Management Indicator | No specific target; interpreted alongside HbA1c |
+| CV | Coefficient of Variation | ≤36% |
+| MG | Mean Glucose | No universal target; individualized according to treatment goals |
+
+Overview of the standardized ambulatory glucose profile (AGP) metrics and their recommended target values for most non-pregnant adults with diabetes.
+:::
+-->
+
+
+::: {#tbl-agp}
+
+```{=latex}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{clcc} \toprule
+            \textbf{Abbreviation} & \textbf{CGM-derived metric} & \textbf{Range} & \textbf{Recommended target}\\ \midrule
+            TIR & Time in Range & 3.9--10.0 mmol/L\newline  (70--180 mg/dL) & $>70\%$\\ \midrule
+            TBR & Time Below Range & $<3.9$ mmol/L\newline  ($<70$ mg/dL) & $<4\%$\\ \midrule
+            TBR$_{54}$ & Time Below Range & $<3.0$ mmol/L\newline  ($<54$ mg/dL) & $<1\%$\\ \midrule
+            TAR & Time Above Range & $>10.0$ mmol/L\newline  ($>180$ mg/dL) & $<25\%$\\ \midrule
+            TAR$_{250}$ & Time Above Range & $>13.9$ mmol/L\newline  ($>250$ mg/dL) & $<5\%$\\ \midrule
+            GMI & Glucose Management\newline Indicator & & No specific target\\ \midrule
+            CV & Coefficient of Variation & & $\leq36\%$\\
+            \bottomrule
+        \end{tabular}
+        \label{tab:agp-metrics}
+    \end{table}
+
+```
+CGM-derived metrics presented in the ambulatory glucose profile report with target values.
+
+:::
 
 
 ## Management
