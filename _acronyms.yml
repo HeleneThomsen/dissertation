@@ -1,0 +1,12 @@
+---
+acronyms:
+  keys:
+  - shortname: CGM
+    longname: continuous glucose monitoring
+  - shortname: CVD
+    longname: cardiovascular disease
+  - shortname: T1D
+    longname: type 1 diabetes
+  - shortname: T2D
+    longname: type 2 diabetes
+---

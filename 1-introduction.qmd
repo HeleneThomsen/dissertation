@@ -1,21 +1,19 @@
 # Introduction {#sec-introduction}
 
 ## Diabetes
-- [ ] Check the sources from ADA_2026_ch2 to see if you can elaborate on the race thing and cite the original articles and not the summary ADA gives
-
 Diabetes is a metabolic disease characterized by high blood glucose levels known as hyperglycemia.[@Sacks2023]
 The disease is one of the fastest growing global healths challenges.[@IDF_ed10_Magliano2021]
 In 2021 it was estimated that 537 million people lived with diabetes, and it is expected to reach 643 million by 2030.[@IDF_ed10_Magliano2021]
-The most common forms of chronic diabetes are type 1 diabetes (T1D) and type 2 diabetes (T2D).[@Sacks2023]
+The most common forms of chronic diabetes are \acr{T1D} and \acr{T2D}.[@Sacks2023]
 T1D is an autoimmune disease characterized by the destruction of the pancreatic islet $\beta$-cells, leading to an absolute insulin deficiency.[@ADA2026_ch2]
-Approximately 85\%-95\% of all people with diabetes in developing countries have T2D.[@Sacks2023]
-It is the most common form of diabetes and in contrast to T1D it generally begins with insulin resistance in which the body's cells become less responsive to insulin.[@Sachs2023; @Hall2020]
+Approximately 85\%-95\% of all people with diabetes in developing countries have \acr{T2D}.[@Sacks2023]
+It is the most common form of diabetes and in contrast to \acr{T1D} it generally begins with insulin resistance in which the body's cells become less responsive to insulin.[@Sachs2023; @Hall2020]
 Initially, the pancreas compensates by increasing insulin secretion, but over time progressive $\beta$-cell dysfunction results in inadequate insulin production to meet the body's demands.[@Hall2020; @Sacks2023; @Deshpande2008]
-T2D is the most which is  is 
-Despite their distinct underlying pathophysiology, both T1D and T2D are characterized by chronic hyperglycemia.
+\acr{T2D} is the most which is  is 
+Despite their distinct underlying pathophysiology, both \acr{T1D} and \acr{T2D} are characterized by chronic hyperglycemia.
 
 <!-- Diabetes is diagnosed  -->
-Diabetes can be diagnosed based on a bloodtest to check hemoglobin A1c (HbA1c) levels or through plasma glucose criteria (@tbl-diagnosis_criteria).[@ADA2026_ch2; @ADA2023_ch6]
+Diabetes can be diagnosed based on a bloodtest to check \acr{HbA1c} levels or through plasma glucose criteria (@tbl-diagnosis_criteria).[@ADA2026_ch2; @ADA2023_ch6]
 
 ::: {#tbl-diagnosis_criteria}
 ```{=latex}
@@ -38,30 +36,30 @@ Diagnostic tests for diabetes
 
 :::
 
-Although both plasma glucose tests and HbA1c tests are appropriate for diabetes screening, the HbA1c test has several advantages.[@ADA2026_ch2]
+Although both plasma glucose tests and \acr{HbA1c} tests are appropriate for diabetes screening, the \acr{HbA1c} test has several advantages.[@ADA2026_ch2]
 Some of the benefits are that it requires no fasting and it is less sensitive to stress and changes in nutrition.[@ADA2026_ch2]
-HbA1c is an indirect measure of blood glucose levels because glucose binds hemoglobin over  $\sim$ 120 days lifespan of erythrocytes (red blood cells).[@ADA2026_ch2]
-However HbA1c testing is not always accessible, affordable or suitable (e.g., for people with anemia or under HIV-treatment).[@ADA2026_ch2]
-With the guidelines recommendation of using HbA1c, a debate has sparked on the controversy of using a set thresholds as it is well known that racial differences in HbA1c exists.[@Selvin2013]
+\acr{HbA1c} is an indirect measure of blood glucose levels because glucose binds hemoglobin over  $\sim$ 120 days lifespan of erythrocytes (red blood cells).[@ADA2026_ch2]
+However \acr{HbA1c} testing is not always accessible, affordable or suitable (e.g., for people with anemia or under HIV-treatment).[@ADA2026_ch2]
+With the guidelines recommendation of using \acr{HbA1c}, a debate has sparked on the controversy of using a set thresholds as it is well known that racial differences in HbA1c exists.[@Selvin2013]
 Black individuals have higher HbA1c levels than Hispanic and non-Hispanic White people with diabetes,[@kirk2006; @ADA2026_ch2] however studies show that the association between HbA1c and risk of complications appear to be similar between ethnic race groups.[@Selvin2013, @ADA2026_ch2]
 
 ## Blood Glucose Monitoring
-HbA1c values are also a very important part of diabetes management. The treatment goal is for HbA1c to be below 53 mmol/mol for non-pregnant adults without any hyperglycemia or hypoglycemia (low blood glucose levels). However HbA1c goals should be individualized to fit each individuals specific situation HbA1c can vary from e.g., <48mmol/mol to none.[@ADA_2026_ch6; @IDF_2025_guidelines]
-There are two tools available for self-assessment of glycemia, the self-monitoring blood glucose (SMBG) device measuring capillary blood with finger-sticks, and the continuous glucose monitoring device (CGM) measuring interstitial fluid continuously.[@IDF_2025_guidelines; @Buscemi2010]
-Both monitoring devices have shown to improve glycemic control in people with diabetes, however the CGM is superior when it comes to immediate information and alerts on asymptomatic hypo- and hyperglycemic events and provide a comprehensive glucose profile including both pre- and postprandial blood glucose measurements.[@IDF_2025_guidelines; @Danne2017; @freckmann2024]
+\acr{HbA1c} values are also a very important part of diabetes management. The treatment goal is for \acr{HbA1c} to be below 53 mmol/mol for non-pregnant adults without any hyperglycemia or hypoglycemia (low blood glucose levels). However HbA1c goals should be individualized to fit each individuals specific situation HbA1c can vary from e.g., <48mmol/mol to none.[@ADA_2026_ch6; @IDF_2025_guidelines]
+There are two tools available for self-assessment of glycemia, the \acr{SMBG} device measuring capillary blood with finger-sticks, and the \acr{CGM} measuring interstitial fluid continuously.[@IDF_2025_guidelines; @Buscemi2010]
+Both monitoring devices have shown to improve glycemic control in people with diabetes, however the \acr{CGM} is superior when it comes to immediate information and alerts on asymptomatic hypo- and hyperglycemic events and provide a comprehensive glucose profile including both pre- and postprandial blood glucose measurements.[@IDF_2025_guidelines; @Danne2017; @freckmann2024]
 
 
 
-## Continuous Glucose Monitoring Devices
-The CGM devices measures the glucose in the interstitial fluid, which is the fluid around and between cells. It corresponds with plasma glucose although a lag can appear when glucose levels rise or fall rapidly.[@ADA2026_ch7]
-Use of CGM devices has shown to improve glycemic control in both T1D and T2D with improvements in HbA1c levels and more time spent in target range (3.9-10 mmol/L) regardless of age, sex, eduction and income.[@ADA2026_ch6; @ADA2026_ch7]
-CGM devices focuses on monitoring and it is possible to get an ambulatory glucose profile (AGP) report from you device (@fig-agp). The AGP report shows summary statistics over all your data (usually a two weeks period). Some of the most important management measures from the CGM is time in range (TIR), and it is the time spent within normal range in percentage over a given time (often two weeks). Other CGM-derived metrics are time above range (TAR), time below range (TBR), glucose management indicator (GMI), coefficient of variation (CV) and the mean glucose (MBG), number of days CGM was worn and the percentage of time the CGM was active (@tbl-agp).[@Danne2017] 
+<!-- ## Continuous Glucose Monitoring Devices -->
+The \acr{CGM} devices measures the glucose in the interstitial fluid, which is the fluid around and between cells. It corresponds with plasma glucose although a lag can appear when glucose levels rise or fall rapidly.[@ADA2026_ch7]
+Use of \acr{CGM} devices has shown to improve glycemic control in both \acr{T1D} and \acr{T2D} with improvements in \acr{HbA1c} levels and more time spent in target range (3.9-10 mmol/L) regardless of age, sex, eduction and income.[@ADA2026_ch6; @ADA2026_ch7]
+\acr{CGM} devices focuses on monitoring and it is possible to get an \acr{AGP} report from you device (@fig-agp). The \acr{AGP} report shows summary statistics over all your data (usually a two weeks period). Some of the most important management measures from the \acr{CGM} is \acr{TIR}, and it is the time spent within normal range in percentage over a given time (often two weeks). Other \acr{CGM}-derived metrics are \acr{TAR}, time below range \acr{TBR}, \acr{GMI}, \acr{CV} and the \acr{MBG}, number of days \acr{CGM} was worn and the percentage of time the \acr{CGM} was active (@tbl-agp).[@Danne2017] 
 
 ::: {#fig-agp fig-scap='Ambulatory glucose profile report.'}
 
 [![](figures/1_intro_fig/agp.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/1_intro_fig/agp.png)
 
-Ambulatory glucose profile report from female without diabetes. Data points are from the author herself using an expired intermittently-scanned FreeStyle LibreLink sensor (Manuel data upload).
+Ambulatory glucose profile report from female without diabetes. Data points are from the author herself using an intermittently-scanned (Manuel data upload) FreeStyle LibreLink sensor.
 :::
 
 
@@ -89,12 +87,12 @@ Overview of the standardized ambulatory glucose profile (AGP) metrics and their 
         \centering
         \begin{tabular}{clcc} \toprule
             \textbf{Abbreviation} & \textbf{CGM-derived metric} & \textbf{Range} & \textbf{Recommended target}\\ \midrule
-            TIR & Time in Range & 3.9--10.0 mmol/L\newline  (70--180 mg/dL) & $>70\%$\\ \midrule
-            TBR & Time Below Range & $<3.9$ mmol/L\newline  ($<70$ mg/dL) & $<4\%$\\ \midrule
-            TBR$_{54}$ & Time Below Range & $<3.0$ mmol/L\newline  ($<54$ mg/dL) & $<1\%$\\ \midrule
-            TAR & Time Above Range & $>10.0$ mmol/L\newline  ($>180$ mg/dL) & $<25\%$\\ \midrule
-            TAR$_{250}$ & Time Above Range & $>13.9$ mmol/L\newline  ($>250$ mg/dL) & $<5\%$\\ \midrule
-            GMI & Glucose Management\newline Indicator & & No specific target\\ \midrule
+            TIR & Time in Range & 3.9--10.0 mmol/L (70--180 mg/dL) & $>70\%$\\ \midrule
+            TBR & Time Below Range & $<3.9$ mmol/L ($<70$ mg/dL) & $<4\%$\\ \midrule
+            TBR$_{54}$ & Time Below Range & $<3.0$ mmol/L ($<54$ mg/dL) & $<1\%$\\ \midrule
+            TAR & Time Above Range & $>10.0$ mmol/L ($>180$ mg/dL) & $<25\%$\\ \midrule
+            TAR$_{250}$ & Time Above Range & $>13.9$ mmol/L ($>250$ mg/dL) & $<5\%$\\ \midrule
+            GMI & Glucose Management Indicator & & No specific target\\ \midrule
             CV & Coefficient of Variation & & $\leq36\%$\\
             \bottomrule
         \end{tabular}
@@ -105,6 +103,7 @@ Overview of the standardized ambulatory glucose profile (AGP) metrics and their 
 CGM-derived metrics presented in the ambulatory glucose profile report with target values.
 
 :::
+
 
 
 ## Management

@@ -1,1 +1,4 @@
 # Abbreviations {.unnumbered}
+
+\printacronyms
+

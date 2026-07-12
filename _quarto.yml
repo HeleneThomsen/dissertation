@@ -16,12 +16,12 @@ book:
     - 0-abbreviations.qmd
     # - 0-to_do.qmd
     - 1-introduction.qmd
-    - 2-aims.qmd
-    - 3-methods.qmd
-    - 4-results.qmd
-    - 5-discussion.qmd
-    - 7-conclusions.qmd
-    - 8-perspectives.qmd
+    # - 2-aims.qmd
+    # - 3-methods.qmd
+    # - 4-results.qmd
+    # - 5-discussion.qmd
+    # - 7-conclusions.qmd
+    # - 8-perspectives.qmd
     - references.qmd
     # - summary-english.qmd
     # - summary-danish.qmd
@@ -40,7 +40,67 @@ csl: citestyle.csl
 execute:
   freeze: auto
   echo: false # change to false to hide code
-  
+
+
+filters:
+  - acronyms
+
+
+acronyms:
+  # non_existing: error           # throw an error and refuse to render if abbreviation is used but not defined here
+  style: long-short             # How abbreviations show up in text
+  # include_unused: false
+  # Handles list of abbreviation
+  loa_title: ""                 # Remove the default package title on abbreviation list page
+  insert_loa: false             # Do not add abbreviation list at default but where (\printacronyms) is placed
+  sorting: alphabetical-case-insensitive # Organize list alphabetically regardless of CASE sensitivity
+  # loa_header_classes:
+  loa_format: '` **{shortname}**: {longname} `{=raw}'
+  # fromfile: acronyms.yml
+  keys:
+    - shortname: CGM
+      longname: continuous glucose monitoring
+    - shortname: CVD
+      longname: cardiovascular disease
+    - shortname: T1D
+      longname: type 1 diabetes
+    - shortname: T2D
+      longname: type 2 diabetes
+    - shortname: HbA1c
+      longname: hemoglobin A1c
+    - shortname: SMBG
+      longname: self-monitoring blood glucose
+    - shortname: AGP
+      longname: ambulatory glucose profile
+    - shortname: TIR
+      longname: time in range
+    - shortname: TAR
+      longname: time above range
+    - shortname: TBR
+      longname: time below range
+    - shortname: GMI
+      longname: glucose management indicator
+    - shortname: CV
+      longname: coefficient of variation
+    - shortname: MBG
+      longname: mean glucose
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+      
+      
+
 format:
   html:
     theme: cosmo
