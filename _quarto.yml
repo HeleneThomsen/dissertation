@@ -92,6 +92,32 @@ acronyms:
       longname: Estimated Glomerular Filtration Rate
     - shortname: NT-proBNP
       longname: N-terminal Pro-B-type Natriuretic Peptide
+    - shortname: AUROC
+      longname: Area Under the Receiver Operating Characteristic Curve
+    - shortname: RMSE
+      longname: root mean square error 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
+    # - shortname: 
+    #   longname: 
     # - shortname: 
     #   longname: 
     # - shortname: 
