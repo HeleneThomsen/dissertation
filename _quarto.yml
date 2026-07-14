@@ -84,14 +84,14 @@ acronyms:
       longname: coefficient of variation
     - shortname: MBG
       longname: mean glucose
-    # - shortname: 
-    #   longname: 
-    # - shortname: 
-    #   longname: 
-    # - shortname: 
-    #   longname: 
-    # - shortname: 
-    #   longname: 
+    - shortname: AID
+      longname: Automated insulin delivery
+    - shortname: SCORE2-Diabetes
+      longname: Systematic Coronary Risk Evaluation 2-Diabetes
+    - shortname: eGFR
+      longname: Estimated Glomerular Filtration Rate
+    - shortname: NT-proBNP
+      longname: N-terminal Pro-B-type Natriuretic Peptide
     # - shortname: 
     #   longname: 
     # - shortname: 

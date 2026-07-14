@@ -8,7 +8,7 @@ In this chapter the three studies included in this PhD will be presented. The da
 
 ## Overview of the Studies
 
-+-----------------+-------+------------------------+-----------------------+
+<!-- +-----------------+-------+------------------------+-----------------------+
 | Model family    | Model | Baseline predictors    | Additional predictors |
 +=================+=======+========================+=======================+
 | Clinical        | **A0**| Age                    | –                     |
@@ -33,7 +33,7 @@ In this chapter the three studies included in this PhD will be presented. The da
 : Overview of models and predictors {#tbl-prediction-models}
 
 ^*^ Clinical variables are the same as those included in the SCORE2-Diabetes risk model: age, sex, smoking status, systolic blood pressure, HDL cholesterol, total cholesterol, diabetes duration, HbA1c, and eGFR [@Pennells2023_score2dm].  
-*TIR = time in range; MAGE = mean amplitude of glycemic excursions.*
+*TIR = time in range; MAGE = mean amplitude of glycemic excursions.* -->
 
 
 |  | Study I | Study II | Study III |

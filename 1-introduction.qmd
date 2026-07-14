@@ -1,13 +1,13 @@
 # Introduction {#sec-introduction}
 
 ## Diabetes
-Diabetes is a metabolic disease characterized by high blood glucose levels known as hyperglycemia.[@Sacks2023]
+Diabetes is a metabolic disease characterized by high blood glucose levels known as hyperglycemia.[@Sacks2023; @Deshpande2008]
 The disease is one of the fastest growing global healths challenges.[@IDF_ed10_Magliano2021]
 In 2021 it was estimated that 537 million people lived with diabetes, and it is expected to reach 643 million by 2030.[@IDF_ed10_Magliano2021]
 The most common forms of chronic diabetes are \acr{T1D} and \acr{T2D}.[@Sacks2023]
 T1D is an autoimmune disease characterized by the destruction of the pancreatic islet $\beta$-cells, leading to an absolute insulin deficiency.[@ADA2026_ch2]
 Approximately 85\%-95\% of all people with diabetes in developing countries have \acr{T2D}.[@Sacks2023]
-It is the most common form of diabetes and in contrast to \acr{T1D} it generally begins with insulin resistance in which the body's cells become less responsive to insulin.[@Sachs2023; @Hall2020]
+It is the most common form of diabetes and in contrast to \acr{T1D} it generally begins with insulin resistance in which the body's cells become less responsive to insulin.[@Sacks2023; @Hall2020]
 Initially, the pancreas compensates by increasing insulin secretion, but over time progressive $\beta$-cell dysfunction results in inadequate insulin production to meet the body's demands.[@Hall2020; @Sacks2023; @Deshpande2008]
 \acr{T2D} is the most which is  is 
 Despite their distinct underlying pathophysiology, both \acr{T1D} and \acr{T2D} are characterized by chronic hyperglycemia.
@@ -41,19 +41,21 @@ Some of the benefits are that it requires no fasting and it is less sensitive to
 \acr{HbA1c} is an indirect measure of blood glucose levels because glucose binds hemoglobin over  $\sim$ 120 days lifespan of erythrocytes (red blood cells).[@ADA2026_ch2]
 However \acr{HbA1c} testing is not always accessible, affordable or suitable (e.g., for people with anemia or under HIV-treatment).[@ADA2026_ch2]
 With the guidelines recommendation of using \acr{HbA1c}, a debate has sparked on the controversy of using a set thresholds as it is well known that racial differences in HbA1c exists.[@Selvin2013]
-Black individuals have higher HbA1c levels than Hispanic and non-Hispanic White people with diabetes,[@kirk2006; @ADA2026_ch2] however studies show that the association between HbA1c and risk of complications appear to be similar between ethnic race groups.[@Selvin2013, @ADA2026_ch2]
+Black individuals have higher HbA1c levels than Hispanic and non-Hispanic White people with diabetes,[@kirk2006; @ADA2026_ch2] however studies show that the association between \acr{HbA1c} and risk of complications appear to be similar between ethnic race groups.[@Selvin2013, @ADA2026_ch2]
 
 ## Blood Glucose Monitoring
-\acr{HbA1c} values are also a very important part of diabetes management. The treatment goal is for \acr{HbA1c} to be below 53 mmol/mol for non-pregnant adults without any hyperglycemia or hypoglycemia (low blood glucose levels). However HbA1c goals should be individualized to fit each individuals specific situation HbA1c can vary from e.g., <48mmol/mol to none.[@ADA_2026_ch6; @IDF_2025_guidelines]
+\acr{HbA1c} values are a very important part of diabetes management. The treatment goal is for \acr{HbA1c} to be below 53 mmol/mol for non-pregnant adults without any hyperglycemia or hypoglycemia (low blood glucose levels). However \acr{HbA1c} goals should be individualized to fit each individuals specific situation \acr{HbA1c} can vary from e.g., <48mmol/mol to none.[@ADA2026_ch6; @IDF_2025_guidelines]
 There are two tools available for self-assessment of glycemia, the \acr{SMBG} device measuring capillary blood with finger-sticks, and the \acr{CGM} measuring interstitial fluid continuously.[@IDF_2025_guidelines; @Buscemi2010]
-Both monitoring devices have shown to improve glycemic control in people with diabetes, however the \acr{CGM} is superior when it comes to immediate information and alerts on asymptomatic hypo- and hyperglycemic events and provide a comprehensive glucose profile including both pre- and postprandial blood glucose measurements.[@IDF_2025_guidelines; @Danne2017; @freckmann2024]
+Both monitoring devices have shown to improve glycemic control in people with diabetes, however the \acr{CGM} is superior when it comes to immediate information and alerts on asymptomatic hypo- and hyperglycemic events and provide a comprehensive glucose profile including both pre- and postprandial blood glucose measurements.[@IDF_2025_guidelines; @Danne2017; @Freckmann2024]
 
 
-
-<!-- ## Continuous Glucose Monitoring Devices -->
+<!-- ## Continuous Glucose Monitoring Devices and AIDs -->
 The \acr{CGM} devices measures the glucose in the interstitial fluid, which is the fluid around and between cells. It corresponds with plasma glucose although a lag can appear when glucose levels rise or fall rapidly.[@ADA2026_ch7]
 Use of \acr{CGM} devices has shown to improve glycemic control in both \acr{T1D} and \acr{T2D} with improvements in \acr{HbA1c} levels and more time spent in target range (3.9-10 mmol/L) regardless of age, sex, eduction and income.[@ADA2026_ch6; @ADA2026_ch7]
-\acr{CGM} devices focuses on monitoring and it is possible to get an \acr{AGP} report from you device (@fig-agp). The \acr{AGP} report shows summary statistics over all your data (usually a two weeks period). Some of the most important management measures from the \acr{CGM} is \acr{TIR}, and it is the time spent within normal range in percentage over a given time (often two weeks). Other \acr{CGM}-derived metrics are \acr{TAR}, time below range \acr{TBR}, \acr{GMI}, \acr{CV} and the \acr{MBG}, number of days \acr{CGM} was worn and the percentage of time the \acr{CGM} was active (@tbl-agp).[@Danne2017] 
+\acr{CGM} devices focuses on monitoring and it is possible to get an \acr{AGP} report from you device (@fig-agp). The \acr{AGP} report shows summary statistics over all your data (usually a two weeks period) including \acr{CGM}-derived metrics as shown in (@tbl-agp).[@Danne2017]
+Besides monitoring, data from \acr{CGM} devices are now used in combination with insulin delivery systems to automate the process of administering insulin.[@ADA2026_ch7]
+\acr{AID} systems typically use data from \acr{CGM} devices to determine or adjust insulin delivery.
+The simplest \acr{AID}s are threshold-based low-glucose suspend systems in which insulin delivery is automatically suspended when blood glucose levels drop below a predefined threshold.[@race7] More advanced systems utilize additional information such as carbohydrate intake and physical activity to optimize insulin delivery.[@race6,@race8] 
 
 ::: {#fig-agp fig-scap='Ambulatory glucose profile report.'}
 
@@ -63,86 +65,72 @@ Ambulatory glucose profile report from female without diabetes. Data points are 
 :::
 
 
-<!-- ::: {#tbl-agp tbl-cap-short="Standardized AGP metrics"}
-| Abbreviation | CGM-derived metric | Recommended target value* |
-|:------------|:-------------------|:--------------------------|
-| TIR | Time in Range (3.9–10.0 mmol/L; 70–180 mg/dL) | >70% |
-| TBR | Time Below Range (<3.9 mmol/L; <70 mg/dL) | <4% |
-| TBR<sub>54</sub> | Time Below Range (<3.0 mmol/L; <54 mg/dL) | <1% |
-| TAR | Time Above Range (>10.0 mmol/L; >180 mg/dL) | <25% |
-| TAR<sub>250</sub> | Time Above Range (>13.9 mmol/L; >250 mg/dL) | <5% |
-| GMI | Glucose Management Indicator | No specific target; interpreted alongside HbA1c |
-| CV | Coefficient of Variation | ≤36% |
-| MG | Mean Glucose | No universal target; individualized according to treatment goals |
-
-Overview of the standardized ambulatory glucose profile (AGP) metrics and their recommended target values for most non-pregnant adults with diabetes.
-:::
--->
-
-
 ::: {#tbl-agp}
 
 ```{=latex}
     \begin{table}[H]
         \centering
         \begin{tabular}{clcc} \toprule
-            \textbf{Abbreviation} & \textbf{CGM-derived metric} & \textbf{Range} & \textbf{Recommended target}\\ \midrule
-            TIR & Time in Range & 3.9--10.0 mmol/L (70--180 mg/dL) & $>70\%$\\ \midrule
-            TBR & Time Below Range & $<3.9$ mmol/L ($<70$ mg/dL) & $<4\%$\\ \midrule
-            TBR$_{54}$ & Time Below Range & $<3.0$ mmol/L ($<54$ mg/dL) & $<1\%$\\ \midrule
-            TAR & Time Above Range & $>10.0$ mmol/L ($>180$ mg/dL) & $<25\%$\\ \midrule
-            TAR$_{250}$ & Time Above Range & $>13.9$ mmol/L ($>250$ mg/dL) & $<5\%$\\ \midrule
-            GMI & Glucose Management Indicator & & No specific target\\ \midrule
-            CV & Coefficient of Variation & & $\leq36\%$\\
+            \textbf{Abbreviation}         & \textbf{CGM-derived metric} & \textbf{Range} & \textbf{Recommended target}\\ \midrule
+            GMI        & Glucose Management Indicator & & No specific target\\ \midrule
+            TIR        & Time in Range    & \begin{tabular}[c]{@{}l@{}}3.9-10.0 mmol/L\\(70-180 mg/dL)\end{tabular} & $>70\%$\\ \midrule
+            TBR$_{54}$ & Time Below Range & \begin{tabular}[c]{@{}l@{}} $<3.0$ mmol/L\\ ($<54$ mg/dL)\end{tabular}  & $<1\%$\\ \midrule
+            TBR$_{70}$ & Time Below Range & \begin{tabular}[c]{@{}l@{}}$<3.9$ mmol/L\\  ($<70$ mg/dL)\end{tabular}  & $<4\%^{*}$\\ \midrule
+            TAR$_{180}$ & Time Above Range & \begin{tabular}[c]{@{}l@{}}$>10.0$ mmol/L\\ ($>180$ mg/dL)\end{tabular}& $<25\%^{**}$\\ \midrule
+            TAR$_{250}$& Time Above Range & \begin{tabular}[c]{@{}l@{}}$>13.9$ mmol/L\\ ($>250$ mg/dL)\end{tabular} & $<5\%$\\ \midrule
+            CV         & Coefficient of Variation     & & $\leq36\%$\\\midrule
+                        & Number of days sensor was worn &  & \begin{tabular}[c]{@{}l@{}}$\geq14 $ days for\\ pattern management\end{tabular}\\\midrule
+                        & Active sensor time & & 70\% of 14 days \\
             \bottomrule
         \end{tabular}
         \label{tab:agp-metrics}
     \end{table}
 
 ```
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.90\linewidth]{
+    \textsuperscript{*} This goal include both TBR$_{54}$ and TBR$_{70}$.\newline
+    \textsuperscript{**} This goal include both TAR$_{180}$ and TAR$_{250}$
+}
+```
+:::
+
 CGM-derived metrics presented in the ambulatory glucose profile report with target values.
 
 :::
 
+## Glycemic Variability
+The challenge in obtaining good glycemic control is to keep blood glucose levels low enough to prevent comorbidities while avoiding the acute symptoms and, for insulin treated people with diabetes, potential mortality of iatrogenic(treatment-induced) hypoglycemia.[@Kovatchev2016] The variability in the blood glucose fluctuations needs to be reduced in order to lower the average blood glucose levels while still avoiding hypoglycemia.[@Kovatchev2016]
+Advances in \acr{CGM} technology have enabled the quantification of glucose variability, a measure of the extent of fluctuations in blood glucose levels over time, including both peaks and nadirs.[@Mo2024]
+Describing the variability is clinically relevant because two individuals with similar \acr{HbA1c} levels may exhibit different glycemic variability profiles.[@Kovatchev2016]
+Numerous metrics have been developed to characterize different aspects of glucose variability, but no single measure captures all of its dimensions. Consequently, no universal consensus has been reached, although the \acr{CV} and \acr{SD} have been incorporated into \acr{AGP} reports and the American Diabetes Association guidelines (@tbl-agp).[@Kovatchev2016; @Mo2024]
 
+## Cardiovascular Diseases and Predicting Risk
+Although advances in diabetes management have reduced the incidence of several diabetes-related complications, cardiovascular disease remains a major cause of morbidity and mortality in people with diabetes.[@rawshani2017; @ADA2026_ch10; @Pennells2023_score2dm] Chronic hyperglycemia can lead to long-term complications, although the progression and manifestation of these complications vary between individuals.[@ADA2026_ch2] Identifying individuals at increased risk of atherosclerotic cardiovascular disease or heart failure before clinical disease develops is therefore an important component of diabetes care.[@ADA2026_ch10]
 
-## Management
-## Glycemic markers and glucose monitoring
-- [x] HbA1c and its limitations
-- [x] Continuous glucose monitoring (CGM)
-- [ ] AIDs use CGMs and algorithms to adjust insulin delivery. [@ADA2026_ch7]
-- [ ]Glycemic variability
-    - [ ] Metrics of glycemic variability
-    - [ ] Clinical challenges of glycemic variability (Think HbA1c and MBG and variability study)
+Risk prediction models estimating an individual's future risk of developing \acr{CVD} have been developed and are widely used.[@Framingham2007; @Pennells2023_score2dm; @QRISK_2007; @Segar2019] By estimating the probability of a \acr{CVD} event within a specified time horizon, these models can increase awareness of cardiovascular risk, encourage adherence to recommended lifestyle changes and medical treatment, and help identify individuals who are most likely to benefit from preventive interventions.[@Donald2010]
+Among these, the \acr{SCORE2-Diabetes} model estimates the 10-year risk of \acr{CVD} in individuals with \acr{T2D}. It was developed and calibrated using European cohorts, making it particularly relevant for the Danish cohort included in this dissertation.[@Pennells2023_score2dm]
+However, the \acr{SCORE2-Diabetes} model relies solely on traditional clinical variables, including age, sex, smoking status, systolic blood pressure, high-density lipoprotein cholesterol, age at diabetes diagnosis, \acr{HbA1c}, and \acr{eGFR}, and does not incorporate information on glucose dynamics beyond the long-term glycemic exposure reflected by \acr{HbA1c}.[@Pennells2023_score2dm]
+\acr{HbA1c} have been independently associated with risk of heart failure,[@Hsiao2025] however it does not capture the short-term glucose fluctuations, which may be associated with the progression of vascular complications in diabetes.[@Belli2023]
+Associations between \acr{CGM}-derived metrics and \acr{CVD} outcomes have been investigated in the literature[@Yapanis2022; @Thomsen2026; @Zhang2024] however evidence regarding the predictive power of CGM-derived metrics in predicting CVD remains limited.[@Hua2012, @Koroleva2022, @Su2011]
 
-## Cardiovascular diseases and Diabetes
+## Heart Failure
+The limited evidence on the predictive value of CGM data is particularly important for heart failure, as the condition is at least twice as prevalent among people with diabetes as in the general population.[@ADA2026_ch10; @Hoek2024]
+Heart failure may present as either an acute or a chronic condition.[@mcdonagh2021] It is a clinical syndrome characterized by a combination of symptoms, including breathlessness, fatigue, and ankle swelling, together with clinical signs such as elevated jugular venous pressure and pulmonary crackles.[@mcdonagh2021]
+In individuals with suspected chronic heart failure based on risk factors, symptoms, clinical findings, and supporting investigations such as electrocardiography, measurement of \acr{NT-proBNP} is recommended as part of the diagnostic work-up.[@mcdonagh2021] An \acr{NT-proBNP} concentration of ≥125 pg/mL indicates the need for further cardiac evaluation, whereas concentrations below this threshold make chronic heart failure unlikely and alternative diagnoses should be considered.[@mcdonagh2021]
+Consequently, \acr{NT-proBNP} represents a clinically relevant biomarker for identifying individuals at increased risk of chronic heart failure.
 
-<!-- @ADA2026_ch2
-
-Once hyperglycemia occurs, people with all forms
-of diabetes are at risk for developing the
-same chronic complications, although rates
-of progression may differ -->
-
-
-<!-- Keeping blood glucose levels within normal range is essential to avoid future diabetes-related complications, such as cardiovascular diseases, blindness, renal failure, and lower extremity amputations [race 2–5]. -->
-
-* Cardiovascular complications
-* Heart failure in diabetes
-
-Williams2020 expenditures and complications: https://www.sciencedirect.com/science/article/pii/S0168822720301388
-## Cardiovascular risk prediction in diabetes
-* Traditional risk models
-    * SCORE2-Diabetes risk score
-    * What is SCORE2-Diabetes 10 year CVD risk score?
-* Limitations of conventional predictors
+## Association vs Prediction
+Many studies have 
 
 ## Machine learning
 
 
 **Relevant?**
 Artificial Intelligence: The Future for Diabetes Care: https://www.clinicalkey.com/#!/content/playContent/1-s2.0-S0002934320303399?returnurl=https:%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0002934320303399%3Fshowall%3Dtrue&referrer=
-
+Mo2023: says something about glucose variability metrics, what they are and what critiques are there to say about them: Glycemic variability: Measurement, target, impact on complications of diabetes and does it really matter? https://onlinelibrary.wiley.com/doi/10.1111/jdi.14112
 
 * Data-driven vs hypothesis-drivenly(knowledge-based) paradigms
 * Why machine learning in diabetes and cardiovascular risk prediction?
@@ -170,6 +158,10 @@ Artificial Intelligence: The Future for Diabetes Care: https://www.clinicalkey.c
 
 <!-- https://github.com/Aastedet/dissertation -->
 <!-- https://superfrey.github.io/PhD_dissertation/1-introduction.html -->
+
+
+<!-- 
+Williams2020 expenditures and complications: Global and regional estimates and projections of diabetes-related health expenditure: Results from the International Diabetes Federation Diabetes Atlas, 9th edition https://www.sciencedirect.com/science/article/pii/S0168822720301388 -->
 
 
 <!-- ::: {#fig-classifir-diffs}

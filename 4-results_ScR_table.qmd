@@ -94,7 +94,7 @@ Clinical cardiovascular outcomes comprised cardiovascular mortality, major adver
 | Wei et al[@Wei2019]$^*$, 2019 | | | | | |
 | &nbsp;&nbsp;&nbsp; Hypoglycemic events<br> (myocardial Infarction) | HR: 1.901<br> (1.067–3.389) | — | HR: 1.549<br> (0.768–3.124) | $0.03$ | |
 | &nbsp;&nbsp;&nbsp; Hypoglycemic events<br> (unstable angina pectoris) | HR: 1.226<br> (0.857–1.753) | — | HR: 1.218<br> (0.794–1.869) | $0.30$ | |
-| Shu-Hua et al[@Hua]$^e$, 2012 | | | | | |
+| Shu-Hua et al[@Hua2012]$^e$, 2012 | | | | | |
 | &nbsp;&nbsp;&nbsp; MAGE level ($\ge 3.4$ mmol/L) | — | — | OR: 2.286<br> (1.176–4.446) | $0.02$ | |
 | Su et al [@Su2011]$^*$, 2011 | | | | | |
 | &nbsp;&nbsp;&nbsp; MAGE $\ge 3.4$ mmol/L | — | — | OR: 2.612<br> (1.423–4.831) | $0.002$ | |
