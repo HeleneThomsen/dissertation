@@ -17,7 +17,7 @@ book:
     # - 0-to_do.qmd
     - 1-introduction.qmd
     # - 2-aims.qmd
-    # - 3-methods.qmd
+    - 3-methods.qmd
     # - 4-results.qmd
     # - 5-discussion.qmd
     # - 7-conclusions.qmd

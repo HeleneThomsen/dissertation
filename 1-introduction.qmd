@@ -55,7 +55,7 @@ Use of \acr{CGM} devices has shown to improve glycemic control in both \acr{T1D}
 \acr{CGM} devices focuses on monitoring and it is possible to get an \acr{AGP} report from you device (@fig-agp). The \acr{AGP} report shows summary statistics over all your data (usually a two weeks period) including \acr{CGM}-derived metrics as shown in (@tbl-agp).[@Danne2017]
 Besides monitoring, data from \acr{CGM} devices are now used in combination with insulin delivery systems to automate the process of administering insulin.[@ADA2026_ch7]
 \acr{AID} systems typically use data from \acr{CGM} devices to determine or adjust insulin delivery.
-The simplest \acr{AID}s are threshold-based low-glucose suspend systems in which insulin delivery is automatically suspended when blood glucose levels drop below a predefined threshold.[@race7] More advanced systems utilize additional information such as carbohydrate intake and physical activity to optimize insulin delivery.[@race6,@race8] 
+The simplest \acr{AID}s are threshold-based low-glucose suspend systems in which insulin delivery is automatically suspended when blood glucose levels drop below a predefined threshold.[@Templer2022] More advanced systems utilize additional information such as carbohydrate intake and physical activity to optimize insulin delivery.[@Jaloli2023, @Gao2020] 
 
 ::: {#fig-agp fig-scap='Ambulatory glucose profile report.'}
 
@@ -133,55 +133,28 @@ Prediction models may be implemented using a wide range of approaches, including
 The prediction models are fitted to data (the predictors) and the output $Y´$ is evaluated based on your outcome $Y$, [@Breiman2001] and evaluation metrics on prediction studies often include classification metrics such as \acr{AUROC}, sensitivity, specificity and calibration plots[@VanCalster2025] or correlation coefficients, and \acr{RMSE}, for forecasting models.[@vanDoorn2021]
 
 
-## Machine Learning
+## Machine Learning and Representation Learning
 Associations between \acr{CGM}-derived metrics and \acr{CVD} outcomes have been investigated in the literature,[@Yapanis2022; @Thomsen2026; @Zhang2024] whereas evidence regarding the predictive value of CGM-derived metrics for cardiovascular risk assessment remains limited.[@Hua2012; @Koroleva2022; @Su2011]
-With the increased availability of \acr{CGM} data, machine learning models have become increasingly popular.[@Jaloli2023]
+The widespread adoption of \acr{CGM} has generated large volumes of glucose data, enabling the application of machine learning methods in diabetes care.[@Jaloli2023; @Ellahham2020]
 Machine learning models are often devided into supervised and unsupervised machine learning.[@Badillo2020]
-Supervised machine learning uses labelled data where each sample (e.g. \acr{CGM} data from one individual) has a label or an outcome (e.g., elevated \acr{NT-proBNP}) to predict  outcomes for new unforseen data. Unsupervised machine learning on the other hand uses data without labels to explore underlying structures or clusters in data.[@Badillo2020]
+Supervised machine learning uses labelled data where each sample (e.g. age and sex from one individual) has a label or an outcome (e.g., elevated \acr{NT-proBNP}) to predict new outcomes for new unforseen data. Unsupervised machine learning on the other hand uses data without labels to explore underlying structures or clusters in data.[@Badillo2020]
+Among supervised learning methods, deep neural networks are particularly notable because they can automatically learn informative representations directly from raw data for downstream tasks such as prediction or classification, reducing the need for manual feature engineering. This process is known as representation learning.[@Jaloli2023; @Bengio2013]
+Consequently, deep neural networks offer an alternative to relying on predefined \acr{CGM}-derived metrics.
+Although international consensus recommendations advocate the routine reporting of glucose variability using \acr{CV}, \acr{MAGE}, and \acr{SD}, with particular emphasis on \acr{CV},[@Danne2017] glucose variability encompasses multiple dimensions, including within- and between-day variability, the amplitude of glucose excursions, and temporal glucose patterns.[@Kovatchev2016] As a result, no single metric has been shown to comprehensively capture all aspects of glucose variability, and no consensus currently exists regarding the optimal measure.[@Kovatchev2016; @Mo2024]
 
 
+## Foundation Models and Transfer Learning
+With the scale and scope of some of the machine learing models have developed over the years, a new term has arised, foundation models.[@Bommasani2022] They are defined as any models that are trained on a huge amount of data and can be specilaized to solve a wide range of different usecases also known as downstream task. Two \acr{CGM} speciliased foundation models exist in the literature which both uses self-supervised machine learning.[@YurunLu2025; @Lutsker2026] Self-supervised machine learning is a technique used to train models on unlabelled data through different techniques, one of them including masked learning (e.g. predicting artificially masked words in text or values in time-series signals).[@Bommasani2022; @YurunLu2025; @Lutsker2026]
+A pretrained foundation model is therefore a model first trained on a task such as predicting masked values in a \acr{CGM} signal and thereby has learned the representations of blood glucose dynamics measured by a \acr{CGM} device. The pretrained foundation model can then be used used in a different task (e.g., predicting CVD outcomes[@Lutsker2026]) using transfer learning.[@Bommasani2022] Transfer learning is based on the premise that a pretrained foundation model has learned general representations that can be transferred to new, related tasks without training a model from scratch.[@Bommasani2022]
+There are multiple different transfer learning strategies as shown in @fig-tl.[@Deng2021].
+One of the main challenges of deep neural networks is their requirement for large amounts of training data. Transfer learning addresses this challenge by reusing knowledge learned from large datasets and applying it to related tasks with limited labelled data. This is particularly relevant in clinical risk prediction, where labelled data are often scarce, especially for minority populations.[@Deng2021; @Haw2021; @Muralidharan2024]
 
+::: {#fig-tl fig-scap='Overview of Transfer Learning Strategies.'}
 
- especially the neural networks that does not require any manuel processing or feature extraction of the predictors but has automated the process.[@Jaloli2023]
+[![](figures/1_intro_fig/intro_tl.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/1_intro_fig/intro_tl.png)
 
-
-
-
-Although prediction models differ from association studies in their objective, both have traditionally relied on predefined predictors selected based on prior biological or clinical knowledge. In diabetes research, this includes conventional clinical variables as well as handcrafted CGM-derived metrics such as TIR, MAGE, and coefficient of variation, which were developed to summarize specific aspects of glucose regulation.
-
-Then:
-
-While these metrics are physiologically motivated and clinically interpretable, they represent predefined summaries of the glucose signal and may therefore fail to capture more complex temporal patterns.
-
-Now you've naturally arrived at the limitation.
-
-Then introduce machine learning
-
-Machine learning provides an alternative approach by learning predictive patterns directly from data rather than relying solely on predefined features. Instead of manually engineering summary metrics, machine learning models can learn representations that capture complex characteristics of the underlying glucose signal.
-
-
-
-
-**Relevant?**
-Artificial Intelligence: The Future for Diabetes Care: https://www.clinicalkey.com/#!/content/playContent/1-s2.0-S0002934320303399?returnurl=https:%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0002934320303399%3Fshowall%3Dtrue&referrer=
-Mo2023: says something about glucose variability metrics, what they are and what critiques are there to say about them: Glycemic variability: Measurement, target, impact on complications of diabetes and does it really matter? https://onlinelibrary.wiley.com/doi/10.1111/jdi.14112
-
-* Data-driven vs hypothesis-drivenly(knowledge-based) paradigms
-* Why machine learning in diabetes and cardiovascular risk prediction?
-* Why are ML fantastic for CGM data?
-* Types of machine learning methods
-    * Logistic regression
-    * LSTM and CNNs
-    * Foundation models and their advantage
-        <!-- * CGM data has been processed and interpreted based on plotting the data and extracting CGM-derived metrics from time series signal sampled every 3-15 minutes. However new techniques within the machine learning field has allowed us to process the whole time series signals like CGM data, which can retain more information from the original CGM data then the derived metrics can. Foundation models are machine learning models that are trained on huge amount of data and thereafter can be retrained to be specialized into a specific task. This is one solution to the limitation of small datasets that are not sufficient enough for the data hungry machine learning models. -->
-        <!-- * The CGMformer is a transformer-based model that was trained on a large dataset of CGM data and is designed to learn representations of glucose dynamics. The model takes in sequences of CGM measurements and outputs embeddings that capture the underlying patterns in the glucose data. These embeddings can then be used for downstream tasks such as predicting cardiovascular risk or other health outcomes. -->
-        <!-- * The embeddings are learned representations that capture the underlying patterns and relationships in the input data, allowing for more efficient and effective downstream tasks such as classification, regression, or clustering. -->
-
-    * The CGMformer is bla bla bla [@YurunLu2025]
-
-* Challenges and pitfalls of machine learning in healthcare
-    * Overfitting and generalizability
-    * Interpretability and explainability
+Overview of transfer learning strategies. Based on Deng et al. (2021),[@Deng2021] under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence.
+::git 
 
 ## Fairness and bias in machine learning
 * Define race and ethnicity
