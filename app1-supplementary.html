@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -33,7 +52,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./app2-addendum.html" rel="next">
 <link href="./references.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -44,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3f70bac5631458d474a321d4182f9338.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-82cb5808e81da3454e8042d903791e03.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -152,18 +170,6 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./0-disclosure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Disclosures and Notes</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./0-preface.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./0-papers.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Papers in the dissertation</span></a>
   </div>
@@ -182,8 +188,32 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./2-aims.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Aims</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./3-methods.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Methods</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Methods</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4-results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Results</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5-discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discussion</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7-conclusions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -205,12 +235,6 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="./app1-supplementary.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Study I: Search strings</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./app2-addendum.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Addenda and errata</span></span></a>
   </div>
 </li>
       </ul>
@@ -449,7 +473,1404 @@ Table&nbsp;A.2: Search in Embase (Ovid) (Search date: 22 January 2024)
 <ul class="task-list">
 <li><label><input type="checkbox">Add table with subclinical study design overviews</label></li>
 <li><label><input type="checkbox">Add table overview of subclinical results</label></li>
+<li><label><input type="checkbox">Add adjustment column to <a href="#tbl-main-clinical-findings" class="quarto-xref">Table&nbsp;<span>D.1</span></a> the same way as I did witht he first two studies</label></li>
+<li><label><input type="checkbox">Add subclinical table from the suppl. of the published ScR study down in supplementary as well</label></li>
 </ul>
+<p>Clinical cardiovascular outcomes comprised cardiovascular mortality, major adverse cardiovascular events, macrovascular complications, coronary artery disease, stroke, and peripheral artery disease. Most studies were observational and differed substantially in study populations, CGM-derived metrics, outcome definitions, and adjustment strategies. Consequently, direct comparison across studies was challenging. The reported effect estimates from the least and most adjusted analyses are summarized in <a href="#tbl-main-clinical-findings" class="quarto-xref">Table&nbsp;<span>D.1</span></a>.</p>
+<div class="landscape">
+<div class="small">
+<div id="tbl-main-clinical-findings" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[25, 15, 15 , 15, 15, 15]">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-main-clinical-findings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;D.1: Main findings of the included studies on clinical cardiovascular outcomes. WIP: Still need to add suppl. files, and adjustment column
+</figcaption>
+<div aria-describedby="tbl-main-clinical-findings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Outcome, reference, and continuous glucose monitoring metrics</th>
+<th style="text-align: left;">Unadjusted or least adjusted findings</th>
+<th style="text-align: center;"><span class="math inline">\(P\)</span> value for the least adjusted findings</th>
+<th style="text-align: left;">Most adjusted findings</th>
+<th style="text-align: center;"><span class="math inline">\(P\)</span> value for the most adjusted findings</th>
+<th style="text-align: left;">Adjustments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Cardiovascular Mortality</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Model 1:</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">&nbsp;&nbsp; Demographic</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Lu et al<span class="citation" data-cites="Lu2021"><sup><a href="references.html#ref-Lu2021" role="doc-biblioref">1</a></sup></span>, 2021</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Model 2:</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR <span class="math inline">\(&gt;85\%\)</span></td>
+<td style="text-align: left;">HR 1.00</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span> (trend)</td>
+<td style="text-align: left;">HR 1.00</td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span> (trend)</td>
+<td style="text-align: left;">Demographic</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR <span class="math inline">\(71\%-85\%\)</span></td>
+<td style="text-align: left;">HR: 1.43<br> (0.95–2.14)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span> (trend)</td>
+<td style="text-align: left;">HR: 1.35<br> (0.90–2.04)</td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span> (trend)</td>
+<td style="text-align: left;">&nbsp;&nbsp; Anthropometric</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR <span class="math inline">\(51\%-70\%\)</span></td>
+<td style="text-align: left;">HR: 1.66<br> (1.12–2.45)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span> (trend)</td>
+<td style="text-align: left;">HR: 1.47<br> (0.99–2.19)</td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span> (trend)</td>
+<td style="text-align: left;">&nbsp;&nbsp; Lifestyle</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR <span class="math inline">\(\ge 50\%\)</span></td>
+<td style="text-align: left;">HR: 2.15<br> (1.47–3.13)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span> (trend)</td>
+<td style="text-align: left;">HR: 1.85<br> (1.25–2.72)</td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span> (trend)</td>
+<td style="text-align: left;">&nbsp;&nbsp; Medical History</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR as a<br> continuous variable</td>
+<td style="text-align: left;">HR 1.08<br> (1.03–1.13)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">HR 1.05<br> (1.00–1.11)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">&nbsp;&nbsp; Physiological</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; (each <span class="math inline">\(10\%\)</span> decrease)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">&nbsp;&nbsp; Biochemical</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">&nbsp;&nbsp; Medication</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Least adjusted:</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">&nbsp;&nbsp; Unadjusted</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Most adjusted:</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wei et al<span class="citation" data-cites="Wei2019"><sup><a href="references.html#ref-Wei2019" role="doc-biblioref"><strong>Wei2019?</strong></a></sup></span><span class="math inline">\(^*\)</span>, 2019</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">&nbsp;&nbsp; Demographic</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Hypoglycemic events</td>
+<td style="text-align: left;">HR: 2.03<br> (1.21–3.41)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">HR: 2.64<br> (1.40–4.99)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">&nbsp;&nbsp; Anthropometric</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">&nbsp;&nbsp; Lifestyle</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">&nbsp;&nbsp; Medical History</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">&nbsp;&nbsp; Biochemical</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">&nbsp;&nbsp; Medication</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Major Adverse Cardiovascular Events</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">He et al<span class="citation" data-cites="He2023"><sup><a href="references.html#ref-He2023" role="doc-biblioref"><strong>He2023?</strong></a></sup></span>, 2023</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Blood glucose<br> risk index</td>
+<td style="text-align: left;">HR: 0.97<br> (0.85–1.10)</td>
+<td style="text-align: center;"><span class="math inline">\(0.61\)</span></td>
+<td style="text-align: left;">HR: 0.98<br> (0.85–1.13)</td>
+<td style="text-align: center;"><span class="math inline">\(0.75\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Low blood glucose<br> index</td>
+<td style="text-align: left;">HR: 2.37<br> (1.16–4.83)</td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span></td>
+<td style="text-align: left;">HR: 2.73<br>( 1.21–6.16)</td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; High blood glucose <br> index</td>
+<td style="text-align: left;">HR: 0.94<br> (0.81–1.08)</td>
+<td style="text-align: center;"><span class="math inline">\(0.38\)</span></td>
+<td style="text-align: left;">HR: 0.94<br> (0.81–1.09)</td>
+<td style="text-align: center;"><span class="math inline">\(0.44\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Average of<br> daily risk range</td>
+<td style="text-align: left;">HR: 1.00<br> (0.93–1.07)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.99\)</span></td>
+<td style="text-align: left;">HR: 1.01<br> (0.93–1.09)</td>
+<td style="text-align: center;"><span class="math inline">\(0.80\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; GMI</td>
+<td style="text-align: left;">HR: 0.98<br> (0.91–1.06)</td>
+<td style="text-align: center;"><span class="math inline">\(0.65\)</span></td>
+<td style="text-align: left;">HR: 0.99<br>(0.91–1.07)</td>
+<td style="text-align: center;"><span class="math inline">\(0.78\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; M-value</td>
+<td style="text-align: left;">HR: 0.98<br> (0.91–1.05)</td>
+<td style="text-align: center;"><span class="math inline">\(0.54\)</span></td>
+<td style="text-align: left;">HR: 0.98<br>(0.91–1.06)</td>
+<td style="text-align: center;"><span class="math inline">\(0.64\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wei et al<span class="citation" data-cites="Wei2019"><sup><a href="references.html#ref-Wei2019" role="doc-biblioref"><strong>Wei2019?</strong></a></sup></span><span class="math inline">\(^*\)</span>, 2019</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Hypoglycemic events</td>
+<td style="text-align: left;">HR: 1.501<br> (1.207–1.866)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">HR: 1.615<br> (1.239–2.106)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Macrovascular Complications</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">De Meulemeester et al<span class="citation" data-cites="Meulemeester2024"><sup><a href="references.html#ref-Meulemeester2024" role="doc-biblioref"><strong>Meulemeester2024?</strong></a></sup></span><span class="math inline">\(^{\dagger,*}\)</span>, 2024</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR</td>
+<td style="text-align: left;">OR: 0.939<br> (0.829–1.063)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;">OR: 0.896<br> (0.738–1.087)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TITR</td>
+<td style="text-align: left;">OR: 0.901<br> (0.775–1.047)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;">OR: 0.933<br> (0.745–1.169)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bezerra et al<span class="citation" data-cites="Bezerra2023"><sup><a href="references.html#ref-Bezerra2023" role="doc-biblioref"><strong>Bezerra2023?</strong></a></sup></span>, 2023</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR</td>
+<td style="text-align: left;">OR: 0.66<br> (0.46–0.93)</td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span></td>
+<td style="text-align: left;">OR: 0.68<br> (0.39–1.16)</td>
+<td style="text-align: center;"><span class="math inline">\(0.15\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Time below 54 mg/dL</td>
+<td style="text-align: left;">OR: 1.10<br> (0.88–1.38)</td>
+<td style="text-align: center;"><span class="math inline">\(0.39\)</span></td>
+<td style="text-align: left;">OR: 0.92<br> (0.62–1.34)</td>
+<td style="text-align: center;"><span class="math inline">\(0.65\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TBR</td>
+<td style="text-align: left;">OR: 0.93<br> (0.80–1.09)</td>
+<td style="text-align: center;"><span class="math inline">\(0.39\)</span></td>
+<td style="text-align: left;">OR: 0.77<br> (0.54–1.11)</td>
+<td style="text-align: center;"><span class="math inline">\(0.17\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TAR</td>
+<td style="text-align: left;">OR: 1.04<br> (1.01–1.08)</td>
+<td style="text-align: center;"><span class="math inline">\(0.01\)</span></td>
+<td style="text-align: left;">OR: 1.04<br> (0.99–1.10)</td>
+<td style="text-align: center;"><span class="math inline">\(0.08\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Time above 250 mg/dL</td>
+<td style="text-align: left;">OR: 1.04<br> (1.00–1.08)</td>
+<td style="text-align: center;"><span class="math inline">\(0.03\)</span></td>
+<td style="text-align: left;">OR: 1.03<br> (0.97–1.09)</td>
+<td style="text-align: center;"><span class="math inline">\(0.29\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; CV</td>
+<td style="text-align: left;">OR: 1.03<br> (0.95–1.11)</td>
+<td style="text-align: center;"><span class="math inline">\(0.52\)</span></td>
+<td style="text-align: left;">OR: 0.92<br> (0.81–1.06)</td>
+<td style="text-align: center;"><span class="math inline">\(0.25\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; GMI</td>
+<td style="text-align: left;">OR: 2.17<br> (1.14–4.11)</td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span></td>
+<td style="text-align: left;">OR: 2.03<br> (0.77–5.37)</td>
+<td style="text-align: center;"><span class="math inline">\(0.15\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Deng et al<span class="citation" data-cites="Deng2023"><sup><a href="references.html#ref-Deng2023" role="doc-biblioref"><strong>Deng2023?</strong></a></sup></span>, 2023</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; <span class="math inline">\(\%\)</span> CV tertile 1 (Hp1; reference)</td>
+<td style="text-align: left;">OR: 1.000</td>
+<td style="text-align: center;"><span class="math inline">\(0.07\)</span> (interaction)</td>
+<td style="text-align: left;">OR: 1.000</td>
+<td style="text-align: center;"><span class="math inline">\(0.008\)</span> (interaction)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; <span class="math inline">\(\%\)</span> CV tertile 1 (Hp2-2; reference)</td>
+<td style="text-align: left;">OR: 1.000</td>
+<td style="text-align: center;"><span class="math inline">\(0.07\)</span> (interaction)</td>
+<td style="text-align: left;">OR: 1.000</td>
+<td style="text-align: center;"><span class="math inline">\(0.008\)</span> (interaction)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; <span class="math inline">\(\%\)</span> CV tertile 2 (Hp1)</td>
+<td style="text-align: left;">OR: 1.483<br> (0.907–2.423)</td>
+<td style="text-align: center;"><span class="math inline">\(0.12\)</span></td>
+<td style="text-align: left;">OR: 1.048<br> (0.528–2.078)</td>
+<td style="text-align: center;"><span class="math inline">\(0.89\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; <span class="math inline">\(\%\)</span> CV tertile 2 (Hp2-2)</td>
+<td style="text-align: left;">OR: 1.399<br> (0.829–2.358)</td>
+<td style="text-align: center;"><span class="math inline">\(0.21\)</span></td>
+<td style="text-align: left;">OR: 0.659<br> (0.296–1.466)</td>
+<td style="text-align: center;"><span class="math inline">\(0.31\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; <span class="math inline">\(\%\)</span> CV tertile 3 (Hp1)</td>
+<td style="text-align: left;">OR: 2.347<br> (1.393–3.957)</td>
+<td style="text-align: center;"><span class="math inline">\(0.001\)</span></td>
+<td style="text-align: left;">OR: 2.461<br> (1.183–5.121)</td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; <span class="math inline">\(\%\)</span> CV tertile 3 (Hp2-2)</td>
+<td style="text-align: left;">OR: 1.217<br> (0.731–2.027)</td>
+<td style="text-align: center;"><span class="math inline">\(0.45\)</span></td>
+<td style="text-align: left;">OR: 0.540<br> (0.245–1.191)</td>
+<td style="text-align: center;"><span class="math inline">\(0.13\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">El Malahi et al<span class="citation" data-cites="Malahi2022"><sup><a href="references.html#ref-Malahi2022" role="doc-biblioref"><strong>Malahi2022?</strong></a></sup></span>, 2022</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; SD</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; CV</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Magri et al<span class="citation" data-cites="Magri2018"><sup><a href="references.html#ref-Magri2018" role="doc-biblioref">2</a></sup></span><span class="math inline">\(^\dagger\)</span>, 2018</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TBR</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 1.12<br> (1.014–1.228)</td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Lowest BG value</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Area under the TBR curve</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Coronary Artery Disease</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">De Meulemeester et al<span class="citation" data-cites="Meulemeester2024"><sup><a href="references.html#ref-Meulemeester2024" role="doc-biblioref"><strong>Meulemeester2024?</strong></a></sup></span><span class="math inline">\(^{\dagger,*}\)</span>, 2024</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TITR</td>
+<td style="text-align: left;">OR: 1.039<br> (0.812–1.330)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;">OR: 1.255<br> (0.874–1.803)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR</td>
+<td style="text-align: left;">OR: 1.072<br> (0.866–1.328)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;">OR: 1.164<br> (0.844–1.607)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sheng et al<span class="citation" data-cites="Sheng2023"><sup><a href="references.html#ref-Sheng2023" role="doc-biblioref"><strong>Sheng2023?</strong></a></sup></span>, 2023</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR <span class="math inline">\(&lt;20\%\)</span></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 2.143<br> (1.554–3.287)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR <span class="math inline">\(20\%-40\%\)</span></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 1.049<br> (0.945–2.022)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR <span class="math inline">\(40\%-60\%\)</span></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR 0.854 (0.495–1.473)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR <span class="math inline">\(60\%-80\%\)</span></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 0.617<br> (0.423–1.312)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR <span class="math inline">\(&gt;80\%\)</span></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 0.470<br> (0.143–1.545)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Chen et al<span class="citation" data-cites="Chen2020"><sup><a href="references.html#ref-Chen2020" role="doc-biblioref"><strong>Chen2020?</strong></a></sup></span><span class="math inline">\(^{\dagger,*}\)</span>, 2020</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Controls with</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; SD <span class="math inline">\(&lt;1.40\)</span> mmol/L,</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MAGE <span class="math inline">\(&lt;3.90\)</span> mmol/L,</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(\chi^2 = 5.797\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; LAGE <span class="math inline">\(&lt;4.40\)</span> mmol/L,</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MODD <span class="math inline">\(&lt;0.83\)</span> mmol/L</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; versus high BG fluctuations (angina pectoris)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Controls with</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; SD <span class="math inline">\(&lt;1.40\)</span> mmol/L,</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MAGE <span class="math inline">\(&lt;3.90\)</span> mmol/L,</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(\chi^2 = 7.490\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0.006\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; LAGE <span class="math inline">\(&lt;4.40\)</span> mmol/L,</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MODD <span class="math inline">\(&lt;0.83\)</span> mmol/L</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; versus high BG fluctuations (angina pectoris)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wei et al<span class="citation" data-cites="Wei2019"><sup><a href="references.html#ref-Wei2019" role="doc-biblioref"><strong>Wei2019?</strong></a></sup></span><span class="math inline">\(^*\)</span>, 2019</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Hypoglycemic events<br> (myocardial Infarction)</td>
+<td style="text-align: left;">HR: 1.901<br> (1.067–3.389)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">HR: 1.549<br> (0.768–3.124)</td>
+<td style="text-align: center;"><span class="math inline">\(0.03\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Hypoglycemic events<br> (unstable angina pectoris)</td>
+<td style="text-align: left;">HR: 1.226<br> (0.857–1.753)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">HR: 1.218<br> (0.794–1.869)</td>
+<td style="text-align: center;"><span class="math inline">\(0.30\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Shu-Hua et al<span class="citation" data-cites="Hua2012"><sup><a href="references.html#ref-Hua2012" role="doc-biblioref"><strong>Hua2012?</strong></a></sup></span><span class="math inline">\(^e\)</span>, 2012</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MAGE level (<span class="math inline">\(\ge 3.4\)</span> mmol/L)</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 2.286<br> (1.176–4.446)</td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Su et al<span class="citation" data-cites="Su2011"><sup><a href="references.html#ref-Su2011" role="doc-biblioref">3</a></sup></span><span class="math inline">\(^*\)</span>, 2011</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MAGE <span class="math inline">\(\ge 3.4\)</span> mmol/L</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 2.612<br> (1.423–4.831)</td>
+<td style="text-align: center;"><span class="math inline">\(0.002\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MAGE</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">AUC: 0.618<br> (0.555–0.680)</td>
+<td style="text-align: center;"><span class="math inline">\(0.001\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Gensini Score</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Chen et al<span class="citation" data-cites="Chen2020"><sup><a href="references.html#ref-Chen2020" role="doc-biblioref"><strong>Chen2020?</strong></a></sup></span><span class="math inline">\(^{\dagger,*}\)</span>, 2020</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Controls with</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; SD <span class="math inline">\(&lt;1.40\)</span> mmol/L,</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MAGE <span class="math inline">\(&lt;3.90\)</span> mmol/L,</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(t = 6.210\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; LAGE <span class="math inline">\(&lt;4.40\)</span> mmol/L,</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MODD <span class="math inline">\(&lt;0.83\)</span> mmol/L</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Watanabe et al<span class="citation" data-cites="Watanabe2017"><sup><a href="references.html#ref-Watanabe2017" role="doc-biblioref"><strong>Watanabe2017?</strong></a></sup></span><span class="math inline">\(^*\)</span>, 2017</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MAGE</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(r = 0.742\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Shu-Hua et al<span class="citation" data-cites="Hua2012"><sup><a href="references.html#ref-Hua2012" role="doc-biblioref"><strong>Hua2012?</strong></a></sup></span><span class="math inline">\(^*\)</span>, 2012</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Unstandardized coefficient</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(\beta = 4.817\)</span>;</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MAGE</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">SE = 1.164;</td>
+<td style="text-align: center;"><span class="math inline">\(0.003\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Standardized coefficient</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(t = 2.984\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Su et al<span class="citation" data-cites="Su2011"><sup><a href="references.html#ref-Su2011" role="doc-biblioref">3</a></sup></span><span class="math inline">\(^*\)</span>, 2011</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Unstandardized</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(\beta = 7.010\)</span>;</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MAGE</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">SE = 1.466;</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">standardized</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(\beta = 0.237\)</span>;</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(t = 4.783\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Syntax Score</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Watanabe et al<span class="citation" data-cites="Watanabe2017"><sup><a href="references.html#ref-Watanabe2017" role="doc-biblioref"><strong>Watanabe2017?</strong></a></sup></span><span class="math inline">\(^*\)</span>, 2017</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MAGE</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(r = 0.776\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Zhang et al<span class="citation" data-cites="Zhang2013"><sup><a href="references.html#ref-Zhang2013" role="doc-biblioref">4</a></sup></span><span class="math inline">\(^*\)</span>, 2013</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; MAGE</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(r = 0.518\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0.01\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; BG fluctuations from 00:00 to 03:00</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(r = -0.442\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0.04\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; BG fluctuations from 03:00 to 06:00</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(r = -0.208\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0.34\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; BG fluctuations from 06:00 to 08:00</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(r = 0.678\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; BG fluctuations from 08:00 to 11:00</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(r = 0.115\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0.60\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; BG fluctuations from 11:00 to 13:00</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(r = 0.523\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0.01\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; BG fluctuations from 13:00 to 17:00</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(r = 0.257\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0.24\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; BG fluctuations from 17:00 to 19:00</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(r = 0.358\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0.09\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; BG fluctuations from 19:00 to 24:00</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><span class="math inline">\(r = -0.018\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0.93\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Stroke</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">De Meulemeester et al<span class="citation" data-cites="Meulemeester2024"><sup><a href="references.html#ref-Meulemeester2024" role="doc-biblioref"><strong>Meulemeester2024?</strong></a></sup></span><span class="math inline">\(^{\dagger,*}\)</span>, 2024</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TITR</td>
+<td style="text-align: left;">OR 0.651 (0.470–0.902)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.05\)</span></td>
+<td style="text-align: left;">OR 0.546 (0.347–0.858)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.01\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR</td>
+<td style="text-align: left;">OR 0.749 (0.588–0.955)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.05\)</span></td>
+<td style="text-align: left;">OR 0.617 (0.440–0.866)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.01\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Guo et al<span class="citation" data-cites="Guo2021"><sup><a href="references.html#ref-Guo2021" role="doc-biblioref"><strong>Guo2021?</strong></a></sup></span><span class="math inline">\(^*\)</span>, 2021</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR: Q1 (<span class="math inline">\(\le 46\%\)</span>; reference)</td>
+<td style="text-align: left;">OR: 1.00</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;">OR: 1.00 <br></td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR: Q2 (<span class="math inline">\(46\%-65\%\)</span>)</td>
+<td style="text-align: left;">OR: 0.86 <br>(0.72–0.95)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;">OR: 0.80 <br>(0.68–0.92)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR: Q3 (<span class="math inline">\(65\%-81\%\)</span>)</td>
+<td style="text-align: left;">OR: 0.71 <br>(0.61–0.81)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;">OR: 0.64 <br>(0.53–0.79)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR: Q4 (<span class="math inline">\(&gt;81\%\)</span>)</td>
+<td style="text-align: left;">OR: 0.66 <br>(0.58–0.80)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;">OR: 0.59 <br>(0.50–0.74)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR (per <span class="math inline">\(10\%\)</span> increase)</td>
+<td style="text-align: left;">OR: 0.93 <br>(0.85–0.98)</td>
+<td style="text-align: center;"><span class="math inline">\(0.008\)</span></td>
+<td style="text-align: left;">OR: 0.89 <br>(0.82–0.95)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wei et al<span class="citation" data-cites="Wei2019"><sup><a href="references.html#ref-Wei2019" role="doc-biblioref"><strong>Wei2019?</strong></a></sup></span><span class="math inline">\(^*\)</span>, 2019</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; Hypoglycemic events</td>
+<td style="text-align: left;">HR: 1.691<br> (1.144–2.499)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">HR: 1.813<br> (1.110–2.960)</td>
+<td style="text-align: center;"><span class="math inline">\(0.06\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Peripheral artery disease</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">De Meulemeester et al<span class="citation" data-cites="Meulemeester2024"><sup><a href="references.html#ref-Meulemeester2024" role="doc-biblioref"><strong>Meulemeester2024?</strong></a></sup></span><span class="math inline">\(^{\dagger,*}\)</span>, 2024</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TITR</td>
+<td style="text-align: left;">OR 0.680 (0.426–1.085)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;">OR 0.807 (0.382–1.703)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR</td>
+<td style="text-align: left;">OR 0.736 (0.520–1.042)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;">OR 0.811 (0.470–1.398)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt;0.05\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Lower Extremity Arterial Disease</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Li et al<span class="citation" data-cites="Li2020"><sup><a href="references.html#ref-Li2020" role="doc-biblioref"><strong>Li2020?</strong></a></sup></span>, 2020</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR</td>
+<td style="text-align: left;">OR: 0.97<br>9 (0.968–0.991)</td>
+<td style="text-align: center;"><span class="math inline">\(&lt;0.001\)</span></td>
+<td style="text-align: left;">OR: 0.97<br>9 (0.965–0.992)</td>
+<td style="text-align: center;"><span class="math inline">\(0.002\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; CV</td>
+<td style="text-align: left;">OR: 1.04<br>0 (1.003–1.078)</td>
+<td style="text-align: center;"><span class="math inline">\(0.04\)</span></td>
+<td style="text-align: left;">OR: 1.03<br>8 (0.996–1.081)</td>
+<td style="text-align: center;"><span class="math inline">\(0.08\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; SD</td>
+<td style="text-align: left;">OR: 1.32<br>5 (1.038–1.691)</td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span></td>
+<td style="text-align: left;">OR: 1.15<br>8 (0.824–1.627)</td>
+<td style="text-align: center;"><span class="math inline">\(0.40\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR-without LEAD (1)</td>
+<td style="text-align: left;">OR: 1.00</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 1.00</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR-mild LEAD (1)</td>
+<td style="text-align: left;">OR: 0.98<br> (0.97–1.00)</td>
+<td style="text-align: center;"><span class="math inline">\(0.14\)</span></td>
+<td style="text-align: left;">OR: 0.99<br> (0.97–1.01)</td>
+<td style="text-align: center;"><span class="math inline">\(0.25\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR-moderate LEAD (1)</td>
+<td style="text-align: left;">OR: 0.97<br> (0.95–0.99)</td>
+<td style="text-align: center;"><span class="math inline">\(0.007\)</span></td>
+<td style="text-align: left;">OR: 0.97<br> (0.95–0.99)</td>
+<td style="text-align: center;"><span class="math inline">\(0.01\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR-without severe LEAD (1)</td>
+<td style="text-align: left;">OR: 0.96<br> (0.94–0.98)</td>
+<td style="text-align: center;"><span class="math inline">\(0.002\)</span></td>
+<td style="text-align: left;">OR: 0.96<br> (0.94–0.98)</td>
+<td style="text-align: center;"><span class="math inline">\(0.003\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; CV-without LEAD</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 1.00</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; CV-mild LEAD</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 1.03<br> (0.98–1.07)</td>
+<td style="text-align: center;"><span class="math inline">\(0.28\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; CV-moderate LEAD</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 1.02<br> (0.96–1.09)</td>
+<td style="text-align: center;"><span class="math inline">\(0.48\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; CV-without severe LEAD</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 1.02<br> (0.95–1.09)</td>
+<td style="text-align: center;"><span class="math inline">\(0.60\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR-without LEAD (2)</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 1.00</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR-mild LEAD (2)</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 0.97<br> (0.96–1.08)</td>
+<td style="text-align: center;"><span class="math inline">\(0.06\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR-moderate LEAD (2)</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 0.98<br> (0.95–0.99)</td>
+<td style="text-align: center;"><span class="math inline">\(0.01\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; TIR-without severe LEAD (2)</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 0.97<br> (0.95–0.99)</td>
+<td style="text-align: center;"><span class="math inline">\(0.02\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; SD-without LEAD</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 1.00</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; SD-mild LEAD</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 0.88<br> (0.47–1.64)</td>
+<td style="text-align: center;"><span class="math inline">\(0.69\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; SD-moderate LEAD</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 1.28<br> (0.58–3.07)</td>
+<td style="text-align: center;"><span class="math inline">\(0.58\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp; SD-without severe LEAD</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">OR: 1.52<br> (0.92–2.41)</td>
+<td style="text-align: center;"><span class="math inline">\(0.10\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p style="font-size:75%">
+All hazard ratios (HRs), odds ratios (ORs), and areas under the curve (AUCs) are reported as follows: point estimate (<span class="math inline">\(95\%\)</span> CI).&nbsp; <span class="math inline">\(^*\)</span> This study appears multiple times as it investigated multiple cardiovascular disease outcomes.<br>
+<span class="math inline">\(^\dagger\)</span> This study appears in both the clinical and subclinical disease outcome tables owing to the investigation of multiple cardiovascular disease outcomes.<br>
+The full table with adjustments is provided in <strong>Multimedia Appendix 10</strong>. Further elaboration on the adjusted variables can be found in <strong>Multimedia Appendices 7 and 8</strong>.<br>
+<em>Abbreviations:</em> nr: Not applicable or not available/not reported, TIR: time in range, GMI: glucose management indicator, TITR: time in tight range, TBR: time below range, TAR: time above range, CV: coefficient of variation, BG: blood glucose, MAGE: mean amplitude of glycemic excursions, LAGE: largest amplitude of glycemic excursions, MODD: mean of daily differences, LEAD: lower extremity arterial disease.<br>
+
+</p>
+</div>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="sec-suppl-pred-stability" class="level1" data-number="E">
 <h1 data-number="E"><span class="header-section-number">E</span> Study II: Prediction stability</h1>
@@ -986,6 +2407,20 @@ Table&nbsp;F.2: Results from the Surveillance Error Grid for Black participants.
 </div>
 
 
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-Lu2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Lu J, Wang C, Shen Y, et al. Time in range in relation to all-cause and cardiovascular mortality in patients with type 2 diabetes: A prospective cohort study. Diabetes care 2021;44(2):549–55. </div>
+</div>
+<div id="ref-Magri2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Magri CJ, Mintoff D, Camilleri L, Xuereb RG, Galea J, Fava S. Relationship of hyperglycaemia, hypoglycaemia, and glucose variability to atherosclerotic disease in type 2 diabetes. Journal of Diabetes Research [Internet] 2018;2018(1):7464320. Available from: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1155/2018/7464320">https://onlinelibrary.wiley.com/doi/abs/10.1155/2018/7464320</a></div>
+</div>
+<div id="ref-Su2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Su G, Mi S, Tao H, et al. Association of glycemic variability and the presence and severity of coronary artery disease in patients with type 2 diabetes. Cardiovascular diabetology 2011;10(1):19–9. </div>
+</div>
+<div id="ref-Zhang2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Zhang X, Xu X, Jiao X, et al. The effects of glucose fluctuation on the severity of coronary artery disease in type 2 diabetes mellitus. Journal of diabetes research 2013;2013(2013):1–6. </div>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -1396,9 +2831,6 @@ Table&nbsp;F.2: Results from the Surveillance Error Grid for Black participants.
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./app2-addendum.html" class="pagination-link" aria-label="Addenda and errata">
-        <span class="nav-page-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Addenda and errata</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

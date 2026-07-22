@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Discussion – Machine learning methods for continuous glucose monitoring data and their potential in cardiovascular risk assessment</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./7-conclusions.html" rel="next">
+<link href="./4-results.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-82cb5808e81da3454e8042d903791e03.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>
+main.content {
+  text-align: justify;
+}
+</style>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./5-discussion.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discussion</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Machine learning methods for continuous glucose monitoring data and their potential in cardiovascular risk assessment</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cover Page</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Papers in the dissertation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0-abbreviations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abbreviations</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-aims.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Aims</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Methods</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4-results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Results</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5-discussion.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discussion</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7-conclusions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./app1-supplementary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Study I: Search strings</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#evidence-for-cgm-in-cardiovascular-risk-assessment" id="toc-evidence-for-cgm-in-cardiovascular-risk-assessment" class="nav-link active" data-scroll-target="#evidence-for-cgm-in-cardiovascular-risk-assessment"><span class="header-section-number">5.1</span> Evidence for CGM in Cardiovascular Risk Assessment</a></li>
+  <li><a href="#learning-meaningful-representations-from-cgm-data" id="toc-learning-meaningful-representations-from-cgm-data" class="nav-link" data-scroll-target="#learning-meaningful-representations-from-cgm-data"><span class="header-section-number">5.2</span> Learning Meaningful Representations from CGM data</a></li>
+  <li><a href="#incremental-value-of-cgm-derived-information-for-nt-probnp-prediction" id="toc-incremental-value-of-cgm-derived-information-for-nt-probnp-prediction" class="nav-link" data-scroll-target="#incremental-value-of-cgm-derived-information-for-nt-probnp-prediction"><span class="header-section-number">5.3</span> Incremental Value of CGM-derived Information for NT-proBNP Prediction</a></li>
+  <li><a href="#fairness-of-cgm-based-machine-learning-models" id="toc-fairness-of-cgm-based-machine-learning-models" class="nav-link" data-scroll-target="#fairness-of-cgm-based-machine-learning-models"><span class="header-section-number">5.4</span> Fairness of CGM-based Machine Learning Models</a></li>
+  <li><a href="#methodological-considerations" id="toc-methodological-considerations" class="nav-link" data-scroll-target="#methodological-considerations"><span class="header-section-number">5.5</span> Methodological Considerations</a>
+  <ul class="collapse">
+  <li><a href="#the-cgmformer-and-cosine-distances" id="toc-the-cgmformer-and-cosine-distances" class="nav-link" data-scroll-target="#the-cgmformer-and-cosine-distances"><span class="header-section-number">5.5.1</span> The CGMformer and Cosine Distances</a></li>
+  <li><a href="#prediction-of-nt-probnp" id="toc-prediction-of-nt-probnp" class="nav-link" data-scroll-target="#prediction-of-nt-probnp"><span class="header-section-number">5.5.2</span> Prediction of NT-proBNP</a></li>
+  <li><a href="#fairness-in-clinical-prediction-models" id="toc-fairness-in-clinical-prediction-models" class="nav-link" data-scroll-target="#fairness-in-clinical-prediction-models"><span class="header-section-number">5.5.3</span> Fairness in Clinical Prediction Models</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discussion</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The overall aim of this thesis was to investigate the potential of CGM data and machine learning methods for cardiovascular risk assessment. To address this aim, the thesis combined a systematic evaluation of the existing literature with the assessment of foundation model-derived glucose representations and an investigation of algorithmic fairness in glucose prediction. The following discussion integrates the findings of these three studies, and considers their methods and results in relation to existing literature.</p>
+<section id="evidence-for-cgm-in-cardiovascular-risk-assessment" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="evidence-for-cgm-in-cardiovascular-risk-assessment"><span class="header-section-number">5.1</span> Evidence for CGM in Cardiovascular Risk Assessment</h2>
+<!-- **Aim 1:** To identify and summarize the existing literature on associations between glycemic control and cardiovascular outcomes, including the use of CGM-derived metrics for cardiovascular risk prediction. *(Study I)* -->
+<p>Through the literature 53 studies were identified as investigating the link between CGM-data and CVD outcomes. There were very inconsistent findings across the literature. A wide range of CGM-derived metrics were investigated in relation to both clinical and subclinical cardiovascular outcomes, and the statistical adjustment strategies varied considerably between studies. It was observed that studies focusing on people with T2D had bigger study populations and more consistently found evidence for associations compared to studies focusing on people with T1D which may indicate a lack of statistical power in the studies with T1D, which may explain some of the inconsistencies across the studies uncovered in the scoping review. The current evidence base is also limited by its geographical concentration mainly in Asia and Europe and by its almost exclusive focus on association analyses. Only three studies included some prediction done with MAGE which shows a knowledge gap in the literature.</p>
+<p>The most frequently investigated CGM-derived metric was TIR, especially in analysis with clinical CVD however inconsistent results were found across studies and similar results were found in<span class="citation" data-cites="Yapanis2022"><sup><a href="references.html#ref-Yapanis2022" role="doc-biblioref">1</a></sup></span> The second most frequently investigated CGM-derived metric was MAGE. It seemed more consistently associated with coronary artery disease and severity scores, despite the smaller sample size compared to TIR however this is only based on a small section of the included studies. Furthermore, MAGE was the only CGM-derived metric evaluated for its predictive performance, and this was limited to coronary artery disease and subclinical peripheral artery disease. Although MAGE outperformed HbA1c as a predictor in these studies,<span class="citation" data-cites="Su2011 Mi2012"><sup><a href="references.html#ref-Su2011" role="doc-biblioref">2</a>,<a href="references.html#ref-Mi2012" role="doc-biblioref"><strong>Mi2012?</strong></a></sup></span> the prediction models demonstrated only modest discriminative ability. This may indicate that within-day glucose variability is a relevant cardiovascular risk factor. However, MAGE is not a complete measure of glucose variability and is biased toward detecting hyperglycemic excursions.<span class="citation" data-cites="ScR57"><sup><a href="references.html#ref-ScR57" role="doc-biblioref"><strong>ScR57?</strong></a></sup></span> Consequently, MAGE may underestimate the contribution of hypoglycemia to cardiovascular risk. Whereas some studies have reported associations between hyperglycemia-focused CGM-derived metrics and cardiovascular outcomes,<span class="citation" data-cites="Wakasugi2021 ScR43"><sup><a href="references.html#ref-Wakasugi2021" role="doc-biblioref">3</a>,<a href="references.html#ref-ScR43" role="doc-biblioref"><strong>ScR43?</strong></a></sup></span> others have reported associations between hypoglycemia-related CGM-derived metrics and cardiovascular outcomes,<span class="citation" data-cites="Magri ScR39 ScR46 ScR58 ScR59 ScR60"><sup><a href="references.html#ref-Magri" role="doc-biblioref"><strong>Magri?</strong></a>,<a href="references.html#ref-ScR39" role="doc-biblioref"><strong>ScR39?</strong></a>,<a href="references.html#ref-ScR46" role="doc-biblioref"><strong>ScR46?</strong></a>,<a href="references.html#ref-ScR58" role="doc-biblioref"><strong>ScR58?</strong></a>,<a href="references.html#ref-ScR59" role="doc-biblioref"><strong>ScR59?</strong></a>,<a href="references.html#ref-ScR60" role="doc-biblioref"><strong>ScR60?</strong></a></sup></span> with some concluding that hypoglycemic excursions are associated with macrovascular complications, whereas hyperglycemic excursions are associated with microvascular complications.<span class="citation" data-cites="Magri2018 Mesa2022"><sup><a href="references.html#ref-Magri2018" role="doc-biblioref">4</a>,<a href="references.html#ref-Mesa2022" role="doc-biblioref"><strong>Mesa2022?</strong></a></sup></span> Together, these findings suggest that although within-day glucose variability may be an important cardiovascular risk factor, both hyperglycemia and hypoglycemia may contribute to cardiovascular risk and should be considered when evaluating CGM-derived metrics.</p>
+<p>Another component playing into the heterogeneity of the studies where the difference in how the statistical analysis were performed. CGM-derived metrics were defined calculated over different time periods or split up into ranges and thresholds were changed for acr{TIR}, <a href="#acronyms_TBR">time below range (TBR)</a> and <a href="#acronyms_TAR">time above range (TAR)</a> across different studies. Adjustment strategies varied substantially between studies, reflecting differences in study objectives and analytical approaches. Although most studies adjusted for established cardiovascular risk factors, particularly demographic characteristics, medical history, biochemical variables, and anthropometric measures, the covariates varied between studies, limiting direct comparability of the reported associations Only a minority of studies adjusted for additional CGM-derived metrics. Whether such adjustment is appropriate depends on the research question, as many CGM-derived metrics capture overlapping aspects of glycemic control. Furthermore, no substantial differences were observed between unadjusted and the most extensively adjusted estimates, suggesting that adjustment for additional covariates generally had only a modest influence on the reported associations.</p>
+<p>The heterogeneity of the literature, the limited evidence supporting individual CGM-derived metrics, and the challenges of describing glucose variability through CGM-derived metrics provided part of the rationale for evaluating foundation model-derived representations in the subsequent studies, as the complete CGM time series can be used directly without first reducing it to manually engineered CGM-derived metrics. As a result, information on hypoglycemia, hyperglycemia, mean glucose, glucose variability within and between days, and temporal glucose patterns can all be incorporated simultaneously.</p>
+</section>
+<section id="learning-meaningful-representations-from-cgm-data" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="learning-meaningful-representations-from-cgm-data"><span class="header-section-number">5.2</span> Learning Meaningful Representations from CGM data</h2>
+<!-- **Aim 2:** To determine whether a CGM foundation model learns meaningful and interpretable glucose representations in individuals with type 1 and type 2 diabetes. *(Study II)* -->
+<p>Study II showed that CGMformer, the foundation model developed by Lu et al.<span class="citation" data-cites="YurunLu2025"><sup><a href="references.html#ref-YurunLu2025" role="doc-biblioref">5</a></sup></span>, captured both long- and short-term glucose fluctuations, as assessed using conventional CGM-derived metrics, in individuals with T1D and T2D. However, the learned representations (embeddings) did not show clear patterns when stratified by CVD-related variables or race. Nevertheless, these findings suggest that CGMformer can generalize beyond its original training population of Chinese individuals with normal glucose tolerance, impaired glucose regulation, and T2D, because it captured clinically meaningful glycemic patterns in both the Danish CANCAN cohort of people with advanced T2D and the US T1DX cohort of people with T1D.</p>
+<p>In our study, cosine distances were lower within-participants than between-participants, indicating that the CGM embeddings captured participant-specific patterns. Similar findings have been reported by Lu et al,<span class="citation" data-cites="YurunLu2025"><sup><a href="references.html#ref-YurunLu2025" role="doc-biblioref">5</a></sup></span> who observed higher within-participant cosine similarity, and by Lutsker et al,<span class="citation" data-cites="Lutsker2026"><sup><a href="references.html#ref-Lutsker2026" role="doc-biblioref">6</a></sup></span> who found lower within-participant cosine distances using the GLUFormer foundation model trained on an Israeli cohort from the Human Phenotype Project.<span class="citation" data-cites="Shilo2021"><sup><a href="references.html#ref-Shilo2021" role="doc-biblioref">7</a></sup></span> Collectively, these findings support that CGM foundation models learn stable, individualized representations of glucose dynamics while also capturing common glycemic characteristics shared among individuals with similar glucose control.as well as generalize across independent populations and diabetes types. By learning directly from the complete CGM time series, these representations provide an alternative to manually engineered CGM-derived metrics and establish a reusable foundation for downstream clinical applications. Similar transitions from manually extracted metrics to learned representations have driven performance improvements in fields such as computer vision and natural language processing, where pretrained foundation models have become the standard approach for downstream prediction tasks.<span class="citation" data-cites="Bommasani2022"><sup><a href="references.html#ref-Bommasani2022" role="doc-biblioref">8</a></sup></span> Whether these learned representations translate into improved predictive performance was subsequently investigated in Study II.</p>
+</section>
+<section id="incremental-value-of-cgm-derived-information-for-nt-probnp-prediction" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="incremental-value-of-cgm-derived-information-for-nt-probnp-prediction"><span class="header-section-number">5.3</span> Incremental Value of CGM-derived Information for NT-proBNP Prediction</h2>
+<!-- **Aim 3:** To evaluate whether conventional CGM-derived metrics and learned glucose representations improve prediction of elevated NT-proBNP beyond established clinical risk factors in individuals with type 2 diabetes. *(Study II)* -->
+<p>Although previous studies have successfully used foundation models to predict CVD-related outcomes, including macrovascular complications<span class="citation" data-cites="YurunLu2025"><sup><a href="references.html#ref-YurunLu2025" role="doc-biblioref">5</a></sup></span> and cardiovascular mortality<span class="citation" data-cites="Lutsker2026"><sup><a href="references.html#ref-Lutsker2026" role="doc-biblioref">6</a></sup></span>, the learned representations in the present study did not improve prediction of elevated NT-proBNP beyond established clinical predictors and were associated with increased model complexity. The optimism-corrected performance estimates indicate that the more complex models were susceptible to overfitting, reinforcing the conclusion that the learned representations did not provide robust improvements beyond established clinical predictors. This does not necessarily indicate that foundation model-derived representations are unsuitable for cardiovascular prediction. Rather, their performance may depend on the downstream modeling strategy. In the present study, the embeddings were incorporated as fixed predictors in logistic regression models, whereas Lu et al.<span class="citation" data-cites="YurunLu2025"><sup><a href="references.html#ref-YurunLu2025" role="doc-biblioref">5</a></sup></span> fine-tuned (transfer learning like transfer 1 in <a href="1-introduction.html#fig-tl" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>) the CGMformer and achieved an AUROC above 0.70 for predicting macrovascular complications. Similarly, Lutsker et al.<span class="citation" data-cites="Lutsker2026"><sup><a href="references.html#ref-Lutsker2026" role="doc-biblioref">6</a></sup></span> demonstrated that a GLUFormer-derived risk score outperformed HbA1c in stratifying individuals according to cardiovascular-related mortality risk. However, the limited sample size and the lack of datasets containing both CGM data and cardiovascular outcomes precluded the use of more complex downstream models and task-specific fine-tuning as performed in Lu et al,<span class="citation" data-cites="YurunLu2025"><sup><a href="references.html#ref-YurunLu2025" role="doc-biblioref">5</a></sup></span> and Lutsker et al,.<span class="citation" data-cites="Lutsker2026"><sup><a href="references.html#ref-Lutsker2026" role="doc-biblioref">6</a></sup></span> Furthermore, reducing the embeddings to UMAP dimensions may have resulted in the loss of predictive information, which could partly explain the limited performance of the prediction models. The different findings may also reflect differences in the predicted outcomes. Whereas previous studies predicted clinical cardiovascular events or mortality, the present study focused on elevated NT-proBNP, a biomarker that is affected not only by cardiac dysfunction but also by factors such as age, sex and renal function.<span class="citation" data-cites="Balion2008"><sup><a href="references.html#ref-Balion2008" role="doc-biblioref">9</a></sup></span> Consequently, glucose-derived embeddings may have a weaker relationship with NT-proBNP than with overt cardiovascular outcomes although this remains speculative Together, these findings suggest that the successful application of foundation model representations to complex clinical outcomes may depend on the downstream modelling strategy and having access to substantially larger datasets.</p>
+<p>While learned representations did not translate into improved prediction of elevated NT-proBNP, TIR and MAGE as standalone predictors did. Traditional CGM-derived metrics remain highly relevant for clinical prediction. Metrics such as TIR quantify well-established aspects of glycemic control, are readily understood by clinicians, and are already incorporated into routine diabetes management, particularly TIR. Their simplicity and established clinical interpretation make them useful reference measures when assessing whether more complex learned representations provide additional predictive information. Previous studies have likewise demonstrated prognostic value for MAGE in individuals with acute coronary syndrome<span class="citation" data-cites="Takahashi2018 Miyoshi2021"><sup><a href="references.html#ref-Takahashi2018" role="doc-biblioref">10</a>,<a href="references.html#ref-Miyoshi2021" role="doc-biblioref">11</a></sup></span>, and greater glucose variability has been associated with higher NT-proBNP concentrations in this population<span class="citation" data-cites="Miyoshi2021"><sup><a href="references.html#ref-Miyoshi2021" role="doc-biblioref">11</a></sup></span>. Participants with elevated NT-proBNP in the CANCAN cohort exhibited characteristics consistent with more advanced disease but also had lower BMI and more favorable glycemic profiles. Although these findings may appear counterintuitive, lower BMI has previously been associated with poorer outcomes in patients with established heart failure, while obesity is associated with lower circulating NT-proBNP concentrations<span class="citation" data-cites="Marcks2021"><sup><a href="references.html#ref-Marcks2021" role="doc-biblioref">12</a></sup></span>. Overall, these findings illustrate that the relationship between glycemic control, body composition, and cardiovascular risk is complex underscoring the importance of assessing CGM-derived measures within multivariable prediction models</p>
+<p>In Study II, when adding TIR and MAGE to the clinical prediction model resulted in a modest improvement in AUROC compared with the model based on clinical variables alone. However, the performance of these models should also be considered relative to a simpler benchmark model such as based on age alone. The simpler baseline model showed substantial predictive ability, consistent with the well-established association between increasing age and NT-proBNP concentrations in both healthy populations and individuals with T2D.<span class="citation" data-cites="Sabbatinelli2022"><sup><a href="references.html#ref-Sabbatinelli2022" role="doc-biblioref">13</a></sup></span> Together, these findings suggest that although readily available clinical variables capture much of the information relevant for predicting elevated NT-proBNP, CGM-data may still provide information that could contribute to future cardiovascular risk assessment.</p>
+</section>
+<section id="fairness-of-cgm-based-machine-learning-models" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="fairness-of-cgm-based-machine-learning-models"><span class="header-section-number">5.4</span> Fairness of CGM-based Machine Learning Models</h2>
+<!-- **Aim 4:** To evaluate the fairness of machine learning models for glucose prediction by assessing model performance across non-Hispanic Black and non-Hispanic White populations. *(Study III)* -->
+<p>While Studies II and III focused on whether foundation model-derived representations and conventional CGM-derived metrics improved cardiovascular risk prediction, the final aim of the thesis considered another important aspect of machine learning models: whether their performance is equitable across population subgroups.</p>
+<p>Although the primary focus of this thesis is cardiovascular risk assessment, glucose forecasting provides an appropriate setting for investigating algorithmic fairness in CGM-based machine learning. In contrast to participant-level cardiovascular prediction, glucose forecasting is trained on a continuous stream of CGM measurements, allowing each participant to contribute numerous prediction windows (samples) over the recording period rather than a single outcome. This results in substantially more training examples, enabling the development and evaluation of more complex machine learning models. Consequently, glucose forecasting provides a suitable framework for studying how training data composition influences model performance across demographic groups. Furthermore, automated insulin delivery (AID) systems are becoming increasingly sophisticated, with the long-term goal of approximating the physiological regulation of glucose by a healthy pancreas. However, the delayed onset and peak action of subcutaneously administered insulin limit the ability of these systems to respond rapidly to changing glucose concentrations.<span class="citation" data-cites="Rimon2024"><sup><a href="references.html#ref-Rimon2024" role="doc-biblioref">14</a></sup></span> Consequently, accurate short-term glucose forecasting has become increasingly important, particularly for anticipating postprandial glucose excursions and enabling earlier insulin adjustments to reduce the risk of both hyperglycemia and hypoglycemia.<span class="citation" data-cites="Rimon2024"><sup><a href="references.html#ref-Rimon2024" role="doc-biblioref">14</a></sup></span> As prediction models become increasingly integrated into diabetes management, ensuring that they perform equitably across patient populations is essential.<span class="citation" data-cites="Cronje2023"><sup><a href="references.html#ref-Cronje2023" role="doc-biblioref">15</a></sup></span></p>
+<p>Study III demonstrated that varying the racial composition of the training dataset was associated with statistically significant differences in model performance across racial groups when predicting future blood glucose values. Although these differences were statistically significant, they were small and unlikely to result in clinically meaningful disparities. This interpretation was supported by the Surveillance Error Grid, which indicated that the observed differences in predictive performance between racial groups had limited clinical impact. Nevertheless, the findings suggest that training data composition should be considered when developing and evaluating machine learning models intended for clinical use. The observed performance differences appeared to disappear following transfer learning, further suggesting that including data from underrepresented groups may help reduce such differences.</p>
+<p>Previous studies have demonstrated the potential of transfer learning to improve machine learning performance across a range of healthcare applications. For example, transfer learning has been associated with reduced performance disparities in multi-ethnic cancer omics datasets, suggesting that it may help mitigate the effects of imbalanced training data.<span class="citation" data-cites="Gao"><sup><a href="references.html#ref-Gao" role="doc-biblioref"><strong>Gao?</strong></a></sup></span> Similar benefits have been reported for personalized glucose prediction, where transfer learning has improved model performance across several prediction tasks.<span class="citation" data-cites="Kushner Seo2021"><sup><a href="references.html#ref-Kushner" role="doc-biblioref"><strong>Kushner?</strong></a>,<a href="references.html#ref-Seo2021" role="doc-biblioref"><strong>Seo2021?</strong></a></sup></span> In contrast, Mohebbi et al,<span class="citation" data-cites="Mohebbi"><sup><a href="references.html#ref-Mohebbi" role="doc-biblioref"><strong>Mohebbi?</strong></a></sup></span> did not observe an improvement with transfer learning and speculated that the limited size of the fine-tuning dataset may have contributed to this finding. Overall, the present findings are largely consistent with the existing literature, as the transfer learned models achieved the best overall performance while also reducing the performance differences observed between racial groups.</p>
+<p>The Surveillance Error Grid results were also comparable to those reported by van Doorn et al,<span class="citation" data-cites="vanDoorn2021"><sup><a href="references.html#ref-vanDoorn2021" role="doc-biblioref">16</a></sup></span> who evaluated glucose prediction models in people with type 1 diabetes using a similar experimental setting. This agreement suggests that the clinical risk associated with prediction errors observed in the present study is consistent with previous evaluations of deep learning-based glucose forecasting models.</p>
+</section>
+<section id="methodological-considerations" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="methodological-considerations"><span class="header-section-number">5.5</span> Methodological Considerations</h2>
+<!-- Study 1 -->
+<p>The principal strength and value of the scoping review lie in its comprehensive mapping of the literature, including the identification of more relevant studies than any previous review on the topic, to the best of my knowledge, as well as its differentiation between association and prediction studies, identification of methodological heterogeneity, and characterization of important evidence gaps. However, the heterogeneity identified through this review also limited the feasibility of synthesizing effect estimates consistently across studies. The findings were therefore presented descriptively by mapping the number of studies investigating different CGM-derived metrics and cardiovascular outcomes. Although this approach provides an overview of the scope and distribution of the existing evidence, it does not allow definitive conclusions to be drawn about the strength or consistency of associations between specific CGM-derived metrics and cardiovascular outcomes.</p>
+<p>Furthermore, the predominance of cross-sectional studies found in the scoping review further limited the clinical interpretation of the evidence identified. Without temporal separation between CGM exposure and cardiovascular outcomes, it is unclear whether the observed glucose patterns preceded cardiovascular disease or resulted from the disease itself, associated behavioural changes, or intensified treatment. Reverse causality could therefore either produce apparent associations that emerged only after the development of CVD or attenuate pre-existing associations through subsequent treatment and behavioural changes. Because few longitudinal studies were identified, it was not possible to determine whether this systematically influenced the findings or contributed to differences between cross-sectional and longitudinal studies.</p>
+<p>Furthermore, the focus in the review was to ensure to include all relevant studies in what was deemed the two most relevant biomedical databases by having a broad search strategy, this might have led to missing relevant studies in other databases.</p>
+<!-- Study 2 -->
+<section id="the-cgmformer-and-cosine-distances" class="level3" data-number="5.5.1">
+<h3 data-number="5.5.1" class="anchored" data-anchor-id="the-cgmformer-and-cosine-distances"><span class="header-section-number">5.5.1</span> The CGMformer and Cosine Distances</h3>
+<p>By externally evaluating CGMformer, developed by Lu et al.,<span class="citation" data-cites="YurunLu2025"><sup><a href="references.html#ref-YurunLu2025" role="doc-biblioref">5</a></sup></span> Study II contributes to the validation of existing models, as recommended by Efthimiou et al.<span class="citation" data-cites="Efthimiou2024"><sup><a href="references.html#ref-Efthimiou2024" role="doc-biblioref">17</a></sup></span> and provides evidence regarding the foundation model’s generalizability. For the evaluation of the foundation model, by combining comparisons with established CGM-derived metrics, cosine-distance analyses, and visualizations, the study assessed whether the representations captured clinically interpretable glycemic patterns as well as participant-specific characteristics. This provided greater insight into the content and potential utility of the learned representations. A limitation of the cosine-distance analyses was the complex dependence structure of the observations. Participants contributed multiple days of CGM data and could therefore be represented in multiple distance comparisons. Consequently, the observations were not independent, making a conventional Mann–Whitney U test inappropriate. Statistical significance would also be difficult to interpret because the large number of pairwise comparisons does not represent an equally large number of independent observations. Moreover, treating all pairwise distances as independent would overstate the effective sample size and could produce misleadingly small p-values. The cosine-distance results were therefore evaluated descriptively and visually, enabling exploration of potential group differences but not formal statistical inference.</p>
+</section>
+<section id="prediction-of-nt-probnp" class="level3" data-number="5.5.2">
+<h3 data-number="5.5.2" class="anchored" data-anchor-id="prediction-of-nt-probnp"><span class="header-section-number">5.5.2</span> Prediction of NT-proBNP</h3>
+<p>The use of bootstrapping with optimism correction allowed for robust internal validation, thereby reducing the risk of overfitting and overestimating the results which are important factors to take into consideration when working with real-world limited data. The relatively small sample size restricted the analyses because the available data were deemed insufficient for task-specific fine-tuning of CGMformer, and the embeddings were instead incorporated as fixed predictors in comparatively simple downstream models. Reducing the embeddings to UMAP dimensions made the number of predictors manageable relative to the sample size but may have discarded information relevant to NT-proBNP. Consequently, the available data did not permit evaluation of the embeddings under task-specific fine-tuning, and their potential prognostic value therefore remains undetermined. Furthermore, dichotomizing NT-proBNP at 125 pg/mL may be an imperfect replacement for cardiovascular risk and heart failure, limiting the extent to which the analysis could assess the relationship between CGM-derived representations and clinical cardiovascular outcomes. A more definitive evaluation would require substantially larger longitudinal datasets containing temporally aligned CGM measurements, relevant clinical covariates, and subsequent cardiovascular outcomes. However, such datasets remain rare, limiting opportunities for task-specific fine-tuning or the development of more complex prediction models. Access to these data would enable assessment of whether the embeddings provide prognostic information beyond established cardiovascular risk factors and conventional CGM-derived metrics.</p>
+</section>
+<section id="fairness-in-clinical-prediction-models" class="level3" data-number="5.5.3">
+<h3 data-number="5.5.3" class="anchored" data-anchor-id="fairness-in-clinical-prediction-models"><span class="header-section-number">5.5.3</span> Fairness in Clinical Prediction Models</h3>
+<p>A key strength of study III was its systematic evaluation of how the racial composition of training data influences predictive performance across groups. By examining multiple training strategies and varying group representation in the training data, the study provides a framework that could also be applied to fairness evaluations involving other populations, outcomes, and data modalities. The use of openly available data, together with publicly shared analytical code, further enhances the transparency and reproducibility of the study and facilitates extension of the approach in future research. However, the study included only non-Hispanic White and Black participants from the United States. Future studies should evaluate potential disparities across additional racial and ethnic groups and in other geographical settings. Fairness evaluations could also consider other demographic characteristics, such as age, given that glycemic control varies across the lifespan.<span class="citation" data-cites="Clements2016"><sup><a href="references.html#ref-Clements2016" role="doc-biblioref">18</a></sup></span> Although algorithmic fairness is most commonly evaluated for binary classification using established criteria such as demographic parity and equalized odds,<span class="citation" data-cites="gunnemyr_six_2023"><sup><a href="references.html#ref-gunnemyr_six_2023" role="doc-biblioref">19</a></sup></span> comparable approaches for forecasting tasks remain less developed. Study III therefore provides a novel framework for evaluating disparities in glucose forecasting. However, the analysis was computationally intensive because models were repeatedly trained across multiple racial compositions and training strategies. Even though only a shallow neural network was evaluated, the computational requirements were substantial, which may limit the feasibility of applying this framework to more complex models without access to considerable computing resources. The findings may also depend on the selected 60-minute prediction horizon. Although this horizon was chosen to allow time for potential preventive action, shorter forecasting horizons generally yield greater predictive accuracy. Future studies should determine whether the observed effects of racial composition and transfer learning are consistent across prediction horizons and when using CGM data with higher temporal resolution. In addition, the framework was evaluated using only a single US dataset and was not replicated in an independent cohort. Because the forecasting models were trained separately for each participant, external validation of the fitted models themselves was not directly applicable. However, evaluation in an independent dataset would be necessary to determine whether the observed group-level disparities and the effects of training-data composition generalize to other populations, CGM devices, and healthcare settings.</p>
+<p style="font-size:75%">
+</p>
+
+
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-Yapanis2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Yapanis M, James S, Craig ME, O’Neal D, Ekinci EI. Complications of diabetes and metrics of glycemic management derived from continuous glucose monitoring. The journal of clinical endocrinology and metabolism 2022;107(6):e2221–36. </div>
+</div>
+<div id="ref-Su2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Su G, Mi S, Tao H, et al. Association of glycemic variability and the presence and severity of coronary artery disease in patients with type 2 diabetes. Cardiovascular diabetology 2011;10(1):19–9. </div>
+</div>
+<div id="ref-Wakasugi2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Wakasugi S, Mita T, Katakami N, et al. Associations between continuous glucose monitoring-derived metrics and arterial stiffness in japanese patients with type 2 diabetes. Cardiovascular diabetology 2021;20(1):15–2. </div>
+</div>
+<div id="ref-Magri2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Magri CJ, Mintoff D, Camilleri L, Xuereb RG, Galea J, Fava S. Relationship of hyperglycaemia, hypoglycaemia, and glucose variability to atherosclerotic disease in type 2 diabetes. Journal of Diabetes Research [Internet] 2018;2018(1):7464320. Available from: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1155/2018/7464320">https://onlinelibrary.wiley.com/doi/abs/10.1155/2018/7464320</a></div>
+</div>
+<div id="ref-YurunLu2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Lu Y, Liu D, Liang Z, et al. A pretrained transformer model for decoding individual glucose dynamics from continuous glucose monitoring data. National science review 2025;12(5):nwaf039–. </div>
+</div>
+<div id="ref-Lutsker2026" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Lutsker G, Sapir G, Shilo S, et al. A foundation model for continuous glucose monitoring data. Nature (London) 2026;650(8103):978–86. </div>
+</div>
+<div id="ref-Shilo2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Shilo S, Bar N, Keshet A, et al. 10&nbsp;<span>K</span>: A large‐scale prospective longitudinal study in <span>Israel</span>. European Journal of Epidemiology [Internet] 2021 [cited 2026 July 18];36(11):1187–94. Available from: <a href="https://doi.org/10.1007/s10654-021-00753-5">https://doi.org/10.1007/s10654-021-00753-5</a></div>
+</div>
+<div id="ref-Bommasani2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Bommasani R, Hudson DA, Adeli E, et al. On the opportunities and risks of foundation models [Internet]. 2022;Available from: <a href="https://arxiv.org/abs/2108.07258">https://arxiv.org/abs/2108.07258</a></div>
+</div>
+<div id="ref-Balion2008" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Balion CM, Santaguida P, McKelvie R, et al. Physiological, pathological, pharmacological, biochemical and hematological factors affecting BNP and NT-proBNP. Clinical Biochemistry [Internet] 2008;41(4):231–9. Available from: <a href="https://www.sciencedirect.com/science/article/pii/S0009912007003918">https://www.sciencedirect.com/science/article/pii/S0009912007003918</a></div>
+</div>
+<div id="ref-Takahashi2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Takahashi H, Iwahashi N, Kirigaya J, et al. Glycemic variability determined with a continuous glucose monitoring system can predict prognosis after acute coronary syndrome. Cardiovascular diabetology 2018;17(1):116–0. </div>
+</div>
+<div id="ref-Miyoshi2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Miyoshi M, Uzui H, Shimizu T, et al. Significance of day-to-day glucose variability in patients after acute coronary syndrome. BMC Cardiovascular Disorders 2021;21(1):490–6. </div>
+</div>
+<div id="ref-Marcks2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Marcks N, Aimo A, Januzzi JL, et al. Re-appraisal of the obesity paradox in heart failure: A meta-analysis of individual data. Clinical Research in Cardiology 2021;110(8):1280–91. </div>
+</div>
+<div id="ref-Sabbatinelli2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Sabbatinelli J, Giuliani A, Bonfigli AR, et al. Prognostic value of soluble ST2, high-sensitivity cardiac troponin, and NT-proBNP in type 2 diabetes: A 15-year retrospective study. Cardiovascular diabetology 2022;21(1):1–15. </div>
+</div>
+<div id="ref-Rimon2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">Rimon MTI, Hasan MW, Hassan MF, Cesmeci S. Advancements in insulin pumps: A comprehensive exploration of insulin pump systems, technologies, and future directions. Pharmaceutics [Internet] 2024;16(7). Available from: <a href="https://www.mdpi.com/1999-4923/16/7/944">https://www.mdpi.com/1999-4923/16/7/944</a></div>
+</div>
+<div id="ref-Cronje2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">Cronjé HT, Katsiferis A, Elsenburg LK, et al. Assessing racial bias in type 2 diabetes risk prediction algorithms. PLOS Global Public Health [Internet] 2023 [cited 2025 Jan 28];3(5):e0001556. Available from: <a href="https://dx.plos.org/10.1371/journal.pgph.0001556">https://dx.plos.org/10.1371/journal.pgph.0001556</a></div>
+</div>
+<div id="ref-vanDoorn2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">Doorn WPTM van, Foreman YD, Schaper NC, et al. Machine learning-based glucose prediction with use of continuous glucose and physical activity monitoring data: The maastricht study. PloS one 2021;16(6):e0253125–. </div>
+</div>
+<div id="ref-Efthimiou2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline">Efthimiou O, Seo M, Chalkou K, Debray T, Egger M, Salanti G. Developing clinical prediction models: A step-by-step guide. BMJ (Online) 2024;386:e078276–. </div>
+</div>
+<div id="ref-Clements2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><span class="nocase">Clements MA, Foster NC, Maahs DM, et al.</span> Hemoglobin <span>A1c</span> (<span>HbA1c</span>) changes over time among adolescent and young adult participants in the <span>T1D</span> exchange clinic registry. Pediatric Diabetes [Internet] 2016 [cited 2026 July 21];17(5):327–36. Available from: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/pedi.12295">https://onlinelibrary.wiley.com/doi/abs/10.1111/pedi.12295</a></div>
+</div>
+<div id="ref-gunnemyr_six_2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline">Husfeldt T. Six <span>Ways</span> of <span>Fairness</span> [Internet]. In: Gunnemyr M, Jönsson ML, editors. Post <span>Hoc</span> <span>Interventions</span>. the Department of Philosophy, Lund University; 2023 [cited 2026 July 21]. p. 167–89.Available from: <a href="https://books.lub.lu.se/catalog/book/184">https://books.lub.lu.se/catalog/book/184</a></div>
+</div>
+</div>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./4-results.html" class="pagination-link" aria-label="Results">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Results</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./7-conclusions.html" class="pagination-link" aria-label="Conclusion">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Conclusion</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
