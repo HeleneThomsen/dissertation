@@ -10,24 +10,25 @@ book:
   date-format: "YYYY"
   chapters:
     - index.qmd
-    - 0-disclosure.qmd
-    - 0-preface.qmd
+    # - 0-disclosure.qmd
+    # - 0-preface.qmd
     - 0-papers.qmd
     - 0-abbreviations.qmd
     # - 0-to_do.qmd
     - 1-introduction.qmd
-    # - 2-aims.qmd
+    - 2-aims.qmd
     - 3-methods.qmd
-    # - 4-results.qmd
-    # - 5-discussion.qmd
-    # - 7-conclusions.qmd
+    # - 4-results_cosim.qmd
+    - 4-results.qmd
+    - 5-discussion.qmd
+    - 7-conclusions.qmd
     # - 8-perspectives.qmd
     - references.qmd
     # - summary-english.qmd
     # - summary-danish.qmd
   appendices:
     - app1-supplementary.qmd
-    - app2-addendum.qmd
+    # - app2-addendum.qmd
   # cookie-consent: 
   #   type: express
   #   palette: light
@@ -89,29 +90,30 @@ acronyms:
     - shortname: SCORE2-Diabetes
       longname: Systematic Coronary Risk Evaluation 2-Diabetes
     - shortname: eGFR
-      longname: Estimated Glomerular Filtration Rate
+      longname: estimated glomerular filtration rate
     - shortname: NT-proBNP
       longname: N-terminal Pro-B-type Natriuretic Peptide
     - shortname: AUROC
       longname: Area Under the Receiver Operating Characteristic Curve
     - shortname: RMSE
       longname: root mean square error 
-    # - shortname: 
-    #   longname: 
-    # - shortname: 
-    #   longname: 
-    # - shortname: 
-    #   longname: 
-    # - shortname: 
-    #   longname: 
-    # - shortname: 
-    #   longname: 
-    # - shortname: 
-    #   longname: 
-    # - shortname: 
-    #   longname: 
-    # - shortname: 
-    #   longname: 
+    - shortname: T1DX
+      longname: T1D Exchange
+    - shortname: LMEM
+      longname: linear mixed effect model
+    - shortname: LSTM
+      longname: long short term memory model
+    - shortname: Black
+      longname: non-Hispanic African Americans or Black
+      include: false
+    - shortname: White
+      longname: non-Hispanic White
+    - shortname: UMAP
+      longname: Uniform Manifold Approximation and Projection 
+    - shortname: LOCF
+      longname: last observation carried forward 
+    - shortname: IGLU
+      longname: Interpreting Glucose Data from Continuous Glucose Monitors
     # - shortname: 
     #   longname: 
     # - shortname: 

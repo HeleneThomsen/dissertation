@@ -1,16 +1,17 @@
- # Aims {#sec-aims}
+# Aims {#sec-aim}
 
-The overall aim of this PhD dissertation was to investigate the potential of continuous glucose monitoring (CGM) data to improve cardiovascular risk assessment and to evaluate the role of machine learning in extracting clinically relevant information from CGM data across different diabetes populations.
+The overall aim of this PhD dissertation was to investigate the potential of continuous glucose monitoring (CGM) data to improve cardiovascular risk assessment and to evaluate the role of machine learning in extracting clinically relevant information from CGM data across different diabetes populations, including the evaluation of racial disparities in model performance.
+
 
 ## Specific Aims {.unlisted}
-**Aim 1:** To identify and summarize the existing literature on the associations between glycemic control and cardiovascular outcomes, including the use of CGM-derived metrics for cardiovascular risk prediction. *(Study I)*
+**Aim 1:** To identify and summarize the existing literature on associations between glycemic control and cardiovascular outcomes, including the use of CGM-derived metrics for cardiovascular risk prediction. *(Study I)*
 
-**Aim 2:** To determine whether a CGM foundation model captures meaningful and interpretable glucose representations in individuals with type 1 and type 2 diabetes. *(Study II)*
+**Aim 2:** To determine whether a CGM foundation model learns meaningful glucose representations in individuals with type 1 and type 2 diabetes. *(Study II)*
 
-**Aim 3:** To evaluate whether conventional CGM-derived metrics and learned glucose representations improve prediction of elevated NT-proBNP beyond established clinical risk factors in individuals with type 2 diabetes. *(Study II)*
+**Aim 3:** To evaluate whether traditional CGM-derived metrics and learned glucose representations improve prediction of elevated NT-proBNP beyond established clinical risk factors in individuals with type 2 diabetes. *(Study II)*
 
 
-**Aim 4:** To evaluate the fairness of machine learning models for glucose prediction and compare strategies for tailoring prediction models to individual characteristics. *(Study III)*
+**Aim 4:** To evaluate the fairness of machine learning models for glucose prediction by assessing model performance across non-Hispanic Black and non-Hispanic White populations. *(Study III)*
 
 <!-- ## Hypotheses {.unlisted}
 * CGM data contains information that may be relevant for cardiovascular risk assessment.

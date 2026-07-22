@@ -7,7 +7,7 @@ Thomsen, H. B., Lebiecka-Johansen, B., Nørgaard, O., Andersen, T. H., Andersen,
 
 ## Study II
 
-Thomsen, H. B., Andersen, S. T., Fagherazzi, G., Isaksen, A. A. & Hulman, A. (2026). Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk. (Under review at JMIR AI, (7.30.2026), pending for preprint at JMIR preprints)
+Thomsen, H. B., Andersen, S. T., Fagherazzi, G., Isaksen, A. A. & Hulman, A. (2026). Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk. (Under review at JMIR Diabetes, (7.14.2026), pending for preprint at JMIR transfer hub, manuscript exchange)
 
 ## Study III
 

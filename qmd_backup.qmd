@@ -1,0 +1,32 @@
+Figure 3 and Figure 4 illustrate the learned CGM representations coloured by HbA1c and TIR for the CANCAN and T1DX datasets, respectively. In both datasets, the embeddings exhibited smooth gradients corresponding to glycaemic control. Spearman correlation analyses confirmed strong correlations between the UMAP dimensions and TIR (CANCAN: UMAP 1, ρ = −0.71; UMAP 2, ρ = 0.81; both p < 0.001; T1DX: UMAP 1, ρ = −0.39; UMAP 2, ρ = −0.65; both p < 0.001) and moderate correlations with HbA1c (CANCAN: UMAP 1, ρ = 0.48; UMAP 2, ρ = −0.65; both p < 0.001; T1DX: UMAP 1, ρ = 0.30; UMAP 2, ρ = 0.50; both p < 0.001). Correlations with NT-proBNP were weak in the CANCAN dataset (UMAP 1, ρ = −0.04, p = 0.063; UMAP 2, ρ = 0.18, p < 0.001). The distributions of within- and between-participant cosine distances stratified by clinical HbA1c and TIR thresholds are shown in Figure 3 and Figure 4 (panels B, C, E, and F).
+
+
+Figure 3 and Figure 4 show the learned CGM representations by glycemic metrics (HbA1c and TIR). Both datasets showed a single large cluster, with a smooth and consistent color gradient reflecting glycemic control across the learned representations (Figure 3 and Figure 4). The UMAP dimensions from the CANCAN data were strongly correlated with TIR (UMAP dimension 1(UMAP 1): ρ=-0.71, p<0.001; UMAP dimension 2(UMAP 2): ρ=0.81, p<0.001), and moderately correlated with HbA1c (UMAP dimension 1: ρ=0.48, p<0.001; UMAP dimension 2: ρ=-0.65, p<0.001), while only weak correlations were observed with NT-proBNP (UMAP 1: ρ=-0.04, p=0.063; UMAP 2: ρ=0.18, p<0.001). For the T1DX dataset, correlations with TIR were (UMAP 1: ρ=-0.39, p<0.001; UMAP 2: ρ=-0.65,p<0.001) and HbA1c were (UMAP 1: ρ=0.30, p<0.001; UMAP 2: ρ=0.50,p<0.001). When partitioned by clinical thresholds (Figure 3 and Figure 4, panels B, C, E, and F), the distance distributions for cohorts meeting glycemic targets (HbA1c < 53 mmol/mol or TIR ≥ 70%) visually display lower median values and tighter concentration than cohorts exceeding these targets. For between-participant pairs, the distance distributions for individuals within target glycemic ranges shift downward, overlapping with the range of values typically observed within the same participant. Conversely, the largest distances occurred between participants from opposing TIR groups.
+
+
+
+
+
+
+### Embeddings and NT-proBNP
+- [ ] Figure needs to be turned and CVD removed
+- [ ] Add a very brief text to the figure    
+
+::: {#fig-cosim-ntprobnp}
+[![](figures/4_results_fig/study_2_co_sim_ntprobnp_race.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_ntprobnp_race.png)
+
+UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on CVD and NT-proBNP for the CANCAN dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
+
+:::
+
+
+### Embeddings and race
+- [ ] Figure needs to be turned
+- [ ] Add a very brief text to the figure    
+
+::: {#fig-cosim4_mage}
+[![](figures/4_results_fig/study_2_co_sim_race.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_race.png)
+
+UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on race for the T1DX datasets. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
+
+:::

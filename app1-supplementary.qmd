@@ -85,6 +85,11 @@ mean blood glucose show stronger associations with cardiovascular disease risk f
 
 - [ ] Add table with subclinical study design overviews
 - [ ] Add table overview of subclinical results
+- [ ] Add adjustment column to @tbl-main-clinical-findings the same way as I did witht he first two studies
+- [ ] Add subclinical table from the suppl. of the published ScR study down in supplementary as well
+
+{{< include 4-results_ScR_table.qmd >}}
+
 
 
 # Study II: Prediction stability {#sec-suppl-pred-stability}

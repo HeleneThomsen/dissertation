@@ -6,9 +6,9 @@
 - [x] [ ] Papers
 - [x] TOC
 - [x] List of original papers
-- [ ] Introduction
+- [x] Introduction
 - [x] AH[x] Aims and Assumptions
-- [ ] Methods - Presentation
+- [x] Methods - Presentation
 - [ ] Results
     - [ ] Summary - Reflective - Impact (knowledge added)
     - [ ] Methods - Critical evaluation
@@ -29,7 +29,7 @@
 - [ ] Add references to Method
 - [ ] Add references to Results
 - [ ] Check the JMIR-AI paper and update the date in papers
-
+- [ ] Check if methodological considerations has been answered throughout the thesis
 ### Nice to have
 - [ ] Format cover page nicer
 - [ ] Make list of figures more readable: Add fig-cap to figures
@@ -48,9 +48,10 @@
 - [ ] Check big and small letters in headers (uppercase/lowercase beginnings)
 - [ ] Ensret if I write introducing text below each chapter or not
 
+ <!-- Check how I report interquartile ranges and in general ranges throughour my thesis -->
+- [ ] Fix abbreviations in result section
 
-
-
+- [ ] reference the correct supplementary materials in my results table (scoping review) on different groupings of CVD outcomes and CGM and the adjustments tabel @tbl-study1-clinical-overview and. @tbl-adjustments
 <!-- ------------------------------------------- -->
 
 
