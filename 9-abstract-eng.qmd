@@ -1,0 +1,20 @@
+# English Abstract {#sec-english .unnumbered}
+#### Background
+Diabetes is characterized by chronic high blood glucose levels and is associated with an increased risk of cardiovascular disease (CVD).
+Current CVD risk prediction in diabetes relies largely on traditional risk factors and HbA1c, although these measures may not fully capture clinically relevant glucose dynamics.
+Continuous glucose monitoring (CGM) provides detailed information on glucose variability, time in range, and short-term glucose fluctuations, and recent advances in machine learning offer new opportunities to learn directly from CGM data.
+
+#### Aim
+The aim was to evaluate the role of CGM data and machine learning approaches in cardiovascular risk assessment and examined potential fairness concerns in CGM-based prediction models.
+
+#### Methods
+The dissertation comprised three studies. Study I was a scoping review of the literature on CGM-derived metrics and CVD risk assessment. Study II investigated representations from the CGMformer foundation model and assessed whether CGM data could improve prediction of NT-proBNP, a biomarker indicative of heart failure risk. Study III examined racial group fairness in 60-minute blood glucose forecasting using CGM data from an American cohort.
+
+#### Results
+The review found that current evidence is inconsistent and the literature is heterogeneous. Most studies were investigating subclinical cardiovascular outcomes and not only were there more studies including people with T2D (34 out of 53 studies) compared to T1D (20 out of 53 studies), the T2D populations were also bigger (median [IQR]: time in range (TIR), 510 [405–600] vs. 214 [119–547]; mean amplitude of glycemic excursions (MAGE), 251 [89–411] vs. 57 [30–215]).
+Although TIR and MAGE were the most frequently studied CGM-derived metrics, only MAGE had been evaluated for CVD prediction, showing modest discriminatory performance (AUROC: ~61).
+The CGMformer embeddings captured both participant-specific and shared glycemic patterns, but these representations did not improve prediction of NT-proBNP compared with simpler approaches.
+The models showed modest systematic performance differences across racial groups, but these differences disappeared after transfer learning, suggesting that potential bias can be mitigated through fine-tuning.
+
+#### Conclusion
+Overall, the findings suggest that CGM data contains clinically meaningful information and may contribute to cardiovascular risk assessment in diabetes. However, its current predictive value appears limited, particularly when compared with established demographic and clinical markers. While CGM-derived metrics such as time in range and mean amplitude of glycemic excursions may provide useful information, CGM foundation model embeddings did not improve prediction of NT-proBNP despite capturing relevant glycemic structu

@@ -3,7 +3,7 @@
 ## Scoping Review Results
 
 ### Study Selection
-The study selection process is summarized in @fig-prisma. The Medline and Embase search resulted in 4884 records screened on title and abstract, and 81 reports were assessed for eligibility based on full-text review by two independent reviewers. The citation search on the included 51 reports resulted in 2 additional reports, which finally resulted in 53 included reports in the review. All included and excluded reports are reported in @sec-suppl-study1-reports.
+The study selection process is summarized in @fig-prisma. The MEDLINE and Embase search resulted in 4884 records screened on title and abstract, and 81 reports were assessed for eligibility based on full-text review by two independent reviewers. The citation search on the included 51 reports resulted in 2 additional reports, which finally resulted in 53 included reports in the review. All included and excluded reports are reported in @sec-suppl-study1-reports.
 
 ::: {#fig-prisma}
 [![](figures/4_results_fig/study_1_prisma.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_1_prisma.svg)
@@ -80,12 +80,12 @@ Summary of the frequency of the seven most used CGM-derived metrics
 
 :::
 
-### Prediction studies
+### Prediction Studies
 Only three studies evaluated the predictive performance of CGM-derived metrics for cardiovascular outcomes, all using logistic regression models with MAGE as the predictor. Two studies reported \acr{AUROC} values of 0.61 and 0.62, respectively,[@43,28] and both found MAGE to outperform HbA1c (\acr{AUROC}: 0.55 and 0.58, respectively). The third study used receiver operating characteristic analysis to determine the optimal threshold for dichotomizing MAGE during variable selection but did not report the \acr{AUROC}.[@44] Instead, a threshold of MAGE ≥ 3.4 mmol/L was identified as a risk factor for stenosis and/or occlusion, with a sensitivity of 0.60 and a specificity of 0.61.
 
 
-### Association studies
-- [ ] I am thinking of changing table @tbl-study3-clin-subclin-cvd to be more aligned with the overview tables (@sec-sec-suppl-subclin-results)
+### Association Studies
+- [ ] I am thinking of changing table @tbl-study3-clin-subclin-cvd to be more aligned with the overview tables (@sec-suppl-subclin-results)
 An overview of the different outcomes found in the literature both clinical and subclinical are shown in @tbl-study3-clin-subclin-cvd.
 
 :::{#tbl-study3-clin-subclin-cvd}
@@ -115,75 +115,12 @@ An overview of the different outcomes found in the literature both clinical and 
 
 - [ ] Does anyone have a suggestion on how to present this data in a table that is smaller then this @tbl-study1-clinical-overview?
 - [ ] Based on AAI comments, then I am removing the columns "Diabetes duration" and "HbA1c, mmol/mol" and will try my best to let studies only take up one row.
+- [ ] Or maybe I will just add it down in supplementary
 
-Most studies focused exclusively on subclinical cardiovascular outcomes (37 of 53 studies, 70%), whereas 13 studies (25%) investigated only clinical cardiovascular outcomes and three studies (6%) included both clinical and subclinical outcomes. Because the subsequent chapters of this dissertation focus on clinical cardiovascular outcomes, only these findings are discussed in detail below (@tbl-study1-clinical-overview and @tbl-main-clinical-findings). A summary of studies investigating subclinical cardiovascular outcomes is provided in @sec-suppl-subclin-results. 
-
-::: {.landscape}
-::: {.small}
-
-::: {#tbl-study1-clinical-overview tbl-colwidths="\[9, 14, 20, 5, 14, 14, 14, 10\]"}
-
-| Author, year | Study Design | Population | Size | Age (Years) | Diabetes duration (Years) | HbA1c, mmol/mol (%) | CGM duration |
-|:---|:---|:---|:---:|:---|:---|:---|---:|
-| Chen, 2020$^\dagger$ | Longitudinal (prospective) and cross-sectional (retrospective)<br>\newline FU: in-hospital or within 3 months after discharge from hospital | T2D with CAD (Only male)<br> BG control, n = 90<br> BG fluctuation, n = 120 | 210 | BG controls: 55.53 $\pm$ 7.30<br> BG fluctuation: 56.41 $\pm$ 7.67 | BG controls: 6.59 $\pm$ 2.30<br> BG fluctuation group: 6.92 $\pm$ 2.25 | nr | 2 days |
-| | | | | | | | |
-| He, 2023 | Longitudinal (prospective)<br> FU: 1 year | T2D with kidney disease on hemodialysis<br> High TIR, n = 12<br> Low TIR, n = 15 | 27 | High TIR: 66 [63, 73]<br> Low TIR: 70 [64, 75] | High TIR: 2 [1.7, 10]<br> Low TIR: 5 [0.75, 20] | High TIR: 43 [37, 51] mmol/mol (6.1 [5.5, 6.8]%)<br> Low TIR: 66 [46, 70] mmol/mol (8.2 [6.4, 8.6]%) | 14 days |
-| | | | | | | | |
-| Lu, 2021 | Longitudinal (prospective)<br> FU: until death occurred or 3–13 years<br> Median: 6.9 years | T2D, hospitalized | 6225 | mean age = 61.7 years | mean: 9.7 years | 74.0 $\pm$ 24.0 mmol/mol (8.9 $\pm$ 2.2%) | 72 hours |
-| | | | | | | | |
-| Wei, 2019 | Longitudinal (prospective)<br> Median FU [IQR]: 31 months (22, 56) | T2D Divided into three groups:<br> 1) No hypo, n = 1173<br> 2) Mild hypo (lvl1), n = 323<br> 3) Severe hypo (lvl3), n = 24 | 1520 | No hypoglycemia: 58.59 $\pm$ 11.26<br> Hypoglycemia: 62.27 $\pm$ 11.58 | No hypoglycemia: 6.46 $\pm$ 6.00<br> Hypoglycemia: 7.78 $\pm$ 7.37 | No hypoglycemia: (8.19 $\pm$ 2.10%)<br> Hypoglycemia: (7.73 $\pm$ 1.96%) | 3 days |
-| | | | | | | | |
-| Bezerra, 2023 | Cross-sectional | T1D | 161 | 37.4 $\pm$ 13.4 | 17.7 $\pm$ 10.6 | (7.5 $\pm$ 1.1%) | 14 days |
-| | | | | | | | |
-| De Meulemeester, 2024$^\dagger$ | Cross-sectional | T1D | 808 | 44.8 $\pm$ 15.2 | 23.1 $\pm$ 13.6 | 63 $\pm$ 13 mmol/mol (7.9 $\pm$ 1.2%) | 2 weeks |
-| | | | | | | | |
-| Deng, 2023 | Cross-sectional | T2D | 860 | HP 1 carriers: 53.5 $\pm$ 13.3<br> HP 2-2: 51.7 $\pm$ 14.6 | HP 1 carriers: 8.6 $\pm$ 6.4<br> HP 2-2: 8.6 $\pm$ 6.7 | HP1 carriers: 73.0 $\pm$ 24.0 mmol/mol (8.8 $\pm$ 2.2%)<br> Hp2-2: 72.0 $\pm$ 23.0 mmol/mol (8.7 $\pm$ 2.1) | 3 days |
-| | | | | | | | |
-| El Malahi, 2022 | Cross-sectional | T1D starting on sensor-augmented pump therapy | 515 | Mean $\pm$ SD [years]:<br>42.2 $\pm$ 12.5 | 22.3 $\pm$ 11.6 | 60 $\pm$ 9.8 mmol/mol (7.6 $\pm$ 0.9 %) | 2 weeks |
-| | | | | | | | |
-| Guo, 2021 | Cross-sectional | T1D or T2D with atrial fibrillation<br> With Stroke, n = 48<br> Without Stroke, n = 462 | 510 | Stroke: 70.3 $\pm$ 12.1<br>No stroke: 68.1 $\pm$ 9.4 | nr | No Stroke: 7.4 $\pm$ 2.1<br> Stroke: 8.2 $\pm$ 1.7 | 72 hour |
-| | | | | | | | |
-| Li, 2020 | Cross-sectional | T2D with LEAD, n = 179<br> T2D without LEAD, n = 157 | 336 | Without LEAD: 55.94 $\pm$ 12.45<br> With LEAD: 65.56 $\pm$ 11.99 | Without LEAD: 6.92 $\pm$ 3.54<br> With LEAD: 10.32 $\pm$ 4.14 | Without LEAD: 7.85 $\pm$ 1.41%<br> With LEAD: 8.97 $\pm$ 1.63% | 72 hours |
-| | | | | | | | |
-| Magri, 2018$^\dagger$ | Cross-sectional | T2D | 121 | 64 [57, 68] | 3 [2, 5] | median: 45 mmol/mol (6.8%) | 72 hours |
-| | | | | | | | |
-| Mi, 2012 | Cross-sectional | T2D with chest pain<br> Without CAD, n = 202<br> With CAD, n = 84 | 286 | Without CAD: 62.8 $\pm$ 8.7<br> With CAD: 66.6 $\pm$ 9.2 | nr | Non-CAD: 7.51 $\pm$ 0.80%<br> CAD: 7.75 $\pm$ 0.92% | 72 hours (Only intermediate 48 hours were used) |
-| | | | | | | | |
-| Sheng, 2023 | Cross-sectional | T2D, hospitalized | 545 | mean age of (61.22 $\pm$ 11.21) years | nr | 8.51 $\pm$ 1.85% | 7-14 days |
-| | | | | | | | |
-| Su, 2011 | Cross-sectional | T2D with chest pain<br> Without CAD, n = 92<br> With CAD, n = 252 | 344 | Without CAD: 61 $\pm$ 9<br> With CAD: 65 $\pm$ 9 | Without CAD: 4.8 $\pm$ 5.7<br> With CAD: 6.5 $\pm$ 6.4 | non-CAD: 7.5 $\pm$ 1.4%<br> CAD: 7.6 $\pm$ 1.5% | 72 hours (only 48 hours used) |
-| | | | | | | | |
-| Watanabe, 2017 | Cross-sectional | Prediabetes, hospitalized | 28 | 64.3 $\pm$ 12.8 | nr | 5.41 $\pm$ 0.35% | 72 hours (Only used the middle 48 hours) |
-| | | | | | | | |
-| Zhang, 2013 | Cross-sectional | T2D with cardiovascular complications<br> Group A: healthy individuals<br> Group B: T2D without cardiovascular complications<br> Group C: T2D with cardiovascular complications | 92 | Group A: 56.3 $\pm$ 6.1<br> Group B: 56.1 $\pm$ 6.6<br> Group C: 61.7 $\pm$ 7.2 | nr | Group A: 5.3 $\pm$ 0.3%<br> Group B: 6.6 $\pm$ 1.2%<br> Group C: 7.5 $\pm$ 1.4% | 72 hours |
+Most studies focused exclusively on subclinical cardiovascular outcomes (37 of 53 studies, 70%), whereas 13 studies (25%) investigated only clinical cardiovascular outcomes and three studies (6%) included both clinical and subclinical outcomes.<!-- Because the subsequent chapters of this dissertation focus on clinical cardiovascular outcomes, only these findings are discussed in detail below (@tbl-study1-clinical-overview and @tbl-main-clinical-findings). -->
+An overview of all the studies is provided in @sec-suppl-subclin-results.
 
 
-::: {.content-visible when-format="pdf"}
-```{=latex}
-\tablenote[0.90\linewidth]{
-    \textsuperscript{$\dagger$}  This study appears both in the clinical and subclinical disease outcome tables due to investigating multiple CVD outcomes.\
-    Note: Age is reported in years either as an interval, mean $\pm$ SD, or median (IQR). Diabetes duration values originally reported in months were converted to years for consistency (months $\div$ 12). <br>
-    \textit{Abbreviations:} CGM: continuous glucose monitoring, FU: follow-up, T1D: type 1 diabetes, T2D: type 2 diabetes, CAD: coronary artery disease, hypo: hypoglycemia, LEAD: lower extremity arterial disease, IQR: interquartile range, nr: not reported.
-
-}
-```
-:::
-
-::: {.content-visible when-format="html"}
-<p style="font-size:75%">
-$^\dagger$ This study appears both in the clinical and subclinical disease outcome tables due to investigating multiple CVD outcomes.
-</p>
-*Note:* Age is reported in years either as an interval, mean $\pm$ SD, or median (IQR). Diabetes duration values originally reported in months were converted to years for consistency (months $\div$ 12). <br>
-*Abbreviations:* CGM, continuous glucose monitoring; FU, follow-up; T1D, type 1 diabetes; T2D, type 2 diabetes; CAD, coronary artery disease; hypo, hypoglycemia; LEAD, lower extremity arterial disease; IQR, interquartile range; nr, not reported.
-
-</p>
-:::
-
-Study design and demographics of the included clinical cardiovascular outcome studies
-
-:::
-:::
-:::
 
 - [ ] I need to add a total row of summarized values in @tbl-study1-clinical-overview
 - [ ] I need to add an other column in @tbl-study1-clinical-overview for other CGM derived metrics
@@ -292,7 +229,7 @@ Overview of the diabetes populations and the most frequently reported CGM-derive
 ```
 ::: {.content-visible when-format="pdf"}
 ```{=latex}
-    \tablenote[0.90\linewidth]{
+    \tablenote[0.70\linewidth]{
         A study could contribute to more than one adjustment domain.
     }
 ```

@@ -1,0 +1,11 @@
+Panel,Group,n,Median [IQR]
+Within-participant,Normal NT-proBNP,5415,"0.058 [0.040, 0.084]"
+Within-participant,Elevated NT-proBNP,4044,"0.058 [0.040, 0.084]"
+Between-participant,Normal NT-proBNP,507163,"0.123 [0.078, 0.191]"
+Between-participant,Elevated NT-proBNP,270867,"0.109 [0.073, 0.168]"
+Between-participant,Across NT-proBNP groups,751646,"0.116 [0.076, 0.180]"
+T1DX: Race-within-participant,Non-Hispanic Black,165311,"0.066 [0.047, 0.094]"
+T1DX: Race-within-participant,Non-Hispanic White,186287,"0.063 [0.046, 0.086]"
+T1DX: Race-between-participant,Non-Hispanic Black,34151640,"0.085 [0.059, 0.128]"
+T1DX: Race-between-participant,Non-Hispanic White,33982718,"0.079 [0.056, 0.117]"
+T1DX: Race-between-participant,Different groups,34230775,"0.083 [0.058, 0.123]"

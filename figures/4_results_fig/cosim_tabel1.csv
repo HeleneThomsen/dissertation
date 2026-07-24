@@ -1,0 +1,5 @@
+Panel,Group,n,Median [IQR]
+CANCAN,Within-participant pairs,9459,"0.058 [0.040, 0.084]"
+CANCAN,Between-participant pairs,1529676,"0.117 [0.076, 0.182]"
+T1DX,Within-participant pairs,351598,"0.064 [0.047, 0.090]"
+T1DX,Between-participant pairs,68134358,"0.082 [0.057, 0.122]"

@@ -52,10 +52,13 @@ Both monitoring devices have shown to improve glycemic control in people with di
 <!-- ## Continuous Glucose Monitoring Devices and AIDs -->
 The \acr{CGM} devices measures the glucose in the interstitial fluid, which is the fluid around and between cells. It corresponds with plasma glucose although a lag can appear when glucose levels rise or fall rapidly.[@ADA2026_ch7]
 Use of \acr{CGM} devices has shown to improve glycemic control in both \acr{T1D} and \acr{T2D} with improvements in \acr{HbA1c} levels and more time spent in target range (3.9-10 mmol/L) regardless of age, sex, eduction and income.[@ADA2026_ch6; @ADA2026_ch7]
-\acr{CGM} devices focus on monitoring and it is possible to get an \acr{AGP} report from the devices (@fig-agp). The \acr{AGP} report shows summary statistics over all data (usually a two weeks period) including \acr{CGM}-derived metrics as shown in (@tbl-agp).[@Danne2017]
+\acr{CGM} devices focus on monitoring and it is possible to get an \acr{AGP} report from the devices (@fig-agp).
+The \acr{AGP} report shows summary statistics over all data (usually a two weeks period) including \acr{CGM}-derived metrics as shown in (@tbl-agp).[@Danne2017]
 Besides monitoring, data from \acr{CGM} devices are now used in combination with insulin delivery systems to automate the process of administering insulin.[@ADA2026_ch7]
 \acr{AID} systems typically use data from \acr{CGM} devices to determine or adjust insulin delivery.
-The simplest \acr{AID}s are threshold-based low-glucose suspend systems in which insulin delivery is automatically suspended when blood glucose levels drop below a predefined threshold.[@Templer2022] More advanced systems utilize additional information such as carbohydrate intake and physical activity to optimize insulin delivery.[@Jaloli2023, @Gao2020] 
+The simplest \acr{AID}s are threshold-based low-glucose suspend systems in which insulin delivery is automatically suspended when blood glucose levels drop below a predefined threshold.[@Templer2022]
+\acr{AID} systems are becoming increasingly sophisticated, with the long-term goal of approximating the physiological regulation of glucose by a healthy pancreas. However, the delayed onset and peak action of subcutaneously administered insulin limit the ability of these systems to respond rapidly to changing glucose concentrations.[@Rimon2024] Consequently, accurate short-term glucose forecasting has become increasingly important, particularly for anticipating postprandial glucose excursions and enabling earlier insulin adjustments to reduce the risk of both hyperglycemia and hypoglycemia.[@Rimon2024]
+More advanced systems are beginning to utilize additional information such as carbohydrate intake and physical activity to optimize insulin delivery.[@Jaloli2023, @Gao2020] 
 
 ::: {#fig-agp fig-scap='Ambulatory glucose profile report.'}
 

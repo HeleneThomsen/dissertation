@@ -1,0 +1,16 @@
+Panel,Group,n,Median [IQR]
+T1DX: HbA1c-within-participant,Low HbA1c,56543,"0.057 [0.042, 0.077]"
+T1DX: HbA1c-within-participant,High HbA1c,295055,"0.066 [0.048, 0.092]"
+T1DX: HbA1c-between-participant,Low HbA1c,1489618,"0.066 [0.048, 0.089]"
+T1DX: HbA1c-between-participant,High HbA1c,49151485,"0.083 [0.058, 0.124]"
+T1DX: HbA1c-between-participant,Across HbA1c groups,17493255,"0.082 [0.057, 0.121]"
+T1DX: TIR-within-participant,High TIR,42716,"0.056 [0.041, 0.076]"
+T1DX: TIR-within-participant,Low TIR,308882,"0.066 [0.047, 0.092]"
+T1DX: TIR-between-participant,High TIR,735412,"0.063 [0.047, 0.085]"
+T1DX: TIR-between-participant,Low TIR,54349858,"0.081 [0.057, 0.121]"
+T1DX: TIR-between-participant,Across TIR groups,13049088,"0.087 [0.060, 0.129]"
+T1DX: MAGE-within-participant,High MAGE,348358,"0.064 [0.047, 0.090]"
+T1DX: MAGE-within-participant,Low MAGE,3240,"0.048 [0.037, 0.064]"
+T1DX: MAGE-between-participant,High MAGE,67192895,"0.082 [0.057, 0.122]"
+T1DX: MAGE-between-participant,Low MAGE,0,
+T1DX: MAGE-between-participant,Across MAGE groups,941463,"0.093 [0.065, 0.135]"
