@@ -4,7 +4,7 @@ project:
 
 # quarto render --to pdf
 book:
-  title: "Machine learning methods for continuous glucose monitoring data and their potential in cardiovascular risk assessment"
+  title: "Machine Learning Methods for Continuous Glucose Monitoring Data and their Potential in Cardiovascular Risk Assessment"
   author: "Helene Bei Thomsen"
   date: 2026 07 31
   date-format: "YYYY"
@@ -12,20 +12,20 @@ book:
     - index.qmd
     - 0-disclosure.qmd
     - 0-preface.qmd
-    - 0-papers.qmd
+    # - 0-papers.qmd
     - 0-abbreviations.qmd
     # - 0-to_do.qmd
-    - 1-introduction.qmd
-    - 2-aims.qmd
+    # - 1-introduction.qmd
+    # - 2-aims.qmd
     - 3-methods.qmd
-    # - 4-results_cosim.qmd
-    - 4-results.qmd
-    - 5-discussion.qmd
-    - 7-conclusions.qmd
-    - 8-perspectives.qmd
+    # - 4-results_3-cosim.qmd
+    # - 4-results.qmd
+    # - 5-discussion.qmd
+    # - 7-conclusions.qmd
+    # - 8-perspectives.qmd
     - references.qmd
-    - 9-abstract-eng.qmd
-    - 10-abstract-da.qmd
+    # - 9-abstract-eng.qmd
+    # - 10-abstract-da.qmd
   
   appendices:
     - app1-supplementary.qmd
@@ -103,7 +103,7 @@ acronyms:
     - shortname: LMEM
       longname: linear mixed effect model
     - shortname: LSTM
-      longname: long short term memory model
+      longname: long short-term memory model
     - shortname: UMAP
       longname: Uniform Manifold Approximation and Projection 
     - shortname: LOCF
@@ -114,10 +114,10 @@ acronyms:
       longname: standard deviation
     - shortname: MAGE
       longname: mean amplitude of glycemic excursions
-    # - shortname: 
-    #   longname: 
-    # - shortname: 
-    #   longname: 
+    - shortname: LDL cholesterol
+      longname: low-density lipoprotein cholesterol
+    - shortname: HDL cholesterol
+      longname: high-density lipoprotein cholesterol
     # - shortname: 
     #   longname: 
     # - shortname: 
@@ -183,15 +183,29 @@ format:
 
       % Define the grey color for the big number to match "numbercolor" from Overleaf
       \definecolor{numbercolor}{gray}{0.7} 
-      
-      % --- TRANSLATED "JENOR" CHAPTER STYLE FOR KOMA-SCRIPT ---
-      % Right-align everything by default
-      \let\raggedchapter\raggedleft
-      
-      % Simplify the number output down to just the raw digits
-      \renewcommand*{\chapterformat}{\thechapter}
-      
-      % Re-engineer the format: Dynamically flip layout with consistent bold weights
+      \usepackage[most]{tcolorbox}
+
+      \newtcolorbox{researchquestionbox}{
+        colback=white,
+        colframe=white,
+        borderline west={2pt}{0pt}{studyblue},
+        boxrule=0pt,
+        sharp corners,
+        left=3mm,
+        right=2mm,
+        top=2mm,
+        bottom=2mm
+      }
+
+      \definecolor{studyblue}{HTML}{003D73}
+            % --- TRANSLATED "JENOR" CHAPTER STYLE FOR KOMA-SCRIPT ---
+            % Right-align everything by default
+            \let\raggedchapter\raggedleft
+            
+            % Simplify the number output down to just the raw digits
+            \renewcommand*{\chapterformat}{\thechapter}
+            
+            % Re-engineer the format: Dynamically flip layout with consistent bold weights
       \renewcommand*{\chapterlinesformat}[3]{%
         \ifstr{#1}{chapter}{%
           \normalfont\sffamily\color{black}%
@@ -230,7 +244,7 @@ format:
       \renewcommand*{\chapterheadendvskip}{%
         \vspace{1.5ex}%
         \noindent\color{black}\rule{\linewidth}{0.6pt}\par
-        \vspace{4ex}%
+        \vspace{1ex}%
         \noindent\ignorespaces
       }
       % -------------------------------------------------------------------------
@@ -262,58 +276,12 @@ format:
           \includegraphics[width=7in]{figures/au_health.png}%
           \quad
           \includegraphics[width=1in]{figures/qr_code.png}%
-          }
+          }\\
+          Website
           \end{center}
       }
       % --- FIX RUNNING HEADERS FROM CURSIVE TO NORMAL ---
       \setkomafont{pagehead}{\normalfont\sffamily}
       \setkomafont{pagenumber}{\normalfont\sffamily}
-
-    # \usepackage{xcolor}
-    #\usepackage{float}
-    # \floatplacement{figure}{H}
-    # \raggedbottom
-    # \usepackage[automark]{scrlayer-scrpage}
-    # \clearpairofpagestyles
-
-    # \lofoot*{\vspace{20mm} \\ \pagemark}
-    # \refoot*{\vspace{20mm} \\ \pagemark}
-
-    # \chead{\headmark}
-    # \addtokomafont{pagehead}{\bfseries\upshape\color{black}}
-    # \addtokomafont{pagenumber}{\bfseries\color{black}}
-
-
-    # \usepackage{tocbibind}
-    # \usepackage{titling}
-    # \setlength{\droptitle}{-2cm}
-    # \preauthor{
-    #   \begin{center}
-    #   \large
-    #   \lineskip 0.5em%
-    #   PhD dissertation\\
-    #   \vspace{25mm}
-    # }
-    # \postauthor{
-    #   \end{center}
-    # }
-    # \predate{
-    #   \begin{center}
-    #   \vspace*{\fill}
-    #   Health\\        % Degree stream
-    #   Aarhus University\\                       % University
-    # }
-    # \postdate{
-    #   \\
-    #   \resizebox{.9\textwidth}{!}{%
-    #   \includegraphics[width=7in]{figures/au_health.png}%
-    #   \quad
-    #   \includegraphics[width=1in]{figures/qr_code.png}%
-    #   }
-    #   \end{center}
-      
-      
-    # }
-
 
 

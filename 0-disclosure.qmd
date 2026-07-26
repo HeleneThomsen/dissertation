@@ -20,7 +20,7 @@ knitr::include_graphics("figures/sdca.png")
 ## Notes on website version {.unnumbered .unlisted}
 This dissertation is available for viewing online at [HeleneThomsen.github.io/dissertation/](https://HeleneThomsen.github.io/dissertation/) or by scanning the QR code in the lower right-hand corner of the title page.
 
-{{< include 0-pdf2-acknowledgements.qmd >}} 
+<!-- {{< include 0-pdf2-acknowledgements.qmd >}}  -->
 
 :::
 
@@ -58,7 +58,7 @@ Luxembourg Institute of Health, Luxembourg <br>
 
 **Signe Toft Andersen, MD, PhD** <br>
 Steno Diabetes Center Aarhus, Denmark <br>
-Gødstrup Hospital, Denmark <br>
+Department of Medicine, Gødstrup Hospital, Denmark <br>
 
 #### Assessment committee:
 **Associate Professor Simon Tilma Vistisen (chairman)** <br>

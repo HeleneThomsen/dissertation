@@ -1,0 +1,238 @@
+## Scoping Review Results
+
+### Study Selection
+The study selection process is summarized in @fig-prisma. The MEDLINE and Embase search resulted in 4884 records screened on title and abstract, and 81 reports were assessed for eligibility based on full-text review by two independent reviewers. The citation search on the included 51 reports resulted in 2 additional reports, which finally resulted in 53 included reports in the review. All included and excluded reports are reported in @sec-suppl-study1-reports.
+
+::: {#fig-prisma}
+[![](figures/4_results_fig/study_1_prisma.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_1_prisma.svg)
+
+Flow diagram of study selection
+:::
+
+### Study Populations
+The study population most common was people with T2D (34 of studies), then people with T1D (20 of 53) and lastly prediabetes (4 of 53). Most studies included adult participants, whereas seven focused on children younger than 18 years. Two studies included only male participants, whereas the remaining studies included both male and female participants.
+
+The geographic distribution was found based on the hospitals and centers where data was collected or by the first author's affiliation when the other option was not available. The distribution was uneven as shown in  @fig-geographical.
+Most studies were conducted in Asia (27 of 53) or Europe (22 of 53). Three studies included data from North America, one was conducted in Australia, and only one included data from an African country, although its study population was predominantly White.[@Borg2011] No data was included from South America (@sec-suppl-geo-map).
+
+
+::: {#fig-geographical}
+[![](figures/4_results_fig/study_1_world_map.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_1_world_map.png)
+
+Geographical location of the studies. Countries colored in red indicate the geographical locations where the studies were conducted. Map was created using MapChart [https://www.mapchart.net/](https://www.mapchart.net).
+
+:::
+
+### Study Designs and Demographics
+Only one study was a randomized controlled trial,[@33] and the remaining studies were observational.
+Most studies used a cross-sectional design, with the cardiovascular outcome assessed at the same time as the CGM sensor was given.
+Only six studies performed longitudinal analyses. Study sample sizes varied considerably, ranging from 17[@34] to 6,225[@18] participants, with a median of 152.
+CGM data were obtained either from participants' own devices (11 studies) or from CGM devices provided as part of the study (42 studies). 
+Statistical analyses most commonly included linear regression (22 studies) and logistic regression (22 studies), followed by Spearman or Pearson correlation analyses (11 studies) and Cox proportional hazards regression (3 studies). ´
+Several studies also performed additional exploratory analyses, such as correlation analyses, to identify relevant covariates for inclusion in regression models.
+
+All included studies primarily investigated associations between CGM-derived measures and cardiovascular outcomes. Only three studies reported predictive performance measures as part of secondary analyses,[@Su2011, @Hua, @Koroleva] and none applied machine learning methods. Furthermore, none of the included studies provided openly available data or source code. Instead, availability was either not addressed or limited to access upon reasonable request from the corresponding author.
+
+### Continuous Glucose Monitoring
+
+- [ ] Add a row “Number of CVD outcomes” and information to the text as well - only if time permits 
+
+Medtronic CGM devices were the most frequently used (28 of 53 studies), followed by Abbott (9 of 53) and Dexcom (5 of 53). Other manufacturers included Menarini, Meiqi Company, and SIBIONICS. Sampling intervals ranged from 3 to 15 minutes but were reported in only a minority of studies (21 of 53).
+TIR (22 studies) and MAGE (23 studies) were the most frequently investigated CGM-derived metrics (@tbl-study1-cgm-count)
+When stratified by T1D and T2D then TIR was the most frequently investigated metric in T1D populations (10 of 23 studies), whereas MAGE was less commonly investigated (5 of 22 studies). In T2D populations, TIR and MAGE were investigated in 11 of 23 and 14 of 22 studies, respectively. Studies conducted in T2D populations also tended to include larger sample sizes than those in T1D populations (median [IQR]: TIR, 510 [405–600] vs. 214 [119–547]; MAGE, 251 [89–411] vs. 57 [30–215]).
+
+::: {#tbl-study1-cgm-count  tbl-colwidths="\[20, 15, 10, 10, 10, 12, 13, 10\]"}
+
+| CGM-derived   Metrics: | TIR | MAGE | MBG | SD | CV | TBR | TAR |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Number of Studies, n** | 23 | 22 | 21 | 19 | 19 | 16 | 15 |
+| &nbsp;&nbsp;&nbsp; T1D, n | 10 | 5 | 9 | 7 | 8 | 9 | 8 |
+| &nbsp;&nbsp;&nbsp; T2D, n    | 11 | 14 | 8 | 10 | 8 | 7 | 7 |
+| &nbsp;&nbsp;&nbsp; Mixed$^*$ | 2 | 3 | 4 | 2 | 3 | 0 | 0 |
+| **Total study**| | | | | | | |
+| **size for the CGM-derived metrics$^{**}$** | 445 [157-577] | 156 [63-344] | 105 [71-427] | 267 [77-480] | 342 [98-577] | 123 [77-312] | 152 [77-425] |
+| &nbsp;&nbsp;&nbsp; T1D$^{**}$ | 214 [119-547] | 57 [30-215] | 105 [31-347] | 267 [54-515] | 152 [91-515] | 124 [102-161] | 138 [98-188] |
+| &nbsp;&nbsp;&nbsp; T2D$^{**}$ | 510 [405-600] | 251 [89-411] | 405 [77-499] | 371 [95-484] | 499 [358-632] | 121 [75-499] | 405 [75-499] |
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \tablenote[0.90\linewidth]{
+    \textsuperscript{*} Mixed includes both T1D, T2D and prediabetes\newline
+    \textsuperscript{**} Total study size for each CGM-derived metrics includes the study populations in all the studies using the CGM-derived metric in the column, reported as median [IQR]  \newline
+    Studies may contribute to more than one CGM-derived metric because multiple metrics could be evaluated within the same study.\newline
+    \textit{Abbreviations:} T1D: type 1 diabetes, T2D: type 2 diabetes, MAGE: mean amplitude of glycemic excursions, TIR: time in range, MBG: mean blood glucose, SD: standard deviation, CV: coefficient of variation, TBR: time below range, TAR: time above range.
+    }
+```
+:::
+
+::: {.content-visible when-format="html"}
+
+<p style="font-size:75%">´
+    \* Mixed includes both T1D, T2D and prediabetes\
+    \*\* Mixed includes both T1D, T2D and prediabetes
+    *Abbreviations:* T1D: type 1 diabetes, T2D: type 2 diabetes, MAGE: mean amplitude of glycemic excursions, TIR: time in range, MBG: mean blood glucose, SD: standard deviation, CV: coefficient of variation, TBR: time below range, TAR: time above range.
+</p>
+:::
+
+Summary of the frequency of the seven most used CGM-derived metrics
+
+:::
+
+### Prediction Studies
+Only three studies evaluated the predictive performance of CGM-derived metrics for cardiovascular outcomes, all using logistic regression models with MAGE as the predictor. Two studies reported \acr{AUROC} values of 0.61 and 0.62, respectively,[@43,28] and both found MAGE to outperform HbA1c (\acr{AUROC}: 0.55 and 0.58, respectively). The third study used receiver operating characteristic analysis to determine the optimal threshold for dichotomizing MAGE during variable selection but did not report the \acr{AUROC}.[@44] Instead, a threshold of MAGE ≥ 3.4 mmol/L was identified as a risk factor for stenosis and/or occlusion, with a sensitivity of 0.60 and a specificity of 0.61.
+
+
+### Association Studies
+- [ ] I am thinking of changing table @tbl-study3-clin-subclin-cvd to be more aligned with the overview tables (@sec-suppl-subclin-results)
+An overview of the different outcomes found in the literature both clinical and subclinical are shown in @tbl-study3-clin-subclin-cvd.
+
+:::{#tbl-study3-clin-subclin-cvd}
+| Clinical | Subclinical |
+|:---|:---|
+| CVD = Cardiovascular disease |  ABI = Ankle–brachial index |
+| &nbsp;&nbsp; - Macrovascular complications  | BP = Blood pressure |
+| &nbsp;&nbsp; - Diabetic macroangiopathy | Carotid artery distensibility = Carotid artery distensibility or carotid distensibility coefficient |
+| CAD = Coronary artery disease | CCA = Common carotid artery |
+| &nbsp;&nbsp; - CHD = Coronary heart disease | CIMT = Carotid artery intima-media thickness |
+| &nbsp;&nbsp; - MI = Myocardial infarction |  DBP = Diastolic blood pressure |
+| &nbsp;&nbsp; - Heart attack | FMD = Flow-mediated dilation of the brachial artery |
+| &nbsp;&nbsp; - Heart failure | GSM = Gray-scale median of the carotid arteries |
+| &nbsp;&nbsp; - (Unstable) angina pectoris | HRV = Heart rate variability |
+| Cardiovascular events | IMT = Intima-media thickness |
+| &nbsp;&nbsp; - Ishemic heart disease (IHD) | PWV = Pulse wave velocity |
+| LEAD = Lower extremity artery disease | &nbsp;&nbsp; - ba-PWV = Brachial-ankle pulse wave velocity |
+| MACE = Major adverse cardiovascular events | &nbsp;&nbsp; - cr-PWV = Carotid-radial pulse wave velocity |
+| PAD = Peripheral artery disease | &nbsp;&nbsp; - cf-PWV = Carotid-femoral pulse wave velocity |
+| Stroke = Stroke, Cerebrovascular disease, or Cerebrovascular accident | &nbsp;&nbsp; - Aortic PWV = Aortic pulse wave velocity |
+|  | SBP = Systolic blood pressure  |
+
+: Summary of established clinical and subclinical outcomes and corresponding abbreviations identified in the literature.
+:::
+
+### Clinical Association Studies
+
+- [ ] Does anyone have a suggestion on how to present this data in a table that is smaller then this @tbl-study1-clinical-overview?
+- [ ] Based on AAI comments, then I am removing the columns "Diabetes duration" and "HbA1c, mmol/mol" and will try my best to let studies only take up one row.
+- [ ] Or maybe I will just add it down in supplementary
+
+Most studies focused exclusively on subclinical cardiovascular outcomes (37 of 53 studies, 70%), whereas 13 studies (25%) investigated only clinical cardiovascular outcomes and three studies (6%) included both clinical and subclinical outcomes.<!-- Because the subsequent chapters of this dissertation focus on clinical cardiovascular outcomes, only these findings are discussed in detail below (@tbl-study1-clinical-overview and @tbl-main-clinical-findings). -->
+An overview of all the studies is provided in @sec-suppl-subclin-results.
+
+
+
+- [ ] I need to add a total row of summarized values in @tbl-study1-clinical-overview
+- [ ] I need to add an other column in @tbl-study1-clinical-overview for other CGM derived metrics
+
+
+An overview of the most frequently used CGM-derived metrics stratified based on clinical and subclinical cardiovascular outcomes are shown in @tbl-study1-clinical-overview.
+Outcomes related to subclinical cardiovascular outcomes were more frequently studied (59 studies) compared to clinical outcomes (26 studies) and studies were predominantly done among people with T2D.
+Among clinical cardiovascular outcomes, coronary artery disease was examined most frequently (6 studies), followed by macrovascular complications (5 studies) and the Gensini score (4 studies) and for subclinical cardiovascular outcomes, particularly arterial wall thickness were frequently investigated (19 studies), arterial stiffness (12 studies), cardiac and pulse-related measures (10 studies), and flow resistance (9 studies). 
+
+TIR was the most frequently reported CGM-derived metric across most arterial-stiffness outcomes, followed by MAGE, MBG, SD, and CV. MAGE was reported most frequently in studies evaluating coronary artery disease, Gensini score, and Syntax score. By contrast, relatively few CGM-derived metrics were reported for mortality, major adverse cardiovascular events, stroke, peripheral artery disease, and lower-extremity arterial disease.
+
+
+The outcomes for the 53 studies can be found in @sec-suppl-subclin-results
+
+::: {.landscape}
+::: {.small}
+
+::: {#tbl-study1-clinical-overview}
+
+```{=latex}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{l|c|cccc|ccccccc}
+            \toprule
+            Cardiovascular Outcomes&
+            \begin{tabular}[c]{@{}c@{}}
+                Number of\\
+                studies
+            \end{tabular}
+            &
+            T1D
+            &
+            T2D
+            &
+            \begin{tabular}[c]{@{}c@{}}
+                Mixed\\
+                (T1D/T2D)
+            \end{tabular}
+            &
+            \begin{tabular}[c]{@{}c@{}}
+                Prediabetes or\\
+                impaired glucose
+            \end{tabular}
+            &
+                                                                          TIR &MAGE& MBG & SD & CV &TBR & TAR\\\midrule
+            Macrovascular Mortality             & 2   & -  & 2  & -  & -  & 1 & -  & -   & -  & -  & -  & - \\
+            Macrovascular Complications         & 5   & 3  & 2  & -  & -  & 3 & -  & -   & 1  & 3  & 2  & 1 \\
+            Major adverse cardiovascular events & 2   & -  & 2  & -  & -  & - & -  & -   & -  & -  & -  & - \\
+            Coronary Artery Disease             & 6   & 1  & 5  & -  & -  & 2 & 2  & -   & -  & -  & -  & - \\
+            Gensini score                       & 4   & -  & 3  & -  & 1  & - & 3  & -   & -  & -  & -  & - \\
+            Syntax score                        & 2   & -  & 1  & -  & 1  & - & 2  & -   & -  & -  & -  & - \\
+            Stroke                              & 3   & 1  & 1  & 1  & -  & 2 & -  & -   & -  & -  & -  & - \\
+            Peripheral Artery Disease           & 1   & 1  & -  & -  & -  & 1 & -  & -   & -  & -  & -  & - \\
+            Lower extremity arterial disease    & 1   & -  & 1  & -  & -  & 1 & -  & -   & 1  & 1  & -  & - \\ \hline
+            Arterial stiffness                  & 12  & 6  & 5  & 1  & -  & 8 & 6  & 7   & 6  & 5  & 4  & 4 \\
+            Flow resistance                     & 9   & 4  & 4  & 1  & -  & 3 & 5  & 6   & 3  & 4  & 3  & 3 \\
+            Arterial wall thickness             & 19  & 6  & 11 & 1  & 1  & 8 & 9  & 10  & 9  & 10 & 5  & 4 \\
+            Arterial wall composition           & 6   & 2  & 4  & -  & -  & 3 & 2  & 5   & 2  & 3  & 5  & 5 \\
+            Cardiac and pulse related measures  & 10  & 2  & 6  & 2  & -  & 4 & 1  & 5   & 7  & 3  & 2  & 2 \\
+            Arterial lumen                      & 3   & 2  & 1  & -  & -  & 2 & 1  & 1   & -  & 1  & 1  & 1 \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+```
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \tablenote[0.90\linewidth]{
+        Cardiovascular outcomes were grouped into clinically meaningful categories. A detailed description of the outcome categories is provided in supplementary.\newline
+        Values represent the number of included studies evaluating each CGM-derived metric for the specified cardiovascular outcome. A study could contribute to more than one cell if multiple CGM-derived metrics were investigated.\newline
+        \textit{Abbreviations: TIR, time in range; MAGE, mean amplitude of glycemic excursions; MBG, mean blood glucose; SD, standard deviation; CV, coefficient of variation; TBR, time below range; TAR, time above range}
+    }
+```
+:::
+
+Overview of the diabetes populations and the most frequently reported CGM-derived metrics, stratified by cardiovascular outcome.
+
+:::
+:::
+:::
+
+
+::: {#tbl-adjustments}
+
+
+```{=latex}
+    \begin{table}[H]
+        \begin{tabular}{llll}
+            \toprule
+            \textbf{Adjustment Domain}                & \textbf{Clinical} & \textbf{Subclinical} & \textbf{Total} \\\midrule
+            Demographic     & 14                & 22                   & 36             \\
+            Anthropometric  & 10                & 19                   & 29             \\
+            Lifestyle       & 8                 & 12                   & 20             \\
+            Medical History & 14                & 18                   & 32             \\
+            Physiological   & 7                 & 17                   & 24             \\
+            Biochemical     & 11                & 21                   & 32             \\
+            Medication      & 7                 & 10                   & 17             \\
+            CGM/GV          & 5                 & 9                    & 14             \\
+            CVD marker      & 1                 & 5                    & 6              \\
+            Not applicable  & 3                 & 9                    & 12             \\
+            Not reported    & 1                 & 5                    & 6              \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+```
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \tablenote[0.70\linewidth]{
+        A study could contribute to more than one adjustment domain.
+    }
+```
+:::
+
+Overview of adjustments used in the association studies
+:::
+

@@ -1,0 +1,176 @@
+## Algorithmic Fairness in Prediction Models
+Bias is an important spect to consider when working data drivenly.
+In study III, we therefore evaluates bias in CGM trained machine learning models for forecasting in the T1DX cohort
+
+### Bias in Machine Learning Models
+The RMSE of the models are shown in  @tbl-study3-main-results1 and @tbl-study3-main-results2.
+Base-Generalized and Transfer Learned models achieved models achieved lower prediction errors (RMSE: 2.00 to 2.06 mmol/L) than the naive last observation carried forward (LOCF)(RMSE: 2.41 and 2.45 mmol/L) and Base-Individual models (RMSE: 2.54 to 2.63 mmol/L) for both White and Black participants (@tbl-study3-main-results1 and @tbl-study3-main-results2).
+
+
+::: {#tbl-study3-main-results1 tbl-colwidths="[12,22,22,22,22]"}
+| Ratio | LOCF | Base-Individual | Base-Generalized | Transfer Learned |
+|:---:|:---:|:---:|:---:|:---:|
+| 0 | | | 2.04 [1.95, 2.13] | 2.02 [1.94, 2.11] |
+| 10 | | | 2.04 [1.95, 2.13] | 2.02 [1.94, 2.11] |
+| 20 | | | 2.04 [1.95, 2.12] | 2.02 [1.94, 2.10] |
+| 30 | | | 2.03 [1.94, 2.12] | 2.02 [1.94, 2.10] |
+| 40 | 2.45 [2.32, 2.57] | 2.54 [2.38, 2.70] | 2.03 [1.94, 2.12] | 2.02 [1.94, 2.10] |
+| 50 | (independent | (independent | 2.03 [1.94, 2.11] | 2.02 [1.93, 2.10] |
+| 60 | of ratio)| of ratio)| 2.02 [1.94, 2.11] | 2.02 [1.93, 2.10] |
+| 70 | | | 2.02 [1.93, 2.11] | 2.01 [1.93, 2.10] |
+| 80 | | | 2.02 [1.93, 2.11] | 2.01 [1.93, 2.10] |
+| 90 | | | 2.01 [1.92, 2.10] | 2.01 [1.93, 2.10] |
+| 100 | | | 2.01 [1.92, 2.10] | 2.01 [1.92, 2.10] |
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.80\linewidth]{
+Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population's age (40\% children) and sex (57\% women) distribution. *Abbreviations:* LOCF: last observation carried forward.
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population's age (40% children) and sex (57% women) distribution. *Abbreviations:* LOCF: last observation carried forward.
+</p>
+:::
+
+Root mean squared errors with 95% CIs for the different models evaluated on White participants.
+:::
+
+::: {#tbl-study3-main-results2 tbl-colwidths="[12,22,22,22,22]"}
+| Ratio | LOCF | Base-Individual | Base-Generalized | Transfer Learned |
+|:---:|:---:|:---:|:---:|:---:|
+| 0 | | | 2.05 [1.96, 2.14] | 2.00 [1.91, 2.08] |
+| 10 | | | 2.05 [1.96, 2.14] | 2.00 [1.91, 2.08] |
+| 20 | | | 2.05 [1.96, 2.14] | 2.00 [1.92, 2.08] |
+| 30 | | | 2.05 [1.97, 2.14] | 2.00 [1.92, 2.08] |
+| 40 | 2.41 [2.28, 2.53] | 2.63 [2.47, 2.79] | 2.05 [1.97, 2.14] | 2.00 [1.92, 2.08] |
+| 50 | (independent | (independent | 2.05 [1.97, 2.14] | 2.00 [1.92, 2.08] |
+| 60 |  of ratio)|  of ratio)| 2.06 [1.97, 2.14] | 2.00 [1.92, 2.08] |
+| 70 | | | 2.06 [1.97, 2.14] | 2.00 [1.92, 2.08] |
+| 80 | | | 2.06 [1.97, 2.14] | 2.00 [1.92, 2.09] |
+| 90 | | | 2.06 [1.97, 2.15] | 2.00 [1.92, 2.09] |
+| 100 | | | 2.06 [1.97, 2.15] | 2.00 [1.92, 2.09] |
+
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.80\linewidth]{
+<!-- Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population's age (40\% children) and sex (57\% women) distribution. *Abbreviations:* LOCF: last observation carried forward. -->
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population's age (40% children) and sex (57% women) distribution. *Abbreviations:* LOCF: last observation carried forward.
+</p>
+:::
+
+Root mean squared errors with 95% CIs for the different models evaluated on Black participants.
+
+:::
+
+For the Base-Generalized models, prediction performance gradually diverged between White and Black participants as the proportion of White participants in the training data increased (@fig-lmem-results). For example, when the training data changed from 0% to 100% White participants, the difference in RMSE between the racial groups increased by 0.04 mmol/L [95% CI: 0.001 to 0.008],$p$=0.02, indicating that training data composition affected the two groups differently(@tbl-general-model-coefficients). This divergence was not observed after transfer learning (0.002 mmol/L[95% CI: -0.001 to 0.005], $p$=0.20) (@tbl-transferlearned-coefficients).
+A statistically significant differences were however found in both the Base-Generalized and the Transfer Learned models for age groups (0.482 [0.355 to 0.610], p < 0.001, @tbl-general-model-coefficients and 0.411 [0.290 to 0.533], p < 0.001, @tbl-transferlearned-coefficients respectivly). The differences in age groups showed a lower error when forecasting blood glucose values for adults compared to children.
+Larger sample sizes available for transfer learning were associated with lower prediction error ($β$ = -0.111 mmol/L [-0.161 to -0.061] mmol/L, $p$ < 0.001) for every additional 1,000 samples used for fine-tuning (@tbl-transferlearned-coefficients).
+In contrast, the size of the dataset used to train the Base-Generalized model was not associated with prediction error.
+
+::: {#fig-lmem-results width=100%}
+
+::: {.content-visible when-format="html"}
+
+[![](figures/4_results_fig/study_3_Fig2.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_3_Fig2.png){width=100%}
+
+:::
+
+::: {.content-visible when-format="pdf"}
+
+![](figures/4_results_fig/study_3_Fig2.png){width=100%}
+
+:::
+
+Estimated root mean squared errors (RMSE) across 11 different proportions of White and Black participants in the dataset.
+:::
+
+::: {#tbl-general-model-coefficients}
+| Predictor | Coefficient | 95% CI | P-value |
+|:---|:---|:---|:---|
+| Intercept | 1.893 | [ 1.762, 2.024] | <0.001 |
+| **Race** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; White | Reference | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Black | 0.007 | [-0.118, 0.132] | 0.91 |
+| **Age** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Adult | Reference | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Child | 0.482 | [ 0.355, 0.610] | <0.001 |
+| **Sex** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Male | Reference | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Female | -0.076 | [-0.201, 0.048] | 0.23 |
+| Training size Base-Generalized* | 0.019 | [-0.055, 0.093] | 0.62 |
+| Ratio (per 10%) | -0.003 | [-0.007, 0.001] | 0.12 |
+| Ratio · Race | 0.004 | [0.001, 0.008] | 0.02 |
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.72\linewidth]{
+    \textsuperscript{*} Per 100,000 samples. (Training size was centered at 510,000 as the training data had a mean of 514,293 samples)
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+\* Per 100,000 samples. (Training size was centered at 510,000 as the training data had a mean of 514,293 samples)
+</p>
+:::
+
+Model coefficients from linear mixed effects models for root mean squared errors of the Base-Generalized models.
+
+:::
+
+::: {#tbl-transferlearned-coefficients}
+
+| Predictor | Coefficient | 95% CI | P-value |
+|:---|:---|:---|:---|
+| Intercept | 1.890 | [ 1.768, 2.015] | <0.001 |
+| **Race** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; White | Reference | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Black | -0.028 | [-0.147, 0.092] | 0.65 |
+| **Age** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Adult | Reference | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Child | 0.411 | [ 0.290, 0.533] | <0.001 |
+| **Sex** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Male | Reference | | |
+| &nbsp;&nbsp;&nbsp;&nbsp; Female | -0.057 | [-0.173, 0.060] | 0.34 |
+| Training size Base-Generalized* | 0.011 | [-0.060, 0.081] | 0.77 |
+| Training size tl** | -0.111 | [-0.161, -0.061] | <0.001 |
+| Ratio (per 10 units) | -0.001 | [-0.003, 0.001] | 0.46 |
+| Ratio · Race | 0.002 | [-0.001, 0.005] | 0.20 |
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.72\linewidth]{
+    \textsuperscript{*} Per 100,000 samples. (Training size was centered at 510,000 as the training data had a mean of 514,293 samples)\newline
+    \textsuperscript{**} Per 1,000 samples. (Training size for the transfer learned approach was centered at 4,400 as the training data for fine-tuning had a mean of 4,371 samples.)
+
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+\* Per 100,000 samples. (Training size was centered at 510,000 as the training data had a mean of 514,293 samples)\
+\*\* Per 1,000 samples. (Training size for the transfer learned approach was centered at 4,400 as the training data for fine-tuning had a mean of 4,371 samples.)
+</p>
+:::
+
+Model coefficients from linear mixed effects models for root mean squared errors of the Transfer Learned models.
+
+:::
+
+
+### The Surveillance Error Grid
+Surveillance Error Grid analysis showed minimal differences between models and training data compositions. Across all models, racial groups, and training data ratios, almost all predictions fell within the "None" or "Slight" risk zones, while approximately 3–6% were classified as "Moderate" risk and no predictions were classified as "High" or "Extreme" risk (@sec-suppl-seg-results). These findings indicate that the small differences in RMSE observed between models were unlikely to be clinically meaningful.
+

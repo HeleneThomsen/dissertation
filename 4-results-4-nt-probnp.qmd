@@ -1,0 +1,61 @@
+
+## Prediction of NT-proBNP Results
+Results from the prediction analysis are shown in @tbl-model-performance_main.
+The highest optimism-corrected AUROC was achieved by Model A2 which included both all nine clinical variables from the SCORE2-Diabetes input and the CGM-derived metrics TIR and MAGE (AUROC: 0.81 [0.77–0.88]).
+Optimism-corrected AUROCs for the models with fewer predictors had modest performance (AUROC: 0.72 to 77 ), however the optimism-correction was smaller and the prediction stability was more stable the fewer predictors were included in the models (Models: B1, B2, and B3) (@#sec-suppl-pred-stability).
+The models including only CGM-data either as derived metrics (Model C1) or as UMAP dimensions (Model D1a, D1b, D1c) performed the worst (AUROC: 0.53 to 0.69). Age seemed a better predictor for elevated NT-proBNP (AUROC: 0.73 [0.65 - 0.80])
+
+
+::: {#tbl-model-performance_main tbl-colwidths="[36,24,11,12,15]"}
+
+| Models | Corrected [95% CI] | Apparent | Optimism | Number of predictors |
+|:---|:---:|:---:|:---:|:---:|
+| **Model A0:** (Age) | 0.73 [0.65 - 0.80] | 0.73 | 0.00 | 1 |
+| **Model A1:** | 0.79 [0.76 - 0.87] | 0.83 | 0.04 | 9 |
+| (SCORE2-Diabetes input) | | | | |
+| **Model A2:** | 0.81 [0.77-0.88] | 0.86 | 0.05 | 11 |
+| (Model A1 +<br> TIR and MAGE) | | | | |
+| **Model A3a:**<br> | 0.80 [0.75 - 0.87] | 0.84 | 0.05 | 11 |
+| (Model A1 + UMAP (min)) | | | | |
+| **Model A3b:** | 0.79 [0.75 - 0.87] | 0.84 | 0.05 | 11 |
+| (Model A1 + UMAP (max)) | | | | |
+| **Model A3c:** | 0.79 [0.75 - 0.87] | 0.84 | 0.05 | 11 |
+| (Model A1 + UMAP (mean)) | | | | |
+| | | | | |
+| **Model B1:** | 0.74 [0.65 - 0.81] | 0.73 | 0.00 | 1 |
+| (SCORE2-Diabetes score) | | | | |
+| **Model B2:** | 0.77 [0.70 - 0.85] | 0.79 | 0.01 | 3 |
+| (Model B1 +<br> TIR and MAGE) | | | | |
+| **Model B3a:** | 0.72 [0.65 - 0.80] | 0.74 | 0.02 | 3 |
+| (Model B1 + UMAP (min))| | | | |
+| **Model B3b:** | 0.72 [0.65 - 0.81] | 0.74 | 0.02 | 3 |
+| (Model B1 + UMAP (max))| | | | |
+| **Model B3c:** | 0.73 [0.65 - 0.81] | 0.75 | 0.02 | 3 |
+| (Model B1 + UMAP (mean)) | | | | |
+| | | | | |
+| **Model C1:**<br> (TIR and MAGE) | 0.69 [0.61 - 0.77] | 0.69 | 0.01 | 11 |
+| | | | | |
+| **Model D1a:**<br> (UMAP, max\*) | 0.55 [0.48 - 0.64] | 0.58 | 0.03 | 2 |
+| **Model D1b:**<br> (UMAP, min\*) | 0.53 [0.43 - 0.63] | 0.57 | 0.04 | 2 |
+| **Model D1c:**<br> (UMAP, mean\*) | 0.53 [0.43 - 0.64] | 0.56 | 0.03 | 2 |
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.90\linewidth]{
+    \textsuperscript{*} Indicates the pooling technique for the embeddings.\
+    \textsuperscript{*} Abbreviations:* CI: Confidence Interval, CGM: Continuous Glucose Monitoring, UMAP: Uniform Manifold Approximation and Projection.
+
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+\* Indicates the pooling technique for the embeddings.\
+\* Abbreviations:* CI: Confidence Interval, CGM: Continuous Glucose Monitoring, UMAP: Uniform Manifold Approximation and Projection.
+</p>
+:::
+
+Area under the receiver operating characteristic curve for the included models.
+
+:::
