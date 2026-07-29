@@ -571,8 +571,16 @@ Results from the Surveillance Error Grid for Black participants. Values are repo
 
 ## Paper II
 
+```{=latex}
+\includepdf[pages=-, fitpaper=true]{figures/study_2_manuscript.pdf}
+```
+
 \newpage
 
 ## Paper III
+
+```{=latex}
+\includepdf[pages=-, fitpaper=true]{figures/study_3.pdf}
+```
 
 :::

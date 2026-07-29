@@ -7,11 +7,14 @@ Department of Public Health, Aarhus University, Denmark
 
 #### Supervisors:
 
-**Associate Professor Adam Hulman, PhD (main supervisor)**\
+**Adam Hulman, PhD (main supervisor)**\
+Associate Professor and Senior Researcher\
+Principle Investigator of the Hulman Lab\
 Department of Public Health, Aarhus University, Denmark\
 Steno Diabetes Center Aarhus, Aarhus university Hospital Denmark\
 
 **Anders Aasted Isaksen, MD, PhD**\
+Clinical Researcher\
 Steno Diabetes Center Aarhus, Aarhus university Hospital Denmark\
 
 **Guy Fagherazzi, PhD**\
@@ -20,6 +23,7 @@ Head of the Deep Digital Phenotyping Research Unit\
 Luxembourg Institute of Health, Luxembourg\
 
 **Signe Toft Andersen, MD, PhD**\
+Epidemiologist and Researcher\
 Steno Diabetes Center Aarhus, Denmark\
 Department of Medicine, Gødstrup Hospital, Denmark
 

@@ -4,7 +4,7 @@ The overall aim of this PhD dissertation was to investigate the potential of con
 
 
 ## Specific Aims {.unlisted}
-**Aim 1:** To identify and summarize the existing literature on associations between glycemic control and cardiovascular outcomes, including the use of CGM-derived metrics for cardiovascular risk prediction. *(Study I)*
+**Aim 1:** To identify and summarize the existing literature on associations between glycemic control and cardiovascular outcomes, and the use of CGM-derived metrics for cardiovascular risk prediction. *(Study I)*
 
 **Aim 2:** To determine whether a CGM foundation model learns meaningful glucose representations in individuals with type 1 and type 2 diabetes. *(Study II)*
 

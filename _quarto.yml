@@ -16,8 +16,8 @@ book:
     - 0-abbreviations.qmd
     # - 0-to_do.qmd
     - 1-introduction.qmd
-    # - 2-aims.qmd
-    # - 3-methods.qmd
+    - 2-aims.qmd
+    - 3-methods.qmd
     # - 4-results-1-ScR.qmd
     # - 4-results-2-baseline-tbl.qmd
     # - 4-results-3-cosim.qmd
@@ -30,8 +30,8 @@ book:
     # - 9-abstract-eng.qmd
     # - 10-abstract-da.qmd
   
-  # appendices:
-  #   - app1-supplementary.qmd
+  appendices:
+    - app1-supplementary.qmd
     # - app2-addendum.qmd
   # cookie-consent: 
   #   type: express
@@ -90,7 +90,7 @@ acronyms:
     - shortname: MBG
       longname: mean glucose
     - shortname: AID
-      longname: Automated insulin delivery
+      longname: automated insulin delivery
     - shortname: SCORE2-Diabetes
       longname: Systematic Coronary Risk Evaluation 2-Diabetes
     - shortname: eGFR
@@ -174,6 +174,8 @@ format:
         \DefTblrTemplate{capcont}{default}{}
       }
       \SetTblrOuter[longtblr]{theme=headless}
+
+      \usepackage{pdfpages}
 
       \usepackage{multirow}
       \usepackage{xcolor}
