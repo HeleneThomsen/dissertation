@@ -1,11 +1,11 @@
 ## Baseline Characteristics Tables of the Datasets
 The CANCAN dataset presented below was used in Study II (@tbl-baseline-cancan).
 The total number of included participants were 159 and 67 (42%) had elevated NT-proBNP values.
-Participants with elevated NT-proBNP tended to be older, have a longer duration of diabetes, and more frequently have cardiovascular disease. They also tended to have lower BMI and lower LDL and total cholesterol concentrations, while exhibiting modestly better overall glycaemic control but slightly higher glycaemic variability.
+Participants with elevated NT-proBNP tended to be older, have a longer duration of diabetes, and more frequently have cardiovascular disease. They also tended to have lower BMI and lower LDL and total cholesterol concentrations, while exhibiting modestly better overall glycemic control but slightly higher glycaemic variability.
 
-:::  {#tbl-baseline-cancan tbl-colwidths="[40,20,20,20]"}
+:::  {#tbl-baseline-cancan tbl-colwidths="[40,20,20,20]" tbl-pos="H"}
 
-| Variable | Total | NT-proBNP $≤$125 pg/mL | NT-proBNP >125 pg/mL |
+| Variable | Total | NT-proBNP $\leq 125$ pg/mL | NT-proBNP >125 pg/mL |
 |:---| ---:| ---:| ---:|
 | N | 159 | 92 | 67 |
 | Age (years) | 65 [56, 71] | 60 [53, 68] | 68 [64, 76] |
@@ -51,10 +51,10 @@ Baseline table for CANCAN data.
 
 :::
 The T1DX dataset presented below was used in Study II and Study III (@tbl-baseline-t1dx).
-A total of 205 participants were included, of whom 101 (49%) were White. Compared with Black participants, White participants tended to have lower HbA1c levels (63 mmol/mol vs. 72 mmol/mol ) and a higher proportion of children (49% vs. 32%). Females constituted the majority of both racial groups (46% and 40%).
+A total of 205 participants were included, of whom 101 (49%) were White. Compared with Black participants, White participants tended to have lower HbA1c levels (63 mmol/mol vs. 72 mmol/mol ) and a higher proportion of children (49% vs. 32%). Females constituted the majority of both racial groups (54% and 60%).
 
 
-::: {#tbl-baseline-t1dx tbl-colwidths="[40,20,20,20]"}
+::: {#tbl-baseline-t1dx tbl-colwidths="[40,20,20,20]" tbl-pos="H"}
 
 | Characteristics | Total | Race: White | Race: Black |
 |:---|---:|---:|---:|

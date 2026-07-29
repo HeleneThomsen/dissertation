@@ -3,7 +3,12 @@ execute:
   echo: false
 ---
 
+
 ::: {.content-visible when-format="pdf"}
+```{=latex}
+\pagenumbering{roman}
+```
+
 {{< include 0-1-supervisors.qmd >}}
 :::
 
@@ -38,3 +43,4 @@ knitr::include_graphics("figures/ausegl_blaa.png")
 knitr::include_graphics("figures/au_health.png")
 ```
 :::
+

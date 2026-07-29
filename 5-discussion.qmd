@@ -4,7 +4,7 @@ The overall aim of this thesis was to investigate the potential of CGM data and 
 
 
 
-## Evidence for CGM in Cardiovascular Risk Assessment
+## Study I: Evidence for CGM in Cardiovascular Risk Assessment
 <!-- **Aim 1:** To identify and summarize the existing literature on associations between glycemic control and cardiovascular outcomes, including the use of CGM-derived metrics for cardiovascular risk prediction. *(Study I)* -->
 Through the literature 53 studies investigating the link between CGM-data and CVD outcomes were identified.
 There were very inconsistent findings across the literature.
@@ -27,7 +27,7 @@ Only a minority of studies adjusted for additional CGM-derived metrics. Whether 
 The heterogeneity of the literature and the challenges of describing glucose variability through CGM-derived metrics provided part of the rationale for evaluating foundation model-derived representations in the subsequent studies, as the complete CGM time series can be used directly without first reducing it to manually engineered CGM-derived metrics. As a result, information on hypoglycemia, hyperglycemia, mean glucose, glucose variability within and between days, and temporal glucose patterns can all be incorporated simultaneously.
 
 
-## Learning Meaningful Representations from CGM data
+## Study II: Learning Meaningful Representations from CGM data
 <!-- **Aim 2:** To determine whether a CGM foundation model learns meaningful and interpretable glucose representations in individuals with type 1 and type 2 diabetes. *(Study II)* -->
 Study II showed that CGMformer, the foundation model developed by Lu et al. [@YurunLu2025], captured both long- and short-term glucose fluctuations, as assessed using traditional CGM-derived metrics, in individuals with T1D and T2D. However, the learned representations (embeddings) did not show clear patterns when stratified by CVD-related variables or race. Nevertheless, these findings suggest that CGMformer can generalize beyond its original training population of Chinese individuals with normal glucose tolerance, impaired glucose regulation, and T2D, because it captured clinically meaningful glycemic patterns in both the Danish CANCAN cohort of people with advanced T2D and the US T1DX cohort of people with T1D.
 
@@ -36,7 +36,7 @@ Collectively, these findings support that CGM foundation models learn stable, in
 Similar transitions from manually extracted metrics to learned representations have driven performance improvements in fields such as computer vision and natural language processing, where pretrained foundation models have become the standard approach for downstream prediction tasks.[@Bommasani2022]
 Whether these learned representations translate into improved predictive performance was subsequently investigated in Study II.
 
-## Incremental Value of CGM-derived Information for NT-proBNP Prediction
+## Study II: Incremental Value of CGM-derived Information for NT-proBNP Prediction
 <!-- **Aim 3:** To evaluate whether conventional CGM-derived metrics and learned glucose representations improve prediction of elevated NT-proBNP beyond established clinical risk factors in individuals with type 2 diabetes. *(Study II)* -->
 Although previous studies[@YurunLu2025; @Lutsker2026]  have successfully used foundation models to predict CVD-related outcomes, the learned representations in the present study did not improve prediction of elevated NT-proBNP beyond established clinical predictors and were associated with increased model complexity.
 The optimism-corrected performance estimates indicate that the more complex models were susceptible to overfitting, reinforcing the conclusion that the learned representations did not provide robust improvements beyond established clinical predictors.
@@ -45,7 +45,7 @@ Rather, their performance may depend on the downstream modeling strategy.
 In the present study, the embeddings were incorporated as fixed predictors in logistic regression models, whereas Lu et al. [@YurunLu2025] fine-tuned (@fig-tl, Transfer 1) the CGMformer and achieved an AUROC above 0.70 for predicting macrovascular complications.
 Similarly, Lutsker et al. [@Lutsker2026] demonstrated that a GLUFormer-derived risk score outperformed HbA1c in stratifying individuals according to cardiovascular-related mortality risk.
 However, the limited sample size and the lack of datasets containing both CGM data and cardiovascular outcomes precluded the use of more complex downstream models and task-specific fine-tuning as performed in Lu et al,[@YurunLu2025] and Lutsker et al,.[@Lutsker2026] Furthermore, reducing the embeddings to UMAP dimensions may have resulted in the loss of predictive information, which could partly explain the limited performance of the prediction models.
-The different findings may also reflect differences in the predicted outcomes. Whereas previous studies predicted clinical cardiovascular events or mortality, the present study focused on elevated NT-proBNP, a biomarker that is affected not only by cardiac dysfunction but also by factors such as age, sex and renal function.[@Balion2008] Consequently, glucose-derived embeddings may have a weaker relationship with NT-proBNP than with clinical cardiovascular outcomes although this remains speculative
+The different findings may also reflect differences in the predicted outcomes. Whereas previous studies predicted clinical cardiovascular events or mortality, the present study focused on elevated NT-proBNP, a biomarker that is affected not only by cardiac dysfunction but also by non-cardiac factors such as age and renal function.[@Balion2008; @mcdonagh2021j] Consequently, glucose-derived embeddings may have a weaker relationship with NT-proBNP than with clinical cardiovascular outcomes although this remains speculative
 Together, these findings suggest that the successful application of foundation model representations to complex clinical outcomes may depend on the downstream modelling strategy and subsequently having access to substantially larger datasets.
 
 While learned representations did not translate into improved prediction of elevated NT-proBNP, TIR and MAGE as standalone predictors did.
@@ -57,7 +57,7 @@ Participants with elevated NT-proBNP in the CANCAN cohort exhibited characterist
 Overall, these findings illustrate that the relationship between glycemic control, body composition, and cardiovascular risk is complex.
 
 
-## Fairness of CGM-based Machine Learning Models
+## Study III: Fairness of CGM-based Machine Learning Models
 <!-- **Aim 4:** To evaluate the fairness of machine learning models for glucose prediction by assessing model performance across non-Hispanic Black and non-Hispanic White populations. *(Study III)* -->
 While Studies I and II focused on whether learned representations and traditional CGM-derived metrics improved cardiovascular risk prediction, the final aim of the thesis considered another important aspect of clinical prediction models: whether their performance is equitable across population subgroups.
 
@@ -67,7 +67,9 @@ Previous studies have demonstrated the potential of transfer learning to improve
 
 
 ## Methodological Considerations
-<!-- Study 1 -->
+The following section discusses methodological considerations related to the studies included in this thesis. Particular attention is given to the use of previously collected datasets, the processing and representation of CGM data, model evaluation, dimensionality reduction, and fairness assessment. These considerations provide important context for interpreting the findings and for understanding the strengths and limitations of the methods applied throughout the thesis.
+
+### Study I
 The scoping review was a comprehensive mapping of the literature and to the best of my knowledge, identified more relevant studies than any previous review on the topic together with differentiation between association and prediction studies.[@Yapanis2022; @Zhang_2024_review]
 Study III found methodological heterogeneity, which limited the feasibility of synthesizing effect estimates consistently across studies. 
 The findings were therefore presented descriptively by mapping the number of studies investigating different CGM-derived metrics and cardiovascular outcomes.
@@ -75,20 +77,18 @@ Although this approach provides an overview of the scope and distribution of the
 Furthermore, the predominance of cross-sectional studies found in the scoping review limited the clinical interpretation of the evidence identified. Without temporal separation between CGM exposure and cardiovascular outcomes, it is unclear whether the observed glucose patterns preceded cardiovascular disease or resulted from the disease itself, associated behavioural changes, or intensified treatment. Reverse causality could therefore either produce apparent associations that emerged only after the development of CVD or reduce measurable pre-existing associations through subsequent treatment and behavioural changes.
 Lastly, only searching two databases might have led to missing relevant studies in other databases, however MEDLINE and Embase were deemed the most relevant biomedical databases and a broad search strategy was prioritized over searching other databases due to the mixed terminology in both CGM-derived metrics and cardiovascular outcomes.
 
-<!-- Study 2 -->
-
-### The CGMformer and Cosine Distances
+### Study II: The CGMformer and Cosine Distances
 By externally evaluating CGMformer, developed by Lu et al.,[@YurunLu2025] Study II contributes to the validation of existing models, as recommended by Efthimiou et al.[@Efthimiou2024] and provides evidence regarding the foundation model’s generalizability.
 For the evaluation of the foundation model, by combining comparisons with established CGM-derived metrics, cosine-distance analyses, and visualizations, the study assessed both whether the representations captured clinically interpretable glycemic patterns and participant-specific glycemic characteristics. This provided greater insight into the content and potential utility of the learned representations.
 A limitation of the cosine-distance analyses was the complex dependence structure of the observations. Participants contributed multiple days of CGM data and could therefore be represented in multiple distance comparisons. Consequently, the observations were not independent, making a conventional Mann–Whitney U test inappropriate. Statistical significance would also be difficult to interpret because treating all pairwise distances as independent would overstate the effective sample size and could produce misleadingly small p-values. The cosine-distance results were therefore evaluated descriptively and visually, enabling exploration of potential group differences but not formal statistical inference.
 
-### Prediction of NT-proBNP
+### Study II: Prediction of NT-proBNP
 The use of bootstrapping with optimism correction allowed for robust internal validation, thereby reducing the risk of overfitting and overestimating the results which are important factors to take into consideration when working with limited real-world data.
 The relatively small sample size restricted the analyses because the available data were deemed insufficient for task-specific fine-tuning of CGMformer, and the embeddings were instead incorporated as fixed predictors in comparatively simple downstream models. Reducing the embeddings to UMAP dimensions made the number of predictors manageable relative to the sample size but may have discarded information relevant to NT-proBNP. Consequently, the available data did not permit evaluation of the embeddings under task-specific fine-tuning, and their potential prognostic value therefore remains undetermined.
 Furthermore, dichotomizing NT-proBNP at 125 pg/mL may be an imperfect replacement for cardiovascular risk and heart failure, limiting the extent to which the analysis could assess the relationship between CGM-derived representations and clinical cardiovascular outcomes. A more definitive evaluation would require substantially larger longitudinal datasets containing temporally aligned CGM measurements, relevant clinical covariates, and subsequent cardiovascular outcomes. However, such datasets remain rare, therefore limiting opportunities for task-specific fine-tuning or the development of more complex prediction models. Access to these data would enable assessment of whether the embeddings provide prognostic information beyond established cardiovascular risk factors and traditional CGM-derived metrics.
 
 
-### Fairness in Clinical Prediction Models
+### Study III: Fairness in Clinical Prediction Models
 A key strength of study III was its systematic evaluation of how the racial composition of training data influences predictive performance across groups. By examining multiple training strategies and varying group representation in the training data, the study provides a framework that could also be applied to fairness evaluations involving other populations, outcomes, and data modalities. The use of openly available data, together with publicly shared analytical code, further enhances the transparency and reproducibility of the study and facilitates extension of the approach in future research.
 However, the study included only non-Hispanic White and Black participants from the United States. Future studies should evaluate potential disparities across additional racial and ethnic groups and in other geographical settings. Fairness evaluations could also consider other demographic characteristics, such as age, given that glycemic control varies across the lifespan.[@Clements2016]
 Although algorithmic fairness is most commonly evaluated for binary classification using evaluation metrics such as demographic parity and equalized odds,[@gunnemyr_six_2023] comparable approaches for forecasting tasks remain less developed. Study III therefore provides a novel framework for evaluating disparities in glucose forecasting.

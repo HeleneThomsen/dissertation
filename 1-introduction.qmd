@@ -122,7 +122,7 @@ An \acr{NT-proBNP} concentration of ≥125 pg/mL or higher indicates the need fo
 Although \acr{NT-proBNP} levels may be influenced by non-cardiac factors, including age, ischemic stroke, and renal dysfunction,[@mcdonagh2021] it remains clinically useful in the assessment of individuals at increased risk of chronic heart failure.
 
 
-##  Clinical Prediction Models
+##  Cardiovascular Clinical Prediction Models
 To facilitate early identification of individuals at increased cardiovascular risk, several clinical prediction models have been developed.[@Framingham2007; @Pennells2023_score2dm; @QRISK_2007; @Segar2019]
 By estimating the probability of a \acr{CVD} event within a specified time horizon, these models can increase awareness of cardiovascular risk, encourage adherence to recommended lifestyle changes and medical treatment, and help identify individuals who are most likely to benefit from preventive interventions.[@Donald2010]
 Among these, the \acr{SCORE2-Diabetes} model estimates the 10-year risk of \acr{CVD} in individuals with \acr{T2D}. It was developed and calibrated using European cohorts, making it particularly relevant for the Danish cohort included in this dissertation.[@Pennells2023_score2dm]
@@ -130,7 +130,7 @@ However, the \acr{SCORE2-Diabetes} model relies solely on traditional clinical v
 \acr{HbA1c} has been independently associated with risk of heart failure,[@Hsiao2025] however it does not capture the short-term glucose fluctuations, which may be associated with the progression of vascular complications in diabetes.[@Belli2023]
 
 ## Association vs Prediction
-Association and prediction are distinct analytical objectives, although the terms are sometimes used interchangeably in the medical literature. This distinction is important because associations do not necessarily imply predictive utility.[@TiborVarga2020] Association studies aim to identify relationships between variables and an outcome at group level, whereas prediction models are developed to estimate future outcomes for individual patients.[@TiborVarga2020]
+Association and prediction are distinct analytical objectives, although the terms are sometimes used interchangeably in the medical literature. However the distinction is necessary because associations do not necessarily imply predictive utility.[@TiborVarga2020] Association studies aim to identify relationships between variables and an outcome at group level, whereas prediction models are developed to estimate future outcomes for individual patients.[@TiborVarga2020]
 
 Traditional statistical association modelling is often used to test hypotheses regarding associations between exposures $X$ and outcomes $Y$.[@Shmueli2010] Regression models applied to observational data are commonly used to evaluate hypotheses derived from prior knowledge, where the choice of exposures is guided by existing theory.[@Shmueli2010]
 These approaches are based on the premise that the chosen statistical model adequately represents the underlying data-generating mechanism, allowing conclusions to be drawn from the estimated model parameters.[@Breiman2001]
@@ -138,17 +138,29 @@ Results from association studies are typically summarized using estimated effect
 
 In contrast, prediction modelling applies statistical models to predict future outcomes $Y$ based on a set of predictors $X$.[@Breiman2001]
 Prediction models may be implemented using a wide range of approaches, including regression models, decision trees, and machine learning algorithms.[@Shmueli2010; @Breiman2001]
-The prediction models are fitted to data (the predictors) and the output $Y´$ is evaluated based on the outcome $Y$, [@Breiman2001] and evaluation metrics on prediction studies often include classification metrics such as \acr{AUROC}, sensitivity, specificity and calibration plots[@VanCalster2025] or correlation coefficients, and \acr{RMSE}, for forecasting models.[@vanDoorn2021]
+The prediction models are fitted to data (the predictors) and the predicted output $Y´$ is evaluated based on the outcome $Y$. [@Breiman2001]
+Evaluation metrics on prediction studies often include classification metrics such as \acr{AUROC}, sensitivity, specificity and calibration plots[@VanCalster2025] or correlation coefficients, and \acr{RMSE}, for forecasting models.[@vanDoorn2021]
 
 
-## Machine Learning and Representation Learning
+## Machine Learning 
 Associations between \acr{CGM}-derived metrics and \acr{CVD} outcomes have been investigated in the literature,[@Yapanis2022; @Thomsen2026; @Zhang2024] whereas evidence regarding the predictive value of CGM-derived metrics for cardiovascular risk assessment remains limited.[@Hua2012; @Koroleva2022; @Su2011]
 The widespread adoption of \acr{CGM} has generated large volumes of glucose data, enabling the application of machine learning methods in diabetes care.[@Jaloli2023; @Ellahham2020]
+Machine learning is often associated with complex algorithms that are hard to interpretate, but many machine learning methods are closely related to familiar statistical approaches.[@Badillo2020] Similarly, linear regression can be applied in a data-driven modelling framework and are among the most interpretable machine learning methods.[@Badillo2020]
 Machine learning models can in general be divided into supervised and unsupervised machine learning.[@Badillo2020]
 Supervised machine learning uses labelled data where each sample (e.g. age and sex from one individual) has a label or an outcome (e.g., elevated \acr{NT-proBNP}) to predict new outcomes for previously unseen data. Unsupervised machine learning on the other hand uses data without labels to explore underlying structures or clusters in data.[@Badillo2020]
-Among supervised learning methods, deep neural networks are particularly notable because they can automatically learn informative representations directly from raw data for downstream tasks such as prediction or classification, reducing the need for manual feature engineering. This process is known as representation learning.[@Jaloli2023; @Bengio2013]
-Consequently, deep neural networks offer an alternative to relying on predefined \acr{CGM}-derived metrics.
 
+Among supervised learning methods, deep neural networks are particularly notable because they can automatically extract information directly from raw data for tasks such as prediction or classification, reducing the need for manual feature engineering such as calculating CGM-derived metrics by hand.[@Jaloli2023; @Bengio2013]
+Consequently, deep neural networks offer an alternative to relying on predefined \acr{CGM}-derived metrics.
+Since \acr{CGM} data are collected repeatedly over time, methods that can account for temporal dependencies are particularly relevant. A \acr{LSTM} is a type of recurrent neural network, which have been designed for time-series data and used for glucose prediction tasks as illustrated in @fig-lstm.[@Foreman2021; @Jaloli2023; @Badillo2020] These models can use previous glucose values to inform predictions of future glucose levels, making them suitable for short-term forecasting.
+
+::: {#fig-lstm fig-scap='A recurrent neural network'}
+
+[![](figures/1_intro_fig/intro_rnn.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/1_intro_fig/intro_rnn.png)
+
+Schematic illustration of a recurrent neural network for prediction. Previous values are processed sequentially, allowing information from earlier time points (X) to be retained and updated over time. The learned temporal representation is then used to predict a future outcome (Y').
+Figure created by the author. The visual design was inspired by explanatory videos by StatQuest with Josh Starmer.[@StatQuest]
+
+:::
 
 
 ## Foundation Models and Transfer Learning
@@ -166,7 +178,9 @@ Overview of transfer learning strategies. Inspired by Deng et al.[@Deng2021] und
 :::
 
 ## Health Disparities and Bias in Machine Learning
-There is still a lack of reporting on race and ethnicity in trials even though diabetes affects individuals across all racial and ethnic groups and differences have been reported in glycemic response, glycemic control, insulin resistance and the burden of diabetes-related complications between populations.[@Turner2022; @Muralidharan2024; @Danielson2010; @doVale2021; @Bergenstal2017 @Selvin2013; @Kirk2006; @ADA2026_ch2]
+Fairness is being integrated more and more into reporting guidelines for clinical prediction models, because unequal model performance across population strata defined by sensitive attributes, such as race, sex, and socioeconomic status, may contribute to or reinforce societal inequalities.[@Chakradeo2025; @Collins2024]
+In clinical prediction modelling, fairness implies that models should perform accurately, equitably, and reliably across diverse populations. This requires transparent model development, evaluation, and monitoring, so that potential disparities can be identified and addressed.[@Chakradeo2025]
+There is however still a lack of reporting on race and ethnicity in trials even though diabetes affects individuals across all racial and ethnic groups and differences have been reported in glycemic response, glycemic control, insulin resistance and the burden of diabetes-related complications between populations.[@Turner2022; @Muralidharan2024; @Danielson2010; @doVale2021; @Bergenstal2017 @Selvin2013; @Kirk2006; @ADA2026_ch2]
 A study by Turner et al.[@Turner2022] showed that among 20,692 US-based clinical trials, only 43% reported participants' race or ethnicity. Although the reporting of race and ethnicity increased between 2010 and 2020, racial and ethnic minority groups remained underrepresented relative to their proportions in the US population.[@Turner2022] Furthermore, this lack of information is not only present in clinical trials but also in reportings of FDA-approved AI medical devices.[@Turner2022; @Muralidharan2024]
 A study by Muralidharan et al.[@Muralidharan2024] found that only 3.6\% of the FDA approval documents (Summary of Safety and Effectiveness Data Documents) provided information on race and/or ethnicity of the intended or testet users.[@Muralidharan2024]
 Lack of ethnic and racial information in datasets problematic in data-driven models such as machine learning models since they reflect the populations represented in their training data and when minority groups are underrepresented, the resulting models may not generalize equally well to all patients.[@Muralidharan2024; @Cronje2023]

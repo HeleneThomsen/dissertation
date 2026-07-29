@@ -21,9 +21,11 @@ Cosine distances further indicated that CGM embeddings from days belonging to th
 This was observed in both CANCAN (median [IQR]: within-participant, 0.058 [0.040–0.084] vs. between-participant, 0.117 [0.076–0.182]) and T1DX (within-participant, 0.064 [0.047–0.090] vs. between-participant, 0.082 [0.057–0.122]).
 However, the CGMformer embeddings did not improve prediction of NT-proBNP when added to a model including clinical variables selected based on the SCORE2-Diabetes risk score.
 Similarly, adding TIR and MAGE only modestly changed performance (corrected AUROC [95% CI]: SCORE2-Diabetes, 0.79 [0.76–0.87] vs. SCORE2-Diabetes + TIR + MAGE, 0.81 [0.77–0.88]).
-A simpler model including age alone already showed good discriminatory performance (corrected AUROC [95% CI]: 0.73 [0.65–0.80]).
+A simpler model including age alone already showed good discriminatory performance (corrected AUROC 0.73 [95% CI: 0.65–0.80]).
 
-Study III found performance differences across racial groups in 60-minute blood glucose forecasting, even though the models were developed using only CGM data. These differences disappeared after transfer learning, suggesting that potential bias in CGM-based prediction models may be mitigated through fine-tuning.
+
+Study III found performance differences across racial groups in 60-minute blood glucose forecasting, even though the models were developed using only CGM data.
+Although the RMSE slope across training-set compositions was not statistically significant within either racial group, the difference in slopes between groups was statistically significant (p = 0.02). Meaning that when the training data composition changed from 0% White and 100% Black participants to 100% White and 0% Black participants, RMSE increased by 0.04 [95% CI: 0.01, 0.08] mmol/L more for Black participants than for White participants. After transfer learning, this difference was attenuated and no longer statistically significant (0.02 [95% CI: -0.01 to 0.05] mmol/L, p = 0.20).
 
 
 

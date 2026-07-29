@@ -1,1 +1,15 @@
-# Acknowledgements {.unnumbered}
+# Acknowledgements
+```{r}
+
+#| label: financial-disclosures
+#| fig-align: center
+#| out-width: 80%
+#| echo: false
+#| layout-ncol: 2
+
+knitr::include_graphics("figures/au_health_cropped.png")
+
+
+knitr::include_graphics("figures/sdca_new.png")
+
+```

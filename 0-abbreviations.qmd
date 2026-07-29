@@ -2,3 +2,13 @@
 
 \printacronyms
 
+<!-- ```{=tex}
+\newpage
+
+``` -->
+
+```{=latex}
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+```

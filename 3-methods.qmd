@@ -25,7 +25,7 @@ This dissertation includes three studies which are summarized in @tbl-overview-s
 : Overview of the included studies {#tbl-overview-studies bl-lines="rows"} 
 
 
-## Scoping Review Methodology
+## Study I: Scoping Review Methodology
 A scoping review was conducted to investigate current knowledge of CGM-data and its possible connection and predictive power to clinical and subclinical cardiovascular outcomes.
 Given the expected heterogeneity between studies and the broad exploratory nature of the research question, a scoping review was considered the most appropriate methodology, as the aim was to map the existing evidence within this field.[@Tricco2018]
 The scoping review followed the Manual for Evidence Synthesis (Chapter 10 - Scoping reviews) from the Joanna Briggs Institute (JBI) and reported according to the Preferred Reporting Items for Systematic Reviews and Meta-analyses extension for scoping review (PRISMA-ScR) guidelines.[@Tricco2018; @Peters2024]
@@ -124,7 +124,7 @@ Research questions were defined before the screening process and data was extrac
 ::: {#nte-study1-research-q .callout-note appearance="simple" icon="false" border-left-color: #003D73;}
 
 ::: {.content-visible when-format="pdf"}
-
+<!-- 
 ```{=latex}
     \begin{researchquestionbox}
         \textbf{\large Research Questions (Study I)}
@@ -146,7 +146,7 @@ Research questions were defined before the screening process and data was extrac
 ```
 :::
 
-:::{.content-visible when-format="html"}
+:::{.content-visible when-format="html"} -->
 
 ### Research Questions (Study 1)
 1.  Is there an association between glycemic control and CVD risk?
@@ -161,7 +161,7 @@ Research questions were defined before the screening process and data was extrac
 10. Is the data openly available?
 11. Is the code openly available?
 
-:::
+<!-- ::: -->
 
 :::
 
@@ -170,7 +170,7 @@ Research questions were defined before the screening process and data was extrac
 
 Study characteristics were synthesized using descriptive statistics and supplemented by a narrative summary. Only the most adjusted models in the main population for each study was considered in this review. This approach was necessary as several studies reported numerous estimates across varying adjustments, different combinations of CGM-derived metrics and CVD outcomes, and/or distinct subgroup stratifications. Given the large volume of literature, studies investigating clinical cardiovascular outcomes were prioritized in the main synthesis. While subclinical markers offer valuable insight into early vascular changes and disease progression, clinical outcomes are more directly relevant to cardiovascular risk prediction and clinical decision-making. The main synthesis of clinical outcomes included both effect estimates and measures of statistical significance whereas the supplementary synthesis on subclinical CVD focused primarily on creating an overview of the chosen CGM-derived metrics and the statistical significance of reported associations. All evaluation metrics mentioned in the studies doing prediction analyses were reported based on what the studies reported.
 
-## Study Populations
+## Study Populations used in this thesis
 Two datasets were used in this PhD project and are described in the following sections. The datasets were obtained from studies that were conducted independently of this PhD project. Both studies were conducted in accordance with the principles of the Declaration of Helsinki and were approved by the relevant institutional review boards or ethics committees. For the T1DX dataset, ethical approval is documented in Bergenstal et al,[@Bergenstal2017] and for the CANCAN study, approval was obtained from the ethics committee under approval number 1-10-72-221-21. Written informed consent was obtained from all participants.
 
 
@@ -197,7 +197,7 @@ Data collection timeline for the CANCAN Study
 
 
 ### T1D Exchange Data
-The publicly available T1D Exchange (T1DX) dataset, distributed by the Jaeb Center for Health Research under the protocol "Racial Differences in Mean CGM Glucose in Relation to HbA1c", was collected in 10 diabetes centers (US).[@JAEB_2016] The data was collected to determine if there is a racial difference in the association between mean glucose and HbA1c between non-Hispanic Black (Black) and non-Hispanic White (White) people with T1D. In the T1DX study ethnicity and race was defined through self-identified and self-reported ethnicity/race verification forms where ethnicity was defined as Hispanic or Latino as: *“a person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. The term “Spanish origin” could be used in addition to “Hispanic” or “Latino”"*.[@Bergenstal2017, suppl] For race a participant defined as White was *“a person having origins in any of the original peoples of Europe, the Middle East or North Africa.”* and Black or African American people were defined as *“a person having origins in any of the Black racial groups of Africa. Terms such as “Haitian” or “Negro” can be used in addition to “Black” or “African American””*.[@Bergenstal2017, suppl] In this thesis, the term race will be used moving forward, as it aligns with the terminology used by Bergenstal et al.[@Bergenstal2017]. However, I acknowledge that it is difficult to define race.[@Kaneshiro2011]
+The publicly available T1D Exchange (T1DX) dataset, distributed by the Jaeb Center for Health Research under the protocol "Racial Differences in Mean CGM Glucose in Relation to HbA1c", was collected in 10 diabetes centers (US).[@JAEB_2016] The data was collected to determine if there is a racial difference in the association between mean glucose and HbA1c between non-Hispanic Black (Black) and non-Hispanic White (White) people with T1D. In the T1DX study ethnicity and race was defined through self-identified and self-reported ethnicity/race verification forms where ethnicity was defined as Hispanic or Latino as: *“a person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. The term “Spanish origin” could be used in addition to “Hispanic” or “Latino”"*.[@Bergenstal2017, suppl] For race a participant defined as White was *“a person having origins in any of the original peoples of Europe, the Middle East or North Africa.”* and Black or African American people were defined as *“a person having origins in any of the Black racial groups of Africa. Terms such as “Haitian” or “Negro” can be used in addition to “Black” or “African American””*.[@Bergenstal2017, suppl] In this thesis, the term race will be used moving forward, as it aligns with the terminology used by Bergenstal et al,[@Bergenstal2017]. However, I acknowledge that it is difficult to define race.[@Kaneshiro2011]
 Of the 205 participants included in the study[@Bergenstal2017], 101 were White and 104 were Black. For each race, two age groups were sampled 8 to \<18 years old and \>18. Each participant wore a blinded modified investigational version of Abbott Diabetes Care’s Flash Glucose Monitoring System (CGM) as continuously as possible for 12 weeks (@fig-t1dx-timeline). CGM data was sampled every 15 minutes in a range between 2.21 - 27.65 mmol/L (40 and 498 mg/dL). Blood samples were taken at enrollment, at some of the follow-up visits, and at the end of enrollment. 
 
 ::: {#fig-t1dx-timeline}
@@ -207,13 +207,11 @@ Data collection timeline for the T1DX Study
 :::
 
 
-## Foundation Models and Predictive Utility of CGM data
+## Study II: Foundation Models and Predictive Utility of CGM data
 
 The second study investigated whether a CGM foundation model could learn meaningful representations of CGM data and compared these learned representations with conventional CGM-derived metrics identified in Study I.[@Thomsen2026]
 
 ### Data and Participant Selection
-- [ ] Check cancan data to find the range of the CGM censor in that study
-
 Both the CANCAN and the T1DX dataset were used for Study II.
 Participants with missing age, sex, HbA1c or BMI were excluded from both cohorts and in addition, CANCAN participants with missing NT-proBNP, HDL, total cholesterol, and \acr{eGFR} were also removed, since those are necessary to calculate the SCORE2-Diabetes risk score with.
 T1DX participants with missing race data were also removed.
@@ -223,7 +221,7 @@ Values exceeding the measurable range of the CGM devices were retained as the de
 
 
 ### Transfer Learning, Foundation Models and Embeddings
-Of the two CGM-specific foundation models based on self-supervised learning currently described in the literature (CGMformer by Lu et al., 2025[@YurunLu2025] and GLUformer by Lutsker et al., 2026[@Lutsker2026]), only the pretrained weights from the CGMformer were made publicly available, enabling reuse of the model for downstream tasks.
+Of the two CGM-specific foundation models based on self-supervised learning currently described in the literature (CGMformer by Lu et al, 2025[@YurunLu2025] and GLUformer by Lutsker et al, 2026[@Lutsker2026]), only the pretrained weights from the CGMformer were made publicly available, enabling reuse of the model for downstream tasks.
 The CGMformer was therefore chosen and the data was organized in 24-hour long-format input to match the input requirements of the CGMformer.
 The output of the foundation model is learned representations of the input data, also known as embeddings and the head of the CGMformer were not available for retraining (@fig-cgmformer). By only having the backbone, the transfer learning strategy being used had to be replacing the head with a new, as shown in @fig-tl as transfer three.
 
@@ -233,18 +231,22 @@ The output of the foundation model is learned representations of the input data,
 Illustration of how CGMformer is used in this analysis
 :::
 
-Embeddings are numerical vectors that summarize the characteristics of the input glucose profile. The CGMformer gives a 128-dimensional embedding vector for each 24-hour CGM data input. A simple vector can be drawn as an arrow in a 2-dimensional space as shown in @fig-cancan-embedding.
+Embeddings are numerical vectors that summarize the characteristics of the input glucose profile. The CGMformer gives a 128-dimensional embedding vector for each 24-hour CGM data input. A simple vector can be drawn as an arrow in a 2-dimensional and a 3-dimensional space as shown in @fig-cancan-embedding.
 
-::: {#fig-cancan-embedding}
+::: {#fig-cancan-embedding layout-ncol=2 layout-valign="center"}
+
 [![](figures/3_methods_fig/study2_embedding.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_embedding.png)
 
-Embeddings shown as 2-dimensional vectors with the angle $\theta$ between the two embeddings.
+[![](figures/3_methods_fig/study_2__3d_emb.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study_2__3d_emb.png)
+
+
+Embeddings shown as 2-dimensional and 3-dimensional vectors with the angle $\theta$ between the two embeddings.
 :::
 
 \acr{UMAP} algorithm was used to reduce the dimensionality of the embeddings to two dimensions since a 128-dimensional vector is not easily visualized. The concept of dimensionality reduction is illustrated in @fig-dim_reduce.
 The \acr{UMAP}s were first used for visualization and comparison with existing literature and were subsequently included in prediction models.[@McInnes2018_umap; @YurunLu2025; @Lutsker2026] This dimensionality reduction step was used because the original 128-dimensional embeddings would provide too many predictors for a simple logistic regression model.
-The UMAPs were colored by TIR, and MAGE to investigate if the embeddings were able to capture relevant information about glycemic patterns. History of CVD and elevated NT-proBNP for the CANCAN embeddings were also used to color the UMAPs to investigate if the embeddings were able to capture relevant information about cardiovascular risk and race was used to color the T1DX embeddings to investigate if the embeddings were able to capture relevant information about racial differences in glycemic patterns.
-
+The UMAPs were colored by TIR, and MAGE to investigate if the embeddings were able to capture relevant information about glycemic patterns. Elevated NT-proBNP for the CANCAN embeddings were also used to color the UMAPs to investigate if the embeddings were able to capture relevant information about cardiovascular risk and race was used to color the T1DX embeddings to investigate if the embeddings were able to capture relevant information about racial differences in glycemic patterns.
+Pearson correlations were calculated between the UMAP dimensions and HbA1c, TIR, MAGE, and log-transformed NT-proBNP.
 
 ::: {#fig-dim_reduce fig-scap='Conceptual dimensionality reduction illustration'}
 [![](figures/3_methods_fig/study_2_dim_reduce.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study_2_dim_reduce.png)
@@ -276,7 +278,7 @@ Glucose variability strata is used as an example to illustrate the cosine distan
 The main focus for the participant comparisons were TIR and HbA1c. The thresholds were as followed: TIR ≥ 70% (70–180 mg/dL, 3.9–10.0 mmol/L) and HbA1c <7.0 % (< 53 mmol/mol).[@Danne2017, @ADA2026_ch7]
 Additional UMAP visualizations were generated by coloring participants according to race, MAGE (\< 70 mg/dL ( \< 3.9 mmol/L )),[@Danne2017] and  NT-proBNP (NT-proBNP ≤ 125 pg/mL).[@Heidenreich2022, @Welsh2022] These categorizations were used solely to facilitate interpretation of the UMAP visualizations and were not incorporated into model development or any statistical analyses. <!-- Participants with missing values for a given characteristic were excluded only from the corresponding visualization and remained eligible for all subsequent analyses. -->
 
-## Cardiovascular Risk Assessment
+## Study II: Cardiovascular Risk Assessment
 The following section describes the cardiovascular risk assessment analyses, in which \acr{NT-proBNP} was predicted as a binary outcome using a >125 pg/mL threshold.[@mcdonagh2021; @Heidenreich2022; @Welsh2022]
 Only the cross-sectional CANCAN dataset was used for the cardiovascular risk assessment.
 The focus was to test the predictive power of CGM data both as represented as embeddings and as well-established CGM-derived metrics. Some models also included clinical predictors to compare up against baseline models.
@@ -296,8 +298,15 @@ The resulting 128-dimensional embeddings were subsequently reduced to two dimens
 ### Model Development and Evaluation
 Prediction models were developed using logistic regression to predict elevated NT-proBNP (>125 pg/mL) as a binary outcome. The models were evaluated using the AUROC as the primary metric.
 Bootstrap with optimism correction was employed for internal validation because of the limited sample size and the absence of an external validation cohort.[@Collins2024; @Wahl2016; @Riley2023] 
-The method repeatedly sampled bootstrap samples by sampling with replacement from the original dataset. For each bootstrap sample, the prediction model is fitted and its performance is evaluated both in the bootstrap sample (apparent performance) and in the original dataset (test performance). The difference between these two performance estimates represents the optimism due to overfitting. Averaging the optimism across all bootstrap samples and subtracting it from the apparent performance of the model fitted to the full dataset yields an optimism-corrected estimate of model performance. Internal validation was performed using 500 bootstrap resamples.[@Collins2024; @Riley2023] Prediction stability plots were reported for each model to evaluate the stability of predictions produced by a specific model strategy when the training data changes.[@Riley2023]
+The method repeatedly sampled bootstrap samples by sampling with replacement from the original dataset  (@fig-bootstrap). Sampling with replacement means that the same observation can be selected more than once in the new sample. For each bootstrap sample, the prediction model is fitted and its performance is evaluated both in the bootstrap sample (apparent performance) and in the original dataset (test performance). The difference between these two performance estimates represents the optimism due to overfitting (overfitting occurs when a model learns overly specific patterns in the training data, causing it to perform well on training data but poorly on new data). Averaging the optimism across all bootstrap samples and subtracting it from the apparent performance of the model fitted to the full dataset yields an optimism-corrected estimate of model performance. Internal validation was performed using 500 bootstrap resamples.[@Collins2024; @Riley2023] Prediction stability plots were reported for each model to evaluate the stability of predictions produced by a specific model strategy when the training data changes.[@Riley2023]
 <!-- Risk distribution plots were reported for each model across all bootstrap samples.[@VanCalster2025; @Riley2023] -->
+
+::: {#fig-bootstrap fig-scap='Bootstrap with optimsim correction' width=80%}
+[![](figures/3_methods_fig/study_2_bootstrap.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study_2_bootstrap.png){width=80%}
+
+Bootstrap with opimism correction. Redrawn and adapted from Wahl et al,[@Wahl2016]under the Creative Commons Attribution 4.0 International License CC BY 4.0.
+:::
+
 
 ### Prediction Scheme Overview
 The prediction models were structured hierarchically based on clinical variables (Model A) and the calculated SCORE2-Diabetes score (Model B) in the configurations shown in @tbl-models
@@ -326,7 +335,7 @@ Overview of models and predictors
 :::
 
 <!-- ****************************************************************************************** -->
-## Algorithmic Fairness and Blood Glucose Prediction
+## Study III: Algorithmic Fairness and Blood Glucose Prediction
 
 The third study investigated racial bias in a data driven machine learning model only based on blood glucose measurements from a CGM device.
 Although the primary focus of this thesis is cardiovascular risk assessment, glucose forecasting provides an appropriate setting for investigating algorithmic fairness in CGM-based machine learning. In contrast to participant-level cardiovascular prediction, glucose forecasting is trained on a continuous stream of CGM measurements, allowing each participant to contribute numerous samples over the recording period rather than a single outcome.
@@ -365,7 +374,7 @@ The splitting of a participants data to create training and test sets
 
 :::
 ###  Model Selection and Training Approaches
-A \acr{LSTM} network architecture based on van Doorn et al.[@vanDoorn2021] was used (two LSTM layers followed by a dense layer).
+A \acr{LSTM} network architecture based on van Doorn et al,[@vanDoorn2021] was used (two LSTM layers followed by a dense layer).
 All the training data was scaled to be within the range of zero to one.
 Hyperparameters were optimized once prior to the repeated model development using grid search and data from all participants except the last week.
 The gridsearch included the number of neurons in the LSTM layers, activation function, dropout rate, batch size, learning rate, learning rate decay, and early stopping patience.
@@ -389,7 +398,7 @@ Three \acr{LSTM} models and the \acr{LOCF} as a naive baseline.
 ::: {#fig-study3_training_approaches fig-scap='The four training approaches in study III'}
 [![](figures/3_methods_fig/study3_training_approaches.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_training_approaches.png)
 
-The four training approaches. The Base-Individual, Base-Generalized, and Transfer Learned models were based on an LSTM architecture. The base layer (green) consisted of two LSTM layers, while the task-specific layer (blue) consisted of a single dense layer. *Abbreviation:* LOCF, last observation carried forward.
+The four training approaches. The Base-Individual, Base-Generalized, and Transfer Learned models were based on an LSTM architecture. The base layer (green) consisted of two LSTM layers, while the task-specific layer (blue) consisted of a single dense layer. *Abbreviation: LOCF, last observation carried forward.*
 
 :::
 
@@ -399,7 +408,7 @@ To evaluate model performance, each participant's last week's data (672 measurem
 Model accuracy was assessed by calculating the root mean squared error (RMSE) for each participant across all four modeling approaches. For the LOCF and Base-Individual models, this yielded one RMSE value for each of the 101 White participants and 104 Black participants.
 For the Base-Generalized and Transfer Learned models, RMSEs were calculated for each participant across 11 data subsets, each representing a unique proportion of White and Black participants.
 Performance was summarized as the mean RMSE with corresponding 95% confidence intervals (CIs) for each racial group.
-To evaluate the predictive performance across different training subset compositions for the Base-Generalized and Transfer Learned models, an \acr{LMEM} was fitted because each participant contributed multiple RMSE values from training subsets with varying proportions of White and Black participants. Participant-specific random intercepts were included to account for the repeated-measures structure. Fixed effects included the proportion of White participants in the training data, participant race, age, sex, training data sample size, and their interaction terms.
+<!-- To evaluate the predictive performance across different training subset compositions for the Base-Generalized and Transfer Learned models, an \acr{LMEM} was fitted because each participant contributed multiple RMSE values from training subsets with varying proportions of White and Black participants. Participant-specific random intercepts were included to account for the repeated-measures structure. Fixed effects included the proportion of White participants in the training data, participant race, age, sex, training data sample size, and their interaction terms. -->
 It was further assumed that the varying proportions of Black and White participants in the training data subsets would affect the performance and an interaction term was therefore added. The interaction term allowed for different slopes in the LMEM which allowed us to test the hypothesis. It was hypothesized that when plotting the proportion of White participants in the training data against the RMSE, the slope would be negative for White participants and positive for Black participants (@fig-study3_rmse). This would indicate that as the proportion of White participants in the training data increased, the RMSE decreased for White participants and increased for Black participants, indicating racial bias in the model. The Base-Individual model would perform the worst since it was trained on the least amount of data and the Transfer Learned model would remove the slopes that were expected to be seen in the Base-Generalized models.
 
 ::: {#fig-study3_rmse}

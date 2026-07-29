@@ -12,23 +12,26 @@ book:
     - index.qmd
     - 0-disclosure.qmd
     - 0-preface.qmd
-    # - 0-papers.qmd
+    - 0-papers.qmd
     - 0-abbreviations.qmd
     # - 0-to_do.qmd
-    # - 1-introduction.qmd
+    - 1-introduction.qmd
     # - 2-aims.qmd
-    - 3-methods.qmd
-    # - 4-results_3-cosim.qmd
+    # - 3-methods.qmd
+    # - 4-results-1-ScR.qmd
+    # - 4-results-2-baseline-tbl.qmd
+    # - 4-results-3-cosim.qmd
+    # - 4-results-5-fairness.qmd
     # - 4-results.qmd
     # - 5-discussion.qmd
     # - 7-conclusions.qmd
     # - 8-perspectives.qmd
-    - references.qmd
+    # - references.qmd
     # - 9-abstract-eng.qmd
     # - 10-abstract-da.qmd
   
-  appendices:
-    - app1-supplementary.qmd
+  # appendices:
+  #   - app1-supplementary.qmd
     # - app2-addendum.qmd
   # cookie-consent: 
   #   type: express
@@ -163,6 +166,15 @@ format:
       - headsep=7mm      # The gap between your running header line and your text
       - footskip=10mm    # The gap between your main text and your page numbers
     header-includes: |
+      \usepackage{tabularray}
+      \UseTblrLibrary{booktabs}
+      \NewTblrTheme{headless}{
+        \DefTblrTemplate{conthead-text}{default}{}
+        \DefTblrTemplate{caption}{default}{}
+        \DefTblrTemplate{capcont}{default}{}
+      }
+      \SetTblrOuter[longtblr]{theme=headless}
+
       \usepackage{multirow}
       \usepackage{xcolor}
       \usepackage[table]{xcolor}
@@ -249,7 +261,8 @@ format:
       }
       % -------------------------------------------------------------------------
       
-      
+      \usepackage{tabularx}
+      \usepackage{booktabs}
       
       \usepackage{tocbibind}
       \usepackage{titling}
@@ -272,12 +285,18 @@ format:
       }
       \postdate{
           \\
-          \resizebox{.9\textwidth}{!}{%
-          \includegraphics[width=7in]{figures/au_health.png}%
-          \quad
-          \includegraphics[width=1in]{figures/qr_code.png}%
+          \makebox[\textwidth][c]{%
+              \begin{minipage}[c]{0.85\textwidth}
+                  \centering
+                  \includegraphics[width=\linewidth]{figures/au_health.png}
+              \end{minipage}
+              \hspace{1cm}
+              \begin{minipage}[c]{0.15\textwidth}
+                  \centering
+                  \includegraphics[width=0.9\linewidth]{figures/qr_code.png}\\
+                  Website
+              \end{minipage}
           }\\
-          Website
           \end{center}
       }
       % --- FIX RUNNING HEADERS FROM CURSIVE TO NORMAL ---

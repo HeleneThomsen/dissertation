@@ -1,10 +1,9 @@
-## Algorithmic Fairness in Prediction Models
-Bias is an important spect to consider when working data drivenly.
-In study III, we therefore evaluates bias in CGM trained machine learning models for forecasting in the T1DX cohort
+## Study III: Algorithmic Fairness in Prediction Models
+In study III bias in CGM trained machine learning models for forecasting in the T1DX cohort was evaluated.
 
 ### Bias in Machine Learning Models
 The RMSE of the models are shown in  @tbl-study3-main-results1 and @tbl-study3-main-results2.
-Base-Generalized and Transfer Learned models achieved models achieved lower prediction errors (RMSE: 2.00 to 2.06 mmol/L) than the naive last observation carried forward (LOCF)(RMSE: 2.41 and 2.45 mmol/L) and Base-Individual models (RMSE: 2.54 to 2.63 mmol/L) for both White and Black participants (@tbl-study3-main-results1 and @tbl-study3-main-results2).
+Base-Generalized and Transfer Learned models achieved lower prediction errors (RMSE: 2.00 to 2.06 mmol/L) than the naive last observation carried forward (LOCF)(RMSE: 2.41 and 2.45 mmol/L) and Base-Individual models (RMSE: 2.54 to 2.63 mmol/L) for both White and Black participants (@tbl-study3-main-results1 and @tbl-study3-main-results2).
 
 
 ::: {#tbl-study3-main-results1 tbl-colwidths="[12,22,22,22,22]"}
@@ -58,7 +57,7 @@ Root mean squared errors with 95% CIs for the different models evaluated on Whit
 ::: {.content-visible when-format="pdf"}
 ```{=latex}
 \tablenote[0.80\linewidth]{
-<!-- Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population's age (40\% children) and sex (57\% women) distribution. *Abbreviations:* LOCF: last observation carried forward. -->
+Values that vary by proportion are estimated using linear mixed-effects models. These models were adjusted to the population's age (40\% children) and sex (57\% women) distribution. *Abbreviations:* LOCF: last observation carried forward.
 }
 ```
 :::
@@ -74,9 +73,9 @@ Root mean squared errors with 95% CIs for the different models evaluated on Blac
 :::
 
 For the Base-Generalized models, prediction performance gradually diverged between White and Black participants as the proportion of White participants in the training data increased (@fig-lmem-results). For example, when the training data changed from 0% to 100% White participants, the difference in RMSE between the racial groups increased by 0.04 mmol/L [95% CI: 0.001 to 0.008],$p$=0.02, indicating that training data composition affected the two groups differently(@tbl-general-model-coefficients). This divergence was not observed after transfer learning (0.002 mmol/L[95% CI: -0.001 to 0.005], $p$=0.20) (@tbl-transferlearned-coefficients).
-A statistically significant differences were however found in both the Base-Generalized and the Transfer Learned models for age groups (0.482 [0.355 to 0.610], p < 0.001, @tbl-general-model-coefficients and 0.411 [0.290 to 0.533], p < 0.001, @tbl-transferlearned-coefficients respectivly). The differences in age groups showed a lower error when forecasting blood glucose values for adults compared to children.
+A statistically significant differences were however found in both the Base-Generalized and the Transfer Learned models for age groups (@tbl-general-model-coefficients: 0.482 [0.355 to 0.610], p < 0.001 and @tbl-transferlearned-coefficients: 0.411 [0.290 to 0.533], p < 0.001). The differences in age groups showed a lower error when forecasting blood glucose values for adults compared to children.
 Larger sample sizes available for transfer learning were associated with lower prediction error ($β$ = -0.111 mmol/L [-0.161 to -0.061] mmol/L, $p$ < 0.001) for every additional 1,000 samples used for fine-tuning (@tbl-transferlearned-coefficients).
-In contrast, the size of the dataset used to train the Base-Generalized model was not associated with prediction error.
+In contrast, the size of the dataset used to train the Base-Generalized model was not significantly associated with prediction error, suggesting that increasing the amount of training data did not meaningfully change RMSE in this analysis.
 
 ::: {#fig-lmem-results width=100%}
 
@@ -92,7 +91,8 @@ In contrast, the size of the dataset used to train the Base-Generalized model wa
 
 :::
 
-Estimated root mean squared errors (RMSE) across 11 different proportions of White and Black participants in the dataset.
+Estimated root mean squared errors (RMSE) across 11 different proportions of White and Black participants in the dataset.\\
+Reproduced from Thomsen et al.[@Thomsen2025] under the Creative Commons Attribution License.
 :::
 
 ::: {#tbl-general-model-coefficients}

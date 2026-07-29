@@ -2,18 +2,31 @@
 
 ## Study I
 
-Thomsen, H. B., Lebiecka-Johansen, B., Nørgaard, O., Andersen, T. H., Andersen, S. T., Fagherazzi, G., Hulman, A., & Isaksen, A. A. (2026). Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People With Diabetes: Systematic Scoping Review. JMIR Diabetes, 11(1), e89374. https://doi.org/10.2196/89374
+**Thomsen, H. B.**, Lebiecka-Johansen, B., Nørgaard, O., Andersen, T. H., Andersen, S. T., Fagherazzi, G., Hulman, A., & Isaksen, A. A. (2026). Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People With Diabetes: Systematic Scoping Review. JMIR Diabetes, 11(1), e89374. https://doi.org/10.2196/89374
 
 
 ## Study II
 
-Thomsen, H. B., Andersen, S. T., Fagherazzi, G., Isaksen, A. A. & Hulman, A. (2026). Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk. (Under review at JMIR Diabetes, (7.14.2026), pending for preprint at JMIR transfer hub, manuscript exchange)
+**Thomsen, H. B.**, Andersen, S. T., Fagherazzi, G., Isaksen, A. A. & Hulman, A. (2026). Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk. (Submitted to JMIR Diabetes, (7.14.2026))
 
 ## Study III
 
-Thomsen, H. B., Li, L. Y., Isaksen, A. A., Lebiecka-Johansen, B., Bour, C., Fagherazzi, G., Doorn, W. P. T. M. van, Varga, T. V., & Hulman, A. (2025). Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes. PLOS Digital Health, 4(6), e0000918. https://doi.org/10.1371/journal.pdig.0000918
+**Thomsen, H. B.**, Li, L. Y., Isaksen, A. A., Lebiecka-Johansen, B., Bour, C., Fagherazzi, G., Doorn, W. P. T. M. van, Varga, T. V., & Hulman, A. (2025). Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes. PLOS Digital Health, 4(6), e0000918. https://doi.org/10.1371/journal.pdig.0000918
 
 
+
+```{=tex}
+
+
+\tableofcontents
+
+\listoffigures
+All figures are original work. Figures previously published as part of the studies included in this thesis include the relevant copyright and license information in the figure caption.
+
+\listoftables
+```
+
+<!-- 
 
 ```{=tex}
 \newpage
@@ -22,5 +35,6 @@ Thomsen, H. B., Li, L. Y., Isaksen, A. A., Lebiecka-Johansen, B., Bour, C., Fagh
 
 \listoffigures
 
+
 \listoftables
-```
+``` -->

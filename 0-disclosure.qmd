@@ -1,5 +1,4 @@
 # Disclosures and Notes {.unnumbered}
-
 ## Financial Disclosures
 This PhD project was supported by a research grant from the **Danish Diabetes and Endocrine Academy** (NNF22SA0079901) and the **Danish Cardiovascular Academy** (NNF20SA0067242), which are funded by the **Novo Nordisk Foundation**. Furthermore, the project was supported by the main supervisor’s Data Science Emerging Investigator grant from the Novo Nordisk Foundation (NNF22OC0076725),
 
@@ -8,17 +7,48 @@ This PhD project was supported by a research grant from the **Danish Diabetes an
 #| fig-align: center
 #| out-width: 80%
 #| echo: false
-#| layout-ncol: 3
 
-knitr::include_graphics("figures/au_health_cropped.png")
-# knitr::include_graphics("figures/fim.png")
-knitr::include_graphics("figures/sdca.png")
+library(grid)
+library(png)
+
+ddea <- rasterGrob(readPNG("figures/DDEA.png"), interpolate = TRUE)
+dca  <- rasterGrob(readPNG("figures/DCA.png"), interpolate = TRUE)
+nnf  <- rasterGrob(readPNG("figures/NNF.png"), interpolate = TRUE)
+
+grid.newpage()
+
+pushViewport(viewport(layout = grid.layout(
+  nrow = 3,
+  ncol = 3,
+  widths = unit(c(0.47, 0.08, 0.45), "npc"),
+  heights = unit(c(0.40, 0.00, 0.40), "npc")
+)))
+
+# DDEA
+pushViewport(viewport(layout.pos.row = 1, layout.pos.col = 1))
+grid.draw(ddea)
+popViewport()
+
+# DCA
+pushViewport(viewport(layout.pos.row = 3, layout.pos.col = 1))
+grid.draw(dca)
+popViewport()
+
+# NNF spanning all rows
+pushViewport(viewport(layout.pos.row = 1:3, layout.pos.col = 3))
+grid.draw(nnf)
+popViewport()
+
+popViewport()
+
+
 ```
+
 
 ::: {.content-visible when-format="pdf"}
 
-## Notes on website version {.unnumbered .unlisted}
-This dissertation is available for viewing online at [HeleneThomsen.github.io/dissertation/](https://HeleneThomsen.github.io/dissertation/) or by scanning the QR code in the lower right-hand corner of the title page.
+## Notes {.unnumbered .unlisted}
+This dissertation is available for viewing online at [https://helenethomsen.github.io/dissertation/](https://HeleneThomsen.github.io/dissertation/) or by scanning the QR code in the lower right-hand corner of the title page.
 
 <!-- {{< include 0-pdf2-acknowledgements.qmd >}}  -->
 
