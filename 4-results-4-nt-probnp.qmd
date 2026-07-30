@@ -1,7 +1,7 @@
 
 ## Study II: Prediction of NT-proBNP Results
 Results from the prediction analysis are shown in @tbl-model-performance_main.
-The highest optimism-corrected AUROC was achieved by Model A2 which included both all nine clinical variables from the SCORE2-Diabetes input predictors and the CGM-derived metrics TIR and MAGE (AUROC: 0.81 [0.77–0.88]).
+The highest optimism-corrected AUROC was achieved by Model A2 which included all nine clinical variables from the SCORE2-Diabetes input predictors and the CGM-derived metrics TIR and MAGE (AUROC: 0.81 [0.77–0.88]).
 Optimism-corrected AUROCs for the models with fewer predictors had modest performance (AUROC: 0.72 to 77 ), however the optimism-correction was smaller and the prediction stability was more stable the fewer predictors were included in the models (Models: B1, B2, and B3) (@sec-suppl-pred-stability).
 The models including only CGM-data either as derived metrics (Model C1) or as UMAP dimensions (Model D1a, D1b, D1c) performed the worst (AUROC: 0.53 to 0.69). Age seemed a better predictor for elevated NT-proBNP (AUROC: 0.73 [0.65 - 0.80])
 
@@ -42,8 +42,8 @@ The models including only CGM-data either as derived metrics (Model C1) or as UM
 ::: {.content-visible when-format="pdf"}
 ```{=latex}
 \tablenote[0.90\linewidth]{
-    \textsuperscript{*} Indicates the pooling technique for the embeddings.\
-    \textsuperscript{*} Abbreviations:* CI: Confidence Interval, CGM: Continuous Glucose Monitoring, UMAP: Uniform Manifold Approximation and Projection.
+    \textsuperscript{*} Indicates the pooling technique for the embeddings.\newline
+    Abbreviations: CI: Confidence Interval, CGM: Continuous Glucose Monitoring, UMAP: Uniform Manifold Approximation and Projection.
 
 }
 ```

@@ -1,0 +1,328 @@
+
+::: {.landscape}
+::: {.small}
+
+
+Clinical cardiovascular outcomes comprised cardiovascular mortality, major adverse cardiovascular events, macrovascular complications, coronary artery disease, stroke, and peripheral artery disease. Most studies were observational and differed substantially in study populations, CGM-derived metrics, outcome definitions, and adjustment strategies. Consequently, direct comparison across studies was challenging. The reported effect estimates from the least and most adjusted analyses are summarized in @tbl-main-clinical-findings-markdown.
+
+
+::: {#tbl-main-clinical-findings-markdown tbl-colwidths="\[25, 15, 15 , 15, 15, 15\]"}
+
+| **Outcome, Reference, and Continuous Glucose Monitoring Metrics** | **Unadjusted or Least Adjusted** | **p-value for Least Adjusted** | **Most Adjusted** | **p-value for Most Adjusted** | **Adjustments** |
+|---|---|:---:|---|:---:|---|
+| **Cardiovascular Mortality** |  |  |  |  |  |
+| Lu, 2021 |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TIR >85%: | HR: 1.00 | p trend: <0.001 | HR: 1.00 | p trend: 0.015 | Model 1: |
+| &nbsp;&nbsp;&nbsp;TIR: 71–85% | HR: 1.43 (0.95–2.14) | p trend: <0.001 | HR: 1.35 (0.90, 2.04) | p trend: 0.015 | &nbsp;&nbsp;Demographic |
+| &nbsp;&nbsp;&nbsp;TIR: 51–70% | HR: 1.66 (1.12–2.45) | p trend: <0.001 | HR: 1.47 (0.99, 2.19) | p trend: 0.015 |  |
+| &nbsp;&nbsp;&nbsp;TIR ≥50% | HR: 2.15 (1.47–3.13) | p trend: <0.001 | HR: 1.85 (1.25, 2.72) | p trend: 0.015 | Model 2: |
+| &nbsp;&nbsp;&nbsp;TIR as a continuous variable each 10% decrease | HR: 1.08 (1.03–1.13) | - | HR: 1.05 (1.00–1.11) | - | &nbsp;&nbsp;Demographic  &nbsp;&nbsp;Anthropometric |
+|  |  |  |  |  | &nbsp;&nbsp;Lifestyle |
+|  |  |  |  |  | &nbsp;&nbsp;Medical History |
+|  |  |  |  |  | &nbsp;&nbsp;Physiological |
+|  |  |  |  |  | &nbsp;&nbsp;Biochemical   |
+|  |  |  |  |  | &nbsp;&nbsp;Medication  |
+|  |  |  |  |  |  |
+| Wei, 2019* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;Hypoglycemic events | HR: 2.03 (1.21, 3.41) | nr | HR: 2.64 (1.40, 4.99) | nr | Least Adjusted: |
+|  |  |  |  |  | &nbsp;&nbsp;Unadjusted |
+|  |  |  |  |  |  |
+|  |  |  |  |  | Most Adjusted: |
+|  |  |  |  |  | &nbsp;&nbsp;Demographic |
+|  |  |  |  |  | &nbsp;&nbsp;Anthropometric |
+|  |  |  |  |  | &nbsp;&nbsp;Lifestyle |
+|  |  |  |  |  | &nbsp;&nbsp;Medical History |
+|  |  |  |  |  | &nbsp;&nbsp;Biochemical |
+|  |  |  |  |  | &nbsp;&nbsp;Medication |
+|  |  |  |  |  |  |
+| **Major Adverse Cardiovascular Events** |  |  |  |  |  |
+| He, 2023 |  |  |  |  | Least Adjusted: |
+| &nbsp;&nbsp;&nbsp;BGRI | HR: 0.97 (0.85, 1.10) | 0.607 | HR: 0.98 (0.85, 1.13) | 0.746 | &nbsp;&nbsp;Unadjusted |
+| &nbsp;&nbsp;&nbsp;LBGI | HR: 2.37 (1.16, 4.83) | 0.018 | HR: 2.73 (1.21, 6.16) | 0.016 |  |
+| &nbsp;&nbsp;&nbsp;HBGI | HR: 0.94 (0.81, 1.08) | 0.381 | HR: 0.94 (0.81, 1.09) | 0.436 | Most Adjusted: |
+| &nbsp;&nbsp;&nbsp;ADRR | HR: 1.00 (0.93, 1.07) | 0.995 | HR: 1.01 (0.93, 1.09) | 0.801 | &nbsp;&nbsp;Demographic |
+| &nbsp;&nbsp;&nbsp;GMI | HR: 0.98 (0.91, 1.06) | 0.651 | HR: 0.99 (0.91, 1.07) | 0.775 |  &nbsp;&nbsp;Anthropometric |
+| &nbsp;&nbsp;&nbsp;M-value | HR: 0.98 (0.91, 1.05) | 0.535 | HR: 0.98 (0.91, 1.06) | 0.644 |  &nbsp;&nbsp;Medical History |
+|  |  |  |  |  |  |
+| Wei, 2019* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;Hypoglycemic events | HR: 1.50 (1.21, 1.87) | nr | HR: 1.62 (1.24, 2.11) | <0.001 | Least Adjusted: |
+|  |  |  |  |  | &nbsp;&nbsp;Unadjusted |
+|  |  |  |  |  |  |
+|  |  |  |  |  | Most Adjusted: |
+|  |  |  |  |  | &nbsp;&nbsp;Demographic |
+|  |  |  |  |  | &nbsp;&nbsp;Anthropometric |
+|  |  |  |  |  | &nbsp;&nbsp;Lifestyle |
+|  |  |  |  |  | &nbsp;&nbsp;Medical History |
+|  |  |  |  |  | &nbsp;&nbsp;Biochemical |
+|  |  |  |  |  | &nbsp;&nbsp;Medication |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+| **Macrovascular Complications** |  |  |  |  |  |
+| De Meulemeester, 2024†* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TIR | OR: 0.94 (0.83, 1.06) | p > 0.05 | OR: 0.90 (0.74, 1.09) | p > 0.05 | Least Adjusted: |
+| &nbsp;&nbsp;&nbsp;TITR | OR: 0.90 (0.78, 1.05) | p > 0.05 | OR: 0.93 (0.75, 1.17) | p > 0.05 | &nbsp;&nbsp;Unadjusted |
+|  |  |  |  |  |  |
+|  |  |  |  |  | Most Adjusted: |
+|  |  |  |  |  | &nbsp;&nbsp;Demographic |
+|  |  |  |  |  | &nbsp;&nbsp;Anthropometric |
+|  |  |  |  |  | &nbsp;&nbsp;Lifestyle |
+|  |  |  |  |  | &nbsp;&nbsp;Medical History |
+|  |  |  |  |  | &nbsp;&nbsp;Physiological |
+|  |  |  |  |  | &nbsp;&nbsp;Biochemical |
+|  |  |  |  |  | &nbsp;&nbsp;Medication |
+|  |  |  |  |  |  |
+| Bezerra, 2023 |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TIR | OR: 0.66 (0.46–0.93) | 0.019 | OR: 0.68 (0.39, 1.16), | 0.152 | Least Adjusted: |
+| &nbsp;&nbsp;&nbsp;TB54 | OR: 1.10 (0.88–1.38) | 0.388 | OR: 0.92 (0.62, 1.34) | 0.652 | &nbsp;&nbsp;Unadjusted |
+| &nbsp;&nbsp;&nbsp;TBR | OR: 0.93 (0.80–1.09) | 0.393 | OR: 0.77 (0.54, 1.11) | 0.166 |  |
+| &nbsp;&nbsp;&nbsp;TAR | OR: 1.04 (1.01–1.08) | 0.01 | OR: 1.04 (0.99, 1.10) | 0.083 |  Most Adjusted: |
+| &nbsp;&nbsp;&nbsp;TA250 | OR: 1.04 (1.00-1.08) | 0.029 | OR: 1.03 (0.97, 1.09) | 0.286 | &nbsp;&nbsp;Demographic  |
+| &nbsp;&nbsp;&nbsp;CV | OR: 1.03 (0.95–1.11) | 0.524 | OR: 0.92 (0.81, 1.06) | 0.252 | &nbsp;&nbsp;Medical History |
+| &nbsp;&nbsp;&nbsp;GMI | OR: 2.17 (1.14–4.11) | 0.018 | OR: 2.03 (0.77, 5.37) | 0.154 |  |
+|  |  |  |  |  |  |
+| Deng, 2023 |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;%CV Tertile 1 | Hp 1, OR: 1.000  | p-value for  | Hp 1, OR: 1.000  | p-value for interaction: 0.008 | Least Adjusted: |
+|                                 | (Reference) | interaction: 0.071 |  (Reference) |  | &nbsp;&nbsp;Unadjusted |
+|  | Hp 2-2, OR: 1.000 | p-value for  | Hp 2-2, OR: 1.000 |  |  |
+|  | (Reference) | interaction: 0.071 |  (Reference) |  | Most Adjusted: |
+| &nbsp;&nbsp;&nbsp;%CV Tertile 2 | Hp 1, | 0.116 | Hp 1, | 0.89 | &nbsp;&nbsp;Demographic  |
+|  | OR: 48 (0.91, 2.43) |  | OR: 1.05 (0.53, 2.08) |  | &nbsp;&nbsp;Anthropometric |
+|  | Hp 2-2 ,  | 0.208 | Hp 2-2 ,  | 0.306 | &nbsp;&nbsp;Medical History|
+|  | OR: 1.40 (0.83, 2.36) |  | OR: 0.66 (0.30, 1.47)  |  | &nbsp;&nbsp;Physiological |
+| &nbsp;&nbsp;&nbsp;%CV Tertile 3 | Hp 1, | 0.001 | Hp 1,  | 0.016 |  &nbsp;&nbsp;Biochemical   |
+|  | OR: 2.35 (1.39, 3.96) |  | OR: 2.46 (1.18, 5.12) |  |  |
+|  | Hp 2-2,| 0.451 | Hp 2-2,  | 0.127 |    |
+|  | OR: 1.22 (0.73, 2.03)  |  | OR: 0.54 (0.25, 1.19) |  |  |
+|  |  |  |  |  |  |
+| El Malahi, 2022 |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TIR | nr | nr | nr | p > 0.05 | Demographic |
+| &nbsp;&nbsp;&nbsp;SD | nr | nr | nr | p > 0.05 | Medical History |
+| &nbsp;&nbsp;&nbsp;CV | nr | nr | nr | p > 0.05 | CGM/GV metrics  |
+|  |  |  |  |  |  |
+| Magri, 2018† |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TBR | nr | nr | OR: 1.12 (1.01–1.23) | 0.024 | Anthropometric     |
+| &nbsp;&nbsp;&nbsp;Lowest BG value | nr | nr | nr | ns | Lifestyle |
+| &nbsp;&nbsp;&nbsp;AUC under TBR | nr | nr | nr | ns | Medical History  |
+|  |  |  |  |  | Biochemical |
+|  |  |  |  |  | CGM/GV metrics |
+|  |  |  |  |  |  |
+| **Coronary Artery Disease** |  |  |  |  |  |
+| De Meulemeester, 2024†* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TITR | OR: 1.04 (0.81, 1.33) | p > 0.05 | OR: 1.255 (0.87, 1.80) | p > 0.05 | Least Adjusted: |
+| &nbsp;&nbsp;&nbsp;TIR | OR: 1.07 (0.87, 1.33) | p > 0.05 | OR: 1.164 (0.84, 1.61) | p > 0.05 | &nbsp;&nbsp;Unadjusted |
+|  |  |  |  |  | Most Adjusted: |
+|  |  |  |  |  | &nbsp;&nbsp;Demographic |
+|  |  |  |  |  | &nbsp;&nbsp;Anthropometric |
+|  |  |  |  |  | &nbsp;&nbsp;Lifestyle |
+|  |  |  |  |  | &nbsp;&nbsp;Medical History |
+|  |  |  |  |  | &nbsp;&nbsp;Physiological |
+|  |  |  |  |  | &nbsp;&nbsp;Biochemical |
+|  |  |  |  |  | &nbsp;&nbsp;Medication |
+|  |  |  |  |  |  |
+| Sheng, 2023 |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TIR(%): <20 | nr | nr | OR: 2.143 (1.55–3.29) | nr | Study states    |
+| &nbsp;&nbsp;&nbsp;TIR(%): 20–40 | nr | nr | OR: 1.05 (0.95–2.02) | nr | that they adjust |
+| &nbsp;&nbsp;&nbsp;TIR(%): 40–60 | nr | nr | OR: 0.85 (0.495–1.47) | nr | for confounders |
+| &nbsp;&nbsp;&nbsp;TIR(%): 60–80 | nr | nr | OR: 0.62 (0.42–1.31) | nr | \(The confounders  |
+| &nbsp;&nbsp;&nbsp;TIR(%): >80 | nr | nr | OR: 0.47 (0.14–1.55) | nr | are not reported\) |
+|  |  |  |  |  |  |
+| Chen, 2020†* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;Controls with:      | N/A | N/A | Myocardial Infarction, 𝜒^2: 5.797 | 0.016 | N/A |
+| &nbsp;&nbsp;&nbsp;SD<1.40 mmol/L |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;MAGE<3.90 mmol/L  |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;LAGE<4.40 mmol/L|  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;MODD<0.83 mmol/L  |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;vs  High BG |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;fluctuations|  |  |  |  |  |
+|  | N/A | N/A | Angina pectoris, 𝜒^2: 7.49 | 0.006 | N/A |
+|  |  |  |  |  |  |
+| Wei, 2019* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;Hypoglycemic events | MI, HR: 1.90 (1.07, 3.39) | nr | MI, HR: 1.55 (0.77, 3.13) | 0.03 | Least Adjusted: |
+| &nbsp;&nbsp;&nbsp;Hypoglycemic events | Unstable angina pectoris,  HR: 1.23 (0.86, 1.75) | nr | Unstable angina pectoris,  HR: 1.22 (0.79, 1.87) | 0.3 | &nbsp;&nbsp;Unadjusted |
+|  |  |  |  |  |  |
+|  |  |  |  |  | Most Adjusted: |
+|  |  |  |  |  | &nbsp;&nbsp;Demographic |
+|  |  |  |  |  | &nbsp;&nbsp;Anthropometric|
+|  |  |  |  |  | &nbsp;&nbsp;Lifestyle |
+|  |  |  |  |  | &nbsp;&nbsp;Medical History |
+|  |  |  |  |  | &nbsp;&nbsp;Biochemical  |
+|  |  |  |  |  | &nbsp;&nbsp;Medication |
+|  |  |  |  |  |  |
+| Mi, 2012†* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;MAGE level (≥3.4 mmol/L): | nr | nr | OR: 2.29 (1.18, 4.45), | 0.015 | Demographic |
+|  |  |  |  |  | Lifestyle |
+|  |  |  |  |  | Medical History |
+|  |  |  |  |  | Biochemical |
+|  |  |  |  |  | CGM/GV metrics |
+|  |  |  |  |  |  |
+| Su, 2011†* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;MAGE≥3.4 mmol/L | nr | nr | OR: 2.61 (1.42, 4.83) | 0.002 | Demographic |
+|  |  |  |  |  | Lifestyle |
+|  |  |  |  |  | Medical History |
+|  |  |  |  |  | Biochemical |
+|  |  |  |  |  | Medication |
+|  |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;MAGE | nr | nr | AUC: 0.618 (0.555, 0.680) | 0.001 | N/A |
+| **Gensini score** |  |  |  |  |  |
+| Chen, 2020†* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;Controls with:  SD <1.40 mmol/L  MAGE <3.90 mmol/L  LAGE <4.40 mmol/L  MODD <0.83 mmol/L  vs  high BG fluctuations | N/A | N/A | 𝘵: 6.210 | p < 0.001 | N/A |
+|  |  |  |  |  |  |
+| Watanabe, 2017* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;MAGE | N/A | N/A | r = 0.742 | p < 0.001 | N/A |
+|  |  |  |  |  |  |
+| Mi, 2012†* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;MAGE | nr | nr | Unstandardized coefficients beta:  4.817, SE: 1.614  Standardized coefficients beta:  0.170, t = 2.984 | 0.003 | Demographic |
+|  |  |  |  |  | Anthropometric |
+|  |  |  |  |  | Physiological |
+|  |  |  |  |  | Biochemical |
+|  |  |  |  |  |  |
+| Su, 2011†* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;MAGE | nr | nr | Unstandardized beta:  7.010, SE: 1.466  Standardized beta:  0.237, t = 4.783 | <0.001 | Demographic |
+|  |  |  |  |  | Medical History |
+|  |  |  |  |  | Physiological |
+|  |  |  |  |  | Biochemical |
+|  |  |  |  |  | CGM/GV metrics |
+|  |  |  |  |  |  |
+| **Syntax score** |  |  |  |  |  |
+| Watanabe, 2017* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;MAGE | N/A | N/A | r = 0.776 | p < 0.001 | N/A |
+|  |  |  |  |  |  |
+| Zhang, 2013* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;MAGE | N/A | N/A | r = 0.518 | 0.011 | N/A |
+| &nbsp;&nbsp;&nbsp;BG fluctuations at  00:00 - 03:00 | N/A | N/A | r = −0.442 | 0.035 | N/A |
+| &nbsp;&nbsp;&nbsp;BG fluctuations at  03:00 - 06:00 | N/A | N/A | r = −0.208 | 0.34 | N/A |
+| &nbsp;&nbsp;&nbsp;BG fluctuations at  06:00 - 08:00 | N/A | N/A | r = 0.678 | <0.001 | N/A |
+| &nbsp;&nbsp;&nbsp;BG fluctuations at  08:00 - 11:00 | N/A | N/A | r = 0.115 | 0.6 | N/A |
+| &nbsp;&nbsp;&nbsp;BG fluctuations at  11:00 - 13:00 | N/A | N/A | r = 0.523 | 0.011 | N/A |
+| &nbsp;&nbsp;&nbsp;BG fluctuations at  13:00 - 17:00 | N/A | N/A | r = 0.257 | 0.237 | N/A |
+| &nbsp;&nbsp;&nbsp;BG fluctuations at  17:00 - 19:00 | N/A | N/A | r = 0.358 | 0.094 | N/A |
+| &nbsp;&nbsp;&nbsp;BG fluctuations at  19:00 - 24:00 | N/A | N/A | r = −0.018 | 0.933 | N/A |
+| **Stroke** |  |  |  |  |  |
+| De Meulemeester, 2024†* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TITR | OR: 0.65 (0.47, 0.90) | p < 0.05 | OR: 0.55 (0.35, 0.86) | p < 0.01 | Least Adjusted: |
+| &nbsp;&nbsp;&nbsp;TIR | OR: 0.75 (0.59, 0.96) | p < 0.05 | OR: 0.62 (0.44, 0.87) | p < 0.01 | &nbsp;&nbsp;Unadjusted |
+|  |  |  |  |  |  |
+|  |  |  |  |  | Most adjusted: |
+|  |  |  |  |  | &nbsp;&nbsp;Demographic |
+|  |  |  |  |  | &nbsp;&nbsp;Anthropometric |
+|  |  |  |  |  | &nbsp;&nbsp;Lifestyle |
+|  |  |  |  |  | &nbsp;&nbsp;Medical History |
+|  |  |  |  |  | &nbsp;&nbsp;Physiological |
+|  |  |  |  |  | &nbsp;&nbsp;Biochemical |
+|  |  |  |  |  | &nbsp;&nbsp;Medication |
+|  |  |  |  |  |  |
+| Guo, 2021 |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TIR: Q1 (≤46%) | OR: 1.00 (Reference) | p < 0.001 | OR: 1.00 (Reference) | p < 0.001 | Least adjusted:     |
+| &nbsp;&nbsp;&nbsp;TIR: Q2 (46-65%) | 0.86 (0.72, 0.95) | p < 0.001 | OR: 0.80 (0.68, 0.92) | p < 0.001 | &nbsp;&nbsp;Univariate |
+| &nbsp;&nbsp;&nbsp;TIR: Q3 (65-81%) | 0.71 (0.61, 0.81) | p < 0.001 | OR: 0.64 (0.53, 0.79) | p < 0.001 |  |
+| &nbsp;&nbsp;&nbsp;TIR: Q4 (>81%) | 0.66 (0.58, 0.80) | p < 0.001 | OR: 0.59 (0.50, 0.74) | p < 0.001 | Most Adjusted: |
+|  |  |  |  |  | &nbsp;&nbsp;Demographic |
+|  |  |  |  |  | &nbsp;&nbsp;Anthropometric |
+|  |  |  |  |  | &nbsp;&nbsp;Medical History |
+|  |  |  |  |  | &nbsp;&nbsp;Biochemical |
+|  |  |  |  |  | &nbsp;&nbsp;Medication |
+|  |  |  |  |  | &nbsp;&nbsp;CVD marker |
+|  |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TIR, per 10% increase | 0.93 (0.85, 0.98) 0.008 | 0.008 | OR: 0.89 (0.82, 0.95) | p = 0.001 | Model 1: |
+|  |  |  |  |  | &nbsp;&nbsp;Demographic |
+|  |  |  |  |  | &nbsp;&nbsp;Anthropometric |
+|  |  |  |  |  |  |
+|  |  |  |  |  | Model 3: |
+|  |  |  |  |  | &nbsp;&nbsp;Demographic |
+|  |  |  |  |  | &nbsp;&nbsp;Anthropometric |
+|  |  |  |  |  | &nbsp;&nbsp;Medical History  |
+|  |  |  |  |  | &nbsp;&nbsp;Biochemical |
+|  |  |  |  |  | &nbsp;&nbsp;Medication |
+|  |  |  |  |  | &nbsp;&nbsp;CVD marker |
+|  |  |  |  |  |  |
+| Wei, 2019* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;Hypoglycemic events | HR: 1.691 (1.144, 2.499) | nr | HR: 1.813 (1.110, 2.960) | 0.06 | Least Adjusted: |
+|  |  |  |  |  | &nbsp;&nbsp;Unadjusted |
+|  |  |  |  |  |  |
+|  |  |  |  |  | Most Adjusted: |
+|  |  |  |  |  | &nbsp;&nbsp;Demographic |
+|  |  |  |  |  | &nbsp;&nbsp;Anthropometric |
+|  |  |  |  |  | &nbsp;&nbsp;Lifestyle |
+|  |  |  |  |  | &nbsp;&nbsp;Medical History |
+|  |  |  |  |  | &nbsp;&nbsp;Biochemical Medication |
+|  |  |  |  |  |  |
+| **Peripheral Artery Disease** |  |  |  |  |  |
+| De Meulemeester, 2024†* |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TITR | OR: 0.680 (0.426, 1.085) | p > 0.05 | OR: 0.807 (0.382, 1.703) | p > 0.05 | Least Adjusted: |
+| &nbsp;&nbsp;&nbsp;TIR | OR: 0.736 (0.520, 1.042) | p > 0.05 | OR: 0.811 (0.470, 1.398) | p > 0.05 | &nbsp;&nbsp;Unadjusted |
+|  |  |  |  |  |  |
+|  |  |  |  |  | Most Adjusted: |
+|  |  |  |  |  | &nbsp;&nbsp;Demographic |
+|  |  |  |  |  | &nbsp;&nbsp;Anthropometric |
+|  |  |  |  |  | &nbsp;&nbsp;Lifestyle |
+|  |  |  |  |  | &nbsp;&nbsp;Medical History  |
+|  |  |  |  |  | &nbsp;&nbsp;Physiological |
+|  |  |  |  |  | &nbsp;&nbsp;Biochemical |
+|  |  |  |  |  | &nbsp;&nbsp;Medication |
+|  |  |  |  |  |  |
+| **Lower extremity arterial disease** |  |  |  |  |  |
+| Li, 2020 |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TIR | OR: 0.98 (0.97,0.99) | p < 0.001 | OR: 0.979 (0.97,0.99) | 0.002 | Least Adjusted:  |
+| &nbsp;&nbsp;&nbsp;CV | OR: 1.04 (1.00,1.08) | 0.035 | OR: 1.04 (1.00,1.08) | 0.075 | &nbsp;&nbsp;Unadjusted |
+| &nbsp;&nbsp;&nbsp;SD | OR: 1.33 (1.04,1.69) | 0.024 | OR: 1.16 (0.82,1.63) | 0.399 |  |
+|  |  |  |  |  | Model 3: |
+|  |  |  |  |  | &nbsp;&nbsp;Demographic |
+|  |  |  |  |  | &nbsp;&nbsp;Anthropometric |
+|  |  |  |  |  | &nbsp;&nbsp;Lifestyle |
+|  |  |  |  |  | &nbsp;&nbsp;Medical History |
+|  |  |  |  |  | &nbsp;&nbsp;Physiological |
+|  |  |  |  |  | &nbsp;&nbsp;Biochemical Medication |
+|  |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TIR -> without LEAD | OR: 1.00 | Reference | OR: 1.00 | Reference | Model 1:  |
+| &nbsp;&nbsp;&nbsp;TIR -> mild LEAD | OR: 0.98 (0.97,1.00) | 0.142 | OR: 0.99 (0.97,1.01) | 0.25 | &nbsp;&nbsp;Demographic |
+| &nbsp;&nbsp;&nbsp;TIR -> moderate LEAD | OR: 0.97 (0.95,0.99) | 0.007 | OR: 0.97 (0.95,0.99) | 0.013 | &nbsp;&nbsp;Anthropometric |
+| &nbsp;&nbsp;&nbsp;TIR -> without severe | OR: 0.96 (0.94,0.98) | 0.002 | OR: 0.96 (0.94,0.98) | 0.003 |  &nbsp;&nbsp;Medical History |
+| &nbsp;&nbsp;&nbsp;CV -> without LEAD | N/A | N/A | OR: 1.00 | Reference | &nbsp;&nbsp;Physiological |
+| &nbsp;&nbsp;&nbsp;CV -> mild LEAD | N/A | N/A | OR: 1.03 (0.98,1.07) | 0.28 | &nbsp;&nbsp;Biochemical |
+| &nbsp;&nbsp;&nbsp;CV -> moderate LEAD | N/A | N/A | OR: 1.02 (0.96,1.09) | 0.478 |  |
+| &nbsp;&nbsp;&nbsp;CV -> without severe | N/A | N/A | OR: 1.02 (0.95,1.09) | 0.598 | Model 2: |
+|  |  |  |  |  | &nbsp;&nbsp;Demographic |
+|  |  |  |  |  | &nbsp;&nbsp;Anthropometric |
+|  |  |  |  |  | &nbsp;&nbsp;Medical History |
+|  |  |  |  |  | &nbsp;&nbsp;Physiological |
+|  |  |  |  |  | &nbsp;&nbsp;Biochemical |
+|  |  |  |  |  | &nbsp;&nbsp;SD metric  |
+|  |  |  |  |  |  |
+| &nbsp;&nbsp;&nbsp;TIR -> without LEAD | N/A | N/A | OR: 1.00 | Reference | Model 3: |
+| &nbsp;&nbsp;&nbsp;TIR -> mild LEAD | N/A | N/A | OR: 0.97 (0.96,1.08) | 0.06 | Demographic |
+| &nbsp;&nbsp;&nbsp;TIR -> moderate LEAD | N/A | N/A | OR: 0.98 (0.95,0.99) | 0.013 | Anthropometric |
+| &nbsp;&nbsp;&nbsp;TIR -> without severe | N/A | N/A | OR: 0.97 (0.95,0.99) | 0.024 | Medical History  |
+| &nbsp;&nbsp;&nbsp;SD -> without LEAD | N/A | N/A | OR: 1.00 | Reference | Physiological |
+| &nbsp;&nbsp;&nbsp;SD -> mild LEAD | N/A | N/A | OR: 0.88 (0.47,1.64) | 0.69 | Biochemical |
+| &nbsp;&nbsp;&nbsp;SD -> moderate LEAD | N/A | N/A | OR: 1.28 (0.58,3.07) | 0.582 | CV metric  |
+| &nbsp;&nbsp;&nbsp;SD -> without severe | N/A | N/A | OR: 1.52 (0.92,2.41) | 0.1 |  |
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.90\linewidth]{
+    All hazard ratios (HRs), odds ratios (ORs), and areas under the curve (AUCs) are reported as follows: point estimate ($95\%$ CI).\newline
+    \textsuperscript{*} This study appears multiple times as it investigated multiple cardiovascular disease outcomes.\newline
+    \textsuperscript{$\dagger$} This study appears in both the clinical and subclinical disease outcome tables owing to the investigation of multiple cardiovascular disease outcomes.\newline
+    The full table with adjustments is provided in **Multimedia Appendix 10**. Further elaboration on the adjusted variables can be found in **Multimedia Appendices 7 and 8**.\newline
+    *Abbreviations:* nr: Not applicable or not available/not reported, TIR: time in range, GMI: glucose management indicator, TITR: time in tight range, TBR: time below range, TAR: time above range, CV: coefficient of variation, BG: blood glucose, MAGE: mean amplitude of glycemic excursions, LAGE: largest amplitude of glycemic excursions, MODD: mean of daily differences, LEAD: lower extremity arterial disease.
+}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+All hazard ratios (HRs), odds ratios (ORs), and areas under the curve (AUCs) are reported as follows: point estimate ($95\%$ CI).\ 
+$^*$ This study appears multiple times as it investigated multiple cardiovascular disease outcomes.\
+$^\dagger$ This study appears in both the clinical and subclinical disease outcome tables owing to the investigation of multiple cardiovascular disease outcomes.\
+The full table with adjustments is provided in **Multimedia Appendix 10**. Further elaboration on the adjusted variables can be found in **Multimedia Appendices 7 and 8**.\
+*Abbreviations:* nr: Not applicable or not available/not reported, TIR: time in range, GMI: glucose management indicator, TITR: time in tight range, TBR: time below range, TAR: time above range, CV: coefficient of variation, BG: blood glucose, MAGE: mean amplitude of glycemic excursions, LAGE: largest amplitude of glycemic excursions, MODD: mean of daily differences, LEAD: lower extremity arterial disease.\
+</p>
+:::
+
+Main findings of the included studies on clinical cardiovascular outcomes. WIP: Still need to add suppl. files, and adjustment column
+:::
+
+:::
+:::

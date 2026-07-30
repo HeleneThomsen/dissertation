@@ -78,32 +78,13 @@ Summary of the frequency of the seven most used CGM-derived metrics
 :::
 
 ### Prediction Studies
-Only three studies evaluated the predictive performance of CGM-derived metrics for cardiovascular outcomes, all using logistic regression models with MAGE as the predictor. Two studies reported \acr{AUROC} values of 0.61 and 0.62, respectively,[@Mi2012,@Su2011] and both found MAGE to outperform HbA1c (\acr{AUROC}: 0.55 and 0.58, respectively). The third study used receiver operating characteristic analysis to determine the optimal threshold for dichotomizing MAGE during variable selection but did not report the \acr{AUROC}.[@Koroleva2022] Instead, a threshold of MAGE ≥ 3.4 mmol/L was identified as a risk factor for stenosis and/or occlusion, with a sensitivity of 0.60 and a specificity of 0.61.
+Only three studies evaluated the predictive performance of CGM-derived metrics for cardiovascular outcomes, all using logistic regression models with MAGE as the predictor. Two studies reported \acr{AUROC} values of 0.61 and 0.62, respectively,[@Mi2012, @Su2011] and both found MAGE to outperform HbA1c (\acr{AUROC}: 0.55 and 0.58, respectively). The third study used receiver operating characteristic analysis to determine the optimal threshold for dichotomizing MAGE during variable selection but did not report the \acr{AUROC}.[@Koroleva2022] Instead, a threshold of MAGE ≥ 3.4 mmol/L was identified as a risk factor for stenosis and/or occlusion, with a sensitivity of 0.60 and a specificity of 0.61.
 
 
 ### Association Studies
 There were a variety of different CVD outcomes as presented in @tbl-study3-clin-subclin-cvd.
 
 :::{#tbl-study3-clin-subclin-cvd tbl-pos="H"}
-<!-- | Clinical | Subclinical |
-|:---|:---|
-| CVD = Cardiovascular disease |  ABI = Ankle–brachial index |
-| &nbsp;&nbsp; - Macrovascular complications  | BP = Blood pressure |
-| &nbsp;&nbsp; - Diabetic macroangiopathy | Carotid artery distensibility = Carotid artery distensibility or carotid distensibility coefficient |
-| CAD = Coronary artery disease | CCA = Common carotid artery |
-| &nbsp;&nbsp; - CHD = Coronary heart disease | CIMT = Carotid artery intima-media thickness |
-| &nbsp;&nbsp; - MI = Myocardial infarction |  DBP = Diastolic blood pressure |
-| &nbsp;&nbsp; - Heart attack | FMD = Flow-mediated dilation of the brachial artery |
-| &nbsp;&nbsp; - Heart failure | GSM = Gray-scale median of the carotid arteries |
-| &nbsp;&nbsp; - (Unstable) angina pectoris | HRV = Heart rate variability |
-| Cardiovascular events | IMT = Intima-media thickness |
-| &nbsp;&nbsp; - Ishemic heart disease (IHD) | PWV = Pulse wave velocity |
-| LEAD = Lower extremity artery disease | &nbsp;&nbsp; - ba-PWV = Brachial-ankle pulse wave velocity |
-| MACE = Major adverse cardiovascular events | &nbsp;&nbsp; - cr-PWV = Carotid-radial pulse wave velocity |
-| PAD = Peripheral artery disease | &nbsp;&nbsp; - cf-PWV = Carotid-femoral pulse wave velocity |
-| Stroke = Stroke, Cerebrovascular disease, or Cerebrovascular accident | &nbsp;&nbsp; - Aortic PWV = Aortic pulse wave velocity |
-|  | SBP = Systolic blood pressure  | -->
-
 
 ```{=latex}
 
@@ -173,21 +154,18 @@ Overview of established clinical and subclinical outcomes.
 Most studies focused exclusively on subclinical cardiovascular outcomes (37 of 53 studies, 70%), whereas 13 studies (25%) investigated only clinical cardiovascular outcomes and three studies (6%) included both clinical and subclinical outcomes.<!-- Because the subsequent chapters of this dissertation focus on clinical cardiovascular outcomes, only these findings are discussed in detail below (@tbl-study1-clinical-overview and @tbl-main-clinical-findings). -->
 An overview of all the studies is provided in @sec-suppl-subclin-results.
 
-
 An overview of the most frequently used CGM-derived metrics stratified based on clinical and subclinical cardiovascular outcomes are shown in @tbl-CVD-CGM.
 Outcomes related to subclinical cardiovascular outcomes were more frequently studied (59 studies) compared to clinical outcomes (26 studies) and studies were predominantly done among people with T2D.
 Among clinical cardiovascular outcomes, coronary artery disease was examined most frequently (6 studies), followed by macrovascular complications (5 studies) and the Gensini score (4 studies) and for subclinical cardiovascular outcomes, particularly arterial wall thickness were frequently investigated (19 studies), arterial stiffness (12 studies), cardiac and pulse-related measures (10 studies), and flow resistance (9 studies). 
 
-TIR was the most frequently reported CGM-derived metric across most arterial-stiffness outcomes, followed by MAGE, MBG, SD, and CV. MAGE was reported most frequently in studies evaluating coronary artery disease, Gensini score, and Syntax score. By contrast, relatively few CGM-derived metrics were reported for mortality, major adverse cardiovascular events, stroke, peripheral artery disease, and lower-extremity arterial disease.
+TIR was the most commonly reported CGM-derived metric across most arterial-stiffness outcomes, followed by MAGE, MBG, SD, and CV. MAGE was reported most frequently in studies evaluating coronary artery disease, Gensini score, and Syntax score. By contrast, relatively few CGM-derived metrics were reported for mortality, major adverse cardiovascular events, stroke, peripheral artery disease, and lower-extremity arterial disease.
 A more detailed extraction table of the CVD outcomes for the 53 studies can be found in @sec-suppl-subclin-results.
 
 ::: {.landscape}
 ::: {.small}
-
 ::: {#tbl-CVD-CGM tbl-pos="H"}
 
 ```{=latex}
-    \begin{table}[H]
         \centering
         \begin{tabular}{l|c|cccc|cccccccc}
             \toprule
@@ -240,7 +218,7 @@ A more detailed extraction table of the CVD outcomes for the 53 studies can be f
 
             \bottomrule
         \end{tabular}
-    \end{table}
+
 
 ```
 ::: {.content-visible when-format="pdf"}

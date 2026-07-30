@@ -1,4 +1,4 @@
-# Study I: Search strings {#sec-suppl-search-strings}
+# Study I: Search Strings {#sec-suppl-search-strings}
 
 ::: {#tbl-medline fig-scap='Search in Ovid MEDLINE' tbl-pos="H"}
 
@@ -85,10 +85,12 @@ Search strategy in Embase (Ovid) (Search date: 22 January 2024)
 
 :::
 <!-- tbl-colwidths="\[80, 20\]"} -->
-# Study I: Included and excluded reports {#sec-suppl-study1-reports}
+
 
 ::: {.landscape}
 ::: {.small}
+
+# Study I: Included and Excluded Reports {#sec-suppl-study1-reports}
 
 ::: {#tbl-included tbl-colwidths="[26,6,30,14,5,5,6,8]"}
 
@@ -205,10 +207,11 @@ Search strategy in Embase (Ovid) (Search date: 22 January 2024)
 Note. Table shows included studies identified in the review. Ovid export links and reference type fields were omitted to improve readability. DOI values are shown where available.
 :::
 
-:::
+Included studies
 
 :::
 
+:::
 :::
 
 ::: {#tbl-excluded  tbl-colwidths="\[80, 20\]"}
@@ -292,7 +295,7 @@ Excluded records from database searches
 
 Excluded records from citation search
 ::: 
-# Study I: Geographical location {#sec-suppl-geo-map}
+# Study I: Geographical Location {#sec-suppl-geo-map}
 
 Asia (n=27)
 
@@ -330,16 +333,10 @@ Borg 2011(ADAG study) had study centers in:
 Borg R, Kuenen J C, Carstensen B, Zheng H, Nathan D M, Heine R J, et al. HbA1(c) and
 mean blood glucose show stronger associations with cardiovascular disease risk factors than do postprandial glycaemia or glucose variability in persons with diabetes: the A1C-Derived Average Glucose (ADAG) study. 2011; ADAG Study Group, editor. Diabetologia. 54: 69–72. doi:10.1007/s00125-010-1918-2
 
-# Study I: Subclinical results {#sec-suppl-subclin-results}
-
-- [ ] Add table with subclinical study design overviews
-- [ ] Add table overview of subclinical results
-- [ ] Add adjustment column to @tbl-main-clinical-findings the same way as I did witht he first two studies
-- [ ] Add subclinical table from the suppl. of the published ScR study down in supplementary as well
-
-
 ::: {.landscape}
 ::: {.small}
+
+# Study I: Clinical and Subclinical Results {#sec-suppl-subclin-results}
 
 ::: {#tbl-study1-clinical-overview tbl-colwidths="\[9, 14, 20, 5, 14, 14, 14, 10\]"}
 
@@ -482,16 +479,35 @@ Study design, demographics, and adjustments of the included subclinical cardiova
 :::
 :::
 
+{{< include app1-clin-tbl.qmd >}}
 
+{{< include app1-subclin-tbl.qmd >}}
 
-{{< include app1-suppl-clin-tbl.qmd >}}
-{{< include app1-suppl-subclin-tbl.qmd >}}
+# Study II: Cosine Distances {#sec-suppl-cosim}
 
-# Study II: Cosine distances {#sec-suppl-cosim}
-- [ ] Add supplementary tables here (median and IQR) for NT-proBNP and race in cosine distances. Data is saved in figures/4_results_fig
+::: {#tbl-cosim-race-ntprobnp tbl-pos="H"}
 
+```{=latex}
+   \begin{table}[H]
+      \begin{tabular}{l|rr|rr}
+         \toprule
+                                 & \multicolumn{2}{c|}{Within-participant}& \multicolumn{2}{c}{Between-participant} \\
+         Group                   & n         & Median {[}IQR{]}           & n          & Median {[}IQR{]}           \\\midrule
+         Normal NT-proBNP        & 5415      & 0.058 {[}0.040, 0.084{]}   & 507163     & 0.123 {[}0.078, 0.191{]}   \\
+         Elevated NT-proBNP      & 4044      & 0.058 {[}0.040, 0.084{]}   & 270867     & 0.109 {[}0.073, 0.168{]}   \\
+         Across NT-proBNP groups &           &                            & 751646     & 0.116 {[}0.076, 0.180{]}   \\
+         Non-Hispanic Black      & 165311    & 0.066 {[}0.047, 0.094{]}   & 34151640   & 0.085 {[}0.059, 0.128{]}   \\
+         Non-Hispanic White      & 186287    & 0.063 {[}0.046, 0.086{]}   & 33982718   & 0.079 {[}0.056, 0.117{]}   \\
+         Different groups        &           &                            & 34230775   & 0.083 {[}0.058, 0.123{]}  \\\toprule
+      \end{tabular}
+   \end{table}
 
-# Study II: Prediction stability {#sec-suppl-pred-stability}
+```
+Cosim distances for within and between participants for NT-proBNP and race
+
+:::
+
+# Study II: Prediction Stability {#sec-suppl-pred-stability}
 Prediction stability plots (@fig-pred-stability) revealed more stability the fewer predictors. 
 
 ::: {#fig-pred-stability width=75%}
@@ -531,7 +547,7 @@ Prediction stability plots show the predictions (estimated risk) for the full da
 
 Results from the Surveillance Error Grid for White participants. Values are reported as percentages.
 :::
-
+\newpage
 
 ::: {#tbl-seg-black tbl-colwidths="[12,18,15,9,9,9,9,9,10]"}
 

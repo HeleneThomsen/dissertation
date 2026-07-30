@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jul 28 11:17:17 2026
+
+@author: au605715
+"""
+
 """
 3D illustration of two embedding vectors with:
 - projection-based depth fading for arrows and endpoint markers
@@ -52,7 +60,7 @@ def slerp(v1, v2, t):
 
 # 1. Sample 3D embedding vectors
 embedding_a = np.array([3.0, 5.0, 6.0])
-embedding_b = np.array([5.0, 2.0, 2.0])
+embedding_b = np.array([4.2, 1.7, 1.7])  # shortened bottom vector
 origin = np.zeros(3)
 vectors = (embedding_a, embedding_b)
 
@@ -66,10 +74,12 @@ ax.set_box_aspect([1, 1, 1])
 ax.view_init(elev=18, azim=-60)
 fig.canvas.draw()  # finalizes ax.get_proj()
 
+
 # Projection-depth helpers. Larger projected z is treated as nearer.
 def projected_depth(data_point):
     p = to_plot(data_point)
     return float(proj3d.proj_transform(p[0], p[1], p[2], ax.get_proj())[2])
+
 
 # Use arrow midpoints and tips together to establish a stable scene depth range.
 depth_samples = [projected_depth(origin)]
@@ -87,6 +97,7 @@ def depth_style(data_point, alpha_range=(0.48, 1.0), lw_range=(1.35, 2.55)):
     linewidth = lw_range[0] + near * (lw_range[1] - lw_range[0])
     return alpha, linewidth
 
+
 # 3. Bounding cube
 cube_min, cube_max = 0, 7
 corners = np.array([[x, y, z]
@@ -95,24 +106,11 @@ corners = np.array([[x, y, z]
                     for z in (cube_min, cube_max)])
 edges = [(i, j) for i in range(8) for j in range(i + 1, 8)
          if np.sum(corners[i] != corners[j]) == 1]
+
 for i, j in edges:
     p1, p2 = to_plot(corners[i]), to_plot(corners[j])
     ax.plot([p1[0], p2[0]], [p1[1], p2[1]], [p1[2], p2[2]],
             color="gray", linewidth=0.7, linestyle=":", alpha=0.6)
-
-# Tick marks along the three axes through the origin
-tick_len = 0.15
-for axis_idx, perp1, _ in [(0, 1, 2), (1, 0, 2), (2, 0, 1)]:
-    for val in range(cube_min, cube_max + 1):
-        if val == 0:
-            continue
-        base = np.zeros(3)
-        base[axis_idx] = val
-        tick_dir = np.zeros(3)
-        tick_dir[perp1] = tick_len
-        p1, p2 = to_plot(base - tick_dir), to_plot(base + tick_dir)
-        ax.plot([p1[0], p2[0]], [p1[1], p2[1]], [p1[2], p2[2]],
-                color="gray", linewidth=0.8, alpha=0.7)
 
 # Faint grid lines on the three cube faces meeting at the origin
 grid_faces = [(0, 1, 2), (0, 2, 1), (1, 2, 0)]
@@ -133,7 +131,6 @@ for var1, var2, fixed in grid_faces:
                 color="gray", linewidth=0.5, linestyle=":", alpha=0.55)
 
 # 4. Drop lines to the XZ floor. In data coordinates, that floor is Y = 0.
-# Draw before vectors so the shadows remain visually behind them.
 for vec in vectors:
     floor_point = np.array([vec[0], 0.0, vec[2]])
     shadow_alpha, _ = depth_style(0.5 * (vec + floor_point),
@@ -174,12 +171,12 @@ def label_pos(vec, other_vec, radial_extra=0.9, perp_scale=0.45):
         perp = -perp
     return vec + unit * radial_extra + perp * perp_scale
 
+
 label_a_pos = label_pos(embedding_a, embedding_b)
-label_b_pos = np.array([6.0, 1.0, 2.0])
-ax.text(*to_plot(label_a_pos), "Embedding A", fontsize=11,
-        fontweight="bold", ha="left")
-ax.text(*to_plot(label_b_pos), "Embedding B", fontsize=11,
-        fontweight="bold", ha="left")
+label_b_pos = np.array([5.1, 0.9, 1.8])
+
+ax.text(*to_plot(label_a_pos), "Embedding A", fontsize=16, ha="left")
+ax.text(*to_plot(label_b_pos), "Embedding B", fontsize=16, ha="left")
 
 # 7. Theta arc
 t = np.linspace(0, 1, 40)
@@ -187,20 +184,30 @@ arc_radius = 1.5
 arc_points = to_plot(slerp(embedding_a, embedding_b, t) * arc_radius)
 ax.plot(arc_points[:, 0], arc_points[:, 1], arc_points[:, 2],
         color="red", linewidth=2, zorder=7)
+
 mid_arc = to_plot(slerp(embedding_a, embedding_b, np.array([0.5]))[0]
                   * arc_radius * 1.15)
 ax.text(*mid_arc, r"$\theta$", color="red", fontsize=16,
         fontweight="bold", zorder=8)
 
 # 8. Styling
-ax.set_xlabel("X")
-ax.set_ylabel("Z")  # depth axis in the original data
-ax.set_zlabel("Y")  # vertical axis in the original data
+ax.set_xlabel("")
+ax.set_ylabel("")
+ax.set_zlabel("")
+
+ax.set_xticks([])
+ax.set_yticks([])
+ax.set_zticks([])
+
 ax.grid(False)
+ax.set_axis_off()
+
 for axis in (ax.xaxis, ax.yaxis, ax.zaxis):
     axis.pane.set_visible(False)
     axis.pane.set_edgecolor("lightgray")
 
 plt.tight_layout()
-plt.savefig("embeddings_3d_depth_shadow.png", dpi=200, bbox_inches="tight")
+
+plt.savefig("/Users/au605715/Documents/GitHub/embeddings_3d_depth_shadow.png",
+            dpi=200, bbox_inches="tight")
 plt.show()

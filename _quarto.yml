@@ -22,14 +22,13 @@ book:
     # - 4-results-2-baseline-tbl.qmd
     # - 4-results-3-cosim.qmd
     # - 4-results-5-fairness.qmd
-    # - 4-results.qmd
-    # - 5-discussion.qmd
-    # - 7-conclusions.qmd
-    # - 8-perspectives.qmd
-    # - references.qmd
-    # - 9-abstract-eng.qmd
-    # - 10-abstract-da.qmd
-  
+    - 4-results.qmd
+    - 5-discussion.qmd
+    - 7-conclusions.qmd
+    - 8-perspectives.qmd
+    - references.qmd
+    - 9-abstract-eng.qmd
+    - 10-abstract-da.qmd
   appendices:
     - app1-supplementary.qmd
     # - app2-addendum.qmd
@@ -121,8 +120,8 @@ acronyms:
       longname: low-density lipoprotein cholesterol
     - shortname: HDL cholesterol
       longname: high-density lipoprotein cholesterol
-    # - shortname: 
-    #   longname: 
+    - shortname: SEG
+      longname: Surveillance error grids 
     # - shortname: 
     #   longname: 
       

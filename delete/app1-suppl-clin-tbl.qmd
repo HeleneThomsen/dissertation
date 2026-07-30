@@ -12,7 +12,7 @@ Clinical cardiovascular outcomes comprised cardiovascular mortality, major adver
 | | | | | | &nbsp;&nbsp; Demographic  |
 | Lu et al, 2021 | | | | | Model 2: |
 | &nbsp;&nbsp;&nbsp; TIR $>85\%$ | HR 1.00 | $<0.001$ (trend) | HR 1.00 | $0.02$ (trend) | Demographic |
-| &nbsp;&nbsp;&nbsp; TIR $71\%-85\%$ | HR: 1.43\newline  (0.95–2.14) | $<0.001$ (trend) | HR: 1.35\newline  (0.90–2.04) | $0.02$ (trend) | &nbsp;&nbsp; Anthropometric |
+| &nbsp;&nbsp;&nbsp; TIR $71\%-85\%$ | HR: 1.43(0.95–2.14) | $<0.001$ (trend) | HR: 1.35\newline  (0.90–2.04) | $0.02$ (trend) | &nbsp;&nbsp; Anthropometric |
 | &nbsp;&nbsp;&nbsp; TIR $51\%-70\%$ | HR: 1.66\newline  (1.12–2.45) | $<0.001$ (trend) | HR: 1.47\newline  (0.99–2.19) | $0.02$ (trend) | &nbsp;&nbsp; Lifestyle |
 | &nbsp;&nbsp;&nbsp; TIR $\ge 50\%$ | HR: 2.15\newline  (1.47–3.13) | $<0.001$ (trend) | HR: 1.85\newline  (1.25–2.72) | $0.02$ (trend) | &nbsp;&nbsp; Medical History |
 | &nbsp;&nbsp;&nbsp; TIR as a\newline  continuous variable  | HR 1.08\newline  (1.03–1.13) | — | HR 1.05\newline  (1.00–1.11) | — | &nbsp;&nbsp; Physiological |
@@ -199,7 +199,7 @@ The full table with adjustments is provided in **Multimedia Appendix 10**. Furth
 </p>
 :::
 
-Main findings of the included studies on clinical cardiovascular outcomes. WIP: Still need to add suppl. files, and adjustment column
+Main findings of the included studies on clinical cardiovascular outcomes.
 :::
 
 :::

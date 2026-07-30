@@ -12,7 +12,7 @@ The dissertation comprised three studies. Study I was a scoping review of the li
 
 #### Results
 Study I found that the current evidence was inconsistent and heterogeneous. Most studies investigated subclinical cardiovascular outcomes. Studies including people with T2D were more frequent than studies including people with T1D (34/53 vs. 20/53), and the T2D study populations were generally larger. 
-This was observed both for studies of time in range (TIR) (median [IQR]: 510 [405–600] vs. 214 [119–547]) and mean amplitude of glycemic excursions (MAGE) (251 [89–411] vs. 57 [30–215]).
+This pattern was observed both for time in range (TIR) (median [IQR]: 510 [405–600] vs. 214 [119–547]) and mean amplitude of glycemic excursions (MAGE) (251 [89–411] vs. 57 [30–215]).
 Although TIR and MAGE were the most frequently studied CGM-derived metrics, only MAGE had been evaluated for CVD prediction, showing modest discriminatory performance (AUROC: ~0.61).
 
 
@@ -25,7 +25,7 @@ A simpler model including age alone already showed good discriminatory performan
 
 
 Study III found performance differences across racial groups in 60-minute blood glucose forecasting, even though the models were developed using only CGM data.
-Although the RMSE slope across training-set compositions was not statistically significant within either racial group, the difference in slopes between groups was statistically significant (p = 0.02). Meaning that when the training data composition changed from 0% White and 100% Black participants to 100% White and 0% Black participants, RMSE increased by 0.04 [95% CI: 0.01, 0.08] mmol/L more for Black participants than for White participants. After transfer learning, this difference was attenuated and no longer statistically significant (0.02 [95% CI: -0.01 to 0.05] mmol/L, p = 0.20).
+Although the RMSE slope across training-set compositions was not statistically significant within either racial group, the difference in slopes between groups was statistically significant ($p$ = 0.02). Meaning that when the training data composition changed from 0% White and 100% Black participants to 100% White and 0% Black participants, RMSE increased by 0.04 [95% CI: 0.01, 0.08] mmol/L more for Black participants than for White participants. After transfer learning, this difference was attenuated and no longer statistically significant (0.02 [95% CI: -0.01 to 0.05] mmol/L, $p$ = 0.20).
 
 
 

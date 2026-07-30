@@ -1,0 +1,111 @@
+
+::: {.landscape}
+::: {.small}
+
+::: {#tbl-main-subclinical-findings tbl-colwidths="\[25, 25, 5 , 5, 5, 5, 5, 5, 5, 5, 10\]"}
+| Author, year | Outcomes | MBG | CV | SD | TIR | TBR | TAR | MAGE | MODD | Other |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Arterial stiffness** |  |  |  |  |  |  |  |  |  |  |
+| \hspace{2em} Morandi, 2023* | cf-PWV | X |  | X | X | X | X | X |  | CONGA |
+| \hspace{2em} Helleputte, 2022 | cf-PWV |  | X | X | X | X | X | X | X |  |
+| \hspace{2em} Foreman, 2021* | cf-PWV |  | X | X | X |  |  |  |  |  |
+| \hspace{2em} Pulkkinen, 2020* | cf-PWV | X | X | X | X |  |  |  |  |  |
+|  | cr-PWV | X | X | X | X |  |  |  |  |  |
+| \hspace{2em} Torimoto, 2025*33 | ba-PWV |  |  |  |  |  |  |  |  | GRI |
+| \hspace{2em} Cai, 2024 | ba-PWV |  | X |  | X |  |  | X |  | GRI |
+| \hspace{2em} Zhou, 2022 | High ba-PWV ≥ 1800 cm/s  Low ba-PWV |  |  |  | X |  |  |  |  |  |
+| \hspace{2em} Wakasugi, 2021 | ba-PWV | X | X | X | X | X | X | X | X | HBGI, LBGI, IQR |
+|  | High ba-PWV ≥ 1800 cm/s | X | X | X | X | X | X  X | X | X | HBGI, LBGI, IQR |
+| \hspace{2em} Yano, 2013* | ba-PWV | X |  |  |  |  |  |  |  | PPGE |
+| \hspace{2em} Georeli, 2024 | PWV |  |  |  | X | X | X |  |  |  |
+| \hspace{2em} Gordin, 2008* | Aortic PWV | X |  |  |  |  |  | X |  |  |
+| \hspace{2em} Gordin, 2008* | Augmentation index | X |  |  |  |  |  | X |  |  |
+| \hspace{2em} Cesana, 2013* | Carotid artery distensibility | X |  | X |  |  |  | X |  |  |
+| \hspace{2em} Foreman, 2021* | Carotid distensibility coefficient |  | X | X | X |  |  |  |  |  |
+| **Flow resistance** |  |  |  |  |  |  |  |  |  |  |
+| \hspace{2em} Cutruzzola, 2022* | FMD | X | X |  | X | X | X |  |  |  |
+| \hspace{2em} Zhang, 2014 | FMD |  |  |  |  |  |  | X |  |  |
+| \hspace{2em} Pena, 2012 | FMD |  |  |  |  | X |  |  |  | Hypoglycemia, LBGI |
+| \hspace{2em} Gimenez, 2011* | FMD |  |  |  |  |  |  | X |  |  |
+| Buscemi, 2010*5 | FMD | X | X |  |  |  |  | X |  | AUC X |
+| \hspace{2em} Foreman, 2021* | ABI |  | X | X | X  X |  |  |  |  |  |
+| \hspace{2em} Wei, 2022 | ABI ≤ 0.9  ABI ≥ 1.3 | X | X | X | X |  | X | X | X | M-value, ADRR |
+| \hspace{2em} Zhang, 2020 | ABI | X |  | X |  | X | X | X | X | LAGE X |
+| \hspace{2em} Hoffman, 2013 | Forearm vascular resistance | X |  |  |  |  |  |  |  |  |
+|  | Forearm Blood Flow | X |  |  |  |  |  |  |  |  |
+| **Arterial wall thickness** |  |  |  |  |  |  |  |  |  |  |
+| \hspace{2em} Bergdahl, 2025 | intima thickness, media thickness, and IMT of the radial, dorsal pedal, and carotid arteries. |  | X |  |  |  |  |  |  | TITR |
+| \hspace{2em} Pulkkinen, 2020* | Femoral IMT | X | X | X | X |  |  |  |  |  |
+| \hspace{2em} Lu, 2020* | CCA-IMT |  | X | X | X |  |  | X |  |  |
+| \hspace{2em} Yano, 2013* | CCA-IMT | X |  |  |  |  |  |  |  |  |
+| \hspace{2em} Taya, 2021* | CCA-max-IMT | X | X | X | X | X | X | X | X | Median, IQR, HBGI, LBGI |
+| \hspace{2em} Mita, 2023* | CCA-max-IMT change | X | X |  | X | X | X |  |  |  |
+| \hspace{2em} Torimoto, 2025* | mean CIMT |  |  |  |  |  |  |  |  | GRI |
+| \hspace{2em} Mita, 2023* | Mean CIMT change | X | X |  | X | X | X |  |  |  |
+| \hspace{2em} Morandi, 2023* | CIMT | X |  | X | X | X | X | X |  | CONGA |
+| \hspace{2em} Cutruzzola, 2022* | CIMT | X | X |  | X | X | X |  |  |  |
+| \hspace{2em} Koroleva, 2022* | CIMT/plaques |  |  |  |  |  |  | X |  |  |
+| \hspace{2em} Foreman, 2021* | CIMT |  | X | X | X |  |  |  |  |  |
+| \hspace{2em} Taya, 2021* | CIMT | X | X | X | X | X | X | X | X | Median, IQR, HBGI, LBGI |
+| \hspace{2em} Lu, 2020* | Mean CIMT |  | X | X | X |  |  | X |  |  |
+|  | Abnormal CIMT: CIMT ≥1.0 mm |  | X | X | X |  |  | X |  |  |
+| \hspace{2em} Pulkkinen, 2020* | CIMT | X | X | X | X |  |  |  |  |  |
+| \hspace{2em} Magri, 2018$^\dagger$ | CIMT (Abnormal) | X |  | X | X | X | X |  |  | AUC,  min.value, max.value, |
+|  |  |  |  |  |  |  |  |  |  | Number of highest excursions, Number of lowest excursions |
+| \hspace{2em} Cesana, 2013* | CIMT | X |  | X |  |  |  | X |  |  |
+| \hspace{2em} Mo, 2013 | CIMT | X |  | X |  |  |  | X |  |  |
+| \hspace{2em} Castaldo, 2011 | CIMT | X | X |  |  |  |  |  |  | Duration in hypoglycemia [min/day] |
+| \hspace{2em} Gimenez, 2011* | CIMT |  |  |  |  |  |  | X |  |  |
+| \hspace{2em} Buscemi, 2010* | CIMT | X | X |  |  |  |  | X |  | AUC |
+| \hspace{2em} Chen, 2010 | CIMT |  |  |  |  |  |  | X |  | LAGE |
+| **Arterial wall composition** |  |  |  |  |  |  |  |  |  |  |
+| \hspace{2em} Torimoto, 2025* | Mean GSM |  |  |  |  |  |  |  |  | GRI |
+| \hspace{2em} Mita, 2023 | Mean GSM | X | X |  | X | X | X |  |  |  |
+|  | Thickened GSM change | X | X |  | X | X | X |  |  |  |
+| \hspace{2em} Taya, 2021* | Mean GSM | X | X | X | X | X | X  X | X | X | Median, IQR,  HBGI, LBGI |
+| \hspace{2em} Mesa, 2022 | Carotid plaque | X | X |  | X | X | X |  |  | GMI |
+| \hspace{2em} Snell Bergeon, 2010 | Coronary artery calcification | X |  | X |  | X | X |  |  | time outside of target range |
+| \hspace{2em} Kakuta, 2017 | lipidic volume (%)  fibrotic volume (%)  percent necrotic volume (%)  percent calcified volume (%)  ... in coronary plaques | X |  |  |  | X | X | X  X |  |  |
+| **Cardiac and pulse related measures** |  |  |  |  |  |  |  |  |  |  |
+| \hspace{2em} Foreman, 2021* | Mean circumferential wall stress |  | X | X | X |  |  |  |  |  |
+|  | Pulsatile circumferential wall stress |  | X | X | X |  |  |  |  |  |
+| \hspace{2em} Borg, 2011 | - CVD risk factor Z-score | X |  | X |  |  |  | X |  | AUC,  PPGE,  CONGA |
+| \hspace{2em} Chen, 2020$^\dagger$1 | Statistical difference between normal BG group and high BG fluctuation group on all Heartrate variability parameters |  |  |  |  |  |  |  |  | High and low BG fluctuations by own definition using SD, MAGE, MODD and LAGE  |
+| \hspace{2em} Dzhun, 2023 | SD ≥ 2 -> Left Ventricular Diastylic Dysfunction |  |  | X |  |  |  |  |  |  |
+| \hspace{2em} Di Flaviani, 2011 | Left ventricular mass index |  |  |  |  |  |  |  |  | CONGA |
+| \hspace{2em} Yokota, 2019 | Left ventricular diastolic function |  |  | X |  |  |  |  |  |  |
+| \hspace{2em} Yano, 2013* | Left ventricular mass index | X |  |  |  |  |  |  |  | PPGE |
+| \hspace{2em} Pertseva, 2023 | Average variability |  |  | X | X | X | X |  |  |  |
+|  | Average Pulse blood pressure  Pulse blood pressure variability |  |  | X | X | X | X |  |  |  |
+|  | Average SBP,SBP variability,, |  |  | X | X | X | X |  |  |  |
+|  | Average DBP  DBP variability |  |  | X | X | X | X |  |  |  |
+| \hspace{2em} Piona, 2023 | Systolic and diastolic blood pressure | X | X | X | X | X | X |  |  |  |
+| \hspace{2em} Pulkkinen, 2020* | Systolic and diastolic blood pressure | X | X | X | X |  |  |  |  |  |
+| **Arterial lumen** |  |  |  |  |  |  |  |  |  |  |
+| \hspace{2em} De Meulemeester, 2024 $^\dagger$ | Stenosis of the carotid artery |  |  |  | X |  |  |  |  | TITR |
+| \hspace{2em} Cutruzzola, 2022* | Baseline brachial artery ID (mm) | X | X |  | X | X | X |  |  |  |
+| \hspace{2em} Koroleva, 2022* | stenosis and/or occlusion |  |  |  |  |  |  | X |  |  |
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\tablenote[0.90\linewidth]{
+
+    \textsuperscript{*}This study appears multiple times in the clinical cardiovascular disease outcome tables.\newline
+    \textsuperscript{$\dagger$} This study appears in both the clinical and subclinical disease outcome tables owing to the investigation of multiple cardiovascular disease outcomes.\newline
+    X Study tested this CGM-derived metric\newline
+    Empty cells in this table means that the association between the given CGM derived metric and the CVD outcome was not investigated.\newline
+    *Abbreviations:* PWV, pulse wave velocity; ba-PWV, brachial-ankle pulse wave velocity; crPWV, carotid-radial pulse wave velocity; cf-PWV = Carotid-femoral pulse wave velocity; FMD, flow mediated dilation; ABI, ankle-brachial index; IMT, intima media thickness; CCA-IMT, intima media thickness of the common carotid artery; CIMT, carotid artery intima-media thickness; GSM, grey-scale median; CVD, cardiovascular disease; SBP, systolic blood pressure; DBP, diastolic blood pressure; BG, blood glucose; MBG, mean blood glucose; CV, coefficient of variation; SD, standard deviation; TIR, time in range; TBR, time below range; TAR, time above range; MAGE, mean amplitude of glycemic excursions; MODD, mean of daily differences; CONGA, continuous overall net glycemic action; GRI, glycemic risk index; HBGI, high blood glucose index; LBGI, low blood glucose index; IQR, interquartile range; PPGE, postprandial glucose excursions; AUC, area under curve; ADRR, average daily risk range; LAGE, largest amplitude of glycemic excursions; TITR, time in tight range; GMI, glucose management index; min, minimum; max, maximum.
+
+
+}
+```
+:::
+
+
+Main findings of the included studies on subclinical cardiovascular outcomes.
+:::
+
+:::
+:::
+
+

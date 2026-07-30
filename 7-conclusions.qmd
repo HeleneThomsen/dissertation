@@ -1,6 +1,6 @@
 # Conclusion
 
-This thesis explored the potential of CGM data and machine learning methods to improve cardiovascular risk assessment. Overall, the findings demonstrate both the opportunities and current limitations of using CGM data for this purpose. Although previous studies have reported associations between CGM-derived metrics and cardiovascular outcomes, the additional predictive value of traditional CGM-derived metrics and learned representations beyond established clinical predictors was limited in the present work. The thesis further showed that foundation model-derived representations capture meaningful glycemic patterns and highlighted the importance of evaluating machine learning models across demographic groups. Together, these findings suggest that CGM may have a future role in cardiovascular risk prediction, but larger prospective studies are needed to determine whether both traditionally CGM-derived metrics and more complex methods to extract information from CGM data can meaningfully improve cardiovascular risk stratification in clinical practice.
+This dissertation investigated the potential of CGM data and machine learning methods to improve cardiovascular risk assessment. Overall, the findings demonstrate both the opportunities and current limitations of using CGM data for this purpose. Although previous studies have reported associations between CGM-derived metrics and cardiovascular outcomes, the additional predictive value of traditional CGM-derived metrics and learned representations beyond established clinical predictors was limited in the present work. The dissertation further showed that foundation model-derived representations capture meaningful glycemic patterns and highlighted the importance of evaluating machine learning models across demographic groups. Together, these findings suggest that CGM may have a future role in cardiovascular risk prediction, but larger prospective studies are needed to determine whether both traditionally CGM-derived metrics and more complex methods to extract information from CGM data can meaningfully improve cardiovascular risk stratification in clinical practice.
 
 
 These conclusions are supported by the findings corresponding to the four specific aims.
@@ -13,7 +13,3 @@ Aim 2: The external evaluation of CGMformer showed that its representations capt
 Aim 3: Traditional CGM-derived metrics and learned representations from the foundation model provided limited additional value for identifying elevated NT-proBNP beyond established clinical predictors in individuals with T2D.
 
 Aim 4: Glucose-forecasting performance differed between non-Hispanic Black and non-Hispanic White participants. These disparities were influenced by the racial composition of the training data and the modelling strategy, while transfer learning showed potential as an approach for reducing some performance differences.
-
-
-
-

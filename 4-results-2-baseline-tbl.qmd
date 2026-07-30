@@ -1,7 +1,7 @@
-## Baseline Characteristics Tables of the Datasets
+## Study II and III: Baseline Characteristics Tables of the Datasets
 The CANCAN dataset presented below was used in Study II (@tbl-baseline-cancan).
 The total number of included participants were 159 and 67 (42%) had elevated NT-proBNP values.
-Participants with elevated NT-proBNP tended to be older, have a longer duration of diabetes, and more frequently have cardiovascular disease. They also tended to have lower BMI and lower LDL and total cholesterol concentrations, while exhibiting modestly better overall glycemic control but slightly higher glycaemic variability.
+Participants with elevated NT-proBNP tended to be older, have a longer duration of diabetes, and more frequently have cardiovascular disease. They also tended to have lower BMI and lower LDL and total cholesterol concentrations, while exhibiting modestly better overall glycemic control however with slightly higher glycemic variability.
 
 :::  {#tbl-baseline-cancan tbl-colwidths="[40,20,20,20]" tbl-pos="H"}
 

@@ -21,9 +21,9 @@ Uniform Manifold Approximation and Projection
 
 :::
 
-Correlations between the UMAP dimensions and glycemic metrics supported these visual patterns (@tbl-umaps_gv). In the CANCAN dataset, UMAP dimensions were strongly correlated with TIR and moderately to strongly correlated with HbA1c and MAGE. In the T1DX dataset, UMAP dimensions were moderately correlated with TIR, HbA1c, and MAGE.
+Correlations between the UMAP dimensions and glycemic metrics supported these visual patterns (@tbl-umaps_gv). In the CANCAN dataset, UMAP dimensions were strongly linearly correlated with TIR ($r$:0.71 and 0.81, p<0.001) and moderately to strongly correlated with HbA1c and MAGE. In the T1DX dataset, UMAP dimensions were moderately correlated with TIR, HbA1c, and MAGE (Absolute range, $r$: 0.30 to 0.59, p<0.001).
 
-
+      
 ::: {#tbl-umaps_gv tbl-pos="H"}
 
 ```{=latex}
@@ -31,7 +31,7 @@ Correlations between the UMAP dimensions and glycemic metrics supported these vi
         \begin{tabular}{c|c|rr|rr}
         \toprule
                                    & \multicolumn{1}{l|}{} & \multicolumn{2}{c|}{CANCAN}  & \multicolumn{2}{c|}{T1DX} \\
-                                   & UMAP Dimension       & \multicolumn{1}{c}{$\rho$}       & \multicolumn{1}{c|}{p-value}    & \multicolumn{1}{c}{$\rho$} & \multicolumn{1}{c}{p-value}\\\midrule
+                                   & UMAP Dimension       & \multicolumn{1}{c}{$r$}       & \multicolumn{1}{c|}{p-value}    & \multicolumn{1}{c}{$r$} & \multicolumn{1}{c}{p-value}\\\midrule
             \multirow{2}{*}{HbA1c} & 1 & 0.48  & p<0.001 & 0.30  & p<0.001 \\
                                    & 2 & -0.65 & p<0.001 & 0.50  & p<0.001 \\\hline
             \multirow{2}{*}{TIR}   & 1 & 0.71  & p<0.001 & -0.39 & p<0.001 \\

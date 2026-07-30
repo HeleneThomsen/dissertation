@@ -1,1 +1,32 @@
-# Dansk resumé {#sec-danish .unnumbered}
+# Dansk Abstrakt {#sec-danish .unnumbered}
+
+
+#### Introduktion
+Diabetes er karakteriseret ved kronisk forhøjede glukoseniveauer og er associeret med en øget risiko for udvikling af hjertekarsygdomme. Nuværende modeller til prædiktion af hjertekarsygdomme bygger hovedsageligt på traditionelle risikofaktorer og HbA1c, selvom disse mål ikke fuldt ud fanger klinisk relevante glukosefluktuationer. Kontinuerlige glukosemålere (CGM) giver en detaljeret beskrivelse af glukosevariabilitet, tid i målområdet (TIR) og kortsigtede glukoseudsving. Samtidig har udviklingen inden for maskinlæring åbnet nye muligheder for at lære direkte fra CGM-data.
+
+#### Formål
+Formålet med denne afhandling var at evaluere rollen af CGM-data og maskinlæringsmetoder i prædiktion af kardiovaskulær risiko samt at undersøge potentielle fairness-udfordringer i CGM-baserede prædiktionsmodeller.
+
+#### Metode
+Afhandlingen består af tre studier. Studie I var et scoping review om CGM-afledte mål og kardiovaskulær risiko og prædiktion. Studie II undersøgte lærte repræsentationer fra foundation-modellen CGMformer og evaluerede, om CGM-data kunne forbedre prædiktionen af NT-proBNP. Studie III undersøgte, om en model til prædiktion af glukoseniveauet 60 minutter frem i tiden havde forskellig prædiktiv ydeevne på tværs af to grupper baseret på race.
+
+#### Resultater.
+Studie I viste, at den nuværende evidens var inkonsistent og heterogen. De fleste studier undersøgte CGM-data i relation til subkliniske hjertekarsygdomme. Studier med personer med T2D var hyppigere end studier med personer med T1D (34/53 vs. 20/53), og T2D-studiepopulationerne var generelt større.
+Dette mønster blev observeret for både tid i målområdet (TIR) (median [IQR]: 510 [405–600] vs. 214 [119–547]) og mean amplitude of glycemic excursions (MAGE; gennemsnitlig amplitude af glykæmiske udsving) (251 [89–411] vs. 57 [30–215]).
+Kun MAGE var blevet undersøgt som prædiktor for hjertekarsygdomme, og den prædiktive ydeevne var beskeden (AUROC: ca. 0.61).
+
+
+
+Studie II viste, at lærte repræsentationer fra CGMformer kunne opfange både langsigtede og kortsigtede glukosemønstre relateret til HbA1c og TIR.
+Cosineafstandene indikerede desuden, at lærte repræsentationer fra dage tilhørende samme deltager var mere ens end repræsentationer fra dage tilhørende forskellige deltagere.
+Dette mønster blev observeret i både CANCAN-datasættet (median [IQR]: samme deltager, 0.058 [0.040–0.084] vs. forskellige deltagere, 0.117 [0.076–0.182]) og T1DX-datasættet (samme deltager, 0.064 [0.047–0.090] vs. forskellige deltagere, 0.082 [0.057–0.122]).
+
+De lærte repræsentationer forbedrede ikke prædiktionen af NT-proBNP, når de blev tilføjet til modeller, der allerede inkluderede kliniske variable udvalgt på baggrund af SCORE2-Diabetes modellen. Tilsvarende gav tilføjelsen af TIR og MAGE kun en beskeden ændring i resultaterne (korrigeret AUROC [95% CI]: SCORE2-Diabetes, 0.79 [0.76–0.87] vs. SCORE2-Diabetes + TIR + MAGE, 0.81 [0.77–0.88]). Allerede før CGM-data blev tilføjet, havde modeller baseret på kliniske variable god prædiktiv ydeevne. En simpel model, der kun inkluderede alder, havde en korrigeret AUROC på 0.73 [95% CI: 0.65–0.80].
+
+Studie III viste forskelle i prædiktiv ydeevne på tværs af racemæssige grupper ved prædiktion af glukoseniveauet 60 minutter frem i tiden, selvom modellerne udelukkende var trænet på CGM-data. Forskellen mellem grupperne var statistisk signifikant ($p$ = 0.02), selvom RMSE-hældningen på tværs af træningssæt med forskellig racemæssig sammensætning ikke var statistisk signifikant inden for hver gruppe. Det vil sige at når træningsdatasammensætningen ændrede sig fra 0% ikke-hispanisk hvide deltagere og 100% ikke-hispanisk sorte deltagere til 100% ikke-hispanisk hvide deltagere og 0% ikke-hispanisk sorte deltagere, steg RMSE med 0.04 mmol/L mere for ikke-hispanisk sorte deltagere end for ikke-hispanisk hvide deltagere (95% CI: 0.01, 0.08). Efter transfer learning var denne signifikante forskel i prædiktiv ydeevne ikke længere til stede (0.02 mmol/L [95% CI: -0.01, 0.05], $p$ = 0.20).
+
+
+#### Konklusion
+Samlet set tyder fundene på, at CGM-data indeholder klinisk meningsfuld information og potentielt kan bidrage til fremtidig prædiktion af kardiovaskulær risiko hos personer med diabetes. Den nuværende diskriminative ydeevne er dog beskeden sammenlignet med etablerede demografiske og kliniske markører. TIR og MAGE kan bidrage med relevant information, men lærte repræsentationer fra foundation-modellen CGMformer forbedrede ikke prædiktionen af NT-proBNP, selvom repræsentationerne indeholdt relevante glukosemønstre.
+
+Større og mere diverse datasæt kan muligvis forbedre anvendelsen af maskinlæring og dermed udnytte det fulde potentiale i temporale CGM-data. Endelig fremhæver afhandlingen vigtigheden af at evaluere generaliserbarhed og fairness under udviklingen af CGM-baserede maskinlæringsmodeller, særligt når modellerne er tiltænkt klinisk anvendelse.
