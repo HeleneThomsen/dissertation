@@ -29,7 +29,7 @@ Diabetes can be diagnosed based on a bloodtest to check \acr{HbA1c} levels or th
 
 ```
 
-Diagnostic tests for diabetes
+Diagnostic tests for diabetes.
 
 :::
 
@@ -149,7 +149,7 @@ Among supervised learning methods, deep neural networks are particularly notable
 Consequently, deep neural networks offer an alternative to relying on predefined \acr{CGM}-derived metrics.
 Since \acr{CGM} data are collected continuously over time, methods that can account for temporal dependencies are particularly relevant. A \acr{LSTM} is a type of recurrent neural network, which have been designed for time-series data and used for glucose prediction tasks as illustrated in @fig-lstm.[@Foreman2021; @Jaloli2023; @Badillo2020] These models can use previous glucose values to inform predictions of future glucose levels, making them suitable for short-term forecasting.
 
-::: {#fig-lstm fig-scap='A recurrent neural network'}
+::: {#fig-lstm fig-scap='A recurrent neural network.'}
 
 ![](figures/1_intro_fig/intro_rnn.png){width=80%}
 
@@ -168,7 +168,7 @@ This is particularly relevant in clinical risk prediction, where labelled data a
 
 ::: {#fig-tl fig-scap='Overview of Transfer Learning Strategies.'}
 
-![](figures/1_intro_fig/intro_tl.png) {width=80%}
+![](figures/1_intro_fig/intro_tl.png)
 
 Overview of transfer learning strategies. Inspired by Deng et al.[@Deng2021] under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence.
 :::

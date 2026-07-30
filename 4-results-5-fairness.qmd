@@ -79,7 +79,7 @@ A statistically significant differences were however found in both the Base-Gene
 Larger sample sizes available for transfer learning were associated with lower prediction error ($β$ = -0.111 mmol/L [-0.161 to -0.061] mmol/L, $p$ < 0.001) for every additional 1,000 samples used for fine-tuning (@tbl-transferlearned-coefficients).
 In contrast, the size of the dataset used to train the Base-Generalized model was not significantly associated with prediction error, suggesting that increasing the amount of training data did not meaningfully change RMSE in this analysis.
 
-::: {#fig-lmem-results width=100%}
+::: {#fig-lmem-results width=100% fig-scap='Estimated root mean squared errors across 11 different training dataset.'}
 
 ::: {.content-visible when-format="html"}
 

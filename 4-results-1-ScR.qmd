@@ -1,12 +1,12 @@
 ## Study I: Scoping Review Results
 
-### Study Selection
 The study selection process is summarized in @fig-prisma. The MEDLINE and Embase search resulted in 4884 records screened on title and abstract, and 81 reports were assessed for eligibility based on full-text review by two independent reviewers. The citation search on the included 51 reports identified 2 additional reports, which finally resulted in 53 included reports in total. All included and excluded reports are reported in @sec-suppl-study1-reports.
 
-::: {#fig-prisma}
+::: {#fig-prisma fig-scap='Flow diagram of study selection.'}
+
 [![](figures/4_results_fig/study_1_prisma.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_1_prisma.svg)
 
-Flow diagram of study selection\\
+Flow diagram of study selection.\
 Reproduced from Thomsen et al.[@Thomsen2026], originally published in JMIR Diabetes, under the Creative Commons Attribution License (CC BY 4.0).
 
 :::
@@ -18,7 +18,7 @@ The geographic distribution was found based on the hospitals and centers where d
 Most studies were conducted in Asia (27 of 53) or Europe (22 of 53). Three studies included data from North America, one was conducted in Australia, and only one included data from an African country, although its study population was predominantly White.[@Borg2011] No data was included from South America (@sec-suppl-geo-map).
 
 
-::: {#fig-geographical}
+::: {#fig-geographical fig-scap='Geographical location of the studies.'}
 [![](figures/4_results_fig/study_1_world_map.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_1_world_map.png)
 
 Geographical location of the studies. Countries colored in red indicate the geographical locations where the studies were conducted. Figure was created using MapChart [https://www.mapchart.net/](https://www.mapchart.net).
@@ -270,6 +270,6 @@ Overview of the diabetes populations and the most frequently reported CGM-derive
 ```
 :::
 
-Overview of adjustments used in the association studies
+Overview of adjustments used in the association studies.
 :::
 

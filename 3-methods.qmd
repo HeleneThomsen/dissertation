@@ -19,7 +19,7 @@ In this chapter the three studies included in this PhD are presented together wi
 | Analysis | Systematic scoping review, study characterization, and narrative synthesis | Foundation models and logistic regression models | Long short-term memory model (LSTM) and \acr{LMEM} |
 
 
-: Overview of the included studies {#tbl-overview-studies bl-lines="rows"} 
+: Overview of the included studies. {#tbl-overview-studies bl-lines="rows"} 
 
 
 ## Study I: Scoping Review Methodology
@@ -98,7 +98,7 @@ For the clinical CVD, the following outcomes were considered: cardiovascular mor
 |  | Language not understood by authors |
 :::
 
-Eligibility criteria for the scoping review (Study I)
+Eligibility criteria for the scoping review (Study I).
 
 :::
 
@@ -161,7 +161,7 @@ The CANCAN dataset was collected in an observational case-control study from two
 ![](figures/3_methods_fig/cancan_timeline.png){width=70%}
 
 :::
-Data collection timeline for the CANCAN Study
+Data collection timeline for the CANCAN study.
 
 :::
 
@@ -173,7 +173,7 @@ Of the 205 participants included in the study[@Bergenstal2017], 101 were White a
 ::: {#fig-t1dx-timeline}
 ![](figures/3_methods_fig/t1dx_timeline.png)
 
-Data collection timeline for the T1DX Study
+Data collection timeline for the T1DX study.
 :::
 
 
@@ -198,10 +198,12 @@ The output of the foundation model is learned representations of the input data,
 ::: {#fig-cgmformer}
 [![](figures/3_methods_fig/study_2_cgmformer.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_cgmformer.png)
 
-Illustration of how CGMformer is used in this analysis
+Illustration of how CGMformer is used in this analysis.
 :::
 
-Embeddings are numerical vectors that summarize the characteristics of the input glucose profile. The CGMformer gives a 128-dimensional embedding vector for each 24-hour CGM data input. A simple vector can be drawn as an arrow in a 2-dimensional and a 3-dimensional space as shown in @fig-cancan-embedding.
+The CGMformer gives a 128-dimensional embedding vector for each 24-hour CGM data input.
+Embeddings are numerical vectors that summarize the characteristics of the input glucose profile.
+A simple vector can be drawn as an arrow in a 2-dimensional and a 3-dimensional space as shown in @fig-cancan-embedding.
 
 ::: {#fig-cancan-embedding layout-ncol=2 layout-valign="center" width=70%}
 
@@ -215,9 +217,9 @@ Embeddings shown as 2-dimensional and 3-dimensional vectors with the angle $\the
 
 Because embeddings are numerical vectors, they can be compared to quantify the similarity between glucose profiles, as demonstrated by Lutsker et al.[@Lutsker2026] We therefore adopted a similar approach to assess the similarity between CGM-derived embeddings.
 Cosine similarity was calculated and it measures the angle between two embedding vectors independent of their magnitude (the length of the vectors).
-The cosine similarity is calculated by measuring the cosine angle between two vectors as shown by $\theta$ in @fig-cancan-embedding. The cosine similarity is a number between -1 and 1, where 1 means the two vectors are identical, 0 means they are unrelated, and -1 means that they are pointing in opposite directions(@fig-cancan-co_sim_emb). For the analyses in this study, cosine distance, calculated as *1 − cosine similarity,* was used because it expresses similarity as a distance measure, allowing embeddings with similar orientations to have small distances and facilitating downstream analyses and visualizations. The cosine distances range from 0 to 2 where 0 means the two vectors are pointing in the same direction, 1 means they are unrelated, and 2 means that they are pointing in opposite directions.
+The cosine similarity is calculated by measuring the cosine angle between two vectors as shown by $\theta$ in @fig-cancan-embedding. The cosine similarity is a number between -1 and 1, where 1 means the two vectors are identical, 0 means they are unrelated, and -1 means that they are pointing in opposite directions (@fig-cancan-co_sim_emb). For the analyses in this study, cosine distance, calculated as 1 − cosine similarity, was used because it expresses similarity as a distance measure, allowing embeddings with similar orientations to have small distances and facilitating downstream analyses and visualizations. The cosine distances range from 0 to 2 where 0 means the two vectors are pointing in the same direction, 1 means they are unrelated, and 2 means that they are pointing in opposite directions.
 
-::: {#fig-cancan-co_sim_emb}
+::: {#fig-cancan-co_sim_emb fig-scap='Different cosine similarities.'}
 [![](figures/3_methods_fig/study2_co_sim_emb.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_co_sim_emb.png)
 
 Embeddings shown with different cosine similarities. The cosine similarity is calculated as the cosine of the angle ($\theta$) between two embeddings.
@@ -226,7 +228,7 @@ Embeddings shown with different cosine similarities. The cosine similarity is ca
 Kernel density plots were used to visualize the distribution of cosine distances within specific clinical strata and across differing participants (@fig-cancan-clin_strata).
 Groupings were made based on days from the same participant (within-participant comparison), days from different participants with the same clinical strata (between-participant comparison), and days from different participants with different clinical strata (between-participant comparison) (@fig-cancan-clin_strata).
 
-::: {#fig-cancan-clin_strata fig-scap='Within and between participants comparison'}
+::: {#fig-cancan-clin_strata fig-scap='Within and between participants comparison.'}
 [![](figures/3_methods_fig/study2_clin_strata.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_clin_strata.png)
 
 Glucose variability strata is used as an example to illustrate the cosine distance analysis of the within and between cosine distance pairs
@@ -242,7 +244,7 @@ The \acr{UMAP}s were first used for visualization and comparison with existing l
 The UMAPs were colored by TIR, and MAGE to investigate if the embeddings were able to capture relevant information about glycemic patterns. Elevated NT-proBNP for the CANCAN embeddings were also used to color the UMAPs to investigate if the embeddings were able to capture relevant information about cardiovascular risk and race was used to color the T1DX embeddings to investigate if the embeddings were able to capture relevant information about racial differences in glycemic patterns.
 Pearson correlations were calculated between the UMAP dimensions and HbA1c, TIR, MAGE, and log-transformed NT-proBNP.
 
-::: {#fig-dim_reduce fig-scap='Conceptual dimensionality reduction illustration'}
+::: {#fig-dim_reduce fig-scap='Conceptual dimensionality reduction illustration.'}
 [![](figures/3_methods_fig/study_2_dim_reduce.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study_2_dim_reduce.png)
 
 Conceptual illustration of dimensionality reduction, read from left to right. High-dimensional information can be represented in fewer dimensions while preserving important structure, however not all information is retained. The illustration does not show how UMAP works specifically, but conveys the general idea of reducing complex data to a lower-dimensional representation.
@@ -273,7 +275,7 @@ The method repeatedly sampled bootstrap samples by sampling with replacement fro
 <!-- Risk distribution plots were reported for each model across all bootstrap samples.[@VanCalster2025; @Riley2023] -->
 
 ::: {#fig-bootstrap fig-scap='Bootstrap with optimsim correction' width=80%}
-[![](figures/3_methods_fig/study_2_bootstrap.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study_2_bootstrap.png){width=80%}
+![](figures/3_methods_fig/study_2_bootstrap.png){width=70%}
 
 Bootstrap with opimism correction. Redrawn and adapted from Wahl et al,[@Wahl2016]under the Creative Commons Attribution 4.0 International License CC BY 4.0.
 :::
@@ -296,16 +298,21 @@ The prediction models were structured hierarchically based on clinical variables
 | CGM only | **C1** | TIR + MAGE | – |
 | Embeddings only | **D1** | Pooled UMAP dimensions|
 
-<div style="font-size: 0.85em; margin-top: -10px;">
-^*^*Clinical variables are the same as those included in the SCORE2-Diabetes risk model: Age, sex, smoking status, systolic blood pressure, HDL cholesterol, total cholesterol, diabetes duration, HbA1c, and eGFR.[@Pennells2023_score2dm]*  
-*TIR = Time in Range; MAGE = Mean Amplitude of Glycemic Excursions.*
+```{=latex}
+\tablenote[0.75\linewidth]{
+    \textsuperscript{*}Clinical variables are the same as those included in the SCORE2-Diabetes risk model: Age, sex, smoking status, systolic blood pressure, HDL cholesterol, total cholesterol, diabetes duration, HbA1c, and eGFR.\newline
+    \textit{Abbreviations:} TIR = Time in Range; MAGE = mean amplitude of glycemic excursions.
+}
+```
+
+<div style="font-size: 0.75em; margin-top: -20px;">
+
 </div>
 
-Overview of models and predictors 
+Overview of models and predictors.
 
 :::
 
-<!-- ****************************************************************************************** -->
 ## Study III: Algorithmic Fairness and Blood Glucose Prediction
 
 The third study investigated racial bias strictly based on blood glucose measurements from a CGM device.
@@ -317,9 +324,10 @@ A prediction horizon of 60 minutes was chosen as it provides sufficient time for
 Accordingly, the CGM data was divided into consecutive 60-minute windows containing four glucose measurements to predict glucose levels 60 minutes into the future, as illustrated in @fig-study3_pred_horizon. Prediction windows containing missing CGM values were excluded.
 
 ::: {#fig-study3_pred_horizon fig-scap='The creation of samples in study III'}
-[![](figures/3_methods_fig/study3_pred_horizon.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_pred_horizon.png)
 
-The prediction horizon and overview of the creation of samples (predictors and outcomes).
+![](figures/3_methods_fig/study3_pred_horizon.png){width=75%}
+
+The prediction horizon and overview of the creation of samples\ (predictors and outcomes).
 
 :::
 
@@ -334,14 +342,14 @@ Because some training subsets consisted entirely of participants from a single r
 The prediction horizon and overview of the creation of subsets for training.
 :::
 
-Eleven subsets were created for each of the participants and the last week's data was chosen to test on as illustrated in @fig-study3_train_finetune_test_split
+Eleven subsets were created for each of the participants and the last week's data was chosen to test on as illustrated in @fig-study3_train_finetune_test_split.
 To preserve sample size, one week was chosen because participants had varying amount of CGM data and the participant with the least amount of data had ~ 2 weeks.
 The remaining data was used for training the models.
 
 ::: {#fig-study3_train_finetune_test_split fig-scap='Creating training and test sets'}
 [![](figures/3_methods_fig/study3_train_finetune_test_split.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_train_finetune_test_split.png)
 
-The splitting of a participants data to create training and test sets
+The splitting of a participants data to create training and test sets.
 
 :::
 ###  Model Selection and Training Approaches
@@ -377,13 +385,13 @@ To evaluate model performance, each participant's last week's data (672 measurem
 Model accuracy was assessed by calculating the root mean squared error (RMSE) for each participant across all four modeling approaches. For the LOCF and Base-Individual models, this yielded one RMSE value for each of the 101 White participants and 104 Black participants.
 For the Base-Generalized and Transfer Learned models, RMSE values were calculated for each participant across 11 data subsets, each representing a unique proportion of White and Black participants.
 Performance was summarized as the mean RMSE with corresponding 95% confidence intervals (CIs) for each racial group.
-It was further assumed that the varying proportions of Black and White participants in the training data subsets would affect the performance and an interaction term was therefore added. The interaction term allowed for different slopes in the LMEM which allowed us to test the hypothesis. It was hypothesized that when plotting the proportion of White participants in the training data against the RMSE, the slope would be negative for White participants and positive for Black participants (@fig-study3_rmse). This would indicate that as the proportion of White participants in the training data increased, the RMSE decreased for White participants and increased for Black participants, indicating racial bias in the model. The Base-Individual model would perform the worst since it was trained on the least amount of data and the Transfer Learned model would remove the slopes that were expected to be seen in the Base-Generalized models.
+It was further assumed that the varying proportions of Black and White participants in the training data subsets would affect the performance and an interaction term was therefore added. The interaction term allowed for different slopes in the LMEM which allowed us to test the hypotheses. It was hypothesized that when plotting the proportion of White participants in the training data against the RMSE, the slope would be negative for White participants and positive for Black participants (@fig-study3_rmse). This would indicate that as the proportion of White participants in the training data increased, the RMSE decreased for White participants and increased for Black participants, indicating racial bias in the model. The Base-Individual model would perform the worst since it was trained on the least amount of data and the Transfer Learned model would remove the slopes that were expected to be seen in the Base-Generalized models.
 
-::: {#fig-study3_rmse}
+::: {#fig-study3_rmse fig-scap='Linear mixed effect model hypotheses'}
 
 [![](figures/3_methods_fig/study3_rmse.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_rmse.png)
 
-The hypothesis for the results of the linear mixed effect models. 
+The hypotheses for the results of the linear mixed effect models. 
 
 :::
 
@@ -391,8 +399,8 @@ Surveillance error grids (SEG) were used to get a general idea of the  clinical 
 To facilitate interpretation, the 15 surveillance error grid zones were collapsed into the five broader risk zones ("No", "Slight", "Moderate", "High", and "Extreme"), as previously suggested in the literature.[@Tian2024]
 Predictions outside of 0–33 mmol/L were changed to 0 or 33 mmol/L to keep within the upper and lower bounds of the surveillance error grid.
 
-::: {#fig-study3_SEG fig-scap='surveillance error grid'}
-[![](figures/3_methods_fig/study3_SEG_empty.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study3_SEG_empty.png)
+::: {#fig-study3_SEG fig-scap='Surveillance error grid' width=80%}
+![](figures/3_methods_fig/study3_SEG_empty.png){width=80%}
 
 Surveillance error grid showing the clinical risk associated with prediction errors. The green region indicates no clinical risk, whereas yellow, orange, and red regions represent increasing levels of clinical risk.
 

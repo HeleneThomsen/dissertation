@@ -17,7 +17,7 @@ UMAP projections of the learned CGM representations showed one main cluster in b
 ![](figures/4_results_fig/study_2_co_sim_umaps.png){width=100%}
 
 :::
-Uniform Manifold Approximation and Projection 
+Uniform manifold approximation and projection for glycemic metrics.
 
 :::
 
@@ -43,14 +43,14 @@ Correlations between the UMAP dimensions and glycemic metrics supported these vi
     \end{table}
 ```
 
-Pearson correlation between UMAP dimensions and glycemic control measures
+Pearson correlation between UMAP dimensions and glycemic control measures.
 :::
 
 ### Cosine Distances
 
 Within-participant pairs had lower median cosine distances than between-participant pairs in both CANCAN and T1DX, indicating greater similarity between CGM representations from the same participant (@fig-cosim1). This pattern was observed in CANCAN (0.058 [IQR: 0.040–0.084] vs. 0.117 [IQR: 0.076–0.182]) and T1DX (0.064 [IQR: 0.047–0.090] vs. 0.082 [IQR: 0.057–0.122]) (@tbl-cosim1).
 
-::: {#fig-cosim1 fig-scap='Cosine distance distributions for within- and between-participant pairs'}
+::: {#fig-cosim1 fig-scap='Cosine distance distributions for within- and between-participant pairs.'}
 [![](figures/4_results_fig/study_2_co_sim1.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim1.png)
 
 Cosine distance distributions for within- and between-participant pairs in CANCAN (A) and T1DX (B). Dashed lines show medians; shaded bands show interquartile ranges.
@@ -73,14 +73,14 @@ Cosine distance distributions for within- and between-participant pairs in CANCA
 \end{table}
 ```
 
-Cosine distances for within- and between-participant pairs
+Cosine distances for within- and between-participant pairs.
 
 :::
 
 #### Cosine Distances and Glycemic Targets
 When stratified by clinical thresholds participants who met glycemic targets, defined as HbA1c <53 mmol/mol, TIR $\geq 70\%$ or MAGE $\leq 3.9$ mmol/L, tended to have lower and more narrowly distributed cosine distances (@fig-cosim_cancan and @fig-cosim_t1dx). For between-participant comparisons, distances among individuals within target ranges shifted downward and partly overlapped with the range observed within participants. The largest distances were observed between participants from opposing TIR groups (@tbl-cosim_cancan and @tbl-cosim_t1dx).
 
-::: {#fig-cosim_cancan fig-scap='Cosine distance distributions and glycemic targets for CANCAN' width=100%}
+::: {#fig-cosim_cancan fig-scap='Cosine distance distributions and glycemic targets for CANCAN.' width=100%}
 ::: {.content-visible when-format="html"}
 [![](figures/4_results_fig/study_2_co_sim_cancan_gv.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_cancan_gv.png){width=100%}
 :::
@@ -92,7 +92,7 @@ Cosine distance distributions for within- and between-participant pairs in CANCA
 
 :::
 
-::: {#fig-cosim_t1dx fig-scap='Cosine distance distributions and glycemic targets for T1DX' width=100%}
+::: {#fig-cosim_t1dx fig-scap='Cosine distance distributions and glycemic targets for T1DX.' width=100%}
 ::: {.content-visible when-format="html"}
 [![](figures/4_results_fig/study_2_co_sim_t1dx_gv.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_t1dx_gv.png){width=100%}
 :::
@@ -129,7 +129,7 @@ Cosine distance distributions for within- and between-participant pairs in T1DX 
         \end{tabular}
     \end{table}
 ```
-Cosine distances stratified on glycemic control in the CANCAN data
+Cosine distances stratified on glycemic control in the CANCAN data.
 :::
 
 
@@ -158,7 +158,7 @@ Cosine distances stratified on glycemic control in the CANCAN data
     \end{table}
 ```
 
-Cosine distances stratified on glycemic control in the T1DX data
+Cosine distances stratified on glycemic control in the T1DX data.
 
 ::: 
 
@@ -169,7 +169,7 @@ UMAP visualizations and cosine distance analyses stratified by  NT-proBNP > 125 
 The cosine distance analyses stratified by these variables showed similar patterns to those observed for glycemic control measurements, with within-participant pairs being more similar than between-participant pairs. The medians and interquartile ranges can be found in @sec-suppl-cosim.
 
 
-::: {#fig-cosim_ntprobnp fig-scap='UMAPs and kernel density plots grouped by NT-proBNP' width=100%}
+::: {#fig-cosim_ntprobnp fig-scap='UMAPs and kernel density plots grouped by NT-proBNP.' width=100%}
 ::: {.content-visible when-format="html"}
 [![](figures/4_results_fig/study_2_co_sim_ntprobnp.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_ntprobnp.png){width=100%}
 :::
@@ -182,7 +182,7 @@ Cosine distance distributions for within- and between-participant pairs in CANCA
 :::
 
 
-::: {#fig-cosim_race fig-scap='UMAPs and kernel density plots grouped by race' width=100%}
+::: {#fig-cosim_race fig-scap='UMAPs and kernel density plots grouped by race.' width=100%}
 ::: {.content-visible when-format="html"}
 [![](figures/4_results_fig/study_2_co_sim_race.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_race.png){width=100%}
 :::

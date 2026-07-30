@@ -24,12 +24,7 @@
 
 <!-- ------------------------------------------- -->
 # Formatting {.unnumbered .unlisted}
-### Need to have {.unnumbered .unlisted}
-- [ ] Add references to Introduction
-- [ ] Add references to Method
-- [ ] Add references to Results
-- [ ] Check the JMIR-AI paper and update the date in papers
-- [ ] Check if methodological considerations has been answered throughout the thesis
+
 ### Nice to have
 - [ ] Format cover page nicer
 - [ ] Make list of figures more readable: Add fig-cap to figures
