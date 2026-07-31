@@ -28,12 +28,12 @@ Geographical location of the studies. Countries colored in red indicate the geog
 ### Study Designs and Demographics
 Only one study was a randomized controlled trial,[@Pulkkinen2020] and the remaining studies were observational.
 Most studies used a cross-sectional design, with the cardiovascular outcome assessed at the same time as the CGM sensor was given.
-Only six studies performed longitudinal analyses. Study sample sizes varied considerably, ranging from 17[@Hoffman2013] to 6,225[@Lu2021] participants, with a median of 152.
+Only six studies performed longitudinal analyzes. Study sample sizes varied considerably, ranging from 17[@Hoffman2013] to 6,225[@Lu2021] participants, with a median of 152.
 CGM data were obtained either from participants' own devices (11 studies) or from CGM devices provided as part of the study (42 studies). 
-Statistical analyses most commonly included linear regression (22 studies) and logistic regression (22 studies), followed by Spearman or Pearson correlation analyses (11 studies) and Cox proportional hazards regression (3 studies).
-Several studies performed additional exploratory analyses, such as correlation analyses, to identify relevant covariates for inclusion in regression models.
+Statistical analyzes most commonly included linear regression (22 studies) and logistic regression (22 studies), followed by Spearman or Pearson correlation analyzes (11 studies) and Cox proportional hazards regression (3 studies).
+Several studies performed additional exploratory analyzes, such as correlation analyzes, to identify relevant covariates for inclusion in regression models.
 
-All included studies primarily investigated associations between CGM-derived measures and cardiovascular outcomes. Only three studies reported predictive performance measures as part of secondary analyses,[@Su2011, @Mi2012, @Koroleva2022] and none applied machine learning methods. Furthermore, none of the included studies provided openly available data or source code. Instead, availability was either not addressed or limited to access upon reasonable request from the corresponding author.
+All included studies primarily investigated associations between CGM-derived measures and cardiovascular outcomes. Only three studies reported predictive performance measures as part of secondary analyzes,[@Su2011; @Mi2012; @Koroleva2022] and none applied machine learning methods. Furthermore, none of the included studies provided openly available data or source code. Instead, availability was either not addressed or limited to access upon reasonable request from the corresponding author.
 
 ### Continuous Glucose Monitoring
 Medtronic CGM devices were the most frequently used (28 of 53 studies), followed by Abbott (9 of 53) and Dexcom (5 of 53). Other manufacturers included Menarini, Meiqi Company, and SIBIONICS. Sampling intervals ranged from 3 to 15 minutes but were reported in only a minority of studies (21 of 53).
@@ -78,8 +78,9 @@ Summary of the frequency of the seven most used CGM-derived metrics
 :::
 
 ### Prediction Studies
-Only three studies evaluated the predictive performance of CGM-derived metrics for cardiovascular outcomes, all using logistic regression models with MAGE as the predictor. Two studies reported \acr{AUROC} values of 0.61 and 0.62, respectively,[@Mi2012, @Su2011] and both found MAGE to outperform HbA1c (\acr{AUROC}: 0.55 and 0.58, respectively). The third study used receiver operating characteristic analysis to determine the optimal threshold for dichotomizing MAGE during variable selection but did not report the \acr{AUROC}.[@Koroleva2022] Instead, a threshold of MAGE ≥ 3.4 mmol/L was identified as a risk factor for stenosis and/or occlusion, with a sensitivity of 0.60 and a specificity of 0.61.
+Only three studies evaluated the predictive performance of CGM-derived metrics for cardiovascular outcomes, all using logistic regression models with MAGE as the predictor. Two studies reported \acr{AUROC} values of 0.61 and 0.62, respectively,[@Mi2012; @Su2011] and both found MAGE to outperform HbA1c (\acr{AUROC}: 0.55 and 0.58, respectively). The third study used receiver operating characteristic analyzis to determine the optimal threshold for dichotomizing MAGE during variable selection but did not report the \acr{AUROC}.[@Koroleva2022] Instead, a threshold of MAGE ≥ 3.4 mmol/L was identified as a risk factor for stenosis and/or occlusion, with a sensitivity of 0.60 and a specificity of 0.61.
 
+\newpage
 
 ### Association Studies
 There were a variety of different CVD outcomes as presented in @tbl-study3-clin-subclin-cvd.
@@ -107,26 +108,26 @@ There were a variety of different CVD outcomes as presented in @tbl-study3-clin-
         Gensini score                             & \hspace{1em} Forarm vascular resistance                                                  \\
         Syntax score                              & \hspace{1em} Forarm blood flow                                                           \\
         Stroke                                    & Arterial wall thickness                                                       \\
-        \hspace{1em} Cerebrovascular disease      & \hspace{1em} CIMT: Carotid artery intima-media thickness                                 \\
-        \hspace{1em} Cerebrovascular accident     & \hspace{1em}  Intima thickness and media thickness                    \\
-        Peripheral artery disease                 & \hspace{1em} IMT: Intime-media thickness     \\
-        Lower extremity arterial disease          &  \hspace{3em} (of the dorsal pedal, radial or carotid arteries)       \\
-                                                  & \hspace{1em} mean IMT (-change) \\\cline{1-1}
-        \multicolumn{1}{l}{\textbf{Subclinical}}  & \hspace{1em} Femoral IMT                                 \\\cline{1-1}
-        Cardiac and pulse related measures        & \hspace{1em} CCA-IMT: Common carotid artery IMT                                          \\
-        \hspace{1em} Mean and pulsatile circumferential wall stress & \hspace{1em} CCA-max-IMT (-change)                                  \\
-        \hspace{1em} CVD risk factor Z score      & Arterial wall composition                                                     \\
-        \hspace{1em} HRV: Heart rate variability  & \hspace{1em} GSM: Gray-scale median                          \\
-        \hspace{1em} Left ventricular diastolic dysfunction & \hspace{3em} of the carotid arteries                         \\
-        \hspace{1em} Left ventricular mass index  & \hspace{1em} Carotid plaque                                                              \\
-        \hspace{1em} Average pulse                & \hspace{1em} Coronary artery calcification                                               \\
-        \hspace{1em} Pulse blood pressure variability & \hspace{1em} In coronary plaques:          \\
-        \hspace{1em} Blood pressure               & \hspace{3em} lipid volume (\%) \\
-        \hspace{1em} SBP: Systolic blood pressure &    \hspace{3em}  fibrotic volume(\%)    \\
-        \hspace{1em} DBP: diastolic blood pressure &   \hspace{3em}   necrotic volume (\%)                                 \\
-       \hspace{1em} (Average) DBP (variability) &    \hspace{3em}  and Calcification (\%)                                         \\
-        Arterial Lumen                       &                                         \\
-        Stenosis of the carotid artery       &                                         \\
+        \hspace{1em} Cerebrovascular disease      & \hspace{1em} CIMT: Carotid artery                                 \\
+        \hspace{1em} Cerebrovascular accident     &    \hspace{3em}   ... intima-media thickness            \\
+        Peripheral artery disease                 &   \hspace{1em}  Intima thickness and media thickness   \\
+        Lower extremity arterial disease          &  \hspace{1em} IMT: Intime-media thickness       \\
+                                                  &   (of the dorsal pedal, \\\cline{1-1}
+        \multicolumn{1}{l}{\textbf{Subclinical}}  &  \hspace{3em}radial or carotid arteries)                               \\\cline{1-1}
+        Cardiac and pulse related measures        &  \hspace{1em} mean IMT (-change)                                         \\
+        \hspace{1em} Mean and pulsatile circumferential wall stress &    \hspace{1em} Femoral IMT                        \\
+        \hspace{1em} CVD risk factor Z score      &          \hspace{1em} CCA-IMT: Common carotid artery IMT                                          \\
+        \hspace{1em} HRV: Heart rate variability  &     \hspace{1em} CCA-max-IMT (-change)                   \\
+        \hspace{1em} Left ventricular diastolic dysfunction &  Arterial wall composition                       \\
+        \hspace{1em} Left ventricular mass index  &             \hspace{1em} GSM: Gray-scale median                                                     \\
+        \hspace{1em} Average pulse                &        \hspace{3em} of the carotid arteries                                           \\
+        \hspace{1em} Pulse blood pressure variability &    \hspace{1em} Carotid plaque      \\
+        \hspace{1em} Blood pressure               & \hspace{1em} Coronary artery calcification   \\
+        \hspace{1em} SBP: Systolic blood pressure &   \hspace{1em} In coronary plaques:     \\
+        \hspace{1em} DBP: diastolic blood pressure &  \hspace{3em} lipid volume (\%)                                 \\
+       \hspace{1em} (Average) DBP (variability) &     \hspace{3em}  fibrotic volume(\%)                                        \\
+        Arterial Lumen                       &     \hspace{3em}   necrotic volume (\%)                                      \\
+        Stenosis of the carotid artery       &  \hspace{3em}  and Calcification (\%)                                        \\
         Baseline brachial artery ID          &                                         \\
         Stenosis and/or occlusion            &                                       \\
 
@@ -151,8 +152,44 @@ Overview of established clinical and subclinical outcomes.
 :::
 
 ### Clinical Association Studies
-Most studies focused exclusively on subclinical cardiovascular outcomes (37 of 53 studies, 70%), whereas 13 studies (25%) investigated only clinical cardiovascular outcomes and three studies (6%) included both clinical and subclinical outcomes.<!-- Because the subsequent chapters of this dissertation focus on clinical cardiovascular outcomes, only these findings are discussed in detail below (@tbl-study1-clinical-overview and @tbl-main-clinical-findings). -->
-An overview of all the studies is provided in @sec-suppl-subclin-results.
+Most studies focused exclusively on subclinical cardiovascular outcomes (37 of 53 studies, 70%), whereas 13 studies (25%) investigated only clinical cardiovascular outcomes and three studies (6%) included both clinical and subclinical outcomes. An overview of all the studies is provided in @sec-suppl-subclin-results.
+
+Adjustment for potential confounders varied considerably across studies. Demographic factors were most frequently included (n = 36), followed by medical history and biochemical factors (n = 32 each), anthropometric factors (n = 29), and physiological factors (n = 24). Lifestyle factors were included in 20 studies, whereas adjustment for medication, CGM-derived metrics, and CVD markers was less common. Adjustment was not applicable in 12 studies, and six studies did not report whether or how the analyses were adjusted (@tbl-adjustments). Because studies could adjust for variables from several domains, the categories are not mutually exclusive.
+
+::: {#tbl-adjustments tbl-pos="H"}
+
+```{=latex}
+    \begin{table}[H]
+        \begin{tabular}{llll}
+            \toprule
+            \textbf{Adjustment Domain}                & \textbf{Clinical} & \textbf{Subclinical} & \textbf{Total} \\\midrule
+            Demographic     & 14                & 22                   & 36             \\
+            Anthropometric  & 10                & 19                   & 29             \\
+            Lifestyle       & 8                 & 12                   & 20             \\
+            Medical History & 14                & 18                   & 32             \\
+            Physiological   & 7                 & 17                   & 24             \\
+            Biochemical     & 11                & 21                   & 32             \\
+            Medication      & 7                 & 10                   & 17             \\
+            CGM/GV          & 5                 & 9                    & 14             \\
+            CVD marker      & 1                 & 5                    & 6              \\
+            Not applicable  & 3                 & 9                    & 12             \\
+            Not reported    & 1                 & 5                    & 6              \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+```
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \tablenote[0.70\linewidth]{
+        A study could contribute to more than one adjustment domain. An elaboration of the adjustment domains can be found in Appendix E.
+    }
+```
+:::
+
+Overview of adjustments used in the association studies.
+:::
+
 
 An overview of the most frequently used CGM-derived metrics stratified based on clinical and subclinical cardiovascular outcomes are shown in @tbl-CVD-CGM.
 Outcomes related to subclinical cardiovascular outcomes were more frequently studied (59 studies) compared to clinical outcomes (26 studies) and studies were predominantly done among people with T2D.
@@ -161,9 +198,11 @@ Among clinical cardiovascular outcomes, coronary artery disease was examined mos
 TIR was the most commonly reported CGM-derived metric across most arterial-stiffness outcomes, followed by MAGE, MBG, SD, and CV. MAGE was reported most frequently in studies evaluating coronary artery disease, Gensini score, and Syntax score. By contrast, relatively few CGM-derived metrics were reported for mortality, major adverse cardiovascular events, stroke, peripheral artery disease, and lower-extremity arterial disease.
 A more detailed extraction table of the CVD outcomes for the 53 studies can be found in @sec-suppl-subclin-results.
 
+
+
 ::: {.landscape}
 ::: {.small}
-::: {#tbl-CVD-CGM tbl-pos="H"}
+::: {#tbl-CVD-CGM}
 
 ```{=latex}
         \centering
@@ -224,9 +263,8 @@ A more detailed extraction table of the CVD outcomes for the 53 studies can be f
 ::: {.content-visible when-format="pdf"}
 ```{=latex}
     \tablenote[0.90\linewidth]{
-        Cardiovascular outcomes were grouped into clinically meaningful categories. A detailed description of the outcome categories is provided in supplementary.\newline
-        Values represent the number of included studies evaluating each CGM-derived metric for the specified cardiovascular outcome. A study could contribute to more than one cell if multiple CGM-derived metrics were investigated.\newline
-        \textit{Abbreviations: TIR, time in range; MAGE, mean amplitude of glycemic excursions; MBG, mean blood glucose; SD, standard deviation; CV, coefficient of variation; TBR, time below range; TAR, time above range}
+        Cardiovascular outcomes were grouped into clinically meaningful categories. A detailed description of the outcome categories is provided in Appendix D. Values represent the number of included studies evaluating each CGM-derived metric for the specified cardiovascular outcome. A study could contribute to more than one cell if multiple CGM-derived metrics were investigated.
+        \textit{Abbreviations:} TIR, time in range; MAGE, mean amplitude of glycemic excursions; MBG, mean blood glucose; SD, standard deviation; CV, coefficient of variation; TBR, time below range; TAR, time above range
     }
 ```
 :::
@@ -238,38 +276,4 @@ Overview of the diabetes populations and the most frequently reported CGM-derive
 :::
 
 
-::: {#tbl-adjustments tbl-pos="H"}
-
-
-```{=latex}
-    \begin{table}[H]
-        \begin{tabular}{llll}
-            \toprule
-            \textbf{Adjustment Domain}                & \textbf{Clinical} & \textbf{Subclinical} & \textbf{Total} \\\midrule
-            Demographic     & 14                & 22                   & 36             \\
-            Anthropometric  & 10                & 19                   & 29             \\
-            Lifestyle       & 8                 & 12                   & 20             \\
-            Medical History & 14                & 18                   & 32             \\
-            Physiological   & 7                 & 17                   & 24             \\
-            Biochemical     & 11                & 21                   & 32             \\
-            Medication      & 7                 & 10                   & 17             \\
-            CGM/GV          & 5                 & 9                    & 14             \\
-            CVD marker      & 1                 & 5                    & 6              \\
-            Not applicable  & 3                 & 9                    & 12             \\
-            Not reported    & 1                 & 5                    & 6              \\
-            \bottomrule
-        \end{tabular}
-    \end{table}
-
-```
-::: {.content-visible when-format="pdf"}
-```{=latex}
-    \tablenote[0.70\linewidth]{
-        A study could contribute to more than one adjustment domain.
-    }
-```
-:::
-
-Overview of adjustments used in the association studies.
-:::
 

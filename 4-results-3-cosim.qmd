@@ -1,5 +1,5 @@
 ## Study II: Foundation Model Embedding Analysis
-The following section contains UMAP visualizations and cosine distance analyses results including kernel density plots and the median and interquartile ranges of the distances.
+The following section contains UMAP visualizations and cosine distance analyzes results including kernel density plots and the median and interquartile ranges of the distances.
 
 ### UMAPs and Glycemic Control
 UMAP projections of the learned CGM representations showed one main cluster in both datasets (@fig-cosim_umap). When colored by glycemic metrics, the projections showed smooth gradients for TIR and HbA1c, indicating that the learned representations captured variation in glycemic control. The gradient was less distinct for MAGE, particularly in the T1DX cohort, where all participants except one had MAGE values above 3.9 mmol/L.
@@ -85,7 +85,7 @@ When stratified by clinical thresholds participants who met glycemic targets, de
 [![](figures/4_results_fig/study_2_co_sim_cancan_gv.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_cancan_gv.png){width=100%}
 :::
 ::: {.content-visible when-format="pdf"}
-![](figures/4_results_fig/study_2_co_sim_cancan_gv.png){width=100%}
+![](figures/4_results_fig/study_2_co_sim_cancan_gv.png){width=90%}
 :::
 
 Cosine distance distributions for within- and between-participant pairs in CANCAN across glycemic targets (HbA1c <53 mmol/mol, TIR $\geq 70\%$ or MAGE $\leq 3.9$ mmol/L). Dashed lines show medians; shaded bands show interquartile ranges.
@@ -162,38 +162,22 @@ Cosine distances stratified on glycemic control in the T1DX data.
 
 ::: 
 
+### Cosine Distances, NT-proBNP and Race
+UMAP visualizations and cosine distance analyzes stratified by  NT-proBNP > 125 pg/mL or race appeared to show no clear clusterings in the colors upon visual inspection of the UMAPs (@fig-cosim_ntprobnp).
+The cosine distance analyzes stratified by these variables showed similar patterns to those observed for glycemic control measurements, with within-participant pairs being more similar than between-participant pairs. The medians and interquartile ranges can be found in @sec-suppl-cosim.
+
 
 ::: {.landscape}
-### Cosine Distances, NT-proBNP and Race
-UMAP visualizations and cosine distance analyses stratified by  NT-proBNP > 125 pg/mL (@fig-cosim_ntprobnp) or race (@fig-cosim_race) appeared to show no clear clusterings in the colors upon visual inspection of the UMAPs.
-The cosine distance analyses stratified by these variables showed similar patterns to those observed for glycemic control measurements, with within-participant pairs being more similar than between-participant pairs. The medians and interquartile ranges can be found in @sec-suppl-cosim.
 
+::: {#fig-cosim_ntprobnp fig-scap='UMAPs and kernel density plots grouped by NT-proBNP and race.'}
 
-::: {#fig-cosim_ntprobnp fig-scap='UMAPs and kernel density plots grouped by NT-proBNP.' width=100%}
-::: {.content-visible when-format="html"}
-[![](figures/4_results_fig/study_2_co_sim_ntprobnp.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_ntprobnp.png){width=100%}
-:::
 ::: {.content-visible when-format="pdf"}
-![](figures/4_results_fig/study_2_co_sim_ntprobnp.png){width=100%}
+![](figures/4_results_fig/study_2_co_sim_ntprobnp_race.png){width=80%}
 :::
 
-Cosine distance distributions for within- and between-participant pairs in CANCAN for NT-proBNP (Elevated NT-proBNP < 125 pg/mL). Dashed lines show medians; shaded bands show interquartile ranges. Pearson correlation with long-transformed NT-proBNP were $\rho = -0.04$, p=0.063 and $\rho = 0.18$, p<0.001.
+Cosine distance distributions for within- and between-participant pairs in CANCAN for NT-proBNP (Elevated NT-proBNP < 125 pg/mL) and for T1DX for race. Dashed lines show medians; shaded bands show interquartile ranges. Pearson correlation with long-transformed NT-proBNP were $\rho = -0.04$, p=0.063 and $\rho = 0.18$, p<0.001. Cosine distance values can be found in @sec-suppl-cosim.
 
 :::
-
-
-::: {#fig-cosim_race fig-scap='UMAPs and kernel density plots grouped by race.' width=100%}
-::: {.content-visible when-format="html"}
-[![](figures/4_results_fig/study_2_co_sim_race.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_race.png){width=100%}
-:::
-::: {.content-visible when-format="pdf"}
-![](figures/4_results_fig/study_2_co_sim_race.png){width=100%}
-:::
-
-Cosine distance distributions for within- and between-participant pairs in T1DX for race. Dashed lines show medians; shaded bands show interquartile ranges.
-
-:::
-
 
 :::
 

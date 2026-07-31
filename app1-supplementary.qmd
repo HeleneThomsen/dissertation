@@ -1,6 +1,6 @@
 # Study I: Search Strings {#sec-suppl-search-strings}
 
-::: {#tbl-medline fig-scap='Search in Ovid MEDLINE' tbl-pos="H"}
+::: {#tbl-medline fig-scap='Search in Ovid MEDLINE.' tbl-pos="H"}
 
 ```{=latex}
 
@@ -36,11 +36,11 @@
     \end{table}
 
 ```
-Search in Ovid MEDLINE (Search date: 22 January 2024)
+Search in Ovid MEDLINE (Search date: 22 January 2024).
 :::
 
 
-::: {#tbl-embase fig-scap='Search strategy in Embase (Ovid)' tbl-pos="H"}
+::: {#tbl-embase fig-scap='Search strategy in Embase (Ovid).' tbl-pos="H"}
 
 ```{=latex}
     \begin{table}[H]
@@ -81,10 +81,10 @@ Search in Ovid MEDLINE (Search date: 22 January 2024)
     \end{table}
 
 ```
-Search strategy in Embase (Ovid) (Search date: 22 January 2024)
+Search strategy in Embase (Ovid) (Search date: 22 January 2024).
 
 :::
-<!-- tbl-colwidths="\[80, 20\]"} -->
+
 
 
 ::: {.landscape}
@@ -204,14 +204,17 @@ Search strategy in Embase (Ovid) (Search date: 22 January 2024)
 
 
 :::{.tbl-note}
+
 Note. Table shows included studies identified in the review. Ovid export links and reference type fields were omitted to improve readability. DOI values are shown where available.
-:::
-
-Included studies
 
 :::
 
+Included studies.
+
 :::
+
+:::
+
 :::
 
 ::: {#tbl-excluded  tbl-colwidths="\[80, 20\]"}
@@ -277,10 +280,11 @@ Included studies
 |     Zhang J, Yang J, Liu L, Li L, Cui J, Wu S, Tang   K. Significant abnormal glycemic variability increased the risk for   arrhythmias in elderly type 2 diabetic patients. BMC Endocr Disord. 2021 Apr   27;21(1):83.    |     Not CVD outcome    |
 |  |  |
 
-Excluded records from database searches
+Excluded records from database searches.
+
 :::
 
-::: {#tbl-excluded2  tbl-colwidths="\[80, 20\]"}
+::: {#tbl-excluded2  tbl-colwidths="\[80, 20\]" fig-scap='Excluded studies.'}
 
 |     Reference    |     Reason for exclusion    |
 |---|---|
@@ -294,7 +298,9 @@ Excluded records from database searches
 | | |
 
 Excluded records from citation search
+
 ::: 
+
 # Study I: Geographical Location {#sec-suppl-geo-map}
 
 Asia (n=27)
@@ -396,7 +402,7 @@ $^\dagger$ This study appears both in the clinical and subclinical disease outco
 </p>
 :::
 
-Study design and demographics of the included clinical cardiovascular outcome studies
+Study design and demographics of the clinical outcome studies.
 
 :::
 :::
@@ -473,7 +479,7 @@ $^\dagger$ This study appears both in the clinical and subclinical disease outco
 </p>
 :::
 
-Study design, demographics, and adjustments of the included subclinical cardiovascular outcome studies
+Study design, demographics, and adjustments of the subclinical outcome studies.
 
 :::
 :::
@@ -482,6 +488,114 @@ Study design, demographics, and adjustments of the included subclinical cardiova
 {{< include app1-clin-tbl.qmd >}}
 
 {{< include app1-subclin-tbl.qmd >}}
+
+# Study I: Adjustment List {#sec-suppl-adjustment-list}
+List over how adjusted variables were grouped for the adjusted column in the results tables in Study I
+
+**Demographic**
+
+* Age
+* Sex
+* Gender
+* Age ≥ 65
+* Education level
+
+**Anthropometric**
+(Variables that describe body size or composition)
+
+* Height z-score
+* Weight (if it appears)
+* BMI
+* BMI z-score
+* Body mass index (BMI)
+* Waist circumference
+* Body surface area
+
+**Lifestyle**
+
+* Smoking/ Smoking status/ Smoking pack years
+* Alcohol use/ Alcohol history
+* Physical activity (if it had appeared)
+
+**Medical History**
+
+* Diabetes duration
+* Duration of pump therapy
+* History of cancer
+* Hypertension
+* Dyslipidemia
+* Diabetic retinopathy
+* Use of ACEi or ARBs
+* Past medical history
+* Chronic heart failure
+* Presence of retinopathy
+* 3P MACE history
+* Hypoglycemia unawareness
+* Hyperlipidemia
+* Atrial fibrillation (AF) type
+
+**Physiological**
+(Vital signs or systemic functions)
+
+* Blood pressure
+* Systolic blood pressure
+* Diastolic blood pressure
+* SBP and DBP z-score
+* Mean arterial pressure
+* Heart rate
+* Office systolic BP or brachial pulse pressure
+
+**Biochemical**
+(Blood/urine analytes, metabolic markers)
+
+* HbA1c
+* Fasting plasma glucose (FPG)
+* Fasting insulin
+* Triglycerides
+* HDL-C
+* LDL-C
+* Total cholesterol
+* Uric acid
+* eGFR
+* Urinary albumin-to-creatinine ratio
+* Serum uric acid
+* ALT, AST
+* HOMA-IR, HOMA-β
+* Log-transformed urine albumin
+* ACR
+* 5 Anhydroglucitol
+* 2-h PG/insulin from OGTT
+* hs-CRP
+* Mean HbA1c over last 5 years
+* Erythrocyte sedimentation rate
+
+**Medication**
+
+*	Antiplatelet agents
+*	Metformin
+*	Use of antihypertensive drugs
+*	Use of statins
+*	Statin exposure
+*	Insulin therapy
+*	Insulin type
+*	anticoagulant use
+
+**CGM/GV metrics**
+(Variables related to CGM data)
+
+*	MAGE, TIR, TBR, MODD, SDBG, SD, CV
+* AUC for BG < 3.9 mmol/L
+* Lowest blood glucose
+* M-value
+* Number of days between CGM and CAC
+
+**CVD marker**
+
+*	CHA2DS2-VASc score
+*	Index values for carotid atherosclerosis
+*	LVEF
+*	LVMI
+
 
 # Study II: Cosine Distances {#sec-suppl-cosim}
 
@@ -503,14 +617,14 @@ Study design, demographics, and adjustments of the included subclinical cardiova
    \end{table}
 
 ```
-Cosim distances for within and between participants for NT-proBNP and race
+Cosim distances for within and between participants for NT-proBNP and race.
 
 :::
 
 # Study II: Prediction Stability {#sec-suppl-pred-stability}
-Prediction stability plots (@fig-pred-stability) revealed more stability the fewer predictors. 
+Prediction stability plots revealed more stability the fewer predictors. 
 
-::: {#fig-pred-stability width=75%}
+::: {#fig-pred-stability fig-scap='Prediction stability plots'}
 
 ![](figures/4_results_fig/study_2_prediction_stability.png){width=75%}
 
@@ -520,7 +634,7 @@ Prediction stability plots show the predictions (estimated risk) for the full da
 
 # Study III: Surveillance Error Grid {#sec-suppl-seg-results}
 
-::: {#tbl-seg-white tbl-colwidths="[12,18,15,9,9,9,9,9,10]"}
+::: {#tbl-seg-white tbl-colwidths="[12,18,15,9,9,9,9,9,10]" fig-scap='Surveillance Error Grid for non-Hispanc White participants.'}
 
 | Group | Model | Zone | 0 | 20 | 40 | 60 | 80 | 100 |
 |:------|:------|:-----|--:|--:|--:|--:|--:|--:|
@@ -546,10 +660,12 @@ Prediction stability plots show the predictions (estimated risk) for the full da
 | | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
 
 Results from the Surveillance Error Grid for White participants. Values are reported as percentages.
+
 :::
+
 \newpage
 
-::: {#tbl-seg-black tbl-colwidths="[12,18,15,9,9,9,9,9,10]"}
+::: {#tbl-seg-black tbl-colwidths="[12,18,15,9,9,9,9,9,10]" fig-scap='Surveillance Error Grid for non-Hispanc Black participants.'}
 
 | Group | Model | Zone | 0 | 20 | 40 | 60 | 80 | 100 |
 |:------|:------|:-----|--:|--:|--:|--:|--:|--:|
@@ -575,6 +691,7 @@ Results from the Surveillance Error Grid for White participants. Values are repo
 | | | Extreme | 0% | 0% | 0% | 0% | 0% | 0% |
 
 Results from the Surveillance Error Grid for Black participants. Values are reported as percentages.
+
 :::
 
 
@@ -582,21 +699,61 @@ Results from the Surveillance Error Grid for Black participants. Values are repo
 # Full papers {#sec-papers}
 
 ## Paper I
+\vspace*{\fill}
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 80%
+
+knitr::include_graphics("figures/study1_cover.png")
+```
+
+\vspace*{\fill}
+
+```{=latex}
+\includepdf[pages=-, fitpaper=true]{figures/study_1.pdf}
+\includepdf[pages=-, fitpaper=true]{coauthorship_forms/Study_1_Declaration_of_co-authorship_PhD_dissertations_October_2019_aai_hbt_ah.pdf}
+```
 
 \newpage
 
 ## Paper II
 
+\vspace*{\fill}
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 80%
+
+knitr::include_graphics("figures/study2_cover.png")
+```
+
+\vspace*{\fill}
+
 ```{=latex}
-\includepdf[pages=-, fitpaper=true]{figures/study_2_manuscript.pdf}
+\includepdf[pages=-, fitpaper=true]{figures/study_2.pdf}
+\includepdf[pages=-, fitpaper=true]{coauthorship_forms/Study_2_Declaration_of_co-authorship_PhD_dissertations_October_2019_ah_hbt.pdf}
 ```
 
 \newpage
 
 ## Paper III
 
+\vspace*{\fill}
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 80%
+
+knitr::include_graphics("figures/study3_cover.png")
+```
+\vspace*{\fill}
+
 ```{=latex}
 \includepdf[pages=-, fitpaper=true]{figures/study_3.pdf}
+\includepdf[pages=-, fitpaper=true]{coauthorship_forms/Study_3_Declaration_of_co-authorship_PhD_dissertations_October_2019_ah_hbt.pdf}
 ```
 
 :::

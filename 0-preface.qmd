@@ -1,4 +1,4 @@
 # Preface {#sec-preface .unnumbered}
+I was working with continuously glucose monitoring data as a pre-graduate, but I was not serieus about doing a PhD before meeting Adam Hulman at the first pregraduate retreat held by Danish Data Science Academy and what an exciting project he proposed.
 
-
-## Outline of the dissertation
+I thought that if I was ever going to do a PhD then this project with him as the main supervisor was it.

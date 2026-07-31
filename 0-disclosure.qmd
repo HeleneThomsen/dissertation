@@ -1,5 +1,5 @@
 # Disclosures and Notes {.unnumbered}
-## Financial Disclosures
+## Financial Disclosures {.unnumbered .unlisted}
 This PhD project was supported by a research grant from the **Danish Diabetes and Endocrine Academy** (NNF22SA0079901) and the **Danish Cardiovascular Academy** (NNF20SA0067242), which are funded by the **Novo Nordisk Foundation**. Furthermore, the project was supported by the main supervisor’s Data Science Emerging Investigator grant from the Novo Nordisk Foundation (NNF22OC0076725),
 
 ```{r}
@@ -21,7 +21,7 @@ pushViewport(viewport(layout = grid.layout(
   nrow = 3,
   ncol = 3,
   widths = unit(c(0.47, 0.08, 0.45), "npc"),
-  heights = unit(c(0.40, 0.00, 0.40), "npc")
+  heights = unit(c(0.25, 0.00, 0.25), "npc")
 )))
 
 # DDEA
@@ -52,10 +52,11 @@ This dissertation is available for viewing online at [https://helenethomsen.gith
 
 <!-- {{< include 0-pdf2-acknowledgements.qmd >}}  -->
 
+## Use of AI {.unnumbered .unlisted}
+Generative artificial intelligence tools, primarily ChatGPT (OpenAI), were used during the preparation of this dissertation to support language editing, improve clarity and structure, suggest alternative wording, and assist with formatting and troubleshooting in Python, R, Quarto, and LaTeX. The tools were also used for brainstorming explanations and organizing sections of the dissertation. All generated suggestions were critically reviewed, revised, and verified by the author before inclusion. Generative artificial intelligence was not used to generate research data, conduct the statistical analyses independently, interpret results without author oversight, or make scientific conclusions. The author takes full responsibility for the content of the dissertation.
 :::
 
 ::: {.content-hidden unless-format="html"}
-## Notes on website version {.unnumbered .unlisted}
 
 This website contains my PhD dissertation in online format. In terms of core content, it is identical to the pdf-file submitted to the graduate school, although the individual articles have been omitted from the website. Links to the papers are provided here [Link](https://HeleneThomsen.github.io/dissertation/0-papers.html) as soon as they are published.
 
@@ -74,11 +75,13 @@ Department of Public Health, Aarhus University, Denmark
 
 #### Supervisors:
 
-**Associate Professor Adam Hulman, PhD (main supervisor)** <br>
+**Adam Hulman, PhD (main supervisor)** <br>
+Associate Professor <br>
 Department of Public Health, Aarhus University, Denmark <br>
 Steno Diabetes Center Aarhus, Aarhus University Hospital, Denmark <br>
 
 **Anders Aasted Isaksen, MD, PhD** <br>
+Clinical Researcher<br>
 Steno Diabetes Center Aarhus, Denmark <br>
 
 **Guy Fagherazzi, PhD** <br>
@@ -87,6 +90,7 @@ Head of the Deep Digital Phenotyping Research Unit <br>
 Luxembourg Institute of Health, Luxembourg <br>
 
 **Signe Toft Andersen, MD, PhD** <br>
+Endocrinologist and Researcher<br>
 Steno Diabetes Center Aarhus, Denmark <br>
 Department of Medicine, Gødstrup Hospital, Denmark <br>
 

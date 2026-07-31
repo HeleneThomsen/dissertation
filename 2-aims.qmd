@@ -1,5 +1,10 @@
 # Aims {#sec-aim}
 
+Continuous glucose monitoring (CGM) provides detailed information on glucose patterns that is not captured by HbA1c alone and may contribute to cardiovascular risk assessment. Machine learning offers opportunities to extract additional information directly from CGM time-series, but the predictive value and generalizability of these approaches remain uncertain. Moreover, models may perform differently across populations if demographic groups are inadequately represented in the training data. Evaluating the clinical potential of CGM data therefore requires consideration of predictive value, generalizability, and fairness. These knowledge gaps formed the basis for the aims of this dissertation.
+
+
+## Overall Aim
+
 The overall aim of this PhD dissertation was to investigate the potential of continuous glucose monitoring (CGM) data to improve cardiovascular risk assessment and to evaluate the role of machine learning in extracting clinically relevant information from CGM data across different diabetes populations, including the evaluation of racial disparities in model performance.
 
 

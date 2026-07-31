@@ -27,7 +27,7 @@
 | \hspace{2em} Zhang, 2014 | FMD |  |  |  |  |  |  | X |  |  |
 | \hspace{2em} Pena, 2012 | FMD |  |  |  |  | X |  |  |  | Hypoglycemia, LBGI |
 | \hspace{2em} Gimenez, 2011* | FMD |  |  |  |  |  |  | X |  |  |
-| Buscemi, 2010*5 | FMD | X | X |  |  |  |  | X |  | AUC X |
+| \hspace{2em} Buscemi, 2010*5 | FMD | X | X |  |  |  |  | X |  | AUC X |
 | \hspace{2em} Foreman, 2021* | ABI |  | X | X | X  X |  |  |  |  |  |
 | \hspace{2em} Wei, 2022 | ABI ≤ 0.9  ABI ≥ 1.3 | X | X | X | X |  | X | X | X | M-value, ADRR |
 | \hspace{2em} Zhang, 2020 | ABI | X |  | X |  | X | X | X | X | LAGE X |
@@ -70,7 +70,7 @@
 | \hspace{2em} Foreman, 2021* | Mean circumferential wall stress |  | X | X | X |  |  |  |  |  |
 |  | Pulsatile circumferential wall stress |  | X | X | X |  |  |  |  |  |
 | \hspace{2em} Borg, 2011 | - CVD risk factor Z-score | X |  | X |  |  |  | X |  | AUC,  PPGE,  CONGA |
-| \hspace{2em} Chen, 2020$^\dagger$1 | Statistical difference between normal BG group and high BG fluctuation group on all Heartrate variability parameters |  |  |  |  |  |  |  |  | High and low BG fluctuations by own definition using SD, MAGE, MODD and LAGE  |
+| \hspace{2em} Chen, 2020 $^\dagger$ | Statistical difference between normal BG group and high BG fluctuation group on all Heartrate variability parameters |  |  |  |  |  |  |  |  | High and low BG fluctuations by own definition using SD, MAGE, MODD and LAGE  |
 | \hspace{2em} Dzhun, 2023 | SD ≥ 2 -> Left Ventricular Diastylic Dysfunction |  |  | X |  |  |  |  |  |  |
 | \hspace{2em} Di Flaviani, 2011 | Left ventricular mass index |  |  |  |  |  |  |  |  | CONGA |
 | \hspace{2em} Yokota, 2019 | Left ventricular diastolic function |  |  | X |  |  |  |  |  |  |

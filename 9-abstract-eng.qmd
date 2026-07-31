@@ -2,7 +2,7 @@
 #### Background
 Diabetes is characterized by chronic high blood glucose levels and is associated with an increased risk of cardiovascular disease (CVD).
 Current CVD risk prediction in diabetes relies largely on traditional risk factors and HbA1c, although these measures may not fully capture clinically relevant glucose dynamics.
-Continuous glucose monitoring (CGM) provides detailed information on glucose variability, time in range, and short-term glucose fluctuations, and recent advances in machine learning offer new opportunities to learn directly from CGM data.
+Continuous glucose monitoring (CGM) provides detailed information on glucose variability, time in range (TIR), and short-term glucose fluctuations, and recent advances in machine learning offer new opportunities to learn directly from CGM data.
 
 #### Aim
 The aim was to evaluate the role of CGM data and machine learning approaches in cardiovascular risk assessment and examined potential fairness concerns in CGM-based prediction models.
@@ -12,7 +12,7 @@ The dissertation comprised three studies. Study I was a scoping review of the li
 
 #### Results
 Study I found that the current evidence was inconsistent and heterogeneous. Most studies investigated subclinical cardiovascular outcomes. Studies including people with T2D were more frequent than studies including people with T1D (34/53 vs. 20/53), and the T2D study populations were generally larger. 
-This pattern was observed both for time in range (TIR) (median [IQR]: 510 [405–600] vs. 214 [119–547]) and mean amplitude of glycemic excursions (MAGE) (251 [89–411] vs. 57 [30–215]).
+This pattern was observed both for TIR (median [IQR]: 510 [405–600] vs. 214 [119–547]) and mean amplitude of glycemic excursions (MAGE) (251 [89–411] vs. 57 [30–215]).
 Although TIR and MAGE were the most frequently studied CGM-derived metrics, only MAGE had been evaluated for CVD prediction, showing modest discriminatory performance (AUROC: ~0.61).
 
 

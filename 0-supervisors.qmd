@@ -11,11 +11,11 @@ Department of Public Health, Aarhus University, Denmark
 Associate Professor and Senior Researcher\
 Principle Investigator of the Hulman Lab\
 Department of Public Health, Aarhus University, Denmark\
-Steno Diabetes Center Aarhus, Aarhus university Hospital Denmark\
+Steno Diabetes Center Aarhus, Aarhus University Hospital Denmark\
 
 **Anders Aasted Isaksen, MD, PhD**\
 Clinical Researcher\
-Steno Diabetes Center Aarhus, Aarhus university Hospital Denmark\
+Steno Diabetes Center Aarhus, Aarhus University Hospital Denmark\
 
 **Guy Fagherazzi, PhD**\
 Director of the Department of Precision Health\
@@ -24,7 +24,7 @@ Luxembourg Institute of Health, Luxembourg\
 
 **Signe Toft Andersen, MD, PhD**\
 Epidemiologist and Researcher\
-Steno Diabetes Center Aarhus, Denmark\
+Steno Diabetes Center Aarhus, Aarhus University Hospital Denmark\
 Department of Medicine, Gødstrup Hospital, Denmark
 
 #### Assessment committee:

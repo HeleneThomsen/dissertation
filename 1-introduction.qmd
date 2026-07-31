@@ -53,7 +53,7 @@ Besides monitoring, data from \acr{CGM} devices are now used in combination with
 \acr{AID} systems typically use data from \acr{CGM} devices to determine or adjust insulin delivery.
 The simplest \acr{AID}s are threshold-based low-glucose suspend systems in which insulin delivery is automatically suspended when blood glucose levels drop below a predefined threshold.[@Templer2022]
 \acr{AID} systems are becoming increasingly sophisticated, with the long-term goal of approximating the physiological regulation of glucose by a healthy pancreas. However, the delayed onset and peak action of subcutaneously administered insulin limit the ability of these systems to respond rapidly to changing glucose concentrations.[@Rimon2024] Consequently, accurate short-term glucose forecasting has become increasingly important, particularly for anticipating postprandial glucose excursions and enabling earlier insulin adjustments to reduce the risk of both hyper- and hypoglycemia.[@Rimon2024]
-More advanced systems are beginning to utilize additional information such as carbohydrate intake and physical activity to optimize insulin delivery.[@Jaloli2023, @Gao2020] 
+More advanced systems are beginning to utilize additional information such as carbohydrate intake and physical activity to optimize insulin delivery.[@Jaloli2023; @Gao2020] 
 
 ::: {#fig-agp fig-scap='Ambulatory glucose profile report'}
 
