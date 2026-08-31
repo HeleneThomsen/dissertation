@@ -66,7 +66,7 @@ When stratified by T1D and T2D then TIR was the most frequently investigated met
 
 ::: {.content-visible when-format="html"}
 
-<p style="font-size:75%">´
+<p style="font-size:75%">
     \* Mixed includes both T1D, T2D and prediabetes\
     \*\* Mixed includes both T1D, T2D and prediabetes
     *Abbreviations:* T1D: type 1 diabetes, T2D: type 2 diabetes, MAGE: mean amplitude of glycemic excursions, TIR: time in range, MBG: mean blood glucose, SD: standard deviation, CV: coefficient of variation, TBR: time below range, TAR: time above range.
@@ -87,6 +87,7 @@ There were a variety of different CVD outcomes as presented in @tbl-study3-clin-
 
 :::{#tbl-study3-clin-subclin-cvd tbl-pos="H"}
 
+::: {.content-visible when-format="pdf"}
 ```{=latex}
 
     \begin{table}[H]
@@ -138,12 +139,65 @@ There were a variety of different CVD outcomes as presented in @tbl-study3-clin-
 
 ```
 
+:::
+
+::: {.content-visible when-format="html"}
+
+| **Clinical** | **Subclinical** |
+|:-------------|:----------------|
+| Macrovascular mortality | Arterial stiffness |
+| Macrovascular complications | &emsp;PWV: (Aortic) pulse wave velocity |
+| &emsp;Cardiovascular events | &emsp;cf-PWV: Carotid-femoral PWV |
+| &emsp;IHD: Ischemic heart disease | &emsp;cr-PWV: Carotid-radial PWV |
+| &emsp;Diabetic macroangiopathy | &emsp;ba-PWV: Brachial-ankle PWV |
+| MACE: Major adverse cardiovascular events | &emsp;Augmentation index |
+| CAD: Coronary artery disease | &emsp;Carotid artery distensibility |
+| &emsp;CHD: Coronary heart disease | &emsp;Carotid distensibility coefficient |
+| &emsp;MI: Myocardial infarction | Flow resistance |
+| &emsp;Heart attack | &emsp;FMD: Flow-mediated dilation of the brachial artery |
+| &emsp;Heart failure | &emsp;ABI: Ankle–brachial index |
+| &emsp;(Unstable) angina pectoris | &emsp;Forearm vascular resistance |
+| Gensini score | &emsp;Forearm blood flow |
+| SYNTAX score | Arterial wall thickness |
+| Stroke | &emsp;CIMT: Carotid artery intima-media thickness |
+| &emsp;Cerebrovascular disease | &emsp;Intima thickness and media thickness |
+| &emsp;Cerebrovascular accident | &emsp;IMT: Intima-media thickness of the dorsal pedal, radial, or carotid arteries |
+| Peripheral artery disease | &emsp;Mean IMT (change) |
+| Lower-extremity arterial disease | &emsp;Femoral IMT |
+| **Subclinical** | &emsp;CCA-IMT: Common carotid artery IMT |
+| Cardiac and pulse-related measures | &emsp;CCA-max-IMT (change) |
+| &emsp;Mean and pulsatile circumferential wall stress | Arterial wall composition |
+| &emsp;CVD risk factor Z-score | &emsp;GSM: Gray-scale median of the carotid arteries |
+| &emsp;HRV: Heart rate variability | &emsp;Carotid plaque |
+| &emsp;Left ventricular diastolic dysfunction | &emsp;Coronary artery calcification |
+| &emsp;Left ventricular mass index | &emsp;In coronary plaques: |
+| &emsp;Average pulse | &emsp;&emsp;Lipid volume (%) |
+| &emsp;Pulse blood pressure variability | &emsp;&emsp;Fibrotic volume (%) |
+| &emsp;Blood pressure | &emsp;&emsp;Necrotic volume (%) |
+| &emsp;SBP: Systolic blood pressure | &emsp;&emsp;Calcification (%) |
+| &emsp;DBP: Diastolic blood pressure | |
+| &emsp;(Average) DBP (variability) | |
+| Arterial lumen | |
+| Stenosis of the carotid artery | |
+| Baseline brachial artery ID | |
+| Stenosis and/or occlusion | |
+
+:::
+
+
 ::: {.content-visible when-format="pdf"}
 ```{=latex}
     \tablenote[0.90\linewidth]{
         The table presents the clinical and subclinical outcomes identified in the included studies and the outcome groupings used in Study III. Non-indented clinical outcomes were retained as review terms, whereas indented outcomes were reported in the literature but not used as separate review categories. Parentheses in the subclinical column indicate that the outcome was defined both with and without the additional specification.
     }
 ```
+:::
+
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+    The table presents the clinical and subclinical outcomes identified in the included studies and the outcome groupings used in Study III. Non-indented clinical outcomes were retained as review terms, whereas indented outcomes were reported in the literature but not used as separate review categories. Parentheses in the subclinical column indicate that the outcome was defined both with and without the additional specification.
+</p>
+
 :::
 
 
@@ -158,6 +212,7 @@ Adjustment for potential confounders varied considerably across studies. Demogra
 
 ::: {#tbl-adjustments tbl-pos="H"}
 
+::: {.content-visible when-format="pdf"}
 ```{=latex}
     \begin{table}[H]
         \begin{tabular}{llll}
@@ -179,12 +234,38 @@ Adjustment for potential confounders varied considerably across studies. Demogra
     \end{table}
 
 ```
+:::
+
+
 ::: {.content-visible when-format="pdf"}
 ```{=latex}
     \tablenote[0.70\linewidth]{
         A study could contribute to more than one adjustment domain. An elaboration of the adjustment domains can be found in Appendix E.
     }
 ```
+:::
+
+::: {.content-visible when-format="html"}
+
+| Adjustment domain | Clinical | Subclinical | Total |
+|:------------------|---------:|------------:|------:|
+| Demographic | 14 | 22 | 36 |
+| Anthropometric | 10 | 19 | 29 |
+| Lifestyle | 8 | 12 | 20 |
+| Medical history | 14 | 18 | 32 |
+| Physiological | 7 | 17 | 24 |
+| Biochemical | 11 | 21 | 32 |
+| Medication | 7 | 10 | 17 |
+| CGM/GV | 5 | 9 | 14 |
+| CVD marker | 1 | 5 | 6 |
+| Not applicable | 3 | 9 | 12 |
+| Not reported | 1 | 5 | 6 |
+
+
+<p style="font-size:75%">
+     A study could contribute to more than one adjustment domain. An elaboration of the adjustment domains can be found in @sec-suppl-adjustment-list.
+</p>
+
 :::
 
 Overview of adjustments used in the association studies.
@@ -204,6 +285,7 @@ A more detailed extraction table of the CVD outcomes for the 53 studies can be f
 ::: {.small}
 ::: {#tbl-CVD-CGM}
 
+::: {.content-visible when-format="pdf"}
 ```{=latex}
         \centering
         \begin{tabular}{l|c|cccc|cccccccc}
@@ -260,6 +342,9 @@ A more detailed extraction table of the CVD outcomes for the 53 studies can be f
 
 
 ```
+:::
+
+
 ::: {.content-visible when-format="pdf"}
 ```{=latex}
     \tablenote[0.90\linewidth]{
@@ -268,6 +353,44 @@ A more detailed extraction table of the CVD outcomes for the 53 studies can be f
     }
 ```
 :::
+
+::: {.content-visible when-format="html"}
+| Cardiovascular outcome | Number of studies | T1D | T2D | Mixed (T1D/T2D) | Prediabetes or impaired glucose | TIR | MAGE | MBG | SD | CV | TBR | TAR | Other |
+|:-----------------------|------------------:|----:|----:|-----------------:|--------------------------------:|----:|-----:|----:|---:|---:|----:|----:|------:|
+| **Clinical** | | | | | | | | | | | | | |
+| Macrovascular mortality | 2 | – | 2 | – | – | 1 | – | – | – | – | – | – | 1 |
+| Macrovascular complications | 5 | 3 | 2 | – | – | 3 | – | – | 1 | 3 | 2 | 1 | 7 |
+| Major adverse cardiovascular events | 2 | – | 2 | – | – | – | – | – | – | – | – | – | 4 |
+| Coronary artery disease | 6 | 1 | 5 | – | – | 2 | 2 | – | – | – | – | – | 3 |
+| Gensini score | 4 | – | 3 | – | 1 | – | 3 | – | – | – | – | – | 1 |
+| SYNTAX score | 2 | – | 1 | – | 1 | – | 2 | – | – | – | – | – | 1 |
+| Stroke | 3 | 1 | 1 | 1 | – | 2 | – | – | – | – | – | – | 2 |
+| Peripheral artery disease | 1 | 1 | – | – | – | 1 | – | – | – | – | – | – | 1 |
+| Lower-extremity arterial disease | 1 | – | 1 | – | – | 1 | – | – | 1 | 1 | – | – | – |
+| **Sum of clinical studies** | – | – | – | – | – | **10** | **7** | **0** | **2** | **4** | **2** | **1** | **20** |
+| **Subclinical** | | | | | | | | | | | | | |
+| Arterial stiffness | 12 | 6 | 5 | 1 | – | 8 | 6 | 7 | 6 | 5 | 4 | 4 | 6 |
+| Flow resistance | 9 | 4 | 4 | 1 | – | 3 | 5 | 6 | 3 | 4 | 3 | 3 | 6 |
+| Arterial wall thickness | 19 | 6 | 11 | 1 | 1 | 8 | 9 | 10 | 9 | 10 | 5 | 4 | 14 |
+| Arterial wall composition | 6 | 2 | 4 | – | – | 3 | 2 | 5 | 2 | 3 | 5 | 5 | 7 |
+| Cardiac- and pulse-related measures | 10 | 2 | 6 | 2 | – | 4 | 1 | 5 | 7 | 3 | 2 | 2 | 5 |
+| Arterial lumen | 3 | 2 | 1 | – | – | 2 | 1 | 1 | – | 1 | 1 | 1 | 1 |
+| **Sum of subclinical studies** | – | – | – | – | – | **27** | **24** | **35** | **25** | **25** | **20** | **19** | **39** |
+| **Number of studies** | | | | | | | | | | | | | |
+| Any clinical CVD | 13 | 2 | 2 | 1 | 1 | 6 | 4 | – | 2 | 4 | 1 | 1 | 12 |
+| Any subclinical CVD | 37 | 14 | 20 | 2 | 2 | 16 | 18 | 21 | 17 | 15 | 14 | 14 | 20 |
+| Both | 3 | 1 | 2 | – | 1 | 1 | – | – | – | – | 1 | – | 8 |
+| **Sum of all studies** | **53** | **17** | **31** | **3** | **4** | **23** | **22** | **21** | **19** | **19** | **16** | **15** | **40** |
+
+
+<p style="font-size:75%">
+    Cardiovascular outcomes were grouped into clinically meaningful categories. A detailed description of the outcome categories is provided in @sec-suppl-subclin-results. Values represent the number of included studies evaluating each CGM-derived metric for the specified cardiovascular outcome. A study could contribute to more than one cell if multiple CGM-derived metrics were investigated.\
+    *Abbreviations:* TIR, time in range; MAGE, mean amplitude of glycemic excursions; MBG, mean blood glucose; SD, standard deviation; CV, coefficient of variation; TBR, time below range; TAR, time above range
+</p>
+
+:::
+
+
 
 Overview of the diabetes populations and the most frequently reported CGM-derived metrics, stratified by cardiovascular outcome.
 

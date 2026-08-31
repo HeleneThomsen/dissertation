@@ -92,13 +92,13 @@ acronyms:
     - shortname: AID
       longname: automated insulin delivery
     - shortname: SCORE2-Diabetes
-      longname: systematic Coronary Risk Evaluation 2-Diabetes
+      longname: Systematic Coronary Risk Evaluation 2-Diabetes
     - shortname: eGFR
       longname: estimated glomerular filtration rate
     - shortname: NT-proBNP
-      longname: N-terminal Pro-B-type Natriuretic Peptide
+      longname: N-terminal pro-B-type natriuretic peptide
     - shortname: AUROC
-      longname: area Under the Receiver Operating Characteristic Curve
+      longname: area under the receiver operating characteristic curve
     - shortname: RMSE
       longname: root mean square error 
     - shortname: T1DX
@@ -108,11 +108,11 @@ acronyms:
     - shortname: LSTM
       longname: long short-term memory model
     - shortname: UMAP
-      longname: Uniform manifold approximation and projection 
+      longname: uniform manifold approximation and projection 
     - shortname: LOCF
       longname: last observation carried forward 
     - shortname: IGLU
-      longname: interpreting Glucose Data from Continuous Glucose Monitors
+      longname: Interpreting Glucose Data from Continuous Glucose Monitors
     - shortname: SD
       longname: standard deviation
     - shortname: MAGE
@@ -122,7 +122,7 @@ acronyms:
     - shortname: HDL cholesterol
       longname: high-density lipoprotein cholesterol
     - shortname: SEG
-      longname: surveillance error grids 
+      longname: Surveillance Error Grid
     # - shortname: 
     #   longname: 
       

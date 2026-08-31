@@ -8,7 +8,7 @@ UMAP projections of the learned CGM representations showed one main cluster in b
 
 ::: {.content-visible when-format="html"}
 
-[![](ffigures/4_results_fig/study_2_co_sim_umaps.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_umaps.png){width=100%}
+[![](figures/4_results_fig/study_2_co_sim_umaps.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_umaps.png){width=100%}
 
 :::
 
@@ -26,6 +26,20 @@ Correlations between the UMAP dimensions and glycemic metrics supported these vi
       
 ::: {#tbl-umaps_gv tbl-pos="H"}
 
+::: {.content-visible when-format="html"}
+
+| Metric | UMAP dimension | CANCAN: $r$ | CANCAN: $p$-value | T1DX: $r$ | T1DX: $p$-value |
+|:-------|---------------:|------------:|------------------:|----------:|----------------:|
+| **HbA1c** | 1 | 0.48 | <0.001 | 0.30 | <0.001 |
+| | 2 | -0.65 | <0.001 | 0.50 | <0.001 |
+| **TIR** | 1 | 0.71 | <0.001 | -0.39 | <0.001 |
+| | 2 | 0.81 | <0.001 | -0.65 | <0.001 |
+| **MAGE** | 1 | 0.57 | <0.001 | 0.37 | <0.001 |
+| | 2 | -0.49 | <0.001 | 0.59 | <0.001 |
+:::
+
+::: {.content-visible when-format="pdf"}
+
 ```{=latex}
     \begin{table}[H]
         \begin{tabular}{c|c|rr|rr}
@@ -42,7 +56,7 @@ Correlations between the UMAP dimensions and glycemic metrics supported these vi
         \end{tabular}
     \end{table}
 ```
-
+:::
 Pearson correlation between UMAP dimensions and glycemic control measures.
 :::
 
@@ -59,6 +73,19 @@ Cosine distance distributions for within- and between-participant pairs in CANCA
 
 ::: {#tbl-cosim1 tbl-pos="H"}
 
+::: {.content-visible when-format="html"}
+
+| Panel | Group | n | Median [IQR] |
+|:------|:------|--:|:-------------|
+| **CANCAN** | Within-participant pairs | 9,459 | 0.058 [0.040, 0.084] |
+| | Between-participant pairs | 1,529,676 | 0.117 [0.076, 0.182] |
+| **T1DX** | Within-participant pairs | 351,598 | 0.064 [0.047, 0.090] |
+| | Between-participant pairs | 68,134,358 | 0.082 [0.057, 0.122] |
+
+:::
+
+::: {.content-visible when-format="pdf"}
+
 ```{=latex}
 \begin{table}[H]
     \begin{tabular}{l|l|rc}
@@ -72,6 +99,7 @@ Cosine distance distributions for within- and between-participant pairs in CANCA
     \end{tabular}
 \end{table}
 ```
+:::
 
 Cosine distances for within- and between-participant pairs.
 
@@ -108,6 +136,22 @@ Cosine distance distributions for within- and between-participant pairs in T1DX 
 
 ::: {#tbl-cosim_cancan tbl-pos="H"}
 
+::: {.content-visible when-format="html"}
+| Metric | Group | Within: n | Within: median [IQR] | Between: n | Between: median [IQR] |
+|:-------|:------|----------:|:---------------------|-----------:|:----------------------|
+| **HbA1c** | Low HbA1c | 1,707 | 0.051 [0.037, 0.072] | 46,809 | 0.085 [0.058, 0.135] |
+| | High HbA1c | 7,752 | 0.060 [0.041, 0.086] | 1,032,651 | 0.115 [0.076, 0.181] |
+| | Across HbA1c groups | – | – | 450,216 | 0.124 [0.079, 0.186] |
+| **TIR** | High TIR | 3,509 | 0.054 [0.038, 0.073] | 206,119 | 0.076 [0.056, 0.104] |
+| | Low TIR | 5,950 | 0.062 [0.041, 0.091] | 606,221 | 0.113 [0.074, 0.176] |
+| | Across TIR groups | – | – | 717,336 | 0.141 [0.090, 0.203] |
+| **MAGE** | High MAGE | 8,750 | 0.059 [0.041, 0.086] | 1,310,750 | 0.114 [0.075, 0.178] |
+| | Low MAGE | 709 | 0.044 [0.031, 0.062] | 7,676 | 0.085 [0.056, 0.137] |
+| | Across MAGE groups | – | – | 211,250 | 0.134 [0.083, 0.198] |
+:::
+
+::: {.content-visible when-format="pdf"}
+
 ```{=latex}
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
@@ -129,11 +173,31 @@ Cosine distance distributions for within- and between-participant pairs in T1DX 
         \end{tabular}
     \end{table}
 ```
+:::
+
 Cosine distances stratified on glycemic control in the CANCAN data.
 :::
 
 
 ::: {#tbl-cosim_t1dx tbl-pos="H"}
+
+::: {.content-visible when-format="html"}
+| Metric | Group | Within: n | Within: median [IQR] | Between: n | Between: median [IQR] |
+|:-------|:------|----------:|:---------------------|-----------:|:----------------------|
+| **HbA1c** | Low HbA1c | 56,543 | 0.057 [0.042, 0.077] | 1,489,618 | 0.066 [0.048, 0.089] |
+| | High HbA1c | 295,055 | 0.066 [0.048, 0.092] | 49,151,485 | 0.083 [0.058, 0.124] |
+| | Across HbA1c groups | – | – | 17,493,255 | 0.082 [0.057, 0.121] |
+| **TIR** | High TIR | 42,716 | 0.056 [0.041, 0.076] | 735,412 | 0.063 [0.047, 0.085] |
+| | Low TIR | 308,882 | 0.066 [0.047, 0.092] | 54,349,858 | 0.081 [0.057, 0.121] |
+| | Across TIR groups | – | – | 13,049,088 | 0.087 [0.060, 0.129] |
+| **MAGE** | High MAGE | 348,358 | 0.064 [0.047, 0.090] | 67,192,895 | 0.082 [0.057, 0.122] |
+| | Low MAGE | 3,240 | 0.048 [0.037, 0.064] | 0 | 0 |
+| | Across MAGE groups | – | – | 941,463 | 0.093 [0.065, 0.135] |
+
+:::
+
+::: {.content-visible when-format="pdf"}
+
 
 ```{=latex}
     % Please add the following required packages to your document preamble:
@@ -157,6 +221,7 @@ Cosine distances stratified on glycemic control in the CANCAN data.
         \end{tabular}
     \end{table}
 ```
+:::
 
 Cosine distances stratified on glycemic control in the T1DX data.
 

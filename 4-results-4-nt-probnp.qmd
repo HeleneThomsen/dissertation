@@ -8,6 +8,29 @@ The models including only CGM-data either as derived metrics (Model C1) or as UM
 
 ::: {#tbl-model-performance_main tbl-colwidths="[36,24,11,12,15]"}
 
+::: {.content-hidden unless-format="html"}
+| Models | Corrected [95% CI] | Apparent | Optimism | Number of predictors |
+|:---|:---:|:---:|:---:|:---:|
+| **Model A0:** (Age) | 0.73 [0.65 - 0.80] | 0.73 | 0.00 | 1 |
+| **Model A1:** <br> (SCORE2-Diabetes input)| 0.79 [0.76 - 0.87] | 0.83 | 0.04 | 9 |
+| **Model A2:** <br> (Model A1 + TIR and MAGE) | 0.81 [0.77-0.88] | 0.86 | 0.05 | 11 |
+| **Model A3a:** <br> (Model A1 + UMAP (min)) | 0.80 [0.75 - 0.87] | 0.84 | 0.05 | 11 |
+| **Model A3b:** <br> (Model A1 + UMAP (max)) | 0.79 [0.75 - 0.87] | 0.84 | 0.05 | 11 |
+| **Model A3c:** <br> (Model A1 + UMAP (mean))| 0.79 [0.75 - 0.87] | 0.84 | 0.05 | 11 |
+| **Model B1:** <br> (SCORE2-Diabetes score)| 0.74 [0.65 - 0.81] | 0.73 | 0.00 | 1 |
+| **Model B2:** <br> (Model B1 + TIR and MAGE) | 0.77 [0.70 - 0.85] | 0.79 | 0.01 | 3 |
+| **Model B3a:** <br> (Model B1 + UMAP (min))| 0.72 [0.65 - 0.80] | 0.74 | 0.02 | 3 |
+| **Model B3b:** <br> (Model B1 + UMAP (max)) | 0.72 [0.65 - 0.81] | 0.74 | 0.02 | 3 |
+| **Model B3c:** <br> (Model B1 + UMAP (mean)) | 0.73 [0.65 - 0.81] | 0.75 | 0.02 | 3 |
+| **Model C1:**<br> (TIR and MAGE) | 0.69 [0.61 - 0.77] | 0.69 | 0.01 | 11 |
+| **Model D1a:**<br> (UMAP, max\*) | 0.55 [0.48 - 0.64] | 0.58 | 0.03 | 2 |
+| **Model D1b:**<br> (UMAP, min\*) | 0.53 [0.43 - 0.63] | 0.57 | 0.04 | 2 |
+| **Model D1c:**<br> (UMAP, mean\*) | 0.53 [0.43 - 0.64] | 0.56 | 0.03 | 2 |
+
+:::
+
+
+::: {.content-hidden unless-format="pdf"}
 | Models | Corrected [95% CI] | Apparent | Optimism | Number of predictors |
 |:---|:---:|:---:|:---:|:---:|
 | **Model A0:** (Age) | 0.73 [0.65 - 0.80] | 0.73 | 0.00 | 1 |
@@ -38,6 +61,8 @@ The models including only CGM-data either as derived metrics (Model C1) or as UM
 | **Model D1a:**<br> (UMAP, max\*) | 0.55 [0.48 - 0.64] | 0.58 | 0.03 | 2 |
 | **Model D1b:**<br> (UMAP, min\*) | 0.53 [0.43 - 0.63] | 0.57 | 0.04 | 2 |
 | **Model D1c:**<br> (UMAP, mean\*) | 0.53 [0.43 - 0.64] | 0.56 | 0.03 | 2 |
+
+:::
 
 ::: {.content-visible when-format="pdf"}
 ```{=latex}

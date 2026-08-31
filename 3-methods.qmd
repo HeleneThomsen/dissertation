@@ -2,6 +2,8 @@
 
 In this chapter the three studies included in this PhD are presented together with a description of the datasets and methods used in the studies.
 
+::: {.content-visible when-format="pdf"}
+
 | | Study I | Study II | Study III |
 |:-|:----|:----|:----|
 | Title | Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People With Diabetes: Systematic Scoping Review | Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk | Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes |
@@ -20,7 +22,23 @@ In this chapter the three studies included in this PhD are presented together wi
 
 
 : Overview of the included studies. {#tbl-overview-studies bl-lines="rows"} 
+:::
 
+::: {.content-visible when-format="html"}
+
+| | Study I | Study II | Study III |
+|:-|:----|:----|:----|
+| Title | Continuous Glucose Monitoring–Derived Metrics and Cardiovascular Risk Among People With Diabetes: Systematic Scoping Review | Foundation model–derived representations of continuous glucose monitoring data: relation to glycemic patterns and cardiovascular risk | Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes |
+| Study Type | Review | CGM foundation model evaluation study | Algorithmic fairness study |
+| Data Sources | Literature on Embase and MEDLINE | The CANCAN study and the \acr{T1DX} dataset | \acr{T1DX} dataset |
+| Population | Studies including people with type 1 diabetes, type 2 diabetes and/or prediabetes | 159 people with type 2 diabetes 205 people with type 1 Diabetes | 205 people with type 1 Diabetes |
+| Input, predictors and exposures | Search strategy and eligibility criteria | Clinical variables, CGM-derived metrics and CGM data | CGM data |
+| Outcome, target | All studies that uses CGM data to investigate cardiovascular disease risks and outcomes | Visualization of foundation model embeddings and elevated NT-proBNP prediction | 60-minute glucose prediction |
+| Analysis | Systematic scoping review, study characterization, and narrative synthesis | Foundation models and logistic regression models | Long short-term memory model (LSTM) and \acr{LMEM} |
+
+
+: Overview of the included studies. {#tbl-overview-studies bl-lines="rows"} 
+:::
 
 ## Study I: Scoping Review Methodology
 A scoping review was conducted to investigate current knowledge of CGM-data and its possible connection and predictive power to clinical and subclinical cardiovascular outcomes.
@@ -87,12 +105,12 @@ For the clinical CVD, the following outcomes were considered: cardiovascular mor
 
 :::{.content-visible when-format="html"}
 | Inclusion Criteria | Exclusion Criteria |
-|---|---|
+|:---|:---|
 | Human clinical studies including participants with prediabetes or any type of diabetes except for gestational diabetes, regardless of definitions | Review articles, editorials, case reports, protocols, conference abstracts, and preprints. |
 | Peer-reviewed published original articles (including brief reports). | Animal studies not including any human participants. |
 | Studies investigating either: | Studies not including metrics derived from \acr{CGM} device data |
-| a) The association between CGM-derived metrics of glycemic control and cardiovascular risk markers or cardiovascular diseases (prevalent or incident). | Studies including CGM-derived metrics as outcomes. |
-| b) CGM-derived metrics of glycemic control as predictors of cardiovascular risk markers or cardiovascular diseases (prevalent or incident). | Studies not focusing on CVD outcomes according to our definition, as outlined in @sec-concepts. |
+| &emsp;&emsp;a) The association between CGM-derived metrics of glycemic control and cardiovascular risk markers or cardiovascular diseases (prevalent or incident). | Studies including CGM-derived metrics as outcomes. |
+| &emsp;&emsp;b) CGM-derived metrics of glycemic control as predictors of cardiovascular risk markers or cardiovascular diseases (prevalent or incident). | Studies not focusing on CVD outcomes according to our definition, as outlined in @sec-concepts. |
 |  | Studies focusing on pregnant women with any form of diabetes including gestational diabetes. |
 |  | Studies where participants were monitored post-surgery or during hospitalization (e.g., Intensive care unit). |
 |  | Language not understood by authors |
@@ -152,7 +170,7 @@ The CANCAN dataset was collected in an observational case-control study from two
 
 ::: {.content-visible when-format="html"}
 
-[![](ffigures/3_methods_fig/cancan_timeline.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/cancan_timeline.png){width=70%}
+[![](figures/3_methods_fig/cancan_timeline.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/cancan_timeline.png){width=70%}
 
 :::
 
@@ -205,7 +223,7 @@ The CGMformer gives a 128-dimensional embedding vector for each 24-hour CGM data
 Embeddings are numerical vectors that summarize the characteristics of the input glucose profile.
 A simple vector can be drawn as an arrow in a 2-dimensional and a 3-dimensional space as shown in @fig-cancan-embedding.
 
-::: {#fig-cancan-embedding layout-ncol=2 layout-valign="center" fig-scap='Embeddings shown as 2-dimensional and 3-dimensional vectors.' width=70%}
+::: {#fig-cancan-embedding fig-scap='Embeddings shown as 2-dimensional and 3-dimensional vectors.' layout-ncol=2 layout-valign="center"}
 
 [![](figures/3_methods_fig/study2_embedding.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_embedding.png)
 
@@ -231,8 +249,7 @@ Groupings were made based on days from the same participant (within-participant 
 ::: {#fig-cancan-clin_strata fig-scap='Within and between participants comparison.'}
 [![](figures/3_methods_fig/study2_clin_strata.png)](https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/3_methods_fig/study2_clin_strata.png)
 
-Glucose variability strata is used as an example to illustrate the cosine distance analyzis of the within and between cosine distance pairs
-
+Glucose variability strata is used as an example to illustrate the cosine distance analyzis of the within and between cosine distance pairs.
 :::
 
 The main focus for the participant comparisons were TIR and HbA1c. The thresholds were as followed: TIR ≥ 70% (70–180 mg/dL, 3.9–10.0 mmol/L) and HbA1c <7.0 % (< 53 mmol/mol).[@Danne2017; @ADA2026_ch7]
@@ -277,7 +294,7 @@ The method repeatedly sampled bootstrap samples by sampling with replacement fro
 ::: {#fig-bootstrap fig-scap='Bootstrap with optimsim correction' width=80%}
 ![](figures/3_methods_fig/study_2_bootstrap.png){width=70%}
 
-Bootstrap with opimism correction. Redrawn and adapted from Wahl et a.[@Wahl2016] under the Creative Commons Attribution 4.0 International License CC BY 4.0.
+Bootstrap with opimism correction. Redrawn and adapted from Wahl et al.[@Wahl2016] under the Creative Commons Attribution 4.0 International License CC BY 4.0.
 :::
 
 
@@ -298,16 +315,22 @@ The prediction models were structured hierarchically based on clinical variables
 | CGM only | **C1** | TIR + MAGE | – |
 | Embeddings only | **D1** | Pooled UMAP dimensions|
 
+::: {.content-visible when-format="pdf"}
 ```{=latex}
 \tablenote[0.75\linewidth]{
     \textsuperscript{*}Clinical variables are the same as those included in the SCORE2-Diabetes risk model: Age, sex, smoking status, systolic blood pressure, HDL cholesterol, total cholesterol, diabetes duration, HbA1c, and eGFR.\newline
     \textit{Abbreviations:} TIR = time in range; MAGE = mean amplitude of glycemic excursions; HbA1c = hemoglobin A1c; eGFR = estimated glomerular filtration rate
 }
 ```
+:::
 
-<div style="font-size: 0.75em; margin-top: -20px;">
+::: {.content-visible when-format="html"}
+<p style="font-size:75%">
+    \* Clinical variables are the same as those included in the SCORE2-Diabetes risk model: Age, sex, smoking status, systolic blood pressure, HDL cholesterol, total cholesterol, diabetes duration, HbA1c, and eGFR.\
+    *Abbreviations:* TIR = time in range; MAGE = mean amplitude of glycemic excursions; HbA1c = hemoglobin A1c; eGFR = estimated glomerular filtration rate
+</p>
 
-</div>
+:::
 
 Overview of models and predictors.
 
@@ -406,7 +429,7 @@ Predictions outside of 0–33 mmol/L were changed to 0 or 33 mmol/L to keep with
 ::: {#fig-study3_SEG fig-scap='Surveillance error grid' width=65%}
 ![](figures/3_methods_fig/study3_SEG_empty.png){width=65%}
 
-Surveillance error grid showing the clinical risk associated with prediction errors. The green region indicates no clinical risk, whereas yellow, orange, and red regions represent increasing levels of clinical risk.
+Surveillance error grid showing the clinical risk associated with prediction errors. The green region indicates no clinical risk, whereas yellow, orange, and red regions represent increasing levels of clinical risk. Generated from the methcomp package.[@doorn_wptmdoornmethcomp_2026]
 
 
 

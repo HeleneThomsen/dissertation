@@ -12,6 +12,7 @@ Despite their distinct underlying pathophysiology, both \acr{T1D} and \acr{T2D} 
 <!-- Diabetes is diagnosed  -->
 Diabetes can be diagnosed based on a bloodtest to check \acr{HbA1c} levels or through plasma glucose criteria (@tbl-diagnosis_criteria).[@ADA2026_ch2; @ADA2023_ch6]
 
+::: {.content-hidden unless-format="pdf"}
 ::: {#tbl-diagnosis_criteria tbl-pos="H"}
 ```{=latex}
     \begin{table}[H]
@@ -30,6 +31,23 @@ Diabetes can be diagnosed based on a bloodtest to check \acr{HbA1c} levels or th
 ```
 
 Diagnostic tests for diabetes.
+
+:::
+:::
+
+::: {.content-hidden unless-format="html"}
+
+::: {#tbl-diagnosis_criteria tbl-pos="H"}
+| Test | Criteria | Description |
+|:-----|:---------|:------------|
+| Fasting plasma glucose | ≥7.0 mmol/L | Fasting is defined as no calorie intake for at least eight hours. |
+| 2-hour plasma glucose | ≥11.1 mmol/L | Glucose is measured 2 hours after oral ingestion of 75 g glucose dissolved in water (OGTT). |
+| Random plasma glucose | ≥11.1 mmol/L | Individuals with classic symptoms of hyperglycemia (e.g., dehydration and unintentional weight loss) or hyperglycemic crisis (e.g., diabetic ketoacidosis), together with a plasma test taken at any time of day. |
+| Glycated hemoglobin (HbA1c) | ≥48 mmol/mol | |
+
+Diagnostic tests for diabetes.
+
+:::
 
 :::
 
@@ -65,6 +83,8 @@ Ambulatory glucose profile report from female without diabetes. Data points are 
 
 ::: {#tbl-agp tbl-pos="H"}
 
+::: {.content-visible when-format="pdf"}
+
 ```{=latex}
     \begin{table}[H]
         \centering
@@ -86,7 +106,7 @@ Ambulatory glucose profile report from female without diabetes. Data points are 
 
 ```
 
-::: {.content-visible when-format="pdf"}
+
 ```{=latex}
 \tablenote[0.90\linewidth]{
     \textsuperscript{*} This goal include both TBR$_{54}$ and TBR$_{70}$.\newline
@@ -94,6 +114,28 @@ Ambulatory glucose profile report from female without diabetes. Data points are 
 }
 ```
 :::
+
+::: {.content-visible when-format="html"}
+
+| Abbreviation | CGM-derived metric | Range | Recommended target |
+|:-------------|:-------------------|:------|:-------------------|
+| GMI | Glucose Management Indicator | | No specific target |
+| TIR | Time in Range | 3.9–10.0 mmol/L (70–180 mg/dL) | >70% |
+| TBR~54~ | Time Below Range | <3.0 mmol/L (<54 mg/dL) | <1% |
+| TBR~70~ | Time Below Range | <3.9 mmol/L (<70 mg/dL) | <4%* |
+| TAR~180~ | Time Above Range | >10.0 mmol/L (>180 mg/dL) | <25%** |
+| TAR~250~ | Time Above Range | >13.9 mmol/L (>250 mg/dL) | <5% |
+| CV | Coefficient of Variation | | ≤36% |
+| | Number of days sensor was worn | | ≥14 days for pattern management |
+| | Active sensor time | | 70% of 14 days |
+
+
+<p style="font-size:75%">
+    \* This goal include both TBR$_{54}$ and TBR$_{70}$.\
+    ** This goal include both TAR$_{180}$ and TAR$_{250}$
+</p>
+:::
+
 
 CGM-derived metrics presented in the ambulatory glucose profile report with target values.
 

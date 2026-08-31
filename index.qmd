@@ -9,7 +9,7 @@ execute:
 \pagenumbering{roman}
 ```
 
-{{< include 0-supervisors.qmd >}}
+{{< include 0-1-supervisors.qmd >}}
 :::
 
 ::: {.content-hidden when-format="pdf"}
