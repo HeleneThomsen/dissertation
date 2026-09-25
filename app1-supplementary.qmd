@@ -693,3 +693,42 @@ Results from the Surveillance Error Grid for White participants. Values are repo
 Results from the Surveillance Error Grid for Black participants. Values are reported as percentages.
 
 :::
+
+
+::: {.content-visible when-format="pdf"}
+# Full papers {#sec-papers}
+
+## Paper I
+\vspace*{\fill}
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 80%
+
+knitr::include_graphics("figures/study1_cover.png")
+```
+
+\vspace*{\fill}
+
+## Paper II
+
+\vspace*{\fill}
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 80%
+
+knitr::include_graphics("figures/study2_cover.png")
+```
+
+## Paper III
+
+\vspace*{\fill}
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 80%
+
+knitr::include_graphics("figures/study3_cover.png")
