@@ -6,54 +6,6 @@ This PhD project was supported by a research grant from the **Danish Diabetes an
 *Logoes from funders are not shown in rendered pdf on github. Even though the official dissertation contains them due to technical issues*
 
 ::: {.content-visible when-format="pdf"}
-```{r}
-#| label: financial-disclosures
-#| eval: false
-#| fig-align: center
-#| out-width: 80%
-#| fig-width: 8
-#| fig-height: 3
-#| echo: false
-
-library(grid)
-library(png)
-
-ddea <- rasterGrob(readPNG("figures/DDEA.png"), interpolate = TRUE)
-dca  <- rasterGrob(readPNG("figures/DCA.png"), interpolate = TRUE)
-nnf  <- rasterGrob(readPNG("figures/NNF.png"), interpolate = TRUE)
-
-grid.newpage()
-
-pushViewport(viewport(
-  layout = grid.layout(
-    nrow = 2,
-    ncol = 3,
-    widths  = unit(c(0.46, 0.08, 0.46), "npc"),
-    heights = unit(c(0.5, 0.5), "npc")
-  )
-))
-
-# DDEA, upper left
-pushViewport(viewport(layout.pos.row = 1, layout.pos.col = 1))
-grid.draw(ddea)
-popViewport()
-
-# DCA, lower left
-pushViewport(viewport(layout.pos.row = 2, layout.pos.col = 1))
-grid.draw(dca)
-popViewport()
-
-# NNF, right side spanning both rows
-pushViewport(viewport(layout.pos.row = 1:2, layout.pos.col = 3))
-grid.draw(nnf)
-popViewport()
-
-popViewport()
-
-
-```
-
-
 ## Notes {.unnumbered .unlisted}
 This dissertation is available for viewing online at [https://helenethomsen.github.io/dissertation/](https://HeleneThomsen.github.io/dissertation/) or by scanning the QR code in the lower right-hand corner of the title page.
 
