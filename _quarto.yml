@@ -23,15 +23,15 @@ book:
     # - 4-results-2-baseline-tbl.qmd
     # - 4-results-3-cosim.qmd
     # - 4-results-5-fairness.qmd
-    # g- 4-results.qmd
-    # g- 5-discussion.qmd
-    # g- 7-conclusions.qmd
-    # g- 8-perspectives.qmd
-    # g- references.qmd
-    # g- 9-abstract-eng.qmd
-    # g- 10-abstract-da.qmd
-  # gappendices:
-   # g - app1-supplementary.qmd
+    - 4-results.qmd
+    - 5-discussion.qmd
+    - 7-conclusions.qmd
+    - 8-perspectives.qmd
+    - references.qmd
+    - 9-abstract-eng.qmd
+    - 10-abstract-da.qmd
+  appendices:
+    - app1-supplementary.qmd
     # - app2-addendum.qmd
   # cookie-consent: 
   #   type: express
