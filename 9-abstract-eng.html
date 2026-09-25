@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Helene Bei Thomsen">
-<meta name="dcterms.date" content="2026-01-01">
 
-<title>Machine Learning Methods for Continuous Glucose Monitoring Data and their Potential in Cardiovascular Risk Assessment</title>
+<title>English Abstract – Machine Learning Methods for Continuous Glucose Monitoring Data and their Potential in Cardiovascular Risk Assessment</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -38,7 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./0-disclosure.html" rel="next">
+<link href="./10-abstract-da.html" rel="next">
+<link href="./references.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -82,10 +81,39 @@ main.content {
 }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-sidebar floating fullcontent quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -94,7 +122,7 @@ main.content {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Cover Page</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./9-abstract-eng.html">English Abstract</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -121,7 +149,7 @@ main.content {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Cover Page</span></a>
   </div>
 </li>
@@ -199,7 +227,7 @@ main.content {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./9-abstract-eng.html" class="sidebar-item-text sidebar-link">
+  <a href="./9-abstract-eng.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">English Abstract</span></a>
   </div>
 </li>
@@ -231,32 +259,22 @@ main.content {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Machine Learning Methods for Continuous Glucose Monitoring Data and their Potential in Cardiovascular Risk Assessment</h1>
+<h1 class="title"><span id="sec-english" class="quarto-section-identifier">English Abstract</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Helene Bei Thomsen </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -266,35 +284,30 @@ main.content {
 </header>
 
 
-<section id="cover-page" class="level1 unnumbered unlisted" style="opacity: 0">
-<h1 class="unnumbered unlisted">Cover Page</h1>
+<section id="background" class="level4">
+<h4 class="anchored" data-anchor-id="background">Background</h4>
+<p>Diabetes is characterized by chronic high blood glucose levels and is associated with an increased risk of cardiovascular disease (CVD). Current CVD risk prediction in diabetes relies largely on traditional risk factors and HbA1c, although these measures may not fully capture clinically relevant glucose dynamics. Continuous glucose monitoring (CGM) provides detailed information on glucose variability, time in range (TIR), and short-term glucose fluctuations, and recent advances in machine learning offer new opportunities to learn directly from CGM data.</p>
 </section>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/ausegl_blaa.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%" alt="Aarhus University, Faculty of Health"></p>
-</figure>
-</div>
-</div>
-</div>
-<div style="text-align: center">
-<p><strong>PhD Dissertation</strong><br>
-<strong>Department of Public Health</strong><br>
-<strong>Faculty of Health</strong><br>
-<strong>Aarhus University</strong></p>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/au_health.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
+<section id="aim" class="level4">
+<h4 class="anchored" data-anchor-id="aim">Aim</h4>
+<p>The aim was to evaluate the role of CGM data and machine learning approaches in cardiovascular risk assessment and examined potential fairness concerns in CGM-based prediction models.</p>
+</section>
+<section id="methods" class="level4">
+<h4 class="anchored" data-anchor-id="methods">Methods</h4>
+<p>The dissertation comprised three studies. Study I was a scoping review of the literature on CGM-derived metrics and CVD risk assessment. Study II investigated representations from the CGMformer foundation model and assessed whether CGM data could improve prediction of NT-proBNP, a biomarker indicative of heart failure risk. Study III examined racial group fairness in 60-minute blood glucose forecasting using long-short term memory models and CGM data from an American cohort.</p>
+</section>
+<section id="results" class="level4">
+<h4 class="anchored" data-anchor-id="results">Results</h4>
+<p>Study I found that the current evidence was inconsistent and heterogeneous. Most studies investigated subclinical cardiovascular outcomes. Studies including people with T2D were more frequent than studies including people with T1D (34/53 vs.&nbsp;20/53), and the T2D study populations were generally larger. This pattern was observed both for TIR (median [IQR]: 510 [405–600] vs.&nbsp;214 [119–547]) and mean amplitude of glycemic excursions (MAGE) (251 [89–411] vs.&nbsp;57 [30–215]). Although TIR and MAGE were the most frequently studied CGM-derived metrics, only MAGE had been evaluated for CVD prediction, showing modest discriminatory performance (AUROC: ~0.61).</p>
+<p>Study II showed that embeddings from the CGMformer foundation model captured both long-term and short-term glycemic patterns, related to HbA1c and TIR. Cosine distances further indicated that CGM embeddings from days belonging to the same participant were more similar to each other than embeddings from different participants. This was observed in both CANCAN (median [IQR]: within-participant, 0.058 [0.040–0.084] vs.&nbsp;between-participant, 0.117 [0.076–0.182]) and T1DX (within-participant, 0.064 [0.047–0.090] vs.&nbsp;between-participant, 0.082 [0.057–0.122]). However, the CGMformer embeddings did not improve prediction of NT-proBNP when added to a model including clinical variables selected based on the SCORE2-Diabetes risk score. Similarly, adding TIR and MAGE only modestly changed performance (corrected AUROC [95% CI]: SCORE2-Diabetes, 0.79 [0.76–0.87] vs.&nbsp;SCORE2-Diabetes + TIR + MAGE, 0.81 [0.77–0.88]). A simpler model including age alone already showed good discriminatory performance (corrected AUROC 0.73 [95% CI: 0.65–0.80]).</p>
+<p>Study III found performance differences across racial groups in 60-minute blood glucose forecasting, even though the models were developed using only CGM data. Although the RMSE slope across training-set compositions was not statistically significant within either racial group, the difference in slopes between groups was statistically significant (<span class="math inline">\(p\)</span> = 0.02). Meaning that when the training data composition changed from 0% White and 100% Black participants to 100% White and 0% Black participants, RMSE increased by 0.04 [95% CI: 0.01, 0.08] mmol/L more for Black participants than for White participants. After transfer learning, this difference was attenuated and no longer statistically significant (0.02 [95% CI: -0.01 to 0.05] mmol/L, <span class="math inline">\(p\)</span> = 0.20).</p>
+</section>
+<section id="conclusion" class="level4">
+<h4 class="anchored" data-anchor-id="conclusion">Conclusion</h4>
+<p>Overall, the findings suggest that CGM data contains clinically meaningful information and may contribute to cardiovascular risk assessment for people with diabetes in the future. However, its current predictive value appears limited, particularly when compared with established demographic and clinical markers. While CGM-derived metrics such as TIR and MAGE may provide useful information, CGM foundation model embeddings did not improve prediction of NT-proBNP despite capturing relevant glycemic structure. Larger and more diverse datasets may provide better opportunities to use machine learning methods to fully exploit the temporal information contained in CGM data. Finally, the dissertation highlights the importance of evaluating generalizability and fairness when developing machine learning models based on CGM data, particularly for models intended for clinical use.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -699,10 +712,13 @@ main.content {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">References</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./0-disclosure.html" class="pagination-link" aria-label="Disclosures and Notes">
-        <span class="nav-page-text">Disclosures and Notes</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./10-abstract-da.html" class="pagination-link" aria-label="Dansk Resumé">
+        <span class="nav-page-text">Dansk Resumé</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -2,20 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Aims – Machine learning methods for continuous glucose monitoring data and their potential in cardiovascular risk assessment</title>
+<title>2&nbsp; Aims – Machine Learning Methods for Continuous Glucose Monitoring Data and their Potential in Cardiovascular Risk Assessment</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-82cb5808e81da3454e8042d903791e03.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-fd0503e23dce65854c81c5baaade3bdf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -105,7 +108,7 @@ main.content {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Machine learning methods for continuous glucose monitoring data and their potential in cardiovascular risk assessment</a> 
+      <a href="./">Machine Learning Methods for Continuous Glucose Monitoring Data and their Potential in Cardiovascular Risk Assessment</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -123,8 +126,20 @@ main.content {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./0-disclosure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disclosures and Notes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0-pdf2-acknowledgements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acknowledgements</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./0-papers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Papers in the dissertation</span></a>
+ <span class="menu-text">Papers in the Dissertation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -171,8 +186,26 @@ main.content {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./8-perspectives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Future perspectives</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./9-abstract-eng.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">English Abstract</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-abstract-da.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dansk Resumé</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -187,7 +220,7 @@ main.content {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./app1-supplementary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Study I: Search strings</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Study I: Search Strings</span></span></a>
   </div>
 </li>
       </ul>
@@ -202,7 +235,8 @@ main.content {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#specific-aims" id="toc-specific-aims" class="nav-link active" data-scroll-target="#specific-aims"><span class="header-section-number">2.1</span> Specific Aims</a></li>
+  <li><a href="#overall-aim" id="toc-overall-aim" class="nav-link active" data-scroll-target="#overall-aim"><span class="header-section-number">2.1</span> Overall Aim</a></li>
+  <li><a href="#specific-aims" id="toc-specific-aims" class="nav-link" data-scroll-target="#specific-aims"><span class="header-section-number">2.2</span> Specific Aims</a></li>
   </ul>
 </nav>
     </div>
@@ -228,10 +262,14 @@ main.content {
 </header>
 
 
+<p>Continuous glucose monitoring (CGM) provides detailed information on glucose patterns that is not captured by HbA1c alone and may contribute to cardiovascular risk assessment. Machine learning offers opportunities to extract additional information directly from CGM time-series, but the predictive value and generalizability of these approaches remain uncertain. Moreover, models may perform differently across populations if demographic groups are inadequately represented in the training data. Evaluating the clinical potential of CGM data therefore requires consideration of predictive value, generalizability, and fairness. These knowledge gaps formed the basis for the aims of this dissertation.</p>
+<section id="overall-aim" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="overall-aim"><span class="header-section-number">2.1</span> Overall Aim</h2>
 <p>The overall aim of this PhD dissertation was to investigate the potential of continuous glucose monitoring (CGM) data to improve cardiovascular risk assessment and to evaluate the role of machine learning in extracting clinically relevant information from CGM data across different diabetes populations, including the evaluation of racial disparities in model performance.</p>
-<section id="specific-aims" class="level2 unlisted" data-number="2.1">
-<h2 class="unlisted anchored" data-number="2.1" data-anchor-id="specific-aims"><span class="header-section-number">2.1</span> Specific Aims</h2>
-<p><strong>Aim 1:</strong> To identify and summarize the existing literature on associations between glycemic control and cardiovascular outcomes, including the use of CGM-derived metrics for cardiovascular risk prediction. <em>(Study I)</em></p>
+</section>
+<section id="specific-aims" class="level2 unlisted" data-number="2.2">
+<h2 class="unlisted anchored" data-number="2.2" data-anchor-id="specific-aims"><span class="header-section-number">2.2</span> Specific Aims</h2>
+<p><strong>Aim 1:</strong> To identify and summarize the existing literature on associations between glycemic control and cardiovascular outcomes, and the use of CGM-derived metrics for cardiovascular risk prediction. <em>(Study I)</em></p>
 <p><strong>Aim 2:</strong> To determine whether a CGM foundation model learns meaningful glucose representations in individuals with type 1 and type 2 diabetes. <em>(Study II)</em></p>
 <p><strong>Aim 3:</strong> To evaluate whether traditional CGM-derived metrics and learned glucose representations improve prediction of elevated NT-proBNP beyond established clinical risk factors in individuals with type 2 diabetes. <em>(Study II)</em></p>
 <p><strong>Aim 4:</strong> To evaluate the fairness of machine learning models for glucose prediction by assessing model performance across non-Hispanic Black and non-Hispanic White populations. <em>(Study III)</em></p>

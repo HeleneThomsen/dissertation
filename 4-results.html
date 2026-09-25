@@ -2,20 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Results – Machine learning methods for continuous glucose monitoring data and their potential in cardiovascular risk assessment</title>
+<title>4&nbsp; Results – Machine Learning Methods for Continuous Glucose Monitoring Data and their Potential in Cardiovascular Risk Assessment</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -60,10 +63,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-82cb5808e81da3454e8042d903791e03.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-fd0503e23dce65854c81c5baaade3bdf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -98,7 +101,7 @@ main.content {
 </style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -153,7 +156,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Machine learning methods for continuous glucose monitoring data and their potential in cardiovascular risk assessment</a> 
+      <a href="./">Machine Learning Methods for Continuous Glucose Monitoring Data and their Potential in Cardiovascular Risk Assessment</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -171,8 +174,20 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./0-disclosure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disclosures and Notes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0-pdf2-acknowledgements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acknowledgements</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./0-papers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Papers in the dissertation</span></a>
+ <span class="menu-text">Papers in the Dissertation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -219,8 +234,26 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./8-perspectives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Future perspectives</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./9-abstract-eng.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">English Abstract</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-abstract-da.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dansk Resumé</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -235,7 +268,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./app1-supplementary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Study I: Search strings</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Study I: Search Strings</span></span></a>
   </div>
 </li>
       </ul>
@@ -250,25 +283,24 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#scoping-review-results" id="toc-scoping-review-results" class="nav-link active" data-scroll-target="#scoping-review-results"><span class="header-section-number">4.1</span> Scoping Review Results</a>
+  <li><a href="#study-i-scoping-review-results" id="toc-study-i-scoping-review-results" class="nav-link active" data-scroll-target="#study-i-scoping-review-results"><span class="header-section-number">4.1</span> Study I: Scoping Review Results</a>
   <ul class="collapse">
-  <li><a href="#study-selection" id="toc-study-selection" class="nav-link" data-scroll-target="#study-selection"><span class="header-section-number">4.1.1</span> Study Selection</a></li>
-  <li><a href="#study-populations" id="toc-study-populations" class="nav-link" data-scroll-target="#study-populations"><span class="header-section-number">4.1.2</span> Study Populations</a></li>
-  <li><a href="#study-designs-and-demographics" id="toc-study-designs-and-demographics" class="nav-link" data-scroll-target="#study-designs-and-demographics"><span class="header-section-number">4.1.3</span> Study Designs and Demographics</a></li>
-  <li><a href="#continuous-glucose-monitoring" id="toc-continuous-glucose-monitoring" class="nav-link" data-scroll-target="#continuous-glucose-monitoring"><span class="header-section-number">4.1.4</span> Continuous Glucose Monitoring</a></li>
-  <li><a href="#prediction-studies" id="toc-prediction-studies" class="nav-link" data-scroll-target="#prediction-studies"><span class="header-section-number">4.1.5</span> Prediction studies</a></li>
-  <li><a href="#association-studies" id="toc-association-studies" class="nav-link" data-scroll-target="#association-studies"><span class="header-section-number">4.1.6</span> Association studies</a></li>
-  <li><a href="#clinical-association-studies" id="toc-clinical-association-studies" class="nav-link" data-scroll-target="#clinical-association-studies"><span class="header-section-number">4.1.7</span> Clinical Association Studies</a></li>
+  <li><a href="#study-populations" id="toc-study-populations" class="nav-link" data-scroll-target="#study-populations"><span class="header-section-number">4.1.1</span> Study Populations</a></li>
+  <li><a href="#study-designs-and-demographics" id="toc-study-designs-and-demographics" class="nav-link" data-scroll-target="#study-designs-and-demographics"><span class="header-section-number">4.1.2</span> Study Designs and Demographics</a></li>
+  <li><a href="#continuous-glucose-monitoring" id="toc-continuous-glucose-monitoring" class="nav-link" data-scroll-target="#continuous-glucose-monitoring"><span class="header-section-number">4.1.3</span> Continuous Glucose Monitoring</a></li>
+  <li><a href="#prediction-studies" id="toc-prediction-studies" class="nav-link" data-scroll-target="#prediction-studies"><span class="header-section-number">4.1.4</span> Prediction Studies</a></li>
+  <li><a href="#association-studies" id="toc-association-studies" class="nav-link" data-scroll-target="#association-studies"><span class="header-section-number">4.1.5</span> Association Studies</a></li>
+  <li><a href="#clinical-association-studies" id="toc-clinical-association-studies" class="nav-link" data-scroll-target="#clinical-association-studies"><span class="header-section-number">4.1.6</span> Clinical Association Studies</a></li>
   </ul></li>
-  <li><a href="#baseline-characteristics-tables-of-the-datasets" id="toc-baseline-characteristics-tables-of-the-datasets" class="nav-link" data-scroll-target="#baseline-characteristics-tables-of-the-datasets"><span class="header-section-number">4.2</span> Baseline Characteristics Tables of the Datasets</a></li>
-  <li><a href="#foundation-model-embedding-analysis" id="toc-foundation-model-embedding-analysis" class="nav-link" data-scroll-target="#foundation-model-embedding-analysis"><span class="header-section-number">4.3</span> Foundation Model Embedding Analysis</a>
+  <li><a href="#study-ii-and-iii-baseline-characteristics-tables-of-the-datasets" id="toc-study-ii-and-iii-baseline-characteristics-tables-of-the-datasets" class="nav-link" data-scroll-target="#study-ii-and-iii-baseline-characteristics-tables-of-the-datasets"><span class="header-section-number">4.2</span> Study II and III: Baseline Characteristics Tables of the Datasets</a></li>
+  <li><a href="#study-ii-foundation-model-embedding-analysis" id="toc-study-ii-foundation-model-embedding-analysis" class="nav-link" data-scroll-target="#study-ii-foundation-model-embedding-analysis"><span class="header-section-number">4.3</span> Study II: Foundation Model Embedding Analysis</a>
   <ul class="collapse">
-  <li><a href="#cosine-distances" id="toc-cosine-distances" class="nav-link" data-scroll-target="#cosine-distances"><span class="header-section-number">4.3.1</span> Cosine Distances</a></li>
-  <li><a href="#embeddings-and-glycemic-control" id="toc-embeddings-and-glycemic-control" class="nav-link" data-scroll-target="#embeddings-and-glycemic-control"><span class="header-section-number">4.3.2</span> Embeddings and Glycemic Control</a></li>
-  <li><a href="#embeddings-and-nt-probnp-in-cancan-and-race-in-t1dx" id="toc-embeddings-and-nt-probnp-in-cancan-and-race-in-t1dx" class="nav-link" data-scroll-target="#embeddings-and-nt-probnp-in-cancan-and-race-in-t1dx"><span class="header-section-number">4.3.3</span> Embeddings and NT-proBNP in CANCAN and race in T1DX</a></li>
+  <li><a href="#umaps-and-glycemic-control" id="toc-umaps-and-glycemic-control" class="nav-link" data-scroll-target="#umaps-and-glycemic-control"><span class="header-section-number">4.3.1</span> UMAPs and Glycemic Control</a></li>
+  <li><a href="#cosine-distances" id="toc-cosine-distances" class="nav-link" data-scroll-target="#cosine-distances"><span class="header-section-number">4.3.2</span> Cosine Distances</a></li>
+  <li><a href="#cosine-distances-nt-probnp-and-race" id="toc-cosine-distances-nt-probnp-and-race" class="nav-link" data-scroll-target="#cosine-distances-nt-probnp-and-race"><span class="header-section-number">4.3.3</span> Cosine Distances, NT-proBNP and Race</a></li>
   </ul></li>
-  <li><a href="#prediction-of-nt-probnp-results" id="toc-prediction-of-nt-probnp-results" class="nav-link" data-scroll-target="#prediction-of-nt-probnp-results"><span class="header-section-number">4.4</span> Prediction of NT-proBNP Results</a></li>
-  <li><a href="#algorithmic-fairness-in-prediction-models" id="toc-algorithmic-fairness-in-prediction-models" class="nav-link" data-scroll-target="#algorithmic-fairness-in-prediction-models"><span class="header-section-number">4.5</span> Algorithmic Fairness in Prediction Models</a>
+  <li><a href="#study-ii-prediction-of-nt-probnp-results" id="toc-study-ii-prediction-of-nt-probnp-results" class="nav-link" data-scroll-target="#study-ii-prediction-of-nt-probnp-results"><span class="header-section-number">4.4</span> Study II: Prediction of NT-proBNP Results</a></li>
+  <li><a href="#study-iii-algorithmic-fairness-in-prediction-models" id="toc-study-iii-algorithmic-fairness-in-prediction-models" class="nav-link" data-scroll-target="#study-iii-algorithmic-fairness-in-prediction-models"><span class="header-section-number">4.5</span> Study III: Algorithmic Fairness in Prediction Models</a>
   <ul class="collapse">
   <li><a href="#bias-in-machine-learning-models" id="toc-bias-in-machine-learning-models" class="nav-link" data-scroll-target="#bias-in-machine-learning-models"><span class="header-section-number">4.5.1</span> Bias in Machine Learning Models</a></li>
   <li><a href="#the-surveillance-error-grid" id="toc-the-surveillance-error-grid" class="nav-link" data-scroll-target="#the-surveillance-error-grid"><span class="header-section-number">4.5.2</span> The Surveillance Error Grid</a></li>
@@ -298,49 +330,44 @@ window.Quarto = {
 </header>
 
 
-<section id="scoping-review-results" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="scoping-review-results"><span class="header-section-number">4.1</span> Scoping Review Results</h2>
-<section id="study-selection" class="level3" data-number="4.1.1">
-<h3 data-number="4.1.1" class="anchored" data-anchor-id="study-selection"><span class="header-section-number">4.1.1</span> Study Selection</h3>
-<p>The study selection process is summarized in <a href="#fig-prisma" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>. The Medline and Embase search resulted in 4884 records screened on title and abstract, and 81 reports were assessed for eligibility based on full-text review by two independent reviewers. The citation search on the included 51 reports resulted in 2 additional reports, which finally resulted in 53 included reports in the review. All included and excluded reports are reported in <a href="app1-supplementary.html" class="quarto-xref"><span>Appendix B</span></a>.</p>
-<div id="fig-prisma" class="quarto-float quarto-figure quarto-figure-center anchored">
+<section id="study-i-scoping-review-results" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="study-i-scoping-review-results"><span class="header-section-number">4.1</span> Study I: Scoping Review Results</h2>
+<p>The study selection process is summarized in <a href="#fig-prisma" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>. The MEDLINE and Embase search resulted in 4884 records screened on title and abstract, and 81 reports were assessed for eligibility based on full-text review by two independent reviewers. The citation search on the included 51 reports identified 2 additional reports, which finally resulted in 53 included reports in total. All included and excluded reports are reported in <a href="app1-supplementary.html" class="quarto-xref"><span>Appendix B</span></a>.</p>
+<div id="fig-prisma" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-scap="Flow diagram of study selection.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-prisma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_1_prisma.svg"><img src="figures/4_results_fig/study_1_prisma.png" class="img-fluid figure-img"></a></p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-prisma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.1: Flow diagram of study selection
+Figure&nbsp;4.1: Flow diagram of study selection.<br>
+Reproduced from Thomsen et al.<span class="citation" data-cites="Thomsen2026"><sup><a href="references.html#ref-Thomsen2026" role="doc-biblioref">1</a></sup></span>, originally published in JMIR Diabetes, under the Creative Commons Attribution License (CC BY 4.0).
 </figcaption>
 </figure>
 </div>
-</section>
-<section id="study-populations" class="level3" data-number="4.1.2">
-<h3 data-number="4.1.2" class="anchored" data-anchor-id="study-populations"><span class="header-section-number">4.1.2</span> Study Populations</h3>
+<section id="study-populations" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="study-populations"><span class="header-section-number">4.1.1</span> Study Populations</h3>
 <p>The study population most common was people with T2D (34 of studies), then people with T1D (20 of 53) and lastly prediabetes (4 of 53). Most studies included adult participants, whereas seven focused on children younger than 18 years. Two studies included only male participants, whereas the remaining studies included both male and female participants.</p>
-<p>The geographic distribution was found based on the hospitals and centers where data was collected or by the first author’s affiliation when the other option was not available. The distribution was uneven as shown in <a href="#fig-geographical" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>. Most studies were conducted in Asia (27 of 53) or Europe (22 of 53). Three studies included data from North America, one was conducted in Australia, and only one included data from an African country, although its study population was predominantly White.<span class="citation" data-cites="Borg2011"><sup><a href="references.html#ref-Borg2011" role="doc-biblioref"><strong>Borg2011?</strong></a></sup></span> No data was included from South America (<a href="app1-supplementary.html" class="quarto-xref"><span>Appendix C</span></a>).</p>
-<div id="fig-geographical" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>The geographic distribution was found based on the hospitals and centers where data was collected or by the first author’s affiliation when the other options were not available. The distribution was uneven as shown in <a href="#fig-geographical" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>. Most studies were conducted in Asia (27 of 53) or Europe (22 of 53). Three studies included data from North America, one was conducted in Australia, and only one included data from an African country, although its study population was predominantly White.<span class="citation" data-cites="Borg2011"><sup><a href="references.html#ref-Borg2011" role="doc-biblioref">2</a></sup></span> No data was included from South America (<a href="app1-supplementary.html" class="quarto-xref"><span>Appendix C</span></a>).</p>
+<div id="fig-geographical" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-scap="Geographical location of the studies.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-geographical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_1_world_map.png"><img src="figures/4_results_fig/study_1_world_map.png" class="img-fluid figure-img"></a></p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-geographical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.2: Geographical location of the studies. Countries colored in red indicate the geographical locations where the studies were conducted. Map was created using MapChart <a href="https://www.mapchart.net">https://www.mapchart.net/</a>.
+Figure&nbsp;4.2: Geographical location of the studies. Countries colored in red indicate the geographical locations where the studies were conducted. Figure was created using MapChart <a href="https://www.mapchart.net">https://www.mapchart.net/</a>.
 </figcaption>
 </figure>
 </div>
 </section>
-<section id="study-designs-and-demographics" class="level3" data-number="4.1.3">
-<h3 data-number="4.1.3" class="anchored" data-anchor-id="study-designs-and-demographics"><span class="header-section-number">4.1.3</span> Study Designs and Demographics</h3>
-<p>Only one study was a randomized controlled trial,<span class="citation" data-cites="33"><sup><a href="references.html#ref-33" role="doc-biblioref"><strong>33?</strong></a></sup></span> and the remaining studies were observational. Most studies used a cross-sectional design, with the cardiovascular outcome assessed at the same time as the CGM sensor was given. Only six studies performed longitudinal analyses. Study sample sizes varied considerably, ranging from 17<span class="citation" data-cites="34"><sup><a href="references.html#ref-34" role="doc-biblioref"><strong>34?</strong></a></sup></span> to 6,225<span class="citation" data-cites="18"><sup><a href="references.html#ref-18" role="doc-biblioref"><strong>18?</strong></a></sup></span> participants, with a median of 152. CGM data were obtained either from participants’ own devices (11 studies) or from CGM devices provided as part of the study (42 studies). Statistical analyses most commonly included linear regression (22 studies) and logistic regression (22 studies), followed by Spearman or Pearson correlation analyses (11 studies) and Cox proportional hazards regression (3 studies). ´ Several studies also performed additional exploratory analyses, such as correlation analyses, to identify relevant covariates for inclusion in regression models.</p>
-<p>All included studies primarily investigated associations between CGM-derived measures and cardiovascular outcomes. Only three studies reported predictive performance measures as part of secondary analyses,<span class="citation" data-cites="Su2011"><sup><a href="references.html#ref-Koroleva" role="doc-biblioref"><strong>Koroleva?</strong></a></sup></span> and none applied machine learning methods. Furthermore, none of the included studies provided openly available data or source code. Instead, availability was either not addressed or limited to access upon reasonable request from the corresponding author.</p>
+<section id="study-designs-and-demographics" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="study-designs-and-demographics"><span class="header-section-number">4.1.2</span> Study Designs and Demographics</h3>
+<p>Only one study was a randomized controlled trial,<span class="citation" data-cites="Pulkkinen2020"><sup><a href="references.html#ref-Pulkkinen2020" role="doc-biblioref">3</a></sup></span> and the remaining studies were observational. Most studies used a cross-sectional design, with the cardiovascular outcome assessed at the same time as the CGM sensor was given. Only six studies performed longitudinal analyzes. Study sample sizes varied considerably, ranging from 17<span class="citation" data-cites="Hoffman2013"><sup><a href="references.html#ref-Hoffman2013" role="doc-biblioref">4</a></sup></span> to 6,225<span class="citation" data-cites="Lu2021"><sup><a href="references.html#ref-Lu2021" role="doc-biblioref">5</a></sup></span> participants, with a median of 152. CGM data were obtained either from participants’ own devices (11 studies) or from CGM devices provided as part of the study (42 studies). Statistical analyzes most commonly included linear regression (22 studies) and logistic regression (22 studies), followed by Spearman or Pearson correlation analyzes (11 studies) and Cox proportional hazards regression (3 studies). Several studies performed additional exploratory analyzes, such as correlation analyzes, to identify relevant covariates for inclusion in regression models.</p>
+<p>All included studies primarily investigated associations between CGM-derived measures and cardiovascular outcomes. Only three studies reported predictive performance measures as part of secondary analyzes,<span class="citation" data-cites="Su2011 Mi2012 Koroleva2022"><sup><a href="references.html#ref-Su2011" role="doc-biblioref">6</a>–<a href="references.html#ref-Koroleva2022" role="doc-biblioref">8</a></sup></span> and none applied machine learning methods. Furthermore, none of the included studies provided openly available data or source code. Instead, availability was either not addressed or limited to access upon reasonable request from the corresponding author.</p>
 </section>
-<section id="continuous-glucose-monitoring" class="level3" data-number="4.1.4">
-<h3 data-number="4.1.4" class="anchored" data-anchor-id="continuous-glucose-monitoring"><span class="header-section-number">4.1.4</span> Continuous Glucose Monitoring</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Add a row “Number of CVD outcomes” and information to the text as well - only if time permits</label></li>
-</ul>
-<p>Medtronic CGM devices were the most frequently used (28 of 53 studies), followed by Abbott (9 of 53) and Dexcom (5 of 53). Other manufacturers included Menarini, Meiqi Company, and SIBIONICS. Sampling intervals ranged from 3 to 15 minutes but were reported in only a minority of studies (21 of 53). TIR (22 studies) and MAGE (23 studies) were the most frequently investigated CGM-derived metrics (<a href="#tbl-study1-cgm-count" class="quarto-xref">Table&nbsp;<span>4.1</span></a>) When stratified by T1D and T2D then TIR was the most frequently investigated metric in T1D populations (10 of 23 studies), whereas MAGE was less commonly investigated (5 of 22 studies). In T2D populations, TIR and MAGE were investigated in 11 of 23 and 14 of 22 studies, respectively. Studies conducted in T2D populations also tended to include larger sample sizes than those in T1D populations (median [IQR]: TIR, 510 [405–600] vs.&nbsp;214 [119–547]; MAGE, 251 [89–411] vs.&nbsp;57 [30–215]).</p>
-<div id="tbl-study1-cgm-count" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[20, 15, 10, 10, 10, 12, 13, 10]">
+<section id="continuous-glucose-monitoring" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="continuous-glucose-monitoring"><span class="header-section-number">4.1.3</span> Continuous Glucose Monitoring</h3>
+<p>Medtronic CGM devices were the most frequently used (28 of 53 studies), followed by Abbott (9 of 53) and Dexcom (5 of 53). Other manufacturers included Menarini, Meiqi Company, and SIBIONICS. Sampling intervals ranged from 3 to 15 minutes but were reported in only a minority of studies (21 of 53). TIR (22 studies) and MAGE (23 studies) were the most frequently investigated CGM-derived metrics (<a href="#tbl-study1-cgm-count" class="quarto-xref">Table&nbsp;<span>4.1</span></a>). When stratified by T1D and T2D then TIR was the most frequently investigated metric in T1D populations (10 of 23 studies), whereas MAGE was less commonly investigated (5 of 22 studies). In T2D populations, TIR and MAGE were investigated in 11 of 23 and 14 of 22 studies, respectively. Studies conducted in T2D populations also tended to include larger sample sizes than those in T1D populations (median [IQR]: TIR, 510 [405–600] vs.&nbsp;214 [119–547]; MAGE, 251 [89–411] vs.&nbsp;57 [30–215]).</p>
+<div id="tbl-study1-cgm-count" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-pos="H" data-tbl-colwidths="[20, 15, 10, 10, 10, 12, 13, 10]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-study1-cgm-count-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;4.1: Summary of the frequency of the seven most used CGM-derived metrics
@@ -453,511 +480,735 @@ Table&nbsp;4.1: Summary of the frequency of the seven most used CGM-derived metr
 </tbody>
 </table>
 <p style="font-size:75%">
-´ * Mixed includes both T1D, T2D and prediabetes<br>
+* Mixed includes both T1D, T2D and prediabetes<br>
 ** Mixed includes both T1D, T2D and prediabetes <em>Abbreviations:</em> T1D: type 1 diabetes, T2D: type 2 diabetes, MAGE: mean amplitude of glycemic excursions, TIR: time in range, MBG: mean blood glucose, SD: standard deviation, CV: coefficient of variation, TBR: time below range, TAR: time above range.
 </p>
 </div>
 </figure>
 </div>
 </section>
-<section id="prediction-studies" class="level3" data-number="4.1.5">
-<h3 data-number="4.1.5" class="anchored" data-anchor-id="prediction-studies"><span class="header-section-number">4.1.5</span> Prediction studies</h3>
-<p>Only three studies evaluated the predictive performance of CGM-derived metrics for cardiovascular outcomes, all using logistic regression models with MAGE as the predictor. Two studies reported <a href="#acronyms_AUROC">Area Under the Receiver Operating Characteristic Curve (AUROC)</a> values of 0.61 and 0.62, respectively,<span class="citation" data-cites="43"><sup><a href="references.html#ref-43" role="doc-biblioref"><strong>43?</strong></a></sup></span> and both found MAGE to outperform HbA1c (<a href="#acronyms_AUROC">AUROC</a>: 0.55 and 0.58, respectively). The third study used receiver operating characteristic analysis to determine the optimal threshold for dichotomizing MAGE during variable selection but did not report the <a href="#acronyms_AUROC">AUROC</a>.<span class="citation" data-cites="44"><sup><a href="references.html#ref-44" role="doc-biblioref"><strong>44?</strong></a></sup></span> Instead, a threshold of MAGE ≥ 3.4 mmol/L was identified as a risk factor for stenosis and/or occlusion, with a sensitivity of 0.60 and a specificity of 0.61.</p>
+<section id="prediction-studies" class="level3" data-number="4.1.4">
+<h3 data-number="4.1.4" class="anchored" data-anchor-id="prediction-studies"><span class="header-section-number">4.1.4</span> Prediction Studies</h3>
+<p>Only three studies evaluated the predictive performance of CGM-derived metrics for cardiovascular outcomes, all using logistic regression models with MAGE as the predictor. Two studies reported <a href="#acronyms_AUROC">area under the receiver operating characteristic curve (AUROC)</a> values of 0.61 and 0.62, respectively,<span class="citation" data-cites="Mi2012 Su2011"><sup><a href="references.html#ref-Su2011" role="doc-biblioref">6</a>,<a href="references.html#ref-Mi2012" role="doc-biblioref">7</a></sup></span> and both found MAGE to outperform HbA1c (<a href="#acronyms_AUROC">AUROC</a>: 0.55 and 0.58, respectively). The third study used receiver operating characteristic analyzis to determine the optimal threshold for dichotomizing MAGE during variable selection but did not report the <a href="#acronyms_AUROC">AUROC</a>.<span class="citation" data-cites="Koroleva2022"><sup><a href="references.html#ref-Koroleva2022" role="doc-biblioref">8</a></sup></span> Instead, a threshold of MAGE ≥ 3.4 mmol/L was identified as a risk factor for stenosis and/or occlusion, with a sensitivity of 0.60 and a specificity of 0.61.</p>
 </section>
-<section id="association-studies" class="level3" data-number="4.1.6">
-<h3 data-number="4.1.6" class="anchored" data-anchor-id="association-studies"><span class="header-section-number">4.1.6</span> Association studies</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">I am thinking of changing table <a href="#tbl-study3-clin-subclin-cvd" class="quarto-xref">Table&nbsp;<span>4.2</span></a> to be more aligned with the overview tables (<span class="quarto-unresolved-ref">?sec-sec-suppl-subclin-results</span>) An overview of the different outcomes found in the literature both clinical and subclinical are shown in <a href="#tbl-study3-clin-subclin-cvd" class="quarto-xref">Table&nbsp;<span>4.2</span></a>.</label></li>
-</ul>
-<div id="tbl-study3-clin-subclin-cvd" class="quarto-float quarto-figure quarto-figure-center anchored">
+<section id="association-studies" class="level3" data-number="4.1.5">
+<h3 data-number="4.1.5" class="anchored" data-anchor-id="association-studies"><span class="header-section-number">4.1.5</span> Association Studies</h3>
+<p>There were a variety of different CVD outcomes as presented in <a href="#tbl-study3-clin-subclin-cvd" class="quarto-xref">Table&nbsp;<span>4.2</span></a>.</p>
+<div id="tbl-study3-clin-subclin-cvd" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-pos="H">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-study3-clin-subclin-cvd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.2: Summary of established clinical and subclinical outcomes and corresponding abbreviations identified in the literature.
+Table&nbsp;4.2: Overview of established clinical and subclinical outcomes.
 </figcaption>
 <div aria-describedby="tbl-study3-clin-subclin-cvd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 45%">
+<col style="width: 54%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Clinical</th>
-<th style="text-align: left;">Subclinical</th>
+<th style="text-align: left;"><strong>Clinical</strong></th>
+<th style="text-align: left;"><strong>Subclinical</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">CVD = Cardiovascular disease</td>
-<td style="text-align: left;">ABI = Ankle–brachial index</td>
+<td style="text-align: left;">Macrovascular mortality</td>
+<td style="text-align: left;">Arterial stiffness</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">&nbsp;&nbsp; - Macrovascular complications</td>
-<td style="text-align: left;">BP = Blood pressure</td>
+<td style="text-align: left;">Macrovascular complications</td>
+<td style="text-align: left;"> PWV: (Aortic) pulse wave velocity</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp; - Diabetic macroangiopathy</td>
-<td style="text-align: left;">Carotid artery distensibility = Carotid artery distensibility or carotid distensibility coefficient</td>
+<td style="text-align: left;"> Cardiovascular events</td>
+<td style="text-align: left;"> cf-PWV: Carotid-femoral PWV</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">CAD = Coronary artery disease</td>
-<td style="text-align: left;">CCA = Common carotid artery</td>
+<td style="text-align: left;"> IHD: Ischemic heart disease</td>
+<td style="text-align: left;"> cr-PWV: Carotid-radial PWV</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp; - CHD = Coronary heart disease</td>
-<td style="text-align: left;">CIMT = Carotid artery intima-media thickness</td>
+<td style="text-align: left;"> Diabetic macroangiopathy</td>
+<td style="text-align: left;"> ba-PWV: Brachial-ankle PWV</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">&nbsp;&nbsp; - MI = Myocardial infarction</td>
-<td style="text-align: left;">DBP = Diastolic blood pressure</td>
+<td style="text-align: left;">MACE: Major adverse cardiovascular events</td>
+<td style="text-align: left;"> Augmentation index</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp; - Heart attack</td>
-<td style="text-align: left;">FMD = Flow-mediated dilation of the brachial artery</td>
+<td style="text-align: left;">CAD: Coronary artery disease</td>
+<td style="text-align: left;"> Carotid artery distensibility</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">&nbsp;&nbsp; - Heart failure</td>
-<td style="text-align: left;">GSM = Gray-scale median of the carotid arteries</td>
+<td style="text-align: left;"> CHD: Coronary heart disease</td>
+<td style="text-align: left;"> Carotid distensibility coefficient</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp; - (Unstable) angina pectoris</td>
-<td style="text-align: left;">HRV = Heart rate variability</td>
+<td style="text-align: left;"> MI: Myocardial infarction</td>
+<td style="text-align: left;">Flow resistance</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Cardiovascular events</td>
-<td style="text-align: left;">IMT = Intima-media thickness</td>
+<td style="text-align: left;"> Heart attack</td>
+<td style="text-align: left;"> FMD: Flow-mediated dilation of the brachial artery</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp; - Ishemic heart disease (IHD)</td>
-<td style="text-align: left;">PWV = Pulse wave velocity</td>
+<td style="text-align: left;"> Heart failure</td>
+<td style="text-align: left;"> ABI: Ankle–brachial index</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">LEAD = Lower extremity artery disease</td>
-<td style="text-align: left;">&nbsp;&nbsp; - ba-PWV = Brachial-ankle pulse wave velocity</td>
+<td style="text-align: left;"> (Unstable) angina pectoris</td>
+<td style="text-align: left;"> Forearm vascular resistance</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">MACE = Major adverse cardiovascular events</td>
-<td style="text-align: left;">&nbsp;&nbsp; - cr-PWV = Carotid-radial pulse wave velocity</td>
+<td style="text-align: left;">Gensini score</td>
+<td style="text-align: left;"> Forearm blood flow</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">PAD = Peripheral artery disease</td>
-<td style="text-align: left;">&nbsp;&nbsp; - cf-PWV = Carotid-femoral pulse wave velocity</td>
+<td style="text-align: left;">SYNTAX score</td>
+<td style="text-align: left;">Arterial wall thickness</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Stroke = Stroke, Cerebrovascular disease, or Cerebrovascular accident</td>
-<td style="text-align: left;">&nbsp;&nbsp; - Aortic PWV = Aortic pulse wave velocity</td>
+<td style="text-align: left;">Stroke</td>
+<td style="text-align: left;"> CIMT: Carotid artery intima-media thickness</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">SBP = Systolic blood pressure</td>
+<td style="text-align: left;"> Cerebrovascular disease</td>
+<td style="text-align: left;"> Intima thickness and media thickness</td>
 </tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-</section>
-<section id="clinical-association-studies" class="level3" data-number="4.1.7">
-<h3 data-number="4.1.7" class="anchored" data-anchor-id="clinical-association-studies"><span class="header-section-number">4.1.7</span> Clinical Association Studies</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Does anyone have a suggestion on how to present this data in a table that is smaller then this <a href="#tbl-study1-clinical-overview" class="quarto-xref">Table&nbsp;<span>4.4</span></a>?</label></li>
-<li><label><input type="checkbox">Based on AAI comments, then I am removing the columns “Diabetes duration” and “HbA1c, mmol/mol” and will try my best to let studies only take up one row.</label></li>
-</ul>
-<p>Most studies focused exclusively on subclinical cardiovascular outcomes (37 of 53 studies, 70%), whereas 13 studies (25%) investigated only clinical cardiovascular outcomes and three studies (6%) included both clinical and subclinical outcomes. Because the subsequent chapters of this dissertation focus on clinical cardiovascular outcomes, only these findings are discussed in detail below (<a href="#tbl-study1-clinical-overview" class="quarto-xref">Table&nbsp;<span>4.4</span></a> and <a href="app1-supplementary.html#tbl-main-clinical-findings" class="quarto-xref">Table&nbsp;<span>D.1</span></a>). A summary of studies investigating subclinical cardiovascular outcomes is provided in <a href="app1-supplementary.html" class="quarto-xref"><span>Appendix D</span></a>.</p>
-<div class="landscape">
-<div class="small">
-<div id="tbl-study1-clinical-overview" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[9, 14, 20, 5, 14, 14, 14, 10]">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-study1-clinical-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.3: Study design and demographics of the included clinical cardiovascular outcome studies
-</figcaption>
-<div aria-describedby="tbl-study1-clinical-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 9%">
-<col style="width: 14%">
-<col style="width: 20%">
-<col style="width: 5%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 10%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Author, year</th>
-<th style="text-align: left;">Study Design</th>
-<th style="text-align: left;">Population</th>
-<th style="text-align: center;">Size</th>
-<th style="text-align: left;">Age (Years)</th>
-<th style="text-align: left;">Diabetes duration (Years)</th>
-<th style="text-align: left;">HbA1c, mmol/mol (%)</th>
-<th style="text-align: right;">CGM duration</th>
-</tr>
-</thead>
-<tbody>
 <tr class="odd">
-<td style="text-align: left;">Chen, 2020<span class="math inline">\(^\dagger\)</span></td>
-<td style="text-align: left;">Longitudinal (prospective) and cross-sectional (retrospective)<br>FU: in-hospital or within 3 months after discharge from hospital</td>
-<td style="text-align: left;">T2D with CAD (Only male)<br> BG control, n = 90<br> BG fluctuation, n = 120</td>
-<td style="text-align: center;">210</td>
-<td style="text-align: left;">BG controls: 55.53 <span class="math inline">\(\pm\)</span> 7.30<br> BG fluctuation: 56.41 <span class="math inline">\(\pm\)</span> 7.67</td>
-<td style="text-align: left;">BG controls: 6.59 <span class="math inline">\(\pm\)</span> 2.30<br> BG fluctuation group: 6.92 <span class="math inline">\(\pm\)</span> 2.25</td>
-<td style="text-align: left;">nr</td>
-<td style="text-align: right;">2 days</td>
+<td style="text-align: left;"> Cerebrovascular accident</td>
+<td style="text-align: left;"> IMT: Intima-media thickness of the dorsal pedal, radial, or carotid arteries</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
+<td style="text-align: left;">Peripheral artery disease</td>
+<td style="text-align: left;"> Mean IMT (change)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">He, 2023</td>
-<td style="text-align: left;">Longitudinal (prospective)<br> FU: 1 year</td>
-<td style="text-align: left;">T2D with kidney disease on hemodialysis<br> High TIR, n = 12<br> Low TIR, n = 15</td>
-<td style="text-align: center;">27</td>
-<td style="text-align: left;">High TIR: 66 [63, 73]<br> Low TIR: 70 [64, 75]</td>
-<td style="text-align: left;">High TIR: 2 [1.7, 10]<br> Low TIR: 5 [0.75, 20]</td>
-<td style="text-align: left;">High TIR: 43 [37, 51] mmol/mol (6.1 [5.5, 6.8]%)<br> Low TIR: 66 [46, 70] mmol/mol (8.2 [6.4, 8.6]%)</td>
-<td style="text-align: right;">14 days</td>
+<td style="text-align: left;">Lower-extremity arterial disease</td>
+<td style="text-align: left;"> Femoral IMT</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
+<td style="text-align: left;"><strong>Subclinical</strong></td>
+<td style="text-align: left;"> CCA-IMT: Common carotid artery IMT</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Lu, 2021</td>
-<td style="text-align: left;">Longitudinal (prospective)<br> FU: until death occurred or 3–13 years<br> Median: 6.9 years</td>
-<td style="text-align: left;">T2D, hospitalized</td>
-<td style="text-align: center;">6225</td>
-<td style="text-align: left;">mean age = 61.7 years</td>
-<td style="text-align: left;">mean: 9.7 years</td>
-<td style="text-align: left;">74.0 <span class="math inline">\(\pm\)</span> 24.0 mmol/mol (8.9 <span class="math inline">\(\pm\)</span> 2.2%)</td>
-<td style="text-align: right;">72 hours</td>
+<td style="text-align: left;">Cardiac and pulse-related measures</td>
+<td style="text-align: left;"> CCA-max-IMT (change)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
+<td style="text-align: left;"> Mean and pulsatile circumferential wall stress</td>
+<td style="text-align: left;">Arterial wall composition</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Wei, 2019</td>
-<td style="text-align: left;">Longitudinal (prospective)<br> Median FU [IQR]: 31 months (22, 56)</td>
-<td style="text-align: left;">T2D Divided into three groups:<br> 1) No hypo, n = 1173<br> 2) Mild hypo (lvl1), n = 323<br> 3) Severe hypo (lvl3), n = 24</td>
-<td style="text-align: center;">1520</td>
-<td style="text-align: left;">No hypoglycemia: 58.59 <span class="math inline">\(\pm\)</span> 11.26<br> Hypoglycemia: 62.27 <span class="math inline">\(\pm\)</span> 11.58</td>
-<td style="text-align: left;">No hypoglycemia: 6.46 <span class="math inline">\(\pm\)</span> 6.00<br> Hypoglycemia: 7.78 <span class="math inline">\(\pm\)</span> 7.37</td>
-<td style="text-align: left;">No hypoglycemia: (8.19 <span class="math inline">\(\pm\)</span> 2.10%)<br> Hypoglycemia: (7.73 <span class="math inline">\(\pm\)</span> 1.96%)</td>
-<td style="text-align: right;">3 days</td>
+<td style="text-align: left;"> CVD risk factor Z-score</td>
+<td style="text-align: left;"> GSM: Gray-scale median of the carotid arteries</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
+<td style="text-align: left;"> HRV: Heart rate variability</td>
+<td style="text-align: left;"> Carotid plaque</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Bezerra, 2023</td>
-<td style="text-align: left;">Cross-sectional</td>
-<td style="text-align: left;">T1D</td>
-<td style="text-align: center;">161</td>
-<td style="text-align: left;">37.4 <span class="math inline">\(\pm\)</span> 13.4</td>
-<td style="text-align: left;">17.7 <span class="math inline">\(\pm\)</span> 10.6</td>
-<td style="text-align: left;">(7.5 <span class="math inline">\(\pm\)</span> 1.1%)</td>
-<td style="text-align: right;">14 days</td>
+<td style="text-align: left;"> Left ventricular diastolic dysfunction</td>
+<td style="text-align: left;"> Coronary artery calcification</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
+<td style="text-align: left;"> Left ventricular mass index</td>
+<td style="text-align: left;"> In coronary plaques:</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">De Meulemeester, 2024<span class="math inline">\(^\dagger\)</span></td>
-<td style="text-align: left;">Cross-sectional</td>
-<td style="text-align: left;">T1D</td>
-<td style="text-align: center;">808</td>
-<td style="text-align: left;">44.8 <span class="math inline">\(\pm\)</span> 15.2</td>
-<td style="text-align: left;">23.1 <span class="math inline">\(\pm\)</span> 13.6</td>
-<td style="text-align: left;">63 <span class="math inline">\(\pm\)</span> 13 mmol/mol (7.9 <span class="math inline">\(\pm\)</span> 1.2%)</td>
-<td style="text-align: right;">2 weeks</td>
+<td style="text-align: left;"> Average pulse</td>
+<td style="text-align: left;">  Lipid volume (%)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
+<td style="text-align: left;"> Pulse blood pressure variability</td>
+<td style="text-align: left;">  Fibrotic volume (%)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Deng, 2023</td>
-<td style="text-align: left;">Cross-sectional</td>
-<td style="text-align: left;">T2D</td>
-<td style="text-align: center;">860</td>
-<td style="text-align: left;">HP 1 carriers: 53.5 <span class="math inline">\(\pm\)</span> 13.3<br> HP 2-2: 51.7 <span class="math inline">\(\pm\)</span> 14.6</td>
-<td style="text-align: left;">HP 1 carriers: 8.6 <span class="math inline">\(\pm\)</span> 6.4<br> HP 2-2: 8.6 <span class="math inline">\(\pm\)</span> 6.7</td>
-<td style="text-align: left;">HP1 carriers: 73.0 <span class="math inline">\(\pm\)</span> 24.0 mmol/mol (8.8 <span class="math inline">\(\pm\)</span> 2.2%)<br> Hp2-2: 72.0 <span class="math inline">\(\pm\)</span> 23.0 mmol/mol (8.7 <span class="math inline">\(\pm\)</span> 2.1)</td>
-<td style="text-align: right;">3 days</td>
+<td style="text-align: left;"> Blood pressure</td>
+<td style="text-align: left;">  Necrotic volume (%)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
+<td style="text-align: left;"> SBP: Systolic blood pressure</td>
+<td style="text-align: left;">  Calcification (%)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">El Malahi, 2022</td>
-<td style="text-align: left;">Cross-sectional</td>
-<td style="text-align: left;">T1D starting on sensor-augmented pump therapy</td>
-<td style="text-align: center;">515</td>
-<td style="text-align: left;">Mean <span class="math inline">\(\pm\)</span> SD [years]:<br>42.2 <span class="math inline">\(\pm\)</span> 12.5</td>
-<td style="text-align: left;">22.3 <span class="math inline">\(\pm\)</span> 11.6</td>
-<td style="text-align: left;">60 <span class="math inline">\(\pm\)</span> 9.8 mmol/mol (7.6 <span class="math inline">\(\pm\)</span> 0.9 %)</td>
-<td style="text-align: right;">2 weeks</td>
+<td style="text-align: left;"> DBP: Diastolic blood pressure</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;"> (Average) DBP (variability)</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Guo, 2021</td>
-<td style="text-align: left;">Cross-sectional</td>
-<td style="text-align: left;">T1D or T2D with atrial fibrillation<br> With Stroke, n = 48<br> Without Stroke, n = 462</td>
-<td style="text-align: center;">510</td>
-<td style="text-align: left;">Stroke: 70.3 <span class="math inline">\(\pm\)</span> 12.1<br>No stroke: 68.1 <span class="math inline">\(\pm\)</span> 9.4</td>
-<td style="text-align: left;">nr</td>
-<td style="text-align: left;">No Stroke: 7.4 <span class="math inline">\(\pm\)</span> 2.1<br> Stroke: 8.2 <span class="math inline">\(\pm\)</span> 1.7</td>
-<td style="text-align: right;">72 hour</td>
+<td style="text-align: left;">Arterial lumen</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">Stenosis of the carotid artery</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Li, 2020</td>
-<td style="text-align: left;">Cross-sectional</td>
-<td style="text-align: left;">T2D with LEAD, n = 179<br> T2D without LEAD, n = 157</td>
-<td style="text-align: center;">336</td>
-<td style="text-align: left;">Without LEAD: 55.94 <span class="math inline">\(\pm\)</span> 12.45<br> With LEAD: 65.56 <span class="math inline">\(\pm\)</span> 11.99</td>
-<td style="text-align: left;">Without LEAD: 6.92 <span class="math inline">\(\pm\)</span> 3.54<br> With LEAD: 10.32 <span class="math inline">\(\pm\)</span> 4.14</td>
-<td style="text-align: left;">Without LEAD: 7.85 <span class="math inline">\(\pm\)</span> 1.41%<br> With LEAD: 8.97 <span class="math inline">\(\pm\)</span> 1.63%</td>
-<td style="text-align: right;">72 hours</td>
+<td style="text-align: left;">Baseline brachial artery ID</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">Stenosis and/or occlusion</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Magri, 2018<span class="math inline">\(^\dagger\)</span></td>
-<td style="text-align: left;">Cross-sectional</td>
-<td style="text-align: left;">T2D</td>
-<td style="text-align: center;">121</td>
-<td style="text-align: left;">64 [57, 68]</td>
-<td style="text-align: left;">3 [2, 5]</td>
-<td style="text-align: left;">median: 45 mmol/mol (6.8%)</td>
-<td style="text-align: right;">72 hours</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Mi, 2012</td>
-<td style="text-align: left;">Cross-sectional</td>
-<td style="text-align: left;">T2D with chest pain<br> Without CAD, n = 202<br> With CAD, n = 84</td>
-<td style="text-align: center;">286</td>
-<td style="text-align: left;">Without CAD: 62.8 <span class="math inline">\(\pm\)</span> 8.7<br> With CAD: 66.6 <span class="math inline">\(\pm\)</span> 9.2</td>
-<td style="text-align: left;">nr</td>
-<td style="text-align: left;">Non-CAD: 7.51 <span class="math inline">\(\pm\)</span> 0.80%<br> CAD: 7.75 <span class="math inline">\(\pm\)</span> 0.92%</td>
-<td style="text-align: right;">72 hours (Only intermediate 48 hours were used)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Sheng, 2023</td>
-<td style="text-align: left;">Cross-sectional</td>
-<td style="text-align: left;">T2D, hospitalized</td>
-<td style="text-align: center;">545</td>
-<td style="text-align: left;">mean age of (61.22 <span class="math inline">\(\pm\)</span> 11.21) years</td>
-<td style="text-align: left;">nr</td>
-<td style="text-align: left;">8.51 <span class="math inline">\(\pm\)</span> 1.85%</td>
-<td style="text-align: right;">7-14 days</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Su, 2011</td>
-<td style="text-align: left;">Cross-sectional</td>
-<td style="text-align: left;">T2D with chest pain<br> Without CAD, n = 92<br> With CAD, n = 252</td>
-<td style="text-align: center;">344</td>
-<td style="text-align: left;">Without CAD: 61 <span class="math inline">\(\pm\)</span> 9<br> With CAD: 65 <span class="math inline">\(\pm\)</span> 9</td>
-<td style="text-align: left;">Without CAD: 4.8 <span class="math inline">\(\pm\)</span> 5.7<br> With CAD: 6.5 <span class="math inline">\(\pm\)</span> 6.4</td>
-<td style="text-align: left;">non-CAD: 7.5 <span class="math inline">\(\pm\)</span> 1.4%<br> CAD: 7.6 <span class="math inline">\(\pm\)</span> 1.5%</td>
-<td style="text-align: right;">72 hours (only 48 hours used)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Watanabe, 2017</td>
-<td style="text-align: left;">Cross-sectional</td>
-<td style="text-align: left;">Prediabetes, hospitalized</td>
-<td style="text-align: center;">28</td>
-<td style="text-align: left;">64.3 <span class="math inline">\(\pm\)</span> 12.8</td>
-<td style="text-align: left;">nr</td>
-<td style="text-align: left;">5.41 <span class="math inline">\(\pm\)</span> 0.35%</td>
-<td style="text-align: right;">72 hours (Only used the middle 48 hours)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Zhang, 2013</td>
-<td style="text-align: left;">Cross-sectional</td>
-<td style="text-align: left;">T2D with cardiovascular complications<br> Group A: healthy individuals<br> Group B: T2D without cardiovascular complications<br> Group C: T2D with cardiovascular complications</td>
-<td style="text-align: center;">92</td>
-<td style="text-align: left;">Group A: 56.3 <span class="math inline">\(\pm\)</span> 6.1<br> Group B: 56.1 <span class="math inline">\(\pm\)</span> 6.6<br> Group C: 61.7 <span class="math inline">\(\pm\)</span> 7.2</td>
-<td style="text-align: left;">nr</td>
-<td style="text-align: left;">Group A: 5.3 <span class="math inline">\(\pm\)</span> 0.3%<br> Group B: 6.6 <span class="math inline">\(\pm\)</span> 1.2%<br> Group C: 7.5 <span class="math inline">\(\pm\)</span> 1.4%</td>
-<td style="text-align: right;">72 hours</td>
 </tr>
 </tbody>
 </table>
 <p style="font-size:75%">
-<span class="math inline">\(^\dagger\)</span> This study appears both in the clinical and subclinical disease outcome tables due to investigating multiple CVD outcomes.
+The table presents the clinical and subclinical outcomes identified in the included studies and the outcome groupings used in Study III. Non-indented clinical outcomes were retained as review terms, whereas indented outcomes were reported in the literature but not used as separate review categories. Parentheses in the subclinical column indicate that the outcome was defined both with and without the additional specification.
 </p>
-<p><em>Note:</em> Age is reported in years either as an interval, mean <span class="math inline">\(\pm\)</span> SD, or median (IQR). Diabetes duration values originally reported in months were converted to years for consistency (months <span class="math inline">\(\div\)</span> 12). <br> <em>Abbreviations:</em> CGM, continuous glucose monitoring; FU, follow-up; T1D, type 1 diabetes; T2D, type 2 diabetes; CAD, coronary artery disease; hypo, hypoglycemia; LEAD, lower extremity arterial disease; IQR, interquartile range; nr, not reported.</p>
-<p></p>
 </div>
 </figure>
 </div>
-</div>
-</div>
-<ul class="task-list">
-<li><label><input type="checkbox">I need to add a total row of summarized values in <a href="#tbl-study1-clinical-overview" class="quarto-xref">Table&nbsp;<span>4.4</span></a></label></li>
-<li><label><input type="checkbox">I need to add an other column in <a href="#tbl-study1-clinical-overview" class="quarto-xref">Table&nbsp;<span>4.4</span></a> for other CGM derived metrics</label></li>
-</ul>
-<p>An overview of the most frequently used CGM-derived metrics stratified based on clinical and subclinical cardiovascular outcomes are shown in <a href="#tbl-study1-clinical-overview" class="quarto-xref">Table&nbsp;<span>4.4</span></a>. Outcomes related to subclinical cardiovascular outcomes were more frequently studied (59 studies) compared to clinical outcomes (26 studies) and studies were predominantly done among people with T2D. Among clinical cardiovascular outcomes, coronary artery disease was examined most frequently (6 studies), followed by macrovascular complications (5 studies) and the Gensini score (4 studies) and for subclinical cardiovascular outcomes, particularly arterial wall thickness were frequently investigated (19 studies), arterial stiffness (12 studies), cardiac and pulse-related measures (10 studies), and flow resistance (9 studies).</p>
-<p>TIR was the most frequently reported CGM-derived metric across most arterial-stiffness outcomes, followed by MAGE, MBG, SD, and CV. MAGE was reported most frequently in studies evaluating coronary artery disease, Gensini score, and Syntax score. By contrast, relatively few CGM-derived metrics were reported for mortality, major adverse cardiovascular events, stroke, peripheral artery disease, and lower-extremity arterial disease.</p>
-<p>The outcomes for the 53 studies can be found in <a href="app1-supplementary.html" class="quarto-xref"><span>Appendix D</span></a></p>
-<div class="landscape">
-<div class="small">
-<div id="tbl-study1-clinical-overview" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-study1-clinical-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.4: Overview of the diabetes populations and the most frequently reported CGM-derived metrics, stratified by cardiovascular outcome.
-</figcaption>
-<div aria-describedby="tbl-study1-clinical-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-
-</div>
-</figure>
-</div>
-</div>
-</div>
-<div id="tbl-adjustments" class="quarto-float quarto-figure quarto-figure-center anchored">
+</section>
+<section id="clinical-association-studies" class="level3" data-number="4.1.6">
+<h3 data-number="4.1.6" class="anchored" data-anchor-id="clinical-association-studies"><span class="header-section-number">4.1.6</span> Clinical Association Studies</h3>
+<p>Most studies focused exclusively on subclinical cardiovascular outcomes (37 of 53 studies, 70%), whereas 13 studies (25%) investigated only clinical cardiovascular outcomes and three studies (6%) included both clinical and subclinical outcomes. An overview of all the studies is provided in <a href="app1-supplementary.html" class="quarto-xref"><span>Appendix D</span></a>.</p>
+<p>Adjustment for potential confounders varied considerably across studies. Demographic factors were most frequently included (n = 36), followed by medical history and biochemical factors (n = 32 each), anthropometric factors (n = 29), and physiological factors (n = 24). Lifestyle factors were included in 20 studies, whereas adjustment for medication, CGM-derived metrics, and CVD markers was less common. Adjustment was not applicable in 12 studies, and six studies did not report whether or how the analyses were adjusted (<a href="#tbl-adjustments" class="quarto-xref">Table&nbsp;<span>4.3</span></a>). Because studies could adjust for variables from several domains, the categories are not mutually exclusive.</p>
+<div id="tbl-adjustments" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-pos="H">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-adjustments-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.5: Overview of adjustments used in the association studies
+Table&nbsp;4.3: Overview of adjustments used in the association studies.
 </figcaption>
 <div aria-describedby="tbl-adjustments-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Adjustment domain</th>
+<th style="text-align: right;">Clinical</th>
+<th style="text-align: right;">Subclinical</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Demographic</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Anthropometric</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">29</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Lifestyle</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Medical history</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Physiological</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Biochemical</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Medication</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CGM/GV</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CVD marker</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Not applicable</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Not reported</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+</tr>
+</tbody>
+</table>
+<p style="font-size:75%">
+A study could contribute to more than one adjustment domain. An elaboration of the adjustment domains can be found in <a href="app1-supplementary.html" class="quarto-xref"><span>Appendix E</span></a>.
+</p>
 </div>
 </figure>
 </div>
+<p>An overview of the most frequently used CGM-derived metrics stratified based on clinical and subclinical cardiovascular outcomes are shown in <a href="#tbl-CVD-CGM" class="quarto-xref">Table&nbsp;<span>4.4</span></a>. Outcomes related to subclinical cardiovascular outcomes were more frequently studied (59 studies) compared to clinical outcomes (26 studies) and studies were predominantly done among people with T2D. Among clinical cardiovascular outcomes, coronary artery disease was examined most frequently (6 studies), followed by macrovascular complications (5 studies) and the Gensini score (4 studies) and for subclinical cardiovascular outcomes, particularly arterial wall thickness were frequently investigated (19 studies), arterial stiffness (12 studies), cardiac and pulse-related measures (10 studies), and flow resistance (9 studies).</p>
+<p>TIR was the most commonly reported CGM-derived metric across most arterial-stiffness outcomes, followed by MAGE, MBG, SD, and CV. MAGE was reported most frequently in studies evaluating coronary artery disease, Gensini score, and Syntax score. By contrast, relatively few CGM-derived metrics were reported for mortality, major adverse cardiovascular events, stroke, peripheral artery disease, and lower-extremity arterial disease. A more detailed extraction table of the CVD outcomes for the 53 studies can be found in <a href="app1-supplementary.html" class="quarto-xref"><span>Appendix D</span></a>.</p>
+<div class="landscape">
+<div class="small">
+<div id="tbl-CVD-CGM" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-CVD-CGM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.4: Overview of the diabetes populations and the most frequently reported CGM-derived metrics, stratified by cardiovascular outcome.
+</figcaption>
+<div aria-describedby="tbl-CVD-CGM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 13%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 12%">
+<col style="width: 22%">
+<col style="width: 3%">
+<col style="width: 4%">
+<col style="width: 3%">
+<col style="width: 2%">
+<col style="width: 2%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Cardiovascular outcome</th>
+<th style="text-align: right;">Number of studies</th>
+<th style="text-align: right;">T1D</th>
+<th style="text-align: right;">T2D</th>
+<th style="text-align: right;">Mixed (T1D/T2D)</th>
+<th style="text-align: right;">Prediabetes or impaired glucose</th>
+<th style="text-align: right;">TIR</th>
+<th style="text-align: right;">MAGE</th>
+<th style="text-align: right;">MBG</th>
+<th style="text-align: right;">SD</th>
+<th style="text-align: right;">CV</th>
+<th style="text-align: right;">TBR</th>
+<th style="text-align: right;">TAR</th>
+<th style="text-align: right;">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Clinical</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Macrovascular mortality</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Macrovascular complications</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Major adverse cardiovascular events</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Coronary artery disease</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gensini score</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SYNTAX score</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Stroke</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Peripheral artery disease</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Lower-extremity arterial disease</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sum of clinical studies</strong></td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;"><strong>10</strong></td>
+<td style="text-align: right;"><strong>7</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+<td style="text-align: right;"><strong>2</strong></td>
+<td style="text-align: right;"><strong>4</strong></td>
+<td style="text-align: right;"><strong>2</strong></td>
+<td style="text-align: right;"><strong>1</strong></td>
+<td style="text-align: right;"><strong>20</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Subclinical</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arterial stiffness</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Flow resistance</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arterial wall thickness</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Arterial wall composition</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cardiac- and pulse-related measures</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Arterial lumen</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sum of subclinical studies</strong></td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;"><strong>27</strong></td>
+<td style="text-align: right;"><strong>24</strong></td>
+<td style="text-align: right;"><strong>35</strong></td>
+<td style="text-align: right;"><strong>25</strong></td>
+<td style="text-align: right;"><strong>25</strong></td>
+<td style="text-align: right;"><strong>20</strong></td>
+<td style="text-align: right;"><strong>19</strong></td>
+<td style="text-align: right;"><strong>39</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Number of studies</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Any clinical CVD</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Any subclinical CVD</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Both</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sum of all studies</strong></td>
+<td style="text-align: right;"><strong>53</strong></td>
+<td style="text-align: right;"><strong>17</strong></td>
+<td style="text-align: right;"><strong>31</strong></td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td style="text-align: right;"><strong>4</strong></td>
+<td style="text-align: right;"><strong>23</strong></td>
+<td style="text-align: right;"><strong>22</strong></td>
+<td style="text-align: right;"><strong>21</strong></td>
+<td style="text-align: right;"><strong>19</strong></td>
+<td style="text-align: right;"><strong>19</strong></td>
+<td style="text-align: right;"><strong>16</strong></td>
+<td style="text-align: right;"><strong>15</strong></td>
+<td style="text-align: right;"><strong>40</strong></td>
+</tr>
+</tbody>
+</table>
+<p style="font-size:75%">
+Cardiovascular outcomes were grouped into clinically meaningful categories. A detailed description of the outcome categories is provided in <a href="app1-supplementary.html" class="quarto-xref"><span>Appendix D</span></a>. Values represent the number of included studies evaluating each CGM-derived metric for the specified cardiovascular outcome. A study could contribute to more than one cell if multiple CGM-derived metrics were investigated.<br>
+<em>Abbreviations:</em> TIR, time in range; MAGE, mean amplitude of glycemic excursions; MBG, mean blood glucose; SD, standard deviation; CV, coefficient of variation; TBR, time below range; TAR, time above range
+</p>
+</div>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
-<section id="baseline-characteristics-tables-of-the-datasets" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="baseline-characteristics-tables-of-the-datasets"><span class="header-section-number">4.2</span> Baseline Characteristics Tables of the Datasets</h2>
-<p>The CANCAN dataset presented below was used in Study II (<a href="#tbl-baseline-cancan" class="quarto-xref">Table&nbsp;<span>4.6</span></a>). The total number of included participants were 159 and 67 (42%) had elevated NT-proBNP values. Participants with elevated NT-proBNP tended to be older, have a longer duration of diabetes, and more frequently have cardiovascular disease. They also tended to have lower BMI and lower LDL and total cholesterol concentrations, while exhibiting modestly better overall glycaemic control but slightly higher glycaemic variability.</p>
-<div id="tbl-baseline-cancan" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[40,20,20,20]">
+<section id="study-ii-and-iii-baseline-characteristics-tables-of-the-datasets" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="study-ii-and-iii-baseline-characteristics-tables-of-the-datasets"><span class="header-section-number">4.2</span> Study II and III: Baseline Characteristics Tables of the Datasets</h2>
+<p>The CANCAN dataset presented below was used in Study II (<a href="#tbl-baseline-cancan" class="quarto-xref">Table&nbsp;<span>4.5</span></a>). The total number of included participants were 159 and 67 (42%) had elevated NT-proBNP values. Participants with elevated NT-proBNP tended to be older, have a longer duration of diabetes, and more frequently have cardiovascular disease. They also tended to have lower BMI and lower LDL and total cholesterol concentrations, while exhibiting modestly better overall glycemic control however with slightly higher glycemic variability.</p>
+<div id="tbl-baseline-cancan" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-pos="H" data-tbl-colwidths="[40,20,20,20]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-baseline-cancan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.6: Baseline table for CANCAN data.
+Table&nbsp;4.5: Baseline table for CANCAN data.
 </figcaption>
 <div aria-describedby="tbl-baseline-cancan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -971,7 +1222,7 @@ Table&nbsp;4.6: Baseline table for CANCAN data.
 <tr class="header">
 <th style="text-align: left;">Variable</th>
 <th style="text-align: right;">Total</th>
-<th style="text-align: right;">NT-proBNP $≤$125 pg/mL</th>
+<th style="text-align: right;">NT-proBNP <span class="math inline">\(\leq 125\)</span> pg/mL</th>
 <th style="text-align: right;">NT-proBNP &gt;125 pg/mL</th>
 </tr>
 </thead>
@@ -1134,11 +1385,11 @@ Categorical values are given by number (percentage), and numerical values are gi
 </div>
 </figure>
 </div>
-<p>The T1DX dataset presented below was used in Study II and Study III (<a href="#tbl-baseline-t1dx" class="quarto-xref">Table&nbsp;<span>4.7</span></a>). A total of 205 participants were included, of whom 101 (49%) were White. Compared with Black participants, White participants tended to have lower HbA1c levels (63 mmol/mol vs.&nbsp;72 mmol/mol ) and a higher proportion of children (49% vs.&nbsp;32%). Females constituted the majority of both racial groups (46% and 40%).</p>
-<div id="tbl-baseline-t1dx" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[40,20,20,20]">
+<p>The T1DX dataset presented below was used in Study II and Study III (<a href="#tbl-baseline-t1dx" class="quarto-xref">Table&nbsp;<span>4.6</span></a>). A total of 205 participants were included, of whom 101 (49%) were White. Compared with Black participants, White participants tended to have lower HbA1c levels (63 mmol/mol vs.&nbsp;72 mmol/mol ) and a higher proportion of children (49% vs.&nbsp;32%). Females constituted the majority of both racial groups (54% and 60%).</p>
+<div id="tbl-baseline-t1dx" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-pos="H" data-tbl-colwidths="[40,20,20,20]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-baseline-t1dx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.7: Baseline table for T1DX data.
+Table&nbsp;4.6: Baseline table for T1DX data.
 </figcaption>
 <div aria-describedby="tbl-baseline-t1dx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1274,89 +1525,418 @@ Categorical values are given by number (percentage), and numerical values are gi
 </figure>
 </div>
 </section>
-<section id="foundation-model-embedding-analysis" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="foundation-model-embedding-analysis"><span class="header-section-number">4.3</span> Foundation Model Embedding Analysis</h2>
-<section id="cosine-distances" class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="cosine-distances"><span class="header-section-number">4.3.1</span> Cosine Distances</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Add a very brief text to the figures<br>
-</label></li>
-<li><label><input type="checkbox">fig-cosim_MAGE needs to be changed, the change in resolution messed up the figures + colors needs to be checked to make sure they are in the right order</label></li>
-<li><label><input type="checkbox">AAI suggests to trim figure text, needs to allocate time to think about that</label></li>
-</ul>
-<!-- In both the CANCAN and T1DX cohorts, within-participant pairs had lower median cosine distances than between-participant pairs (CANCAN: 0.058 [IQR: 0.040–0.084] vs. 0.117 [IQR: 0.076–0.182]; T1DX: 0.064 [IQR: 0.047–0.090] vs. 0.082 [IQR: 0.057–0.122]) (@fig-cosim1). -->
-<div id="fig-cosim1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-scap="Within- and between-participant comparison results">
+<section id="study-ii-foundation-model-embedding-analysis" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="study-ii-foundation-model-embedding-analysis"><span class="header-section-number">4.3</span> Study II: Foundation Model Embedding Analysis</h2>
+<p>The following section contains UMAP visualizations and cosine distance analyzes results including kernel density plots and the median and interquartile ranges of the distances.</p>
+<section id="umaps-and-glycemic-control" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="umaps-and-glycemic-control"><span class="header-section-number">4.3.1</span> UMAPs and Glycemic Control</h3>
+<p>UMAP projections of the learned CGM representations showed one main cluster in both datasets (<a href="#fig-cosim_umap" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>). When colored by glycemic metrics, the projections showed smooth gradients for TIR and HbA1c, indicating that the learned representations captured variation in glycemic control. The gradient was less distinct for MAGE, particularly in the T1DX cohort, where all participants except one had MAGE values above 3.9 mmol/L.</p>
+<div id="fig-cosim_umap" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" data-fig-scap="UMAP projections of CGM embeddings by glycemic control">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cosim_umap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_umaps.png" width="100%"><img src="figures/4_results_fig/study_2_co_sim_umaps.png" class="img-fluid figure-img"></a></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim_umap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.3: Uniform manifold approximation and projection for glycemic metrics.
+</figcaption>
+</figure>
+</div>
+<p>Correlations between the UMAP dimensions and glycemic metrics supported these visual patterns (<a href="#tbl-umaps_gv" class="quarto-xref">Table&nbsp;<span>4.7</span></a>). In the CANCAN dataset, UMAP dimensions were strongly linearly correlated with TIR (<span class="math inline">\(r\)</span>:0.71 and 0.81, p&lt;0.001) and moderately to strongly correlated with HbA1c and MAGE. In the T1DX dataset, UMAP dimensions were moderately correlated with TIR, HbA1c, and MAGE (Absolute range, <span class="math inline">\(r\)</span>: 0.30 to 0.59, p&lt;0.001).</p>
+<div id="tbl-umaps_gv" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-pos="H">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-umaps_gv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.7: Pearson correlation between UMAP dimensions and glycemic control measures.
+</figcaption>
+<div aria-describedby="tbl-umaps_gv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 19%">
+<col style="width: 15%">
+<col style="width: 22%">
+<col style="width: 13%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">UMAP dimension</th>
+<th style="text-align: right;">CANCAN: <span class="math inline">\(r\)</span></th>
+<th style="text-align: right;">CANCAN: <span class="math inline">\(p\)</span>-value</th>
+<th style="text-align: right;">T1DX: <span class="math inline">\(r\)</span></th>
+<th style="text-align: right;">T1DX: <span class="math inline">\(p\)</span>-value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>HbA1c</strong></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.48</td>
+<td style="text-align: right;">&lt;0.001</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-0.65</td>
+<td style="text-align: right;">&lt;0.001</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>TIR</strong></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.71</td>
+<td style="text-align: right;">&lt;0.001</td>
+<td style="text-align: right;">-0.39</td>
+<td style="text-align: right;">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.81</td>
+<td style="text-align: right;">&lt;0.001</td>
+<td style="text-align: right;">-0.65</td>
+<td style="text-align: right;">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>MAGE</strong></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.57</td>
+<td style="text-align: right;">&lt;0.001</td>
+<td style="text-align: right;">0.37</td>
+<td style="text-align: right;">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-0.49</td>
+<td style="text-align: right;">&lt;0.001</td>
+<td style="text-align: right;">0.59</td>
+<td style="text-align: right;">&lt;0.001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="cosine-distances" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="cosine-distances"><span class="header-section-number">4.3.2</span> Cosine Distances</h3>
+<p>Within-participant pairs had lower median cosine distances than between-participant pairs in both CANCAN and T1DX, indicating greater similarity between CGM representations from the same participant (<a href="#fig-cosim1" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>). This pattern was observed in CANCAN (0.058 [IQR: 0.040–0.084] vs.&nbsp;0.117 [IQR: 0.076–0.182]) and T1DX (0.064 [IQR: 0.047–0.090] vs.&nbsp;0.082 [IQR: 0.057–0.122]) (<a href="#tbl-cosim1" class="quarto-xref">Table&nbsp;<span>4.8</span></a>).</p>
+<div id="fig-cosim1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-scap="Cosine distance distributions for within- and between-participant pairs.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-cosim1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim1.png"><img src="figures/4_results_fig/study_2_co_sim1.png" class="img-fluid figure-img"></a></p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.3: Kernel density plots of cosine distances for within- and between-participants in the CANCAN dataset (A) and the T1DX dataset (B). With the median shown as a vertical dashed line and the interquartile range shown as a shaded area around the median.<!--  {style="font-size: 85%; opacity: 0.85;"} -->
+Figure&nbsp;4.4: Cosine distance distributions for within- and between-participant pairs in CANCAN (A) and T1DX (B). Dashed lines show medians; shaded bands show interquartile ranges.
 </figcaption>
+</figure>
+</div>
+<div id="tbl-cosim1" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-pos="H">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cosim1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.8: Cosine distances for within- and between-participant pairs.
+</figcaption>
+<div aria-describedby="tbl-cosim1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Panel</th>
+<th style="text-align: left;">Group</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: left;">Median [IQR]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>CANCAN</strong></td>
+<td style="text-align: left;">Within-participant pairs</td>
+<td style="text-align: right;">9,459</td>
+<td style="text-align: left;">0.058 [0.040, 0.084]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Between-participant pairs</td>
+<td style="text-align: right;">1,529,676</td>
+<td style="text-align: left;">0.117 [0.076, 0.182]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>T1DX</strong></td>
+<td style="text-align: left;">Within-participant pairs</td>
+<td style="text-align: right;">351,598</td>
+<td style="text-align: left;">0.064 [0.047, 0.090]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Between-participant pairs</td>
+<td style="text-align: right;">68,134,358</td>
+<td style="text-align: left;">0.082 [0.057, 0.122]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<section id="cosine-distances-and-glycemic-targets" class="level4" data-number="4.3.2.1">
+<h4 data-number="4.3.2.1" class="anchored" data-anchor-id="cosine-distances-and-glycemic-targets"><span class="header-section-number">4.3.2.1</span> Cosine Distances and Glycemic Targets</h4>
+<p>When stratified by clinical thresholds participants who met glycemic targets, defined as HbA1c &lt;53 mmol/mol, TIR <span class="math inline">\(\geq 70\%\)</span> or MAGE <span class="math inline">\(\leq 3.9\)</span> mmol/L, tended to have lower and more narrowly distributed cosine distances (<a href="#fig-cosim_cancan" class="quarto-xref">Figure&nbsp;<span>4.5</span></a> and <a href="#fig-cosim_t1dx" class="quarto-xref">Figure&nbsp;<span>4.6</span></a>). For between-participant comparisons, distances among individuals within target ranges shifted downward and partly overlapped with the range observed within participants. The largest distances were observed between participants from opposing TIR groups (<a href="#tbl-cosim_cancan" class="quarto-xref">Table&nbsp;<span>4.9</span></a> and <a href="#tbl-cosim_t1dx" class="quarto-xref">Table&nbsp;<span>4.10</span></a>).</p>
+<div id="fig-cosim_cancan" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" data-fig-scap="Cosine distance distributions and glycemic targets for CANCAN.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cosim_cancan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_cancan_gv.png" width="100%"><img src="figures/4_results_fig/study_2_co_sim_cancan_gv.png" class="img-fluid figure-img"></a></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim_cancan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.5: Cosine distance distributions for within- and between-participant pairs in CANCAN across glycemic targets (HbA1c &lt;53 mmol/mol, TIR <span class="math inline">\(\geq 70\%\)</span> or MAGE <span class="math inline">\(\leq 3.9\)</span> mmol/L). Dashed lines show medians; shaded bands show interquartile ranges.
+</figcaption>
+</figure>
+</div>
+<div id="fig-cosim_t1dx" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" data-fig-scap="Cosine distance distributions and glycemic targets for T1DX.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cosim_t1dx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_t1dx_gv.png" width="100%"><img src="figures/4_results_fig/study_2_co_sim_t1dx_gv.png" class="img-fluid figure-img"></a></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim_t1dx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.6: Cosine distance distributions for within- and between-participant pairs in T1DX across glycemic targets (HbA1c &lt;53 mmol/mol, TIR <span class="math inline">\(\geq 70\%\)</span> or MAGE <span class="math inline">\(\leq 3.9\)</span> mmol/L).. Dashed lines show medians; shaded bands show interquartile ranges.
+</figcaption>
+</figure>
+</div>
+<div id="tbl-cosim_cancan" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-pos="H">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cosim_cancan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.9: Cosine distances stratified on glycemic control in the CANCAN data.
+</figcaption>
+<div aria-describedby="tbl-cosim_cancan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 13%">
+<col style="width: 26%">
+<col style="width: 14%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Group</th>
+<th style="text-align: right;">Within: n</th>
+<th style="text-align: left;">Within: median [IQR]</th>
+<th style="text-align: right;">Between: n</th>
+<th style="text-align: left;">Between: median [IQR]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>HbA1c</strong></td>
+<td style="text-align: left;">Low HbA1c</td>
+<td style="text-align: right;">1,707</td>
+<td style="text-align: left;">0.051 [0.037, 0.072]</td>
+<td style="text-align: right;">46,809</td>
+<td style="text-align: left;">0.085 [0.058, 0.135]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">High HbA1c</td>
+<td style="text-align: right;">7,752</td>
+<td style="text-align: left;">0.060 [0.041, 0.086]</td>
+<td style="text-align: right;">1,032,651</td>
+<td style="text-align: left;">0.115 [0.076, 0.181]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Across HbA1c groups</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: right;">450,216</td>
+<td style="text-align: left;">0.124 [0.079, 0.186]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>TIR</strong></td>
+<td style="text-align: left;">High TIR</td>
+<td style="text-align: right;">3,509</td>
+<td style="text-align: left;">0.054 [0.038, 0.073]</td>
+<td style="text-align: right;">206,119</td>
+<td style="text-align: left;">0.076 [0.056, 0.104]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Low TIR</td>
+<td style="text-align: right;">5,950</td>
+<td style="text-align: left;">0.062 [0.041, 0.091]</td>
+<td style="text-align: right;">606,221</td>
+<td style="text-align: left;">0.113 [0.074, 0.176]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Across TIR groups</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: right;">717,336</td>
+<td style="text-align: left;">0.141 [0.090, 0.203]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>MAGE</strong></td>
+<td style="text-align: left;">High MAGE</td>
+<td style="text-align: right;">8,750</td>
+<td style="text-align: left;">0.059 [0.041, 0.086]</td>
+<td style="text-align: right;">1,310,750</td>
+<td style="text-align: left;">0.114 [0.075, 0.178]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Low MAGE</td>
+<td style="text-align: right;">709</td>
+<td style="text-align: left;">0.044 [0.031, 0.062]</td>
+<td style="text-align: right;">7,676</td>
+<td style="text-align: left;">0.085 [0.056, 0.137]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Across MAGE groups</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: right;">211,250</td>
+<td style="text-align: left;">0.134 [0.083, 0.198]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-cosim_t1dx" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-pos="H">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cosim_t1dx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.10: Cosine distances stratified on glycemic control in the T1DX data.
+</figcaption>
+<div aria-describedby="tbl-cosim_t1dx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 13%">
+<col style="width: 26%">
+<col style="width: 14%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Group</th>
+<th style="text-align: right;">Within: n</th>
+<th style="text-align: left;">Within: median [IQR]</th>
+<th style="text-align: right;">Between: n</th>
+<th style="text-align: left;">Between: median [IQR]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>HbA1c</strong></td>
+<td style="text-align: left;">Low HbA1c</td>
+<td style="text-align: right;">56,543</td>
+<td style="text-align: left;">0.057 [0.042, 0.077]</td>
+<td style="text-align: right;">1,489,618</td>
+<td style="text-align: left;">0.066 [0.048, 0.089]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">High HbA1c</td>
+<td style="text-align: right;">295,055</td>
+<td style="text-align: left;">0.066 [0.048, 0.092]</td>
+<td style="text-align: right;">49,151,485</td>
+<td style="text-align: left;">0.083 [0.058, 0.124]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Across HbA1c groups</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: right;">17,493,255</td>
+<td style="text-align: left;">0.082 [0.057, 0.121]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>TIR</strong></td>
+<td style="text-align: left;">High TIR</td>
+<td style="text-align: right;">42,716</td>
+<td style="text-align: left;">0.056 [0.041, 0.076]</td>
+<td style="text-align: right;">735,412</td>
+<td style="text-align: left;">0.063 [0.047, 0.085]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Low TIR</td>
+<td style="text-align: right;">308,882</td>
+<td style="text-align: left;">0.066 [0.047, 0.092]</td>
+<td style="text-align: right;">54,349,858</td>
+<td style="text-align: left;">0.081 [0.057, 0.121]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Across TIR groups</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: right;">13,049,088</td>
+<td style="text-align: left;">0.087 [0.060, 0.129]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>MAGE</strong></td>
+<td style="text-align: left;">High MAGE</td>
+<td style="text-align: right;">348,358</td>
+<td style="text-align: left;">0.064 [0.047, 0.090]</td>
+<td style="text-align: right;">67,192,895</td>
+<td style="text-align: left;">0.082 [0.057, 0.122]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Low MAGE</td>
+<td style="text-align: right;">3,240</td>
+<td style="text-align: left;">0.048 [0.037, 0.064]</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Across MAGE groups</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: right;">941,463</td>
+<td style="text-align: left;">0.093 [0.065, 0.135]</td>
+</tr>
+</tbody>
+</table>
+</div>
 </figure>
 </div>
 </section>
-<section id="embeddings-and-glycemic-control" class="level3" data-number="4.3.2">
-<h3 data-number="4.3.2" class="anchored" data-anchor-id="embeddings-and-glycemic-control"><span class="header-section-number">4.3.2</span> Embeddings and Glycemic Control</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Need to add some text in this section</label></li>
-</ul>
-<div id="fig-cosim_hba1c" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-scap="UMAPs and kernel density plots grouped by HbA1c" width="100%">
+</section>
+<section id="cosine-distances-nt-probnp-and-race" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="cosine-distances-nt-probnp-and-race"><span class="header-section-number">4.3.3</span> Cosine Distances, NT-proBNP and Race</h3>
+<p>UMAP visualizations and cosine distance analyzes stratified by NT-proBNP &gt; 125 pg/mL or race appeared to show no clear clusterings in the colors upon visual inspection of the UMAPs (<a href="#fig-cosim_ntprobnp" class="quarto-xref">Figure&nbsp;<span>4.7</span></a>). The cosine distance analyzes stratified by these variables showed similar patterns to those observed for glycemic control measurements, with within-participant pairs being more similar than between-participant pairs. The medians and interquartile ranges can be found in <a href="app1-supplementary.html" class="quarto-xref"><span>Appendix F</span></a>.</p>
+<div class="landscape">
+<div id="fig-cosim_ntprobnp" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-scap="UMAPs and kernel density plots grouped by NT-proBNP and race.">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-cosim_hba1c-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_2_co_sim_hba1c.png" width="100%"><img src="figures/4_results_fig/study_2_co_sim_hba1c.png" class="img-fluid figure-img"></a></p>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim_hba1c-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.4: UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on glycemic control metrics for the CANCAN dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges.
-</figcaption>
-</figure>
-</div>
-<div id="fig-cosim_tir" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-scap="UMAPs and kernel density plots grouped by TIR" width="100%">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-cosim_tir-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-cosim_ntprobnp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
 
 </div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim_tir-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.5: UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on glycemic control metrics for the T1DX dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim_ntprobnp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.7: Cosine distance distributions for within- and between-participant pairs in CANCAN for NT-proBNP (Elevated NT-proBNP &lt; 125 pg/mL) and for T1DX for race. Dashed lines show medians; shaded bands show interquartile ranges. Pearson correlation with long-transformed NT-proBNP were <span class="math inline">\(\rho = -0.04\)</span>, p=0.063 and <span class="math inline">\(\rho = 0.18\)</span>, p&lt;0.001. Cosine distance values can be found in <a href="app1-supplementary.html" class="quarto-xref"><span>Appendix F</span></a>.
 </figcaption>
 </figure>
 </div>
-<div id="fig-cosim_MAGE" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-scap="UMAPs and kernel density plots grouped by MAGE" width="100%">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-cosim_MAGE-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim_MAGE-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.6: UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on MAGE for the two datasets. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
-</figcaption>
-</figure>
-</div>
-</section>
-<section id="embeddings-and-nt-probnp-in-cancan-and-race-in-t1dx" class="level3" data-number="4.3.3">
-<h3 data-number="4.3.3" class="anchored" data-anchor-id="embeddings-and-nt-probnp-in-cancan-and-race-in-t1dx"><span class="header-section-number">4.3.3</span> Embeddings and NT-proBNP in CANCAN and race in T1DX</h3>
-<div id="fig-cosim-ntprobnp" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-scap="UMAPs and kernel density plots grouped by NT-proBNP" width="95%">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-cosim-ntprobnp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/4_results_fig/study_2_co_sim_ntprobnp_race.png" class="img-fluid figure-img" style="width:95.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cosim-ntprobnp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.7: UMAPs and kernel density plots over cosine distance pairs for within- and between-participants grouped based on CVD and NT-proBNP for the CANCAN dataset. The UMAPs were colored based on clinical characteristics, with each point in the UMAP representing a single day, colors are assigned to each day at the participant level; thus, the colors reflect overall participant-level rather than day-specific values. The vertical dashed line in the density plots are the medians with the shaded area around the median being interquartile ranges..<!--  {style="font-size: 85%; opacity: 0.85;"} -->
-</figcaption>
-</figure>
 </div>
 </section>
 </section>
-<section id="prediction-of-nt-probnp-results" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="prediction-of-nt-probnp-results"><span class="header-section-number">4.4</span> Prediction of NT-proBNP Results</h2>
-<p>Results from the prediction analysis are shown in <a href="#tbl-model-performance_main" class="quarto-xref">Table&nbsp;<span>4.8</span></a>. The highest optimism-corrected AUROC was achieved by Model A2 which included both all nine clinical variables from the SCORE2-Diabetes input and the CGM-derived metrics TIR and MAGE (AUROC: 0.81 [0.77–0.88]). Optimism-corrected AUROCs for the models with fewer predictors had modest performance (AUROC: 0.72 to 77 ), however the optimism-correction was smaller and the prediction stability was more stable the fewer predictors were included in the models (Models: B1, B2, and B3) (@#sec-suppl-pred-stability). The models including only CGM-data either as derived metrics (Model C1) or as UMAP dimensions (Model D1a, D1b, D1c) performed the worst (AUROC: 0.53 to 0.69). Age seemed a better predictor for elevated NT-proBNP (AUROC: 0.73 [0.65 - 0.80])</p>
+<section id="study-ii-prediction-of-nt-probnp-results" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="study-ii-prediction-of-nt-probnp-results"><span class="header-section-number">4.4</span> Study II: Prediction of NT-proBNP Results</h2>
+<p>Results from the prediction analyzis are shown in <a href="#tbl-model-performance_main" class="quarto-xref">Table&nbsp;<span>4.11</span></a>. The highest optimism-corrected AUROC was achieved by Model A2 which included all nine clinical variables from the SCORE2-Diabetes input predictors and the CGM-derived metrics TIR and MAGE (AUROC: 0.81 [0.77–0.88]). Optimism-corrected AUROCs for the models with fewer predictors had modest performance (AUROC: 0.72 to 77 ), however the optimism-correction was smaller and the prediction stability was more stable the fewer predictors were included in the models (Models: B1, B2, and B3) (<a href="app1-supplementary.html" class="quarto-xref"><span>Appendix G</span></a>). The models including only CGM-data either as derived metrics (Model C1) or as UMAP dimensions (Model D1a, D1b, D1c) performed the worst (AUROC: 0.53 to 0.69). Age seemed a better predictor for elevated NT-proBNP (AUROC: 0.73 [0.65 - 0.80])</p>
 <div id="tbl-model-performance_main" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[36,24,11,12,15]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-model-performance_main-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.8: Area under the receiver operating characteristic curve for the included models.
+Table&nbsp;4.11: Area under the receiver operating characteristic curve for the included models.
 </figcaption>
 <div aria-describedby="tbl-model-performance_main-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1385,158 +1965,74 @@ Table&nbsp;4.8: Area under the receiver operating characteristic curve for the i
 <td style="text-align: center;">1</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Model A1:</strong></td>
+<td style="text-align: left;"><strong>Model A1:</strong> <br> (SCORE2-Diabetes input)</td>
 <td style="text-align: center;">0.79 [0.76 - 0.87]</td>
 <td style="text-align: center;">0.83</td>
 <td style="text-align: center;">0.04</td>
 <td style="text-align: center;">9</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">(SCORE2-Diabetes input)</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Model A2:</strong></td>
+<td style="text-align: left;"><strong>Model A2:</strong> <br> (Model A1 + TIR and MAGE)</td>
 <td style="text-align: center;">0.81 [0.77-0.88]</td>
 <td style="text-align: center;">0.86</td>
 <td style="text-align: center;">0.05</td>
 <td style="text-align: center;">11</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">(Model A1 +<br> TIR and MAGE)</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Model A3a:</strong><br></td>
+<td style="text-align: left;"><strong>Model A3a:</strong> <br> (Model A1 + UMAP (min))</td>
 <td style="text-align: center;">0.80 [0.75 - 0.87]</td>
 <td style="text-align: center;">0.84</td>
 <td style="text-align: center;">0.05</td>
 <td style="text-align: center;">11</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">(Model A1 + UMAP (min))</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: left;"><strong>Model A3b:</strong> <br> (Model A1 + UMAP (max))</td>
+<td style="text-align: center;">0.79 [0.75 - 0.87]</td>
+<td style="text-align: center;">0.84</td>
+<td style="text-align: center;">0.05</td>
+<td style="text-align: center;">11</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Model A3b:</strong></td>
+<td style="text-align: left;"><strong>Model A3c:</strong> <br> (Model A1 + UMAP (mean))</td>
 <td style="text-align: center;">0.79 [0.75 - 0.87]</td>
 <td style="text-align: center;">0.84</td>
 <td style="text-align: center;">0.05</td>
 <td style="text-align: center;">11</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">(Model A1 + UMAP (max))</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Model A3c:</strong></td>
-<td style="text-align: center;">0.79 [0.75 - 0.87]</td>
-<td style="text-align: center;">0.84</td>
-<td style="text-align: center;">0.05</td>
-<td style="text-align: center;">11</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">(Model A1 + UMAP (mean))</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Model B1:</strong></td>
+<td style="text-align: left;"><strong>Model B1:</strong> <br> (SCORE2-Diabetes score)</td>
 <td style="text-align: center;">0.74 [0.65 - 0.81]</td>
 <td style="text-align: center;">0.73</td>
 <td style="text-align: center;">0.00</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">(SCORE2-Diabetes score)</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Model B2:</strong></td>
+<td style="text-align: left;"><strong>Model B2:</strong> <br> (Model B1 + TIR and MAGE)</td>
 <td style="text-align: center;">0.77 [0.70 - 0.85]</td>
 <td style="text-align: center;">0.79</td>
 <td style="text-align: center;">0.01</td>
 <td style="text-align: center;">3</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">(Model B1 +<br> TIR and MAGE)</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Model B3a:</strong></td>
+<td style="text-align: left;"><strong>Model B3a:</strong> <br> (Model B1 + UMAP (min))</td>
 <td style="text-align: center;">0.72 [0.65 - 0.80]</td>
 <td style="text-align: center;">0.74</td>
 <td style="text-align: center;">0.02</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">(Model B1 + UMAP (min))</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Model B3b:</strong></td>
+<td style="text-align: left;"><strong>Model B3b:</strong> <br> (Model B1 + UMAP (max))</td>
 <td style="text-align: center;">0.72 [0.65 - 0.81]</td>
 <td style="text-align: center;">0.74</td>
 <td style="text-align: center;">0.02</td>
 <td style="text-align: center;">3</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">(Model B1 + UMAP (max))</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Model B3c:</strong></td>
+<td style="text-align: left;"><strong>Model B3c:</strong> <br> (Model B1 + UMAP (mean))</td>
 <td style="text-align: center;">0.73 [0.65 - 0.81]</td>
 <td style="text-align: center;">0.75</td>
 <td style="text-align: center;">0.02</td>
 <td style="text-align: center;">3</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">(Model B1 + UMAP (mean))</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Model C1:</strong><br> (TIR and MAGE)</td>
@@ -1546,27 +2042,20 @@ Table&nbsp;4.8: Area under the receiver operating characteristic curve for the i
 <td style="text-align: center;">11</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
 <td style="text-align: left;"><strong>Model D1a:</strong><br> (UMAP, max*)</td>
 <td style="text-align: center;">0.55 [0.48 - 0.64]</td>
 <td style="text-align: center;">0.58</td>
 <td style="text-align: center;">0.03</td>
 <td style="text-align: center;">2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;"><strong>Model D1b:</strong><br> (UMAP, min*)</td>
 <td style="text-align: center;">0.53 [0.43 - 0.63]</td>
 <td style="text-align: center;">0.57</td>
 <td style="text-align: center;">0.04</td>
 <td style="text-align: center;">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;"><strong>Model D1c:</strong><br> (UMAP, mean*)</td>
 <td style="text-align: center;">0.53 [0.43 - 0.64]</td>
 <td style="text-align: center;">0.56</td>
@@ -1583,16 +2072,16 @@ Table&nbsp;4.8: Area under the receiver operating characteristic curve for the i
 </figure>
 </div>
 </section>
-<section id="algorithmic-fairness-in-prediction-models" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="algorithmic-fairness-in-prediction-models"><span class="header-section-number">4.5</span> Algorithmic Fairness in Prediction Models</h2>
-<p>Bias is an important spect to consider when working data drivenly. In study III, we therefore evaluates bias in CGM trained machine learning models for forecasting in the T1DX cohort</p>
+<section id="study-iii-algorithmic-fairness-in-prediction-models" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="study-iii-algorithmic-fairness-in-prediction-models"><span class="header-section-number">4.5</span> Study III: Algorithmic Fairness in Prediction Models</h2>
+<p>In Study III, bias in CGM trained machine learning models for forecasting in the T1DX cohort was evaluated.</p>
 <section id="bias-in-machine-learning-models" class="level3" data-number="4.5.1">
 <h3 data-number="4.5.1" class="anchored" data-anchor-id="bias-in-machine-learning-models"><span class="header-section-number">4.5.1</span> Bias in Machine Learning Models</h3>
-<p>The RMSE of the models are shown in <a href="#tbl-study3-main-results1" class="quarto-xref">Table&nbsp;<span>4.9</span></a> and <a href="#tbl-study3-main-results2" class="quarto-xref">Table&nbsp;<span>4.10</span></a>. Base-Generalized and Transfer Learned models achieved models achieved lower prediction errors (RMSE: 2.00 to 2.06 mmol/L) than the naive last observation carried forward (LOCF)(RMSE: 2.41 and 2.45 mmol/L) and Base-Individual models (RMSE: 2.54 to 2.63 mmol/L) for both White and Black participants (<a href="#tbl-study3-main-results1" class="quarto-xref">Table&nbsp;<span>4.9</span></a> and <a href="#tbl-study3-main-results2" class="quarto-xref">Table&nbsp;<span>4.10</span></a>).</p>
+<p>The RMSE of the models are shown in <a href="#tbl-study3-main-results1" class="quarto-xref">Table&nbsp;<span>4.12</span></a> and <a href="#tbl-study3-main-results2" class="quarto-xref">Table&nbsp;<span>4.13</span></a>. Base-Generalized and Transfer Learned models achieved lower prediction errors (RMSE: 2.00 to 2.06 mmol/L) than the naive last observation carried forward (LOCF)(RMSE: 2.41 and 2.45 mmol/L) and Base-Individual models (RMSE: 2.54 to 2.63 mmol/L) for both White and Black participants (<a href="#tbl-study3-main-results1" class="quarto-xref">Table&nbsp;<span>4.12</span></a> and <a href="#tbl-study3-main-results2" class="quarto-xref">Table&nbsp;<span>4.13</span></a>).</p>
 <div id="tbl-study3-main-results1" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[12,22,22,22,22]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-study3-main-results1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.9: Root mean squared errors with 95% CIs for the different models evaluated on White participants.
+Table&nbsp;4.12: Root mean squared errors with 95% CIs for the different models evaluated on White participants.
 </figcaption>
 <div aria-describedby="tbl-study3-main-results1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1701,7 +2190,7 @@ Values that vary by proportion are estimated using linear mixed-effects models. 
 <div id="tbl-study3-main-results2" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[12,22,22,22,22]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-study3-main-results2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.10: Root mean squared errors with 95% CIs for the different models evaluated on Black participants.
+Table&nbsp;4.13: Root mean squared errors with 95% CIs for the different models evaluated on Black participants.
 </figcaption>
 <div aria-describedby="tbl-study3-main-results2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1807,21 +2296,22 @@ Values that vary by proportion are estimated using linear mixed-effects models. 
 </div>
 </figure>
 </div>
-<p>For the Base-Generalized models, prediction performance gradually diverged between White and Black participants as the proportion of White participants in the training data increased (<a href="#fig-lmem-results" class="quarto-xref">Figure&nbsp;<span>4.8</span></a>). For example, when the training data changed from 0% to 100% White participants, the difference in RMSE between the racial groups increased by 0.04 mmol/L [95% CI: 0.001 to 0.008],<span class="math inline">\(p\)</span>=0.02, indicating that training data composition affected the two groups differently(<a href="#tbl-general-model-coefficients" class="quarto-xref">Table&nbsp;<span>4.11</span></a>). This divergence was not observed after transfer learning (0.002 mmol/L[95% CI: -0.001 to 0.005], <span class="math inline">\(p\)</span>=0.20) (<a href="#tbl-transferlearned-coefficients" class="quarto-xref">Table&nbsp;<span>4.12</span></a>). A statistically significant differences were however found in both the Base-Generalized and the Transfer Learned models for age groups (0.482 [0.355 to 0.610], p &lt; 0.001, <a href="#tbl-general-model-coefficients" class="quarto-xref">Table&nbsp;<span>4.11</span></a> and 0.411 [0.290 to 0.533], p &lt; 0.001, <a href="#tbl-transferlearned-coefficients" class="quarto-xref">Table&nbsp;<span>4.12</span></a> respectivly). The differences in age groups showed a lower error when forecasting blood glucose values for adults compared to children. Larger sample sizes available for transfer learning were associated with lower prediction error (<span class="math inline">\(β\)</span> = -0.111 mmol/L [-0.161 to -0.061] mmol/L, <span class="math inline">\(p\)</span> &lt; 0.001) for every additional 1,000 samples used for fine-tuning (<a href="#tbl-transferlearned-coefficients" class="quarto-xref">Table&nbsp;<span>4.12</span></a>). In contrast, the size of the dataset used to train the Base-Generalized model was not associated with prediction error.</p>
-<div id="fig-lmem-results" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%">
+<p>For the Base-Generalized models, prediction performance gradually diverged between White and Black participants as the proportion of White participants in the training data increased (<a href="#fig-lmem-results" class="quarto-xref">Figure&nbsp;<span>4.8</span></a>). For example, when the training data changed from 0% to 100% White participants, the difference in RMSE between the racial groups increased by 0.04 mmol/L [95% CI: 0.001 to 0.008], <span class="math inline">\(p\)</span>=0.02, indicating that training data composition affected the two groups differently (<a href="#tbl-general-model-coefficients" class="quarto-xref">Table&nbsp;<span>4.14</span></a>). This divergence was not observed after transfer learning (0.002 mmol/L[95% CI: -0.001 to 0.005], <span class="math inline">\(p\)</span>=0.20) (<a href="#tbl-transferlearned-coefficients" class="quarto-xref">Table&nbsp;<span>4.15</span></a>). A statistically significant differences were however found in both the Base-Generalized and the Transfer Learned models for age groups (<a href="#tbl-general-model-coefficients" class="quarto-xref">Table&nbsp;<span>4.14</span></a>: 0.482 [0.355 to 0.610], <span class="math inline">\(p\)</span> &lt; 0.001 and <a href="#tbl-transferlearned-coefficients" class="quarto-xref">Table&nbsp;<span>4.15</span></a>: 0.411 [0.290 to 0.533], <span class="math inline">\(p\)</span> &lt; 0.001). The differences in age groups showed a lower error when forecasting blood glucose values for adults compared to children. Larger sample sizes available for transfer learning were associated with lower prediction error (<span class="math inline">\(β\)</span> = -0.111 mmol/L [-0.161 to -0.061] mmol/L, <span class="math inline">\(p\)</span> &lt; 0.001) for every additional 1,000 samples used for fine-tuning (<a href="#tbl-transferlearned-coefficients" class="quarto-xref">Table&nbsp;<span>4.15</span></a>). In contrast, the size of the dataset used to train the Base-Generalized model was not significantly associated with prediction error, suggesting that increasing the amount of training data did not meaningfully change RMSE in this analyzis.</p>
+<div id="fig-lmem-results" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" data-fig-scap="Estimated root mean squared errors across 11 different training dataset.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-lmem-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><a href="https://raw.githubusercontent.com/HeleneThomsen/dissertation/main/figures/4_results_fig/study_3_Fig2.png" width="100%"><img src="figures/4_results_fig/study_3_Fig2.png" class="img-fluid figure-img"></a></p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lmem-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.8: Estimated root mean squared errors (RMSE) across 11 different proportions of White and Black participants in the dataset.
+Figure&nbsp;4.8: Estimated root mean squared errors (RMSE) with 95% confidence intervals across 11 different proportions of White and Black participants in the dataset.<br>
+Reproduced from Thomsen et al.<span class="citation" data-cites="Thomsen2025"><sup><a href="references.html#ref-Thomsen2025" role="doc-biblioref">9</a></sup></span> under the Creative Commons Attribution License.
 </figcaption>
 </figure>
 </div>
 <div id="tbl-general-model-coefficients" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-general-model-coefficients-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.11: Model coefficients from linear mixed effects models for root mean squared errors of the Base-Generalized models.
+Table&nbsp;4.14: Model coefficients from linear mixed effects models for root mean squared errors of the Base-Generalized models.
 </figcaption>
 <div aria-describedby="tbl-general-model-coefficients-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1830,7 +2320,7 @@ Table&nbsp;4.11: Model coefficients from linear mixed effects models for root me
 <th style="text-align: left;">Predictor</th>
 <th style="text-align: left;">Coefficient</th>
 <th style="text-align: left;">95% CI</th>
-<th style="text-align: left;">P-value</th>
+<th style="text-align: left;"><span class="math inline">\(p\)</span>-value</th>
 </tr>
 </thead>
 <tbody>
@@ -1923,16 +2413,22 @@ Table&nbsp;4.11: Model coefficients from linear mixed effects models for root me
 <div id="tbl-transferlearned-coefficients" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-transferlearned-coefficients-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.12: Model coefficients from linear mixed effects models for root mean squared errors of the Transfer Learned models.
+Table&nbsp;4.15: Model coefficients from linear mixed effects models for root mean squared errors of the Transfer Learned models.
 </figcaption>
 <div aria-describedby="tbl-transferlearned-coefficients-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Predictor</th>
 <th style="text-align: left;">Coefficient</th>
 <th style="text-align: left;">95% CI</th>
-<th style="text-align: left;">P-value</th>
+<th style="text-align: left;"><span class="math inline">\(p\)</span>-value</th>
 </tr>
 </thead>
 <tbody>
@@ -2003,7 +2499,7 @@ Table&nbsp;4.12: Model coefficients from linear mixed effects models for root me
 <td style="text-align: left;">0.77</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Training size tl**</td>
+<td style="text-align: left;">Training size transfer learned**</td>
 <td style="text-align: left;">-0.111</td>
 <td style="text-align: left;">[-0.161, -0.061]</td>
 <td style="text-align: left;">&lt;0.001</td>
@@ -2032,12 +2528,36 @@ Table&nbsp;4.12: Model coefficients from linear mixed effects models for root me
 </section>
 <section id="the-surveillance-error-grid" class="level3" data-number="4.5.2">
 <h3 data-number="4.5.2" class="anchored" data-anchor-id="the-surveillance-error-grid"><span class="header-section-number">4.5.2</span> The Surveillance Error Grid</h3>
-<p>Surveillance Error Grid analysis showed minimal differences between models and training data compositions. Across all models, racial groups, and training data ratios, almost all predictions fell within the “None” or “Slight” risk zones, while approximately 3–6% were classified as “Moderate” risk and no predictions were classified as “High” or “Extreme” risk (<a href="app1-supplementary.html" class="quarto-xref"><span>Appendix F</span></a>). These findings indicate that the small differences in RMSE observed between models were unlikely to be clinically meaningful.</p>
+<p>Surveillance Error Grid analyzis showed minimal differences between models and training data compositions. Across all models, racial groups, and training data ratios, almost all predictions fell within the “None” or “Slight” risk zones, while approximately 3–6% were classified as “Moderate” risk and no predictions were classified as “High” or “Extreme” risk (<a href="app1-supplementary.html" class="quarto-xref"><span>Appendix H</span></a>). These findings indicate that the small differences in RMSE observed between models were unlikely to be clinically meaningful.</p>
 
 
 <div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-Thomsen2026" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Thomsen HB, Lebiecka-Johansen B, Nørgaard O, et al. Continuous glucose monitoring–derived metrics and cardiovascular risk among people with diabetes: Systematic scoping review. JMIR Diabetes [Internet] 2026;11:e89374. Available from: <a href="https://doi.org/10.2196/89374">https://doi.org/10.2196/89374</a></div>
+</div>
+<div id="ref-Borg2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Borg R, Kuenen J C, Carstensen B, et al. <span>HbA1</span>(c) and mean blood glucose show stronger associations with cardiovascular disease risk factors than do postprandial glycaemia or glucose variability in persons with diabetes: The <span>A1C</span>-<span>Derived</span> <span>Average</span> <span>Glucose</span> (<span>ADAG</span>) study. Diabetologia [Internet] 2011;54(1):69–72. Available from: <a href="http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;PAGE=reference&amp;D=med8&amp;NEWS=N&amp;AN=20886203">http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;PAGE=reference&amp;D=med8&amp;NEWS=N&amp;AN=20886203</a></div>
+</div>
+<div id="ref-Pulkkinen2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Pulkkinen Mari-Anne, Tuomaala Anna-Kaisa, Hero Matti, Gordin Daniel, Sarkola Taisto. Motivational <span>Interview</span> to improve vascular health in <span>Adolescents</span> with poorly controlled type 1 <span>Diabetes</span> (<span>MIAD</span>): A randomized controlled trial. BMJ open diabetes research &amp; care [Internet] 2020;8(1). Available from: <a href="http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;PAGE=reference&amp;D=med18&amp;NEWS=N&amp;AN=32723754">http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;PAGE=reference&amp;D=med18&amp;NEWS=N&amp;AN=32723754</a></div>
+</div>
+<div id="ref-Hoffman2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Hoffman Robert P, Dye Amanda S, Huang Hong, Bauer John A. Effects of glucose control and variability on endothelial function and repair in adolescents with type 1 diabetes. ISRN endocrinology [Internet] 2013;2013:876547. Available from: <a href="http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;PAGE=reference&amp;D=pmnm3&amp;NEWS=N&amp;AN=24490081">http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;PAGE=reference&amp;D=pmnm3&amp;NEWS=N&amp;AN=24490081</a></div>
+</div>
+<div id="ref-Lu2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Lu J, Wang C, Shen Y, et al. Time in range in relation to all-cause and cardiovascular mortality in patients with type 2 diabetes: A prospective cohort study. Diabetes care 2021;44(2):549–55. </div>
+</div>
 <div id="ref-Su2011" class="csl-entry" role="listitem">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Su G, Mi S, Tao H, et al. Association of glycemic variability and the presence and severity of coronary artery disease in patients with type 2 diabetes. Cardiovascular diabetology 2011;10(1):19–9. </div>
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Su G, Mi S, Tao H, et al. Association of glycemic variability and the presence and severity of coronary artery disease in patients with type 2 diabetes. Cardiovascular diabetology 2011;10(1):19–9. </div>
+</div>
+<div id="ref-Mi2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Mi Shu-Hua, Su Gong, Li Zhao, et al. Comparison of glycemic variability and glycated hemoglobin as risk factors of coronary artery disease in patients with undiagnosed diabetes. Chinese medical journal [Internet] 2012;125(1):38–43. Available from: <a href="http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;PAGE=reference&amp;D=med9&amp;NEWS=N&amp;AN=22340463">http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;PAGE=reference&amp;D=med9&amp;NEWS=N&amp;AN=22340463</a></div>
+</div>
+<div id="ref-Koroleva2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Koroleva EA, Korbut AI, Bulumbaeva DM, Klimontov VV. Modeling of <span>Risk</span> <span>Factors</span> for <span>Peripheral</span> <span>Artery</span> <span>Disease</span> in <span>Patients</span> with <span>Type</span> 2 <span>Diabetes</span> [Internet]. In: 2022 <span>IEEE</span> <span>International</span> <span>Multi</span>-<span>Conference</span> on <span>Engineering</span>, <span>Computer</span> and <span>Information</span> <span>Sciences</span> (<span>SIBIRCON</span>). Yekaterinburg, Russian Federation: IEEE; 2022 [cited 2025 July 15]. p. 200–5.Available from: <a href="https://ieeexplore.ieee.org/document/10017018/">https://ieeexplore.ieee.org/document/10017018/</a></div>
+</div>
+<div id="ref-Thomsen2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Thomsen HB, Li LY, Isaksen AA, et al. <a href="https://doi.org/10.1371/journal.pdig.0000918">Racial disparities in continuous glucose monitoring-based 60-min glucose predictions among people with type 1 diabetes</a>. PLOS Digital Health 2025;4(6):e0000918. </div>
 </div>
 </div>
 </section>
