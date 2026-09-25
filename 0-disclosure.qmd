@@ -2,6 +2,7 @@
 ## Financial Disclosures {.unnumbered .unlisted}
 This PhD project was supported by a research grant from the **Danish Diabetes and Endocrine Academy** (NNF22SA0079901) and the **Danish Cardiovascular Academy** (NNF20SA0067242), which are funded by the **Novo Nordisk Foundation**. Furthermore, the project was supported by the main supervisor’s Data Science Emerging Investigator grant from the Novo Nordisk Foundation (NNF22OC0076725),
 
+::: {.content-visible when-format="pdf"}
 ```{r}
 #| label: financial-disclosures
 #| fig-align: center
@@ -48,6 +49,7 @@ popViewport()
 
 ```
 
+:::
 ::: {.content-visible when-format="pdf"}
 ## Notes {.unnumbered .unlisted}
 This dissertation is available for viewing online at [https://helenethomsen.github.io/dissertation/](https://HeleneThomsen.github.io/dissertation/) or by scanning the QR code in the lower right-hand corner of the title page.
